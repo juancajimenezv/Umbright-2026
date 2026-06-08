@@ -1,0 +1,133 @@
+﻿using System;
+using System.Collections.Generic;
+using System.IO;
+using System.Linq;
+using System.Text;
+using System.Xml;
+using Newtonsoft;
+using Newtonsoft.Json;
+using Transaccional;
+
+namespace Umbral.FelInFile
+{
+    public static class ParseInFileResponse
+    {
+
+        public static Dictionary<string, string> ParseResponse(
+            this string pObj,
+            string pDirectorio)
+        {
+
+            Conexion oTrans = new Conexion("");
+            Dictionary<string, string> lRespuesta = null;
+
+            try
+            {
+
+                List<string> lstResp = new List<string>(pObj.Split('|'));
+                List<string> lstRespFecha = new List<string>(lstResp[2].Split(','));
+                Dictionary<string, string> dValoresRespuesta = new Dictionary<string, string>();
+
+                string strRespuesta =
+                    lstResp[4].Substring(
+                        lstResp[4].IndexOf("[", 0), lstResp[4].Length - lstResp[4].IndexOf("[", 0));
+
+                string strFechaCert =
+                    (from fdc in lstRespFecha
+                     where fdc.Contains("fecha")
+                     select fdc).FirstOrDefault();
+
+                List<string> lstValoresSeparados =
+                    new List<string>(strRespuesta.Split(','));
+
+                int indicador = 0;
+
+                foreach (string val in lstValoresSeparados)
+                {
+
+                    indicador++;
+
+                    string strDato = val.Replace("\\", "").Replace("\"", "").Replace("}", "");
+                    string[] strDatoSep = strDato.Contains(":") ? strDato.Split(':') : new string[] { $"{indicador.ToString()}", strDato };
+
+                    dValoresRespuesta.Add(strDatoSep[0], strDatoSep[1]);
+
+                }
+
+                string strXmlCertificado =
+                     Encoding.UTF8.GetString(Convert.FromBase64String(dValoresRespuesta["xml_certificado"]));
+
+                MemoryStream mStream = new MemoryStream();
+                XmlTextWriter writer = new XmlTextWriter(mStream, Encoding.Unicode);
+                XmlDocument document = new XmlDocument();
+
+                document.LoadXml(strXmlCertificado);
+                writer.Formatting = System.Xml.Formatting.Indented;
+
+                document.WriteContentTo(writer);
+                writer.Flush();
+                mStream.Flush();
+
+                mStream.Position = 0;
+
+                StreamReader sReader = new StreamReader(mStream);
+                string formattedXml = sReader.ReadToEnd();
+
+                if (!Directory.Exists(pDirectorio))
+                {
+
+                    Directory.CreateDirectory(pDirectorio);
+
+                }
+
+                if (File.Exists(Path.Combine(pDirectorio, $"{dValoresRespuesta["uuid"]}_{DateTime.Now.ToString("yyyyMMdd")}.xml")))
+                {
+                    File.Delete(Path.Combine(pDirectorio, $"{dValoresRespuesta["uuid"]}_{DateTime.Now.ToString("yyyyMMdd")}.xml"));
+                }
+
+                File.WriteAllText(
+                    Path.Combine(pDirectorio, $"{dValoresRespuesta["uuid"]}_{DateTime.Now.ToString("yyyyMMdd")}.xml"),
+                    formattedXml);
+
+                try
+                {
+
+                    dValoresRespuesta.Add("fecha_cert", strFechaCert.Substring(9, 20).Replace("\"", "").Substring(0, 19).Replace("T", " "));
+
+                }
+                catch { }
+
+                lRespuesta = dValoresRespuesta;
+
+            }
+            catch (Exception ex)
+            {
+
+                oTrans.Escribir_Log($"FEL: {ex.Message}");
+
+                int no_linea = 1;
+
+                lRespuesta = new Dictionary<string, string>();
+
+                List<string> strValores =
+                    new List<string>(pObj.Split(','));
+
+                List<string> strValoresError =
+                    (from err in strValores
+                     where err.Contains("mensaje_error")
+                     select err).ToList();
+
+                foreach (string err in strValoresError)
+                {
+                    lRespuesta.Add($"ERR_{no_linea.ToString()}", err.Split(':')[1].Replace("}", ""));
+                    no_linea++;
+                }
+
+            }
+
+            return lRespuesta;
+
+        }
+
+    }
+}

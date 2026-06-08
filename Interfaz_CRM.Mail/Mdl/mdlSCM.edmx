@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="SCMModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="credenciales_notificacion">
+          <Key>
+            <PropertyRef Name="correo" />
+          </Key>
+          <Property Name="correo" Type="varchar" MaxLength="250" Nullable="false" />
+          <Property Name="clave" Type="varchar(max)" />
+        </EntityType>
+        <Function Name="pa_var_um_credenciales_notificacion" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="flexline" />
+        <EntityContainer Name="SCMModelStoreContainer">
+          <EntitySet Name="credenciales_notificacion" EntityType="Self.credenciales_notificacion" Schema="flexline" store:Type="Tables" />
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="SCMModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="credenciales_notificacion">
+          <Key>
+            <PropertyRef Name="correo" />
+          </Key>
+          <Property Name="correo" Type="String" MaxLength="250" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="clave" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityContainer Name="SCMEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="credenciales_notificacion" EntityType="Self.credenciales_notificacion" />
+          <FunctionImport Name="pa_var_um_credenciales_notificacion" ReturnType="Collection(SCMModel.pa_var_um_credenciales_notificacion_Result)" />
+        </EntityContainer>
+        <ComplexType Name="pa_var_um_credenciales_notificacion_Result">
+          <Property Type="String" Name="mail_anterior" Nullable="false" MaxLength="12" />
+          <Property Type="String" Name="pwd_anterior" Nullable="false" MaxLength="8" />
+          <Property Type="String" Name="mail" Nullable="false" MaxLength="25" />
+          <Property Type="String" Name="pwd" Nullable="false" MaxLength="16" />
+        </ComplexType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="SCMModelStoreContainer" CdmEntityContainer="SCMEntities">
+          <EntitySetMapping Name="credenciales_notificacion">
+            <EntityTypeMapping TypeName="SCMModel.credenciales_notificacion">
+              <MappingFragment StoreEntitySet="credenciales_notificacion">
+                <ScalarProperty Name="correo" ColumnName="correo" />
+                <ScalarProperty Name="clave" ColumnName="clave" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <FunctionImportMapping FunctionImportName="pa_var_um_credenciales_notificacion" FunctionName="SCMModel.Store.pa_var_um_credenciales_notificacion">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="SCMModel.pa_var_um_credenciales_notificacion_Result">
+                <ScalarProperty Name="mail_anterior" ColumnName="mail_anterior" />
+                <ScalarProperty Name="pwd_anterior" ColumnName="pwd_anterior" />
+                <ScalarProperty Name="mail" ColumnName="mail" />
+                <ScalarProperty Name="pwd" ColumnName="pwd" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

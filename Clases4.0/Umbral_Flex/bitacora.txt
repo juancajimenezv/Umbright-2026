@@ -1,0 +1,19 @@
+﻿20231201 (c) 
+
+                    Try
+                        dr.Item("precio") = dt.Rows(0).Item("valor")
+                    Catch ex As Exception
+                        dr.Item("precio") = 0
+                    End Try
+
+                    '(c) separación de campos
+                    Try
+                        dr.Item("FechaVigenciaLp") = dt.Rows(0).Item("fec_inicio").ToString
+                    Catch ex As Exception
+
+                    End Try
+
+
+
+
+

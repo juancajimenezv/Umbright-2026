@@ -1,0 +1,109 @@
+<dte:GTDocumento xmlns:ds="http://www.w3.org/2000/09/xmldsig#" xmlns:dte="http://www.sat.gob.gt/dte/fel/0.1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Version="0.4" xsi:schemaLocation="http://www.sat.gob.gt/dte/fel/0.1.0">
+  <dte:SAT ClaseDocumento="dte">
+    <dte:DTE ID="DatosCertificados">
+      <dte:DatosEmision ID="DatosEmision">
+        <dte:DatosGenerales CodigoMoneda="GTQ" FechaHoraEmision="2019-12-26T00:00:00-06:00" Tipo="FACT"></dte:DatosGenerales>
+		<dte:Emisor AfiliacionIVA="GEN" CodigoEstablecimiento="1" CorreoEmisor="eduardo.gatica@umbralcorp.com" NITEmisor="25193880" NombreComercial="TECNOSOLUCIONES, S.A." NombreEmisor="TECNOSOLUCIONES, S.A.">
+			<dte:DireccionEmisor>
+				<dte:Direccion>4A. CALLE 0-74 PAMPLONA Zona: 13</dte:Direccion>
+				<dte:CodigoPostal>01013</dte:CodigoPostal>
+				<dte:Municipio>GUATEMALA</dte:Municipio>
+				<dte:Departamento>GUATEMALA</dte:Departamento>
+				<dte:Pais>GT</dte:Pais>
+			</dte:DireccionEmisor>
+		</dte:Emisor>
+        <dte:Receptor CorreoReceptor="fel@umbralcorp.com" IDReceptor="7670109" NombreReceptor="BYRON CUYUN">
+          <dte:DireccionReceptor>
+            <dte:Direccion>GUATEMALA</dte:Direccion>
+            <dte:CodigoPostal>01001</dte:CodigoPostal>
+            <dte:Municipio>GUATEMALA</dte:Municipio>
+            <dte:Departamento>GUATEMALA</dte:Departamento>
+            <dte:Pais>GT</dte:Pais>
+          </dte:DireccionReceptor>
+        </dte:Receptor>
+        <dte:Frases>
+          <dte:Frase CodigoEscenario="1" TipoFrase="1"></dte:Frase>
+        </dte:Frases>
+        <dte:Items>
+          <dte:Item BienOServicio="B" NumeroLinea="1">
+            <dte:Cantidad>1</dte:Cantidad>
+            <dte:UnidadMedida>UND</dte:UnidadMedida>
+            <dte:Descripcion>0400081592|UN|HONEY WHIT TRUFFLE FUNGO TARTUFFO 100G.|0.00000000||0.00000000</dte:Descripcion>
+            <dte:PrecioUnitario>110</dte:PrecioUnitario>
+            <dte:Precio>110</dte:Precio>
+            <dte:Descuento>0</dte:Descuento>
+            <dte:Impuestos>
+              <dte:Impuesto>
+                <dte:NombreCorto>IVA</dte:NombreCorto>
+                <dte:CodigoUnidadGravable>1</dte:CodigoUnidadGravable>
+                <dte:MontoGravable>98.21</dte:MontoGravable>
+                <dte:MontoImpuesto>11.79</dte:MontoImpuesto>
+              </dte:Impuesto>
+            </dte:Impuestos>
+            <dte:Total>110</dte:Total>
+          </dte:Item>
+        </dte:Items>
+        <dte:Totales>
+          <dte:TotalImpuestos>
+            <dte:TotalImpuesto NombreCorto="IVA" TotalMontoImpuesto="11.79"></dte:TotalImpuesto>
+          </dte:TotalImpuestos>
+          <dte:GranTotal>110</dte:GranTotal>
+        </dte:Totales>
+		<dte:Complementos>
+			<dte:Complemento IDComplemento="Cambiaria" NombreComplemento="Cambiaria" URIComplemento="http://www.sat.gob.gt/fel/cambiaria.xsd">
+				<cfc:AbonosFacturaCambiaria xmlns:cfc="http://www.sat.gob.gt/dte/fel/CompCambiaria/0.1.0" Version="1" xsi:schemaLocation="http://www.sat.gob.gt/dte/fel/CompCambiaria/0.1.0 C:\Users\Desktop\SAT_FEL_FINAL_V1\Esquemas\GT_Complemento_Cambiaria-0.1.0.xsd">
+					<cfc:Abono>
+						<cfc:NumeroAbono>1</cfc:NumeroAbono>
+						<cfc:FechaVencimiento>2020-06-29</cfc:FechaVencimiento>
+						<cfc:MontoAbono>0.00</cfc:MontoAbono>
+					</cfc:Abono>
+				</cfc:AbonosFacturaCambiaria>
+			</dte:Complemento>
+			<dte:Complemento IDComplemento="Exportacion" NombreComplemento="Exportacion" URIComplemento="http:////www.sat.gob.gt//fel//exportacion.xsd">
+				<cex:Exportacion xmlns:cex="http://www.sat.gob.gt/face2/ComplementoExportaciones/0.1.0" Version="1" xsi:schemaLocation="http://www.sat.gob.gt/face2/ComplementoExportaciones/0.1.0 C:\Users\User\Desktop\FEL\Esquemas\GT_Complemento_Exportaciones-0.1.0.xsd">
+					<cex:NombreConsignatarioODestinatario>BAWA SYED MUBARAK</cex:NombreConsignatarioODestinatario>
+					<cex:DireccionConsignatarioODestinatario>8VA. AVENIDA 15-07 ZONA 10 GUATEMALA</cex:DireccionConsignatarioODestinatario>
+					<cex:CodigoConsignatarioODestinatario>103031529</cex:CodigoConsignatarioODestinatario>
+					<cex:NombreComprador>BAWA SYED MUBARAK</cex:NombreComprador>
+					<cex:DireccionComprador>8VA. AVENIDA 15-07 ZONA 10 GUATEMALA</cex:DireccionComprador>
+					<cex:CodigoComprador>103031529</cex:CodigoComprador>
+					<cex:OtraReferencia>Factura Cambiaria Exenta</cex:OtraReferencia>
+					<cex:INCOTERM>FOB</cex:INCOTERM>
+					<cex:NombreExportador>COMPAÑIA DE DISTRIBUCION CENTROAMERICANA, S. A.</cex:NombreExportador>
+					<cex:CodigoExportador>C49464</cex:CodigoExportador>
+				</cex:Exportacion>
+			</dte:Complemento>					
+		</dte:Complementos>			
+      </dte:DatosEmision>
+    </dte:DTE>
+    <dte:Adenda>
+		<wmdte:Walmart xmlns:wmdte="http://walmart.com.gt/dte" version="1.2">
+			<wmdte:WM-FACT>
+				<wmdte:WMMercaderia>
+					<wmdte:WMNumeroOrden>1234567890</wmdte:WMNumeroOrden>
+					<wmdte:WMFechaOrden>2012-12-13</wmdte:WMFechaOrden>
+					<wmdte:WMNumeroVendedor>123456050</wmdte:WMNumeroVendedor>
+					<wmdte:WMEnviarGLN>7407001008593</wmdte:WMEnviarGLN>
+					<wmdte:WMNumeroRecepcion>01-12345678</wmdte:WMNumeroRecepcion>
+				</wmdte:WMMercaderia>
+			</wmdte:WM-FACT>
+		</wmdte:Walmart>	
+		<Codigo>3949469</Codigo>
+		<Ref>
+		</Ref>
+		<valor2>
+		</valor2>
+		<Ejecutivo>LISSETTE QUIÑONEZ</Ejecutivo>
+		<TSkus>2</TSkus>
+		<Pedido>0000000001</Pedido>
+		<Observaciones>PDA-FACTURA DE PRODUCTOS SERIE A1 *CONTADO CLIENTE PAGA EN CAJA</Observaciones>
+		<LPrecios>PERSONAL_1607</LPrecios>
+		<Bodega>CD_CENTRAL</Bodega>
+		<TUnidades>2.00000000</TUnidades>
+		<valor1>
+		</valor1>
+		<Condiciones>CONTADO EFECTIVO</Condiciones>
+		<TDocto>PEDIDO FEL</TDocto>  
+    </dte:Adenda>
+  </dte:SAT>
+</dte:GTDocumento>
