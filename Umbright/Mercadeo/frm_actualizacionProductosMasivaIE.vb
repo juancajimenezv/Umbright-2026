@@ -1,16 +1,16 @@
-ï»¿Imports System.Data
+Imports System.Data
 Imports System.IO
 Imports System.Windows.Forms
 Imports System.Collections.Generic
 Imports GemBox.Spreadsheet
 
 ' =============================================================================
-' ActualizaciÃ³n Masiva IE
+' Actualización Masiva IE
 ' Sube un Excel con 2 columnas (producto, valor) y actualiza una columna
-' especÃ­fica de flexline.producto para una empresa seleccionada.
+' específica de flexline.producto para una empresa seleccionada.
 '
 ' Para agregar otra columna actualizable a futuro: agregar el nombre a
-' CargarColumnasDisponibles (el resto es genÃ©rico).
+' CargarColumnasDisponibles (el resto es genérico).
 ' =============================================================================
 Public Class frm_actualizacionProductosMasivaIE
 
@@ -23,7 +23,7 @@ Public Class frm_actualizacionProductosMasivaIE
     Private datosCargados As Boolean = False
     Private validado As Boolean = False
 
-    ' Mapeo columna â†’ tipo en GEN_TABCOD
+    ' Mapeo columna ? tipo en GEN_TABCOD
     Private ReadOnly TiposGenTabcod As New Dictionary(Of String, String) From {
         {"tipoproducto", "GEN_TIPOPRODUCTO"},
         {"familia", "PRODUCTO.FAMILIA"},
@@ -50,7 +50,7 @@ Public Class frm_actualizacionProductosMasivaIE
         End Try
     End Sub
 
-    ' Cuando cambia la empresa, refrescar columnas disponibles segÃºn permisos
+    ' Cuando cambia la empresa, refrescar columnas disponibles según permisos
     Private Sub cmbEmpresa_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cmbEmpresa.SelectedIndexChanged
         ActualizarColumnasDisponibles()
     End Sub
@@ -83,19 +83,19 @@ Public Class frm_actualizacionProductosMasivaIE
     End Sub
 
     ' Lista maestra de todas las columnas con su label visible
-    ' Mapeo etiqueta visible â†’ nombre real de columna en flexline.producto
+    ' Mapeo etiqueta visible ? nombre real de columna en flexline.producto
     Private ReadOnly EtiquetaAColumna As New Dictionary(Of String, String) From {
         {"TIPO DE PRODUCTO", "tipoproducto"},
         {"FAMILIA", "familia"},
         {"PROVEEDOR", "subfamilia"},
         {"TIPO", "tipo"},
-        {"SUBTIPO", "subtipo"},
+        {"MARCA", "subtipo"},
         {"UXC", "factoralt"},
         {"PRECIO SUGERIDO", "precioventa"},
         {"MEDIDA EN LITROS", "volumen"},
         {"PROCEDENCIA", "procedencia"},
         {"ORIGEN", "AnalisisProducto4"},
-        {"DESCRIPCIÃ“N DE PRODUCTO", "glosa"},
+        {"DESCRIPCIÓN DE PRODUCTO", "glosa"},
         {"ACTIVAR/INACTIVAR PRODUCTO", "vigente"},
         {"BU", "AnalisisProducto17"},
         {"CUENTA COMPRA", "cuentacompra"},
@@ -107,14 +107,14 @@ Public Class frm_actualizacionProductosMasivaIE
 
     Private Function TodasLasColumnas() As List(Of String)
         Return New List(Of String) From {
-            "TIPO DE PRODUCTO", "FAMILIA", "PROVEEDOR", "TIPO", "SUBTIPO",
+            "TIPO DE PRODUCTO", "FAMILIA", "PROVEEDOR", "TIPO", "MARCA",
             "UXC", "PRECIO SUGERIDO", "MEDIDA EN LITROS",
-            "PROCEDENCIA", "ORIGEN", "DESCRIPCIÃ“N DE PRODUCTO", "ACTIVAR/INACTIVAR PRODUCTO", "BU",
+            "PROCEDENCIA", "ORIGEN", "DESCRIPCIÓN DE PRODUCTO", "ACTIVAR/INACTIVAR PRODUCTO", "BU",
             "CUENTA COMPRA", "CUENTA VENTA", "CUENTA COSTO", "CUENTA DESCUENTO", "CUENTA DEVOLUCIONES"
         }
     End Function
 
-    ' Refresca cmbColumna segÃºn la empresa seleccionada y los permisos del usuario
+    ' Refresca cmbColumna según la empresa seleccionada y los permisos del usuario
     Private Sub ActualizarColumnasDisponibles()
         cmbColumna.Items.Clear()
         Dim emp As String = If(cmbEmpresa.SelectedItem, "").ToString()
@@ -138,9 +138,6 @@ Public Class frm_actualizacionProductosMasivaIE
             If col = "vigente" Then
                 mostrar = True
                 texto = """S"" ACTIVAR    ""N"" INACTIVAR"
-            ElseIf col = "AnalisisProducto17" Then
-                mostrar = True
-                texto = "El BU debe existir en SCM.dbo.BU_Empresa (cualquier empresa)"
             End If
         End If
         lbl_vigente_hint.Text = texto
@@ -151,14 +148,14 @@ Public Class frm_actualizacionProductosMasivaIE
         ActualizarHintVigente()
     End Sub
 
-    ' "TIPO DE PRODUCTO" -> "tipoproducto"  Â·  "UXC" -> "factoralt"
+    ' "TIPO DE PRODUCTO" -> "tipoproducto"  ·  "UXC" -> "factoralt"
     Private Function ColumnaReal(item As String) As String
         If item Is Nothing Then Return ""
         If EtiquetaAColumna.ContainsKey(item) Then Return EtiquetaAColumna(item)
         Return item.Trim().ToLower()
     End Function
 
-    ' GenÃ©rica: True si el valor existe en GEN_TABCOD para el tipo dado
+    ' Genérica: True si el valor existe en GEN_TABCOD para el tipo dado
     Private Function ExisteEnGenTabcod(emp As String, valor As String, tipo As String, oFlex As Transaccional.Conexion) As Boolean
         Try
             Dim sql As String =
@@ -173,7 +170,7 @@ Public Class frm_actualizacionProductosMasivaIE
         End Try
     End Function
 
-    ' True si el valor tiene impuesto de distribuciÃ³n (existe en GEN_TABCOD con tipo=IMP_DISTRIB)
+    ' True si el valor tiene impuesto de distribución (existe en GEN_TABCOD con tipo=IMP_DISTRIB)
     Private Function TieneImpuestoDistribucion(emp As String, valor As String, oFlex As Transaccional.Conexion) As Boolean
         Try
             Dim sql As String =
@@ -217,12 +214,13 @@ Public Class frm_actualizacionProductosMasivaIE
         Return lst
     End Function
 
-    ' True si el BU existe en SCM.dbo.BU_Empresa (cualquier empresa)
+    ' True si el BU existe en flexline.producto y empieza con 'BU' (misma lista del desplegable Individual)
     Private Function ExisteBU(valor As String, oScm As Transaccional.Conexion) As Boolean
         Try
             Dim sql As String = _
-                "SELECT TOP 1 1 FROM SCM.dbo.BU_Empresa " & _
-                " WHERE AnalisisProducto17 = '" & valor.Replace("'", "''") & "'"
+                "SELECT TOP 1 1 FROM BDFlexline.flexline.producto " & _
+                " WHERE analisisproducto17 = '" & valor.Replace("'", "''") & "' " & _
+                "   AND analisisproducto17 LIKE 'BU%'"
             Dim dt As DataTable = oScm.Obtiene(sql)
             Return (dt IsNot Nothing AndAlso dt.Rows.Count > 0)
         Catch
@@ -261,7 +259,7 @@ Public Class frm_actualizacionProductosMasivaIE
     Private Sub ConfigurarGrid()
         dgvDatos.Columns.Clear()
         dgvDatos.Columns.Add(NewCol(COL_PROD, "Producto", 110))
-        dgvDatos.Columns.Add(NewCol(COL_GLOSA, "DescripciÃ³n", 220))
+        dgvDatos.Columns.Add(NewCol(COL_GLOSA, "Descripción", 220))
         dgvDatos.Columns.Add(NewCol(COL_VALOR_ACTUAL, "Valor actual", 130))
         dgvDatos.Columns.Add(NewCol(COL_VALOR_NUEVO, "Valor nuevo", 130))
         dgvDatos.Columns.Add(NewCol(COL_ESTADO, "Estado", 90))
@@ -287,9 +285,9 @@ Public Class frm_actualizacionProductosMasivaIE
                 Dim wb As ExcelFile = ExcelFile.Load(ofd.FileName)
                 Dim ws As ExcelWorksheet = wb.Worksheets(0)
 
-                ' Detectar si fila 0 es encabezado (contiene 'producto'/'codigo'/'cÃ³digo')
+                ' Detectar si fila 0 es encabezado (contiene 'producto'/'codigo'/'código')
                 Dim primA As String = SafeCell(ws, 0, 0).ToLower()
-                Dim tieneEncabezado As Boolean = (primA.Contains("producto") OrElse primA.Contains("codigo") OrElse primA.Contains("cÃ³digo"))
+                Dim tieneEncabezado As Boolean = (primA.Contains("producto") OrElse primA.Contains("codigo") OrElse primA.Contains("código"))
                 Dim row As Integer = If(tieneEncabezado, 1, 0)
                 Dim cargados As Integer = 0
                 Do
@@ -297,7 +295,7 @@ Public Class frm_actualizacionProductosMasivaIE
                     Dim cellVal As String = SafeCell(ws, row, 1)
                     If cellProd = "" AndAlso cellVal = "" Then Exit Do
 
-                    ' Padding: si es numÃ©rico y tiene menos de 10 dÃ­gitos, completar con ceros a la izquierda
+                    ' Padding: si es numérico y tiene menos de 10 dígitos, completar con ceros a la izquierda
                     If cellProd <> "" AndAlso IsNumeric(cellProd) AndAlso cellProd.Length < 10 Then
                         cellProd = cellProd.PadLeft(10, "0"c)
                     End If
@@ -364,7 +362,7 @@ Public Class frm_actualizacionProductosMasivaIE
                 Dim valNuevo As String = SafeStr(row.Cells(COL_VALOR_NUEVO).Value)
 
                 If cod = "" Then
-                    row.Cells(COL_ESTADO).Value = "Sin cÃ³digo"
+                    row.Cells(COL_ESTADO).Value = "Sin código"
                     row.DefaultCellStyle.BackColor = System.Drawing.Color.MistyRose
                     notFoundCount += 1
                     Continue For
@@ -432,8 +430,8 @@ Public Class frm_actualizacionProductosMasivaIE
         If col = "precioventa" OrElse col = "volumen" Then
             Dim umbral As Double = If(col = "precioventa", 10000.0, 10.0)
             Dim desc As String = If(col = "precioventa", "precio sugerido mayor o igual a 10,000.00", "volumen mayor o igual a 10 LTS")
-            Dim titulo As String = If(col = "precioventa", "Precios altos detectados", "VolÃºmenes altos detectados")
-            Dim verifica As String = If(col = "precioventa", "Verifica que los precios sugeridos sean correctos.", "Verifica que los volÃºmenes sean correctos.")
+            Dim titulo As String = If(col = "precioventa", "Precios altos detectados", "Volúmenes altos detectados")
+            Dim verifica As String = If(col = "precioventa", "Verifica que los precios sugeridos sean correctos.", "Verifica que los volúmenes sean correctos.")
 
             Dim conValorAlto As Integer = 0
             For Each row As DataGridViewRow In dgvDatos.Rows
@@ -448,17 +446,17 @@ Public Class frm_actualizacionProductosMasivaIE
             If conValorAlto > 0 Then
                 If MessageBox.Show(conValorAlto & " producto(s) tienen " & desc & "." & vbCrLf & vbCrLf &
                                    verifica & vbCrLf & vbCrLf &
-                                   "Â¿Deseas continuar?",
+                                   "¿Deseas continuar?",
                                    titulo, MessageBoxButtons.YesNo, MessageBoxIcon.Warning) <> DialogResult.Yes Then
                     Return
                 End If
             End If
         End If
 
-        If MessageBox.Show("Â¿EstÃ¡ seguro que desea guardar estos cambios?" & vbCrLf & vbCrLf &
-                           "Se actualizarÃ¡ la columna '" & col & "' en " & listos & " producto(s)" & vbCrLf &
+        If MessageBox.Show("¿Está seguro que desea guardar estos cambios?" & vbCrLf & vbCrLf &
+                           "Se actualizará la columna '" & col & "' en " & listos & " producto(s)" & vbCrLf &
                            "de la empresa '" & emp & "'." & vbCrLf & vbCrLf &
-                           "Esta acciÃ³n se aplicarÃ¡ en BD y quedarÃ¡ registrada en el log.",
+                           "Esta acción se aplicará en BD y quedará registrada en el log.",
                            "Confirmar guardado",
                            MessageBoxButtons.YesNo, MessageBoxIcon.Question) <> DialogResult.Yes Then Return
 
@@ -480,7 +478,7 @@ Public Class frm_actualizacionProductosMasivaIE
                 Dim valActual As String = SafeStr(row.Cells(COL_VALOR_ACTUAL).Value)
                 Dim valNuevo As String = SafeStr(row.Cells(COL_VALOR_NUEVO).Value)
 
-                ' ValidaciÃ³n de permiso por empresa+columna
+                ' Validación de permiso por empresa+columna
                 If Not PermisosActProductos.TienePermiso(emp, col) Then
                     errCount += 1
                     errMsg &= "[" & cod & "] sin permiso para columna '" & col & "' en empresa " & emp & vbCrLf
@@ -489,54 +487,54 @@ Public Class frm_actualizacionProductosMasivaIE
                     Continue For
                 End If
 
-                ' ValidaciÃ³n genÃ©rica: existencia en GEN_TABCOD segÃºn el tipo de columna
+                ' Validación genérica: existencia en GEN_TABCOD según el tipo de columna
                 If TiposGenTabcod.ContainsKey(col) AndAlso
                    Not ExisteEnGenTabcod(emp, valNuevo, TiposGenTabcod(col), oFlex) Then
                     errCount += 1
                     errMsg &= "[" & cod & "] '" & valNuevo & "' no existe en GEN_TABCOD (" & TiposGenTabcod(col) & ")." & vbCrLf
-                    row.Cells(COL_ESTADO).Value = "Valor invÃ¡lido"
+                    row.Cells(COL_ESTADO).Value = "Valor inválido"
                     row.DefaultCellStyle.BackColor = System.Drawing.Color.MistyRose
                     Continue For
                 End If
 
-                ' ValidaciÃ³n especial tipoproducto: NO debe tener impuesto de distribuciÃ³n
+                ' Validación especial tipoproducto: NO debe tener impuesto de distribución
                 If col = "tipoproducto" AndAlso TieneImpuestoDistribucion(emp, valNuevo, oFlex) Then
                     errCount += 1
-                    errMsg &= "[" & cod & "] '" & valNuevo & "' tiene impuesto de distribuciÃ³n (IMP_DISTRIB). No se asigna." & vbCrLf
+                    errMsg &= "[" & cod & "] '" & valNuevo & "' tiene impuesto de distribución (IMP_DISTRIB). No se asigna." & vbCrLf
                     row.Cells(COL_ESTADO).Value = "Con IMP_DISTRIB"
                     row.DefaultCellStyle.BackColor = System.Drawing.Color.MistyRose
                     Continue For
                 End If
 
-                ' ValidaciÃ³n especial: cuentas contables deben existir en CON_CTACON para la empresa
+                ' Validación especial: cuentas contables deben existir en CON_CTACON para la empresa
                 If col.StartsWith("cuenta") Then
                     If Not ExisteCuenta(emp, valNuevo, oFlex) Then
                         errCount += 1
                         errMsg &= "[" & cod & "] Cuenta '" & valNuevo & "' no existe en CON_CTACON para " & emp & vbCrLf
-                        row.Cells(COL_ESTADO).Value = "Cuenta invÃ¡lida"
+                        row.Cells(COL_ESTADO).Value = "Cuenta inválida"
                         row.DefaultCellStyle.BackColor = System.Drawing.Color.MistyRose
                         Continue For
                     End If
                 End If
 
-                ' ValidaciÃ³n especial: AnalisisProducto17 (BU) debe existir en SCM.dbo.BU_Empresa (cualquier empresa)
+                ' Validación especial: AnalisisProducto17 (BU) debe existir en SCM.dbo.BU_Empresa (cualquier empresa)
                 If col = "AnalisisProducto17" Then
                     If Not ExisteBU(valNuevo, oScm) Then
                         errCount += 1
-                        errMsg &= "[" & cod & "] BU '" & valNuevo & "' no existe en SCM.dbo.BU_Empresa." & vbCrLf
-                        row.Cells(COL_ESTADO).Value = "BU invÃ¡lido"
+                        errMsg &= "[" & cod & "] BU '" & valNuevo & "' no existe en la lista de BU (flexline.producto 'BU%')." & vbCrLf
+                        row.Cells(COL_ESTADO).Value = "BU inválido"
                         row.DefaultCellStyle.BackColor = System.Drawing.Color.MistyRose
                         Continue For
                     End If
                 End If
 
-                ' ValidaciÃ³n especial: vigente='N' (inactivar) requiere stock=0 en todas las bodegas
+                ' Validación especial: vigente='N' (inactivar) requiere stock=0 en todas las bodegas
                 If col = "vigente" Then
                     Dim valLimpio As String = valNuevo.Trim().ToUpper()
                     If valLimpio <> "S" AndAlso valLimpio <> "N" Then
                         errCount += 1
-                        errMsg &= "[" & cod & "] Valor '" & valNuevo & "' invÃ¡lido. Solo S o N." & vbCrLf
-                        row.Cells(COL_ESTADO).Value = "Valor invÃ¡lido"
+                        errMsg &= "[" & cod & "] Valor '" & valNuevo & "' inválido. Solo S o N." & vbCrLf
+                        row.Cells(COL_ESTADO).Value = "Valor inválido"
                         row.DefaultCellStyle.BackColor = System.Drawing.Color.MistyRose
                         Continue For
                     End If
@@ -553,7 +551,7 @@ Public Class frm_actualizacionProductosMasivaIE
                     End If
                 End If
 
-                ' ValidaciÃ³n especial: factoralt (UXC) y glosa no se actualizan si tienen movimientos en documentod
+                ' Validación especial: factoralt (UXC) y glosa no se actualizan si tienen movimientos en documentod
                 If (col = "factoralt" OrElse col = "glosa") AndAlso TieneMovimientosUXC(emp, cod, oFlex) Then
                     errCount += 1
                     errMsg &= "[" & cod & "] tiene movimientos en documentod (factorInventario<>0). No se actualiza " & col & "." & vbCrLf

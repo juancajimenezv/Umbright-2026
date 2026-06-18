@@ -24,8 +24,11 @@ Public Module PermisosActProductos
             Dim dt As DataTable = clsGen.selectQuery("FlexLine", sql)
             For Each r As DataRow In dt.Rows
                 Dim emp As String = r("empresa").ToString().Trim()
-                Dim col As String = r("col").ToString().Trim().ToLower()
-                If Not Dim_Permisos.ContainsKey(emp) Then Dim_Permisos.Add(emp, New HashSet(Of String))
+                Dim col As String = r("col").ToString().Trim()
+                ' HashSet case-insensitive: los nombres reales de columnas en flexline.producto
+                ' mezclan mayusculas y minusculas (ej. AnalisisProducto17), pero los permisos
+                ' guardados pueden estar en cualquier case. Compararlos insensitive evita bugs.
+                If Not Dim_Permisos.ContainsKey(emp) Then Dim_Permisos.Add(emp, New HashSet(Of String)(StringComparer.OrdinalIgnoreCase))
                 Dim_Permisos(emp).Add(col)
             Next
         Catch

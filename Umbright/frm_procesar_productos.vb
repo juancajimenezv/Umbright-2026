@@ -759,6 +759,7 @@ Public Class frm_procesar_productos
     Public bu As String
     Public serie As String
     Public lote As String
+    Public tipo_proveedor As String = ""
 
     Dim dsInfo As New DataSet
 
@@ -899,7 +900,20 @@ Public Class frm_procesar_productos
                 Me.txt_cta_devoluciones.Text = "040101010200"
             End If
 
+            ' FASE 2: Pre-cargar cuentas sugeridas desde umb_asignacion_cuentas_log
+            PrecargarCuentasSugeridas()
 
+            ' Auto-marcar IMPUESTO DISTRIBUCION segun tipo_proveedor
+            ' INTERNACIONAL => marcar / LOCAL o vacio => desmarcar (consistencia)
+            Try
+                For i As Integer = 0 To check_impuestos.Items.Count - 1
+                    If check_impuestos.Items(i).ToString().ToUpper().Contains("DISTRIBUCION") Then
+                        check_impuestos.SetItemChecked(i, (Me.tipo_proveedor = "INTERNACIONAL"))
+                        Exit For
+                    End If
+                Next
+            Catch
+            End Try
 
         Catch ex As Exception
 
@@ -914,6 +928,43 @@ Public Class frm_procesar_productos
         End Try
 
 
+    End Sub
+
+    ' ================================================================
+    ' Pre-carga automatica de cuentas sugeridas desde el log
+    ' Lee de flexline.umb_asignacion_cuentas_log y rellena los 5 textboxes
+    ' Solo se ejecuta si los textboxes estan vacios (no pisa TECNO ni producto existente)
+    ' WITH (NOLOCK) para ver fila del trigger aunque su transaccion no haya commit-eado
+    ' ================================================================
+    Private Sub PrecargarCuentasSugeridas()
+        If no_solicitud <= 0 Then Exit Sub
+        If Me.txt_cta_compra.Text.Trim.Length > 0 Then Exit Sub
+
+        Dim cOtrans As New Transaccional.Conexion("Corporativo")
+        Try
+            cOtrans.open()
+            Dim sql As String = _
+                "SELECT TOP 1 l.sug_cta_compra, l.sug_cta_venta, l.sug_cta_costo, " & _
+                "             l.sug_cta_desc,   l.sug_cta_dev " & _
+                "FROM flexline.umb_asignacion_cuentas_log l WITH (NOLOCK) " & _
+                "INNER JOIN flexline.inv_producto_solicitud s WITH (NOLOCK) ON s.cod_solicitud = l.cod_solicitud " & _
+                "WHERE s.numero = " & no_solicitud & _
+                " AND s.empresa = '" & gs_empresa.Replace("'", "''") & "' " & _
+                " AND l.sug_cta_compra IS NOT NULL"
+
+            Dim dt As DataTable = cOtrans.Obtiene(sql)
+            If dt IsNot Nothing AndAlso dt.Rows.Count > 0 Then
+                Me.txt_cta_compra.Text       = dt.Rows(0).Item("sug_cta_compra").ToString()
+                Me.txt_cta_venta.Text        = dt.Rows(0).Item("sug_cta_venta").ToString()
+                Me.txt_cuenta_costo.Text     = dt.Rows(0).Item("sug_cta_costo").ToString()
+                Me.txt_cta_descuento.Text    = dt.Rows(0).Item("sug_cta_desc").ToString()
+                Me.txt_cta_devoluciones.Text = dt.Rows(0).Item("sug_cta_dev").ToString()
+            End If
+        Catch
+        Finally
+            cOtrans.close()
+            cOtrans = Nothing
+        End Try
     End Sub
 
     Private Sub frm_procesar_productos_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load

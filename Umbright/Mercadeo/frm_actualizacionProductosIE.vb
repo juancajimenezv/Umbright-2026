@@ -1,14 +1,14 @@
-ÔªøImports System.Data
+Imports System.Data
 Imports System.Windows.Forms
 Imports System.Collections.Generic
 
 ' =============================================================================
-' Actualizaci√≥n de Productos IE ‚Äî multi-empresa, multi-campo, escalable.
+' ActualizaciÛn de Productos IE ó multi-empresa, multi-campo, escalable.
 '
 ' Para AGREGAR un campo nuevo:
 '   1. Designer: agrega chk_<columna> + txt_<columna> dentro de grpCampos
-'   2. Aqu√≠ en Form_Load: agrega 1 l√≠nea a la lista Campos
-'   3. Listo. B√∫squeda, grid, UPDATE y log lo manejan autom√°ticamente.
+'   2. AquÌ en Form_Load: agrega 1 lÌnea a la lista Campos
+'   3. Listo. B˙squeda, grid, UPDATE y log lo manejan autom·ticamente.
 ' =============================================================================
 Public Class frm_actualizacionProductosIE
 
@@ -40,7 +40,7 @@ Public Class frm_actualizacionProductosIE
     Private timerBuscarDesc As Timer
     Private actualizandoCampos As Boolean = False
 
-    ' Mapeo columna ‚Üí tipo en GEN_TABCOD para validar existencia
+    ' Mapeo columna ? tipo en GEN_TABCOD para validar existencia
     Private ReadOnly TiposGenTabcod As New Dictionary(Of String, String) From {
         {"tipoproducto", "GEN_TIPOPRODUCTO"},
         {"familia", "PRODUCTO.FAMILIA"},
@@ -59,13 +59,13 @@ Public Class frm_actualizacionProductosIE
             New CampoDef With {.Columna = "familia", .Etiqueta = "FAMILIA", .ChkActualizar = chk_familia, .TxtNuevo = txt_familia},
             New CampoDef With {.Columna = "subfamilia", .Etiqueta = "PROVEEDOR", .ChkActualizar = chk_subfamilia, .TxtNuevo = txt_subfamilia},
             New CampoDef With {.Columna = "tipo", .Etiqueta = "TIPO", .ChkActualizar = chk_tipo, .TxtNuevo = txt_tipo},
-            New CampoDef With {.Columna = "subtipo", .Etiqueta = "SUBTIPO", .ChkActualizar = chk_subtipo, .TxtNuevo = txt_subtipo},
+            New CampoDef With {.Columna = "subtipo", .Etiqueta = "MARCA", .ChkActualizar = chk_subtipo, .TxtNuevo = txt_subtipo},
             New CampoDef With {.Columna = "factoralt", .Etiqueta = "UXC", .ChkActualizar = chk_factoralt, .TxtNuevo = txt_factoralt},
             New CampoDef With {.Columna = "precioventa", .Etiqueta = "PRECIO SUGERIDO", .ChkActualizar = chk_precioventa, .TxtNuevo = txt_precioventa},
             New CampoDef With {.Columna = "volumen", .Etiqueta = "MEDIDA EN LITROS", .ChkActualizar = chk_volumen, .TxtNuevo = txt_volumen},
             New CampoDef With {.Columna = "procedencia", .Etiqueta = "PROCEDENCIA", .ChkActualizar = chk_procedencia, .TxtNuevo = txt_procedencia},
             New CampoDef With {.Columna = "AnalisisProducto4", .Etiqueta = "ORIGEN", .ChkActualizar = chk_analisisproducto4, .TxtNuevo = txt_analisisproducto4},
-            New CampoDef With {.Columna = "glosa", .Etiqueta = "DESCRIPCI√ìN DE PRODUCTO", .ChkActualizar = chk_glosa, .TxtNuevo = txt_glosa},
+            New CampoDef With {.Columna = "glosa", .Etiqueta = "DESCRIPCI”N DE PRODUCTO", .ChkActualizar = chk_glosa, .TxtNuevo = txt_glosa},
             New CampoDef With {.Columna = "vigente", .Etiqueta = "ACTIVAR/INACTIVAR PRODUCTO", .ChkActualizar = chk_vigente, .TxtNuevo = txt_vigente},
             New CampoDef With {.Columna = "AnalisisProducto17", .Etiqueta = "BU", .ChkActualizar = chk_AnalisisProducto17, .TxtNuevo = cmb_AnalisisProducto17},
             New CampoDef With {.Columna = "cuentacompra", .Etiqueta = "CUENTA COMPRA", .ChkActualizar = chk_cuentacompra, .TxtNuevo = cmb_cuentacompra},
@@ -75,14 +75,14 @@ Public Class frm_actualizacionProductosIE
             New CampoDef With {.Columna = "cuentadev", .Etiqueta = "CUENTA DEVOLUCIONES", .ChkActualizar = chk_cuentadev, .TxtNuevo = cmb_cuentadev}
         }
 
-        ' Habilitar/deshabilitar TextBox seg√∫n check
+        ' Habilitar/deshabilitar TextBox seg˙n check
         For Each c As CampoDef In Campos
             Dim cAux As CampoDef = c
             AddHandler cAux.ChkActualizar.CheckedChanged,
                 Sub(s, ev) cAux.TxtNuevo.Enabled = cAux.ChkActualizar.Checked
         Next
 
-        ' Sombrear precioventa en amarillo p√°lido si valor >= 10,000 (se√±al visual)
+        ' Sombrear precioventa en amarillo p·lido si valor >= 10,000 (seÒal visual)
         AddHandler txt_precioventa.TextChanged,
             Sub(s, ev)
                 Dim v As Double = 0
@@ -95,7 +95,7 @@ Public Class frm_actualizacionProductosIE
                 End If
             End Sub
 
-        ' Sombrear volumen en amarillo p√°lido si valor >= 10 LTS
+        ' Sombrear volumen en amarillo p·lido si valor >= 10 LTS
         AddHandler txt_volumen.TextChanged,
             Sub(s, ev)
                 Dim v As Double = 0
@@ -123,7 +123,7 @@ Public Class frm_actualizacionProductosIE
         txtCodigo.Focus()
     End Sub
 
-    ' Construye las columnas del DataGridView din√°micamente
+    ' Construye las columnas del DataGridView din·micamente
     Private Sub ConfigurarGrid()
         dgvEmpresas.Columns.Clear()
 
@@ -176,7 +176,7 @@ Public Class frm_actualizacionProductosIE
             cod = cod.PadLeft(10, "0"c)
         End If
         If cod.Length = 0 Then
-            Estado("Ingresa un c√≥digo de producto.", True)
+            Estado("Ingresa un cÛdigo de producto.", True)
             txtCodigo.Focus()
             Return
         End If
@@ -224,7 +224,7 @@ Public Class frm_actualizacionProductosIE
                 valores.Add(emp)                            ' _empresa
                 For Each c As CampoDef In Campos
                     Dim v As String = row(c.Columna).ToString()
-                    valores.Add(If(v = "", "(vac√≠o)", v))
+                    valores.Add(If(v = "", "(vacÌo)", v))
                 Next
                 Dim idx As Integer = dgvEmpresas.Rows.Add(valores.ToArray())
                 If tienePermiso Then
@@ -245,7 +245,7 @@ Public Class frm_actualizacionProductosIE
 
             Dim sufijoSinPermiso As String = ""
             If sinPermiso.Count > 0 Then
-                sufijoSinPermiso = "  |  TAMBI√âN EXISTE SIN PERMISO en " & sinPermiso.Count & " empresa(s): " & String.Join(", ", sinPermiso.ToArray())
+                sufijoSinPermiso = "  |  TAMBI…N EXISTE SIN PERMISO en " & sinPermiso.Count & " empresa(s): " & String.Join(", ", sinPermiso.ToArray())
             End If
 
             If agregadas = 0 Then
@@ -366,7 +366,7 @@ Public Class frm_actualizacionProductosIE
         For Each c As CampoDef In Campos
             If c.ChkActualizar.Checked Then
                 If c.TxtNuevo.Text.Trim().Length = 0 Then
-                    Estado("El campo '" & c.Etiqueta & "' est√° marcado pero vac√≠o.", True)
+                    Estado("El campo '" & c.Etiqueta & "' est· marcado pero vacÌo.", True)
                     c.TxtNuevo.Focus()
                     Return
                 End If
@@ -381,19 +381,19 @@ Public Class frm_actualizacionProductosIE
         ' Resumen
         Dim resumen As String = "Producto: " & cod & vbCrLf & vbCrLf & "Campos nuevos:" & vbCrLf
         For Each c As CampoDef In campSel
-            resumen &= "  ‚Ä¢ " & c.Etiqueta & " = '" & c.TxtNuevo.Text.Trim() & "'" & vbCrLf
+            resumen &= "  ï " & c.Etiqueta & " = '" & c.TxtNuevo.Text.Trim() & "'" & vbCrLf
         Next
         resumen &= vbCrLf & "Empresas (" & filasSel.Count & "):" & vbCrLf
         For Each row As DataGridViewRow In filasSel
-            resumen &= "  ‚Ä¢ " & row.Cells(COL_EMP).Value.ToString() & vbCrLf
+            resumen &= "  ï " & row.Cells(COL_EMP).Value.ToString() & vbCrLf
         Next
-        resumen &= vbCrLf & "¬øEst√° seguro que desea guardar estos cambios?" & vbCrLf &
-                   "Esta acci√≥n se aplicar√° en BD y quedar√° registrada en el log."
+        resumen &= vbCrLf & "øEst· seguro que desea guardar estos cambios?" & vbCrLf &
+                   "Esta acciÛn se aplicar· en BD y quedar· registrada en el log."
 
         If MessageBox.Show(resumen, "Confirmar guardado",
                            MessageBoxButtons.YesNo, MessageBoxIcon.Question) <> DialogResult.Yes Then Return
 
-        ' Advertencias por valores altos (en ventana aparte, despu√©s de la confirmaci√≥n)
+        ' Advertencias por valores altos (en ventana aparte, despuÈs de la confirmaciÛn)
         For Each c As CampoDef In campSel
             Dim val As Double = 0
             Dim parsed As Boolean = Double.TryParse(c.TxtNuevo.Text.Trim().Replace(",", "."),
@@ -402,14 +402,14 @@ Public Class frm_actualizacionProductosIE
             If c.Columna = "precioventa" AndAlso parsed AndAlso val >= 10000 Then
                 If MessageBox.Show("El precio sugerido ingresado es " & Format(val, "N2") & ", mayor o igual a 10,000.00." & vbCrLf & vbCrLf &
                                    "Verifica que el precio sugerido sea correcto." & vbCrLf & vbCrLf &
-                                   "¬øDeseas continuar?",
+                                   "øDeseas continuar?",
                                    "Precio alto", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) <> DialogResult.Yes Then
                     Return
                 End If
             ElseIf c.Columna = "volumen" AndAlso parsed AndAlso val >= 10 Then
                 If MessageBox.Show("El volumen ingresado es " & Format(val, "N2") & " LTS, mayor o igual a 10 LTS." & vbCrLf & vbCrLf &
                                    "Verifica que el volumen sea correcto." & vbCrLf & vbCrLf &
-                                   "¬øDeseas continuar?",
+                                   "øDeseas continuar?",
                                    "Volumen alto", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) <> DialogResult.Yes Then
                     Return
                 End If
@@ -431,7 +431,7 @@ Public Class frm_actualizacionProductosIE
                 Dim emp As String = row.Cells(COL_EMP).Value.ToString()
                 For Each c As CampoDef In campSel
                     Dim valActual As String = row.Cells(c.Columna).Value.ToString()
-                    If valActual = "(vac√≠o)" Then valActual = ""
+                    If valActual = "(vacÌo)" Then valActual = ""
                     Dim valNuevo As String = c.TxtNuevo.Text.Trim()
                     If c.Columna.StartsWith("cuenta") Then
                         Dim sep As Integer = valNuevo.IndexOf(" - ")
@@ -443,14 +443,14 @@ Public Class frm_actualizacionProductosIE
                         Continue For
                     End If
 
-                    ' Validaci√≥n de permiso por empresa+columna
+                    ' ValidaciÛn de permiso por empresa+columna
                     If Not PermisosActProductos.TienePermiso(emp, c.Columna) Then
                         errCount += 1
                         errMsg &= "[" & emp & "/" & c.Columna & "] Sin permiso." & vbCrLf
                         Continue For
                     End If
 
-                    ' Validaci√≥n gen√©rica: el valor debe existir en GEN_TABCOD con el tipo correspondiente
+                    ' ValidaciÛn genÈrica: el valor debe existir en GEN_TABCOD con el tipo correspondiente
                     If TiposGenTabcod.ContainsKey(c.Columna) AndAlso
                        Not ExisteEnGenTabcod(emp, valNuevo, TiposGenTabcod(c.Columna), oFlex) Then
                         errCount += 1
@@ -458,15 +458,15 @@ Public Class frm_actualizacionProductosIE
                         Continue For
                     End If
 
-                    ' Validaci√≥n especial tipoproducto: si tiene IMP_DISTRIB ‚Üí ofrecer crear solicitud de aprobaci√≥n
+                    ' ValidaciÛn especial tipoproducto: si tiene IMP_DISTRIB ? ofrecer crear solicitud de aprobaciÛn
                     If c.Columna = "tipoproducto" AndAlso TieneImpuestoDistribucion(emp, valNuevo, oFlex) Then
                         Dim r As DialogResult = MessageBox.Show(
-                            "El cambio de tipo de producto a '" & valNuevo & "' es CR√çTICO porque tiene impuesto de distribuci√≥n (IMP_DISTRIB)." & vbCrLf & vbCrLf &
+                            "El cambio de tipo de producto a '" & valNuevo & "' es CRÕTICO porque tiene impuesto de distribuciÛn (IMP_DISTRIB)." & vbCrLf & vbCrLf &
                             "Producto: " & cod & "    Empresa: " & emp & vbCrLf &
                             "Tipo actual: " & valActual & "    Tipo solicitado: " & valNuevo & vbCrLf & vbCrLf &
-                            "¬øDesea crear una solicitud de modificaci√≥n para que Contabilidad la apruebe?" & vbCrLf &
-                            "(El cambio se aplicar√° autom√°ticamente al ser aprobada)",
-                            "Cambio cr√≠tico", MessageBoxButtons.YesNo, MessageBoxIcon.Warning)
+                            "øDesea crear una solicitud de modificaciÛn para que Contabilidad la apruebe?" & vbCrLf &
+                            "(El cambio se aplicar· autom·ticamente al ser aprobada)",
+                            "Cambio crÌtico", MessageBoxButtons.YesNo, MessageBoxIcon.Warning)
                         If r = DialogResult.Yes Then
                             If CrearSolicitudCambioTipoProducto(emp, cod, valActual, valNuevo, obs, oScm) Then
                                 solicitudCount += 1
@@ -481,7 +481,7 @@ Public Class frm_actualizacionProductosIE
                         Continue For
                     End If
 
-                    ' Validaci√≥n especial: cuentas contables deben existir en CON_CTACON para esa empresa
+                    ' ValidaciÛn especial: cuentas contables deben existir en CON_CTACON para esa empresa
                     If c.Columna.StartsWith("cuenta") Then
                         If Not ExisteCuenta(emp, valNuevo, oFlex) Then
                             errCount += 1
@@ -490,21 +490,21 @@ Public Class frm_actualizacionProductosIE
                         End If
                     End If
 
-                    ' Validaci√≥n especial: AnalisisProducto17 (BU) debe existir en SCM.dbo.BU_Empresa (cualquier empresa)
+                    ' ValidaciÛn especial: AnalisisProducto17 (BU) debe existir en la lista de BU (productos con analisisproducto17 'BU%')
                     If c.Columna = "AnalisisProducto17" Then
                         If Not ExisteBU(valNuevo, oScm) Then
                             errCount += 1
-                            errMsg &= "[" & emp & "/BU] '" & valNuevo & "' no existe en SCM.dbo.BU_Empresa." & vbCrLf
+                            errMsg &= "[" & emp & "/BU] '" & valNuevo & "' no existe en la lista de BU (flexline.producto 'BU%')." & vbCrLf
                             Continue For
                         End If
                     End If
 
-                    ' Validaci√≥n especial: vigente='N' (inactivar) requiere stock=0 en todas las bodegas
+                    ' ValidaciÛn especial: vigente='N' (inactivar) requiere stock=0 en todas las bodegas
                     If c.Columna = "vigente" Then
                         Dim valLimpio As String = valNuevo.Trim().ToUpper()
                         If valLimpio <> "S" AndAlso valLimpio <> "N" Then
                             errCount += 1
-                            errMsg &= "[" & emp & "/vigente] Valor inv√°lido '" & valNuevo & "'. Solo se acepta S o N." & vbCrLf
+                            errMsg &= "[" & emp & "/vigente] Valor inv·lido '" & valNuevo & "'. Solo se acepta S o N." & vbCrLf
                             Continue For
                         End If
                         valNuevo = valLimpio
@@ -518,7 +518,7 @@ Public Class frm_actualizacionProductosIE
                         End If
                     End If
 
-                    ' Validaci√≥n especial: factoralt (UXC) y glosa no se pueden actualizar si tiene movimientos en documentod
+                    ' ValidaciÛn especial: factoralt (UXC) y glosa no se pueden actualizar si tiene movimientos en documentod
                     If (c.Columna = "factoralt" OrElse c.Columna = "glosa") AndAlso TieneMovimientosUXC(emp, cod, oFlex) Then
                         errCount += 1
                         errMsg &= "[" & emp & "/" & c.Columna & "] " & cod & " tiene movimientos en documentod (factorInventario<>0). No se puede actualizar." & vbCrLf
@@ -561,7 +561,7 @@ Public Class frm_actualizacionProductosIE
             Dim res As String =
                 "Actualizaciones aplicadas: " & okCount & vbCrLf &
                 "Sin cambio (mismo valor): " & skipCount & vbCrLf &
-                "Solicitudes de aprobaci√≥n creadas: " & solicitudCount & vbCrLf &
+                "Solicitudes de aprobaciÛn creadas: " & solicitudCount & vbCrLf &
                 "Errores: " & errCount
             If errCount > 0 Then res &= vbCrLf & vbCrLf & errMsg
 
@@ -584,7 +584,7 @@ Public Class frm_actualizacionProductosIE
         lblEstado.ForeColor = If(esError, Drawing.Color.DarkRed, Drawing.Color.DarkBlue)
     End Sub
 
-    ' Gen√©rica: True si el valor existe en GEN_TABCOD para el tipo dado
+    ' GenÈrica: True si el valor existe en GEN_TABCOD para el tipo dado
     Private Function ExisteEnGenTabcod(emp As String, valor As String, tipo As String, oFlex As Transaccional.Conexion) As Boolean
         Try
             Dim sql As String =
@@ -599,7 +599,7 @@ Public Class frm_actualizacionProductosIE
         End Try
     End Function
 
-    ' True si el valor tiene impuesto de distribuci√≥n (existe en GEN_TABCOD con tipo=IMP_DISTRIB)
+    ' True si el valor tiene impuesto de distribuciÛn (existe en GEN_TABCOD con tipo=IMP_DISTRIB)
     Private Function TieneImpuestoDistribucion(emp As String, valor As String, oFlex As Transaccional.Conexion) As Boolean
         Try
             Dim sql As String =
@@ -610,12 +610,12 @@ Public Class frm_actualizacionProductosIE
             Dim dt As DataTable = oFlex.Obtiene(sql)
             Return (dt IsNot Nothing AndAlso dt.Rows.Count > 0)
         Catch
-            Return True  ' por seguridad, si falla la verificaci√≥n no permite actualizar
+            Return True  ' por seguridad, si falla la verificaciÛn no permite actualizar
         End Try
     End Function
 
     ' Inserta una solicitud de cambio de tipoproducto en scm.dbo.solicitud_cambio_tipoproducto
-    ' Retorna True si la inserci√≥n fue exitosa
+    ' Retorna True si la inserciÛn fue exitosa
     Private Function CrearSolicitudCambioTipoProducto(emp As String, cod As String, valActual As String, valNuevo As String, motivo As String, oScm As Transaccional.Conexion) As Boolean
         Try
             Dim glosa As String = ""
@@ -685,40 +685,40 @@ Public Class frm_actualizacionProductosIE
             Dim dt As DataTable = oFlex.Obtiene(sql)
             Return (dt IsNot Nothing AndAlso dt.Rows.Count > 0)
         Catch
-            Return True  ' por seguridad, si falla la verificaci√≥n no permite actualizar
+            Return True  ' por seguridad, si falla la verificaciÛn no permite actualizar
         End Try
     End Function
 
-    ' Carga TODOS los BU (AnalisisProducto17) distintos de SCM.dbo.BU_Empresa sin filtrar por empresa
+    ' Carga los BU (analisisproducto17) que empiezan con 'BU' desde flexline.producto (fuente unica de BU)
     Private Sub CargarValoresBU()
         cmb_AnalisisProducto17.Items.Clear()
-        Dim oScm As New Transaccional.Conexion("SCM")
+        Dim oFlex As New Transaccional.Conexion("FlexLine")
         Try
-            oScm.open()
+            oFlex.open()
             Dim sql As String = _
-                "SELECT DISTINCT AnalisisProducto17 " & _
-                "  FROM SCM.dbo.BU_Empresa " & _
-                " WHERE AnalisisProducto17 IS NOT NULL " & _
-                "   AND LTRIM(RTRIM(AnalisisProducto17)) <> '' " & _
-                " ORDER BY AnalisisProducto17"
-            Dim dt As DataTable = oScm.Obtiene(sql)
+                "SELECT DISTINCT analisisproducto17 " & _
+                "  FROM flexline.producto " & _
+                " WHERE analisisproducto17 LIKE 'BU%' " & _
+                " ORDER BY analisisproducto17"
+            Dim dt As DataTable = oFlex.Obtiene(sql)
             If dt IsNot Nothing Then
                 For Each r As DataRow In dt.Rows
-                    cmb_AnalisisProducto17.Items.Add(r("AnalisisProducto17").ToString().Trim())
+                    cmb_AnalisisProducto17.Items.Add(r("analisisproducto17").ToString().Trim())
                 Next
             End If
         Catch ex As Exception
         Finally
-            Try : oScm.close() : Catch : End Try
+            Try : oFlex.close() : Catch : End Try
         End Try
     End Sub
 
-    ' True si el valor (BU) existe en SCM.dbo.BU_Empresa (en cualquier fila, sin importar empresa)
+    ' True si el valor (BU) existe en flexline.producto y empieza con 'BU' (misma lista del desplegable)
     Private Function ExisteBU(valor As String, oScm As Transaccional.Conexion) As Boolean
         Try
             Dim sql As String = _
-                "SELECT TOP 1 1 FROM SCM.dbo.BU_Empresa " & _
-                " WHERE AnalisisProducto17 = '" & valor.Replace("'", "''") & "'"
+                "SELECT TOP 1 1 FROM BDFlexline.flexline.producto " & _
+                " WHERE analisisproducto17 = '" & valor.Replace("'", "''") & "' " & _
+                "   AND analisisproducto17 LIKE 'BU%'"
             Dim dt As DataTable = oScm.Obtiene(sql)
             Return (dt IsNot Nothing AndAlso dt.Rows.Count > 0)
         Catch

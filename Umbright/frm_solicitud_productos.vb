@@ -165,8 +165,12 @@ Public Class frm_solicitud_productos
     Friend WithEvents MenuAyuda As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents dgvProductoSimilares As System.Windows.Forms.DataGridView
     Friend WithEvents lblPropuesta As Label
-    Friend WithEvents utiliza_añada As CheckBox
-    Friend WithEvents utiliza_lote As CheckBox
+    Friend WithEvents utiliza_añada As ComboBox
+    Friend WithEvents lbl_utiliza_añada As System.Windows.Forms.Label
+    Friend WithEvents utiliza_lote As ComboBox
+    Friend WithEvents lbl_utiliza_lote As System.Windows.Forms.Label
+    Friend WithEvents cmb_tipo_proveedor As ComboBox
+    Friend WithEvents lbl_tipo_proveedor As System.Windows.Forms.Label
     Friend WithEvents CatalogosToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents MarcasToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents cmbCEPA As ComboBox
@@ -233,8 +237,12 @@ Public Class frm_solicitud_productos
         Me.lblCepa = New System.Windows.Forms.Label()
         Me.txtCEPA = New System.Windows.Forms.TextBox()
         Me.cmbCEPA = New System.Windows.Forms.ComboBox()
-        Me.utiliza_añada = New System.Windows.Forms.CheckBox()
-        Me.utiliza_lote = New System.Windows.Forms.CheckBox()
+        Me.utiliza_añada = New System.Windows.Forms.ComboBox()
+        Me.lbl_utiliza_añada = New System.Windows.Forms.Label()
+        Me.utiliza_lote = New System.Windows.Forms.ComboBox()
+        Me.lbl_utiliza_lote = New System.Windows.Forms.Label()
+        Me.cmb_tipo_proveedor = New System.Windows.Forms.ComboBox()
+        Me.lbl_tipo_proveedor = New System.Windows.Forms.Label()
         Me.afecta_iva = New System.Windows.Forms.CheckBox()
         Me.txt_precio_sugerido = New System.Windows.Forms.TextBox()
         Me.txt_unidades_x_caja = New System.Windows.Forms.TextBox()
@@ -560,7 +568,7 @@ Public Class frm_solicitud_productos
         'txt_codigo_producto
         '
         Me.txt_codigo_producto.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.txt_codigo_producto.Location = New System.Drawing.Point(96, 22)
+        Me.txt_codigo_producto.Location = New System.Drawing.Point(88, 22)
         Me.txt_codigo_producto.MaxLength = 10
         Me.txt_codigo_producto.Name = "txt_codigo_producto"
         Me.txt_codigo_producto.Size = New System.Drawing.Size(90, 20)
@@ -581,7 +589,7 @@ Public Class frm_solicitud_productos
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.txt_descripcion.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.txt_descripcion.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
-        Me.txt_descripcion.Location = New System.Drawing.Point(96, 46)
+        Me.txt_descripcion.Location = New System.Drawing.Point(88, 46)
         Me.txt_descripcion.MaxLength = 80
         Me.txt_descripcion.Name = "txt_descripcion"
         Me.txt_descripcion.Size = New System.Drawing.Size(298, 20)
@@ -590,7 +598,7 @@ Public Class frm_solicitud_productos
         'txtCodigoDistribuidora
         '
         Me.txtCodigoDistribuidora.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.txtCodigoDistribuidora.Location = New System.Drawing.Point(262, 68)
+        Me.txtCodigoDistribuidora.Location = New System.Drawing.Point(250, 68)
         Me.txtCodigoDistribuidora.MaxLength = 15
         Me.txtCodigoDistribuidora.Name = "txtCodigoDistribuidora"
         Me.txtCodigoDistribuidora.Size = New System.Drawing.Size(132, 20)
@@ -599,7 +607,7 @@ Public Class frm_solicitud_productos
         'txt_codigo_barras
         '
         Me.txt_codigo_barras.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.txt_codigo_barras.Location = New System.Drawing.Point(96, 70)
+        Me.txt_codigo_barras.Location = New System.Drawing.Point(88, 70)
         Me.txt_codigo_barras.MaxLength = 13
         Me.txt_codigo_barras.Name = "txt_codigo_barras"
         Me.txt_codigo_barras.Size = New System.Drawing.Size(90, 20)
@@ -620,7 +628,7 @@ Public Class frm_solicitud_productos
         'lbl_NombreCorto
         '
         Me.lbl_NombreCorto.AutoSize = True
-        Me.lbl_NombreCorto.Location = New System.Drawing.Point(192, 73)
+        Me.lbl_NombreCorto.Location = New System.Drawing.Point(180, 73)
         Me.lbl_NombreCorto.Name = "lbl_NombreCorto"
         Me.lbl_NombreCorto.Size = New System.Drawing.Size(75, 14)
         Me.lbl_NombreCorto.TabIndex = 2
@@ -877,7 +885,11 @@ Public Class frm_solicitud_productos
         Me.group_detalle.Controls.Add(Me.txtCEPA)
         Me.group_detalle.Controls.Add(Me.cmbCEPA)
         Me.group_detalle.Controls.Add(Me.utiliza_añada)
+        Me.group_detalle.Controls.Add(Me.lbl_utiliza_añada)
         Me.group_detalle.Controls.Add(Me.utiliza_lote)
+        Me.group_detalle.Controls.Add(Me.lbl_utiliza_lote)
+        Me.group_detalle.Controls.Add(Me.cmb_tipo_proveedor)
+        Me.group_detalle.Controls.Add(Me.lbl_tipo_proveedor)
         Me.group_detalle.Controls.Add(Me.afecta_iva)
         Me.group_detalle.Controls.Add(Me.txt_precio_sugerido)
         Me.group_detalle.Controls.Add(Me.txt_unidades_x_caja)
@@ -917,7 +929,7 @@ Public Class frm_solicitud_productos
         Me.group_detalle.Controls.Add(Me.cmb_dai)
         Me.group_detalle.Location = New System.Drawing.Point(7, 208)
         Me.group_detalle.Name = "group_detalle"
-        Me.group_detalle.Size = New System.Drawing.Size(872, 153)
+        Me.group_detalle.Size = New System.Drawing.Size(950, 153)
         Me.group_detalle.TabIndex = 3
         Me.group_detalle.TabStop = False
         '
@@ -980,7 +992,7 @@ Public Class frm_solicitud_productos
         'txtCEPA
         '
         Me.txtCEPA.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.txtCEPA.Location = New System.Drawing.Point(536, 102)
+        Me.txtCEPA.Location = New System.Drawing.Point(498, 102)
         Me.txtCEPA.Name = "txtCEPA"
         Me.txtCEPA.Size = New System.Drawing.Size(112, 20)
         Me.txtCEPA.TabIndex = 44
@@ -990,7 +1002,7 @@ Public Class frm_solicitud_productos
         '
         Me.cmbCEPA.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cmbCEPA.DropDownWidth = 150
-        Me.cmbCEPA.Location = New System.Drawing.Point(536, 101)
+        Me.cmbCEPA.Location = New System.Drawing.Point(498, 101)
         Me.cmbCEPA.Name = "cmbCEPA"
         Me.cmbCEPA.Size = New System.Drawing.Size(112, 22)
         Me.cmbCEPA.TabIndex = 45
@@ -999,31 +1011,60 @@ Public Class frm_solicitud_productos
         '
         'utiliza_añada
         '
-        Me.utiliza_añada.AutoSize = True
-        Me.utiliza_añada.CheckAlign = System.Drawing.ContentAlignment.MiddleRight
-        Me.utiliza_añada.Location = New System.Drawing.Point(703, 75)
+        Me.utiliza_añada.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.utiliza_añada.FormattingEnabled = True
+        Me.utiliza_añada.Items.AddRange(New Object() {"SI", "NO"})
+        Me.utiliza_añada.Location = New System.Drawing.Point(820, 73)
         Me.utiliza_añada.Name = "utiliza_añada"
-        Me.utiliza_añada.Size = New System.Drawing.Size(140, 18)
+        Me.utiliza_añada.Size = New System.Drawing.Size(45, 21)
         Me.utiliza_añada.TabIndex = 42
-        Me.utiliza_añada.Text = "Producto Utiliza AÑADA"
-        Me.utiliza_añada.UseVisualStyleBackColor = True
+        '
+        'lbl_utiliza_añada
+        '
+        Me.lbl_utiliza_añada.AutoSize = True
+        Me.lbl_utiliza_añada.Location = New System.Drawing.Point(685, 77)
+        Me.lbl_utiliza_añada.Name = "lbl_utiliza_añada"
+        Me.lbl_utiliza_añada.Text = "Producto Utiliza AÑADA"
         '
         'utiliza_lote
         '
-        Me.utiliza_lote.AutoSize = True
-        Me.utiliza_lote.CheckAlign = System.Drawing.ContentAlignment.MiddleRight
-        Me.utiliza_lote.Location = New System.Drawing.Point(715, 51)
+        Me.utiliza_lote.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.utiliza_lote.FormattingEnabled = True
+        Me.utiliza_lote.Items.AddRange(New Object() {"SI", "NO"})
+        Me.utiliza_lote.Location = New System.Drawing.Point(820, 49)
         Me.utiliza_lote.Name = "utiliza_lote"
-        Me.utiliza_lote.Size = New System.Drawing.Size(128, 18)
+        Me.utiliza_lote.Size = New System.Drawing.Size(45, 21)
         Me.utiliza_lote.TabIndex = 41
-        Me.utiliza_lote.Text = "Producto utiliza LOTE"
-        Me.utiliza_lote.UseVisualStyleBackColor = True
+        '
+        'lbl_utiliza_lote
+        '
+        Me.lbl_utiliza_lote.AutoSize = True
+        Me.lbl_utiliza_lote.Location = New System.Drawing.Point(685, 53)
+        Me.lbl_utiliza_lote.Name = "lbl_utiliza_lote"
+        Me.lbl_utiliza_lote.Text = "Producto utiliza LOTE"
+        '
+        'cmb_tipo_proveedor
+        '
+        Me.cmb_tipo_proveedor.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cmb_tipo_proveedor.FormattingEnabled = True
+        Me.cmb_tipo_proveedor.Items.AddRange(New Object() {"LOCAL", "INTERNACIONAL"})
+        Me.cmb_tipo_proveedor.Location = New System.Drawing.Point(750, 97)
+        Me.cmb_tipo_proveedor.Name = "cmb_tipo_proveedor"
+        Me.cmb_tipo_proveedor.Size = New System.Drawing.Size(130, 21)
+        Me.cmb_tipo_proveedor.TabIndex = 43
+        '
+        'lbl_tipo_proveedor
+        '
+        Me.lbl_tipo_proveedor.AutoSize = True
+        Me.lbl_tipo_proveedor.Location = New System.Drawing.Point(635, 101)
+        Me.lbl_tipo_proveedor.Name = "lbl_tipo_proveedor"
+        Me.lbl_tipo_proveedor.Text = "Tipo de Proveedor"
         '
         'afecta_iva
         '
         Me.afecta_iva.AutoSize = True
         Me.afecta_iva.CheckAlign = System.Drawing.ContentAlignment.MiddleRight
-        Me.afecta_iva.Location = New System.Drawing.Point(689, 26)
+        Me.afecta_iva.Location = New System.Drawing.Point(710, 26)
         Me.afecta_iva.Name = "afecta_iva"
         Me.afecta_iva.Size = New System.Drawing.Size(154, 18)
         Me.afecta_iva.TabIndex = 40
@@ -1033,7 +1074,7 @@ Public Class frm_solicitud_productos
         'txt_precio_sugerido
         '
         Me.txt_precio_sugerido.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.txt_precio_sugerido.Location = New System.Drawing.Point(536, 73)
+        Me.txt_precio_sugerido.Location = New System.Drawing.Point(555, 73)
         Me.txt_precio_sugerido.Name = "txt_precio_sugerido"
         Me.txt_precio_sugerido.Size = New System.Drawing.Size(112, 20)
         Me.txt_precio_sugerido.TabIndex = 37
@@ -1051,7 +1092,7 @@ Public Class frm_solicitud_productos
         'txt_medida_litros
         '
         Me.txt_medida_litros.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.txt_medida_litros.Location = New System.Drawing.Point(536, 23)
+        Me.txt_medida_litros.Location = New System.Drawing.Point(555, 23)
         Me.txt_medida_litros.Name = "txt_medida_litros"
         Me.txt_medida_litros.Size = New System.Drawing.Size(112, 20)
         Me.txt_medida_litros.TabIndex = 32
@@ -1060,7 +1101,7 @@ Public Class frm_solicitud_productos
         'Label19
         '
         Me.Label19.AutoSize = True
-        Me.Label19.Location = New System.Drawing.Point(432, 26)
+        Me.Label19.Location = New System.Drawing.Point(427, 26)
         Me.Label19.Name = "Label19"
         Me.Label19.Size = New System.Drawing.Size(79, 14)
         Me.Label19.TabIndex = 31
@@ -1078,7 +1119,7 @@ Public Class frm_solicitud_productos
         'Label21
         '
         Me.Label21.AutoSize = True
-        Me.Label21.Location = New System.Drawing.Point(432, 75)
+        Me.Label21.Location = New System.Drawing.Point(427, 75)
         Me.Label21.Name = "Label21"
         Me.Label21.Size = New System.Drawing.Size(83, 14)
         Me.Label21.TabIndex = 36
@@ -1123,7 +1164,7 @@ Public Class frm_solicitud_productos
         'Label20
         '
         Me.Label20.AutoSize = True
-        Me.Label20.Location = New System.Drawing.Point(432, 48)
+        Me.Label20.Location = New System.Drawing.Point(427, 48)
         Me.Label20.Name = "Label20"
         Me.Label20.Size = New System.Drawing.Size(35, 14)
         Me.Label20.TabIndex = 33
@@ -1337,7 +1378,7 @@ Public Class frm_solicitud_productos
         'txt_dai
         '
         Me.txt_dai.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.txt_dai.Location = New System.Drawing.Point(536, 46)
+        Me.txt_dai.Location = New System.Drawing.Point(555, 46)
         Me.txt_dai.Name = "txt_dai"
         Me.txt_dai.Size = New System.Drawing.Size(112, 20)
         Me.txt_dai.TabIndex = 34
@@ -1348,7 +1389,7 @@ Public Class frm_solicitud_productos
         Me.cmb_dai.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cmb_dai.DropDownWidth = 150
         Me.cmb_dai.IntegralHeight = False
-        Me.cmb_dai.Location = New System.Drawing.Point(536, 45)
+        Me.cmb_dai.Location = New System.Drawing.Point(555, 45)
         Me.cmb_dai.Name = "cmb_dai"
         Me.cmb_dai.Size = New System.Drawing.Size(112, 22)
         Me.cmb_dai.TabIndex = 35
@@ -1686,7 +1727,7 @@ Public Class frm_solicitud_productos
         '
         Me.AutoScaleBaseSize = New System.Drawing.Size(5, 13)
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(233, Byte), Integer), CType(CType(234, Byte), Integer), CType(CType(204, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(892, 712)
+        Me.ClientSize = New System.Drawing.Size(960, 712)
         Me.Controls.Add(Me.TabControl1)
         Me.Controls.Add(Me.MenuStrip1)
         Me.Font = New System.Drawing.Font("Arial", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -2232,17 +2273,45 @@ Public Class frm_solicitud_productos
 
 
             If drSeleccion.Item("serie").ToString = "S" Then
-                Me.utiliza_añada.CheckState = CheckState.Checked
+                Me.utiliza_añada.SelectedItem = "SI"
+            ElseIf drSeleccion.Item("serie").ToString = "N" Then
+                Me.utiliza_añada.SelectedItem = "NO"
             Else
-                Me.utiliza_añada.CheckState = CheckState.Unchecked
+                Me.utiliza_añada.SelectedIndex = -1
             End If
 
 
             If drSeleccion.Item("lote").ToString = "S" Then
-                Me.utiliza_lote.CheckState = CheckState.Checked
+                Me.utiliza_lote.SelectedItem = "SI"
+            ElseIf drSeleccion.Item("lote").ToString = "N" Then
+                Me.utiliza_lote.SelectedItem = "NO"
             Else
-                Me.utiliza_lote.CheckState = CheckState.Unchecked
+                Me.utiliza_lote.SelectedIndex = -1
             End If
+
+            ' Cargar tipo_proveedor desde BD (separado del SP de carga, lectura simple)
+            ' Si esta NULL en BD, se trata como LOCAL (default conservador)
+            Try
+                Dim cOtransTP As New Transaccional.Conexion("Corporativo")
+                cOtransTP.open()
+                Dim sqlTP As String = "SELECT tipo_proveedor FROM flexline.inv_producto_solicitud WITH (NOLOCK) WHERE cod_solicitud = " & ncod_solicitud
+                Dim dtTP As DataTable = cOtransTP.Obtiene(sqlTP)
+                If dtTP IsNot Nothing AndAlso dtTP.Rows.Count > 0 Then
+                    Dim valTP As String = If(IsDBNull(dtTP.Rows(0)(0)), "", dtTP.Rows(0)(0).ToString().Trim().ToUpper())
+                    If valTP = "INTERNACIONAL" Then
+                        Me.cmb_tipo_proveedor.SelectedItem = "INTERNACIONAL"
+                    ElseIf valTP = "LOCAL" Then
+                        Me.cmb_tipo_proveedor.SelectedItem = "LOCAL"
+                    Else
+                        ' NULL o vacio => no seleccionar nada (queda en blanco)
+                        ' No se asume LOCAL porque el tipo_producto podria no requerirlo.
+                        Me.cmb_tipo_proveedor.SelectedIndex = -1
+                    End If
+                End If
+                cOtransTP.close()
+            Catch
+                ' Si la columna no existe todavia (ALTER TABLE pendiente), no romper
+            End Try
 
             Try
                 If drSeleccion.Item("cepa").ToString.Length > 0 Then
@@ -2506,6 +2575,9 @@ Public Class frm_solicitud_productos
         'cmbBU.Text = String.Empty
         'cmbBU.Text = ""
         afecta_iva.CheckState = CheckState.Checked
+        Me.utiliza_lote.SelectedIndex = -1
+        Me.utiliza_añada.SelectedIndex = -1
+        Me.cmb_tipo_proveedor.SelectedIndex = -1
 
         proceso_inicial = False
         Me.txtCEPA.Visible = False
@@ -2601,6 +2673,9 @@ Public Class frm_solicitud_productos
         cmbBU.Text = String.Empty
         cmbBU.Text = ""
         afecta_iva.CheckState = CheckState.Checked
+        Me.utiliza_lote.SelectedIndex = -1
+        Me.utiliza_añada.SelectedIndex = -1
+        Me.cmb_tipo_proveedor.SelectedIndex = -1
 
         proceso_inicial = False
         Me.txtCEPA.Visible = False
@@ -2760,8 +2835,8 @@ Public Class frm_solicitud_productos
             txt_unidad_medida_alt.Text & "', '" &
             IIf(afecta_iva.Checked = True, "S'", "N'") &
             ",'" & Me.cmbBU.SelectedValue.ToString & "','" &
-            IIf(Me.utiliza_añada.Checked = True, "S", "N") & "','" &
-            IIf(Me.utiliza_lote.Checked = True, "S", "N") & "'," &
+            IIf(Me.utiliza_añada.SelectedItem IsNot Nothing AndAlso Me.utiliza_añada.SelectedItem.ToString() = "SI", "S", "N") & "','" &
+            IIf(Me.utiliza_lote.SelectedItem IsNot Nothing AndAlso Me.utiliza_lote.SelectedItem.ToString() = "SI", "S", "N") & "'," &
             IIf(Me.cmbCEPA.Visible = True, "'" & Me.txtCEPA.Text & "'", "''")
 
 
@@ -2777,6 +2852,15 @@ Public Class frm_solicitud_productos
                 dt = cOtrans.Obtiene(ls_sql)
                 'icorrelativo = dt.Rows(0).Item("newid").ToString
                 icorrelativo = dt.Rows(0).Item("cod_solicitud").ToString
+
+                ' Guardar tipo_proveedor por separado (no se modifico el SP, UPDATE directo)
+                Try
+                    If Me.cmb_tipo_proveedor.SelectedItem IsNot Nothing Then
+                        Dim sqlTP As String = "UPDATE flexline.inv_producto_solicitud SET tipo_proveedor = '" & Me.cmb_tipo_proveedor.SelectedItem.ToString() & "' WHERE cod_solicitud = " & icorrelativo
+                        cOtrans.Actualiza(sqlTP)
+                    End If
+                Catch
+                End Try
 
                 Try
                     If icorrelativo > 0 And lexito Then
@@ -2930,8 +3014,8 @@ Public Class frm_solicitud_productos
                 ",'" & gs_usuario & "','" & cmb_solicitante.SelectedValue.ToString & "','" &
                 txt_observaciones.Text & "', '" & cmb_sub_tipo.SelectedValue.ToString & "', '" & cmb_unidad_medida_alt.SelectedValue.ToString & "', '" &
                 IIf(afecta_iva.Checked = True, "S", "N") & "', '" &
-                IIf(Me.utiliza_añada.Checked = True, "S", "N") & "', '" &
-                IIf(Me.utiliza_lote.Checked = True, "S", "N") & "'" &
+                IIf(Me.utiliza_añada.SelectedItem IsNot Nothing AndAlso Me.utiliza_añada.SelectedItem.ToString() = "SI", "S", "N") & "', '" &
+                IIf(Me.utiliza_lote.SelectedItem IsNot Nothing AndAlso Me.utiliza_lote.SelectedItem.ToString() = "SI", "S", "N") & "'" &
                 IIf(Me.cmbCEPA.Visible = True, "'" & Me.txtCEPA.Text & "'", "''")
 
             cOtrans.Escribir_Log(ls_sql)
@@ -2939,6 +3023,15 @@ Public Class frm_solicitud_productos
             retorna = cOtrans.Codigo_error
 
             icorrelativo = ncod_solicitud
+
+            ' Guardar tipo_proveedor por separado (no se modifico el SP, UPDATE directo)
+            Try
+                If Me.cmb_tipo_proveedor.SelectedItem IsNot Nothing Then
+                    Dim sqlTP As String = "UPDATE flexline.inv_producto_solicitud SET tipo_proveedor = '" & Me.cmb_tipo_proveedor.SelectedItem.ToString() & "' WHERE cod_solicitud = " & icorrelativo
+                    cOtrans.Actualiza(sqlTP)
+                End If
+            Catch
+            End Try
 
             If icorrelativo > 0 And lexito Then
                 Guardar_Listas_Precios(icorrelativo, cOtrans)
@@ -3518,6 +3611,31 @@ Public Class frm_solicitud_productos
                 Return False
             End If
 
+            If Me.utiliza_lote.SelectedItem Is Nothing Then
+                MessageBox.Show("Debe seleccionar si el producto utiliza LOTE (SI/NO).", "Información", MessageBoxButtons.OK, MessageBoxIcon.Information)
+                Me.utiliza_lote.Focus()
+                Return False
+            End If
+
+            If Me.utiliza_añada.SelectedItem Is Nothing Then
+                MessageBox.Show("Debe seleccionar si el producto utiliza AÑADA (SI/NO).", "Información", MessageBoxButtons.OK, MessageBoxIcon.Information)
+                Me.utiliza_añada.Focus()
+                Return False
+            End If
+
+            If Val(Me.txt_unidades_x_caja.Text) <= 0 Then
+                MessageBox.Show("Debe ingresar Unidades x Caja (valor mayor a 0).", "Información", MessageBoxButtons.OK, MessageBoxIcon.Information)
+                Me.txt_unidades_x_caja.Focus()
+                Return False
+            End If
+
+            If Val(Me.txt_unidades_x_caja.Text) > 99 Then
+                If MessageBox.Show("El valor de Unidades x Caja es mayor a 99 (" & Me.txt_unidades_x_caja.Text & "). ¿Desea continuar?", "Advertencia", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) = DialogResult.No Then
+                    Me.txt_unidades_x_caja.Focus()
+                    Return False
+                End If
+            End If
+
 
 
         Catch ex As Exception
@@ -3640,7 +3758,144 @@ Public Class frm_solicitud_productos
     End Sub
 
 
+    ' Replica el producto DIUVA en VINOTECA cuando se procesa exitosamente.
+    ' Recibe cod_solicitud por parametro porque Ingreso_Nuevo puede haber reseteado el form.
+    ' Lee TODO desde BD para no depender de variables del form (gs_empresa, cmb_familia, etc.)
+    Private Sub ReplicarProductoEnVinoteca(codSolicitudParam As Integer)
+        Try
+            If codSolicitudParam <= 0 Then Return
+
+            ' Leer todo desde la BD usando cod_solicitud
+            Dim empresaSol As String = ""
+            Dim familiaSol As String = ""
+            Dim usuarioApr As String = ""
+            Dim codFlexAsignado As String = ""
+            Try
+                Dim cnCorp As New Transaccional.Conexion("Corporativo")
+                cnCorp.open()
+                Dim sqlGet As String = "SELECT empresa, familia, usuario_aprobo, cod_flex FROM flexline.inv_producto_solicitud WHERE cod_solicitud = " & codSolicitudParam
+                Dim dt As DataTable = cnCorp.Obtiene(sqlGet)
+                If dt IsNot Nothing AndAlso dt.Rows.Count > 0 Then
+                    If Not IsDBNull(dt.Rows(0)("empresa")) Then empresaSol = dt.Rows(0)("empresa").ToString().Trim()
+                    If Not IsDBNull(dt.Rows(0)("familia")) Then familiaSol = dt.Rows(0)("familia").ToString().Trim()
+                    If Not IsDBNull(dt.Rows(0)("usuario_aprobo")) Then usuarioApr = dt.Rows(0)("usuario_aprobo").ToString().Trim()
+                    If Not IsDBNull(dt.Rows(0)("cod_flex")) Then codFlexAsignado = dt.Rows(0)("cod_flex").ToString().Trim()
+                End If
+                cnCorp.close()
+            Catch
+                Return
+            End Try
+
+            ' Filtros (todos usando datos leidos de BD, no del form)
+            ' Replica a VINOTECA para TODAS las familias siempre que el producto
+            ' haya sido creado (cod_flex asignado) en DIUVA y lo apruebe pplamport
+            If UCase(empresaSol) <> "DIUVA" Then Return
+            If codFlexAsignado = "" Then Return
+            If UCase(usuarioApr) <> "PPLAMPORT" Then Return
+
+            ' Cumple condiciones: replicar
+            Dim resultado As String = ""
+            Dim cnFlex As New Transaccional.Conexion("FlexLine")
+            Try
+                cnFlex.open()
+                Dim sqlSp As String = "EXEC flexline.pa_ins_um_producto_interempresas 'DIUVA', '" & codFlexAsignado & "', 'VINOTECA', 'pplamport'"
+                cnFlex.Actualiza(sqlSp)
+                resultado = "OK " & DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss") & " (SP replico - solo Cuentadesc/Cuentadev de DIUVA)"
+                cnFlex.close()
+            Catch ex As Exception
+                resultado = "ERROR: " & ex.Message.Substring(0, Math.Min(220, ex.Message.Length))
+            End Try
+
+            ' Loguear
+            Try
+                Dim cnLog As New Transaccional.Conexion("Corporativo")
+                cnLog.open()
+                Dim sqlLog As String = "UPDATE flexline.umb_asignacion_cuentas_log SET replicado_vinoteca='" & resultado.Replace("'", "''") & "' WHERE cod_solicitud=" & codSolicitudParam
+                cnLog.Actualiza(sqlLog)
+                cnLog.close()
+            Catch
+            End Try
+
+            ' Si fallo, notificar a Juan
+            If resultado.StartsWith("ERROR") Then
+                Try
+                    EnviarCorreoSolicitudManual(codSolicitudParam, "", empresaSol, familiaSol, "", "Replicacion DIUVA->VINOTECA fallo: " & resultado)
+                Catch
+                End Try
+            End If
+        Catch
+        End Try
+    End Sub
+
+    ' Genera el nombre de receta para productos compuestos/packs en auto-proceso.
+    ' Algoritmo:
+    '   1. Toma la descripcion del producto, la pasa a MAYUSCULAS y reemplaza espacios por "_"
+    '   2. Construye el candidato base: "R_" + tantos chars como quepan en 20
+    '   3. Si ya existe ese nombre en flexline.prodReceta para la empresa actual,
+    '      agrega un numero incremental al final (2, 3, 4, ..., 99, 100, ...)
+    '   4. El numero siempre debe caber entero. Si crece, se recorta la descripcion
+    '      por la derecha para liberar el espacio necesario.
+    ' Maximo 20 caracteres (MaxLength de txt_nombre_receta y varchar(20) en BD).
+    ' Ejemplos:
+    '   "VT2690 ALIMENTOS Y BEBIDAS PARA REUNION" -> "R_VT2690_ALIMENTOS_Y"  (1ra vez)
+    '   (si ya existe)                            -> "R_VT2690_ALIMENTOS_2"  (n=2)
+    '   (si ya hasta n=9)                         -> "R_VT2690_ALIMENTOS10"  (n=10, sin separador)
+    '   (si ya hasta n=99)                        -> "R_VT2690_ALIMENTO100"  (n=100, recorta 1 char mas)
+    Private Function GenerarNombreReceta(descripcion As String) As String
+        Const MAX_LEN As Integer = 20
+        Const PREFIX As String = "R_"
+
+        Try
+            ' 1) Normalizar descripcion: trim + UPPER + espacios -> "_"
+            Dim desc As String = If(descripcion, "").Trim().ToUpper().Replace(" ", "_")
+            If desc.Length = 0 Then Return PREFIX
+
+            ' 2) Candidato base (sin numero)
+            Dim maxDescLen As Integer = MAX_LEN - PREFIX.Length
+            Dim descTrunc As String = If(desc.Length > maxDescLen, _
+                                         desc.Substring(0, maxDescLen), desc)
+            Dim candidato As String = PREFIX & descTrunc
+
+            ' 3) Si el base no existe, listo
+            If Not RecetaExiste(candidato) Then Return candidato
+
+            ' 4) Buscar siguiente numero disponible (2..9999)
+            For n As Integer = 2 To 9999
+                Dim nStr As String = n.ToString()
+                Dim descLen As Integer = MAX_LEN - PREFIX.Length - nStr.Length
+                If descLen < 0 Then Exit For ' Sanity check
+                Dim descN As String = If(desc.Length > descLen, _
+                                          desc.Substring(0, descLen), desc)
+                Dim cand As String = PREFIX & descN & nStr
+                If Not RecetaExiste(cand) Then Return cand
+            Next
+
+            ' Si llegamos aqui (>9999 duplicados, caso extremo) devolvemos el base.
+            ' La validacion downstream rechazara el duplicado -> solicitud queda manual.
+            Return candidato
+        Catch
+            Return PREFIX
+        End Try
+    End Function
+
+    ' Helper: consulta si una receta ya existe en flexline.prodReceta para la empresa actual.
+    ' Usa el mismo SP que la validacion del form: pa_var_um_ProdReceta.
+    ' Fail-open: si la query falla (red/BD), devuelve False (no bloquea generacion).
+    Private Function RecetaExiste(nombreReceta As String) As Boolean
+        Try
+            Dim clsGen As New ClasesGenerales.General
+            Dim sql As String = "pa_var_um_ProdReceta '" & _
+                gs_empresa.Replace("'", "''") & "','" & _
+                nombreReceta.Replace("'", "''") & "'"
+            Dim dt As DataTable = clsGen.selectQuery("FlexLine", sql)
+            Return (dt IsNot Nothing AndAlso dt.Rows.Count > 0)
+        Catch
+            Return False
+        End Try
+    End Function
+
     Private Sub procesarProducto(ByRef pbVisible As Boolean)
+        Dim codSolGuardado As Integer = ncod_solicitud
         Try
 
 
@@ -3662,11 +3917,36 @@ Public Class frm_solicitud_productos
             frm_procesar.bu = Me.cmbBU.Text
 
 
-            frm_procesar.serie = If(Me.utiliza_añada.Checked = True, "S", "N")
-            frm_procesar.lote = If(Me.utiliza_lote.Checked = True, "S", "N")
+            frm_procesar.serie = If(Me.utiliza_añada.SelectedItem IsNot Nothing AndAlso Me.utiliza_añada.SelectedItem.ToString() = "SI", "S", "N")
+            frm_procesar.lote = If(Me.utiliza_lote.SelectedItem IsNot Nothing AndAlso Me.utiliza_lote.SelectedItem.ToString() = "SI", "S", "N")
+
+            ' Pasar tipo_proveedor a frm_procesar para auto-marcar IMPUESTO DISTRIBUCION
+            ' Si el usuario no eligio tipo_proveedor, se pasa vacio (no se asume LOCAL).
+            ' inicializarForma evalua (tipo_proveedor = "INTERNACIONAL") para marcar IMP. DISTRIB.,
+            ' asi que un valor vacio o LOCAL deja el checkbox desmarcado igual (comportamiento correcto).
+            frm_procesar.tipo_proveedor = If(Me.cmb_tipo_proveedor.SelectedItem IsNot Nothing, Me.cmb_tipo_proveedor.SelectedItem.ToString(), "")
 
 
             If pbVisible Then
+                ' Caso MANUAL: precargar el Nombre de Receta antes de mostrar el dialogo,
+                ' igual que se precargan las cuentas. Si la solicitud lleva receta/pack,
+                ' el campo txt_nombre_receta queda lleno (y visible via inicializarForma en el
+                ' Load del form) para que el usuario solo de "Procesar". No se cambia nada mas.
+                ' inicializarForma() solo hace visible el campo, NO sobrescribe el .Text,
+                ' por lo que el valor asignado aqui (antes del ShowDialog) se conserva.
+                ' Formato: R_<numero>_<XX>_<YY>  (mismo helper que el path automatico).
+                ' Si no tiene packs, no se asigna nada (queda en blanco) y todo sigue igual.
+                Dim tienePackManual As Boolean = False
+                Try
+                    tienePackManual = (Ods.Tables("productos_packs") IsNot Nothing _
+                                       AndAlso Ods.Tables("productos_packs").Rows.Count > 0)
+                Catch
+                End Try
+
+                If tienePackManual Then
+                    frm_procesar.txt_nombre_receta.Text = GenerarNombreReceta(Me.txt_descripcion.Text)
+                End If
+
                 If frm_procesar.ShowDialog = DialogResult.OK Then
                     Me.txt_codigo_producto.Text = frm_procesar.txt_codigo_producto.Text
                     Dim cOtrans As New Transaccional.Conexion("Corporativo")
@@ -3692,7 +3972,24 @@ Public Class frm_solicitud_productos
             Else
                 '(c) 20200916
                 'Creacion Automatica
-                frm_procesar.txt_nombre_receta.Text = "R_" & Me.txt_descripcion.Text.Replace(" ", "_").Substring(0, 20)
+
+                ' Solo asignar nombre de receta cuando la solicitud lleva receta/pack.
+                ' inicializarForma() prende el indicador "Compuesto" (idx 7) si hay packs,
+                ' y pasaValidaciones solo exige nombre de receta cuando ese indicador esta marcado.
+                ' Formato: R_<numero>_<XX>_<YY>
+                '   Ej: "VT2690 ALIMENTOS Y BEBIDAS PARA REUNION" -> "R_2690_AL_BE"
+                ' Si no tiene packs, no se asigna nada (queda en blanco) y todo sigue igual.
+                Dim tienePack As Boolean = False
+                Try
+                    tienePack = (Ods.Tables("productos_packs") IsNot Nothing _
+                                 AndAlso Ods.Tables("productos_packs").Rows.Count > 0)
+                Catch
+                End Try
+
+                If tienePack Then
+                    frm_procesar.txt_nombre_receta.Text = GenerarNombreReceta(Me.txt_descripcion.Text)
+                End If
+
                 frm_procesar.inicializarForma()
                 frm_procesar.ProcesarSolicitud()
                 Me.txt_codigo_producto.Text = frm_procesar.txt_codigo_producto.Text
@@ -3717,7 +4014,11 @@ Public Class frm_solicitud_productos
 
             End If
 
-
+            ' Replicar a VINOTECA si aplica (usa el codSolicitud guardado al inicio)
+            Try
+                ReplicarProductoEnVinoteca(codSolGuardado)
+            Catch
+            End Try
 
             frm_procesar.Dispose()
 
@@ -3748,7 +4049,119 @@ Public Class frm_solicitud_productos
         End If
     End Sub
 
+    ' Envia correo de aviso cuando una solicitud aprobada queda pendiente de revision manual.
+    ' Tambien registra el envio en umb_asignacion_cuentas_log (columnas correo_enviado_a, correo_fecha, motivo_manual).
+    Private Sub EnviarCorreoSolicitudManual(codSolicitud As Integer, numero As String, empresa As String, familia As String, descripcion As String, motivo As String)
+        Dim destinatario As String = "juan.jimenez@umbralcorp.com"
+        Dim envioOK As Boolean = False
+        Try
+            Dim Message As New System.Net.Mail.MailMessage()
+            Dim SMTP1 As New System.Net.Mail.SmtpClient()
+            Dim clsGen As New ClasesGenerales.General
+
+            SMTP1.Port = 587
+            SMTP1.Host = "smtp.office365.com"
+            SMTP1.EnableSsl = True
+
+            Dim dtCred As DataTable = clsGen.selectQuery("SCM", "pa_var_um_credenciales_notificacion")
+            SMTP1.Credentials = New Net.NetworkCredential(dtCred.Rows(0).Item("mail").ToString(), dtCred.Rows(0).Item("pwd").ToString())
+
+            Message.From = New System.Net.Mail.MailAddress("notificacion@umbralcorp.com", "Notificaciones Umbral", System.Text.Encoding.UTF8)
+            Message.[To].Add(destinatario)
+            Message.Subject = "[Umbright] Solicitud pendiente de revision manual - #" & numero
+            Message.SubjectEncoding = System.Text.Encoding.UTF8
+            Message.BodyEncoding = System.Text.Encoding.UTF8
+            Message.IsBodyHtml = True
+            Message.Priority = System.Net.Mail.MailPriority.Normal
+
+            Dim sBody As String = "<html><body style='font-family:Arial, sans-serif;'>"
+            sBody &= "<p>Una solicitud aprobada quedo <b>pendiente de revision manual</b> antes de ser creada en FlexLine.</p>"
+            sBody &= "<p>Por favor revisa y procesa cuando sea posible.</p>"
+            sBody &= "<table style='border-collapse:collapse; border:1px solid #ccc;'>"
+            sBody &= "<tr style='background:#f0f0f0;'><td style='padding:6px;'><b>Numero:</b></td><td style='padding:6px;'>" & numero & "</td></tr>"
+            sBody &= "<tr><td style='padding:6px;'><b>Empresa:</b></td><td style='padding:6px;'>" & empresa & "</td></tr>"
+            sBody &= "<tr style='background:#f0f0f0;'><td style='padding:6px;'><b>Familia:</b></td><td style='padding:6px;'>" & familia & "</td></tr>"
+            sBody &= "<tr><td style='padding:6px;'><b>Producto:</b></td><td style='padding:6px;'>" & descripcion & "</td></tr>"
+            sBody &= "<tr style='background:#f0f0f0;'><td style='padding:6px;'><b>Aprobado por:</b></td><td style='padding:6px;'>" & gs_usuario & "</td></tr>"
+            sBody &= "<tr><td style='padding:6px;'><b>Fecha:</b></td><td style='padding:6px;'>" & DateTime.Now.ToString("dd/MM/yyyy HH:mm") & "</td></tr>"
+            sBody &= "<tr style='background:#fff4e5;'><td style='padding:6px;'><b>Motivo:</b></td><td style='padding:6px;'>" & motivo & "</td></tr>"
+            sBody &= "</table>"
+            sBody &= "<p style='color:#777; font-size:11px;'>Correo automatico enviado por el sistema Umbright. No responda este mensaje.</p>"
+            sBody &= "</body></html>"
+            Message.Body = sBody
+
+            SMTP1.Send(Message)
+            envioOK = True
+        Catch ex As Exception
+            ' Si falla el envio, no abortamos. Solo registramos en el log que fallo.
+            motivo = motivo & " | Error envio correo: " & ex.Message.Substring(0, Math.Min(100, ex.Message.Length))
+        End Try
+
+        ' Registrar en log (haya o no haya fallado el envio del correo)
+        Try
+            Dim cOtransLog As New Transaccional.Conexion("Corporativo")
+            cOtransLog.open()
+            Dim destinatarioSql As String = If(envioOK, destinatario, "ERROR: no enviado")
+            Dim sqlLog As String = "UPDATE flexline.umb_asignacion_cuentas_log SET " &
+                "correo_enviado_a = '" & destinatarioSql.Replace("'", "''") & "', " &
+                "correo_fecha = GETDATE(), " &
+                "motivo_manual = '" & motivo.Replace("'", "''") & "' " &
+                "WHERE cod_solicitud = " & codSolicitud
+            cOtransLog.Actualiza(sqlLog)
+            cOtransLog.close()
+        Catch
+        End Try
+    End Sub
+
     Private Sub btn_aprobar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btn_aprobar.Click
+        ' Validacion del Tipo de Proveedor (no aplica para TECNO):
+        '   - Se busca en flexline.gen_tabcod si el TIPO DE PRODUCTO aplica al
+        '     impuesto de distribucion: empresa actual + tipo='IMP_DISTRIB'
+        '     + codigo=tipo_producto + valor1 > 0.001.
+        '   - Si existe esa fila => tipo_proveedor es OBLIGATORIO.
+        '       - Si INTERNACIONAL: medida_litros > 0 y precio_sugerido > 0
+        '       - Si LOCAL: no se valida medida ni precio (el impuesto no se paga)
+        '   - Si NO existe (o la consulta falla) => tipo_proveedor queda opcional.
+        If gs_empresa <> "TECNO" Then
+            Dim tipoProdCheck As String = If(cmb_tipo_producto.Text, "").Trim()
+            Dim requiereTipoProv As Boolean = False
+            If tipoProdCheck.Length > 0 Then
+                Try
+                    Dim clsGenChk As New ClasesGenerales.General
+                    Dim sqlCheck As String = "SELECT TOP 1 1 AS aplica " & _
+                        "FROM flexline.gen_tabcod WITH (NOLOCK) " & _
+                        "WHERE empresa = '" & gs_empresa.Replace("'", "''") & "' " & _
+                          "AND tipo = 'IMP_DISTRIB' " & _
+                          "AND codigo = '" & tipoProdCheck.Replace("'", "''") & "' " & _
+                          "AND valor1 > 0.00100000"
+                    Dim dtChk As DataTable = clsGenChk.selectQuery("FlexLine", sqlCheck)
+                    requiereTipoProv = (dtChk IsNot Nothing AndAlso dtChk.Rows.Count > 0)
+                Catch
+                    ' Si falla la consulta (red, BD), no bloqueamos la aprobacion.
+                    requiereTipoProv = False
+                End Try
+            End If
+
+            If requiereTipoProv Then
+                If Me.cmb_tipo_proveedor.SelectedItem Is Nothing Then
+                    MessageBox.Show("El Tipo de Producto '" & tipoProdCheck & "' requiere que indique Tipo de Proveedor (LOCAL/INTERNACIONAL) antes de aprobar.", "Informacion", MessageBoxButtons.OK, MessageBoxIcon.Information)
+                    Me.cmb_tipo_proveedor.Focus()
+                    Return
+                End If
+                If Me.cmb_tipo_proveedor.SelectedItem.ToString() = "INTERNACIONAL" Then
+                    If Val(Me.txt_medida_litros.Text) <= 0 Then
+                        MessageBox.Show("El Tipo de Producto '" & tipoProdCheck & "' con proveedor INTERNACIONAL requiere Medida (Litros) mayor a 0.", "Informacion", MessageBoxButtons.OK, MessageBoxIcon.Information)
+                        Me.txt_medida_litros.Focus()
+                        Return
+                    End If
+                    If Val(Me.txt_precio_sugerido.Text) <= 0 Then
+                        MessageBox.Show("El Tipo de Producto '" & tipoProdCheck & "' con proveedor INTERNACIONAL requiere Precio Sugerido mayor a 0.", "Informacion", MessageBoxButtons.OK, MessageBoxIcon.Information)
+                        Me.txt_precio_sugerido.Focus()
+                        Return
+                    End If
+                End If
+            End If
+        End If
         If MessageBox.Show("Esta Seguro de Aprobar Esta Solicitud", "Confirmacion", MessageBoxButtons.YesNo, MessageBoxIcon.Question) = DialogResult.Yes Then
 
             Dim cOtrans As New Transaccional.Conexion("Corporativo")
@@ -3763,6 +4176,64 @@ Public Class frm_solicitud_productos
                 If gs_empresa = "TECNO" Then
 
                     procesarProducto(False)
+                End If
+
+                ' Auto-procesar TODAS las empresas (excepto TECNO que ya tiene su bloque arriba)
+                ' Reglas:
+                '   - Las familias en familiasManuales SIEMPRE quedan manuales (revision)
+                '   - DMARTE1 no usa cuentas: procesa directo
+                '   - Resto de empresas: requieren cuentas asignadas en el log
+                '   - Si queda manual, se envia correo de aviso
+                ' Todas las familias son auto-procesables (no hay rama manual por familia)
+                ' Si al final NO llego a estado 7 por cualquier motivo (sin cuentas en log,
+                ' falla silenciosa en procesarProducto, etc.) => SIEMPRE enviar correo a Juan
+                If gs_empresa <> "TECNO" Then
+                    Dim quedoManual As Boolean = False
+                    Dim motivoManual As String = ""
+                    Dim puedeAutoProcesar As Boolean = False
+
+                    If gs_empresa = "DMARTE1" Then
+                        ' DMARTE1 no usa cuentas: procesar directo
+                        puedeAutoProcesar = True
+                    Else
+                        ' Resto de empresas: requieren cuentas sugeridas en el log
+                        Try
+                            Dim sqlChk As String = "SELECT TOP 1 sug_cta_compra FROM flexline.umb_asignacion_cuentas_log WITH (NOLOCK) WHERE cod_solicitud = " & ncod_solicitud & " AND sug_cta_compra IS NOT NULL"
+                            Dim dtChk As DataTable = cOtrans.Obtiene(sqlChk)
+                            If dtChk IsNot Nothing AndAlso dtChk.Rows.Count > 0 Then
+                                puedeAutoProcesar = True
+                            End If
+                        Catch
+                        End Try
+                    End If
+
+                    If puedeAutoProcesar Then
+                        procesarProducto(False)
+                        ' Verificar si REALMENTE llego a estado 7. Si no, hubo falla silenciosa.
+                        Try
+                            Dim sqlEstado As String = "SELECT estado FROM flexline.inv_producto_solicitud WITH (NOLOCK) WHERE cod_solicitud = " & ncod_solicitud
+                            Dim dtEstado As DataTable = cOtrans.Obtiene(sqlEstado)
+                            If dtEstado IsNot Nothing AndAlso dtEstado.Rows.Count > 0 Then
+                                Dim estadoActual As Integer = CInt(dtEstado.Rows(0)(0))
+                                If estadoActual <> 7 Then
+                                    quedoManual = True
+                                    motivoManual = "Auto-proceso fallo: la solicitud quedo en estado " & estadoActual & " en vez de 7. Revisar manualmente."
+                                End If
+                            End If
+                        Catch
+                        End Try
+                    Else
+                        quedoManual = True
+                        motivoManual = "Sin cuentas asignadas en historico - procesar manualmente"
+                    End If
+
+                    ' Si quedo manual por cualquier motivo, enviar correo a Juan
+                    If quedoManual Then
+                        Try
+                            EnviarCorreoSolicitudManual(ncod_solicitud, lbl_numero.Text, gs_empresa, cmb_familia.Text, txt_descripcion.Text, motivoManual)
+                        Catch
+                        End Try
+                    End If
                 End If
 
 
@@ -3972,7 +4443,7 @@ Public Class frm_solicitud_productos
     End Sub
 
     Private Sub txt_descripcion_Leave(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles txt_descripcion.Leave
-        txt_descripcion.Text = txt_descripcion.Text.Replace("'", "´")
+        txt_descripcion.Text = txt_descripcion.Text.Replace("'", "?")
     End Sub
 
 
@@ -4242,18 +4713,18 @@ Public Class frm_solicitud_productos
 
     End Sub
 
-    Private Sub utiliza_lote_CheckedChanged(sender As Object, e As EventArgs) Handles utiliza_lote.CheckedChanged
-        If Me.utiliza_añada.CheckState = CheckState.Checked And Me.utiliza_lote.CheckState = CheckState.Checked Then
+    Private Sub utiliza_lote_SelectedIndexChanged(sender As Object, e As EventArgs) Handles utiliza_lote.SelectedIndexChanged
+        If Me.utiliza_añada.SelectedItem IsNot Nothing AndAlso Me.utiliza_añada.SelectedItem.ToString() = "SI" AndAlso Me.utiliza_lote.SelectedItem IsNot Nothing AndAlso Me.utiliza_lote.SelectedItem.ToString() = "SI" Then
             MessageBox.Show("Debe Seleccionar entre Control de Lotes y Control de Añanada", "Informacion", MessageBoxButtons.OK, MessageBoxIcon.Warning)
-            Me.utiliza_lote.CheckState = CheckState.Unchecked
+            Me.utiliza_lote.SelectedIndex = -1
         End If
 
     End Sub
 
-    Private Sub utiliza_añada_CheckedChanged(sender As Object, e As EventArgs) Handles utiliza_añada.CheckedChanged
-        If Me.utiliza_añada.CheckState = CheckState.Checked And Me.utiliza_lote.CheckState = CheckState.Checked Then
+    Private Sub utiliza_añada_SelectedIndexChanged(sender As Object, e As EventArgs) Handles utiliza_añada.SelectedIndexChanged
+        If Me.utiliza_añada.SelectedItem IsNot Nothing AndAlso Me.utiliza_añada.SelectedItem.ToString() = "SI" AndAlso Me.utiliza_lote.SelectedItem IsNot Nothing AndAlso Me.utiliza_lote.SelectedItem.ToString() = "SI" Then
             MessageBox.Show("Debe Seleccionar entre Control de Lotes y Control de Añanada", "Informacion", MessageBoxButtons.OK, MessageBoxIcon.Warning)
-            Me.utiliza_añada.CheckState = CheckState.Unchecked
+            Me.utiliza_añada.SelectedIndex = -1
         End If
     End Sub
 

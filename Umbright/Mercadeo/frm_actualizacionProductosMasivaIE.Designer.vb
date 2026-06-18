@@ -107,7 +107,7 @@ Partial Class frm_actualizacionProductosMasivaIE
         Me.Controls.Add(Me.lblObs) : Me.Controls.Add(Me.txtObs)
         Me.Controls.Add(Me.btnValidar) : Me.Controls.Add(Me.btnAplicar)
         Me.Controls.Add(Me.lblEstado)
-        Me.MaximizeBox = False : Me.MinimizeBox = False
+        Me.MaximizeBox = True : Me.MinimizeBox = True
         Me.Name = "frm_actualizacionProductosMasivaIE"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Actualización Masiva IE"

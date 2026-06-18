@@ -180,7 +180,7 @@ Partial Class frm_actualizacionProductosIE
         Me.txt_tipo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList : Me.txt_tipo.Enabled = False : Me.txt_tipo.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.0!)
 
         Me.chk_subtipo.AutoSize = True : Me.chk_subtipo.Location = New System.Drawing.Point(15, 157)
-        Me.chk_subtipo.Text = "SUBTIPO" : Me.chk_subtipo.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!)
+        Me.chk_subtipo.Text = "MARCA" : Me.chk_subtipo.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!)
         Me.txt_subtipo.Location = New System.Drawing.Point(240, 155) : Me.txt_subtipo.Size = New System.Drawing.Size(380, 20)
         Me.txt_subtipo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList : Me.txt_subtipo.Enabled = False : Me.txt_subtipo.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.0!)
 
