@@ -1,0 +1,163 @@
+C:\Desarrollo\Aplicaciones\Version 8\Clases4.0\Compras\bin\Debug\Compras.dll
+C:\Desarrollo\Aplicaciones\Version 8\Clases4.0\Compras\bin\Debug\Compras.pdb
+C:\Desarrollo\Aplicaciones\Version 8\Clases4.0\Compras\bin\Debug\ZedGraph.dll
+C:\Desarrollo\Aplicaciones\Version 8\Clases4.0\Compras\bin\Debug\FTP.dll
+C:\Desarrollo\Aplicaciones\Version 8\Clases4.0\Compras\bin\Debug\Interop.Shell32.dll
+C:\Desarrollo\Aplicaciones\Version 8\Clases4.0\Compras\bin\Debug\Sincronizacion.dll
+C:\Desarrollo\Aplicaciones\Version 8\Clases4.0\Compras\bin\Debug\MySql.Data.dll
+C:\Desarrollo\Aplicaciones\Version 8\Clases4.0\Compras\bin\Debug\ClasesGenerales.pdb
+C:\Desarrollo\Aplicaciones\Version 8\Clases4.0\Compras\bin\Debug\ClasesGenerales.xml
+C:\Desarrollo\Aplicaciones\Version 8\Clases4.0\Compras\bin\Debug\Transaccional.pdb
+C:\Desarrollo\Aplicaciones\Version 8\Clases4.0\Compras\bin\Debug\Transaccional.xml
+C:\Desarrollo\Aplicaciones\Version 8\Clases4.0\Compras\bin\Debug\FTP.pdb
+C:\Desarrollo\Aplicaciones\Version 8\Clases4.0\Compras\obj\Debug\Compras.csprojAssemblyReference.cache
+C:\Desarrollo\Aplicaciones\Version 8\Clases4.0\Compras\obj\Debug\Compras.csproj.CoreCompileInputs.cache
+C:\Desarrollo\Aplicaciones\Version 8\Clases4.0\Compras\obj\Debug\Compras.csproj.CopyComplete
+C:\Desarrollo\Aplicaciones\Version 8\Clases4.0\Compras\obj\Debug\Compras.dll
+C:\Desarrollo\Aplicaciones\Version 8\Clases4.0\Compras\obj\Debug\Compras.pdb
+C:\Desarrollo\Aplicaciones\Version 8\Clases4.0\Compras\bin\Debug\Sincronizacion.pdb
+C:\Desarrollo\Aplicaciones\Version 8\Clases4.0\Compras\bin\Debug\Sincronizacion.xml
+C:\Desarrollo\Version 8\Clases4.0\Compras\bin\Debug\Compras.dll
+C:\Desarrollo\Version 8\Clases4.0\Compras\bin\Debug\Compras.pdb
+C:\Desarrollo\Version 8\Clases4.0\Compras\bin\Debug\ZedGraph.dll
+C:\Desarrollo\Version 8\Clases4.0\Compras\obj\Debug\Compras.csproj.AssemblyReference.cache
+C:\Desarrollo\Version 8\Clases4.0\Compras\obj\Debug\Compras.csproj.CoreCompileInputs.cache
+C:\Desarrollo\Version 8\Clases4.0\Compras\obj\Debug\Compras.csproj.Up2Date
+C:\Desarrollo\Version 8\Clases4.0\Compras\obj\Debug\Compras.dll
+C:\Desarrollo\Version 8\Clases4.0\Compras\obj\Debug\Compras.pdb
+C:\Desarrollo\Version 9\Clases4.0\Compras\bin\Debug\Compras.dll
+C:\Desarrollo\Version 9\Clases4.0\Compras\bin\Debug\Compras.pdb
+C:\Desarrollo\Version 9\Clases4.0\Compras\bin\Debug\ClasesGenerales.dll
+C:\Desarrollo\Version 9\Clases4.0\Compras\bin\Debug\Transaccional.dll
+C:\Desarrollo\Version 9\Clases4.0\Compras\bin\Debug\ZedGraph.dll
+C:\Desarrollo\Version 9\Clases4.0\Compras\bin\Debug\FTP.dll
+C:\Desarrollo\Version 9\Clases4.0\Compras\bin\Debug\Interop.Shell32.dll
+C:\Desarrollo\Version 9\Clases4.0\Compras\bin\Debug\Sincronizacion.dll
+C:\Desarrollo\Version 9\Clases4.0\Compras\bin\Debug\MySql.Data.dll
+C:\Desarrollo\Version 9\Clases4.0\Compras\bin\Debug\Umbral_Flex.dll
+C:\Desarrollo\Version 9\Clases4.0\Compras\bin\Debug\Interfaz_CRM.Mail.dll
+C:\Desarrollo\Version 9\Clases4.0\Compras\bin\Debug\FlexLine_CRUD.dll
+C:\Desarrollo\Version 9\Clases4.0\Compras\bin\Debug\Automatizar.dll
+C:\Desarrollo\Version 9\Clases4.0\Compras\bin\Debug\EntityFramework.dll
+C:\Desarrollo\Version 9\Clases4.0\Compras\bin\Debug\Seguridad.dll
+C:\Desarrollo\Version 9\Clases4.0\Compras\bin\Debug\CrystalDecisions.CrystalReports.Engine.dll
+C:\Desarrollo\Version 9\Clases4.0\Compras\bin\Debug\CrystalDecisions.Shared.dll
+C:\Desarrollo\Version 9\Clases4.0\Compras\bin\Debug\CrystalDecisions.Windows.Forms.dll
+C:\Desarrollo\Version 9\Clases4.0\Compras\bin\Debug\CrystalDecisions.ReportSource.dll
+C:\Desarrollo\Version 9\Clases4.0\Compras\bin\Debug\stdole.dll
+C:\Desarrollo\Version 9\Clases4.0\Compras\bin\Debug\ClasesGenerales.pdb
+C:\Desarrollo\Version 9\Clases4.0\Compras\bin\Debug\ClasesGenerales.xml
+C:\Desarrollo\Version 9\Clases4.0\Compras\bin\Debug\Transaccional.pdb
+C:\Desarrollo\Version 9\Clases4.0\Compras\bin\Debug\Transaccional.xml
+C:\Desarrollo\Version 9\Clases4.0\Compras\bin\Debug\FTP.pdb
+C:\Desarrollo\Version 9\Clases4.0\Compras\bin\Debug\Sincronizacion.pdb
+C:\Desarrollo\Version 9\Clases4.0\Compras\bin\Debug\Sincronizacion.xml
+C:\Desarrollo\Version 9\Clases4.0\Compras\bin\Debug\Sincronizacion.dll.config
+C:\Desarrollo\Version 9\Clases4.0\Compras\bin\Debug\Umbral_Flex.pdb
+C:\Desarrollo\Version 9\Clases4.0\Compras\bin\Debug\Umbral_Flex.xml
+C:\Desarrollo\Version 9\Clases4.0\Compras\bin\Debug\Umbral_Flex.dll.config
+C:\Desarrollo\Version 9\Clases4.0\Compras\bin\Debug\Interfaz_CRM.Mail.pdb
+C:\Desarrollo\Version 9\Clases4.0\Compras\bin\Debug\Interfaz_CRM.Mail.dll.config
+C:\Desarrollo\Version 9\Clases4.0\Compras\bin\Debug\FlexLine_CRUD.pdb
+C:\Desarrollo\Version 9\Clases4.0\Compras\bin\Debug\FlexLine_CRUD.xml
+C:\Desarrollo\Version 9\Clases4.0\Compras\bin\Debug\Automatizar.pdb
+C:\Desarrollo\Version 9\Clases4.0\Compras\bin\Debug\Automatizar.xml
+C:\Desarrollo\Version 9\Clases4.0\Compras\bin\Debug\EntityFramework.xml
+C:\Desarrollo\Version 9\Clases4.0\Compras\bin\Debug\Seguridad.pdb
+C:\Desarrollo\Version 9\Clases4.0\Compras\bin\Debug\Seguridad.xml
+C:\Desarrollo\Version 9\Clases4.0\Compras\obj\Debug\Compras.csproj.AssemblyReference.cache
+C:\Desarrollo\Version 9\Clases4.0\Compras\obj\Debug\Compras.csproj.CoreCompileInputs.cache
+C:\Desarrollo\Version 9\Clases4.0\Compras\obj\Debug\Compras.csproj.Up2Date
+C:\Desarrollo\Version 9\Clases4.0\Compras\obj\Debug\Compras.dll
+C:\Desarrollo\Version 9\Clases4.0\Compras\obj\Debug\Compras.pdb
+C:\Desarrollo\Version 9\Clases4.0\Compras\bin\Debug\System.Data.SqlServerCe.dll
+C:\Desarrollo\Version 9\Clases4.0\Compras\bin\Debug\System.Data.SqlServerCe.xml
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Clases4.0\Compras\bin\Debug\Compras.dll
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Clases4.0\Compras\bin\Debug\Compras.pdb
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Clases4.0\Compras\bin\Debug\ClasesGenerales.dll
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Clases4.0\Compras\bin\Debug\Transaccional.dll
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Clases4.0\Compras\bin\Debug\ZedGraph.dll
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Clases4.0\Compras\bin\Debug\FTP.dll
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Clases4.0\Compras\bin\Debug\Interop.Shell32.dll
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Clases4.0\Compras\bin\Debug\Sincronizacion.dll
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Clases4.0\Compras\bin\Debug\MySql.Data.dll
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Clases4.0\Compras\bin\Debug\System.Data.SqlServerCe.dll
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Clases4.0\Compras\bin\Debug\Umbral_Flex.dll
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Clases4.0\Compras\bin\Debug\Interfaz_CRM.Mail.dll
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Clases4.0\Compras\bin\Debug\FlexLine_CRUD.dll
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Clases4.0\Compras\bin\Debug\Automatizar.dll
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Clases4.0\Compras\bin\Debug\EntityFramework.dll
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Clases4.0\Compras\bin\Debug\Seguridad.dll
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Clases4.0\Compras\bin\Debug\CrystalDecisions.CrystalReports.Engine.dll
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Clases4.0\Compras\bin\Debug\CrystalDecisions.Shared.dll
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Clases4.0\Compras\bin\Debug\CrystalDecisions.Windows.Forms.dll
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Clases4.0\Compras\bin\Debug\CrystalDecisions.ReportSource.dll
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Clases4.0\Compras\bin\Debug\stdole.dll
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Clases4.0\Compras\bin\Debug\ClasesGenerales.pdb
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Clases4.0\Compras\bin\Debug\ClasesGenerales.xml
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Clases4.0\Compras\bin\Debug\Transaccional.pdb
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Clases4.0\Compras\bin\Debug\Transaccional.xml
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Clases4.0\Compras\bin\Debug\FTP.pdb
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Clases4.0\Compras\bin\Debug\Sincronizacion.pdb
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Clases4.0\Compras\bin\Debug\Sincronizacion.xml
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Clases4.0\Compras\bin\Debug\Sincronizacion.dll.config
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Clases4.0\Compras\bin\Debug\System.Data.SqlServerCe.xml
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Clases4.0\Compras\bin\Debug\Umbral_Flex.pdb
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Clases4.0\Compras\bin\Debug\Umbral_Flex.xml
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Clases4.0\Compras\bin\Debug\Umbral_Flex.dll.config
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Clases4.0\Compras\bin\Debug\Interfaz_CRM.Mail.pdb
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Clases4.0\Compras\bin\Debug\Interfaz_CRM.Mail.dll.config
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Clases4.0\Compras\bin\Debug\FlexLine_CRUD.pdb
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Clases4.0\Compras\bin\Debug\FlexLine_CRUD.xml
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Clases4.0\Compras\bin\Debug\Automatizar.pdb
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Clases4.0\Compras\bin\Debug\Automatizar.xml
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Clases4.0\Compras\bin\Debug\EntityFramework.xml
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Clases4.0\Compras\bin\Debug\Seguridad.pdb
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Clases4.0\Compras\bin\Debug\Seguridad.xml
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Clases4.0\Compras\obj\Debug\Compras.csproj.AssemblyReference.cache
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Clases4.0\Compras\obj\Debug\Compras.csproj.CoreCompileInputs.cache
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Clases4.0\Compras\obj\Debug\Compras.csproj.Up2Date
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Clases4.0\Compras\obj\Debug\Compras.dll
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Clases4.0\Compras\obj\Debug\Compras.pdb
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Clases4.0\Compras\obj\_buildcheck\Compras.dll
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Clases4.0\Compras\obj\_buildcheck\Compras.pdb
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Clases4.0\Compras\obj\_buildcheck\ClasesGenerales.dll
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Clases4.0\Compras\obj\_buildcheck\Transaccional.dll
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Clases4.0\Compras\obj\_buildcheck\ZedGraph.dll
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Clases4.0\Compras\obj\_buildcheck\FTP.dll
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Clases4.0\Compras\obj\_buildcheck\Interop.Shell32.dll
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Clases4.0\Compras\obj\_buildcheck\Sincronizacion.dll
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Clases4.0\Compras\obj\_buildcheck\MySql.Data.dll
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Clases4.0\Compras\obj\_buildcheck\System.Data.SqlServerCe.dll
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Clases4.0\Compras\obj\_buildcheck\Umbral_Flex.dll
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Clases4.0\Compras\obj\_buildcheck\Interfaz_CRM.Mail.dll
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Clases4.0\Compras\obj\_buildcheck\FlexLine_CRUD.dll
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Clases4.0\Compras\obj\_buildcheck\Automatizar.dll
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Clases4.0\Compras\obj\_buildcheck\EntityFramework.dll
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Clases4.0\Compras\obj\_buildcheck\Seguridad.dll
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Clases4.0\Compras\obj\_buildcheck\CrystalDecisions.CrystalReports.Engine.dll
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Clases4.0\Compras\obj\_buildcheck\CrystalDecisions.Shared.dll
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Clases4.0\Compras\obj\_buildcheck\CrystalDecisions.Windows.Forms.dll
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Clases4.0\Compras\obj\_buildcheck\CrystalDecisions.ReportSource.dll
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Clases4.0\Compras\obj\_buildcheck\stdole.dll
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Clases4.0\Compras\obj\_buildcheck\ClasesGenerales.pdb
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Clases4.0\Compras\obj\_buildcheck\ClasesGenerales.xml
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Clases4.0\Compras\obj\_buildcheck\Transaccional.pdb
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Clases4.0\Compras\obj\_buildcheck\Transaccional.xml
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Clases4.0\Compras\obj\_buildcheck\FTP.pdb
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Clases4.0\Compras\obj\_buildcheck\Sincronizacion.pdb
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Clases4.0\Compras\obj\_buildcheck\Sincronizacion.xml
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Clases4.0\Compras\obj\_buildcheck\Sincronizacion.dll.config
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Clases4.0\Compras\obj\_buildcheck\System.Data.SqlServerCe.xml
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Clases4.0\Compras\obj\_buildcheck\Umbral_Flex.pdb
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Clases4.0\Compras\obj\_buildcheck\Umbral_Flex.xml
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Clases4.0\Compras\obj\_buildcheck\Umbral_Flex.dll.config
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Clases4.0\Compras\obj\_buildcheck\Interfaz_CRM.Mail.pdb
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Clases4.0\Compras\obj\_buildcheck\Interfaz_CRM.Mail.dll.config
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Clases4.0\Compras\obj\_buildcheck\FlexLine_CRUD.pdb
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Clases4.0\Compras\obj\_buildcheck\FlexLine_CRUD.xml
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Clases4.0\Compras\obj\_buildcheck\Automatizar.pdb
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Clases4.0\Compras\obj\_buildcheck\Automatizar.xml
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Clases4.0\Compras\obj\_buildcheck\EntityFramework.xml
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Clases4.0\Compras\obj\_buildcheck\Seguridad.pdb
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Clases4.0\Compras\obj\_buildcheck\Seguridad.xml

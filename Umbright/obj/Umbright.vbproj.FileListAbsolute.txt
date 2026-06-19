@@ -1,0 +1,465 @@
+D:\Desarrollo\Aplicaciones Umbral\2005\Umbright\obj\Release\ResolveAssemblyReference.cache
+D:\Desarrollo\Aplicaciones Umbral\2005\Umbright\obj\Release\Interop.prtcom.dll
+D:\Desarrollo\Aplicaciones Umbral\2005\Umbright\obj\Release\Umbright.vbproj.ResolveComReference.cache
+D:\Desarrollo\Aplicaciones Umbral\2005\Umbright\obj\Release\Umbright.frm_asocia_solicitud_reserva.resources
+D:\Desarrollo\Aplicaciones Umbral\2005\Umbright\obj\Release\Umbright.frm_di.resources
+D:\Desarrollo\Aplicaciones Umbral\2005\Umbright\obj\Release\Umbright.frm_dua.resources
+D:\Desarrollo\Aplicaciones Umbral\2005\Umbright\obj\Release\Umbright.frm_reserva.resources
+D:\Desarrollo\Aplicaciones Umbral\2005\Umbright\obj\Release\Umbright.frm_solicitud_reserva.resources
+D:\Desarrollo\Aplicaciones Umbral\2005\Umbright\obj\Release\Umbright.frm_actualizacion_plasma.resources
+D:\Desarrollo\Aplicaciones Umbral\2005\Umbright\obj\Release\Umbright.frm_actualiza_precios_compras.resources
+D:\Desarrollo\Aplicaciones Umbral\2005\Umbright\obj\Release\Umbright.frm_asignacion_equipo.resources
+D:\Desarrollo\Aplicaciones Umbral\2005\Umbright\obj\Release\Umbright.frm_asociar_ES_documentos.resources
+D:\Desarrollo\Aplicaciones Umbral\2005\Umbright\obj\Release\Umbright.frm_ayuda_cuentas.resources
+D:\Desarrollo\Aplicaciones Umbral\2005\Umbright\obj\Release\Umbright.frm_backorder.resources
+D:\Desarrollo\Aplicaciones Umbral\2005\Umbright\obj\Release\Umbright.frm_busqueda_general.resources
+D:\Desarrollo\Aplicaciones Umbral\2005\Umbright\obj\Release\Umbright.frm_busqueda_general_mysql.resources
+D:\Desarrollo\Aplicaciones Umbral\2005\Umbright\obj\Release\Umbright.frm_cambiar_clave.resources
+D:\Desarrollo\Aplicaciones Umbral\2005\Umbright\obj\Release\Umbright.Frm_cambiar_empresa.resources
+D:\Desarrollo\Aplicaciones Umbral\2005\Umbright\obj\Release\Umbright.frm_cancelacion_prestamo.resources
+D:\Desarrollo\Aplicaciones Umbral\2005\Umbright\obj\Release\Umbright.frm_columnas.resources
+D:\Desarrollo\Aplicaciones Umbral\2005\Umbright\obj\Release\Umbright.frm_consignaciones.resources
+D:\Desarrollo\Aplicaciones Umbral\2005\Umbright\obj\Release\Umbright.frm_consignaciones_saldos.resources
+D:\Desarrollo\Aplicaciones Umbral\2005\Umbright\obj\Release\Umbright.frm_control_fallas.resources
+D:\Desarrollo\Aplicaciones Umbral\2005\Umbright\obj\Release\Umbright.frm_control_transporte.resources
+D:\Desarrollo\Aplicaciones Umbral\2005\Umbright\obj\Release\Umbright.frm_conversion.resources
+D:\Desarrollo\Aplicaciones Umbral\2005\Umbright\obj\Release\Umbright.frm_diseñador_reportes.resources
+D:\Desarrollo\Aplicaciones Umbral\2005\Umbright\obj\Release\Umbright.Frm_edifact.resources
+D:\Desarrollo\Aplicaciones Umbral\2005\Umbright\obj\Release\Umbright.frm_ejecuta_sp.resources
+D:\Desarrollo\Aplicaciones Umbral\2005\Umbright\obj\Release\Umbright.frm_gen_tabcod.resources
+D:\Desarrollo\Aplicaciones Umbral\2005\Umbright\obj\Release\Umbright.frm_inicializar_periodo.resources
+D:\Desarrollo\Aplicaciones Umbral\2005\Umbright\obj\Release\Umbright.frm_insumos_activos.resources
+D:\Desarrollo\Aplicaciones Umbral\2005\Umbright\obj\Release\Umbright.frm_InventarioCliente.resources
+D:\Desarrollo\Aplicaciones Umbral\2005\Umbright\obj\Release\Umbright.frm_inventarios_fisicos.resources
+D:\Desarrollo\Aplicaciones Umbral\2005\Umbright\obj\Release\Umbright.frm_junta_semanal_avance.resources
+D:\Desarrollo\Aplicaciones Umbral\2005\Umbright\obj\Release\Umbright.frm_liberar_documentos.resources
+D:\Desarrollo\Aplicaciones Umbral\2005\Umbright\obj\Release\Umbright.frm_liberar_factura_parcial.resources
+D:\Desarrollo\Aplicaciones Umbral\2005\Umbright\obj\Release\Umbright.frm_listado_pedidos_MR.resources
+D:\Desarrollo\Aplicaciones Umbral\2005\Umbright\obj\Release\Umbright.frm_listado_picking.resources
+D:\Desarrollo\Aplicaciones Umbral\2005\Umbright\obj\Release\Umbright.frm_listas_generales.resources
+D:\Desarrollo\Aplicaciones Umbral\2005\Umbright\obj\Release\Umbright.frm_login.resources
+D:\Desarrollo\Aplicaciones Umbral\2005\Umbright\obj\Release\Umbright.frm_memos_promocionales.resources
+D:\Desarrollo\Aplicaciones Umbral\2005\Umbright\obj\Release\Umbright.frm_mensajeria_mr.resources
+D:\Desarrollo\Aplicaciones Umbral\2005\Umbright\obj\Release\Umbright.frm_menu_principal.resources
+D:\Desarrollo\Aplicaciones Umbral\2005\Umbright\obj\Release\Umbright.frm_pedidos_facturar.resources
+D:\Desarrollo\Aplicaciones Umbral\2005\Umbright\obj\Release\Umbright.frm_pedidos_pendientes.resources
+D:\Desarrollo\Aplicaciones Umbral\2005\Umbright\obj\Release\Umbright.frm_pickeador.resources
+D:\Desarrollo\Aplicaciones Umbral\2005\Umbright\obj\Release\Umbright.frm_procesar_productos.resources
+D:\Desarrollo\Aplicaciones Umbral\2005\Umbright\obj\Release\Umbright.frm_producto.resources
+D:\Desarrollo\Aplicaciones Umbral\2005\Umbright\obj\Release\Umbright.frm_productos_bajas.resources
+D:\Desarrollo\Aplicaciones Umbral\2005\Umbright\obj\Release\Umbright.frm_recepcion_control_transporte.resources
+D:\Desarrollo\Aplicaciones Umbral\2005\Umbright\obj\Release\Umbright.frm_reportes.resources
+D:\Desarrollo\Aplicaciones Umbral\2005\Umbright\obj\Release\Umbright.frm_resultado.resources
+D:\Desarrollo\Aplicaciones Umbral\2005\Umbright\obj\Release\Umbright.frm_scm_ver_pedidos.resources
+D:\Desarrollo\Aplicaciones Umbral\2005\Umbright\obj\Release\Umbright.frm_scn_clientes.resources
+D:\Desarrollo\Aplicaciones Umbral\2005\Umbright\obj\Release\Umbright.frm_scn_movimiento_inventarios.resources
+D:\Desarrollo\Aplicaciones Umbral\2005\Umbright\obj\Release\Umbright.frm_scn_ofertas.resources
+D:\Desarrollo\Aplicaciones Umbral\2005\Umbright\obj\Release\Umbright.Frm_sincronizacion_informacion.resources
+D:\Desarrollo\Aplicaciones Umbral\2005\Umbright\obj\Release\Umbright.frm_solicitud_productos.resources
+D:\Desarrollo\Aplicaciones Umbral\2005\Umbright\obj\Release\Umbright.frm_solicitud_vacaciones.resources
+D:\Desarrollo\Aplicaciones Umbral\2005\Umbright\obj\Release\Umbright.frm_tracking_pedidos.resources
+D:\Desarrollo\Aplicaciones Umbral\2005\Umbright\obj\Release\Umbright.frm_usuario.resources
+D:\Desarrollo\Aplicaciones Umbral\2005\Umbright\obj\Release\Umbright.frm_activos.resources
+D:\Desarrollo\Aplicaciones Umbral\2005\Umbright\obj\Release\Umbright.frm_mantenimiento.resources
+D:\Desarrollo\Aplicaciones Umbral\2005\Umbright\obj\Release\Umbright.frm_mantenimiento_activos_insumos.resources
+D:\Desarrollo\Aplicaciones Umbral\2005\Umbright\obj\Release\Umbright.frm_mantenimiento_modelos.resources
+D:\Desarrollo\Aplicaciones Umbral\2005\Umbright\obj\Release\Umbright.frm_movimientos_activos.resources
+D:\Desarrollo\Aplicaciones Umbral\2005\Umbright\obj\Release\Umbright.frm_movimientos_insumos.resources
+D:\Desarrollo\Aplicaciones Umbral\2005\Umbright\obj\Release\Umbright.frm_int_asociar_solicitud.resources
+D:\Desarrollo\Aplicaciones Umbral\2005\Umbright\obj\Release\Umbright.frm_int_listado_internaciones.resources
+D:\Desarrollo\Aplicaciones Umbral\2005\Umbright\obj\Release\Umbright.frm_int_parametros.resources
+D:\Desarrollo\Aplicaciones Umbral\2005\Umbright\obj\Release\Umbright.frm_int_pedido.resources
+D:\Desarrollo\Aplicaciones Umbral\2005\Umbright\obj\Release\Umbright.frm_int_prepara_informacion.resources
+D:\Desarrollo\Aplicaciones Umbral\2005\Umbright\obj\Release\Umbright.frm_maq_asignacion_ordenes.resources
+D:\Desarrollo\Aplicaciones Umbral\2005\Umbright\obj\Release\Umbright.frm_maq_monitor.resources
+D:\Desarrollo\Aplicaciones Umbral\2005\Umbright\obj\Release\Umbright.frm_maq_proceso_produccion.resources
+D:\Desarrollo\Aplicaciones Umbral\2005\Umbright\obj\Release\Umbright.frmForecast.resources
+D:\Desarrollo\Aplicaciones Umbral\2005\Umbright\obj\Release\Umbright.frm_cambiarperiodo.resources
+D:\Desarrollo\Aplicaciones Umbral\2005\Umbright\obj\Release\Umbright.frm_carga_presupuesto_comercial.resources
+D:\Desarrollo\Aplicaciones Umbral\2005\Umbright\obj\Release\Umbright.frm_carga_presupuesto_general.resources
+D:\Desarrollo\Aplicaciones Umbral\2005\Umbright\obj\Release\Umbright.frm_liberar_ppto_cliente.resources
+D:\Desarrollo\Aplicaciones Umbral\2005\Umbright\obj\Release\Umbright.frm_ppto_general.resources
+D:\Desarrollo\Aplicaciones Umbral\2005\Umbright\obj\Release\Umbright.frm_presupuesto_multiple_producto_cliente.resources
+D:\Desarrollo\Aplicaciones Umbral\2005\Umbright\obj\Release\Umbright.frm_productos_derivados.resources
+D:\Desarrollo\Aplicaciones Umbral\2005\Umbright\obj\Release\Umbright.frm_scm_AsignarOrigen.resources
+D:\Desarrollo\Aplicaciones Umbral\2005\Umbright\obj\Release\Umbright.frm_scm_coberturas.resources
+D:\Desarrollo\Aplicaciones Umbral\2005\Umbright\obj\Release\Umbright.frm_scm_mantenimiento_productos.resources
+D:\Desarrollo\Aplicaciones Umbral\2005\Umbright\obj\Release\Umbright.frm_scm_mantenimiento_proveedores.resources
+D:\Desarrollo\Aplicaciones Umbral\2005\Umbright\obj\Release\Umbright.frm_scm_obtiene_informacion.resources
+D:\Desarrollo\Aplicaciones Umbral\2005\Umbright\obj\Release\Umbright.frm_scm_parametros_generales.resources
+D:\Desarrollo\Aplicaciones Umbral\2005\Umbright\obj\Release\Umbright.frm_scm_pedido.resources
+D:\Desarrollo\Aplicaciones Umbral\2005\Umbright\obj\Release\Umbright.frm_scm_preparacion_informacion.resources
+D:\Desarrollo\Aplicaciones Umbral\2005\Umbright\obj\Release\Umbright.frm_scm_recalculo_semanas.resources
+D:\Desarrollo\Aplicaciones Umbral\2005\Umbright\obj\Release\Umbright.vbproj.GenerateResource.Cache
+D:\Desarrollo\Aplicaciones Umbral\2005\Umbright\bin\Release\Umbright.exe.config
+D:\Desarrollo\Aplicaciones Umbral\2005\Umbright\bin\Release\Umbright.exe
+D:\Desarrollo\Aplicaciones Umbral\2005\Umbright\bin\Release\Umbright.pdb
+D:\Desarrollo\Aplicaciones Umbral\2005\Umbright\bin\Release\Automatizacion.dll
+D:\Desarrollo\Aplicaciones Umbral\2005\Umbright\bin\Release\ClasesGenerales.dll
+D:\Desarrollo\Aplicaciones Umbral\2005\Umbright\bin\Release\Compras.dll
+D:\Desarrollo\Aplicaciones Umbral\2005\Umbright\bin\Release\FTP.dll
+D:\Desarrollo\Aplicaciones Umbral\2005\Umbright\bin\Release\OpenNETCF.Desktop.Communication.dll
+D:\Desarrollo\Aplicaciones Umbral\2005\Umbright\bin\Release\Seguridad.dll
+D:\Desarrollo\Aplicaciones Umbral\2005\Umbright\bin\Release\Sincronizacion.dll
+D:\Desarrollo\Aplicaciones Umbral\2005\Umbright\bin\Release\Transaccional.dll
+D:\Desarrollo\Aplicaciones Umbral\2005\Umbright\bin\Release\Umbral_Flex.dll
+D:\Desarrollo\Aplicaciones Umbral\2005\Umbright\bin\Release\ZedGraph.dll
+D:\Desarrollo\Aplicaciones Umbral\2005\Umbright\bin\Release\Interop.Shell32.dll
+D:\Desarrollo\Aplicaciones Umbral\2005\Umbright\bin\Release\Interop.prtcom.dll
+D:\Desarrollo\Aplicaciones Umbral\2005\Umbright\bin\Release\Interop.CRAXDRT.dll
+D:\Desarrollo\Aplicaciones Umbral\2005\Umbright\bin\Release\ClasesGenerales.pdb
+D:\Desarrollo\Aplicaciones Umbral\2005\Umbright\bin\Release\ClasesGenerales.xml
+D:\Desarrollo\Aplicaciones Umbral\2005\Umbright\bin\Release\Compras.pdb
+D:\Desarrollo\Aplicaciones Umbral\2005\Umbright\bin\Release\Automatizacion.pdb
+D:\Desarrollo\Aplicaciones Umbral\2005\Umbright\bin\Release\Seguridad.pdb
+D:\Desarrollo\Aplicaciones Umbral\2005\Umbright\bin\Release\Transaccional.pdb
+D:\Desarrollo\Aplicaciones Umbral\2005\Umbright\bin\Release\Transaccional.xml
+D:\Desarrollo\Aplicaciones Umbral\2005\Umbright\bin\Release\ZedGraph.xml
+D:\Desarrollo\Aplicaciones Umbral\2005\Umbright\bin\Release\Sincronizacion.pdb
+D:\Desarrollo\Aplicaciones Umbral\2005\Umbright\bin\Release\Sincronizacion.xml
+D:\Desarrollo\Aplicaciones Umbral\2005\Umbright\bin\Release\FTP.pdb
+D:\Desarrollo\Aplicaciones Umbral\2005\Umbright\bin\Release\OpenNETCF.Desktop.Communication.xml
+D:\Desarrollo\Aplicaciones Umbral\2005\Umbright\bin\Release\Umbral_Flex.pdb
+D:\Desarrollo\Aplicaciones Umbral\2005\Umbright\bin\Release\Umbral_Flex.xml
+D:\Desarrollo\Aplicaciones Umbral\2005\Umbright\bin\Release\es\ZedGraph.resources.dll
+D:\Desarrollo\Aplicaciones Umbral\2005\Umbright\bin\Release\pt\ZedGraph.resources.dll
+D:\Desarrollo\Aplicaciones Umbral\2005\Umbright\bin\Release\zh-tw\ZedGraph.resources.dll
+D:\Desarrollo\Aplicaciones Umbral\2005\Umbright\obj\Release\Umbright.exe
+D:\Desarrollo\Aplicaciones Umbral\2005\Umbright\obj\Release\Umbright.pdb
+D:\Desarrollo\Aplicaciones Umbral\2005\Umbright\bin\Release\automatizacionReportes.dll
+D:\Desarrollo\Aplicaciones Umbral\2005\Umbright\bin\Release\automatizacionReportes.pdb
+D:\Desarrollo\Aplicaciones Umbral\2005\Umbright\bin\Release\automatizacionReportes.xml
+D:\Desarrollo\Aplicaciones Umbral\2005\Umbright\bin\Release\AutomatizacionUmbright.dll
+D:\Desarrollo\Aplicaciones Umbral\2005\Umbright\bin\Release\Interop.stdole.dll
+D:\Desarrollo\Aplicaciones Umbral\2005\Umbright\bin\Release\Interop.CRVIEWERLib.dll
+D:\Desarrollo\Aplicaciones Umbral\2005\Umbright\bin\Release\Interop.Excel.dll
+D:\Desarrollo\Aplicaciones Umbral\2005\Umbright\bin\Release\Interop.Microsoft.Office.Core.dll
+D:\Desarrollo\Aplicaciones Umbral\2005\Umbright\bin\Release\AxInterop.CRVIEWERLib.dll
+D:\Desarrollo\Aplicaciones Umbral\2005\Umbright\bin\Release\AutomatizacionUmbright.pdb
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\obj\Release\ResolveAssemblyReference.cache
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\obj\Release\Interop.prtcom.dll
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\obj\Release\Umbright.vbproj.ResolveComReference.cache
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\obj\Release\Umbright.frm_cuentas_productos.resources
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\obj\Release\Umbright.frm_asocia_solicitud_reserva.resources
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\obj\Release\Umbright.frm_di.resources
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\obj\Release\Umbright.frm_dua.resources
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\obj\Release\Umbright.frm_reserva.resources
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\obj\Release\Umbright.frm_solicitud_reserva.resources
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\obj\Release\Umbright.frm_actualizacion_plasma.resources
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\obj\Release\Umbright.frm_actualiza_precios_compras.resources
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\obj\Release\Umbright.frm_asociar_ES_documentos.resources
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\obj\Release\Umbright.frm_ayuda_cuentas.resources
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\obj\Release\Umbright.frm_backorder.resources
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\obj\Release\Umbright.frm_busqueda_general.resources
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\obj\Release\Umbright.frm_busqueda_general_mysql.resources
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\obj\Release\Umbright.frm_cambiar_clave.resources
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\obj\Release\Umbright.Frm_cambiar_empresa.resources
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\obj\Release\Umbright.frm_cancelacion_prestamo.resources
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\obj\Release\Umbright.frm_columnas.resources
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\obj\Release\Umbright.frm_consignaciones.resources
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\obj\Release\Umbright.frm_consignaciones_saldos.resources
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\obj\Release\Umbright.frm_control_fallas.resources
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\obj\Release\Umbright.frm_control_transporte.resources
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\obj\Release\Umbright.frm_conversion.resources
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\obj\Release\Umbright.frm_diseñador_reportes.resources
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\obj\Release\Umbright.Frm_edifact.resources
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\obj\Release\Umbright.frm_ejecuta_sp.resources
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\obj\Release\Umbright.frm_OCfechas.resources
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\obj\Release\Umbright.frm_gen_tabcod.resources
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\obj\Release\Umbright.frm_inicializar_periodo.resources
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\obj\Release\Umbright.frm_InventarioCliente.resources
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\obj\Release\Umbright.frm_junta_semanal_avance.resources
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\obj\Release\Umbright.frm_OCconfirmacion.resources
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\obj\Release\Umbright.frm_liberar_factura_parcial.resources
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\obj\Release\Umbright.frm_listado_pedidos_MR.resources
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\obj\Release\Umbright.frm_listado_picking.resources
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\obj\Release\Umbright.frm_listas_generales.resources
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\obj\Release\Umbright.frm_login.resources
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\obj\Release\Umbright.frm_memos_promocionales.resources
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\obj\Release\Umbright.frm_mensajeria_mr.resources
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\obj\Release\Umbright.frm_menu_principal.resources
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\obj\Release\Umbright.frm_pedidos_facturar.resources
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\obj\Release\Umbright.frm_pedidos_pendientes.resources
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\obj\Release\Umbright.frm_pickeador.resources
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\obj\Release\Umbright.frm_procesar_productos.resources
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\obj\Release\Umbright.frm_producto.resources
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\obj\Release\Umbright.frm_productos_bajas.resources
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\obj\Release\Umbright.frm_recepcion_control_transporte.resources
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\obj\Release\Umbright.frm_reportes.resources
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\obj\Release\Umbright.frm_resultado.resources
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\obj\Release\Umbright.frm_scm_ver_pedidos.resources
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\obj\Release\Umbright.frm_scn_clientes.resources
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\obj\Release\Umbright.frm_scn_movimiento_inventarios.resources
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\obj\Release\Umbright.frm_scn_ofertas.resources
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\obj\Release\Umbright.Frm_sincronizacion_informacion.resources
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\obj\Release\Umbright.frm_solicitud_productos.resources
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\obj\Release\Umbright.frm_solicitud_vacaciones.resources
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\obj\Release\Umbright.frm_tracking_pedidos.resources
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\obj\Release\Umbright.frm_usuario.resources
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\obj\Release\Umbright.frm_mantenimiento.resources
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\obj\Release\Umbright.frm_mantenimiento_activos_insumos.resources
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\obj\Release\Umbright.frm_mantenimiento_modelos.resources
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\obj\Release\Umbright.frm_movimientos_activos.resources
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\obj\Release\Umbright.frm_movimientos_insumos.resources
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\obj\Release\Umbright.frm_int_parametros.resources
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\obj\Release\Umbright.frm_int_pedido.resources
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\obj\Release\Umbright.frm_int_prepara_informacion.resources
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\obj\Release\Umbright.frm_maq_asignacion_ordenes.resources
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\obj\Release\Umbright.frm_maq_monitor.resources
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\obj\Release\Umbright.frm_maq_proceso_produccion.resources
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\obj\Release\Umbright.frmForecast.resources
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\obj\Release\Umbright.frm_cambiarperiodo.resources
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\obj\Release\Umbright.frm_carga_presupuesto_comercial.resources
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\obj\Release\Umbright.frm_carga_presupuesto_general.resources
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\obj\Release\Umbright.frm_liberar_ppto_cliente.resources
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\obj\Release\Umbright.frm_ppto_general.resources
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\obj\Release\Umbright.frm_presupuesto_multiple_producto_cliente.resources
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\obj\Release\Umbright.frm_productos_derivados.resources
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\obj\Release\Umbright.frm_scm_AsignarOrigen.resources
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\obj\Release\Umbright.frm_scm_coberturas.resources
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\obj\Release\Umbright.frm_scm_mantenimiento_productos.resources
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\obj\Release\Umbright.frm_scm_mantenimiento_proveedores.resources
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\obj\Release\Umbright.frm_scm_obtiene_informacion.resources
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\obj\Release\Umbright.frm_scm_parametros_generales.resources
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\obj\Release\Umbright.frm_scm_pedido.resources
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\obj\Release\Umbright.frm_scm_preparacion_informacion.resources
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\obj\Release\Umbright.vbproj.GenerateResource.Cache
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\bin\Release\Umbright.exe.config
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\bin\Release\Umbright.exe
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\bin\Release\Umbright.pdb
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\bin\Release\ClasesGenerales.dll
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\bin\Release\Compras.dll
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\bin\Release\FTP.dll
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\bin\Release\OpenNETCF.Desktop.Communication.dll
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\bin\Release\Seguridad.dll
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\bin\Release\Sincronizacion.dll
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\bin\Release\Transaccional.dll
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\bin\Release\Umbral_Flex.dll
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\bin\Release\ZedGraph.dll
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\bin\Release\Interop.prtcom.dll
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\bin\Release\Microsoft.Vbe.Interop.dll
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\bin\Release\Interop.CRAXDRT.dll
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\bin\Release\Interop.Shell32.dll
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\bin\Release\ClasesGenerales.pdb
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\bin\Release\ClasesGenerales.xml
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\bin\Release\Compras.pdb
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\bin\Release\Seguridad.pdb
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\bin\Release\Transaccional.pdb
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\bin\Release\Transaccional.xml
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\bin\Release\ZedGraph.xml
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\bin\Release\Sincronizacion.pdb
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\bin\Release\Sincronizacion.xml
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\bin\Release\FTP.pdb
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\bin\Release\OpenNETCF.Desktop.Communication.xml
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\bin\Release\Umbral_Flex.pdb
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\bin\Release\Umbral_Flex.xml
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\bin\Release\es\ZedGraph.resources.dll
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\bin\Release\pt\ZedGraph.resources.dll
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\bin\Release\zh-tw\ZedGraph.resources.dll
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\obj\Release\Umbright.exe
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\obj\Release\Umbright.pdb
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\bin\Release\Interop.CRVIEWERLib.dll
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\bin\Release\AxInterop.CRVIEWERLib.dll
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\bin\Release\CrystalDecisions.CrystalReports.Engine.dll
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\bin\Release\CrystalDecisions.ReportSource.dll
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\bin\Release\CrystalDecisions.Shared.dll
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\bin\Release\CrystalDecisions.Windows.Forms.dll
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\bin\Release\Seguridad.xml
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\obj\Release\Umbright.frmMob_ClienteRuta.resources
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\obj\Release\Umbright.frm_nuevoMenu.resources
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\obj\Release\Umbright.frm_Fecha_Prestamos.resources
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\bin\Release\Automatizar.dll
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\bin\Release\Automatizar.pdb
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\bin\Release\Automatizar.xml
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\obj\Release\Umbright.Resources.resources
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\obj\Release\Umbright.frm_graficar.resources
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\obj\Release\Umbright.frm_scm_definicion_pantalla.resources
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\obj\Release\Umbright.Frm_Cambio_Dai.resources
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\obj\Release\Umbright.Frm_Carga_Precios_Costo.resources
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\obj\Release\Umbright.Frm_PagosBI.resources
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\obj\Release\Umbright.Frm_PagosOtros.resources
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\obj\Release\Umbright.Frm_Pagos_Electronicos.resources
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\obj\Release\Umbright.frm_HDAcciones.resources
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\obj\Release\Umbright.frm_HDIncidencias.resources
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\obj\Release\Umbright.frm_HDIncidenciasFuera.resources
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\obj\Release\Umbright.frm_SCM_Procesos.resources
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\obj\Release\Umbright.Frm_Control_Accesos.resources
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\obj\Release\Umbright.frm_OChistorial.resources
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\obj\Release\Umbright.frm_ruta_logisitca.resources
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\obj\Release\Umbright.Frm_generador_xml.resources
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\bin\Debug\Umbright.exe.config
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\bin\Debug\Umbright.exe
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\bin\Debug\Umbright.pdb
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\bin\Debug\Automatizar.dll
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\bin\Debug\ClasesGenerales.dll
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\bin\Debug\Compras.dll
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\bin\Debug\CrystalDecisions.CrystalReports.Engine.dll
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\bin\Debug\CrystalDecisions.ReportSource.dll
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\bin\Debug\CrystalDecisions.Shared.dll
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\bin\Debug\CrystalDecisions.Windows.Forms.dll
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\bin\Debug\FTP.dll
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\bin\Debug\OpenNETCF.Desktop.Communication.dll
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\bin\Debug\Seguridad.dll
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\bin\Debug\Sincronizacion.dll
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\bin\Debug\Transaccional.dll
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\bin\Debug\Umbral_Flex.dll
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\bin\Debug\ZedGraph.dll
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\bin\Debug\AxInterop.CRVIEWERLib.dll
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\bin\Debug\Interop.prtcom.dll
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\bin\Debug\Microsoft.Vbe.Interop.dll
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\bin\Debug\Interop.Shell32.dll
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\bin\Debug\Interop.CRVIEWERLib.dll
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\bin\Debug\Interop.CRAXDRT.dll
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\bin\Debug\Automatizar.pdb
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\bin\Debug\Automatizar.xml
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\bin\Debug\ClasesGenerales.pdb
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\bin\Debug\ClasesGenerales.xml
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\bin\Debug\Compras.pdb
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\bin\Debug\Transaccional.pdb
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\bin\Debug\Transaccional.xml
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\bin\Debug\Seguridad.pdb
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\bin\Debug\Seguridad.xml
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\bin\Debug\ZedGraph.xml
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\bin\Debug\Sincronizacion.pdb
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\bin\Debug\Sincronizacion.xml
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\bin\Debug\FTP.pdb
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\bin\Debug\OpenNETCF.Desktop.Communication.xml
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\bin\Debug\Umbral_Flex.pdb
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\bin\Debug\Umbral_Flex.xml
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\bin\Debug\es\ZedGraph.resources.dll
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\bin\Debug\pt\ZedGraph.resources.dll
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\bin\Debug\zh-tw\ZedGraph.resources.dll
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\obj\Debug\ResolveAssemblyReference.cache
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\obj\Debug\Interop.prtcom.dll
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\obj\Debug\Umbright.vbproj.ResolveComReference.cache
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\obj\Debug\Umbright.Frm_Cambio_Dai.resources
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\obj\Debug\Umbright.Frm_Carga_Precios_Costo.resources
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\obj\Debug\Umbright.Frm_Control_Accesos.resources
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\obj\Debug\Umbright.frm_Fecha_Prestamos.resources
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\obj\Debug\Umbright.frm_cuentas_productos.resources
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\obj\Debug\Umbright.frm_asocia_solicitud_reserva.resources
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\obj\Debug\Umbright.frm_di.resources
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\obj\Debug\Umbright.frm_dua.resources
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\obj\Debug\Umbright.frm_reserva.resources
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\obj\Debug\Umbright.frm_solicitud_reserva.resources
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\obj\Debug\Umbright.frm_actualizacion_plasma.resources
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\obj\Debug\Umbright.frm_actualiza_precios_compras.resources
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\obj\Debug\Umbright.frm_asociar_ES_documentos.resources
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\obj\Debug\Umbright.frm_ayuda_cuentas.resources
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\obj\Debug\Umbright.frm_backorder.resources
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\obj\Debug\Umbright.frm_busqueda_general.resources
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\obj\Debug\Umbright.frm_busqueda_general_mysql.resources
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\obj\Debug\Umbright.frm_cambiar_clave.resources
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\obj\Debug\Umbright.Frm_cambiar_empresa.resources
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\obj\Debug\Umbright.frm_cancelacion_prestamo.resources
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\obj\Debug\Umbright.Frm_generador_xml.resources
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\obj\Debug\Umbright.frm_graficar.resources
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\obj\Debug\Umbright.frm_HDAcciones.resources
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\obj\Debug\Umbright.frm_HDIncidencias.resources
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\obj\Debug\Umbright.frm_HDIncidenciasFuera.resources
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\obj\Debug\Umbright.frm_OChistorial.resources
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\obj\Debug\Umbright.Frm_PagosBI.resources
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\obj\Debug\Umbright.Frm_PagosOtros.resources
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\obj\Debug\Umbright.Frm_Pagos_Electronicos.resources
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\obj\Debug\Umbright.frm_ruta_logisitca.resources
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\obj\Debug\Umbright.frm_int_listado.resources
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\obj\Debug\Umbright.frm_SCM_Procesos.resources
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\obj\Debug\Umbright.frm_columnas.resources
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\obj\Debug\Umbright.frm_nuevoMenu.resources
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\obj\Debug\Umbright.frm_consignaciones.resources
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\obj\Debug\Umbright.frm_consignaciones_saldos.resources
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\obj\Debug\Umbright.frm_control_fallas.resources
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\obj\Debug\Umbright.frm_control_transporte.resources
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\obj\Debug\Umbright.frm_conversion.resources
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\obj\Debug\Umbright.frm_diseñador_reportes.resources
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\obj\Debug\Umbright.Frm_edifact.resources
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\obj\Debug\Umbright.frm_ejecuta_sp.resources
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\obj\Debug\Umbright.frm_OCfechas.resources
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\obj\Debug\Umbright.frm_gen_tabcod.resources
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\obj\Debug\Umbright.frm_inicializar_periodo.resources
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\obj\Debug\Umbright.frm_InventarioCliente.resources
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\obj\Debug\Umbright.frm_inventarios_fisicos.resources
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\obj\Debug\Umbright.frm_junta_semanal_avance.resources
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\obj\Debug\Umbright.frm_OCconfirmacion.resources
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\obj\Debug\Umbright.frm_liberar_factura_parcial.resources
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\obj\Debug\Umbright.frm_listado_pedidos_MR.resources
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\obj\Debug\Umbright.frm_listado_picking.resources
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\obj\Debug\Umbright.frm_listas_generales.resources
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\obj\Debug\Umbright.frm_login.resources
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\obj\Debug\Umbright.frm_memos_promocionales.resources
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\obj\Debug\Umbright.frm_mensajeria_mr.resources
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\obj\Debug\Umbright.frm_menu_principal.resources
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\obj\Debug\Umbright.frm_pedidos_facturar.resources
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\obj\Debug\Umbright.frm_pedidos_pendientes.resources
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\obj\Debug\Umbright.frm_pickeador.resources
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\obj\Debug\Umbright.frm_procesar_productos.resources
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\obj\Debug\Umbright.frm_producto.resources
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\obj\Debug\Umbright.frm_productos_bajas.resources
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\obj\Debug\Umbright.frm_recepcion_control_transporte.resources
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\obj\Debug\Umbright.frm_reportes.resources
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\obj\Debug\Umbright.frm_resultado.resources
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\obj\Debug\Umbright.Resources.resources
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\obj\Debug\Umbright.frm_scm_definicion_pantalla.resources
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\obj\Debug\Umbright.frm_scm_ver_pedidos.resources
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\obj\Debug\Umbright.frm_scn_clientes.resources
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\obj\Debug\Umbright.frm_scn_movimiento_inventarios.resources
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\obj\Debug\Umbright.frm_scn_ofertas.resources
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\obj\Debug\Umbright.Frm_sincronizacion_informacion.resources
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\obj\Debug\Umbright.frm_solicitud_productos.resources
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\obj\Debug\Umbright.frm_solicitud_vacaciones.resources
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\obj\Debug\Umbright.frm_tracking_pedidos.resources
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\obj\Debug\Umbright.frm_usuario.resources
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\obj\Debug\Umbright.frm_mantenimiento.resources
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\obj\Debug\Umbright.frm_mantenimiento_activos_insumos.resources
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\obj\Debug\Umbright.frm_mantenimiento_modelos.resources
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\obj\Debug\Umbright.frm_movimientos_activos.resources
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\obj\Debug\Umbright.frm_movimientos_insumos.resources
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\obj\Debug\Umbright.frm_int_asociar_solicitud.resources
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\obj\Debug\Umbright.frm_int_listado_internaciones.resources
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\obj\Debug\Umbright.frm_int_parametros.resources
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\obj\Debug\Umbright.frm_int_pedido.resources
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\obj\Debug\Umbright.frm_int_prepara_informacion.resources
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\obj\Debug\Umbright.frm_maq_asignacion_ordenes.resources
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\obj\Debug\Umbright.frm_maq_monitor.resources
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\obj\Debug\Umbright.frm_maq_proceso_produccion.resources
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\obj\Debug\Umbright.frmMob_ClienteRuta.resources
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\obj\Debug\Umbright.frmForecast.resources
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\obj\Debug\Umbright.frm_cambiarperiodo.resources
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\obj\Debug\Umbright.frm_carga_presupuesto_comercial.resources
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\obj\Debug\Umbright.frm_carga_presupuesto_general.resources
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\obj\Debug\Umbright.frm_liberar_ppto_cliente.resources
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\obj\Debug\Umbright.frm_ppto_general.resources
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\obj\Debug\Umbright.frm_presupuesto_multiple_producto_cliente.resources
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\obj\Debug\Umbright.frm_productos_derivados.resources
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\obj\Debug\Umbright.frm_scm_AsignarOrigen.resources
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\obj\Debug\Umbright.frm_scm_coberturas.resources
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\obj\Debug\Umbright.frm_scm_mantenimiento_productos.resources
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\obj\Debug\Umbright.frm_scm_mantenimiento_proveedores.resources
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\obj\Debug\Umbright.frm_scm_obtiene_informacion.resources
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\obj\Debug\Umbright.frm_scm_parametros_generales.resources
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\obj\Debug\Umbright.frm_scm_pedido.resources
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\obj\Debug\Umbright.frm_scm_preparacion_informacion.resources
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\obj\Debug\Umbright.frm_scm_recalculo_semanas.resources
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\obj\Debug\Umbright.vbproj.GenerateResource.Cache
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\obj\Debug\Umbright.exe
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\obj\Debug\Umbright.pdb
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\obj\Release\Umbright.frm_cotizaciones_pendientes.resources
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\obj\Release\Umbright.frm_liquidacion_gastos.resources
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\obj\Release\Umbright.frm_registros_sanitarios.resources
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\obj\Release\Umbright.frm_seguimiento_pedidos.resources
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\obj\Release\Umbright.Frm_ClienteNuevo.resources
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\obj\Release\Umbright.frm_nombre_corto.resources
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\obj\Release\Umbright.frm_canastas2.resources
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\obj\Release\Umbright.frm_analisis_guias.resources
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\obj\Release\Umbright.frm_daEnvioInformacion.resources
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\obj\Release\Umbright.frm_listado_opl.resources
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\obj\Release\Umbright.frm_int_ListadoInternaciones.resources
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\obj\Release\Umbright.frm_maq_etiquetas_materiales.resources
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\obj\Release\Umbright.frm_maq_etiquetas_produccion.resources
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\obj\Release\Umbright.frm_maq_orden_etiquetas.resources
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\obj\Release\Umbright.frm_vin_Inventario_MinimoMaximo.resources
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\obj\Release\Umbright.frm_vin_Pedido_automatico.resources
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\obj\Release\Umbright.frm_int_informacionDI.resources
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\obj\Release\Umbright.frm_inventariosCiclicos.resources
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\obj\Release\Umbright.frm_int_producto_bloqueado.resources
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Umbright\obj\Release\Umbright.frm_int_trackingInternaciones.resources

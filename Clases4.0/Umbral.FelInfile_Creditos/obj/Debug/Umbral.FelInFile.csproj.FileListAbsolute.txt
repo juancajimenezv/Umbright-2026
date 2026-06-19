@@ -1,0 +1,285 @@
+C:\Users\egatica\source\Workspaces\Desarrollo\Aplicaciones\Version 8\Umbright\Clases4.0\Umbral.FelInfile_Creditos\bin\Debug\Umbral.FelInFileCreditos.dll
+C:\Users\egatica\source\Workspaces\Desarrollo\Aplicaciones\Version 8\Umbright\Clases4.0\Umbral.FelInfile_Creditos\bin\Debug\Umbral.FelInFileCreditos.pdb
+C:\Users\egatica\source\Workspaces\Desarrollo\Aplicaciones\Version 8\Umbright\Clases4.0\Umbral.FelInfile_Creditos\bin\Debug\Automatizar.dll
+C:\Users\egatica\source\Workspaces\Desarrollo\Aplicaciones\Version 8\Umbright\Clases4.0\Umbral.FelInfile_Creditos\bin\Debug\ClasesGenerales.dll
+C:\Users\egatica\source\Workspaces\Desarrollo\Aplicaciones\Version 8\Umbright\Clases4.0\Umbral.FelInfile_Creditos\bin\Debug\conectorNET.dll
+C:\Users\egatica\source\Workspaces\Desarrollo\Aplicaciones\Version 8\Umbright\Clases4.0\Umbral.FelInfile_Creditos\bin\Debug\Newtonsoft.Json.dll
+C:\Users\egatica\source\Workspaces\Desarrollo\Aplicaciones\Version 8\Umbright\Clases4.0\Umbral.FelInfile_Creditos\bin\Debug\Transaccional.dll
+C:\Users\egatica\source\Workspaces\Desarrollo\Aplicaciones\Version 8\Umbright\Clases4.0\Umbral.FelInfile_Creditos\bin\Debug\CrystalDecisions.CrystalReports.Engine.dll
+C:\Users\egatica\source\Workspaces\Desarrollo\Aplicaciones\Version 8\Umbright\Clases4.0\Umbral.FelInfile_Creditos\bin\Debug\CrystalDecisions.Shared.dll
+C:\Users\egatica\source\Workspaces\Desarrollo\Aplicaciones\Version 8\Umbright\Clases4.0\Umbral.FelInfile_Creditos\bin\Debug\CrystalDecisions.Windows.Forms.dll
+C:\Users\egatica\source\Workspaces\Desarrollo\Aplicaciones\Version 8\Umbright\Clases4.0\Umbral.FelInfile_Creditos\bin\Debug\FTP.dll
+C:\Users\egatica\source\Workspaces\Desarrollo\Aplicaciones\Version 8\Umbright\Clases4.0\Umbral.FelInfile_Creditos\bin\Debug\Interop.Shell32.dll
+C:\Users\egatica\source\Workspaces\Desarrollo\Aplicaciones\Version 8\Umbright\Clases4.0\Umbral.FelInfile_Creditos\bin\Debug\Sincronizacion.dll
+C:\Users\egatica\source\Workspaces\Desarrollo\Aplicaciones\Version 8\Umbright\Clases4.0\Umbral.FelInfile_Creditos\bin\Debug\ZedGraph.dll
+C:\Users\egatica\source\Workspaces\Desarrollo\Aplicaciones\Version 8\Umbright\Clases4.0\Umbral.FelInfile_Creditos\bin\Debug\MySql.Data.dll
+C:\Users\egatica\source\Workspaces\Desarrollo\Aplicaciones\Version 8\Umbright\Clases4.0\Umbral.FelInfile_Creditos\bin\Debug\CrystalDecisions.ReportSource.dll
+C:\Users\egatica\source\Workspaces\Desarrollo\Aplicaciones\Version 8\Umbright\Clases4.0\Umbral.FelInfile_Creditos\bin\Debug\Umbral_Flex.dll
+C:\Users\egatica\source\Workspaces\Desarrollo\Aplicaciones\Version 8\Umbright\Clases4.0\Umbral.FelInfile_Creditos\bin\Debug\stdole.dll
+C:\Users\egatica\source\Workspaces\Desarrollo\Aplicaciones\Version 8\Umbright\Clases4.0\Umbral.FelInfile_Creditos\bin\Debug\Automatizar.pdb
+C:\Users\egatica\source\Workspaces\Desarrollo\Aplicaciones\Version 8\Umbright\Clases4.0\Umbral.FelInfile_Creditos\bin\Debug\Automatizar.xml
+C:\Users\egatica\source\Workspaces\Desarrollo\Aplicaciones\Version 8\Umbright\Clases4.0\Umbral.FelInfile_Creditos\bin\Debug\ClasesGenerales.pdb
+C:\Users\egatica\source\Workspaces\Desarrollo\Aplicaciones\Version 8\Umbright\Clases4.0\Umbral.FelInfile_Creditos\bin\Debug\ClasesGenerales.xml
+C:\Users\egatica\source\Workspaces\Desarrollo\Aplicaciones\Version 8\Umbright\Clases4.0\Umbral.FelInfile_Creditos\bin\Debug\Newtonsoft.Json.xml
+C:\Users\egatica\source\Workspaces\Desarrollo\Aplicaciones\Version 8\Umbright\Clases4.0\Umbral.FelInfile_Creditos\bin\Debug\Transaccional.pdb
+C:\Users\egatica\source\Workspaces\Desarrollo\Aplicaciones\Version 8\Umbright\Clases4.0\Umbral.FelInfile_Creditos\bin\Debug\Transaccional.xml
+C:\Users\egatica\source\Workspaces\Desarrollo\Aplicaciones\Version 8\Umbright\Clases4.0\Umbral.FelInfile_Creditos\bin\Debug\Transaccional.dll.config
+C:\Users\egatica\source\Workspaces\Desarrollo\Aplicaciones\Version 8\Umbright\Clases4.0\Umbral.FelInfile_Creditos\bin\Debug\Sincronizacion.pdb
+C:\Users\egatica\source\Workspaces\Desarrollo\Aplicaciones\Version 8\Umbright\Clases4.0\Umbral.FelInfile_Creditos\bin\Debug\Sincronizacion.xml
+C:\Users\egatica\source\Workspaces\Desarrollo\Aplicaciones\Version 8\Umbright\Clases4.0\Umbral.FelInfile_Creditos\bin\Debug\Sincronizacion.dll.config
+C:\Users\egatica\source\Workspaces\Desarrollo\Aplicaciones\Version 8\Umbright\Clases4.0\Umbral.FelInfile_Creditos\bin\Debug\Umbral_Flex.pdb
+C:\Users\egatica\source\Workspaces\Desarrollo\Aplicaciones\Version 8\Umbright\Clases4.0\Umbral.FelInfile_Creditos\bin\Debug\Umbral_Flex.xml
+C:\Users\egatica\source\Workspaces\Desarrollo\Aplicaciones\Version 8\Umbright\Clases4.0\Umbral.FelInfile_Creditos\bin\Debug\Umbral_Flex.dll.config
+C:\Users\egatica\source\Workspaces\Desarrollo\Aplicaciones\Version 8\Umbright\Clases4.0\Umbral.FelInfile_Creditos\obj\Debug\Umbral.FelInFile.csprojAssemblyReference.cache
+C:\Users\egatica\source\Workspaces\Desarrollo\Aplicaciones\Version 8\Umbright\Clases4.0\Umbral.FelInfile_Creditos\obj\Debug\Umbral.FelInFileCreditos.Properties.Resources.resources
+C:\Users\egatica\source\Workspaces\Desarrollo\Aplicaciones\Version 8\Umbright\Clases4.0\Umbral.FelInfile_Creditos\obj\Debug\Umbral.FelInFile.csproj.GenerateResource.cache
+C:\Users\egatica\source\Workspaces\Desarrollo\Aplicaciones\Version 8\Umbright\Clases4.0\Umbral.FelInfile_Creditos\obj\Debug\Umbral.FelInFile.csproj.CoreCompileInputs.cache
+C:\Users\egatica\source\Workspaces\Desarrollo\Aplicaciones\Version 8\Umbright\Clases4.0\Umbral.FelInfile_Creditos\obj\Debug\Umbral.FelInFile.csproj.CopyComplete
+C:\Users\egatica\source\Workspaces\Desarrollo\Aplicaciones\Version 8\Umbright\Clases4.0\Umbral.FelInfile_Creditos\obj\Debug\Umbral.FelInFileCreditos.dll
+C:\Users\egatica\source\Workspaces\Desarrollo\Aplicaciones\Version 8\Umbright\Clases4.0\Umbral.FelInfile_Creditos\obj\Debug\Umbral.FelInFileCreditos.pdb
+C:\Users\egatica\source\Workspaces\Desarrollo\Aplicaciones\Version 8\Clases4.0\Umbral.FelInfile_Creditos\bin\Debug\Umbral.FelInFileCreditos.dll
+C:\Users\egatica\source\Workspaces\Desarrollo\Aplicaciones\Version 8\Clases4.0\Umbral.FelInfile_Creditos\bin\Debug\Umbral.FelInFileCreditos.pdb
+C:\Users\egatica\source\Workspaces\Desarrollo\Aplicaciones\Version 8\Clases4.0\Umbral.FelInfile_Creditos\bin\Debug\ClasesGenerales.dll
+C:\Users\egatica\source\Workspaces\Desarrollo\Aplicaciones\Version 8\Clases4.0\Umbral.FelInfile_Creditos\bin\Debug\conectorNET.dll
+C:\Users\egatica\source\Workspaces\Desarrollo\Aplicaciones\Version 8\Clases4.0\Umbral.FelInfile_Creditos\bin\Debug\Newtonsoft.Json.dll
+C:\Users\egatica\source\Workspaces\Desarrollo\Aplicaciones\Version 8\Clases4.0\Umbral.FelInfile_Creditos\bin\Debug\Transaccional.dll
+C:\Users\egatica\source\Workspaces\Desarrollo\Aplicaciones\Version 8\Clases4.0\Umbral.FelInfile_Creditos\bin\Debug\FTP.dll
+C:\Users\egatica\source\Workspaces\Desarrollo\Aplicaciones\Version 8\Clases4.0\Umbral.FelInfile_Creditos\bin\Debug\Interop.Shell32.dll
+C:\Users\egatica\source\Workspaces\Desarrollo\Aplicaciones\Version 8\Clases4.0\Umbral.FelInfile_Creditos\bin\Debug\Sincronizacion.dll
+C:\Users\egatica\source\Workspaces\Desarrollo\Aplicaciones\Version 8\Clases4.0\Umbral.FelInfile_Creditos\bin\Debug\ZedGraph.dll
+C:\Users\egatica\source\Workspaces\Desarrollo\Aplicaciones\Version 8\Clases4.0\Umbral.FelInfile_Creditos\bin\Debug\stdole.dll
+C:\Users\egatica\source\Workspaces\Desarrollo\Aplicaciones\Version 8\Clases4.0\Umbral.FelInfile_Creditos\bin\Debug\ClasesGenerales.pdb
+C:\Users\egatica\source\Workspaces\Desarrollo\Aplicaciones\Version 8\Clases4.0\Umbral.FelInfile_Creditos\bin\Debug\ClasesGenerales.xml
+C:\Users\egatica\source\Workspaces\Desarrollo\Aplicaciones\Version 8\Clases4.0\Umbral.FelInfile_Creditos\bin\Debug\Newtonsoft.Json.xml
+C:\Users\egatica\source\Workspaces\Desarrollo\Aplicaciones\Version 8\Clases4.0\Umbral.FelInfile_Creditos\bin\Debug\Transaccional.pdb
+C:\Users\egatica\source\Workspaces\Desarrollo\Aplicaciones\Version 8\Clases4.0\Umbral.FelInfile_Creditos\bin\Debug\Transaccional.xml
+C:\Users\egatica\source\Workspaces\Desarrollo\Aplicaciones\Version 8\Clases4.0\Umbral.FelInfile_Creditos\bin\Debug\FTP.pdb
+C:\Users\egatica\source\Workspaces\Desarrollo\Aplicaciones\Version 8\Clases4.0\Umbral.FelInfile_Creditos\bin\Debug\ZedGraph.xml
+C:\Users\egatica\source\Workspaces\Desarrollo\Aplicaciones\Version 8\Clases4.0\Umbral.FelInfile_Creditos\bin\Debug\es\ZedGraph.resources.dll
+C:\Users\egatica\source\Workspaces\Desarrollo\Aplicaciones\Version 8\Clases4.0\Umbral.FelInfile_Creditos\bin\Debug\pt\ZedGraph.resources.dll
+C:\Users\egatica\source\Workspaces\Desarrollo\Aplicaciones\Version 8\Clases4.0\Umbral.FelInfile_Creditos\bin\Debug\zh-tw\ZedGraph.resources.dll
+C:\Users\egatica\source\Workspaces\Desarrollo\Aplicaciones\Version 8\Clases4.0\Umbral.FelInfile_Creditos\obj\Debug\Umbral.FelInFileCreditos.Properties.Resources.resources
+C:\Users\egatica\source\Workspaces\Desarrollo\Aplicaciones\Version 8\Clases4.0\Umbral.FelInfile_Creditos\obj\Debug\Umbral.FelInFile.csproj.GenerateResource.cache
+C:\Users\egatica\source\Workspaces\Desarrollo\Aplicaciones\Version 8\Clases4.0\Umbral.FelInfile_Creditos\obj\Debug\Umbral.FelInFile.csproj.CoreCompileInputs.cache
+C:\Users\egatica\source\Workspaces\Desarrollo\Aplicaciones\Version 8\Clases4.0\Umbral.FelInfile_Creditos\obj\Debug\Umbral.FelInFile.csproj.CopyComplete
+C:\Users\egatica\source\Workspaces\Desarrollo\Aplicaciones\Version 8\Clases4.0\Umbral.FelInfile_Creditos\obj\Debug\Umbral.FelInFileCreditos.dll
+C:\Users\egatica\source\Workspaces\Desarrollo\Aplicaciones\Version 8\Clases4.0\Umbral.FelInfile_Creditos\obj\Debug\Umbral.FelInFileCreditos.pdb
+C:\Users\egatica\source\Workspaces\Desarrollo\Aplicaciones\Version 8\Clases4.0\Umbral.FelInfile_Creditos\bin\Debug\conectorNETv2.dll
+C:\Users\egatica\source\Workspaces\Desarrollo\Aplicaciones\Version 8\Clases4.0\Umbral.FelInfile_Creditos\bin\Debug\Transaccional.dll.config
+C:\Users\egatica\source\Workspaces\Desarrollo\Aplicaciones\Version 8\Clases4.0\Umbral.FelInfile_Creditos\bin\Debug\MySql.Data.dll
+C:\Users\egatica\source\Workspaces\Desarrollo\Aplicaciones\Version 8\Clases4.0\Umbral.FelInfile_Creditos\bin\Debug\ShockwaveFlashObjects.dll
+C:\Users\egatica\source\Workspaces\Desarrollo\Aplicaciones\Version 8\Clases4.0\Umbral.FelInfile_Creditos\obj\Debug\Umbral.FelInFile.csproj.AssemblyReference.cache
+C:\Desarrollo\Version 8\Clases4.0\Umbral.FelInfile_Creditos\bin\Debug\Umbral.FelInFileCreditos.dll
+C:\Desarrollo\Version 8\Clases4.0\Umbral.FelInfile_Creditos\bin\Debug\Umbral.FelInFileCreditos.pdb
+C:\Desarrollo\Version 8\Clases4.0\Umbral.FelInfile_Creditos\bin\Debug\ClasesGenerales.dll
+C:\Desarrollo\Version 8\Clases4.0\Umbral.FelInfile_Creditos\bin\Debug\conectorNET.dll
+C:\Desarrollo\Version 8\Clases4.0\Umbral.FelInfile_Creditos\bin\Debug\conectorNETv2.dll
+C:\Desarrollo\Version 8\Clases4.0\Umbral.FelInfile_Creditos\bin\Debug\Newtonsoft.Json.dll
+C:\Desarrollo\Version 8\Clases4.0\Umbral.FelInfile_Creditos\bin\Debug\Transaccional.dll
+C:\Desarrollo\Version 8\Clases4.0\Umbral.FelInfile_Creditos\bin\Debug\FTP.dll
+C:\Desarrollo\Version 8\Clases4.0\Umbral.FelInfile_Creditos\bin\Debug\Interop.Shell32.dll
+C:\Desarrollo\Version 8\Clases4.0\Umbral.FelInfile_Creditos\bin\Debug\Sincronizacion.dll
+C:\Desarrollo\Version 8\Clases4.0\Umbral.FelInfile_Creditos\bin\Debug\ZedGraph.dll
+C:\Desarrollo\Version 8\Clases4.0\Umbral.FelInfile_Creditos\bin\Debug\MySql.Data.dll
+C:\Desarrollo\Version 8\Clases4.0\Umbral.FelInfile_Creditos\bin\Debug\System.Data.SqlServerCe.dll
+C:\Desarrollo\Version 8\Clases4.0\Umbral.FelInfile_Creditos\bin\Debug\Umbral_Flex.dll
+C:\Desarrollo\Version 8\Clases4.0\Umbral.FelInfile_Creditos\bin\Debug\Interfaz_CRM.Mail.dll
+C:\Desarrollo\Version 8\Clases4.0\Umbral.FelInfile_Creditos\bin\Debug\stdole.dll
+C:\Desarrollo\Version 8\Clases4.0\Umbral.FelInfile_Creditos\bin\Debug\FlexLine_CRUD.dll
+C:\Desarrollo\Version 8\Clases4.0\Umbral.FelInfile_Creditos\bin\Debug\EntityFramework.dll
+C:\Desarrollo\Version 8\Clases4.0\Umbral.FelInfile_Creditos\bin\Debug\Seguridad.dll
+C:\Desarrollo\Version 8\Clases4.0\Umbral.FelInfile_Creditos\bin\Debug\ClasesGenerales.pdb
+C:\Desarrollo\Version 8\Clases4.0\Umbral.FelInfile_Creditos\bin\Debug\ClasesGenerales.xml
+C:\Desarrollo\Version 8\Clases4.0\Umbral.FelInfile_Creditos\bin\Debug\Newtonsoft.Json.xml
+C:\Desarrollo\Version 8\Clases4.0\Umbral.FelInfile_Creditos\bin\Debug\Transaccional.pdb
+C:\Desarrollo\Version 8\Clases4.0\Umbral.FelInfile_Creditos\bin\Debug\Transaccional.xml
+C:\Desarrollo\Version 8\Clases4.0\Umbral.FelInfile_Creditos\bin\Debug\Sincronizacion.pdb
+C:\Desarrollo\Version 8\Clases4.0\Umbral.FelInfile_Creditos\bin\Debug\Sincronizacion.dll.config
+C:\Desarrollo\Version 8\Clases4.0\Umbral.FelInfile_Creditos\bin\Debug\System.Data.SqlServerCe.xml
+C:\Desarrollo\Version 8\Clases4.0\Umbral.FelInfile_Creditos\bin\Debug\Umbral_Flex.pdb
+C:\Desarrollo\Version 8\Clases4.0\Umbral.FelInfile_Creditos\bin\Debug\Umbral_Flex.dll.config
+C:\Desarrollo\Version 8\Clases4.0\Umbral.FelInfile_Creditos\bin\Debug\Interfaz_CRM.Mail.pdb
+C:\Desarrollo\Version 8\Clases4.0\Umbral.FelInfile_Creditos\bin\Debug\Interfaz_CRM.Mail.dll.config
+C:\Desarrollo\Version 8\Clases4.0\Umbral.FelInfile_Creditos\bin\Debug\FlexLine_CRUD.pdb
+C:\Desarrollo\Version 8\Clases4.0\Umbral.FelInfile_Creditos\bin\Debug\FlexLine_CRUD.xml
+C:\Desarrollo\Version 8\Clases4.0\Umbral.FelInfile_Creditos\bin\Debug\EntityFramework.xml
+C:\Desarrollo\Version 8\Clases4.0\Umbral.FelInfile_Creditos\bin\Debug\Seguridad.pdb
+C:\Desarrollo\Version 8\Clases4.0\Umbral.FelInfile_Creditos\obj\Debug\Umbral.FelInFile.csproj.AssemblyReference.cache
+C:\Desarrollo\Version 8\Clases4.0\Umbral.FelInfile_Creditos\obj\Debug\Umbral.FelInFileCreditos.Properties.Resources.resources
+C:\Desarrollo\Version 8\Clases4.0\Umbral.FelInfile_Creditos\obj\Debug\Umbral.FelInFile.csproj.GenerateResource.cache
+C:\Desarrollo\Version 8\Clases4.0\Umbral.FelInfile_Creditos\obj\Debug\Umbral.FelInFile.csproj.CoreCompileInputs.cache
+C:\Desarrollo\Version 8\Clases4.0\Umbral.FelInfile_Creditos\obj\Debug\Umbral.F.C26DC131.Up2Date
+C:\Desarrollo\Version 8\Clases4.0\Umbral.FelInfile_Creditos\obj\Debug\Umbral.FelInFileCreditos.dll
+C:\Desarrollo\Version 8\Clases4.0\Umbral.FelInfile_Creditos\obj\Debug\Umbral.FelInFileCreditos.pdb
+C:\Desarrollo\Version 8\Clases4.0\Umbral.FelInfile_Creditos\bin\Debug\FTP.pdb
+C:\Desarrollo\Version 8\Clases4.0\Umbral.FelInfile_Creditos\bin\Debug\Sincronizacion.xml
+C:\Desarrollo\Version 8\Clases4.0\Umbral.FelInfile_Creditos\bin\Debug\ZedGraph.xml
+C:\Desarrollo\Version 8\Clases4.0\Umbral.FelInfile_Creditos\bin\Debug\Seguridad.xml
+C:\Desarrollo\Version 8\Clases4.0\Umbral.FelInfile_Creditos\bin\Debug\es\ZedGraph.resources.dll
+C:\Desarrollo\Version 8\Clases4.0\Umbral.FelInfile_Creditos\bin\Debug\pt\ZedGraph.resources.dll
+C:\Desarrollo\Version 8\Clases4.0\Umbral.FelInfile_Creditos\bin\Debug\zh-tw\ZedGraph.resources.dll
+C:\Desarrollo\Version 8\Clases4.0\Umbral.FelInfile_Creditos\bin\Debug\Umbral_Flex.xml
+C:\Desarrollo\Version 9\Clases4.0\Umbral.FelInfile_Creditos\bin\Debug\Umbral.FelInFileCreditos.dll
+C:\Desarrollo\Version 9\Clases4.0\Umbral.FelInfile_Creditos\bin\Debug\Umbral.FelInFileCreditos.pdb
+C:\Desarrollo\Version 9\Clases4.0\Umbral.FelInfile_Creditos\bin\Debug\Automatizar.dll
+C:\Desarrollo\Version 9\Clases4.0\Umbral.FelInfile_Creditos\bin\Debug\ClasesGenerales.dll
+C:\Desarrollo\Version 9\Clases4.0\Umbral.FelInfile_Creditos\bin\Debug\conectorNET.dll
+C:\Desarrollo\Version 9\Clases4.0\Umbral.FelInfile_Creditos\bin\Debug\conectorNETv2.dll
+C:\Desarrollo\Version 9\Clases4.0\Umbral.FelInfile_Creditos\bin\Debug\Newtonsoft.Json.dll
+C:\Desarrollo\Version 9\Clases4.0\Umbral.FelInfile_Creditos\bin\Debug\Transaccional.dll
+C:\Desarrollo\Version 9\Clases4.0\Umbral.FelInfile_Creditos\bin\Debug\CrystalDecisions.CrystalReports.Engine.dll
+C:\Desarrollo\Version 9\Clases4.0\Umbral.FelInfile_Creditos\bin\Debug\CrystalDecisions.Shared.dll
+C:\Desarrollo\Version 9\Clases4.0\Umbral.FelInfile_Creditos\bin\Debug\CrystalDecisions.Windows.Forms.dll
+C:\Desarrollo\Version 9\Clases4.0\Umbral.FelInfile_Creditos\bin\Debug\FTP.dll
+C:\Desarrollo\Version 9\Clases4.0\Umbral.FelInfile_Creditos\bin\Debug\Interop.Shell32.dll
+C:\Desarrollo\Version 9\Clases4.0\Umbral.FelInfile_Creditos\bin\Debug\Sincronizacion.dll
+C:\Desarrollo\Version 9\Clases4.0\Umbral.FelInfile_Creditos\bin\Debug\ZedGraph.dll
+C:\Desarrollo\Version 9\Clases4.0\Umbral.FelInfile_Creditos\bin\Debug\MySql.Data.dll
+C:\Desarrollo\Version 9\Clases4.0\Umbral.FelInfile_Creditos\bin\Debug\System.Data.SqlServerCe.dll
+C:\Desarrollo\Version 9\Clases4.0\Umbral.FelInfile_Creditos\bin\Debug\CrystalDecisions.ReportSource.dll
+C:\Desarrollo\Version 9\Clases4.0\Umbral.FelInfile_Creditos\bin\Debug\Umbral_Flex.dll
+C:\Desarrollo\Version 9\Clases4.0\Umbral.FelInfile_Creditos\bin\Debug\Interfaz_CRM.Mail.dll
+C:\Desarrollo\Version 9\Clases4.0\Umbral.FelInfile_Creditos\bin\Debug\FlexLine_CRUD.dll
+C:\Desarrollo\Version 9\Clases4.0\Umbral.FelInfile_Creditos\bin\Debug\stdole.dll
+C:\Desarrollo\Version 9\Clases4.0\Umbral.FelInfile_Creditos\bin\Debug\EntityFramework.dll
+C:\Desarrollo\Version 9\Clases4.0\Umbral.FelInfile_Creditos\bin\Debug\Seguridad.dll
+C:\Desarrollo\Version 9\Clases4.0\Umbral.FelInfile_Creditos\bin\Debug\Automatizar.pdb
+C:\Desarrollo\Version 9\Clases4.0\Umbral.FelInfile_Creditos\bin\Debug\Automatizar.xml
+C:\Desarrollo\Version 9\Clases4.0\Umbral.FelInfile_Creditos\bin\Debug\ClasesGenerales.pdb
+C:\Desarrollo\Version 9\Clases4.0\Umbral.FelInfile_Creditos\bin\Debug\ClasesGenerales.xml
+C:\Desarrollo\Version 9\Clases4.0\Umbral.FelInfile_Creditos\bin\Debug\Newtonsoft.Json.xml
+C:\Desarrollo\Version 9\Clases4.0\Umbral.FelInfile_Creditos\bin\Debug\Transaccional.pdb
+C:\Desarrollo\Version 9\Clases4.0\Umbral.FelInfile_Creditos\bin\Debug\Transaccional.xml
+C:\Desarrollo\Version 9\Clases4.0\Umbral.FelInfile_Creditos\bin\Debug\FTP.pdb
+C:\Desarrollo\Version 9\Clases4.0\Umbral.FelInfile_Creditos\bin\Debug\Sincronizacion.pdb
+C:\Desarrollo\Version 9\Clases4.0\Umbral.FelInfile_Creditos\bin\Debug\Sincronizacion.xml
+C:\Desarrollo\Version 9\Clases4.0\Umbral.FelInfile_Creditos\bin\Debug\Sincronizacion.dll.config
+C:\Desarrollo\Version 9\Clases4.0\Umbral.FelInfile_Creditos\bin\Debug\ZedGraph.xml
+C:\Desarrollo\Version 9\Clases4.0\Umbral.FelInfile_Creditos\bin\Debug\System.Data.SqlServerCe.xml
+C:\Desarrollo\Version 9\Clases4.0\Umbral.FelInfile_Creditos\bin\Debug\Umbral_Flex.pdb
+C:\Desarrollo\Version 9\Clases4.0\Umbral.FelInfile_Creditos\bin\Debug\Umbral_Flex.xml
+C:\Desarrollo\Version 9\Clases4.0\Umbral.FelInfile_Creditos\bin\Debug\Umbral_Flex.dll.config
+C:\Desarrollo\Version 9\Clases4.0\Umbral.FelInfile_Creditos\bin\Debug\Interfaz_CRM.Mail.pdb
+C:\Desarrollo\Version 9\Clases4.0\Umbral.FelInfile_Creditos\bin\Debug\Interfaz_CRM.Mail.dll.config
+C:\Desarrollo\Version 9\Clases4.0\Umbral.FelInfile_Creditos\bin\Debug\FlexLine_CRUD.pdb
+C:\Desarrollo\Version 9\Clases4.0\Umbral.FelInfile_Creditos\bin\Debug\FlexLine_CRUD.xml
+C:\Desarrollo\Version 9\Clases4.0\Umbral.FelInfile_Creditos\bin\Debug\EntityFramework.xml
+C:\Desarrollo\Version 9\Clases4.0\Umbral.FelInfile_Creditos\bin\Debug\Seguridad.pdb
+C:\Desarrollo\Version 9\Clases4.0\Umbral.FelInfile_Creditos\bin\Debug\Seguridad.xml
+C:\Desarrollo\Version 9\Clases4.0\Umbral.FelInfile_Creditos\bin\Debug\es\ZedGraph.resources.dll
+C:\Desarrollo\Version 9\Clases4.0\Umbral.FelInfile_Creditos\bin\Debug\pt\ZedGraph.resources.dll
+C:\Desarrollo\Version 9\Clases4.0\Umbral.FelInfile_Creditos\bin\Debug\zh-tw\ZedGraph.resources.dll
+C:\Desarrollo\Version 9\Clases4.0\Umbral.FelInfile_Creditos\obj\Debug\Umbral.FelInFile.csproj.AssemblyReference.cache
+C:\Desarrollo\Version 9\Clases4.0\Umbral.FelInfile_Creditos\obj\Debug\Umbral.FelInFileCreditos.Properties.Resources.resources
+C:\Desarrollo\Version 9\Clases4.0\Umbral.FelInfile_Creditos\obj\Debug\Umbral.FelInFile.csproj.GenerateResource.cache
+C:\Desarrollo\Version 9\Clases4.0\Umbral.FelInfile_Creditos\obj\Debug\Umbral.FelInFile.csproj.CoreCompileInputs.cache
+C:\Desarrollo\Version 9\Clases4.0\Umbral.FelInfile_Creditos\obj\Debug\Umbral.F.C26DC131.Up2Date
+C:\Desarrollo\Version 9\Clases4.0\Umbral.FelInfile_Creditos\obj\Debug\Umbral.FelInFileCreditos.dll
+C:\Desarrollo\Version 9\Clases4.0\Umbral.FelInfile_Creditos\obj\Debug\Umbral.FelInFileCreditos.pdb
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Clases4.0\Umbral.FelInfile_Creditos\bin\Debug\Umbral.FelInFileCreditos.dll
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Clases4.0\Umbral.FelInfile_Creditos\bin\Debug\Umbral.FelInFileCreditos.pdb
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Clases4.0\Umbral.FelInfile_Creditos\bin\Debug\Automatizar.dll
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Clases4.0\Umbral.FelInfile_Creditos\bin\Debug\ClasesGenerales.dll
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Clases4.0\Umbral.FelInfile_Creditos\bin\Debug\conectorNET.dll
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Clases4.0\Umbral.FelInfile_Creditos\bin\Debug\conectorNETv2.dll
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Clases4.0\Umbral.FelInfile_Creditos\bin\Debug\Newtonsoft.Json.dll
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Clases4.0\Umbral.FelInfile_Creditos\bin\Debug\Transaccional.dll
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Clases4.0\Umbral.FelInfile_Creditos\bin\Debug\CrystalDecisions.CrystalReports.Engine.dll
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Clases4.0\Umbral.FelInfile_Creditos\bin\Debug\CrystalDecisions.Shared.dll
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Clases4.0\Umbral.FelInfile_Creditos\bin\Debug\CrystalDecisions.Windows.Forms.dll
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Clases4.0\Umbral.FelInfile_Creditos\bin\Debug\FTP.dll
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Clases4.0\Umbral.FelInfile_Creditos\bin\Debug\Interop.Shell32.dll
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Clases4.0\Umbral.FelInfile_Creditos\bin\Debug\Sincronizacion.dll
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Clases4.0\Umbral.FelInfile_Creditos\bin\Debug\ZedGraph.dll
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Clases4.0\Umbral.FelInfile_Creditos\bin\Debug\MySql.Data.dll
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Clases4.0\Umbral.FelInfile_Creditos\bin\Debug\System.Data.SqlServerCe.dll
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Clases4.0\Umbral.FelInfile_Creditos\bin\Debug\CrystalDecisions.ReportSource.dll
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Clases4.0\Umbral.FelInfile_Creditos\bin\Debug\Umbral_Flex.dll
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Clases4.0\Umbral.FelInfile_Creditos\bin\Debug\Interfaz_CRM.Mail.dll
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Clases4.0\Umbral.FelInfile_Creditos\bin\Debug\FlexLine_CRUD.dll
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Clases4.0\Umbral.FelInfile_Creditos\bin\Debug\stdole.dll
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Clases4.0\Umbral.FelInfile_Creditos\bin\Debug\EntityFramework.dll
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Clases4.0\Umbral.FelInfile_Creditos\bin\Debug\Seguridad.dll
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Clases4.0\Umbral.FelInfile_Creditos\bin\Debug\Automatizar.pdb
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Clases4.0\Umbral.FelInfile_Creditos\bin\Debug\Automatizar.xml
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Clases4.0\Umbral.FelInfile_Creditos\bin\Debug\ClasesGenerales.pdb
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Clases4.0\Umbral.FelInfile_Creditos\bin\Debug\ClasesGenerales.xml
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Clases4.0\Umbral.FelInfile_Creditos\bin\Debug\Newtonsoft.Json.xml
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Clases4.0\Umbral.FelInfile_Creditos\bin\Debug\Transaccional.pdb
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Clases4.0\Umbral.FelInfile_Creditos\bin\Debug\Transaccional.xml
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Clases4.0\Umbral.FelInfile_Creditos\bin\Debug\FTP.pdb
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Clases4.0\Umbral.FelInfile_Creditos\bin\Debug\Sincronizacion.pdb
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Clases4.0\Umbral.FelInfile_Creditos\bin\Debug\Sincronizacion.xml
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Clases4.0\Umbral.FelInfile_Creditos\bin\Debug\Sincronizacion.dll.config
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Clases4.0\Umbral.FelInfile_Creditos\bin\Debug\ZedGraph.xml
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Clases4.0\Umbral.FelInfile_Creditos\bin\Debug\System.Data.SqlServerCe.xml
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Clases4.0\Umbral.FelInfile_Creditos\bin\Debug\Umbral_Flex.pdb
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Clases4.0\Umbral.FelInfile_Creditos\bin\Debug\Umbral_Flex.xml
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Clases4.0\Umbral.FelInfile_Creditos\bin\Debug\Umbral_Flex.dll.config
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Clases4.0\Umbral.FelInfile_Creditos\bin\Debug\Interfaz_CRM.Mail.pdb
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Clases4.0\Umbral.FelInfile_Creditos\bin\Debug\Interfaz_CRM.Mail.dll.config
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Clases4.0\Umbral.FelInfile_Creditos\bin\Debug\FlexLine_CRUD.pdb
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Clases4.0\Umbral.FelInfile_Creditos\bin\Debug\FlexLine_CRUD.xml
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Clases4.0\Umbral.FelInfile_Creditos\bin\Debug\EntityFramework.xml
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Clases4.0\Umbral.FelInfile_Creditos\bin\Debug\Seguridad.pdb
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Clases4.0\Umbral.FelInfile_Creditos\bin\Debug\Seguridad.xml
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Clases4.0\Umbral.FelInfile_Creditos\bin\Debug\es\ZedGraph.resources.dll
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Clases4.0\Umbral.FelInfile_Creditos\bin\Debug\pt\ZedGraph.resources.dll
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Clases4.0\Umbral.FelInfile_Creditos\bin\Debug\zh-tw\ZedGraph.resources.dll
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Clases4.0\Umbral.FelInfile_Creditos\obj\Debug\Umbral.FelInFile.csproj.AssemblyReference.cache
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Clases4.0\Umbral.FelInfile_Creditos\obj\Debug\Umbral.FelInFileCreditos.Properties.Resources.resources
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Clases4.0\Umbral.FelInfile_Creditos\obj\Debug\Umbral.FelInFile.csproj.GenerateResource.cache
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Clases4.0\Umbral.FelInfile_Creditos\obj\Debug\Umbral.FelInFile.csproj.CoreCompileInputs.cache
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Clases4.0\Umbral.FelInfile_Creditos\obj\Debug\Umbral.F.C26DC131.Up2Date
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Clases4.0\Umbral.FelInfile_Creditos\obj\Debug\Umbral.FelInFileCreditos.dll
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Clases4.0\Umbral.FelInfile_Creditos\obj\Debug\Umbral.FelInFileCreditos.pdb
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Clases4.0\Umbral.FelInfile_Creditos\obj\_buildcheck\Umbral.FelInFileCreditos.dll
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Clases4.0\Umbral.FelInfile_Creditos\obj\_buildcheck\Umbral.FelInFileCreditos.pdb
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Clases4.0\Umbral.FelInfile_Creditos\obj\_buildcheck\Automatizar.dll
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Clases4.0\Umbral.FelInfile_Creditos\obj\_buildcheck\ClasesGenerales.dll
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Clases4.0\Umbral.FelInfile_Creditos\obj\_buildcheck\conectorNET.dll
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Clases4.0\Umbral.FelInfile_Creditos\obj\_buildcheck\conectorNETv2.dll
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Clases4.0\Umbral.FelInfile_Creditos\obj\_buildcheck\Newtonsoft.Json.dll
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Clases4.0\Umbral.FelInfile_Creditos\obj\_buildcheck\Transaccional.dll
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Clases4.0\Umbral.FelInfile_Creditos\obj\_buildcheck\CrystalDecisions.CrystalReports.Engine.dll
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Clases4.0\Umbral.FelInfile_Creditos\obj\_buildcheck\CrystalDecisions.Shared.dll
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Clases4.0\Umbral.FelInfile_Creditos\obj\_buildcheck\CrystalDecisions.Windows.Forms.dll
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Clases4.0\Umbral.FelInfile_Creditos\obj\_buildcheck\FTP.dll
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Clases4.0\Umbral.FelInfile_Creditos\obj\_buildcheck\Interop.Shell32.dll
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Clases4.0\Umbral.FelInfile_Creditos\obj\_buildcheck\Sincronizacion.dll
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Clases4.0\Umbral.FelInfile_Creditos\obj\_buildcheck\ZedGraph.dll
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Clases4.0\Umbral.FelInfile_Creditos\obj\_buildcheck\MySql.Data.dll
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Clases4.0\Umbral.FelInfile_Creditos\obj\_buildcheck\System.Data.SqlServerCe.dll
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Clases4.0\Umbral.FelInfile_Creditos\obj\_buildcheck\CrystalDecisions.ReportSource.dll
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Clases4.0\Umbral.FelInfile_Creditos\obj\_buildcheck\Umbral_Flex.dll
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Clases4.0\Umbral.FelInfile_Creditos\obj\_buildcheck\Interfaz_CRM.Mail.dll
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Clases4.0\Umbral.FelInfile_Creditos\obj\_buildcheck\FlexLine_CRUD.dll
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Clases4.0\Umbral.FelInfile_Creditos\obj\_buildcheck\stdole.dll
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Clases4.0\Umbral.FelInfile_Creditos\obj\_buildcheck\EntityFramework.dll
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Clases4.0\Umbral.FelInfile_Creditos\obj\_buildcheck\Seguridad.dll
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Clases4.0\Umbral.FelInfile_Creditos\obj\_buildcheck\Automatizar.pdb
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Clases4.0\Umbral.FelInfile_Creditos\obj\_buildcheck\Automatizar.xml
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Clases4.0\Umbral.FelInfile_Creditos\obj\_buildcheck\ClasesGenerales.pdb
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Clases4.0\Umbral.FelInfile_Creditos\obj\_buildcheck\ClasesGenerales.xml
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Clases4.0\Umbral.FelInfile_Creditos\obj\_buildcheck\Newtonsoft.Json.xml
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Clases4.0\Umbral.FelInfile_Creditos\obj\_buildcheck\Transaccional.pdb
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Clases4.0\Umbral.FelInfile_Creditos\obj\_buildcheck\Transaccional.xml
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Clases4.0\Umbral.FelInfile_Creditos\obj\_buildcheck\FTP.pdb
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Clases4.0\Umbral.FelInfile_Creditos\obj\_buildcheck\Sincronizacion.pdb
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Clases4.0\Umbral.FelInfile_Creditos\obj\_buildcheck\Sincronizacion.xml
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Clases4.0\Umbral.FelInfile_Creditos\obj\_buildcheck\Sincronizacion.dll.config
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Clases4.0\Umbral.FelInfile_Creditos\obj\_buildcheck\ZedGraph.xml
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Clases4.0\Umbral.FelInfile_Creditos\obj\_buildcheck\System.Data.SqlServerCe.xml
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Clases4.0\Umbral.FelInfile_Creditos\obj\_buildcheck\Umbral_Flex.pdb
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Clases4.0\Umbral.FelInfile_Creditos\obj\_buildcheck\Umbral_Flex.xml
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Clases4.0\Umbral.FelInfile_Creditos\obj\_buildcheck\Umbral_Flex.dll.config
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Clases4.0\Umbral.FelInfile_Creditos\obj\_buildcheck\Interfaz_CRM.Mail.pdb
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Clases4.0\Umbral.FelInfile_Creditos\obj\_buildcheck\Interfaz_CRM.Mail.dll.config
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Clases4.0\Umbral.FelInfile_Creditos\obj\_buildcheck\FlexLine_CRUD.pdb
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Clases4.0\Umbral.FelInfile_Creditos\obj\_buildcheck\FlexLine_CRUD.xml
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Clases4.0\Umbral.FelInfile_Creditos\obj\_buildcheck\EntityFramework.xml
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Clases4.0\Umbral.FelInfile_Creditos\obj\_buildcheck\Seguridad.pdb
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Clases4.0\Umbral.FelInfile_Creditos\obj\_buildcheck\Seguridad.xml
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Clases4.0\Umbral.FelInfile_Creditos\obj\_buildcheck\es\ZedGraph.resources.dll
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Clases4.0\Umbral.FelInfile_Creditos\obj\_buildcheck\pt\ZedGraph.resources.dll
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Clases4.0\Umbral.FelInfile_Creditos\obj\_buildcheck\zh-tw\ZedGraph.resources.dll

@@ -1,0 +1,73 @@
+C:\Desarrollo\Cloud\MVC\Interfaz_CRM\Interfaz_CRM.Mail\obj\Debug\Interfaz_CRM.Mail.csprojAssemblyReference.cache
+C:\Desarrollo\Cloud\MVC\Interfaz_CRM\Interfaz_CRM.Mail\obj\Debug\Interfaz_CRM.Mail.csproj.CoreCompileInputs.cache
+C:\Desarrollo\Cloud\MVC\Interfaz_CRM\Interfaz_CRM.Mail\bin\Debug\Interfaz_CRM.Mail.dll
+C:\Desarrollo\Cloud\MVC\Interfaz_CRM\Interfaz_CRM.Mail\bin\Debug\Interfaz_CRM.Mail.pdb
+C:\Desarrollo\Cloud\MVC\Interfaz_CRM\Interfaz_CRM.Mail\obj\Debug\Interfaz_CRM.Mail.dll
+C:\Desarrollo\Cloud\MVC\Interfaz_CRM\Interfaz_CRM.Mail\obj\Debug\Interfaz_CRM.Mail.pdb
+C:\Desarrollo20190111\Cloud\MVC\Interfaz_CRM\Interfaz_CRM.Mail\bin\Debug\Interfaz_CRM.Mail.dll
+C:\Desarrollo20190111\Cloud\MVC\Interfaz_CRM\Interfaz_CRM.Mail\bin\Debug\Interfaz_CRM.Mail.pdb
+C:\Desarrollo20190111\Cloud\MVC\Interfaz_CRM\Interfaz_CRM.Mail\obj\Debug\Interfaz_CRM.Mail.csproj.CoreCompileInputs.cache
+C:\Desarrollo20190111\Cloud\MVC\Interfaz_CRM\Interfaz_CRM.Mail\obj\Debug\Interfaz_CRM.Mail.dll
+C:\Desarrollo20190111\Cloud\MVC\Interfaz_CRM\Interfaz_CRM.Mail\obj\Debug\Interfaz_CRM.Mail.pdb
+C:\Desarrollo20190111\Cloud\MVC\Interfaz_CRM\Interfaz_CRM.Mail\obj\Debug\Interfaz_CRM.Mail.Properties.Resources.resources
+C:\Desarrollo20190111\Cloud\MVC\Interfaz_CRM\Interfaz_CRM.Mail\obj\Debug\Interfaz_CRM.Mail.csproj.GenerateResource.cache
+C:\Desarrollo20190111\Cloud\MVC\Interfaz_CRM\Interfaz_CRM.Mail\obj\Debug\Interfaz_CRM.Mail.csprojAssemblyReference.cache
+C:\Desarrollo\Aplicaciones\Version 8\Interfaz_CRM.Mail\bin\Debug\Interfaz_CRM.Mail.dll
+C:\Desarrollo\Aplicaciones\Version 8\Interfaz_CRM.Mail\bin\Debug\Interfaz_CRM.Mail.pdb
+C:\Desarrollo\Aplicaciones\Version 8\Interfaz_CRM.Mail\obj\Debug\Interfaz_CRM.Mail.csprojAssemblyReference.cache
+C:\Desarrollo\Aplicaciones\Version 8\Interfaz_CRM.Mail\obj\Debug\Interfaz_CRM.Mail.Properties.Resources.resources
+C:\Desarrollo\Aplicaciones\Version 8\Interfaz_CRM.Mail\obj\Debug\Interfaz_CRM.Mail.csproj.GenerateResource.cache
+C:\Desarrollo\Aplicaciones\Version 8\Interfaz_CRM.Mail\obj\Debug\Interfaz_CRM.Mail.csproj.CoreCompileInputs.cache
+C:\Desarrollo\Aplicaciones\Version 8\Interfaz_CRM.Mail\obj\Debug\Interfaz_CRM.Mail.dll
+C:\Desarrollo\Aplicaciones\Version 8\Interfaz_CRM.Mail\obj\Debug\Interfaz_CRM.Mail.pdb
+C:\Desarrollo\Aplicaciones\Version 8\Interfaz_CRM.Mail\bin\Debug\Interfaz_CRM.Mail.dll.config
+C:\Desarrollo\Aplicaciones\Version 8\Interfaz_CRM.Mail\bin\Debug\EntityFramework.dll
+C:\Desarrollo\Aplicaciones\Version 8\Interfaz_CRM.Mail\bin\Debug\EntityFramework.SqlServer.dll
+C:\Desarrollo\Aplicaciones\Version 8\Interfaz_CRM.Mail\bin\Debug\EntityFramework.xml
+C:\Desarrollo\Aplicaciones\Version 8\Interfaz_CRM.Mail\bin\Debug\EntityFramework.SqlServer.xml
+C:\Desarrollo\Aplicaciones\Version 8\Interfaz_CRM.Mail\obj\Debug\Interfaz_CRM.Mail.csproj.CopyComplete
+C:\Desarrollo\Version 8\Interfaz_CRM.Mail\bin\Debug\Interfaz_CRM.Mail.dll.config
+C:\Desarrollo\Version 8\Interfaz_CRM.Mail\bin\Debug\Interfaz_CRM.Mail.dll
+C:\Desarrollo\Version 8\Interfaz_CRM.Mail\bin\Debug\Interfaz_CRM.Mail.pdb
+C:\Desarrollo\Version 8\Interfaz_CRM.Mail\obj\Debug\Interfaz_CRM.Mail.csproj.AssemblyReference.cache
+C:\Desarrollo\Version 8\Interfaz_CRM.Mail\obj\Debug\Interfaz_CRM.Mail.Properties.Resources.resources
+C:\Desarrollo\Version 8\Interfaz_CRM.Mail\obj\Debug\Interfaz_CRM.Mail.csproj.GenerateResource.cache
+C:\Desarrollo\Version 8\Interfaz_CRM.Mail\obj\Debug\Interfaz_CRM.Mail.csproj.CoreCompileInputs.cache
+C:\Desarrollo\Version 8\Interfaz_CRM.Mail\obj\Debug\Interfaz.EC90264E.Up2Date
+C:\Desarrollo\Version 8\Interfaz_CRM.Mail\obj\Debug\Interfaz_CRM.Mail.dll
+C:\Desarrollo\Version 8\Interfaz_CRM.Mail\obj\Debug\Interfaz_CRM.Mail.pdb
+C:\Desarrollo\Version 9\Interfaz_CRM.Mail\bin\Debug\Interfaz_CRM.Mail.dll.config
+C:\Desarrollo\Version 9\Interfaz_CRM.Mail\bin\Debug\Interfaz_CRM.Mail.dll
+C:\Desarrollo\Version 9\Interfaz_CRM.Mail\bin\Debug\Interfaz_CRM.Mail.pdb
+C:\Desarrollo\Version 9\Interfaz_CRM.Mail\bin\Debug\EntityFramework.dll
+C:\Desarrollo\Version 9\Interfaz_CRM.Mail\bin\Debug\EntityFramework.SqlServer.dll
+C:\Desarrollo\Version 9\Interfaz_CRM.Mail\bin\Debug\EntityFramework.xml
+C:\Desarrollo\Version 9\Interfaz_CRM.Mail\bin\Debug\EntityFramework.SqlServer.xml
+C:\Desarrollo\Version 9\Interfaz_CRM.Mail\obj\Debug\Interfaz_CRM.Mail.csproj.AssemblyReference.cache
+C:\Desarrollo\Version 9\Interfaz_CRM.Mail\obj\Debug\Interfaz_CRM.Mail.Properties.Resources.resources
+C:\Desarrollo\Version 9\Interfaz_CRM.Mail\obj\Debug\Interfaz_CRM.Mail.csproj.GenerateResource.cache
+C:\Desarrollo\Version 9\Interfaz_CRM.Mail\obj\Debug\Interfaz_CRM.Mail.csproj.CoreCompileInputs.cache
+C:\Desarrollo\Version 9\Interfaz_CRM.Mail\obj\Debug\Interfaz.EC90264E.Up2Date
+C:\Desarrollo\Version 9\Interfaz_CRM.Mail\obj\Debug\Interfaz_CRM.Mail.dll
+C:\Desarrollo\Version 9\Interfaz_CRM.Mail\obj\Debug\Interfaz_CRM.Mail.pdb
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Interfaz_CRM.Mail\bin\Debug\Interfaz_CRM.Mail.dll.config
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Interfaz_CRM.Mail\bin\Debug\Interfaz_CRM.Mail.dll
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Interfaz_CRM.Mail\bin\Debug\Interfaz_CRM.Mail.pdb
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Interfaz_CRM.Mail\bin\Debug\EntityFramework.dll
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Interfaz_CRM.Mail\bin\Debug\EntityFramework.SqlServer.dll
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Interfaz_CRM.Mail\bin\Debug\EntityFramework.xml
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Interfaz_CRM.Mail\bin\Debug\EntityFramework.SqlServer.xml
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Interfaz_CRM.Mail\obj\Debug\Interfaz_CRM.Mail.csproj.AssemblyReference.cache
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Interfaz_CRM.Mail\obj\Debug\Interfaz_CRM.Mail.Properties.Resources.resources
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Interfaz_CRM.Mail\obj\Debug\Interfaz_CRM.Mail.csproj.GenerateResource.cache
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Interfaz_CRM.Mail\obj\Debug\Interfaz_CRM.Mail.csproj.CoreCompileInputs.cache
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Interfaz_CRM.Mail\obj\Debug\Interfaz.EC90264E.Up2Date
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Interfaz_CRM.Mail\obj\Debug\Interfaz_CRM.Mail.dll
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Interfaz_CRM.Mail\obj\Debug\Interfaz_CRM.Mail.pdb
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Interfaz_CRM.Mail\obj\_buildcheck\Interfaz_CRM.Mail.dll.config
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Interfaz_CRM.Mail\obj\_buildcheck\Interfaz_CRM.Mail.dll
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Interfaz_CRM.Mail\obj\_buildcheck\Interfaz_CRM.Mail.pdb
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Interfaz_CRM.Mail\obj\_buildcheck\EntityFramework.dll
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Interfaz_CRM.Mail\obj\_buildcheck\EntityFramework.SqlServer.dll
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Interfaz_CRM.Mail\obj\_buildcheck\EntityFramework.xml
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Interfaz_CRM.Mail\obj\_buildcheck\EntityFramework.SqlServer.xml

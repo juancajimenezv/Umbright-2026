@@ -1,0 +1,84 @@
+C:\Desarrollo\Aplicaciones\Version 8\Obtener Informacion\bin\Release\obtenerInformacion.exe.config
+C:\Desarrollo\Aplicaciones\Version 8\Obtener Informacion\obj\Release\obtenerInformacion.exe
+C:\Desarrollo\Aplicaciones\Version 8\Obtener Informacion\obj\Release\obtenerInformacion.xml
+C:\Desarrollo\Aplicaciones\Version 8\Obtener Informacion\obj\Release\obtenerInformacion.pdb
+C:\Desarrollo\Aplicaciones\Version 8\Obtener Informacion\obj\Release\ObtenerInformacion.vbprojResolveAssemblyReference.cache
+C:\Desarrollo\Aplicaciones\Version 8\Obtener Informacion\obj\Release\obtenerInformacion.frm_sincronizacion.resources
+C:\Desarrollo\Aplicaciones\Version 8\Obtener Informacion\obj\Release\obtenerInformacion.Resources.resources
+C:\Desarrollo\Aplicaciones\Version 8\Obtener Informacion\obj\Release\ObtenerInformacion.vbproj.GenerateResource.Cache
+C:\Desarrollo\Aplicaciones\Version 8\Obtener Informacion\bin\Release\obtenerInformacion.exe
+C:\Desarrollo\Aplicaciones\Version 8\Obtener Informacion\bin\Release\obtenerInformacion.pdb
+C:\Desarrollo\Aplicaciones\Version 8\Obtener Informacion\bin\Release\obtenerInformacion.xml
+C:\Desarrollo\Aplicaciones\Version 8\Obtener Informacion\bin\Release\ClasesGenerales.dll
+C:\Desarrollo\Aplicaciones\Version 8\Obtener Informacion\bin\Release\FTP.dll
+C:\Desarrollo\Aplicaciones\Version 8\Obtener Informacion\bin\Release\Sincronizacion.dll
+C:\Desarrollo\Aplicaciones\Version 8\Obtener Informacion\bin\Release\Transaccional.dll
+C:\Desarrollo\Aplicaciones\Version 8\Obtener Informacion\bin\Release\Umbral_Flex.dll
+C:\Desarrollo\Aplicaciones\Version 8\Obtener Informacion\bin\Release\ZedGraph.dll
+C:\Desarrollo\Aplicaciones\Version 8\Obtener Informacion\bin\Release\Interop.Shell32.dll
+C:\Desarrollo\Aplicaciones\Version 8\Obtener Informacion\bin\Release\Automatizar.dll
+C:\Desarrollo\Aplicaciones\Version 8\Obtener Informacion\bin\Release\ClasesGenerales.pdb
+C:\Desarrollo\Aplicaciones\Version 8\Obtener Informacion\bin\Release\ClasesGenerales.xml
+C:\Desarrollo\Aplicaciones\Version 8\Obtener Informacion\bin\Release\Sincronizacion.pdb
+C:\Desarrollo\Aplicaciones\Version 8\Obtener Informacion\bin\Release\Sincronizacion.xml
+C:\Desarrollo\Aplicaciones\Version 8\Obtener Informacion\bin\Release\Transaccional.pdb
+C:\Desarrollo\Aplicaciones\Version 8\Obtener Informacion\bin\Release\Transaccional.xml
+C:\Desarrollo\Aplicaciones\Version 8\Obtener Informacion\bin\Release\Umbral_Flex.pdb
+C:\Desarrollo\Aplicaciones\Version 8\Obtener Informacion\bin\Release\Umbral_Flex.xml
+C:\Desarrollo\Aplicaciones\Version 8\Obtener Informacion\bin\Release\FTP.pdb
+C:\Desarrollo\Aplicaciones\Version 8\Obtener Informacion\bin\Release\System.Data.SQLite.pdb
+C:\Desarrollo\Aplicaciones\Version 8\Obtener Informacion\bin\Release\ZedGraph.xml
+C:\Desarrollo\Aplicaciones\Version 8\Obtener Informacion\bin\Release\Automatizar.pdb
+C:\Desarrollo\Aplicaciones\Version 8\Obtener Informacion\bin\Release\Automatizar.xml
+C:\Desarrollo\Aplicaciones\Version 8\Obtener Informacion\bin\Release\es\ZedGraph.resources.dll
+C:\Desarrollo\Aplicaciones\Version 8\Obtener Informacion\bin\Release\pt\ZedGraph.resources.dll
+C:\Desarrollo\Aplicaciones\Version 8\Obtener Informacion\bin\Release\zh-tw\ZedGraph.resources.dll
+C:\Desarrollo\Version 8\Obtener Informacion\bin\Release\obtenerInformacion.exe.config
+C:\Desarrollo\Version 8\Obtener Informacion\obj\Release\obtenerInformacion.exe
+C:\Desarrollo\Version 8\Obtener Informacion\obj\Release\obtenerInformacion.xml
+C:\Desarrollo\Version 8\Obtener Informacion\obj\Release\obtenerInformacion.pdb
+C:\Desarrollo\Version 8\Obtener Informacion\bin\Release\obtenerInformacion.exe
+C:\Desarrollo\Version 8\Obtener Informacion\bin\Release\obtenerInformacion.pdb
+C:\Desarrollo\Version 8\Obtener Informacion\bin\Release\obtenerInformacion.xml
+C:\Desarrollo\Version 8\Obtener Informacion\bin\Release\ClasesGenerales.dll
+C:\Desarrollo\Version 8\Obtener Informacion\bin\Release\FTP.dll
+C:\Desarrollo\Version 8\Obtener Informacion\bin\Release\Sincronizacion.dll
+C:\Desarrollo\Version 8\Obtener Informacion\bin\Release\Transaccional.dll
+C:\Desarrollo\Version 8\Obtener Informacion\bin\Release\Umbral_Flex.dll
+C:\Desarrollo\Version 8\Obtener Informacion\bin\Release\ZedGraph.dll
+C:\Desarrollo\Version 8\Obtener Informacion\bin\Release\Interop.Shell32.dll
+C:\Desarrollo\Version 8\Obtener Informacion\bin\Release\MySql.Data.dll
+C:\Desarrollo\Version 8\Obtener Informacion\bin\Release\Automatizar.dll
+C:\Desarrollo\Version 8\Obtener Informacion\bin\Release\CrystalDecisions.CrystalReports.Engine.dll
+C:\Desarrollo\Version 8\Obtener Informacion\bin\Release\CrystalDecisions.Shared.dll
+C:\Desarrollo\Version 8\Obtener Informacion\bin\Release\CrystalDecisions.Windows.Forms.dll
+C:\Desarrollo\Version 8\Obtener Informacion\bin\Release\CrystalDecisions.ReportSource.dll
+C:\Desarrollo\Version 8\Obtener Informacion\bin\Release\stdole.dll
+C:\Desarrollo\Version 8\Obtener Informacion\bin\Release\Sincronizacion.pdb
+C:\Desarrollo\Version 8\Obtener Informacion\bin\Release\Sincronizacion.xml
+C:\Desarrollo\Version 8\Obtener Informacion\bin\Release\ClasesGenerales.pdb
+C:\Desarrollo\Version 8\Obtener Informacion\bin\Release\ClasesGenerales.xml
+C:\Desarrollo\Version 8\Obtener Informacion\bin\Release\FTP.pdb
+C:\Desarrollo\Version 8\Obtener Informacion\bin\Release\System.Data.SQLite.pdb
+C:\Desarrollo\Version 8\Obtener Informacion\bin\Release\Transaccional.pdb
+C:\Desarrollo\Version 8\Obtener Informacion\bin\Release\Transaccional.xml
+C:\Desarrollo\Version 8\Obtener Informacion\bin\Release\Umbral_Flex.pdb
+C:\Desarrollo\Version 8\Obtener Informacion\bin\Release\Umbral_Flex.xml
+C:\Desarrollo\Version 8\Obtener Informacion\bin\Release\ZedGraph.xml
+C:\Desarrollo\Version 8\Obtener Informacion\bin\Release\Automatizar.pdb
+C:\Desarrollo\Version 8\Obtener Informacion\bin\Release\Automatizar.xml
+C:\Desarrollo\Version 8\Obtener Informacion\bin\Release\es\ZedGraph.resources.dll
+C:\Desarrollo\Version 8\Obtener Informacion\bin\Release\pt\ZedGraph.resources.dll
+C:\Desarrollo\Version 8\Obtener Informacion\bin\Release\zh-tw\ZedGraph.resources.dll
+C:\Desarrollo\Version 8\Obtener Informacion\obj\Release\ObtenerInformacion.vbprojResolveAssemblyReference.cache
+C:\Desarrollo\Version 8\Obtener Informacion\obj\Release\obtenerInformacion.frm_sincronizacion.resources
+C:\Desarrollo\Version 8\Obtener Informacion\obj\Release\obtenerInformacion.Resources.resources
+C:\Desarrollo\Version 8\Obtener Informacion\obj\Release\ObtenerInformacion.vbproj.GenerateResource.Cache
+C:\Desarrollo\Version 8\Obtener Informacion old\obj\Release\ObtenerInformacion.vbproj.AssemblyReference.cache
+C:\Desarrollo\Version 8\Obtener Informacion old\obj\Release\obtenerInformacion.frm_sincronizacion.resources
+C:\Desarrollo\Version 8\Obtener Informacion old\obj\Release\obtenerInformacion.Resources.resources
+C:\Desarrollo\Version 8\Obtener Informacion old\obj\Release\ObtenerInformacion.vbproj.GenerateResource.cache
+C:\Desarrollo\Version 8\Obtener Informacion old\obj\Release\ObtenerInformacion.vbproj.CoreCompileInputs.cache
+C:\Desarrollo\Version 8\Obtener Informacion old\obj\Release\obtenerInformacion.exe
+C:\Desarrollo\Version 8\Obtener Informacion old\obj\Release\obtenerInformacion.xml
+C:\Desarrollo\Version 8\Obtener Informacion old\obj\Release\obtenerInformacion.pdb

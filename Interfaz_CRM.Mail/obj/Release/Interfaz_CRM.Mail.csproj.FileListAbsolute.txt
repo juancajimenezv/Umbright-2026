@@ -1,0 +1,26 @@
+C:\Desarrollo\Cloud\MVC\Interfaz_CRM\Interfaz_CRM.Mail\bin\Release\Interfaz_CRM.Mail.dll
+C:\Desarrollo\Cloud\MVC\Interfaz_CRM\Interfaz_CRM.Mail\bin\Release\Interfaz_CRM.Mail.pdb
+C:\Desarrollo\Cloud\MVC\Interfaz_CRM\Interfaz_CRM.Mail\obj\Release\Interfaz_CRM.Mail.csprojAssemblyReference.cache
+C:\Desarrollo\Cloud\MVC\Interfaz_CRM\Interfaz_CRM.Mail\obj\Release\Interfaz_CRM.Mail.csproj.CoreCompileInputs.cache
+C:\Desarrollo\Cloud\MVC\Interfaz_CRM\Interfaz_CRM.Mail\obj\Release\Interfaz_CRM.Mail.dll
+C:\Desarrollo\Cloud\MVC\Interfaz_CRM\Interfaz_CRM.Mail\obj\Release\Interfaz_CRM.Mail.pdb
+C:\Desarrollo20190111\Cloud\MVC\Interfaz_CRM\Interfaz_CRM.Mail\bin\Release\Interfaz_CRM.Mail.dll
+C:\Desarrollo20190111\Cloud\MVC\Interfaz_CRM\Interfaz_CRM.Mail\bin\Release\Interfaz_CRM.Mail.pdb
+C:\Desarrollo20190111\Cloud\MVC\Interfaz_CRM\Interfaz_CRM.Mail\obj\Release\Interfaz_CRM.Mail.csprojAssemblyReference.cache
+C:\Desarrollo20190111\Cloud\MVC\Interfaz_CRM\Interfaz_CRM.Mail\obj\Release\Interfaz_CRM.Mail.Properties.Resources.resources
+C:\Desarrollo20190111\Cloud\MVC\Interfaz_CRM\Interfaz_CRM.Mail\obj\Release\Interfaz_CRM.Mail.csproj.GenerateResource.cache
+C:\Desarrollo20190111\Cloud\MVC\Interfaz_CRM\Interfaz_CRM.Mail\obj\Release\Interfaz_CRM.Mail.csproj.CoreCompileInputs.cache
+C:\Desarrollo20190111\Cloud\MVC\Interfaz_CRM\Interfaz_CRM.Mail\obj\Release\Interfaz_CRM.Mail.dll
+C:\Desarrollo20190111\Cloud\MVC\Interfaz_CRM\Interfaz_CRM.Mail\obj\Release\Interfaz_CRM.Mail.pdb
+C:\Desarrollo\Version 8\Interfaz_CRM.Mail\bin\Release\Interfaz_CRM.Mail.dll.config
+C:\Desarrollo\Version 8\Interfaz_CRM.Mail\bin\Release\Interfaz_CRM.Mail.dll
+C:\Desarrollo\Version 8\Interfaz_CRM.Mail\bin\Release\Interfaz_CRM.Mail.pdb
+C:\Desarrollo\Version 8\Interfaz_CRM.Mail\bin\Release\EntityFramework.xml
+C:\Desarrollo\Version 8\Interfaz_CRM.Mail\bin\Release\EntityFramework.SqlServer.xml
+C:\Desarrollo\Version 8\Interfaz_CRM.Mail\obj\Release\Interfaz_CRM.Mail.csproj.AssemblyReference.cache
+C:\Desarrollo\Version 8\Interfaz_CRM.Mail\obj\Release\Interfaz_CRM.Mail.Properties.Resources.resources
+C:\Desarrollo\Version 8\Interfaz_CRM.Mail\obj\Release\Interfaz_CRM.Mail.csproj.GenerateResource.cache
+C:\Desarrollo\Version 8\Interfaz_CRM.Mail\obj\Release\Interfaz_CRM.Mail.csproj.CoreCompileInputs.cache
+C:\Desarrollo\Version 8\Interfaz_CRM.Mail\obj\Release\Interfaz_CRM.Mail.dll
+C:\Desarrollo\Version 8\Interfaz_CRM.Mail\obj\Release\Interfaz_CRM.Mail.pdb
+C:\Desarrollo\Version 8\Interfaz_CRM.Mail\obj\Release\Interfaz.EC90264E.Up2Date

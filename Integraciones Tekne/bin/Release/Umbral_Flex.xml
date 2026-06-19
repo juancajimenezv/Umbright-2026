@@ -1,0 +1,32 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Umbral_Flex
+</name>
+</assembly>
+<members>
+<member name="T:Umbral_Flex.My.Resources.Resources">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+<member name="P:Umbral_Flex.My.Resources.Resources.ResourceManager">
+<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member>
+<member name="P:Umbral_Flex.My.Resources.Resources.Culture">
+<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member>
+<member name="M:Umbral_Flex.productos.Obtener_Precio_Final(System.String,System.String)">
+Devuelve las listas de precios en las que esta el producto
+2
+3
+4
+</member>
+</members>
+</doc>

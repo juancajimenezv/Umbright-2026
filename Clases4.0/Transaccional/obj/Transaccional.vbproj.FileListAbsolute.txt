@@ -1,0 +1,49 @@
+D:\Desarrollo\Aplicaciones Umbral\2005\Clases4.0\Transaccional\obj\Release\ResolveAssemblyReference.cache
+D:\Desarrollo\Aplicaciones Umbral\2005\Clases4.0\Transaccional\obj\Release\Transaccional.Resources.resources
+D:\Desarrollo\Aplicaciones Umbral\2005\Clases4.0\Transaccional\obj\Release\Transaccional.vbproj.GenerateResource.Cache
+D:\Desarrollo\Aplicaciones Umbral\2005\Clases4.0\Transaccional\bin\Release\Transaccional.dll
+D:\Desarrollo\Aplicaciones Umbral\2005\Clases4.0\Transaccional\bin\Release\Transaccional.pdb
+D:\Desarrollo\Aplicaciones Umbral\2005\Clases4.0\Transaccional\bin\Release\Transaccional.xml
+D:\Desarrollo\Aplicaciones Umbral\2005\Clases4.0\Transaccional\bin\Release\ClasesGenerales.dll
+D:\Desarrollo\Aplicaciones Umbral\2005\Clases4.0\Transaccional\bin\Release\Sincronizacion.dll
+D:\Desarrollo\Aplicaciones Umbral\2005\Clases4.0\Transaccional\bin\Release\Interop.prtcom.dll
+D:\Desarrollo\Aplicaciones Umbral\2005\Clases4.0\Transaccional\bin\Release\Umbral_Flex.dll
+D:\Desarrollo\Aplicaciones Umbral\2005\Clases4.0\Transaccional\bin\Release\Interop.Shell32.dll
+D:\Desarrollo\Aplicaciones Umbral\2005\Clases4.0\Transaccional\bin\Release\FTP.dll
+D:\Desarrollo\Aplicaciones Umbral\2005\Clases4.0\Transaccional\bin\Release\Sincronizacion.pdb
+D:\Desarrollo\Aplicaciones Umbral\2005\Clases4.0\Transaccional\bin\Release\Sincronizacion.xml
+D:\Desarrollo\Aplicaciones Umbral\2005\Clases4.0\Transaccional\bin\Release\Umbral_Flex.pdb
+D:\Desarrollo\Aplicaciones Umbral\2005\Clases4.0\Transaccional\bin\Release\Umbral_Flex.xml
+D:\Desarrollo\Aplicaciones Umbral\2005\Clases4.0\Transaccional\bin\Release\ClasesGenerales.pdb
+D:\Desarrollo\Aplicaciones Umbral\2005\Clases4.0\Transaccional\bin\Release\ClasesGenerales.xml
+D:\Desarrollo\Aplicaciones Umbral\2005\Clases4.0\Transaccional\bin\Release\FTP.pdb
+D:\Desarrollo\Aplicaciones Umbral\2005\Clases4.0\Transaccional\obj\Release\Transaccional.dll
+D:\Desarrollo\Aplicaciones Umbral\2005\Clases4.0\Transaccional\obj\Release\Transaccional.xml
+D:\Desarrollo\Aplicaciones Umbral\2005\Clases4.0\Transaccional\obj\Release\Transaccional.pdb
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Clases4.0\Transaccional\obj\Release\ResolveAssemblyReference.cache
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Clases4.0\Transaccional\obj\Release\Transaccional.Resources.resources
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Clases4.0\Transaccional\obj\Release\Transaccional.vbproj.GenerateResource.Cache
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Clases4.0\Transaccional\bin\Release\Transaccional.dll
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Clases4.0\Transaccional\bin\Release\Transaccional.pdb
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Clases4.0\Transaccional\bin\Release\Transaccional.xml
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Clases4.0\Transaccional\bin\Release\ClasesGenerales.dll
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Clases4.0\Transaccional\bin\Release\Sincronizacion.dll
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Clases4.0\Transaccional\bin\Release\Interop.prtcom.dll
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Clases4.0\Transaccional\bin\Release\Umbral_Flex.dll
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Clases4.0\Transaccional\bin\Release\Interop.Shell32.dll
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Clases4.0\Transaccional\bin\Release\FTP.dll
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Clases4.0\Transaccional\bin\Release\Sincronizacion.pdb
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Clases4.0\Transaccional\bin\Release\Sincronizacion.xml
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Clases4.0\Transaccional\bin\Release\Umbral_Flex.pdb
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Clases4.0\Transaccional\bin\Release\Umbral_Flex.xml
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Clases4.0\Transaccional\bin\Release\ClasesGenerales.pdb
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Clases4.0\Transaccional\bin\Release\ClasesGenerales.xml
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Clases4.0\Transaccional\bin\Release\FTP.pdb
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Clases4.0\Transaccional\obj\Release\Transaccional.dll
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Clases4.0\Transaccional\obj\Release\Transaccional.xml
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Clases4.0\Transaccional\obj\Release\Transaccional.pdb
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Clases4.0\Transaccional\bin\Release\ZedGraph.dll
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Clases4.0\Transaccional\bin\Release\ZedGraph.xml
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Clases4.0\Transaccional\bin\Release\es\ZedGraph.resources.dll
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Clases4.0\Transaccional\bin\Release\pt\ZedGraph.resources.dll
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Clases4.0\Transaccional\bin\Release\zh-tw\ZedGraph.resources.dll

@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="SCMModelStoreContainer" CdmEntityContainer="SCMEntities">
+    <EntitySetMapping Name="credenciales_notificacion">
+      <EntityTypeMapping TypeName="SCMModel.credenciales_notificacion">
+        <MappingFragment StoreEntitySet="credenciales_notificacion">
+          <ScalarProperty Name="correo" ColumnName="correo" />
+          <ScalarProperty Name="clave" ColumnName="clave" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="pa_var_um_credenciales_notificacion" FunctionName="SCMModel.Store.pa_var_um_credenciales_notificacion">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="SCMModel.pa_var_um_credenciales_notificacion_Result">
+          <ScalarProperty Name="mail_anterior" ColumnName="mail_anterior" />
+          <ScalarProperty Name="pwd_anterior" ColumnName="pwd_anterior" />
+          <ScalarProperty Name="mail" ColumnName="mail" />
+          <ScalarProperty Name="pwd" ColumnName="pwd" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+  </EntityContainerMapping>
+</Mapping>

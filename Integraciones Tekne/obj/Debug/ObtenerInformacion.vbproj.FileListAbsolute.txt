@@ -1,0 +1,239 @@
+C:\Desarrollo\Version 8\Obtener Informacion\bin\Debug\obtenerInformacion.exe.config
+C:\Desarrollo\Version 8\Obtener Informacion\bin\Debug\obtenerInformacion.exe
+C:\Desarrollo\Version 8\Obtener Informacion\bin\Debug\obtenerInformacion.pdb
+C:\Desarrollo\Version 8\Obtener Informacion\bin\Debug\obtenerInformacion.xml
+C:\Desarrollo\Version 8\Obtener Informacion\bin\Debug\ClasesGenerales.dll
+C:\Desarrollo\Version 8\Obtener Informacion\bin\Debug\FTP.dll
+C:\Desarrollo\Version 8\Obtener Informacion\bin\Debug\Sincronizacion.dll
+C:\Desarrollo\Version 8\Obtener Informacion\bin\Debug\Transaccional.dll
+C:\Desarrollo\Version 8\Obtener Informacion\bin\Debug\Umbral_Flex.dll
+C:\Desarrollo\Version 8\Obtener Informacion\bin\Debug\ZedGraph.dll
+C:\Desarrollo\Version 8\Obtener Informacion\bin\Debug\Interop.Shell32.dll
+C:\Desarrollo\Version 8\Obtener Informacion\bin\Debug\MySql.Data.dll
+C:\Desarrollo\Version 8\Obtener Informacion\bin\Debug\Automatizar.dll
+C:\Desarrollo\Version 8\Obtener Informacion\bin\Debug\CrystalDecisions.CrystalReports.Engine.dll
+C:\Desarrollo\Version 8\Obtener Informacion\bin\Debug\CrystalDecisions.Shared.dll
+C:\Desarrollo\Version 8\Obtener Informacion\bin\Debug\CrystalDecisions.Windows.Forms.dll
+C:\Desarrollo\Version 8\Obtener Informacion\bin\Debug\CrystalDecisions.ReportSource.dll
+C:\Desarrollo\Version 8\Obtener Informacion\bin\Debug\stdole.dll
+C:\Desarrollo\Version 8\Obtener Informacion\bin\Debug\Sincronizacion.pdb
+C:\Desarrollo\Version 8\Obtener Informacion\bin\Debug\Sincronizacion.xml
+C:\Desarrollo\Version 8\Obtener Informacion\bin\Debug\ClasesGenerales.pdb
+C:\Desarrollo\Version 8\Obtener Informacion\bin\Debug\ClasesGenerales.xml
+C:\Desarrollo\Version 8\Obtener Informacion\bin\Debug\FTP.pdb
+C:\Desarrollo\Version 8\Obtener Informacion\bin\Debug\Transaccional.pdb
+C:\Desarrollo\Version 8\Obtener Informacion\bin\Debug\Transaccional.xml
+C:\Desarrollo\Version 8\Obtener Informacion\bin\Debug\Umbral_Flex.pdb
+C:\Desarrollo\Version 8\Obtener Informacion\bin\Debug\Umbral_Flex.xml
+C:\Desarrollo\Version 8\Obtener Informacion\bin\Debug\ZedGraph.xml
+C:\Desarrollo\Version 8\Obtener Informacion\bin\Debug\Automatizar.pdb
+C:\Desarrollo\Version 8\Obtener Informacion\bin\Debug\Automatizar.xml
+C:\Desarrollo\Version 8\Obtener Informacion\bin\Debug\es\ZedGraph.resources.dll
+C:\Desarrollo\Version 8\Obtener Informacion\bin\Debug\pt\ZedGraph.resources.dll
+C:\Desarrollo\Version 8\Obtener Informacion\bin\Debug\zh-tw\ZedGraph.resources.dll
+C:\Desarrollo\Version 8\Obtener Informacion\obj\Debug\ObtenerInformacion.vbprojResolveAssemblyReference.cache
+C:\Desarrollo\Version 8\Obtener Informacion\obj\Debug\obtenerInformacion.frm_sincronizacion.resources
+C:\Desarrollo\Version 8\Obtener Informacion\obj\Debug\obtenerInformacion.Resources.resources
+C:\Desarrollo\Version 8\Obtener Informacion\obj\Debug\ObtenerInformacion.vbproj.GenerateResource.Cache
+C:\Desarrollo\Version 8\Obtener Informacion\obj\Debug\obtenerInformacion.exe
+C:\Desarrollo\Version 8\Obtener Informacion\obj\Debug\obtenerInformacion.xml
+C:\Desarrollo\Version 8\Obtener Informacion\obj\Debug\obtenerInformacion.pdb
+C:\Desarrollo\Aplicaciones\Version 8\Obtener Informacion\bin\Debug\obtenerInformacion.exe.config
+C:\Desarrollo\Aplicaciones\Version 8\Obtener Informacion\bin\Debug\obtenerInformacion.exe
+C:\Desarrollo\Aplicaciones\Version 8\Obtener Informacion\bin\Debug\obtenerInformacion.pdb
+C:\Desarrollo\Aplicaciones\Version 8\Obtener Informacion\bin\Debug\obtenerInformacion.xml
+C:\Desarrollo\Aplicaciones\Version 8\Obtener Informacion\bin\Debug\ClasesGenerales.dll
+C:\Desarrollo\Aplicaciones\Version 8\Obtener Informacion\bin\Debug\FTP.dll
+C:\Desarrollo\Aplicaciones\Version 8\Obtener Informacion\bin\Debug\Sincronizacion.dll
+C:\Desarrollo\Aplicaciones\Version 8\Obtener Informacion\bin\Debug\Transaccional.dll
+C:\Desarrollo\Aplicaciones\Version 8\Obtener Informacion\bin\Debug\Umbral_Flex.dll
+C:\Desarrollo\Aplicaciones\Version 8\Obtener Informacion\bin\Debug\Interop.Shell32.dll
+C:\Desarrollo\Aplicaciones\Version 8\Obtener Informacion\bin\Debug\ZedGraph.dll
+C:\Desarrollo\Aplicaciones\Version 8\Obtener Informacion\bin\Debug\MySql.Data.dll
+C:\Desarrollo\Aplicaciones\Version 8\Obtener Informacion\bin\Debug\Automatizar.dll
+C:\Desarrollo\Aplicaciones\Version 8\Obtener Informacion\bin\Debug\CrystalDecisions.CrystalReports.Engine.dll
+C:\Desarrollo\Aplicaciones\Version 8\Obtener Informacion\bin\Debug\CrystalDecisions.Shared.dll
+C:\Desarrollo\Aplicaciones\Version 8\Obtener Informacion\bin\Debug\CrystalDecisions.Windows.Forms.dll
+C:\Desarrollo\Aplicaciones\Version 8\Obtener Informacion\bin\Debug\CrystalDecisions.ReportSource.dll
+C:\Desarrollo\Aplicaciones\Version 8\Obtener Informacion\bin\Debug\stdole.dll
+C:\Desarrollo\Aplicaciones\Version 8\Obtener Informacion\bin\Debug\Sincronizacion.pdb
+C:\Desarrollo\Aplicaciones\Version 8\Obtener Informacion\bin\Debug\Sincronizacion.xml
+C:\Desarrollo\Aplicaciones\Version 8\Obtener Informacion\bin\Debug\ClasesGenerales.pdb
+C:\Desarrollo\Aplicaciones\Version 8\Obtener Informacion\bin\Debug\ClasesGenerales.xml
+C:\Desarrollo\Aplicaciones\Version 8\Obtener Informacion\bin\Debug\FTP.pdb
+C:\Desarrollo\Aplicaciones\Version 8\Obtener Informacion\bin\Debug\Transaccional.pdb
+C:\Desarrollo\Aplicaciones\Version 8\Obtener Informacion\bin\Debug\Transaccional.xml
+C:\Desarrollo\Aplicaciones\Version 8\Obtener Informacion\bin\Debug\Umbral_Flex.pdb
+C:\Desarrollo\Aplicaciones\Version 8\Obtener Informacion\bin\Debug\Umbral_Flex.xml
+C:\Desarrollo\Aplicaciones\Version 8\Obtener Informacion\bin\Debug\Umbral_Flex.dll.config
+C:\Desarrollo\Aplicaciones\Version 8\Obtener Informacion\bin\Debug\ZedGraph.xml
+C:\Desarrollo\Aplicaciones\Version 8\Obtener Informacion\bin\Debug\Automatizar.pdb
+C:\Desarrollo\Aplicaciones\Version 8\Obtener Informacion\bin\Debug\Automatizar.xml
+C:\Desarrollo\Aplicaciones\Version 8\Obtener Informacion\bin\Debug\es\ZedGraph.resources.dll
+C:\Desarrollo\Aplicaciones\Version 8\Obtener Informacion\bin\Debug\pt\ZedGraph.resources.dll
+C:\Desarrollo\Aplicaciones\Version 8\Obtener Informacion\bin\Debug\zh-tw\ZedGraph.resources.dll
+C:\Desarrollo\Aplicaciones\Version 8\Obtener Informacion\obj\Debug\ObtenerInformacion.vbprojAssemblyReference.cache
+C:\Desarrollo\Aplicaciones\Version 8\Obtener Informacion\obj\Debug\obtenerInformacion.frm_sincronizacion.resources
+C:\Desarrollo\Aplicaciones\Version 8\Obtener Informacion\obj\Debug\obtenerInformacion.Resources.resources
+C:\Desarrollo\Aplicaciones\Version 8\Obtener Informacion\obj\Debug\ObtenerInformacion.vbproj.GenerateResource.cache
+C:\Desarrollo\Aplicaciones\Version 8\Obtener Informacion\obj\Debug\ObtenerInformacion.vbproj.CoreCompileInputs.cache
+C:\Desarrollo\Aplicaciones\Version 8\Obtener Informacion\obj\Debug\ObtenerInformacion.vbproj.CopyComplete
+C:\Desarrollo\Aplicaciones\Version 8\Obtener Informacion\obj\Debug\obtenerInformacion.exe
+C:\Desarrollo\Aplicaciones\Version 8\Obtener Informacion\obj\Debug\obtenerInformacion.xml
+C:\Desarrollo\Aplicaciones\Version 8\Obtener Informacion\obj\Debug\obtenerInformacion.pdb
+C:\Desarrollo\Aplicaciones\Version 8\Obtener Informacion old\bin\Debug\ClasesGenerales.dll
+C:\Desarrollo\Aplicaciones\Version 8\Obtener Informacion old\bin\Debug\FTP.dll
+C:\Desarrollo\Aplicaciones\Version 8\Obtener Informacion old\bin\Debug\Sincronizacion.dll
+C:\Desarrollo\Aplicaciones\Version 8\Obtener Informacion old\bin\Debug\Transaccional.dll
+C:\Desarrollo\Aplicaciones\Version 8\Obtener Informacion old\bin\Debug\Umbral_Flex.dll
+C:\Desarrollo\Aplicaciones\Version 8\Obtener Informacion old\bin\Debug\Interop.Shell32.dll
+C:\Desarrollo\Aplicaciones\Version 8\Obtener Informacion old\bin\Debug\ZedGraph.dll
+C:\Desarrollo\Aplicaciones\Version 8\Obtener Informacion old\bin\Debug\MySql.Data.dll
+C:\Desarrollo\Aplicaciones\Version 8\Obtener Informacion old\bin\Debug\Automatizar.dll
+C:\Desarrollo\Aplicaciones\Version 8\Obtener Informacion old\bin\Debug\CrystalDecisions.CrystalReports.Engine.dll
+C:\Desarrollo\Aplicaciones\Version 8\Obtener Informacion old\bin\Debug\CrystalDecisions.Shared.dll
+C:\Desarrollo\Aplicaciones\Version 8\Obtener Informacion old\bin\Debug\CrystalDecisions.Windows.Forms.dll
+C:\Desarrollo\Aplicaciones\Version 8\Obtener Informacion old\bin\Debug\CrystalDecisions.ReportSource.dll
+C:\Desarrollo\Aplicaciones\Version 8\Obtener Informacion old\bin\Debug\stdole.dll
+C:\Desarrollo\Aplicaciones\Version 8\Obtener Informacion old\bin\Debug\Sincronizacion.pdb
+C:\Desarrollo\Aplicaciones\Version 8\Obtener Informacion old\bin\Debug\Sincronizacion.xml
+C:\Desarrollo\Aplicaciones\Version 8\Obtener Informacion old\bin\Debug\ClasesGenerales.pdb
+C:\Desarrollo\Aplicaciones\Version 8\Obtener Informacion old\bin\Debug\ClasesGenerales.xml
+C:\Desarrollo\Aplicaciones\Version 8\Obtener Informacion old\bin\Debug\FTP.pdb
+C:\Desarrollo\Aplicaciones\Version 8\Obtener Informacion old\bin\Debug\Transaccional.pdb
+C:\Desarrollo\Aplicaciones\Version 8\Obtener Informacion old\bin\Debug\Transaccional.xml
+C:\Desarrollo\Aplicaciones\Version 8\Obtener Informacion old\bin\Debug\Umbral_Flex.pdb
+C:\Desarrollo\Aplicaciones\Version 8\Obtener Informacion old\bin\Debug\Umbral_Flex.xml
+C:\Desarrollo\Aplicaciones\Version 8\Obtener Informacion old\bin\Debug\Umbral_Flex.dll.config
+C:\Desarrollo\Aplicaciones\Version 8\Obtener Informacion old\bin\Debug\Automatizar.pdb
+C:\Desarrollo\Aplicaciones\Version 8\Obtener Informacion old\bin\Debug\Automatizar.xml
+C:\Desarrollo\Aplicaciones\Version 8\Obtener Informacion old\obj\Debug\ObtenerInformacion.vbprojAssemblyReference.cache
+C:\Desarrollo\Aplicaciones\Version 8\Obtener Informacion old\obj\Debug\ObtenerInformacion.vbproj.GenerateResource.cache
+C:\Desarrollo\Aplicaciones\Version 8\Obtener Informacion old\obj\Debug\ObtenerInformacion.vbproj.CoreCompileInputs.cache
+C:\Desarrollo\Aplicaciones\Version 8\Obtener Informacion old\obj\Debug\ObtenerInformacion.vbproj.CopyComplete
+C:\Desarrollo\Aplicaciones\Version 8\Obtener Informacion old\bin\Debug\obtenerInformacion.exe.config
+C:\Desarrollo\Aplicaciones\Version 8\Obtener Informacion old\bin\Debug\obtenerInformacion.exe
+C:\Desarrollo\Aplicaciones\Version 8\Obtener Informacion old\bin\Debug\obtenerInformacion.pdb
+C:\Desarrollo\Aplicaciones\Version 8\Obtener Informacion old\bin\Debug\obtenerInformacion.xml
+C:\Desarrollo\Aplicaciones\Version 8\Obtener Informacion old\obj\Debug\obtenerInformacion.frm_sincronizacion.resources
+C:\Desarrollo\Aplicaciones\Version 8\Obtener Informacion old\obj\Debug\obtenerInformacion.Resources.resources
+C:\Desarrollo\Aplicaciones\Version 8\Obtener Informacion old\obj\Debug\obtenerInformacion.exe
+C:\Desarrollo\Aplicaciones\Version 8\Obtener Informacion old\obj\Debug\obtenerInformacion.xml
+C:\Desarrollo\Aplicaciones\Version 8\Obtener Informacion old\obj\Debug\obtenerInformacion.pdb
+C:\Desarrollo\Aplicaciones\Version 8\Obtener Informacion old\bin\Debug\Interfaz_CRM.Mail.dll
+C:\Desarrollo\Aplicaciones\Version 8\Obtener Informacion old\bin\Debug\EntityFramework.dll
+C:\Desarrollo\Aplicaciones\Version 8\Obtener Informacion old\bin\Debug\Interfaz_CRM.Mail.pdb
+C:\Desarrollo\Aplicaciones\Version 8\Obtener Informacion old\bin\Debug\Interfaz_CRM.Mail.dll.config
+C:\Desarrollo\Aplicaciones\Version 8\Obtener Informacion old\bin\Debug\EntityFramework.xml
+C:\Desarrollo\Aplicaciones\Version 8\Obtener Informacion old\bin\Debug\Sincronizacion.dll.config
+C:\Desarrollo\Version 8\Obtener Informacion old\obj\Debug\ObtenerInformacion.vbproj.AssemblyReference.cache
+C:\Desarrollo\Version 8\Obtener Informacion old\obj\Debug\obtenerInformacion.frm_sincronizacion.resources
+C:\Desarrollo\Version 8\Obtener Informacion old\obj\Debug\obtenerInformacion.Resources.resources
+C:\Desarrollo\Version 8\Obtener Informacion old\obj\Debug\ObtenerInformacion.vbproj.GenerateResource.cache
+C:\Desarrollo\Version 8\Obtener Informacion old\obj\Debug\ObtenerInformacion.vbproj.CoreCompileInputs.cache
+C:\Desarrollo\Version 8\Obtener Informacion old\bin\Debug\obtenerInformacion.exe.config
+C:\Desarrollo\Version 8\Obtener Informacion old\bin\Debug\obtenerInformacion.exe
+C:\Desarrollo\Version 8\Obtener Informacion old\bin\Debug\obtenerInformacion.pdb
+C:\Desarrollo\Version 8\Obtener Informacion old\bin\Debug\obtenerInformacion.xml
+C:\Desarrollo\Version 8\Obtener Informacion old\bin\Debug\ClasesGenerales.dll
+C:\Desarrollo\Version 8\Obtener Informacion old\bin\Debug\FTP.dll
+C:\Desarrollo\Version 8\Obtener Informacion old\bin\Debug\Interfaz_CRM.Mail.dll
+C:\Desarrollo\Version 8\Obtener Informacion old\bin\Debug\Sincronizacion.dll
+C:\Desarrollo\Version 8\Obtener Informacion old\bin\Debug\Transaccional.dll
+C:\Desarrollo\Version 8\Obtener Informacion old\bin\Debug\Umbral_Flex.dll
+C:\Desarrollo\Version 8\Obtener Informacion old\bin\Debug\EntityFramework.dll
+C:\Desarrollo\Version 8\Obtener Informacion old\bin\Debug\Interop.Shell32.dll
+C:\Desarrollo\Version 8\Obtener Informacion old\bin\Debug\ZedGraph.dll
+C:\Desarrollo\Version 8\Obtener Informacion old\bin\Debug\MySql.Data.dll
+C:\Desarrollo\Version 8\Obtener Informacion old\bin\Debug\System.Data.SqlServerCe.dll
+C:\Desarrollo\Version 8\Obtener Informacion old\bin\Debug\Automatizar.dll
+C:\Desarrollo\Version 8\Obtener Informacion old\bin\Debug\FlexLine_CRUD.dll
+C:\Desarrollo\Version 8\Obtener Informacion old\bin\Debug\CrystalDecisions.CrystalReports.Engine.dll
+C:\Desarrollo\Version 8\Obtener Informacion old\bin\Debug\CrystalDecisions.Shared.dll
+C:\Desarrollo\Version 8\Obtener Informacion old\bin\Debug\CrystalDecisions.Windows.Forms.dll
+C:\Desarrollo\Version 8\Obtener Informacion old\bin\Debug\Seguridad.dll
+C:\Desarrollo\Version 8\Obtener Informacion old\bin\Debug\CrystalDecisions.ReportSource.dll
+C:\Desarrollo\Version 8\Obtener Informacion old\bin\Debug\stdole.dll
+C:\Desarrollo\Version 8\Obtener Informacion old\bin\Debug\Interfaz_CRM.Mail.pdb
+C:\Desarrollo\Version 8\Obtener Informacion old\bin\Debug\Interfaz_CRM.Mail.dll.config
+C:\Desarrollo\Version 8\Obtener Informacion old\bin\Debug\ClasesGenerales.pdb
+C:\Desarrollo\Version 8\Obtener Informacion old\bin\Debug\ClasesGenerales.xml
+C:\Desarrollo\Version 8\Obtener Informacion old\bin\Debug\FTP.pdb
+C:\Desarrollo\Version 8\Obtener Informacion old\bin\Debug\Sincronizacion.pdb
+C:\Desarrollo\Version 8\Obtener Informacion old\bin\Debug\Sincronizacion.xml
+C:\Desarrollo\Version 8\Obtener Informacion old\bin\Debug\Sincronizacion.dll.config
+C:\Desarrollo\Version 8\Obtener Informacion old\bin\Debug\Transaccional.pdb
+C:\Desarrollo\Version 8\Obtener Informacion old\bin\Debug\Transaccional.xml
+C:\Desarrollo\Version 8\Obtener Informacion old\bin\Debug\Umbral_Flex.pdb
+C:\Desarrollo\Version 8\Obtener Informacion old\bin\Debug\Umbral_Flex.xml
+C:\Desarrollo\Version 8\Obtener Informacion old\bin\Debug\Umbral_Flex.dll.config
+C:\Desarrollo\Version 8\Obtener Informacion old\bin\Debug\EntityFramework.xml
+C:\Desarrollo\Version 8\Obtener Informacion old\bin\Debug\System.Data.SqlServerCe.xml
+C:\Desarrollo\Version 8\Obtener Informacion old\bin\Debug\Automatizar.pdb
+C:\Desarrollo\Version 8\Obtener Informacion old\bin\Debug\Automatizar.xml
+C:\Desarrollo\Version 8\Obtener Informacion old\bin\Debug\FlexLine_CRUD.pdb
+C:\Desarrollo\Version 8\Obtener Informacion old\bin\Debug\FlexLine_CRUD.xml
+C:\Desarrollo\Version 8\Obtener Informacion old\bin\Debug\Seguridad.pdb
+C:\Desarrollo\Version 8\Obtener Informacion old\bin\Debug\Seguridad.xml
+C:\Desarrollo\Version 8\Obtener Informacion old\obj\Debug\ObtenerI.83988265.Up2Date
+C:\Desarrollo\Version 8\Obtener Informacion old\obj\Debug\obtenerInformacion.exe
+C:\Desarrollo\Version 8\Obtener Informacion old\obj\Debug\obtenerInformacion.xml
+C:\Desarrollo\Version 8\Obtener Informacion old\obj\Debug\obtenerInformacion.pdb
+C:\Desarrollo\Version 8\Integraciones Tekne\bin\Debug\obtenerInformacion.exe.config
+C:\Desarrollo\Version 8\Integraciones Tekne\bin\Debug\obtenerInformacion.exe
+C:\Desarrollo\Version 8\Integraciones Tekne\bin\Debug\obtenerInformacion.pdb
+C:\Desarrollo\Version 8\Integraciones Tekne\bin\Debug\obtenerInformacion.xml
+C:\Desarrollo\Version 8\Integraciones Tekne\bin\Debug\ClasesGenerales.dll
+C:\Desarrollo\Version 8\Integraciones Tekne\bin\Debug\FTP.dll
+C:\Desarrollo\Version 8\Integraciones Tekne\bin\Debug\Interfaz_CRM.Mail.dll
+C:\Desarrollo\Version 8\Integraciones Tekne\bin\Debug\Sincronizacion.dll
+C:\Desarrollo\Version 8\Integraciones Tekne\bin\Debug\Transaccional.dll
+C:\Desarrollo\Version 8\Integraciones Tekne\bin\Debug\Umbral_Flex.dll
+C:\Desarrollo\Version 8\Integraciones Tekne\bin\Debug\FlexLine_CRUD.dll
+C:\Desarrollo\Version 8\Integraciones Tekne\bin\Debug\Automatizar.dll
+C:\Desarrollo\Version 8\Integraciones Tekne\bin\Debug\EntityFramework.dll
+C:\Desarrollo\Version 8\Integraciones Tekne\bin\Debug\Interop.Shell32.dll
+C:\Desarrollo\Version 8\Integraciones Tekne\bin\Debug\ZedGraph.dll
+C:\Desarrollo\Version 8\Integraciones Tekne\bin\Debug\MySql.Data.dll
+C:\Desarrollo\Version 8\Integraciones Tekne\bin\Debug\System.Data.SqlServerCe.dll
+C:\Desarrollo\Version 8\Integraciones Tekne\bin\Debug\Seguridad.dll
+C:\Desarrollo\Version 8\Integraciones Tekne\bin\Debug\CrystalDecisions.CrystalReports.Engine.dll
+C:\Desarrollo\Version 8\Integraciones Tekne\bin\Debug\CrystalDecisions.Shared.dll
+C:\Desarrollo\Version 8\Integraciones Tekne\bin\Debug\CrystalDecisions.Windows.Forms.dll
+C:\Desarrollo\Version 8\Integraciones Tekne\bin\Debug\CrystalDecisions.ReportSource.dll
+C:\Desarrollo\Version 8\Integraciones Tekne\bin\Debug\stdole.dll
+C:\Desarrollo\Version 8\Integraciones Tekne\bin\Debug\Sincronizacion.xml
+C:\Desarrollo\Version 8\Integraciones Tekne\bin\Debug\Sincronizacion.dll.config
+C:\Desarrollo\Version 8\Integraciones Tekne\bin\Debug\Umbral_Flex.pdb
+C:\Desarrollo\Version 8\Integraciones Tekne\bin\Debug\Umbral_Flex.xml
+C:\Desarrollo\Version 8\Integraciones Tekne\bin\Debug\Umbral_Flex.dll.config
+C:\Desarrollo\Version 8\Integraciones Tekne\bin\Debug\Interfaz_CRM.Mail.pdb
+C:\Desarrollo\Version 8\Integraciones Tekne\bin\Debug\Interfaz_CRM.Mail.dll.config
+C:\Desarrollo\Version 8\Integraciones Tekne\bin\Debug\ClasesGenerales.pdb
+C:\Desarrollo\Version 8\Integraciones Tekne\bin\Debug\ClasesGenerales.xml
+C:\Desarrollo\Version 8\Integraciones Tekne\bin\Debug\FTP.pdb
+C:\Desarrollo\Version 8\Integraciones Tekne\bin\Debug\Transaccional.pdb
+C:\Desarrollo\Version 8\Integraciones Tekne\bin\Debug\Transaccional.xml
+C:\Desarrollo\Version 8\Integraciones Tekne\bin\Debug\FlexLine_CRUD.pdb
+C:\Desarrollo\Version 8\Integraciones Tekne\bin\Debug\FlexLine_CRUD.xml
+C:\Desarrollo\Version 8\Integraciones Tekne\bin\Debug\Automatizar.pdb
+C:\Desarrollo\Version 8\Integraciones Tekne\bin\Debug\Automatizar.xml
+C:\Desarrollo\Version 8\Integraciones Tekne\bin\Debug\EntityFramework.xml
+C:\Desarrollo\Version 8\Integraciones Tekne\bin\Debug\System.Data.SqlServerCe.xml
+C:\Desarrollo\Version 8\Integraciones Tekne\bin\Debug\Seguridad.pdb
+C:\Desarrollo\Version 8\Integraciones Tekne\obj\Debug\ObtenerInformacion.vbproj.AssemblyReference.cache
+C:\Desarrollo\Version 8\Integraciones Tekne\obj\Debug\obtenerInformacion.frm_sincronizacion.resources
+C:\Desarrollo\Version 8\Integraciones Tekne\obj\Debug\obtenerInformacion.Resources.resources
+C:\Desarrollo\Version 8\Integraciones Tekne\obj\Debug\ObtenerInformacion.vbproj.GenerateResource.cache
+C:\Desarrollo\Version 8\Integraciones Tekne\obj\Debug\ObtenerInformacion.vbproj.CoreCompileInputs.cache
+C:\Desarrollo\Version 8\Integraciones Tekne\obj\Debug\ObtenerI.83988265.Up2Date
+C:\Desarrollo\Version 8\Integraciones Tekne\obj\Debug\obtenerInformacion.exe
+C:\Desarrollo\Version 8\Integraciones Tekne\obj\Debug\obtenerInformacion.xml
+C:\Desarrollo\Version 8\Integraciones Tekne\obj\Debug\obtenerInformacion.pdb
+C:\Desarrollo\Version 8\Integraciones Tekne\obj\Debug\obtenerInformacion.exe.config
+C:\Desarrollo\Version 8\Integraciones Tekne\bin\Debug\Sincronizacion.pdb
+C:\Desarrollo\Version 8\Integraciones Tekne\bin\Debug\ZedGraph.xml
+C:\Desarrollo\Version 8\Integraciones Tekne\bin\Debug\es\ZedGraph.resources.dll
+C:\Desarrollo\Version 8\Integraciones Tekne\bin\Debug\pt\ZedGraph.resources.dll
+C:\Desarrollo\Version 8\Integraciones Tekne\bin\Debug\zh-tw\ZedGraph.resources.dll
+C:\Desarrollo\Version 8\Integraciones Tekne\bin\Debug\Seguridad.xml

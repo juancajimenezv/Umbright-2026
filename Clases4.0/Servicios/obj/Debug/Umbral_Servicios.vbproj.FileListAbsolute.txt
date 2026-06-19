@@ -1,0 +1,112 @@
+C:\Desarrollo\Version 8\Clases4.0\Servicios\bin\Debug\Umbral_Servicios.dll
+C:\Desarrollo\Version 8\Clases4.0\Servicios\bin\Debug\Umbral_Servicios.pdb
+C:\Desarrollo\Version 8\Clases4.0\Servicios\bin\Debug\Umbral_Servicios.xml
+C:\Desarrollo\Version 8\Clases4.0\Servicios\bin\Debug\Automatizar.dll
+C:\Desarrollo\Version 8\Clases4.0\Servicios\bin\Debug\ClasesGenerales.dll
+C:\Desarrollo\Version 8\Clases4.0\Servicios\bin\Debug\Compras.dll
+C:\Desarrollo\Version 8\Clases4.0\Servicios\bin\Debug\Transaccional.dll
+C:\Desarrollo\Version 8\Clases4.0\Servicios\bin\Debug\CrystalDecisions.CrystalReports.Engine.dll
+C:\Desarrollo\Version 8\Clases4.0\Servicios\bin\Debug\CrystalDecisions.Shared.dll
+C:\Desarrollo\Version 8\Clases4.0\Servicios\bin\Debug\CrystalDecisions.Windows.Forms.dll
+C:\Desarrollo\Version 8\Clases4.0\Servicios\bin\Debug\FTP.dll
+C:\Desarrollo\Version 8\Clases4.0\Servicios\bin\Debug\Interop.Shell32.dll
+C:\Desarrollo\Version 8\Clases4.0\Servicios\bin\Debug\Sincronizacion.dll
+C:\Desarrollo\Version 8\Clases4.0\Servicios\bin\Debug\ZedGraph.dll
+C:\Desarrollo\Version 8\Clases4.0\Servicios\bin\Debug\MySql.Data.dll
+C:\Desarrollo\Version 8\Clases4.0\Servicios\bin\Debug\CrystalDecisions.ReportSource.dll
+C:\Desarrollo\Version 8\Clases4.0\Servicios\bin\Debug\Umbral_Flex.dll
+C:\Desarrollo\Version 8\Clases4.0\Servicios\bin\Debug\Interfaz_CRM.Mail.dll
+C:\Desarrollo\Version 8\Clases4.0\Servicios\bin\Debug\stdole.dll
+C:\Desarrollo\Version 8\Clases4.0\Servicios\bin\Debug\FlexLine_CRUD.dll
+C:\Desarrollo\Version 8\Clases4.0\Servicios\bin\Debug\EntityFramework.dll
+C:\Desarrollo\Version 8\Clases4.0\Servicios\bin\Debug\Seguridad.dll
+C:\Desarrollo\Version 8\Clases4.0\Servicios\bin\Debug\Automatizar.pdb
+C:\Desarrollo\Version 8\Clases4.0\Servicios\bin\Debug\Automatizar.xml
+C:\Desarrollo\Version 8\Clases4.0\Servicios\bin\Debug\ClasesGenerales.pdb
+C:\Desarrollo\Version 8\Clases4.0\Servicios\bin\Debug\Compras.pdb
+C:\Desarrollo\Version 8\Clases4.0\Servicios\bin\Debug\Transaccional.pdb
+C:\Desarrollo\Version 8\Clases4.0\Servicios\bin\Debug\Transaccional.xml
+C:\Desarrollo\Version 8\Clases4.0\Servicios\bin\Debug\Sincronizacion.dll.config
+C:\Desarrollo\Version 8\Clases4.0\Servicios\bin\Debug\Umbral_Flex.pdb
+C:\Desarrollo\Version 8\Clases4.0\Servicios\bin\Debug\Umbral_Flex.dll.config
+C:\Desarrollo\Version 8\Clases4.0\Servicios\bin\Debug\Interfaz_CRM.Mail.pdb
+C:\Desarrollo\Version 8\Clases4.0\Servicios\bin\Debug\Interfaz_CRM.Mail.dll.config
+C:\Desarrollo\Version 8\Clases4.0\Servicios\bin\Debug\FlexLine_CRUD.pdb
+C:\Desarrollo\Version 8\Clases4.0\Servicios\bin\Debug\FlexLine_CRUD.xml
+C:\Desarrollo\Version 8\Clases4.0\Servicios\bin\Debug\EntityFramework.xml
+C:\Desarrollo\Version 8\Clases4.0\Servicios\bin\Debug\Seguridad.pdb
+C:\Desarrollo\Version 8\Clases4.0\Servicios\obj\Debug\Umbral_Servicios.vbproj.AssemblyReference.cache
+C:\Desarrollo\Version 8\Clases4.0\Servicios\obj\Debug\Umbral_Servicios.Resources.resources
+C:\Desarrollo\Version 8\Clases4.0\Servicios\obj\Debug\Umbral_Servicios.vbproj.GenerateResource.cache
+C:\Desarrollo\Version 8\Clases4.0\Servicios\obj\Debug\Umbral_Servicios.vbproj.CoreCompileInputs.cache
+C:\Desarrollo\Version 8\Clases4.0\Servicios\obj\Debug\Umbral_S.375CFED0.Up2Date
+C:\Desarrollo\Version 8\Clases4.0\Servicios\obj\Debug\Umbral_Servicios.dll
+C:\Desarrollo\Version 8\Clases4.0\Servicios\obj\Debug\Umbral_Servicios.xml
+C:\Desarrollo\Version 8\Clases4.0\Servicios\obj\Debug\Umbral_Servicios.pdb
+C:\Desarrollo\Version 8\Clases4.0\Servicios\bin\Debug\Sincronizacion.pdb
+C:\Desarrollo\Version 8\Clases4.0\Servicios\bin\Debug\Sincronizacion.xml
+C:\Desarrollo\Version 8\Clases4.0\Servicios\bin\Debug\Umbral_Flex.xml
+C:\Desarrollo\Version 8\Clases4.0\Servicios\bin\Debug\ClasesGenerales.xml
+C:\Desarrollo\Version 8\Clases4.0\Servicios\bin\Debug\FTP.pdb
+C:\Desarrollo\Version 8\Clases4.0\Servicios\bin\Debug\ZedGraph.xml
+C:\Desarrollo\Version 8\Clases4.0\Servicios\bin\Debug\Seguridad.xml
+C:\Desarrollo\Version 8\Clases4.0\Servicios\bin\Debug\es\ZedGraph.resources.dll
+C:\Desarrollo\Version 8\Clases4.0\Servicios\bin\Debug\pt\ZedGraph.resources.dll
+C:\Desarrollo\Version 8\Clases4.0\Servicios\bin\Debug\zh-tw\ZedGraph.resources.dll
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Clases4.0\Servicios\bin\Debug\Umbral_Servicios.dll
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Clases4.0\Servicios\bin\Debug\Umbral_Servicios.pdb
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Clases4.0\Servicios\bin\Debug\Umbral_Servicios.xml
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Clases4.0\Servicios\bin\Debug\Automatizar.dll
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Clases4.0\Servicios\bin\Debug\ClasesGenerales.dll
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Clases4.0\Servicios\bin\Debug\Compras.dll
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Clases4.0\Servicios\bin\Debug\Transaccional.dll
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Clases4.0\Servicios\bin\Debug\CrystalDecisions.CrystalReports.Engine.dll
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Clases4.0\Servicios\bin\Debug\CrystalDecisions.Shared.dll
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Clases4.0\Servicios\bin\Debug\CrystalDecisions.Windows.Forms.dll
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Clases4.0\Servicios\bin\Debug\FTP.dll
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Clases4.0\Servicios\bin\Debug\Interop.Shell32.dll
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Clases4.0\Servicios\bin\Debug\Sincronizacion.dll
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Clases4.0\Servicios\bin\Debug\ZedGraph.dll
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Clases4.0\Servicios\bin\Debug\MySql.Data.dll
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Clases4.0\Servicios\bin\Debug\System.Data.SqlServerCe.dll
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Clases4.0\Servicios\bin\Debug\CrystalDecisions.ReportSource.dll
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Clases4.0\Servicios\bin\Debug\Umbral_Flex.dll
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Clases4.0\Servicios\bin\Debug\Interfaz_CRM.Mail.dll
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Clases4.0\Servicios\bin\Debug\FlexLine_CRUD.dll
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Clases4.0\Servicios\bin\Debug\stdole.dll
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Clases4.0\Servicios\bin\Debug\EntityFramework.dll
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Clases4.0\Servicios\bin\Debug\Seguridad.dll
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Clases4.0\Servicios\bin\Debug\Automatizar.pdb
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Clases4.0\Servicios\bin\Debug\Automatizar.xml
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Clases4.0\Servicios\bin\Debug\ClasesGenerales.pdb
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Clases4.0\Servicios\bin\Debug\ClasesGenerales.xml
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Clases4.0\Servicios\bin\Debug\Compras.pdb
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Clases4.0\Servicios\bin\Debug\Transaccional.pdb
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Clases4.0\Servicios\bin\Debug\Transaccional.xml
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Clases4.0\Servicios\bin\Debug\FTP.pdb
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Clases4.0\Servicios\bin\Debug\Sincronizacion.pdb
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Clases4.0\Servicios\bin\Debug\Sincronizacion.xml
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Clases4.0\Servicios\bin\Debug\Sincronizacion.dll.config
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Clases4.0\Servicios\bin\Debug\ZedGraph.xml
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Clases4.0\Servicios\bin\Debug\System.Data.SqlServerCe.xml
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Clases4.0\Servicios\bin\Debug\Umbral_Flex.pdb
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Clases4.0\Servicios\bin\Debug\Umbral_Flex.xml
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Clases4.0\Servicios\bin\Debug\Umbral_Flex.dll.config
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Clases4.0\Servicios\bin\Debug\Interfaz_CRM.Mail.pdb
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Clases4.0\Servicios\bin\Debug\Interfaz_CRM.Mail.dll.config
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Clases4.0\Servicios\bin\Debug\FlexLine_CRUD.pdb
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Clases4.0\Servicios\bin\Debug\FlexLine_CRUD.xml
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Clases4.0\Servicios\bin\Debug\EntityFramework.xml
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Clases4.0\Servicios\bin\Debug\Seguridad.pdb
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Clases4.0\Servicios\bin\Debug\Seguridad.xml
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Clases4.0\Servicios\bin\Debug\es\ZedGraph.resources.dll
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Clases4.0\Servicios\bin\Debug\pt\ZedGraph.resources.dll
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Clases4.0\Servicios\bin\Debug\zh-tw\ZedGraph.resources.dll
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Clases4.0\Servicios\obj\Debug\Umbral_Servicios.vbproj.AssemblyReference.cache
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Clases4.0\Servicios\obj\Debug\Umbral_Servicios.Resources.resources
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Clases4.0\Servicios\obj\Debug\Umbral_Servicios.vbproj.GenerateResource.cache
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Clases4.0\Servicios\obj\Debug\Umbral_Servicios.vbproj.CoreCompileInputs.cache
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Clases4.0\Servicios\obj\Debug\Umbral_S.375CFED0.Up2Date
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Clases4.0\Servicios\obj\Debug\Umbral_Servicios.dll
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Clases4.0\Servicios\obj\Debug\Umbral_Servicios.xml
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Clases4.0\Servicios\obj\Debug\Umbral_Servicios.pdb

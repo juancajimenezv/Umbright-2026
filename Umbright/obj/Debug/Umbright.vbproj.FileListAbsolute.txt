@@ -1,0 +1,1440 @@
+C:\Users\umbral\Desktop\Desarrollo2012\Aplicaciones\Version 8\Umbright\bin\Debug\Umbright.exe.config
+C:\Users\umbral\Desktop\Desarrollo2012\Aplicaciones\Version 8\Umbright\obj\Debug\Interop.prtcom.dll
+C:\Users\umbral\Desktop\Desarrollo2012\Aplicaciones\Version 8\Umbright\obj\Debug\Umbright.vbproj.ResolveComReference.cache
+C:\Users\umbral\Desktop\Desarrollo2012\Aplicaciones\Version 8\Umbright\obj\Debug\Umbright.exe
+C:\Users\umbral\Desktop\Desarrollo2012\Aplicaciones\Version 8\Umbright\obj\Debug\Umbright.pdb
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\bin\Debug\Umbright.exe.config
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\bin\Debug\Umbright.exe
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\bin\Debug\Umbright.pdb
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\bin\Debug\Automatizar.dll
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\bin\Debug\ClasesGenerales.dll
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\bin\Debug\Compras.dll
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\bin\Debug\Microsoft.SQLServer.ManagedDTS.dll
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\bin\Debug\Seguridad.dll
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\bin\Debug\Sincronizacion.dll
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\bin\Debug\Transaccional.dll
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\bin\Debug\Umbral_Flex.dll
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\bin\Debug\WebCam_Capture.dll
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\bin\Debug\ZedGraph.dll
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\bin\Debug\Interop.Shell32.dll
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\bin\Debug\Microsoft.SqlServer.DTSRuntimeWrap.dll
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\bin\Debug\Microsoft.SqlServer.PipelineHost.dll
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\bin\Debug\MySql.Data.dll
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\bin\Debug\stdole.dll
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\bin\Debug\Microsoft.SqlServer.DTSPipelineWrap.dll
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\bin\Debug\Compras.pdb
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\bin\Debug\Automatizar.pdb
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\bin\Debug\Automatizar.xml
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\bin\Debug\ClasesGenerales.pdb
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\bin\Debug\ClasesGenerales.xml
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\bin\Debug\Seguridad.pdb
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\bin\Debug\Seguridad.xml
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\bin\Debug\Sincronizacion.pdb
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\bin\Debug\Sincronizacion.xml
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\bin\Debug\Transaccional.pdb
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\bin\Debug\Transaccional.xml
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\bin\Debug\Umbral_Flex.pdb
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\bin\Debug\Umbral_Flex.xml
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\bin\Debug\Umbral_Flex.dll.config
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\obj\Debug\Umbright.vbprojAssemblyReference.cache
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\obj\Debug\Umbright.frm_soporte_claim.resources
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\obj\Debug\Umbright.frm_vin_Pedido_automatico_otras_bodegas.resources
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\obj\Debug\Umbright.frmCargaInformacionWalmart.resources
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\obj\Debug\Umbright.frmCargasBI.resources
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\obj\Debug\Umbright.frmPedidoTelemarketing.resources
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\obj\Debug\Umbright.frmTrackingFactura.resources
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\obj\Debug\Umbright.Productos_Pareto.resources
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\obj\Debug\Umbright.frmRenovacionconsignaciones.resources
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\obj\Debug\Umbright.frmTrasladoFacturas.resources
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\obj\Debug\Umbright.Frm_Cajas_Chicas_Detalle_M.resources
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\obj\Debug\Umbright.Frm_Cajas_Chicas_M.resources
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\obj\Debug\Umbright.Frm_Cancelacion_Anulacion.resources
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\obj\Debug\Umbright.Frm_Cancela_Facturas_Con_Notas.resources
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\obj\Debug\Umbright.Frm_Facturas_Analisis.resources
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\obj\Debug\Umbright.Frm_Productos_Contables.resources
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\obj\Debug\Umbright.Frm_Tracking_Pagos_Electronicos.resources
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\obj\Debug\Umbright.Frm_Tracking_Pagos_Electronicos_Obtiene.resources
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\obj\Debug\Umbright.Frm_Tracking_Pagos_Electronicos_Tesoreria.resources
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\obj\Debug\Umbright.Form1.resources
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\obj\Debug\Umbright.frm_ChequeoFacturas.resources
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\obj\Debug\Umbright.frmEdicionMarcajesPilotos.resources
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\obj\Debug\Umbright.frm_3PL_HH.resources
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\obj\Debug\Umbright.Frm_Acceso.resources
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\obj\Debug\Umbright.frm_AgregarReenvios.resources
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\obj\Debug\Umbright.frm_Cierre_Picking.resources
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\obj\Debug\Umbright.frm_Convierte_FactVentas_OC_SV.resources
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\obj\Debug\Umbright.Frm_Cumplimiento_Diario_Trans.resources
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\obj\Debug\Umbright.frm_Maquila_3PL.resources
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\obj\Debug\Umbright.frm_Maquila_3PL_Producto.resources
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\obj\Debug\Umbright.frm_Procesar_Pedidos_3pl.resources
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\obj\Debug\Umbright.frm_procesoarchivos3pl.resources
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\obj\Debug\Umbright.frm_actualizacionProducto.resources
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\obj\Debug\Umbright.Frm_Actualizacion_Codigos.resources
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\obj\Debug\Umbright.Frm_Actualizacion_Codigos_Busca.resources
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\obj\Debug\Umbright.frm_actualizacion_productos.resources
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\obj\Debug\Umbright.frm_actualizacion_sku.resources
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\obj\Debug\Umbright.frm_analisis20.resources
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\obj\Debug\Umbright.Frm_Clientes_Contado.resources
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\obj\Debug\Umbright.frm_DevolucionesInterempresas.resources
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\obj\Debug\Umbright.frm_mercaderista_cliente.resources
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\obj\Debug\Umbright.frm_MonitorMaquila.resources
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\obj\Debug\Umbright.frm_ReprocesoEdifact.resources
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\obj\Debug\Umbright.frm_validacion_OC_WM.resources
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\obj\Debug\Umbright.frm_ws_cliente.resources
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\obj\Debug\Umbright.frm_ws_control_entregas.resources
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\obj\Debug\Umbright.frm_ws_envio.resources
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\obj\Debug\Umbright.frm_ws_productos.resources
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\obj\Debug\Umbright.frm_daInvFisicos.resources
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\obj\Debug\Umbright.Cancelacion_De_CompromisosVnt.resources
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\obj\Debug\Umbright.frmRecepcionControlTransporte.resources
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\obj\Debug\Umbright.Frm_Cajas_Chicas.resources
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\obj\Debug\Umbright.Frm_Cajas_Chicas_Detalle.resources
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\obj\Debug\Umbright.Frm_Cancelacion_Compromisos.resources
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\obj\Debug\Umbright.Frm_Cancelacion_Contados.resources
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\obj\Debug\Umbright.frm_conciliacion_bancaria.resources
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\obj\Debug\Umbright.Frm_Costo__Ingreso_CD.resources
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\obj\Debug\Umbright.frm_importar_estado_de_cuenta.resources
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\obj\Debug\Umbright.frm_impresoras1.resources
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\obj\Debug\Umbright.frm_imprimir_conciliacion.resources
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\obj\Debug\Umbright.Frm_Producto_Item.resources
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\obj\Debug\Umbright.Frm_Proveedor_Cajas.resources
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\obj\Debug\Umbright.frm_recepcionDevoluciones.resources
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\obj\Debug\Umbright.Frm_Recibos_Automatizar.resources
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\obj\Debug\Umbright.frm_recibos_canal_moderno.resources
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\obj\Debug\Umbright.frm_recibos_walmart.resources
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\obj\Debug\Umbright.Frm_Recibos_Canal_Moderno_Actualizar.resources
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\obj\Debug\Umbright.frm_Recibos_Lote.resources
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\obj\Debug\Umbright.Frm_Recibos_Lote_Busca.resources
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\obj\Debug\Umbright.Frm_Traslados.resources
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\obj\Debug\Umbright.frm_int_etiquetado.resources
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\obj\Debug\Umbright.Form6.resources
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\obj\Debug\Umbright.frm_automatizarTransporteGuia.resources
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\obj\Debug\Umbright.Frm_Carga_Notas_Devolucion.resources
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\obj\Debug\Umbright.frm_asignarActividadEspecial.resources
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\obj\Debug\Umbright.frm_automatizaTransporte.resources
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\obj\Debug\Umbright.frm_Genera_Info_Pilotos.resources
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\obj\Debug\Umbright.frm_HOrarioAlmuerzo.resources
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\obj\Debug\Umbright.frm_InformeInternaciones.resources
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\obj\Debug\Umbright.frm_liberar_facturas.resources
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\obj\Debug\Umbright.frm_pedido_walmart.resources
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\obj\Debug\Umbright.frm_pickingporUsuario.resources
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\obj\Debug\Umbright.Frm_Productos_Bodega.resources
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\obj\Debug\Umbright.frm_PruebaAsignarUsuario.resources
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\obj\Debug\Umbright.frm_Reasignar_picking.resources
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\obj\Debug\Umbright.frm_reenvioAutomatizacion.resources
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\obj\Debug\Umbright.frm_separar_factura_transporte.resources
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\obj\Debug\Umbright.frmMantenedorPrecios.resources
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\obj\Debug\Umbright.frm_dua_HH.resources
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\obj\Debug\Umbright.frmMantenedorProductosLista.resources
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\obj\Debug\Umbright.frm_busqueda_empleado.resources
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\obj\Debug\Umbright.frm_presupuesto_marcas.resources
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\obj\Debug\Umbright.Frm_Candidatos.resources
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\obj\Debug\Umbright.frm_control_vacaciones.resources
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\obj\Debug\Umbright.Frm_Buscar_Suspendidos.resources
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\obj\Debug\Umbright.Frm_empleados.resources
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\obj\Debug\Umbright.Frm_suspension.resources
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\obj\Debug\Umbright.Frm_Suspension_Fechas.resources
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\obj\Debug\Umbright.Frm_Traslada_Personal.resources
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\obj\Debug\Umbright.frmRequisicionesCalendario.resources
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\obj\Debug\Umbright.frmRequisicionesTrasladoRecepcion.resources
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\obj\Debug\Umbright.frmRequisicionesEnvioTesoreria.resources
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\obj\Debug\Umbright.frmRequisicionesEnvio.resources
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\obj\Debug\Umbright.frmRequisicionesProducto.resources
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\obj\Debug\Umbright.frmRequisicionRecepcionCreditos.resources
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\obj\Debug\Umbright.frmRequisicionRecepcionFactura.resources
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\obj\Debug\Umbright.frmRequisicionUsuarioCCosto.resources
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\obj\Debug\Umbright.frm_ControlSeriesLotes.resources
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\obj\Debug\Umbright.frm_FinPicking.resources
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\obj\Debug\Umbright.frm_dr.resources
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\obj\Debug\Umbright.frm_da_SolicitudReserva.resources
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\obj\Debug\Umbright.frm_analisis_guias.resources
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\obj\Debug\Umbright.Frm_Cambio_Dai.resources
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\obj\Debug\Umbright.frm_canastas2.resources
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\obj\Debug\Umbright.Frm_Carga_Precios_Costo.resources
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\obj\Debug\Umbright.Frm_ClienteNuevo.resources
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\obj\Debug\Umbright.Frm_Control_Accesos.resources
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\obj\Debug\Umbright.Frm_Devoluciones.resources
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\obj\Debug\Umbright.frm_PedidosEdiFact.resources
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\obj\Debug\Umbright.frm_entregaExpress.resources
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\obj\Debug\Umbright.frm_facturacion_costo.resources
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\obj\Debug\Umbright.frm_Fecha_Prestamos.resources
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\obj\Debug\Umbright.frm_cuentas_productos.resources
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\obj\Debug\Umbright.frm_asocia_solicitud_reserva.resources
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\obj\Debug\Umbright.frm_di.resources
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\obj\Debug\Umbright.frm_dua.resources
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\obj\Debug\Umbright.frm_reserva.resources
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\obj\Debug\Umbright.frm_solicitud_reserva.resources
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\obj\Debug\Umbright.frm_actualizacion_plasma.resources
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\obj\Debug\Umbright.frm_actualiza_precios_compras.resources
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\obj\Debug\Umbright.frm_asociar_ES_documentos.resources
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\obj\Debug\Umbright.frm_ayuda_cuentas.resources
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\obj\Debug\Umbright.frm_backorder.resources
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\obj\Debug\Umbright.frm_busqueda_general.resources
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\obj\Debug\Umbright.frm_busqueda_general_mysql.resources
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\obj\Debug\Umbright.frm_cambiar_clave.resources
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\obj\Debug\Umbright.Frm_cambiar_empresa.resources
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\obj\Debug\Umbright.frm_cancelacion_prestamo.resources
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\obj\Debug\Umbright.Frm_generador_xml.resources
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\obj\Debug\Umbright.frm_pedidosElSalvador.resources
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\obj\Debug\Umbright.frmRequisiciones.resources
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\obj\Debug\Umbright.frmRequisicionUsuarioSolicito.resources
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\obj\Debug\Umbright.frmRequisiconesDetalle.resources
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\obj\Debug\Umbright.frm_complemento_divinos.resources
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\obj\Debug\Umbright.frm_graficar.resources
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\obj\Debug\Umbright.frm_guate_factura.resources
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\obj\Debug\Umbright.frm_HDAcciones.resources
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\obj\Debug\Umbright.frm_HDIncidencias.resources
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\obj\Debug\Umbright.frm_HDIncidenciasFuera.resources
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\obj\Debug\Umbright.frm_Horarios_Extraordinarios.resources
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\obj\Debug\Umbright.frm_liquidacionPiloto.resources
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\obj\Debug\Umbright.frm_liquidacionPiloto_Finanzas.resources
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\obj\Debug\Umbright.frm_liquidacion_gastos.resources
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\obj\Debug\Umbright.frm_listadoOrdenesTransportes.resources
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\obj\Debug\Umbright.frm_nombre_corto.resources
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\obj\Debug\Umbright.frm_OCFacturas.resources
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\obj\Debug\Umbright.frm_OChistorial.resources
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\obj\Debug\Umbright.Frm_PagosBI.resources
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\obj\Debug\Umbright.Frm_PagosOtros.resources
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\obj\Debug\Umbright.Frm_Pagos_Electronicos.resources
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\obj\Debug\Umbright.frm_HorasExtras_CD.resources
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\obj\Debug\Umbright.frm_Producto_Peso_Volumen.resources
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\obj\Debug\Umbright.frm_RechazosPendientesAprobacion.resources
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\obj\Debug\Umbright.frm_registros_sanitarios.resources
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\obj\Debug\Umbright.frm_ruta_logisitca.resources
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\obj\Debug\Umbright.frm_seguimiento_pedidos.resources
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\obj\Debug\Umbright.frm_vin_Inventario_MinimoMaximo.resources
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\obj\Debug\Umbright.frm_vin_Pedido_automatico.resources
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\obj\Debug\Umbright.frm_int_trackingInternaciones.resources
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\obj\Debug\Umbright.frm_int_informacionDI.resources
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\obj\Debug\Umbright.frm_int_ListadoInternaciones.resources
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\obj\Debug\Umbright.frm_int_pedido.resources
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\obj\Debug\Umbright.frm_int_producto_bloqueado.resources
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\obj\Debug\Umbright.frm_convierte_ordencompra.resources
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\obj\Debug\Umbright.frm_buscar_orden_etiquetas.resources
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\obj\Debug\Umbright.frm_buscar_producto_desarme.resources
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\obj\Debug\Umbright.frm_maq_etiquetas_materiales.resources
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\obj\Debug\Umbright.frm_maq_etiquetas_produccion.resources
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\obj\Debug\Umbright.frm_maq_orden_etiquetas.resources
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\obj\Debug\Umbright.frm_scm_aprobacion_tesoreria.resources
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\obj\Debug\Umbright.frm_scm_asociar_pedido_oc.resources
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\obj\Debug\Umbright.frm_SCM_Procesos.resources
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\obj\Debug\Umbright.frm_columnas.resources
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\obj\Debug\Umbright.frm_nuevoMenu.resources
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\obj\Debug\Umbright.frm_consignaciones.resources
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\obj\Debug\Umbright.frm_consignaciones_saldos.resources
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\obj\Debug\Umbright.frm_control_fallas.resources
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\obj\Debug\Umbright.frm_control_transporte.resources
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\obj\Debug\Umbright.frm_conversion.resources
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\obj\Debug\Umbright.frm_diseñador_reportes.resources
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\obj\Debug\Umbright.Frm_edifact.resources
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\obj\Debug\Umbright.frm_ejecuta_sp.resources
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\obj\Debug\Umbright.frm_OCfechas.resources
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\obj\Debug\Umbright.frm_gen_tabcod.resources
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\obj\Debug\Umbright.frm_inicializar_periodo.resources
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\obj\Debug\Umbright.frm_InventarioCliente.resources
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\obj\Debug\Umbright.frm_OCconfirmacion.resources
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\obj\Debug\Umbright.frm_liberar_factura_parcial.resources
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\obj\Debug\Umbright.frm_listado_pedidos_MR.resources
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\obj\Debug\Umbright.frm_listado_picking.resources
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\obj\Debug\Umbright.frm_listas_generales.resources
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\obj\Debug\Umbright.frm_login.resources
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\obj\Debug\Umbright.frm_memos_promocionales.resources
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\obj\Debug\Umbright.frm_mensajeria_mr.resources
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\obj\Debug\Umbright.frm_menu_principal.resources
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\obj\Debug\Umbright.frm_pedidos_facturar.resources
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\obj\Debug\Umbright.frm_pedidos_pendientes.resources
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\obj\Debug\Umbright.frm_pickeador.resources
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\obj\Debug\Umbright.frm_procesar_productos.resources
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\obj\Debug\Umbright.frm_producto.resources
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\obj\Debug\Umbright.frm_productos_bajas.resources
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\obj\Debug\Umbright.frm_recepcion_control_transporte.resources
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\obj\Debug\Umbright.frm_reportes.resources
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\obj\Debug\Umbright.frm_resultado.resources
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\obj\Debug\Umbright.Resources.resources
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\obj\Debug\Umbright.frm_scm_definicion_pantalla.resources
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\obj\Debug\Umbright.frm_scm_tracking_pedido_tesoreria.resources
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\obj\Debug\Umbright.frm_scm_ver_pedidos.resources
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\obj\Debug\Umbright.frm_scn_clientes.resources
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\obj\Debug\Umbright.frm_scn_movimiento_inventarios.resources
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\obj\Debug\Umbright.frm_scn_ofertas.resources
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\obj\Debug\Umbright.Frm_sincronizacion_informacion.resources
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\obj\Debug\Umbright.frm_solicitud_productos.resources
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\obj\Debug\Umbright.frm_solicitud_vacaciones.resources
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\obj\Debug\Umbright.frm_tracking_pedidos.resources
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\obj\Debug\Umbright.frm_usuario.resources
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\obj\Debug\Umbright.frm_mantenimiento.resources
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\obj\Debug\Umbright.frm_mantenimiento_activos_insumos.resources
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\obj\Debug\Umbright.frm_mantenimiento_modelos.resources
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\obj\Debug\Umbright.frm_movimientos_activos.resources
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\obj\Debug\Umbright.frm_movimientos_insumos.resources
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\obj\Debug\Umbright.frm_int_parametros.resources
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\obj\Debug\Umbright.frm_int_prepara_informacion.resources
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\obj\Debug\Umbright.frm_maq_asignacion_ordenes.resources
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\obj\Debug\Umbright.frm_maq_monitor.resources
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\obj\Debug\Umbright.frm_maq_proceso_produccion.resources
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\obj\Debug\Umbright.frmMob_ClienteRuta.resources
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\obj\Debug\Umbright.frmForecast.resources
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\obj\Debug\Umbright.frm_cambiarperiodo.resources
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\obj\Debug\Umbright.frm_carga_presupuesto_comercial.resources
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\obj\Debug\Umbright.frm_carga_presupuesto_general.resources
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\obj\Debug\Umbright.frm_liberar_ppto_cliente.resources
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\obj\Debug\Umbright.frm_ppto_general.resources
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\obj\Debug\Umbright.frm_presupuesto_multiple_producto_cliente.resources
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\obj\Debug\Umbright.frm_productos_derivados.resources
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\obj\Debug\Umbright.frm_scm_AsignarOrigen.resources
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\obj\Debug\Umbright.frm_scm_coberturas.resources
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\obj\Debug\Umbright.frm_scm_mantenimiento_productos.resources
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\obj\Debug\Umbright.frm_scm_mantenimiento_proveedores.resources
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\obj\Debug\Umbright.frm_scm_obtiene_informacion.resources
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\obj\Debug\Umbright.frm_scm_parametros_generales.resources
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\obj\Debug\Umbright.frm_scm_pedido.resources
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\obj\Debug\Umbright.frm_scm_preparacion_informacion.resources
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\obj\Debug\Umbright.frm_tracking_requisicion.resources
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\obj\Debug\Umbright.FrmScript.resources
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\obj\Debug\Umbright.FrmWait.resources
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\obj\Debug\Umbright.frm_DTS.resources
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\obj\Debug\Umbright.vbproj.GenerateResource.cache
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\obj\Debug\Umbright.vbproj.CoreCompileInputs.cache
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\obj\Debug\Umbright.vbproj.CopyComplete
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\obj\Debug\Umbright.exe
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\obj\Debug\Umbright.pdb
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\obj\Debug\Umbright.frmMonitorImpresionesAG.resources
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\obj\Debug\Umbright.frm_documentos_fel.resources
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\bin\Debug\conectorNET.dll
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\bin\Debug\Umbral.FelInFileCreditos.dll
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\bin\Debug\Umbral.FelInFileCreditos.pdb
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\obj\Debug\Umbright.frmRequisicionesProyectos.resources
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\obj\Debug\Umbright.frm_Impresion_Factura.resources
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\bin\Debug\log4net.config
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\bin\Debug\log4net.dll
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\bin\Debug\log4net.xml
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\obj\Debug\Umbright.Resource1.resources
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\obj\Debug\Umbright.frmPedidoCreditoTmk.resources
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\obj\Debug\Umbright.frm_LiberarSalidasCd.resources
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\obj\Debug\Umbright.frmPagosExterior.resources
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\obj\Debug\Umbright.frm_int_asociar_solicitud.resources
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\obj\Debug\Umbright.frm_control_transporte_tmk.resources
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\obj\Debug\Umbright.frm_pickeador_TMK.resources
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\bin\Debug\GemBox.Spreadsheet.dll
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\bin\Debug\GemBox.Spreadsheet.xml
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\bin\Debug\FTP.dll
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\bin\Debug\OpenNETCF.Desktop.Communication.dll
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\bin\Debug\Interfaz_CRM.Mail.dll
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\bin\Debug\EntityFramework.dll
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\bin\Debug\FTP.pdb
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\bin\Debug\Interfaz_CRM.Mail.pdb
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\bin\Debug\Interfaz_CRM.Mail.dll.config
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\bin\Debug\EntityFramework.xml
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\obj\Debug\Umbright.frmAnularFelInFile.resources
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\bin\Debug\conectorNETv2.dll
+C:\Desarrollo\Aplicaciones\Version 8\Umbright\bin\Debug\Sincronizacion.dll.config
+C:\Desarrollo\Version 8\Umbright\obj\Debug\Umbright.vbproj.AssemblyReference.cache
+C:\Desarrollo\Version 8\Umbright\obj\Debug\Umbright.frmPedidosUnisuper.resources
+C:\Desarrollo\Version 8\Umbright\obj\Debug\Umbright.frmTrackingTrasladosVNT.resources
+C:\Desarrollo\Version 8\Umbright\obj\Debug\Umbright.frm_entradas_x_traslado.resources
+C:\Desarrollo\Version 8\Umbright\obj\Debug\Umbright.frm_escasez.resources
+C:\Desarrollo\Version 8\Umbright\obj\Debug\Umbright.frm_MinMax_Solicitud_Vinoteca.resources
+C:\Desarrollo\Version 8\Umbright\obj\Debug\Umbright.frm_recepcion_mercaderia_vinoteca.resources
+C:\Desarrollo\Version 8\Umbright\obj\Debug\Umbright.frm_traslados_Vinoteca.resources
+C:\Desarrollo\Version 8\Umbright\obj\Debug\Umbright.frm_soporte_claim.resources
+C:\Desarrollo\Version 8\Umbright\obj\Debug\Umbright.frm_vin_Pedido_automatico_otras_bodegas.resources
+C:\Desarrollo\Version 8\Umbright\obj\Debug\Umbright.frmCargaInformacionWalmart.resources
+C:\Desarrollo\Version 8\Umbright\obj\Debug\Umbright.frmCargasBI.resources
+C:\Desarrollo\Version 8\Umbright\obj\Debug\Umbright.frmPedidoTelemarketing.resources
+C:\Desarrollo\Version 8\Umbright\obj\Debug\Umbright.frmTrackingFactura.resources
+C:\Desarrollo\Version 8\Umbright\obj\Debug\Umbright.Productos_Pareto.resources
+C:\Desarrollo\Version 8\Umbright\obj\Debug\Umbright.frmAnularDocumentosFEL.resources
+C:\Desarrollo\Version 8\Umbright\obj\Debug\Umbright.frmLiquidacionCaja.resources
+C:\Desarrollo\Version 8\Umbright\obj\Debug\Umbright.frmLiquidacionCajaP.resources
+C:\Desarrollo\Version 8\Umbright\obj\Debug\Umbright.frmPagosExterior.resources
+C:\Desarrollo\Version 8\Umbright\obj\Debug\Umbright.frmPedidoCreditoTmk.resources
+C:\Desarrollo\Version 8\Umbright\obj\Debug\Umbright.frmRenovacionconsignaciones.resources
+C:\Desarrollo\Version 8\Umbright\obj\Debug\Umbright.frmTrackingLote.resources
+C:\Desarrollo\Version 8\Umbright\obj\Debug\Umbright.Frm_Cajas_Chicas_M.resources
+C:\Desarrollo\Version 8\Umbright\obj\Debug\Umbright.Frm_Cancelacion_Anulacion.resources
+C:\Desarrollo\Version 8\Umbright\obj\Debug\Umbright.Frm_Cancela_Facturas_Con_Notas.resources
+C:\Desarrollo\Version 8\Umbright\obj\Debug\Umbright.frm_Carga_Combustible_TC.resources
+C:\Desarrollo\Version 8\Umbright\obj\Debug\Umbright.frm_documentos_fel.resources
+C:\Desarrollo\Version 8\Umbright\obj\Debug\Umbright.Frm_Facturas_Analisis.resources
+C:\Desarrollo\Version 8\Umbright\obj\Debug\Umbright.frm_liquidacion_caja_chica.resources
+C:\Desarrollo\Version 8\Umbright\obj\Debug\Umbright.Frm_Productos_Contables.resources
+C:\Desarrollo\Version 8\Umbright\obj\Debug\Umbright.Frm_Tracking_Pagos_Electronicos.resources
+C:\Desarrollo\Version 8\Umbright\obj\Debug\Umbright.Frm_Tracking_Pagos_Electronicos_Obtiene.resources
+C:\Desarrollo\Version 8\Umbright\obj\Debug\Umbright.Frm_Tracking_Pagos_Electronicos_Tesoreria.resources
+C:\Desarrollo\Version 8\Umbright\obj\Debug\Umbright.Form1.resources
+C:\Desarrollo\Version 8\Umbright\obj\Debug\Umbright.frm_ChequeoFacturas.resources
+C:\Desarrollo\Version 8\Umbright\obj\Debug\Umbright.frm_solicitud_productos.resources
+C:\Desarrollo\Version 8\Umbright\obj\Debug\Umbright.frm_int_asociar_solicitud.resources
+C:\Desarrollo\Version 8\Umbright\obj\Debug\Umbright.frmEdicionMarcajesPilotos.resources
+C:\Desarrollo\Version 8\Umbright\obj\Debug\Umbright.frmMonitorImpresiones_cedi.resources
+C:\Desarrollo\Version 8\Umbright\obj\Debug\Umbright.frmImpresionFacturasAreas.resources
+C:\Desarrollo\Version 8\Umbright\obj\Debug\Umbright.frmMonitorImpresionesAG.resources
+C:\Desarrollo\Version 8\Umbright\obj\Debug\Umbright.frmRecepcionFacturas.resources
+C:\Desarrollo\Version 8\Umbright\obj\Debug\Umbright.frm_3PL_HH.resources
+C:\Desarrollo\Version 8\Umbright\obj\Debug\Umbright.Frm_Acceso.resources
+C:\Desarrollo\Version 8\Umbright\obj\Debug\Umbright.frm_AgregarReenvios.resources
+C:\Desarrollo\Version 8\Umbright\obj\Debug\Umbright.frm_Cierre_Picking.resources
+C:\Desarrollo\Version 8\Umbright\obj\Debug\Umbright.frm_impresionFEL.resources
+C:\Desarrollo\Version 8\Umbright\obj\Debug\Umbright.frm_control_recolecciones.resources
+C:\Desarrollo\Version 8\Umbright\obj\Debug\Umbright.frm_control_transporte_tmk.resources
+C:\Desarrollo\Version 8\Umbright\obj\Debug\Umbright.frm_Convierte_FactVentas_OC_SV.resources
+C:\Desarrollo\Version 8\Umbright\obj\Debug\Umbright.Frm_Cumplimiento_Diario_Trans.resources
+C:\Desarrollo\Version 8\Umbright\obj\Debug\Umbright.frm_Impresion_Factura.resources
+C:\Desarrollo\Version 8\Umbright\obj\Debug\Umbright.frm_Información_Lgs.resources
+C:\Desarrollo\Version 8\Umbright\obj\Debug\Umbright.frm_LiberarSalidasCd.resources
+C:\Desarrollo\Version 8\Umbright\obj\Debug\Umbright.frm_lotes_picking_consolidado.resources
+C:\Desarrollo\Version 8\Umbright\obj\Debug\Umbright.frm_Maquila_3PL.resources
+C:\Desarrollo\Version 8\Umbright\obj\Debug\Umbright.frm_Maquila_3PL_Producto.resources
+C:\Desarrollo\Version 8\Umbright\obj\Debug\Umbright.frm_pickeador_TMK.resources
+C:\Desarrollo\Version 8\Umbright\obj\Debug\Umbright.frm_Procesar_Pedidos_3pl.resources
+C:\Desarrollo\Version 8\Umbright\obj\Debug\Umbright.frm_procesoarchivos3pl.resources
+C:\Desarrollo\Version 8\Umbright\obj\Debug\Umbright.frm_maq_tipo_produccion.resources
+C:\Desarrollo\Version 8\Umbright\obj\Debug\Umbright.frm_actualizacionProducto.resources
+C:\Desarrollo\Version 8\Umbright\obj\Debug\Umbright.Frm_Actualizacion_Codigos.resources
+C:\Desarrollo\Version 8\Umbright\obj\Debug\Umbright.Frm_Actualizacion_Codigos_Busca.resources
+C:\Desarrollo\Version 8\Umbright\obj\Debug\Umbright.frm_actualizacion_productos.resources
+C:\Desarrollo\Version 8\Umbright\obj\Debug\Umbright.frm_actualizacion_sku.resources
+C:\Desarrollo\Version 8\Umbright\obj\Debug\Umbright.frm_analisis20.resources
+C:\Desarrollo\Version 8\Umbright\obj\Debug\Umbright.Frm_Clientes_Contado.resources
+C:\Desarrollo\Version 8\Umbright\obj\Debug\Umbright.frm_DevolucionesInterempresas.resources
+C:\Desarrollo\Version 8\Umbright\obj\Debug\Umbright.frm_mercaderista_cliente.resources
+C:\Desarrollo\Version 8\Umbright\obj\Debug\Umbright.frm_MonitorMaquila.resources
+C:\Desarrollo\Version 8\Umbright\obj\Debug\Umbright.frm_ReprocesoEdifact.resources
+C:\Desarrollo\Version 8\Umbright\obj\Debug\Umbright.frm_validacion_OC_WM.resources
+C:\Desarrollo\Version 8\Umbright\obj\Debug\Umbright.frm_ws_cliente.resources
+C:\Desarrollo\Version 8\Umbright\obj\Debug\Umbright.frm_ws_control_entregas.resources
+C:\Desarrollo\Version 8\Umbright\obj\Debug\Umbright.frm_ws_envio.resources
+C:\Desarrollo\Version 8\Umbright\obj\Debug\Umbright.frm_ws_productos.resources
+C:\Desarrollo\Version 8\Umbright\obj\Debug\Umbright.frm_daInvFisicos.resources
+C:\Desarrollo\Version 8\Umbright\obj\Debug\Umbright.Cancelacion_De_CompromisosVnt.resources
+C:\Desarrollo\Version 8\Umbright\obj\Debug\Umbright.frmRecepcionControlTransporte.resources
+C:\Desarrollo\Version 8\Umbright\obj\Debug\Umbright.Frm_Cajas_Chicas.resources
+C:\Desarrollo\Version 8\Umbright\obj\Debug\Umbright.Frm_Cajas_Chicas_Detalle.resources
+C:\Desarrollo\Version 8\Umbright\obj\Debug\Umbright.Frm_Cancelacion_Compromisos.resources
+C:\Desarrollo\Version 8\Umbright\obj\Debug\Umbright.Frm_Cancelacion_Contados.resources
+C:\Desarrollo\Version 8\Umbright\obj\Debug\Umbright.frm_conciliacion_bancaria.resources
+C:\Desarrollo\Version 8\Umbright\obj\Debug\Umbright.Frm_Costo__Ingreso_CD.resources
+C:\Desarrollo\Version 8\Umbright\obj\Debug\Umbright.frm_importar_estado_de_cuenta.resources
+C:\Desarrollo\Version 8\Umbright\obj\Debug\Umbright.frm_impresoras1.resources
+C:\Desarrollo\Version 8\Umbright\obj\Debug\Umbright.frm_imprimir_conciliacion.resources
+C:\Desarrollo\Version 8\Umbright\obj\Debug\Umbright.Frm_Producto_Item.resources
+C:\Desarrollo\Version 8\Umbright\obj\Debug\Umbright.Frm_Proveedor_Cajas.resources
+C:\Desarrollo\Version 8\Umbright\obj\Debug\Umbright.frm_recepcionDevoluciones.resources
+C:\Desarrollo\Version 8\Umbright\obj\Debug\Umbright.Frm_Recibos_Automatizar.resources
+C:\Desarrollo\Version 8\Umbright\obj\Debug\Umbright.frm_recibos_canal_moderno.resources
+C:\Desarrollo\Version 8\Umbright\obj\Debug\Umbright.frm_recibos_walmart.resources
+C:\Desarrollo\Version 8\Umbright\obj\Debug\Umbright.Frm_Recibos_Canal_Moderno_Actualizar.resources
+C:\Desarrollo\Version 8\Umbright\obj\Debug\Umbright.frm_Recibos_Lote.resources
+C:\Desarrollo\Version 8\Umbright\obj\Debug\Umbright.Frm_Recibos_Lote_Busca.resources
+C:\Desarrollo\Version 8\Umbright\obj\Debug\Umbright.Frm_Traslados.resources
+C:\Desarrollo\Version 8\Umbright\obj\Debug\Umbright.frm_int_etiquetado.resources
+C:\Desarrollo\Version 8\Umbright\obj\Debug\Umbright.Form6.resources
+C:\Desarrollo\Version 8\Umbright\obj\Debug\Umbright.frm_automatizarTransporteGuia.resources
+C:\Desarrollo\Version 8\Umbright\obj\Debug\Umbright.Frm_Carga_Notas_Devolucion.resources
+C:\Desarrollo\Version 8\Umbright\obj\Debug\Umbright.frm_asignarActividadEspecial.resources
+C:\Desarrollo\Version 8\Umbright\obj\Debug\Umbright.frm_automatizaTransporte.resources
+C:\Desarrollo\Version 8\Umbright\obj\Debug\Umbright.frm_Genera_Info_Pilotos.resources
+C:\Desarrollo\Version 8\Umbright\obj\Debug\Umbright.frm_HOrarioAlmuerzo.resources
+C:\Desarrollo\Version 8\Umbright\obj\Debug\Umbright.frm_informeInternaciones.resources
+C:\Desarrollo\Version 8\Umbright\obj\Debug\Umbright.frm_liberar_facturas.resources
+C:\Desarrollo\Version 8\Umbright\obj\Debug\Umbright.frm_pedido_walmart.resources
+C:\Desarrollo\Version 8\Umbright\obj\Debug\Umbright.frm_pickingporUsuario.resources
+C:\Desarrollo\Version 8\Umbright\obj\Debug\Umbright.Frm_Productos_Bodega.resources
+C:\Desarrollo\Version 8\Umbright\obj\Debug\Umbright.frm_PruebaAsignarUsuario.resources
+C:\Desarrollo\Version 8\Umbright\obj\Debug\Umbright.frm_Reasignar_picking.resources
+C:\Desarrollo\Version 8\Umbright\obj\Debug\Umbright.frm_reenvioAutomatizacion.resources
+C:\Desarrollo\Version 8\Umbright\obj\Debug\Umbright.frm_separar_factura_transporte.resources
+C:\Desarrollo\Version 8\Umbright\obj\Debug\Umbright.frmMantenedorPrecios.resources
+C:\Desarrollo\Version 8\Umbright\obj\Debug\Umbright.frm_dua_HH.resources
+C:\Desarrollo\Version 8\Umbright\obj\Debug\Umbright.frmMantenedorProductosLista.resources
+C:\Desarrollo\Version 8\Umbright\obj\Debug\Umbright.frm_busqueda_empleado.resources
+C:\Desarrollo\Version 8\Umbright\obj\Debug\Umbright.frm_presupuesto_marcas.resources
+C:\Desarrollo\Version 8\Umbright\obj\Debug\Umbright.Resource1.resources
+C:\Desarrollo\Version 8\Umbright\obj\Debug\Umbright.Frm_Candidatos.resources
+C:\Desarrollo\Version 8\Umbright\obj\Debug\Umbright.frm_control_vacaciones.resources
+C:\Desarrollo\Version 8\Umbright\obj\Debug\Umbright.Frm_Buscar_Suspendidos.resources
+C:\Desarrollo\Version 8\Umbright\obj\Debug\Umbright.Frm_empleados.resources
+C:\Desarrollo\Version 8\Umbright\obj\Debug\Umbright.Frm_suspension.resources
+C:\Desarrollo\Version 8\Umbright\obj\Debug\Umbright.Frm_Suspension_Fechas.resources
+C:\Desarrollo\Version 8\Umbright\obj\Debug\Umbright.Frm_Traslada_Personal.resources
+C:\Desarrollo\Version 8\Umbright\obj\Debug\Umbright.frmRequisicionesCalendario.resources
+C:\Desarrollo\Version 8\Umbright\obj\Debug\Umbright.frmRequisicionesProyectos.resources
+C:\Desarrollo\Version 8\Umbright\obj\Debug\Umbright.frmRequisicionesTrasladoRecepcion.resources
+C:\Desarrollo\Version 8\Umbright\obj\Debug\Umbright.frmRequisicionesEnvioTesoreria.resources
+C:\Desarrollo\Version 8\Umbright\obj\Debug\Umbright.frmRequisicionesEnvio.resources
+C:\Desarrollo\Version 8\Umbright\obj\Debug\Umbright.frmRequisicionesProducto.resources
+C:\Desarrollo\Version 8\Umbright\obj\Debug\Umbright.frmRequisicionRecepcionCreditos.resources
+C:\Desarrollo\Version 8\Umbright\obj\Debug\Umbright.frmRequisicionRecepcionFactura.resources
+C:\Desarrollo\Version 8\Umbright\obj\Debug\Umbright.frmRequisicionUsuarioCCosto.resources
+C:\Desarrollo\Version 8\Umbright\obj\Debug\Umbright.frm_ControlSeriesLotes.resources
+C:\Desarrollo\Version 8\Umbright\obj\Debug\Umbright.frm_FinPicking.resources
+C:\Desarrollo\Version 8\Umbright\obj\Debug\Umbright.frm_dr.resources
+C:\Desarrollo\Version 8\Umbright\obj\Debug\Umbright.frm_da_SolicitudReserva.resources
+C:\Desarrollo\Version 8\Umbright\obj\Debug\Umbright.frm_analisis_guias.resources
+C:\Desarrollo\Version 8\Umbright\obj\Debug\Umbright.Frm_Cambio_Dai.resources
+C:\Desarrollo\Version 8\Umbright\obj\Debug\Umbright.frm_canastas2.resources
+C:\Desarrollo\Version 8\Umbright\obj\Debug\Umbright.Frm_Carga_Precios_Costo.resources
+C:\Desarrollo\Version 8\Umbright\obj\Debug\Umbright.Frm_ClienteNuevo.resources
+C:\Desarrollo\Version 8\Umbright\obj\Debug\Umbright.Frm_Devoluciones.resources
+C:\Desarrollo\Version 8\Umbright\obj\Debug\Umbright.frm_PedidosEdiFact.resources
+C:\Desarrollo\Version 8\Umbright\obj\Debug\Umbright.frm_entregaExpress.resources
+C:\Desarrollo\Version 8\Umbright\obj\Debug\Umbright.frm_facturacion_autoconsumo.resources
+C:\Desarrollo\Version 8\Umbright\obj\Debug\Umbright.frm_Fecha_Prestamos.resources
+C:\Desarrollo\Version 8\Umbright\obj\Debug\Umbright.frm_cuentas_productos.resources
+C:\Desarrollo\Version 8\Umbright\obj\Debug\Umbright.frm_asocia_solicitud_reserva.resources
+C:\Desarrollo\Version 8\Umbright\obj\Debug\Umbright.frm_di.resources
+C:\Desarrollo\Version 8\Umbright\obj\Debug\Umbright.frm_dua.resources
+C:\Desarrollo\Version 8\Umbright\obj\Debug\Umbright.frm_reserva.resources
+C:\Desarrollo\Version 8\Umbright\obj\Debug\Umbright.frm_solicitud_reserva.resources
+C:\Desarrollo\Version 8\Umbright\obj\Debug\Umbright.frm_actualiza_precios_compras.resources
+C:\Desarrollo\Version 8\Umbright\obj\Debug\Umbright.frm_asociar_ES_documentos.resources
+C:\Desarrollo\Version 8\Umbright\obj\Debug\Umbright.frm_ayuda_cuentas.resources
+C:\Desarrollo\Version 8\Umbright\obj\Debug\Umbright.frm_backorder.resources
+C:\Desarrollo\Version 8\Umbright\obj\Debug\Umbright.frm_busqueda_general.resources
+C:\Desarrollo\Version 8\Umbright\obj\Debug\Umbright.frm_busqueda_general_mysql.resources
+C:\Desarrollo\Version 8\Umbright\obj\Debug\Umbright.frm_cambiar_clave.resources
+C:\Desarrollo\Version 8\Umbright\obj\Debug\Umbright.Frm_cambiar_empresa.resources
+C:\Desarrollo\Version 8\Umbright\obj\Debug\Umbright.frm_pedidosElSalvador.resources
+C:\Desarrollo\Version 8\Umbright\obj\Debug\Umbright.frmRequisiciones.resources
+C:\Desarrollo\Version 8\Umbright\obj\Debug\Umbright.frmRequisicionUsuarioSolicito.resources
+C:\Desarrollo\Version 8\Umbright\obj\Debug\Umbright.frmRequisiconesDetalle.resources
+C:\Desarrollo\Version 8\Umbright\obj\Debug\Umbright.frm_complemento_divinos.resources
+C:\Desarrollo\Version 8\Umbright\obj\Debug\Umbright.frm_graficar.resources
+C:\Desarrollo\Version 8\Umbright\obj\Debug\Umbright.frm_guate_factura.resources
+C:\Desarrollo\Version 8\Umbright\obj\Debug\Umbright.frm_Horarios_Extraordinarios.resources
+C:\Desarrollo\Version 8\Umbright\obj\Debug\Umbright.frm_liquidacionPiloto.resources
+C:\Desarrollo\Version 8\Umbright\obj\Debug\Umbright.frm_liquidacionPiloto_Finanzas.resources
+C:\Desarrollo\Version 8\Umbright\obj\Debug\Umbright.frm_liquidacion_gastos.resources
+C:\Desarrollo\Version 8\Umbright\obj\Debug\Umbright.frm_listadoOrdenesTransportes.resources
+C:\Desarrollo\Version 8\Umbright\obj\Debug\Umbright.frm_nombre_corto.resources
+C:\Desarrollo\Version 8\Umbright\obj\Debug\Umbright.frm_OCFacturas.resources
+C:\Desarrollo\Version 8\Umbright\obj\Debug\Umbright.frm_OChistorial.resources
+C:\Desarrollo\Version 8\Umbright\obj\Debug\Umbright.Frm_PagosBI.resources
+C:\Desarrollo\Version 8\Umbright\obj\Debug\Umbright.Frm_PagosOtros.resources
+C:\Desarrollo\Version 8\Umbright\obj\Debug\Umbright.Frm_Pagos_Electronicos.resources
+C:\Desarrollo\Version 8\Umbright\obj\Debug\Umbright.frm_HorasExtras_CD.resources
+C:\Desarrollo\Version 8\Umbright\obj\Debug\Umbright.frm_Producto_Peso_Volumen.resources
+C:\Desarrollo\Version 8\Umbright\obj\Debug\Umbright.frm_RechazosPendientesAprobacion.resources
+C:\Desarrollo\Version 8\Umbright\obj\Debug\Umbright.frm_registros_sanitarios.resources
+C:\Desarrollo\Version 8\Umbright\obj\Debug\Umbright.frm_ruta_logisitca.resources
+C:\Desarrollo\Version 8\Umbright\obj\Debug\Umbright.frm_seguimiento_pedidos.resources
+C:\Desarrollo\Version 8\Umbright\obj\Debug\Umbright.frm_vin_Inventario_MinimoMaximo.resources
+C:\Desarrollo\Version 8\Umbright\obj\Debug\Umbright.frm_vin_Pedido_automatico.resources
+C:\Desarrollo\Version 8\Umbright\obj\Debug\Umbright.frm_int_trackingInternaciones.resources
+C:\Desarrollo\Version 8\Umbright\obj\Debug\Umbright.frm_int_informacionDI.resources
+C:\Desarrollo\Version 8\Umbright\obj\Debug\Umbright.frm_int_ListadoInternaciones.resources
+C:\Desarrollo\Version 8\Umbright\obj\Debug\Umbright.frm_int_pedido.resources
+C:\Desarrollo\Version 8\Umbright\obj\Debug\Umbright.frm_int_producto_bloqueado.resources
+C:\Desarrollo\Version 8\Umbright\obj\Debug\Umbright.frm_convierte_ordencompra.resources
+C:\Desarrollo\Version 8\Umbright\obj\Debug\Umbright.frm_buscar_orden_etiquetas.resources
+C:\Desarrollo\Version 8\Umbright\obj\Debug\Umbright.frm_buscar_producto_desarme.resources
+C:\Desarrollo\Version 8\Umbright\obj\Debug\Umbright.frm_maq_etiquetas_materiales.resources
+C:\Desarrollo\Version 8\Umbright\obj\Debug\Umbright.frm_maq_etiquetas_produccion.resources
+C:\Desarrollo\Version 8\Umbright\obj\Debug\Umbright.frm_maq_orden_etiquetas.resources
+C:\Desarrollo\Version 8\Umbright\obj\Debug\Umbright.frm_scm_aprobacion_tesoreria.resources
+C:\Desarrollo\Version 8\Umbright\obj\Debug\Umbright.frm_scm_asociar_pedido_oc.resources
+C:\Desarrollo\Version 8\Umbright\obj\Debug\Umbright.frm_SCM_Procesos.resources
+C:\Desarrollo\Version 8\Umbright\obj\Debug\Umbright.frm_columnas.resources
+C:\Desarrollo\Version 8\Umbright\obj\Debug\Umbright.frm_nuevoMenu.resources
+C:\Desarrollo\Version 8\Umbright\obj\Debug\Umbright.frm_consignaciones.resources
+C:\Desarrollo\Version 8\Umbright\obj\Debug\Umbright.frm_consignaciones_saldos.resources
+C:\Desarrollo\Version 8\Umbright\obj\Debug\Umbright.frm_control_transporte.resources
+C:\Desarrollo\Version 8\Umbright\obj\Debug\Umbright.frm_conversion.resources
+C:\Desarrollo\Version 8\Umbright\obj\Debug\Umbright.frm_diseñador_reportes.resources
+C:\Desarrollo\Version 8\Umbright\obj\Debug\Umbright.Frm_edifact.resources
+C:\Desarrollo\Version 8\Umbright\obj\Debug\Umbright.frm_ejecuta_sp.resources
+C:\Desarrollo\Version 8\Umbright\obj\Debug\Umbright.frm_OCfechas.resources
+C:\Desarrollo\Version 8\Umbright\obj\Debug\Umbright.frm_gen_tabcod.resources
+C:\Desarrollo\Version 8\Umbright\obj\Debug\Umbright.frm_inicializar_periodo.resources
+C:\Desarrollo\Version 8\Umbright\obj\Debug\Umbright.frm_InventarioCliente.resources
+C:\Desarrollo\Version 8\Umbright\obj\Debug\Umbright.frm_OCconfirmacion.resources
+C:\Desarrollo\Version 8\Umbright\obj\Debug\Umbright.frm_liberar_factura_parcial.resources
+C:\Desarrollo\Version 8\Umbright\obj\Debug\Umbright.frm_listado_pedidos_MR.resources
+C:\Desarrollo\Version 8\Umbright\obj\Debug\Umbright.frm_listado_picking.resources
+C:\Desarrollo\Version 8\Umbright\obj\Debug\Umbright.frm_listas_generales.resources
+C:\Desarrollo\Version 8\Umbright\obj\Debug\Umbright.frm_login.resources
+C:\Desarrollo\Version 8\Umbright\obj\Debug\Umbright.frm_memos_promocionales.resources
+C:\Desarrollo\Version 8\Umbright\obj\Debug\Umbright.frm_mensajeria_mr.resources
+C:\Desarrollo\Version 8\Umbright\obj\Debug\Umbright.frm_menu_principal.resources
+C:\Desarrollo\Version 8\Umbright\obj\Debug\Umbright.frm_pedidos_facturar.resources
+C:\Desarrollo\Version 8\Umbright\obj\Debug\Umbright.frm_pedidos_pendientes.resources
+C:\Desarrollo\Version 8\Umbright\obj\Debug\Umbright.frm_pickeador.resources
+C:\Desarrollo\Version 8\Umbright\obj\Debug\Umbright.frm_procesar_productos.resources
+C:\Desarrollo\Version 8\Umbright\obj\Debug\Umbright.frm_producto.resources
+C:\Desarrollo\Version 8\Umbright\obj\Debug\Umbright.frm_productos_bajas.resources
+C:\Desarrollo\Version 8\Umbright\obj\Debug\Umbright.frm_recepcion_control_transporte.resources
+C:\Desarrollo\Version 8\Umbright\obj\Debug\Umbright.frm_reportes.resources
+C:\Desarrollo\Version 8\Umbright\obj\Debug\Umbright.frm_resultado.resources
+C:\Desarrollo\Version 8\Umbright\obj\Debug\Umbright.Resources.resources
+C:\Desarrollo\Version 8\Umbright\obj\Debug\Umbright.frm_scm_definicion_pantalla.resources
+C:\Desarrollo\Version 8\Umbright\obj\Debug\Umbright.frm_scm_tracking_pedido_tesoreria.resources
+C:\Desarrollo\Version 8\Umbright\obj\Debug\Umbright.frm_scm_ver_pedidos.resources
+C:\Desarrollo\Version 8\Umbright\obj\Debug\Umbright.frm_scn_clientes.resources
+C:\Desarrollo\Version 8\Umbright\obj\Debug\Umbright.frm_scn_movimiento_inventarios.resources
+C:\Desarrollo\Version 8\Umbright\obj\Debug\Umbright.frm_scn_ofertas.resources
+C:\Desarrollo\Version 8\Umbright\obj\Debug\Umbright.Frm_sincronizacion_informacion.resources
+C:\Desarrollo\Version 8\Umbright\obj\Debug\Umbright.frm_tracking_pedidos.resources
+C:\Desarrollo\Version 8\Umbright\obj\Debug\Umbright.frm_usuario.resources
+C:\Desarrollo\Version 8\Umbright\obj\Debug\Umbright.frm_mantenimiento.resources
+C:\Desarrollo\Version 8\Umbright\obj\Debug\Umbright.frm_mantenimiento_activos_insumos.resources
+C:\Desarrollo\Version 8\Umbright\obj\Debug\Umbright.frm_mantenimiento_modelos.resources
+C:\Desarrollo\Version 8\Umbright\obj\Debug\Umbright.frm_movimientos_activos.resources
+C:\Desarrollo\Version 8\Umbright\obj\Debug\Umbright.frm_movimientos_insumos.resources
+C:\Desarrollo\Version 8\Umbright\obj\Debug\Umbright.frm_int_parametros.resources
+C:\Desarrollo\Version 8\Umbright\obj\Debug\Umbright.frm_int_prepara_informacion.resources
+C:\Desarrollo\Version 8\Umbright\obj\Debug\Umbright.frm_maq_asignacion_ordenes.resources
+C:\Desarrollo\Version 8\Umbright\obj\Debug\Umbright.frm_maq_monitor.resources
+C:\Desarrollo\Version 8\Umbright\obj\Debug\Umbright.frm_maq_proceso_produccion.resources
+C:\Desarrollo\Version 8\Umbright\obj\Debug\Umbright.frmMob_ClienteRuta.resources
+C:\Desarrollo\Version 8\Umbright\obj\Debug\Umbright.frmForecast.resources
+C:\Desarrollo\Version 8\Umbright\obj\Debug\Umbright.frm_cambiarperiodo.resources
+C:\Desarrollo\Version 8\Umbright\obj\Debug\Umbright.frm_carga_presupuesto_comercial.resources
+C:\Desarrollo\Version 8\Umbright\obj\Debug\Umbright.frm_carga_presupuesto_general.resources
+C:\Desarrollo\Version 8\Umbright\obj\Debug\Umbright.frm_liberar_ppto_cliente.resources
+C:\Desarrollo\Version 8\Umbright\obj\Debug\Umbright.frm_ppto_general.resources
+C:\Desarrollo\Version 8\Umbright\obj\Debug\Umbright.frm_presupuesto_multiple_producto_cliente.resources
+C:\Desarrollo\Version 8\Umbright\obj\Debug\Umbright.frm_productos_derivados.resources
+C:\Desarrollo\Version 8\Umbright\obj\Debug\Umbright.frm_scm_AsignarOrigen.resources
+C:\Desarrollo\Version 8\Umbright\obj\Debug\Umbright.frm_scm_coberturas.resources
+C:\Desarrollo\Version 8\Umbright\obj\Debug\Umbright.frm_scm_mantenimiento_productos.resources
+C:\Desarrollo\Version 8\Umbright\obj\Debug\Umbright.frm_scm_mantenimiento_proveedores.resources
+C:\Desarrollo\Version 8\Umbright\obj\Debug\Umbright.frm_scm_obtiene_informacion.resources
+C:\Desarrollo\Version 8\Umbright\obj\Debug\Umbright.frm_scm_parametros_generales.resources
+C:\Desarrollo\Version 8\Umbright\obj\Debug\Umbright.frm_scm_pedido.resources
+C:\Desarrollo\Version 8\Umbright\obj\Debug\Umbright.frm_scm_preparacion_informacion.resources
+C:\Desarrollo\Version 8\Umbright\obj\Debug\Umbright.frm_tracking_requisicion.resources
+C:\Desarrollo\Version 8\Umbright\obj\Debug\Umbright.frmAnularFelInFile.resources
+C:\Desarrollo\Version 8\Umbright\obj\Debug\Umbright.FrmScript.resources
+C:\Desarrollo\Version 8\Umbright\obj\Debug\Umbright.FrmWait.resources
+C:\Desarrollo\Version 8\Umbright\obj\Debug\Umbright.frm_DTS.resources
+C:\Desarrollo\Version 8\Umbright\obj\Debug\Umbright.vbproj.GenerateResource.cache
+C:\Desarrollo\Version 8\Umbright\obj\Debug\Umbright.vbproj.CoreCompileInputs.cache
+C:\Desarrollo\Version 8\Umbright\bin\Debug\log4net.config
+C:\Desarrollo\Version 8\Umbright\bin\Debug\Umbright.exe.config
+C:\Desarrollo\Version 8\Umbright\bin\Debug\Umbright.exe
+C:\Desarrollo\Version 8\Umbright\bin\Debug\Umbright.pdb
+C:\Desarrollo\Version 8\Umbright\bin\Debug\Automatizar.dll
+C:\Desarrollo\Version 8\Umbright\bin\Debug\ClasesGenerales.dll
+C:\Desarrollo\Version 8\Umbright\bin\Debug\Compras.dll
+C:\Desarrollo\Version 8\Umbright\bin\Debug\FlexLine_CRUD.dll
+C:\Desarrollo\Version 8\Umbright\bin\Debug\FTP.dll
+C:\Desarrollo\Version 8\Umbright\bin\Debug\GemBox.Spreadsheet.dll
+C:\Desarrollo\Version 8\Umbright\bin\Debug\log4net.dll
+C:\Desarrollo\Version 8\Umbright\bin\Debug\OpenNETCF.Desktop.Communication.dll
+C:\Desarrollo\Version 8\Umbright\bin\Debug\Seguridad.dll
+C:\Desarrollo\Version 8\Umbright\bin\Debug\Sincronizacion.dll
+C:\Desarrollo\Version 8\Umbright\bin\Debug\Transaccional.dll
+C:\Desarrollo\Version 8\Umbright\bin\Debug\Umbral.FelInFileCreditos.dll
+C:\Desarrollo\Version 8\Umbright\bin\Debug\Umbral_Flex.dll
+C:\Desarrollo\Version 8\Umbright\bin\Debug\WebCam_Capture.dll
+C:\Desarrollo\Version 8\Umbright\bin\Debug\ZedGraph.dll
+C:\Desarrollo\Version 8\Umbright\bin\Debug\Interfaz_CRM.Mail.dll
+C:\Desarrollo\Version 8\Umbright\bin\Debug\conectorNET.dll
+C:\Desarrollo\Version 8\Umbright\bin\Debug\conectorNETv2.dll
+C:\Desarrollo\Version 8\Umbright\bin\Debug\Newtonsoft.Json.dll
+C:\Desarrollo\Version 8\Umbright\bin\Debug\Interop.Shell32.dll
+C:\Desarrollo\Version 8\Umbright\bin\Debug\MySql.Data.dll
+C:\Desarrollo\Version 8\Umbright\bin\Debug\EntityFramework.dll
+C:\Desarrollo\Version 8\Umbright\bin\Debug\stdole.dll
+C:\Desarrollo\Version 8\Umbright\bin\Debug\Compras.pdb
+C:\Desarrollo\Version 8\Umbright\bin\Debug\FlexLine_CRUD.pdb
+C:\Desarrollo\Version 8\Umbright\bin\Debug\FlexLine_CRUD.xml
+C:\Desarrollo\Version 8\Umbright\bin\Debug\Seguridad.pdb
+C:\Desarrollo\Version 8\Umbright\bin\Debug\Seguridad.xml
+C:\Desarrollo\Version 8\Umbright\bin\Debug\Sincronizacion.pdb
+C:\Desarrollo\Version 8\Umbright\bin\Debug\Sincronizacion.xml
+C:\Desarrollo\Version 8\Umbright\bin\Debug\Sincronizacion.dll.config
+C:\Desarrollo\Version 8\Umbright\bin\Debug\Umbral.FelInFileCreditos.pdb
+C:\Desarrollo\Version 8\Umbright\bin\Debug\Umbral_Flex.pdb
+C:\Desarrollo\Version 8\Umbright\bin\Debug\Umbral_Flex.xml
+C:\Desarrollo\Version 8\Umbright\bin\Debug\Umbral_Flex.dll.config
+C:\Desarrollo\Version 8\Umbright\bin\Debug\Automatizar.pdb
+C:\Desarrollo\Version 8\Umbright\bin\Debug\Automatizar.xml
+C:\Desarrollo\Version 8\Umbright\bin\Debug\ClasesGenerales.pdb
+C:\Desarrollo\Version 8\Umbright\bin\Debug\ClasesGenerales.xml
+C:\Desarrollo\Version 8\Umbright\bin\Debug\FTP.pdb
+C:\Desarrollo\Version 8\Umbright\bin\Debug\GemBox.Spreadsheet.xml
+C:\Desarrollo\Version 8\Umbright\bin\Debug\log4net.xml
+C:\Desarrollo\Version 8\Umbright\bin\Debug\Transaccional.pdb
+C:\Desarrollo\Version 8\Umbright\bin\Debug\Transaccional.xml
+C:\Desarrollo\Version 8\Umbright\bin\Debug\Interfaz_CRM.Mail.pdb
+C:\Desarrollo\Version 8\Umbright\bin\Debug\Interfaz_CRM.Mail.dll.config
+C:\Desarrollo\Version 8\Umbright\bin\Debug\Newtonsoft.Json.xml
+C:\Desarrollo\Version 8\Umbright\bin\Debug\EntityFramework.xml
+C:\Desarrollo\Version 8\Umbright\obj\Debug\Umbright.vbproj.Up2Date
+C:\Desarrollo\Version 8\Umbright\obj\Debug\Umbright.exe
+C:\Desarrollo\Version 8\Umbright\obj\Debug\Umbright.pdb
+C:\Desarrollo\Version 8\Umbright\obj\Debug\Umbright.frmTrasladoFacturasCxC.resources
+C:\Desarrollo\Version 8\Umbright\obj\Debug\Umbright.frmTrasladoFacturas.resources
+C:\Desarrollo\Version 8\Umbright\bin\Debug\Umbral_Servicios.dll
+C:\Desarrollo\Version 8\Umbright\bin\Debug\Umbral_Servicios.pdb
+C:\Desarrollo\Version 8\Umbright\bin\Debug\Umbral_Servicios.xml
+C:\Desarrollo\Version 8\Umbright\obj\Debug\Umbright.exe.config
+C:\Desarrollo\Version 8\Umbright\obj\Debug\Umbright.Frm_Cajas_Chicas_Detalle_M.resources
+C:\Desarrollo\Version 8\Umbright\obj\Debug\Umbright.frmRecepcionRechazosFinanzas.resources
+C:\Desarrollo\Version 8\Umbright\bin\Debug\Microsoft.SQLServer.ManagedDTS.dll
+C:\Desarrollo\Version 8\Umbright\bin\Debug\Microsoft.SqlServer.DTSRuntimeWrap.dll
+C:\Desarrollo\Version 8\Umbright\bin\Debug\Microsoft.SqlServer.PipelineHost.dll
+C:\Desarrollo\Version 8\Umbright\bin\Debug\Microsoft.SqlServer.DTSPipelineWrap.dll
+C:\Desarrollo\Version 9\Umbright\bin\Debug\log4net.config
+C:\Desarrollo\Version 9\Umbright\bin\Debug\Umbright.exe.config
+C:\Desarrollo\Version 9\Umbright\bin\Debug\Umbright.exe
+C:\Desarrollo\Version 9\Umbright\bin\Debug\Umbright.pdb
+C:\Desarrollo\Version 9\Umbright\bin\Debug\Automatizar.dll
+C:\Desarrollo\Version 9\Umbright\bin\Debug\ClasesGenerales.dll
+C:\Desarrollo\Version 9\Umbright\bin\Debug\Compras.dll
+C:\Desarrollo\Version 9\Umbright\bin\Debug\CrystalKeyCodeLib.dll
+C:\Desarrollo\Version 9\Umbright\bin\Debug\FlexLine_CRUD.dll
+C:\Desarrollo\Version 9\Umbright\bin\Debug\FTP.dll
+C:\Desarrollo\Version 9\Umbright\bin\Debug\GemBox.Spreadsheet.dll
+C:\Desarrollo\Version 9\Umbright\bin\Debug\log4net.dll
+C:\Desarrollo\Version 9\Umbright\bin\Debug\Microsoft.SQLServer.ManagedDTS.dll
+C:\Desarrollo\Version 9\Umbright\bin\Debug\OpenNETCF.Desktop.Communication.dll
+C:\Desarrollo\Version 9\Umbright\bin\Debug\Seguridad.dll
+C:\Desarrollo\Version 9\Umbright\bin\Debug\Sincronizacion.dll
+C:\Desarrollo\Version 9\Umbright\bin\Debug\Transaccional.dll
+C:\Desarrollo\Version 9\Umbright\bin\Debug\Umbral.FelInFileCreditos.dll
+C:\Desarrollo\Version 9\Umbright\bin\Debug\Umbral_Flex.dll
+C:\Desarrollo\Version 9\Umbright\bin\Debug\Umbral_Servicios.dll
+C:\Desarrollo\Version 9\Umbright\bin\Debug\WebCam_Capture.dll
+C:\Desarrollo\Version 9\Umbright\bin\Debug\ZedGraph.dll
+C:\Desarrollo\Version 9\Umbright\bin\Debug\Interfaz_CRM.Mail.dll
+C:\Desarrollo\Version 9\Umbright\bin\Debug\conectorNET.dll
+C:\Desarrollo\Version 9\Umbright\bin\Debug\conectorNETv2.dll
+C:\Desarrollo\Version 9\Umbright\bin\Debug\Newtonsoft.Json.dll
+C:\Desarrollo\Version 9\Umbright\bin\Debug\Interop.Shell32.dll
+C:\Desarrollo\Version 9\Umbright\bin\Debug\MySql.Data.dll
+C:\Desarrollo\Version 9\Umbright\bin\Debug\System.Data.SqlServerCe.dll
+C:\Desarrollo\Version 9\Umbright\bin\Debug\EntityFramework.dll
+C:\Desarrollo\Version 9\Umbright\bin\Debug\stdole.dll
+C:\Desarrollo\Version 9\Umbright\bin\Debug\Compras.pdb
+C:\Desarrollo\Version 9\Umbright\bin\Debug\FlexLine_CRUD.pdb
+C:\Desarrollo\Version 9\Umbright\bin\Debug\FlexLine_CRUD.xml
+C:\Desarrollo\Version 9\Umbright\bin\Debug\Seguridad.pdb
+C:\Desarrollo\Version 9\Umbright\bin\Debug\Seguridad.xml
+C:\Desarrollo\Version 9\Umbright\bin\Debug\Sincronizacion.pdb
+C:\Desarrollo\Version 9\Umbright\bin\Debug\Sincronizacion.xml
+C:\Desarrollo\Version 9\Umbright\bin\Debug\Sincronizacion.dll.config
+C:\Desarrollo\Version 9\Umbright\bin\Debug\Umbral.FelInFileCreditos.pdb
+C:\Desarrollo\Version 9\Umbright\bin\Debug\Umbral_Flex.pdb
+C:\Desarrollo\Version 9\Umbright\bin\Debug\Umbral_Flex.xml
+C:\Desarrollo\Version 9\Umbright\bin\Debug\Umbral_Flex.dll.config
+C:\Desarrollo\Version 9\Umbright\bin\Debug\Automatizar.pdb
+C:\Desarrollo\Version 9\Umbright\bin\Debug\Automatizar.xml
+C:\Desarrollo\Version 9\Umbright\bin\Debug\ClasesGenerales.pdb
+C:\Desarrollo\Version 9\Umbright\bin\Debug\ClasesGenerales.xml
+C:\Desarrollo\Version 9\Umbright\bin\Debug\FTP.pdb
+C:\Desarrollo\Version 9\Umbright\bin\Debug\GemBox.Spreadsheet.xml
+C:\Desarrollo\Version 9\Umbright\bin\Debug\log4net.xml
+C:\Desarrollo\Version 9\Umbright\bin\Debug\Transaccional.pdb
+C:\Desarrollo\Version 9\Umbright\bin\Debug\Transaccional.xml
+C:\Desarrollo\Version 9\Umbright\bin\Debug\Umbral_Servicios.pdb
+C:\Desarrollo\Version 9\Umbright\bin\Debug\Umbral_Servicios.xml
+C:\Desarrollo\Version 9\Umbright\bin\Debug\Interfaz_CRM.Mail.pdb
+C:\Desarrollo\Version 9\Umbright\bin\Debug\Interfaz_CRM.Mail.dll.config
+C:\Desarrollo\Version 9\Umbright\bin\Debug\System.Data.SqlServerCe.xml
+C:\Desarrollo\Version 9\Umbright\bin\Debug\EntityFramework.xml
+C:\Desarrollo\Version 9\Umbright\obj\Debug\Umbright.vbproj.AssemblyReference.cache
+C:\Desarrollo\Version 9\Umbright\obj\Debug\Umbright.vbproj.SuggestedBindingRedirects.cache
+C:\Desarrollo\Version 9\Umbright\obj\Debug\Umbright.exe.config
+C:\Desarrollo\Version 9\Umbright\obj\Debug\Umbright.frmPedidosUnisuper.resources
+C:\Desarrollo\Version 9\Umbright\obj\Debug\Umbright.frmTrackingTrasladosVNT.resources
+C:\Desarrollo\Version 9\Umbright\obj\Debug\Umbright.frm_entradas_x_traslado.resources
+C:\Desarrollo\Version 9\Umbright\obj\Debug\Umbright.frm_escasez.resources
+C:\Desarrollo\Version 9\Umbright\obj\Debug\Umbright.frm_MinMax_Solicitud_Vinoteca.resources
+C:\Desarrollo\Version 9\Umbright\obj\Debug\Umbright.frm_recepcion_mercaderia_vinoteca.resources
+C:\Desarrollo\Version 9\Umbright\obj\Debug\Umbright.frm_traslados_Vinoteca.resources
+C:\Desarrollo\Version 9\Umbright\obj\Debug\Umbright.frm_soporte_claim.resources
+C:\Desarrollo\Version 9\Umbright\obj\Debug\Umbright.frm_vin_Pedido_automatico_otras_bodegas.resources
+C:\Desarrollo\Version 9\Umbright\obj\Debug\Umbright.frmCargaInformacionWalmart.resources
+C:\Desarrollo\Version 9\Umbright\obj\Debug\Umbright.frmCargasBI.resources
+C:\Desarrollo\Version 9\Umbright\obj\Debug\Umbright.frmPedidoTelemarketing.resources
+C:\Desarrollo\Version 9\Umbright\obj\Debug\Umbright.frmTrackingFactura.resources
+C:\Desarrollo\Version 9\Umbright\obj\Debug\Umbright.Productos_Pareto.resources
+C:\Desarrollo\Version 9\Umbright\obj\Debug\Umbright.frmAnularDocumentosFEL.resources
+C:\Desarrollo\Version 9\Umbright\obj\Debug\Umbright.frmLiquidacionCaja.resources
+C:\Desarrollo\Version 9\Umbright\obj\Debug\Umbright.frmLiquidacionCajaP.resources
+C:\Desarrollo\Version 9\Umbright\obj\Debug\Umbright.frmPagosExterior.resources
+C:\Desarrollo\Version 9\Umbright\obj\Debug\Umbright.frmPedidoCreditoTmk.resources
+C:\Desarrollo\Version 9\Umbright\obj\Debug\Umbright.frmRecepcionRechazosFinanzas.resources
+C:\Desarrollo\Version 9\Umbright\obj\Debug\Umbright.frmRenovacionconsignaciones.resources
+C:\Desarrollo\Version 9\Umbright\obj\Debug\Umbright.frmTrackingLote.resources
+C:\Desarrollo\Version 9\Umbright\obj\Debug\Umbright.frmTrasladoFacturas.resources
+C:\Desarrollo\Version 9\Umbright\obj\Debug\Umbright.Frm_Cajas_Chicas_Detalle_M.resources
+C:\Desarrollo\Version 9\Umbright\obj\Debug\Umbright.Frm_Cajas_Chicas_M.resources
+C:\Desarrollo\Version 9\Umbright\obj\Debug\Umbright.Frm_Cancelacion_Anulacion.resources
+C:\Desarrollo\Version 9\Umbright\obj\Debug\Umbright.Frm_Cancela_Facturas_Con_Notas.resources
+C:\Desarrollo\Version 9\Umbright\obj\Debug\Umbright.frm_Carga_Combustible_TC.resources
+C:\Desarrollo\Version 9\Umbright\obj\Debug\Umbright.frm_documentos_fel.resources
+C:\Desarrollo\Version 9\Umbright\obj\Debug\Umbright.Frm_Facturas_Analisis.resources
+C:\Desarrollo\Version 9\Umbright\obj\Debug\Umbright.frm_liquidacion_caja_chica.resources
+C:\Desarrollo\Version 9\Umbright\obj\Debug\Umbright.Frm_Productos_Contables.resources
+C:\Desarrollo\Version 9\Umbright\obj\Debug\Umbright.Frm_Tracking_Pagos_Electronicos.resources
+C:\Desarrollo\Version 9\Umbright\obj\Debug\Umbright.Frm_Tracking_Pagos_Electronicos_Obtiene.resources
+C:\Desarrollo\Version 9\Umbright\obj\Debug\Umbright.Frm_Tracking_Pagos_Electronicos_Tesoreria.resources
+C:\Desarrollo\Version 9\Umbright\obj\Debug\Umbright.Form1.resources
+C:\Desarrollo\Version 9\Umbright\obj\Debug\Umbright.frmTrasladoFacturasCxC.resources
+C:\Desarrollo\Version 9\Umbright\obj\Debug\Umbright.frm_ChequeoFacturas.resources
+C:\Desarrollo\Version 9\Umbright\obj\Debug\Umbright.frm_solicitud_productos.resources
+C:\Desarrollo\Version 9\Umbright\obj\Debug\Umbright.frm_int_asociar_solicitud.resources
+C:\Desarrollo\Version 9\Umbright\obj\Debug\Umbright.frmEdicionMarcajesPilotos.resources
+C:\Desarrollo\Version 9\Umbright\obj\Debug\Umbright.frmMonitorImpresiones_cedi.resources
+C:\Desarrollo\Version 9\Umbright\obj\Debug\Umbright.frmImpresionFacturasAreas.resources
+C:\Desarrollo\Version 9\Umbright\obj\Debug\Umbright.frmMonitorImpresionesAG.resources
+C:\Desarrollo\Version 9\Umbright\obj\Debug\Umbright.frmRecepcionFacturas.resources
+C:\Desarrollo\Version 9\Umbright\obj\Debug\Umbright.frm_3PL_HH.resources
+C:\Desarrollo\Version 9\Umbright\obj\Debug\Umbright.Frm_Acceso.resources
+C:\Desarrollo\Version 9\Umbright\obj\Debug\Umbright.frm_AgregarReenvios.resources
+C:\Desarrollo\Version 9\Umbright\obj\Debug\Umbright.frm_Cierre_Picking.resources
+C:\Desarrollo\Version 9\Umbright\obj\Debug\Umbright.frm_impresionFEL.resources
+C:\Desarrollo\Version 9\Umbright\obj\Debug\Umbright.frm_control_recolecciones.resources
+C:\Desarrollo\Version 9\Umbright\obj\Debug\Umbright.frm_control_transporte_tmk.resources
+C:\Desarrollo\Version 9\Umbright\obj\Debug\Umbright.frm_Convierte_FactVentas_OC_SV.resources
+C:\Desarrollo\Version 9\Umbright\obj\Debug\Umbright.Frm_Cumplimiento_Diario_Trans.resources
+C:\Desarrollo\Version 9\Umbright\obj\Debug\Umbright.frm_Impresion_Factura.resources
+C:\Desarrollo\Version 9\Umbright\obj\Debug\Umbright.frm_Información_Lgs.resources
+C:\Desarrollo\Version 9\Umbright\obj\Debug\Umbright.frm_LiberarSalidasCd.resources
+C:\Desarrollo\Version 9\Umbright\obj\Debug\Umbright.frm_lotes_picking_consolidado.resources
+C:\Desarrollo\Version 9\Umbright\obj\Debug\Umbright.frm_Maquila_3PL.resources
+C:\Desarrollo\Version 9\Umbright\obj\Debug\Umbright.frm_Maquila_3PL_Producto.resources
+C:\Desarrollo\Version 9\Umbright\obj\Debug\Umbright.frm_pickeador_TMK.resources
+C:\Desarrollo\Version 9\Umbright\obj\Debug\Umbright.frm_Procesar_Pedidos_3pl.resources
+C:\Desarrollo\Version 9\Umbright\obj\Debug\Umbright.frm_procesoarchivos3pl.resources
+C:\Desarrollo\Version 9\Umbright\obj\Debug\Umbright.frm_maq_tipo_produccion.resources
+C:\Desarrollo\Version 9\Umbright\obj\Debug\Umbright.frm_actualizacionProducto.resources
+C:\Desarrollo\Version 9\Umbright\obj\Debug\Umbright.Frm_Actualizacion_Codigos.resources
+C:\Desarrollo\Version 9\Umbright\obj\Debug\Umbright.Frm_Actualizacion_Codigos_Busca.resources
+C:\Desarrollo\Version 9\Umbright\obj\Debug\Umbright.frm_actualizacion_productos.resources
+C:\Desarrollo\Version 9\Umbright\obj\Debug\Umbright.frm_actualizacion_sku.resources
+C:\Desarrollo\Version 9\Umbright\obj\Debug\Umbright.frm_analisis20.resources
+C:\Desarrollo\Version 9\Umbright\obj\Debug\Umbright.Frm_Clientes_Contado.resources
+C:\Desarrollo\Version 9\Umbright\obj\Debug\Umbright.frm_DevolucionesInterempresas.resources
+C:\Desarrollo\Version 9\Umbright\obj\Debug\Umbright.frm_mercaderista_cliente.resources
+C:\Desarrollo\Version 9\Umbright\obj\Debug\Umbright.frm_MonitorMaquila.resources
+C:\Desarrollo\Version 9\Umbright\obj\Debug\Umbright.frm_ReprocesoEdifact.resources
+C:\Desarrollo\Version 9\Umbright\obj\Debug\Umbright.frm_validacion_OC_WM.resources
+C:\Desarrollo\Version 9\Umbright\obj\Debug\Umbright.frm_ws_cliente.resources
+C:\Desarrollo\Version 9\Umbright\obj\Debug\Umbright.frm_ws_control_entregas.resources
+C:\Desarrollo\Version 9\Umbright\obj\Debug\Umbright.frm_ws_envio.resources
+C:\Desarrollo\Version 9\Umbright\obj\Debug\Umbright.frm_ws_productos.resources
+C:\Desarrollo\Version 9\Umbright\obj\Debug\Umbright.frm_daInvFisicos.resources
+C:\Desarrollo\Version 9\Umbright\obj\Debug\Umbright.Cancelacion_De_CompromisosVnt.resources
+C:\Desarrollo\Version 9\Umbright\obj\Debug\Umbright.frmRecepcionControlTransporte.resources
+C:\Desarrollo\Version 9\Umbright\obj\Debug\Umbright.Frm_Cajas_Chicas.resources
+C:\Desarrollo\Version 9\Umbright\obj\Debug\Umbright.Frm_Cajas_Chicas_Detalle.resources
+C:\Desarrollo\Version 9\Umbright\obj\Debug\Umbright.Frm_Cancelacion_Compromisos.resources
+C:\Desarrollo\Version 9\Umbright\obj\Debug\Umbright.Frm_Cancelacion_Contados.resources
+C:\Desarrollo\Version 9\Umbright\obj\Debug\Umbright.frm_conciliacion_bancaria.resources
+C:\Desarrollo\Version 9\Umbright\obj\Debug\Umbright.Frm_Costo__Ingreso_CD.resources
+C:\Desarrollo\Version 9\Umbright\obj\Debug\Umbright.frm_importar_estado_de_cuenta.resources
+C:\Desarrollo\Version 9\Umbright\obj\Debug\Umbright.frm_impresoras1.resources
+C:\Desarrollo\Version 9\Umbright\obj\Debug\Umbright.frm_imprimir_conciliacion.resources
+C:\Desarrollo\Version 9\Umbright\obj\Debug\Umbright.Frm_Producto_Item.resources
+C:\Desarrollo\Version 9\Umbright\obj\Debug\Umbright.Frm_Proveedor_Cajas.resources
+C:\Desarrollo\Version 9\Umbright\obj\Debug\Umbright.frm_recepcionDevoluciones.resources
+C:\Desarrollo\Version 9\Umbright\obj\Debug\Umbright.Frm_Recibos_Automatizar.resources
+C:\Desarrollo\Version 9\Umbright\obj\Debug\Umbright.frm_recibos_canal_moderno.resources
+C:\Desarrollo\Version 9\Umbright\obj\Debug\Umbright.frm_recibos_walmart.resources
+C:\Desarrollo\Version 9\Umbright\obj\Debug\Umbright.Frm_Recibos_Canal_Moderno_Actualizar.resources
+C:\Desarrollo\Version 9\Umbright\obj\Debug\Umbright.frm_Recibos_Lote.resources
+C:\Desarrollo\Version 9\Umbright\obj\Debug\Umbright.Frm_Recibos_Lote_Busca.resources
+C:\Desarrollo\Version 9\Umbright\obj\Debug\Umbright.Frm_Traslados.resources
+C:\Desarrollo\Version 9\Umbright\obj\Debug\Umbright.frm_int_etiquetado.resources
+C:\Desarrollo\Version 9\Umbright\obj\Debug\Umbright.Form6.resources
+C:\Desarrollo\Version 9\Umbright\obj\Debug\Umbright.frm_automatizarTransporteGuia.resources
+C:\Desarrollo\Version 9\Umbright\obj\Debug\Umbright.Frm_Carga_Notas_Devolucion.resources
+C:\Desarrollo\Version 9\Umbright\obj\Debug\Umbright.frm_asignarActividadEspecial.resources
+C:\Desarrollo\Version 9\Umbright\obj\Debug\Umbright.frm_automatizaTransporte.resources
+C:\Desarrollo\Version 9\Umbright\obj\Debug\Umbright.frm_Genera_Info_Pilotos.resources
+C:\Desarrollo\Version 9\Umbright\obj\Debug\Umbright.frm_HOrarioAlmuerzo.resources
+C:\Desarrollo\Version 9\Umbright\obj\Debug\Umbright.frm_informeInternaciones.resources
+C:\Desarrollo\Version 9\Umbright\obj\Debug\Umbright.frm_liberar_facturas.resources
+C:\Desarrollo\Version 9\Umbright\obj\Debug\Umbright.frm_pedido_walmart.resources
+C:\Desarrollo\Version 9\Umbright\obj\Debug\Umbright.frm_pickingporUsuario.resources
+C:\Desarrollo\Version 9\Umbright\obj\Debug\Umbright.Frm_Productos_Bodega.resources
+C:\Desarrollo\Version 9\Umbright\obj\Debug\Umbright.frm_PruebaAsignarUsuario.resources
+C:\Desarrollo\Version 9\Umbright\obj\Debug\Umbright.frm_Reasignar_picking.resources
+C:\Desarrollo\Version 9\Umbright\obj\Debug\Umbright.frm_reenvioAutomatizacion.resources
+C:\Desarrollo\Version 9\Umbright\obj\Debug\Umbright.frm_separar_factura_transporte.resources
+C:\Desarrollo\Version 9\Umbright\obj\Debug\Umbright.frmMantenedorPrecios.resources
+C:\Desarrollo\Version 9\Umbright\obj\Debug\Umbright.frm_dua_HH.resources
+C:\Desarrollo\Version 9\Umbright\obj\Debug\Umbright.frmMantenedorProductosLista.resources
+C:\Desarrollo\Version 9\Umbright\obj\Debug\Umbright.frm_busqueda_empleado.resources
+C:\Desarrollo\Version 9\Umbright\obj\Debug\Umbright.frm_presupuesto_marcas.resources
+C:\Desarrollo\Version 9\Umbright\obj\Debug\Umbright.Resource1.resources
+C:\Desarrollo\Version 9\Umbright\obj\Debug\Umbright.Frm_Candidatos.resources
+C:\Desarrollo\Version 9\Umbright\obj\Debug\Umbright.frm_control_vacaciones.resources
+C:\Desarrollo\Version 9\Umbright\obj\Debug\Umbright.Frm_Buscar_Suspendidos.resources
+C:\Desarrollo\Version 9\Umbright\obj\Debug\Umbright.Frm_empleados.resources
+C:\Desarrollo\Version 9\Umbright\obj\Debug\Umbright.Frm_suspension.resources
+C:\Desarrollo\Version 9\Umbright\obj\Debug\Umbright.Frm_Suspension_Fechas.resources
+C:\Desarrollo\Version 9\Umbright\obj\Debug\Umbright.Frm_Traslada_Personal.resources
+C:\Desarrollo\Version 9\Umbright\obj\Debug\Umbright.frmRequisicionesCalendario.resources
+C:\Desarrollo\Version 9\Umbright\obj\Debug\Umbright.frmRequisicionesProyectos.resources
+C:\Desarrollo\Version 9\Umbright\obj\Debug\Umbright.frmRequisicionesTrasladoRecepcion.resources
+C:\Desarrollo\Version 9\Umbright\obj\Debug\Umbright.frmRequisicionesEnvioTesoreria.resources
+C:\Desarrollo\Version 9\Umbright\obj\Debug\Umbright.frmRequisicionesEnvio.resources
+C:\Desarrollo\Version 9\Umbright\obj\Debug\Umbright.frmRequisicionesProducto.resources
+C:\Desarrollo\Version 9\Umbright\obj\Debug\Umbright.frmRequisicionRecepcionCreditos.resources
+C:\Desarrollo\Version 9\Umbright\obj\Debug\Umbright.frmRequisicionRecepcionFactura.resources
+C:\Desarrollo\Version 9\Umbright\obj\Debug\Umbright.frmRequisicionUsuarioCCosto.resources
+C:\Desarrollo\Version 9\Umbright\obj\Debug\Umbright.frm_ControlSeriesLotes.resources
+C:\Desarrollo\Version 9\Umbright\obj\Debug\Umbright.frm_FinPicking.resources
+C:\Desarrollo\Version 9\Umbright\obj\Debug\Umbright.frm_dr.resources
+C:\Desarrollo\Version 9\Umbright\obj\Debug\Umbright.frm_da_SolicitudReserva.resources
+C:\Desarrollo\Version 9\Umbright\obj\Debug\Umbright.frm_analisis_guias.resources
+C:\Desarrollo\Version 9\Umbright\obj\Debug\Umbright.Frm_Cambio_Dai.resources
+C:\Desarrollo\Version 9\Umbright\obj\Debug\Umbright.frm_canastas2.resources
+C:\Desarrollo\Version 9\Umbright\obj\Debug\Umbright.Frm_Carga_Precios_Costo.resources
+C:\Desarrollo\Version 9\Umbright\obj\Debug\Umbright.Frm_ClienteNuevo.resources
+C:\Desarrollo\Version 9\Umbright\obj\Debug\Umbright.Frm_Devoluciones.resources
+C:\Desarrollo\Version 9\Umbright\obj\Debug\Umbright.frm_PedidosEdiFact.resources
+C:\Desarrollo\Version 9\Umbright\obj\Debug\Umbright.frm_entregaExpress.resources
+C:\Desarrollo\Version 9\Umbright\obj\Debug\Umbright.frm_facturacion_autoconsumo.resources
+C:\Desarrollo\Version 9\Umbright\obj\Debug\Umbright.frm_Fecha_Prestamos.resources
+C:\Desarrollo\Version 9\Umbright\obj\Debug\Umbright.frm_cuentas_productos.resources
+C:\Desarrollo\Version 9\Umbright\obj\Debug\Umbright.frm_asocia_solicitud_reserva.resources
+C:\Desarrollo\Version 9\Umbright\obj\Debug\Umbright.frm_di.resources
+C:\Desarrollo\Version 9\Umbright\obj\Debug\Umbright.frm_dua.resources
+C:\Desarrollo\Version 9\Umbright\obj\Debug\Umbright.frm_reserva.resources
+C:\Desarrollo\Version 9\Umbright\obj\Debug\Umbright.frm_solicitud_reserva.resources
+C:\Desarrollo\Version 9\Umbright\obj\Debug\Umbright.frm_actualiza_precios_compras.resources
+C:\Desarrollo\Version 9\Umbright\obj\Debug\Umbright.frm_asociar_ES_documentos.resources
+C:\Desarrollo\Version 9\Umbright\obj\Debug\Umbright.frm_ayuda_cuentas.resources
+C:\Desarrollo\Version 9\Umbright\obj\Debug\Umbright.frm_backorder.resources
+C:\Desarrollo\Version 9\Umbright\obj\Debug\Umbright.frm_busqueda_general.resources
+C:\Desarrollo\Version 9\Umbright\obj\Debug\Umbright.frm_busqueda_general_mysql.resources
+C:\Desarrollo\Version 9\Umbright\obj\Debug\Umbright.frm_cambiar_clave.resources
+C:\Desarrollo\Version 9\Umbright\obj\Debug\Umbright.Frm_cambiar_empresa.resources
+C:\Desarrollo\Version 9\Umbright\obj\Debug\Umbright.frm_pedidosElSalvador.resources
+C:\Desarrollo\Version 9\Umbright\obj\Debug\Umbright.frmRequisiciones.resources
+C:\Desarrollo\Version 9\Umbright\obj\Debug\Umbright.frmRequisicionUsuarioSolicito.resources
+C:\Desarrollo\Version 9\Umbright\obj\Debug\Umbright.frmRequisiconesDetalle.resources
+C:\Desarrollo\Version 9\Umbright\obj\Debug\Umbright.frm_complemento_divinos.resources
+C:\Desarrollo\Version 9\Umbright\obj\Debug\Umbright.frm_graficar.resources
+C:\Desarrollo\Version 9\Umbright\obj\Debug\Umbright.frm_guate_factura.resources
+C:\Desarrollo\Version 9\Umbright\obj\Debug\Umbright.frm_Horarios_Extraordinarios.resources
+C:\Desarrollo\Version 9\Umbright\obj\Debug\Umbright.frm_liquidacionPiloto.resources
+C:\Desarrollo\Version 9\Umbright\obj\Debug\Umbright.frm_liquidacionPiloto_Finanzas.resources
+C:\Desarrollo\Version 9\Umbright\obj\Debug\Umbright.frm_liquidacion_gastos.resources
+C:\Desarrollo\Version 9\Umbright\obj\Debug\Umbright.frm_listadoOrdenesTransportes.resources
+C:\Desarrollo\Version 9\Umbright\obj\Debug\Umbright.frm_nombre_corto.resources
+C:\Desarrollo\Version 9\Umbright\obj\Debug\Umbright.frm_OCFacturas.resources
+C:\Desarrollo\Version 9\Umbright\obj\Debug\Umbright.frm_OChistorial.resources
+C:\Desarrollo\Version 9\Umbright\obj\Debug\Umbright.Frm_PagosBI.resources
+C:\Desarrollo\Version 9\Umbright\obj\Debug\Umbright.Frm_PagosOtros.resources
+C:\Desarrollo\Version 9\Umbright\obj\Debug\Umbright.Frm_Pagos_Electronicos.resources
+C:\Desarrollo\Version 9\Umbright\obj\Debug\Umbright.frm_HorasExtras_CD.resources
+C:\Desarrollo\Version 9\Umbright\obj\Debug\Umbright.frm_Producto_Peso_Volumen.resources
+C:\Desarrollo\Version 9\Umbright\obj\Debug\Umbright.frm_RechazosPendientesAprobacion.resources
+C:\Desarrollo\Version 9\Umbright\obj\Debug\Umbright.frm_registros_sanitarios.resources
+C:\Desarrollo\Version 9\Umbright\obj\Debug\Umbright.frm_ruta_logisitca.resources
+C:\Desarrollo\Version 9\Umbright\obj\Debug\Umbright.frm_seguimiento_pedidos.resources
+C:\Desarrollo\Version 9\Umbright\obj\Debug\Umbright.frm_vin_Inventario_MinimoMaximo.resources
+C:\Desarrollo\Version 9\Umbright\obj\Debug\Umbright.frm_vin_Pedido_automatico.resources
+C:\Desarrollo\Version 9\Umbright\obj\Debug\Umbright.frm_int_trackingInternaciones.resources
+C:\Desarrollo\Version 9\Umbright\obj\Debug\Umbright.frm_int_informacionDI.resources
+C:\Desarrollo\Version 9\Umbright\obj\Debug\Umbright.frm_int_ListadoInternaciones.resources
+C:\Desarrollo\Version 9\Umbright\obj\Debug\Umbright.frm_int_pedido.resources
+C:\Desarrollo\Version 9\Umbright\obj\Debug\Umbright.frm_int_producto_bloqueado.resources
+C:\Desarrollo\Version 9\Umbright\obj\Debug\Umbright.frm_convierte_ordencompra.resources
+C:\Desarrollo\Version 9\Umbright\obj\Debug\Umbright.frm_buscar_orden_etiquetas.resources
+C:\Desarrollo\Version 9\Umbright\obj\Debug\Umbright.frm_buscar_producto_desarme.resources
+C:\Desarrollo\Version 9\Umbright\obj\Debug\Umbright.frm_maq_etiquetas_materiales.resources
+C:\Desarrollo\Version 9\Umbright\obj\Debug\Umbright.frm_maq_etiquetas_produccion.resources
+C:\Desarrollo\Version 9\Umbright\obj\Debug\Umbright.frm_maq_orden_etiquetas.resources
+C:\Desarrollo\Version 9\Umbright\obj\Debug\Umbright.frm_scm_aprobacion_tesoreria.resources
+C:\Desarrollo\Version 9\Umbright\obj\Debug\Umbright.frm_scm_asociar_pedido_oc.resources
+C:\Desarrollo\Version 9\Umbright\obj\Debug\Umbright.frm_SCM_Procesos.resources
+C:\Desarrollo\Version 9\Umbright\obj\Debug\Umbright.frm_columnas.resources
+C:\Desarrollo\Version 9\Umbright\obj\Debug\Umbright.frm_nuevoMenu.resources
+C:\Desarrollo\Version 9\Umbright\obj\Debug\Umbright.frm_consignaciones.resources
+C:\Desarrollo\Version 9\Umbright\obj\Debug\Umbright.frm_consignaciones_saldos.resources
+C:\Desarrollo\Version 9\Umbright\obj\Debug\Umbright.frm_control_transporte.resources
+C:\Desarrollo\Version 9\Umbright\obj\Debug\Umbright.frm_conversion.resources
+C:\Desarrollo\Version 9\Umbright\obj\Debug\Umbright.frm_diseñador_reportes.resources
+C:\Desarrollo\Version 9\Umbright\obj\Debug\Umbright.Frm_edifact.resources
+C:\Desarrollo\Version 9\Umbright\obj\Debug\Umbright.frm_ejecuta_sp.resources
+C:\Desarrollo\Version 9\Umbright\obj\Debug\Umbright.frm_OCfechas.resources
+C:\Desarrollo\Version 9\Umbright\obj\Debug\Umbright.frm_gen_tabcod.resources
+C:\Desarrollo\Version 9\Umbright\obj\Debug\Umbright.frm_inicializar_periodo.resources
+C:\Desarrollo\Version 9\Umbright\obj\Debug\Umbright.frm_InventarioCliente.resources
+C:\Desarrollo\Version 9\Umbright\obj\Debug\Umbright.frm_OCconfirmacion.resources
+C:\Desarrollo\Version 9\Umbright\obj\Debug\Umbright.frm_liberar_factura_parcial.resources
+C:\Desarrollo\Version 9\Umbright\obj\Debug\Umbright.frm_listado_pedidos_MR.resources
+C:\Desarrollo\Version 9\Umbright\obj\Debug\Umbright.frm_listado_picking.resources
+C:\Desarrollo\Version 9\Umbright\obj\Debug\Umbright.frm_listas_generales.resources
+C:\Desarrollo\Version 9\Umbright\obj\Debug\Umbright.frm_login.resources
+C:\Desarrollo\Version 9\Umbright\obj\Debug\Umbright.frm_memos_promocionales.resources
+C:\Desarrollo\Version 9\Umbright\obj\Debug\Umbright.frm_mensajeria_mr.resources
+C:\Desarrollo\Version 9\Umbright\obj\Debug\Umbright.frm_menu_principal.resources
+C:\Desarrollo\Version 9\Umbright\obj\Debug\Umbright.frm_pedidos_facturar.resources
+C:\Desarrollo\Version 9\Umbright\obj\Debug\Umbright.frm_pedidos_pendientes.resources
+C:\Desarrollo\Version 9\Umbright\obj\Debug\Umbright.frm_pickeador.resources
+C:\Desarrollo\Version 9\Umbright\obj\Debug\Umbright.frm_procesar_productos.resources
+C:\Desarrollo\Version 9\Umbright\obj\Debug\Umbright.frm_producto.resources
+C:\Desarrollo\Version 9\Umbright\obj\Debug\Umbright.frm_productos_bajas.resources
+C:\Desarrollo\Version 9\Umbright\obj\Debug\Umbright.frm_recepcion_control_transporte.resources
+C:\Desarrollo\Version 9\Umbright\obj\Debug\Umbright.frm_reportes.resources
+C:\Desarrollo\Version 9\Umbright\obj\Debug\Umbright.frm_resultado.resources
+C:\Desarrollo\Version 9\Umbright\obj\Debug\Umbright.Resources.resources
+C:\Desarrollo\Version 9\Umbright\obj\Debug\Umbright.frm_scm_definicion_pantalla.resources
+C:\Desarrollo\Version 9\Umbright\obj\Debug\Umbright.frm_scm_tracking_pedido_tesoreria.resources
+C:\Desarrollo\Version 9\Umbright\obj\Debug\Umbright.frm_scm_ver_pedidos.resources
+C:\Desarrollo\Version 9\Umbright\obj\Debug\Umbright.frm_scn_clientes.resources
+C:\Desarrollo\Version 9\Umbright\obj\Debug\Umbright.frm_scn_movimiento_inventarios.resources
+C:\Desarrollo\Version 9\Umbright\obj\Debug\Umbright.frm_scn_ofertas.resources
+C:\Desarrollo\Version 9\Umbright\obj\Debug\Umbright.Frm_sincronizacion_informacion.resources
+C:\Desarrollo\Version 9\Umbright\obj\Debug\Umbright.frm_tracking_pedidos.resources
+C:\Desarrollo\Version 9\Umbright\obj\Debug\Umbright.frm_usuario.resources
+C:\Desarrollo\Version 9\Umbright\obj\Debug\Umbright.frm_mantenimiento.resources
+C:\Desarrollo\Version 9\Umbright\obj\Debug\Umbright.frm_mantenimiento_activos_insumos.resources
+C:\Desarrollo\Version 9\Umbright\obj\Debug\Umbright.frm_mantenimiento_modelos.resources
+C:\Desarrollo\Version 9\Umbright\obj\Debug\Umbright.frm_movimientos_activos.resources
+C:\Desarrollo\Version 9\Umbright\obj\Debug\Umbright.frm_movimientos_insumos.resources
+C:\Desarrollo\Version 9\Umbright\obj\Debug\Umbright.frm_int_parametros.resources
+C:\Desarrollo\Version 9\Umbright\obj\Debug\Umbright.frm_int_prepara_informacion.resources
+C:\Desarrollo\Version 9\Umbright\obj\Debug\Umbright.frm_maq_asignacion_ordenes.resources
+C:\Desarrollo\Version 9\Umbright\obj\Debug\Umbright.frm_maq_monitor.resources
+C:\Desarrollo\Version 9\Umbright\obj\Debug\Umbright.frm_maq_proceso_produccion.resources
+C:\Desarrollo\Version 9\Umbright\obj\Debug\Umbright.frmMob_ClienteRuta.resources
+C:\Desarrollo\Version 9\Umbright\obj\Debug\Umbright.frmForecast.resources
+C:\Desarrollo\Version 9\Umbright\obj\Debug\Umbright.frm_cambiarperiodo.resources
+C:\Desarrollo\Version 9\Umbright\obj\Debug\Umbright.frm_carga_presupuesto_comercial.resources
+C:\Desarrollo\Version 9\Umbright\obj\Debug\Umbright.frm_carga_presupuesto_general.resources
+C:\Desarrollo\Version 9\Umbright\obj\Debug\Umbright.frm_liberar_ppto_cliente.resources
+C:\Desarrollo\Version 9\Umbright\obj\Debug\Umbright.frm_ppto_general.resources
+C:\Desarrollo\Version 9\Umbright\obj\Debug\Umbright.frm_presupuesto_multiple_producto_cliente.resources
+C:\Desarrollo\Version 9\Umbright\obj\Debug\Umbright.frm_productos_derivados.resources
+C:\Desarrollo\Version 9\Umbright\obj\Debug\Umbright.frm_scm_AsignarOrigen.resources
+C:\Desarrollo\Version 9\Umbright\obj\Debug\Umbright.frm_scm_coberturas.resources
+C:\Desarrollo\Version 9\Umbright\obj\Debug\Umbright.frm_scm_mantenimiento_productos.resources
+C:\Desarrollo\Version 9\Umbright\obj\Debug\Umbright.frm_scm_mantenimiento_proveedores.resources
+C:\Desarrollo\Version 9\Umbright\obj\Debug\Umbright.frm_scm_obtiene_informacion.resources
+C:\Desarrollo\Version 9\Umbright\obj\Debug\Umbright.frm_scm_parametros_generales.resources
+C:\Desarrollo\Version 9\Umbright\obj\Debug\Umbright.frm_scm_pedido.resources
+C:\Desarrollo\Version 9\Umbright\obj\Debug\Umbright.frm_scm_preparacion_informacion.resources
+C:\Desarrollo\Version 9\Umbright\obj\Debug\Umbright.frm_tracking_requisicion.resources
+C:\Desarrollo\Version 9\Umbright\obj\Debug\Umbright.frmAnularFelInFile.resources
+C:\Desarrollo\Version 9\Umbright\obj\Debug\Umbright.FrmScript.resources
+C:\Desarrollo\Version 9\Umbright\obj\Debug\Umbright.FrmWait.resources
+C:\Desarrollo\Version 9\Umbright\obj\Debug\Umbright.frm_DTS.resources
+C:\Desarrollo\Version 9\Umbright\obj\Debug\Umbright.vbproj.GenerateResource.cache
+C:\Desarrollo\Version 9\Umbright\obj\Debug\Umbright.vbproj.CoreCompileInputs.cache
+C:\Desarrollo\Version 9\Umbright\obj\Debug\Umbright.vbproj.Up2Date
+C:\Desarrollo\Version 9\Umbright\obj\Debug\Umbright.exe
+C:\Desarrollo\Version 9\Umbright\obj\Debug\Umbright.pdb
+C:\Desarrollo\Version 9\Umbright\obj\Debug\Umbright.frm_actualizacionProductosIE.resources
+C:\Desarrollo\Version 9\Umbright\obj\Debug\Umbright.frm_actualizacionProductosMasivaIE.resources
+C:\Desarrollo\Version 9\Umbright\obj\Debug\Umbright.frm_actualizacionProductos.resources
+C:\Desarrollo\Version 9\Umbright\obj\Debug\Umbright.frm_detalleSolicitudCambio.resources
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\bin\Debug\log4net.config
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\bin\Debug\Umbright.exe.config
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\bin\Debug\Umbright.exe
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\bin\Debug\Umbright.pdb
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\bin\Debug\Automatizar.dll
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\bin\Debug\ClasesGenerales.dll
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\bin\Debug\Compras.dll
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\bin\Debug\CrystalKeyCodeLib.dll
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\bin\Debug\FlexLine_CRUD.dll
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\bin\Debug\FTP.dll
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\bin\Debug\GemBox.Spreadsheet.dll
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\bin\Debug\log4net.dll
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\bin\Debug\Microsoft.SQLServer.ManagedDTS.dll
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\bin\Debug\OpenNETCF.Desktop.Communication.dll
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\bin\Debug\Seguridad.dll
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\bin\Debug\Sincronizacion.dll
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\bin\Debug\Transaccional.dll
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\bin\Debug\Umbral.FelInFileCreditos.dll
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\bin\Debug\Umbral_Flex.dll
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\bin\Debug\WebCam_Capture.dll
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\bin\Debug\ZedGraph.dll
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\bin\Debug\Interfaz_CRM.Mail.dll
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\bin\Debug\conectorNET.dll
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\bin\Debug\conectorNETv2.dll
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\bin\Debug\Newtonsoft.Json.dll
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\bin\Debug\Interop.Shell32.dll
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\bin\Debug\MySql.Data.dll
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\bin\Debug\System.Data.SqlServerCe.dll
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\bin\Debug\EntityFramework.dll
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\bin\Debug\stdole.dll
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\bin\Debug\Compras.pdb
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\bin\Debug\FlexLine_CRUD.pdb
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\bin\Debug\FlexLine_CRUD.xml
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\bin\Debug\Seguridad.pdb
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\bin\Debug\Seguridad.xml
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\bin\Debug\Sincronizacion.pdb
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\bin\Debug\Sincronizacion.xml
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\bin\Debug\Sincronizacion.dll.config
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\bin\Debug\Umbral.FelInFileCreditos.pdb
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\bin\Debug\Umbral_Flex.pdb
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\bin\Debug\Umbral_Flex.xml
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\bin\Debug\Umbral_Flex.dll.config
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\bin\Debug\Automatizar.pdb
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\bin\Debug\Automatizar.xml
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\bin\Debug\ClasesGenerales.pdb
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\bin\Debug\ClasesGenerales.xml
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\bin\Debug\FTP.pdb
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\bin\Debug\GemBox.Spreadsheet.xml
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\bin\Debug\log4net.xml
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\bin\Debug\Transaccional.pdb
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\bin\Debug\Transaccional.xml
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\bin\Debug\Interfaz_CRM.Mail.pdb
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\bin\Debug\Interfaz_CRM.Mail.dll.config
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\bin\Debug\System.Data.SqlServerCe.xml
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\bin\Debug\EntityFramework.xml
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\Debug\Umbright.vbproj.AssemblyReference.cache
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\Debug\Umbright.vbproj.SuggestedBindingRedirects.cache
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\Debug\Umbright.exe.config
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\Debug\Umbright.frmPedidosUnisuper.resources
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\Debug\Umbright.frmTrackingTrasladosVNT.resources
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\Debug\Umbright.frm_entradas_x_traslado.resources
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\Debug\Umbright.frm_escasez.resources
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\Debug\Umbright.frm_MinMax_Solicitud_Vinoteca.resources
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\Debug\Umbright.frm_recepcion_mercaderia_vinoteca.resources
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\Debug\Umbright.frm_traslados_Vinoteca.resources
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\Debug\Umbright.frm_soporte_claim.resources
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\Debug\Umbright.frm_vin_Pedido_automatico_otras_bodegas.resources
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\Debug\Umbright.frmCargaInformacionWalmart.resources
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\Debug\Umbright.frmCargasBI.resources
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\Debug\Umbright.frmPedidoTelemarketing.resources
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\Debug\Umbright.frmTrackingFactura.resources
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\Debug\Umbright.Productos_Pareto.resources
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\Debug\Umbright.frmAnularDocumentosFEL.resources
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\Debug\Umbright.frmLiquidacionCaja.resources
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\Debug\Umbright.frmLiquidacionCajaP.resources
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\Debug\Umbright.frmPagosExterior.resources
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\Debug\Umbright.frmPedidoCreditoTmk.resources
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\Debug\Umbright.frmRecepcionRechazosFinanzas.resources
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\Debug\Umbright.frmRenovacionconsignaciones.resources
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\Debug\Umbright.frmTrackingLote.resources
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\Debug\Umbright.frmTrasladoFacturas.resources
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\Debug\Umbright.Frm_Cajas_Chicas_Detalle_M.resources
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\Debug\Umbright.Frm_Cajas_Chicas_M.resources
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\Debug\Umbright.Frm_Cancelacion_Anulacion.resources
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\Debug\Umbright.Frm_Cancela_Facturas_Con_Notas.resources
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\Debug\Umbright.frm_Carga_Combustible_TC.resources
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\Debug\Umbright.frm_documentos_fel.resources
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\Debug\Umbright.Frm_Facturas_Analisis.resources
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\Debug\Umbright.frm_liquidacion_caja_chica.resources
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\Debug\Umbright.Frm_Productos_Contables.resources
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\Debug\Umbright.Frm_Tracking_Pagos_Electronicos.resources
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\Debug\Umbright.Frm_Tracking_Pagos_Electronicos_Obtiene.resources
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\Debug\Umbright.Frm_Tracking_Pagos_Electronicos_Tesoreria.resources
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\Debug\Umbright.Form1.resources
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\Debug\Umbright.frmTrasladoFacturasCxC.resources
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\Debug\Umbright.frm_ChequeoFacturas.resources
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\Debug\Umbright.frm_solicitud_productos.resources
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\Debug\Umbright.frm_int_asociar_solicitud.resources
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\Debug\Umbright.frmEdicionMarcajesPilotos.resources
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\Debug\Umbright.frmMonitorImpresiones_cedi.resources
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\Debug\Umbright.frmImpresionFacturasAreas.resources
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\Debug\Umbright.frmMonitorImpresionesAG.resources
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\Debug\Umbright.frmRecepcionFacturas.resources
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\Debug\Umbright.frm_3PL_HH.resources
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\Debug\Umbright.Frm_Acceso.resources
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\Debug\Umbright.frm_AgregarReenvios.resources
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\Debug\Umbright.frm_Cierre_Picking.resources
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\Debug\Umbright.frm_impresionFEL.resources
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\Debug\Umbright.frm_control_recolecciones.resources
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\Debug\Umbright.frm_control_transporte_tmk.resources
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\Debug\Umbright.frm_Convierte_FactVentas_OC_SV.resources
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\Debug\Umbright.Frm_Cumplimiento_Diario_Trans.resources
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\Debug\Umbright.frm_Impresion_Factura.resources
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\Debug\Umbright.frm_Información_Lgs.resources
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\Debug\Umbright.frm_LiberarSalidasCd.resources
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\Debug\Umbright.frm_lotes_picking_consolidado.resources
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\Debug\Umbright.frm_Maquila_3PL.resources
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\Debug\Umbright.frm_Maquila_3PL_Producto.resources
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\Debug\Umbright.frm_pickeador_TMK.resources
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\Debug\Umbright.frm_Procesar_Pedidos_3pl.resources
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\Debug\Umbright.frm_procesoarchivos3pl.resources
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\Debug\Umbright.frm_maq_tipo_produccion.resources
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\Debug\Umbright.frm_actualizacionProducto.resources
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\Debug\Umbright.frm_actualizacionProductosIE.resources
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\Debug\Umbright.frm_actualizacionProductosMasivaIE.resources
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\Debug\Umbright.frm_actualizacionProductos.resources
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\Debug\Umbright.frm_detalleSolicitudCambio.resources
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\Debug\Umbright.Frm_Actualizacion_Codigos.resources
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\Debug\Umbright.Frm_Actualizacion_Codigos_Busca.resources
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\Debug\Umbright.frm_actualizacion_productos.resources
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\Debug\Umbright.frm_actualizacion_sku.resources
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\Debug\Umbright.frm_analisis20.resources
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\Debug\Umbright.Frm_Clientes_Contado.resources
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\Debug\Umbright.frm_DevolucionesInterempresas.resources
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\Debug\Umbright.frm_mercaderista_cliente.resources
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\Debug\Umbright.frm_MonitorMaquila.resources
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\Debug\Umbright.frm_ReprocesoEdifact.resources
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\Debug\Umbright.frm_validacion_OC_WM.resources
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\Debug\Umbright.frm_ws_cliente.resources
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\Debug\Umbright.frm_ws_control_entregas.resources
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\Debug\Umbright.frm_ws_envio.resources
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\Debug\Umbright.frm_ws_productos.resources
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\Debug\Umbright.frm_daInvFisicos.resources
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\Debug\Umbright.Cancelacion_De_CompromisosVnt.resources
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\Debug\Umbright.frmRecepcionControlTransporte.resources
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\Debug\Umbright.Frm_Cajas_Chicas.resources
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\Debug\Umbright.Frm_Cajas_Chicas_Detalle.resources
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\Debug\Umbright.Frm_Cancelacion_Compromisos.resources
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\Debug\Umbright.Frm_Cancelacion_Contados.resources
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\Debug\Umbright.frm_conciliacion_bancaria.resources
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\Debug\Umbright.Frm_Costo__Ingreso_CD.resources
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\Debug\Umbright.frm_importar_estado_de_cuenta.resources
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\Debug\Umbright.frm_impresoras1.resources
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\Debug\Umbright.frm_imprimir_conciliacion.resources
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\Debug\Umbright.Frm_Producto_Item.resources
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\Debug\Umbright.Frm_Proveedor_Cajas.resources
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\Debug\Umbright.frm_recepcionDevoluciones.resources
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\Debug\Umbright.Frm_Recibos_Automatizar.resources
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\Debug\Umbright.frm_recibos_canal_moderno.resources
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\Debug\Umbright.frm_recibos_walmart.resources
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\Debug\Umbright.Frm_Recibos_Canal_Moderno_Actualizar.resources
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\Debug\Umbright.frm_Recibos_Lote.resources
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\Debug\Umbright.Frm_Recibos_Lote_Busca.resources
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\Debug\Umbright.Frm_Traslados.resources
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\Debug\Umbright.frm_int_etiquetado.resources
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\Debug\Umbright.Form6.resources
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\Debug\Umbright.frm_automatizarTransporteGuia.resources
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\Debug\Umbright.Frm_Carga_Notas_Devolucion.resources
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\Debug\Umbright.frm_asignarActividadEspecial.resources
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\Debug\Umbright.frm_automatizaTransporte.resources
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\Debug\Umbright.frm_Genera_Info_Pilotos.resources
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\Debug\Umbright.frm_HOrarioAlmuerzo.resources
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\Debug\Umbright.frm_informeInternaciones.resources
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\Debug\Umbright.frm_liberar_facturas.resources
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\Debug\Umbright.frm_pedido_walmart.resources
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\Debug\Umbright.frm_pickingporUsuario.resources
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\Debug\Umbright.Frm_Productos_Bodega.resources
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\Debug\Umbright.frm_PruebaAsignarUsuario.resources
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\Debug\Umbright.frm_Reasignar_picking.resources
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\Debug\Umbright.frm_reenvioAutomatizacion.resources
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\Debug\Umbright.frm_separar_factura_transporte.resources
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\Debug\Umbright.frmMantenedorPrecios.resources
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\Debug\Umbright.frm_dua_HH.resources
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\Debug\Umbright.frmMantenedorProductosLista.resources
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\Debug\Umbright.frm_busqueda_empleado.resources
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\Debug\Umbright.frm_presupuesto_marcas.resources
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\Debug\Umbright.Resource1.resources
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\Debug\Umbright.Frm_Candidatos.resources
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\Debug\Umbright.frm_control_vacaciones.resources
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\Debug\Umbright.Frm_Buscar_Suspendidos.resources
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\Debug\Umbright.Frm_empleados.resources
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\Debug\Umbright.Frm_suspension.resources
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\Debug\Umbright.Frm_Suspension_Fechas.resources
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\Debug\Umbright.Frm_Traslada_Personal.resources
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\Debug\Umbright.frmRequisicionesCalendario.resources
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\Debug\Umbright.frmRequisicionesProyectos.resources
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\Debug\Umbright.frmRequisicionesTrasladoRecepcion.resources
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\Debug\Umbright.frmRequisicionesEnvioTesoreria.resources
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\Debug\Umbright.frmRequisicionesEnvio.resources
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\Debug\Umbright.frmRequisicionesProducto.resources
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\Debug\Umbright.frmRequisicionRecepcionCreditos.resources
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\Debug\Umbright.frmRequisicionRecepcionFactura.resources
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\Debug\Umbright.frmRequisicionUsuarioCCosto.resources
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\Debug\Umbright.frm_ControlSeriesLotes.resources
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\Debug\Umbright.frm_FinPicking.resources
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\Debug\Umbright.frm_dr.resources
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\Debug\Umbright.frm_da_SolicitudReserva.resources
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\Debug\Umbright.frm_analisis_guias.resources
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\Debug\Umbright.Frm_Cambio_Dai.resources
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\Debug\Umbright.frm_canastas2.resources
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\Debug\Umbright.Frm_Carga_Precios_Costo.resources
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\Debug\Umbright.Frm_ClienteNuevo.resources
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\Debug\Umbright.Frm_Devoluciones.resources
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\Debug\Umbright.frm_PedidosEdiFact.resources
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\Debug\Umbright.frm_entregaExpress.resources
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\Debug\Umbright.frm_facturacion_autoconsumo.resources
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\Debug\Umbright.frm_Fecha_Prestamos.resources
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\Debug\Umbright.frm_cuentas_productos.resources
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\Debug\Umbright.frm_asocia_solicitud_reserva.resources
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\Debug\Umbright.frm_di.resources
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\Debug\Umbright.frm_dua.resources
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\Debug\Umbright.frm_reserva.resources
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\Debug\Umbright.frm_solicitud_reserva.resources
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\Debug\Umbright.frm_actualiza_precios_compras.resources
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\Debug\Umbright.frm_asociar_ES_documentos.resources
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\Debug\Umbright.frm_ayuda_cuentas.resources
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\Debug\Umbright.frm_backorder.resources
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\Debug\Umbright.frm_busqueda_general.resources
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\Debug\Umbright.frm_busqueda_general_mysql.resources
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\Debug\Umbright.frm_cambiar_clave.resources
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\Debug\Umbright.Frm_cambiar_empresa.resources
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\Debug\Umbright.frm_pedidosElSalvador.resources
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\Debug\Umbright.frmRequisiciones.resources
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\Debug\Umbright.frmRequisicionUsuarioSolicito.resources
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\Debug\Umbright.frmRequisiconesDetalle.resources
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\Debug\Umbright.frm_complemento_divinos.resources
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\Debug\Umbright.frm_graficar.resources
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\Debug\Umbright.frm_guate_factura.resources
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\Debug\Umbright.frm_Horarios_Extraordinarios.resources
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\Debug\Umbright.frm_liquidacionPiloto.resources
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\Debug\Umbright.frm_liquidacionPiloto_Finanzas.resources
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\Debug\Umbright.frm_liquidacion_gastos.resources
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\Debug\Umbright.frm_listadoOrdenesTransportes.resources
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\Debug\Umbright.frm_nombre_corto.resources
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\Debug\Umbright.frm_OCFacturas.resources
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\Debug\Umbright.frm_OChistorial.resources
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\Debug\Umbright.Frm_PagosBI.resources
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\Debug\Umbright.Frm_PagosOtros.resources
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\Debug\Umbright.Frm_Pagos_Electronicos.resources
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\Debug\Umbright.frm_HorasExtras_CD.resources
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\Debug\Umbright.frm_Producto_Peso_Volumen.resources
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\Debug\Umbright.frm_RechazosPendientesAprobacion.resources
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\Debug\Umbright.frm_registros_sanitarios.resources
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\Debug\Umbright.frm_ruta_logisitca.resources
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\Debug\Umbright.frm_seguimiento_pedidos.resources
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\Debug\Umbright.frm_vin_Inventario_MinimoMaximo.resources
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\Debug\Umbright.frm_vin_Pedido_automatico.resources
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\Debug\Umbright.frm_int_trackingInternaciones.resources
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\Debug\Umbright.frm_int_informacionDI.resources
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\Debug\Umbright.frm_int_ListadoInternaciones.resources
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\Debug\Umbright.frm_int_pedido.resources
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\Debug\Umbright.frm_int_producto_bloqueado.resources
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\Debug\Umbright.frm_convierte_ordencompra.resources
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\Debug\Umbright.frm_buscar_orden_etiquetas.resources
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\Debug\Umbright.frm_buscar_producto_desarme.resources
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\Debug\Umbright.frm_maq_etiquetas_materiales.resources
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\Debug\Umbright.frm_maq_etiquetas_produccion.resources
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\Debug\Umbright.frm_maq_orden_etiquetas.resources
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\Debug\Umbright.frm_scm_aprobacion_tesoreria.resources
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\Debug\Umbright.frm_scm_asociar_pedido_oc.resources
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\Debug\Umbright.frm_SCM_Procesos.resources
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\Debug\Umbright.frm_columnas.resources
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\Debug\Umbright.frm_nuevoMenu.resources
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\Debug\Umbright.frm_consignaciones.resources
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\Debug\Umbright.frm_consignaciones_saldos.resources
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\Debug\Umbright.frm_control_transporte.resources
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\Debug\Umbright.frm_conversion.resources
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\Debug\Umbright.frm_diseñador_reportes.resources
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\Debug\Umbright.Frm_edifact.resources
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\Debug\Umbright.frm_ejecuta_sp.resources
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\Debug\Umbright.frm_OCfechas.resources
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\Debug\Umbright.frm_gen_tabcod.resources
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\Debug\Umbright.frm_inicializar_periodo.resources
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\Debug\Umbright.frm_InventarioCliente.resources
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\Debug\Umbright.frm_OCconfirmacion.resources
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\Debug\Umbright.frm_liberar_factura_parcial.resources
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\Debug\Umbright.frm_listado_pedidos_MR.resources
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\Debug\Umbright.frm_listado_picking.resources
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\Debug\Umbright.frm_listas_generales.resources
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\Debug\Umbright.frm_login.resources
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\Debug\Umbright.frm_memos_promocionales.resources
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\Debug\Umbright.frm_mensajeria_mr.resources
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\Debug\Umbright.frm_menu_principal.resources
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\Debug\Umbright.frm_pedidos_facturar.resources
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\Debug\Umbright.frm_pedidos_pendientes.resources
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\Debug\Umbright.frm_pickeador.resources
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\Debug\Umbright.frm_procesar_productos.resources
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\Debug\Umbright.frm_producto.resources
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\Debug\Umbright.frm_productos_bajas.resources
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\Debug\Umbright.frm_recepcion_control_transporte.resources
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\Debug\Umbright.frm_reportes.resources
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\Debug\Umbright.frm_resultado.resources
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\Debug\Umbright.Resources.resources
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\Debug\Umbright.frm_scm_definicion_pantalla.resources
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\Debug\Umbright.frm_scm_tracking_pedido_tesoreria.resources
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\Debug\Umbright.frm_scm_ver_pedidos.resources
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\Debug\Umbright.frm_scn_clientes.resources
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\Debug\Umbright.frm_scn_movimiento_inventarios.resources
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\Debug\Umbright.frm_scn_ofertas.resources
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\Debug\Umbright.Frm_sincronizacion_informacion.resources
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\Debug\Umbright.frm_tracking_pedidos.resources
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\Debug\Umbright.frm_usuario.resources
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\Debug\Umbright.frm_mantenimiento.resources
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\Debug\Umbright.frm_mantenimiento_activos_insumos.resources
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\Debug\Umbright.frm_mantenimiento_modelos.resources
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\Debug\Umbright.frm_movimientos_activos.resources
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\Debug\Umbright.frm_movimientos_insumos.resources
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\Debug\Umbright.frm_int_parametros.resources
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\Debug\Umbright.frm_int_prepara_informacion.resources
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\Debug\Umbright.frm_maq_asignacion_ordenes.resources
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\Debug\Umbright.frm_maq_monitor.resources
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\Debug\Umbright.frm_maq_proceso_produccion.resources
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\Debug\Umbright.frmMob_ClienteRuta.resources
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\Debug\Umbright.frmForecast.resources
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\Debug\Umbright.frm_cambiarperiodo.resources
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\Debug\Umbright.frm_carga_presupuesto_comercial.resources
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\Debug\Umbright.frm_carga_presupuesto_general.resources
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\Debug\Umbright.frm_liberar_ppto_cliente.resources
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\Debug\Umbright.frm_ppto_general.resources
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\Debug\Umbright.frm_presupuesto_multiple_producto_cliente.resources
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\Debug\Umbright.frm_productos_derivados.resources
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\Debug\Umbright.frm_scm_AsignarOrigen.resources
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\Debug\Umbright.frm_scm_coberturas.resources
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\Debug\Umbright.frm_scm_mantenimiento_productos.resources
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\Debug\Umbright.frm_scm_mantenimiento_proveedores.resources
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\Debug\Umbright.frm_scm_obtiene_informacion.resources
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\Debug\Umbright.frm_scm_parametros_generales.resources
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\Debug\Umbright.frm_scm_pedido.resources
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\Debug\Umbright.frm_scm_preparacion_informacion.resources
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\Debug\Umbright.frm_tracking_requisicion.resources
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\Debug\Umbright.frmAnularFelInFile.resources
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\Debug\Umbright.FrmScript.resources
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\Debug\Umbright.FrmWait.resources
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\Debug\Umbright.frm_DTS.resources
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\Debug\Umbright.vbproj.GenerateResource.cache
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\Debug\Umbright.vbproj.CoreCompileInputs.cache
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\Debug\Umbright.vbproj.Up2Date
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\Debug\Umbright.exe
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\Debug\Umbright.pdb
+C:\Desarrollo\Version 9\Umbright 2026\Umbright\bin\Debug\Umbral_Servicios.dll
+C:\Desarrollo\Version 9\Umbright 2026\Umbright\bin\Debug\Umbral_Servicios.pdb
+C:\Desarrollo\Version 9\Umbright 2026\Umbright\bin\Debug\Umbral_Servicios.xml
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\_buildcheck\log4net.config
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\_buildcheck\Umbright.exe.config
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\_buildcheck\Umbright.exe
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\_buildcheck\Umbright.pdb
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\_buildcheck\Automatizar.dll
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\_buildcheck\ClasesGenerales.dll
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\_buildcheck\Compras.dll
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\_buildcheck\CrystalKeyCodeLib.dll
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\_buildcheck\FlexLine_CRUD.dll
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\_buildcheck\FTP.dll
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\_buildcheck\GemBox.Spreadsheet.dll
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\_buildcheck\log4net.dll
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\_buildcheck\Microsoft.SQLServer.ManagedDTS.dll
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\_buildcheck\OpenNETCF.Desktop.Communication.dll
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\_buildcheck\Seguridad.dll
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\_buildcheck\Sincronizacion.dll
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\_buildcheck\Transaccional.dll
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\_buildcheck\Umbral.FelInFileCreditos.dll
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\_buildcheck\Umbral_Flex.dll
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\_buildcheck\Umbral_Servicios.dll
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\_buildcheck\WebCam_Capture.dll
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\_buildcheck\ZedGraph.dll
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\_buildcheck\Interfaz_CRM.Mail.dll
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\_buildcheck\conectorNET.dll
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\_buildcheck\conectorNETv2.dll
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\_buildcheck\Newtonsoft.Json.dll
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\_buildcheck\Interop.Shell32.dll
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\_buildcheck\MySql.Data.dll
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\_buildcheck\System.Data.SqlServerCe.dll
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\_buildcheck\EntityFramework.dll
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\_buildcheck\stdole.dll
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\_buildcheck\Compras.pdb
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\_buildcheck\FlexLine_CRUD.pdb
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\_buildcheck\FlexLine_CRUD.xml
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\_buildcheck\Seguridad.pdb
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\_buildcheck\Seguridad.xml
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\_buildcheck\Sincronizacion.pdb
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\_buildcheck\Sincronizacion.xml
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\_buildcheck\Sincronizacion.dll.config
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\_buildcheck\Umbral.FelInFileCreditos.pdb
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\_buildcheck\Umbral_Flex.pdb
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\_buildcheck\Umbral_Flex.xml
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\_buildcheck\Umbral_Flex.dll.config
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\_buildcheck\Automatizar.pdb
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\_buildcheck\Automatizar.xml
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\_buildcheck\ClasesGenerales.pdb
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\_buildcheck\ClasesGenerales.xml
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\_buildcheck\FTP.pdb
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\_buildcheck\GemBox.Spreadsheet.xml
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\_buildcheck\log4net.xml
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\_buildcheck\Transaccional.pdb
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\_buildcheck\Transaccional.xml
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\_buildcheck\Umbral_Servicios.pdb
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\_buildcheck\Umbral_Servicios.xml
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\_buildcheck\Interfaz_CRM.Mail.pdb
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\_buildcheck\Interfaz_CRM.Mail.dll.config
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\_buildcheck\System.Data.SqlServerCe.xml
+C:\Desarrollo\Version 9\UMBRIGHT 2026\Umbright\obj\_buildcheck\EntityFramework.xml

@@ -1,0 +1,91 @@
+2020-06-06 20:14:04,573 [1] INFO Umbright.mod_principal - System.ArgumentException: Column 'cobertura+00' does not belong to table detalle_productos.
+   at System.Data.DataRow.GetDataColumn(String columnName)
+   at System.Data.DataRow.get_Item(String columnName)
+   at Umbright.frm_scm_pedido.AplicarProducto(String psEmpresa, String psProducto, String pscolumnaCambio, Int32 ncantidad, Boolean clickAgregar, Boolean pbRecargarResumen) in C:\Desarrollo\Aplicaciones\Version 8\Umbright\SCM\frm_scm_pedido.vb:line 2400
+2020-06-07 20:43:33,626 [1] INFO Umbright.mod_principal - System.InvalidCastException: La conversión del tipo 'DBNull' en el tipo 'Double' no es válida.
+   at Microsoft.VisualBasic.CompilerServices.Conversions.ToDouble(Object Value, NumberFormatInfo NumberFormat)
+   at Microsoft.VisualBasic.CompilerServices.Conversions.ToDouble(Object Value)
+   at Umbright.frm_scm_pedido.AplicarProducto(String psEmpresa, String psProducto, String pscolumnaCambio, Int32 ncantidad, Boolean clickAgregar, Boolean pbRecargarResumen) in C:\Desarrollo\Aplicaciones\Version 8\Umbright\SCM\frm_scm_pedido.vb:line 2319
+2022-09-16 09:07:06,995 [1] INFO Umbright.mod_principal - System.ArgumentException: Column named dferencia cannot be found.
+Parameter name: columnName
+   at System.Windows.Forms.DataGridViewCellCollection.get_Item(String columnName)
+   at System.Windows.Forms.DataGridView.get_Item(String columnName, Int32 rowIndex)
+   at Umbright.frmLiquidacionCaja.dgvResumen_CellValueChanged(Object sender, DataGridViewCellEventArgs e) in C:\Desarrollo\Version 8\Umbright\Finanzas\frmLiquidacionCaja.vb:line 473
+2022-09-16 09:07:09,303 [1] INFO Umbright.mod_principal - System.ArgumentException: Column named dferencia cannot be found.
+Parameter name: columnName
+   at System.Windows.Forms.DataGridViewCellCollection.get_Item(String columnName)
+   at System.Windows.Forms.DataGridView.get_Item(String columnName, Int32 rowIndex)
+   at Umbright.frmLiquidacionCaja.dgvResumen_CellValueChanged(Object sender, DataGridViewCellEventArgs e) in C:\Desarrollo\Version 8\Umbright\Finanzas\frmLiquidacionCaja.vb:line 473
+2022-09-16 09:07:10,998 [1] INFO Umbright.mod_principal - System.ArgumentException: Column named dferencia cannot be found.
+Parameter name: columnName
+   at System.Windows.Forms.DataGridViewCellCollection.get_Item(String columnName)
+   at System.Windows.Forms.DataGridView.get_Item(String columnName, Int32 rowIndex)
+   at Umbright.frmLiquidacionCaja.dgvResumen_CellValueChanged(Object sender, DataGridViewCellEventArgs e) in C:\Desarrollo\Version 8\Umbright\Finanzas\frmLiquidacionCaja.vb:line 473
+2022-09-16 09:07:41,647 [1] INFO Umbright.mod_principal - System.ArgumentException: Column named dferencia cannot be found.
+Parameter name: columnName
+   at System.Windows.Forms.DataGridViewCellCollection.get_Item(String columnName)
+   at System.Windows.Forms.DataGridView.get_Item(String columnName, Int32 rowIndex)
+   at Umbright.frmLiquidacionCaja.dgvResumen_CellValueChanged(Object sender, DataGridViewCellEventArgs e) in C:\Desarrollo\Version 8\Umbright\Finanzas\frmLiquidacionCaja.vb:line 473
+2022-09-19 16:06:13,304 [1] INFO Umbright.mod_principal - System.ArgumentException: Column named total cannot be found.
+Parameter name: columnName
+   at System.Windows.Forms.DataGridViewCellCollection.get_Item(String columnName)
+   at System.Windows.Forms.DataGridView.get_Item(String columnName, Int32 rowIndex)
+   at Umbright.frmLiquidacionCaja.dgvResumen_CellValueChanged(Object sender, DataGridViewCellEventArgs e) in C:\Desarrollo\Version 8\Umbright\Finanzas\frmLiquidacionCaja.vb:line 423
+2024-04-18 16:39:01,836 [1] INFO Umbright.mod_principal - The system cannot find the file specified
+2024-04-18 16:43:27,276 [1] INFO Umbright.mod_principal - The system cannot find the file specified
+2024-04-18 16:45:48,130 [1] INFO Umbright.mod_principal - The system cannot find the file specified
+2024-08-26 12:55:53,625 [1] INFO Umbright.mod_principal - The system cannot find the file specified
+2024-08-27 12:04:22,144 [1] INFO Umbright.mod_principal - The system cannot find the file specified
+2024-08-27 12:18:08,570 [1] INFO Umbright.mod_principal - The system cannot find the file specified
+2024-08-27 12:42:08,964 [1] INFO Umbright.mod_principal - The system cannot find the file specified
+2024-08-29 09:34:47,594 [1] INFO Umbright.mod_principal - The system cannot find the file specified
+2024-08-29 10:30:13,439 [1] INFO Umbright.mod_principal - The system cannot find the file specified
+2024-08-29 10:42:13,785 [1] INFO Umbright.mod_principal - The system cannot find the file specified
+2024-08-29 10:48:01,421 [1] INFO Umbright.mod_principal - The system cannot find the file specified
+2024-08-29 10:56:15,102 [1] INFO Umbright.mod_principal - The system cannot find the file specified
+2024-08-29 11:01:25,159 [1] INFO Umbright.mod_principal - The system cannot find the file specified
+2024-08-29 11:23:14,452 [1] INFO Umbright.mod_principal - The system cannot find the file specified
+2024-08-29 11:32:07,129 [1] INFO Umbright.mod_principal - The system cannot find the file specified
+2024-08-29 11:40:31,862 [1] INFO Umbright.mod_principal - The system cannot find the file specified
+2024-08-29 11:48:13,538 [1] INFO Umbright.mod_principal - The system cannot find the file specified
+2024-08-29 17:54:23,352 [1] INFO Umbright.mod_principal - The system cannot find the file specified
+2024-09-03 09:08:26,867 [1] INFO Umbright.mod_principal - The system cannot find the file specified
+2024-09-03 09:16:31,055 [1] INFO Umbright.mod_principal - The system cannot find the file specified
+2024-09-03 09:23:27,674 [1] INFO Umbright.mod_principal - The system cannot find the file specified
+2024-09-03 09:34:48,100 [1] INFO Umbright.mod_principal - The system cannot find the file specified
+2024-09-03 09:44:53,155 [1] INFO Umbright.mod_principal - The system cannot find the file specified
+2024-09-03 09:56:20,314 [1] INFO Umbright.mod_principal - The system cannot find the file specified
+2024-09-03 10:14:02,883 [1] INFO Umbright.mod_principal - The system cannot find the file specified
+2024-09-03 11:19:33,096 [1] INFO Umbright.mod_principal - The system cannot find the file specified
+2024-09-09 10:40:50,712 [1] INFO Umbright.mod_principal - The system cannot find the file specified
+2024-09-09 10:54:01,796 [1] INFO Umbright.mod_principal - The system cannot find the file specified
+2024-10-10 18:26:08,844 [1] INFO Umbright.mod_principal - The system cannot find the file specified
+2024-10-10 18:31:01,300 [1] INFO Umbright.mod_principal - The system cannot find the file specified
+2024-10-10 18:43:06,044 [1] INFO Umbright.mod_principal - The system cannot find the file specified
+2024-11-13 18:27:46,530 [1] INFO Umbright.mod_principal - The system cannot find the file specified
+2024-11-13 18:40:36,133 [1] INFO Umbright.mod_principal - The system cannot find the file specified
+2024-11-13 18:52:01,527 [1] INFO Umbright.mod_principal - The system cannot find the file specified
+2024-12-02 16:55:35,869 [1] INFO Umbright.mod_principal - The system cannot find the file specified
+2024-12-04 11:12:28,158 [1] INFO Umbright.mod_principal - The system cannot find the file specified
+2024-12-04 11:21:33,855 [1] INFO Umbright.mod_principal - The system cannot find the file specified
+2024-12-16 17:38:30,325 [1] INFO Umbright.mod_principal - The system cannot find the file specified
+2024-12-16 17:57:35,155 [1] INFO Umbright.mod_principal - The system cannot find the file specified
+2024-12-16 18:31:45,898 [1] INFO Umbright.mod_principal - The system cannot find the file specified
+2025-09-03 18:47:10,296 [1] INFO Umbright.mod_principal - The system cannot find the file specified
+2025-09-03 19:28:48,009 [1] INFO Umbright.mod_principal - The system cannot find the file specified
+2025-09-16 09:40:15,720 [1] INFO Umbright.mod_principal - The system cannot find the file specified
+2025-09-16 09:53:37,480 [1] INFO Umbright.mod_principal - The system cannot find the file specified
+2025-09-19 15:50:00,327 [1] INFO Umbright.mod_principal - The system cannot find the file specified
+2025-09-19 16:01:11,861 [1] INFO Umbright.mod_principal - The system cannot find the file specified
+2025-10-10 20:02:41,303 [1] INFO Umbright.mod_principal - The system cannot find the file specified
+2025-10-21 09:39:06,421 [1] INFO Umbright.mod_principal - The system cannot find the file specified
+2025-10-21 10:46:06,086 [1] INFO Umbright.mod_principal - The system cannot find the file specified
+2025-10-21 11:06:28,052 [1] INFO Umbright.mod_principal - The system cannot find the file specified
+2026-01-12 11:56:29,125 [1] INFO Umbright.mod_principal - The system cannot find the file specified
+2026-01-12 11:58:31,850 [1] INFO Umbright.mod_principal - The system cannot find the file specified
+2026-01-12 12:06:31,807 [1] INFO Umbright.mod_principal - The system cannot find the file specified
+2026-01-12 17:43:14,076 [1] INFO Umbright.mod_principal - The system cannot find the file specified
+2026-04-18 16:59:57,579 [1] INFO Umbright.mod_principal - The system cannot find the file specified
+2026-04-18 17:07:24,615 [1] INFO Umbright.mod_principal - The system cannot find the file specified
+2026-04-18 17:21:08,230 [1] INFO Umbright.mod_principal - The system cannot find the file specified
+2026-04-18 17:33:57,841 [1] INFO Umbright.mod_principal - The system cannot find the file specified

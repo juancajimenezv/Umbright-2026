@@ -1,0 +1,415 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Desarrollo\\Version 9\\UMBRIGHT 2026\\Umbright\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Desarrollo\\Version 8\\Clases4.0\\Umbral_Flex\\umbral_flex.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F980226-8074-49B8-B241-E9A6EEA8AF31}|Umbright.vbproj|C:\\Desarrollo\\Version 9\\UMBRIGHT 2026\\Umbright\\frm_solicitud_productos.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{9F980226-8074-49B8-B241-E9A6EEA8AF31}|Umbright.vbproj|solutionrelative:frm_solicitud_productos.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F980226-8074-49B8-B241-E9A6EEA8AF31}|Umbright.vbproj|C:\\Desarrollo\\Version 9\\UMBRIGHT 2026\\Umbright\\frm_solicitud_productos.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{9F980226-8074-49B8-B241-E9A6EEA8AF31}|Umbright.vbproj|solutionrelative:frm_solicitud_productos.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F980226-8074-49B8-B241-E9A6EEA8AF31}|Umbright.vbproj|C:\\Desarrollo\\Version 9\\UMBRIGHT 2026\\Umbright\\mercadeo\\frm_actualizacionproductosie.designer.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{9F980226-8074-49B8-B241-E9A6EEA8AF31}|Umbright.vbproj|solutionrelative:mercadeo\\frm_actualizacionproductosie.designer.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F980226-8074-49B8-B241-E9A6EEA8AF31}|Umbright.vbproj|C:\\Desarrollo\\Version 9\\UMBRIGHT 2026\\Umbright\\mercadeo\\frm_actualizacionproductos.designer.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{9F980226-8074-49B8-B241-E9A6EEA8AF31}|Umbright.vbproj|solutionrelative:mercadeo\\frm_actualizacionproductos.designer.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F980226-8074-49B8-B241-E9A6EEA8AF31}|Umbright.vbproj|C:\\Desarrollo\\Version 9\\UMBRIGHT 2026\\Umbright\\mercadeo\\frm_actualizacionproductosmasivaie.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{9F980226-8074-49B8-B241-E9A6EEA8AF31}|Umbright.vbproj|solutionrelative:mercadeo\\frm_actualizacionproductosmasivaie.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F980226-8074-49B8-B241-E9A6EEA8AF31}|Umbright.vbproj|C:\\Desarrollo\\Version 9\\UMBRIGHT 2026\\Umbright\\mercadeo\\frm_actualizacionproductosmasivaie.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{9F980226-8074-49B8-B241-E9A6EEA8AF31}|Umbright.vbproj|solutionrelative:mercadeo\\frm_actualizacionproductosmasivaie.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F980226-8074-49B8-B241-E9A6EEA8AF31}|Umbright.vbproj|C:\\Desarrollo\\Version 9\\UMBRIGHT 2026\\Umbright\\mercadeo\\frm_actualizacionproductosie.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}",
+      "RelativeMoniker": "D:0:0:{9F980226-8074-49B8-B241-E9A6EEA8AF31}|Umbright.vbproj|solutionrelative:mercadeo\\frm_actualizacionproductosie.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F980226-8074-49B8-B241-E9A6EEA8AF31}|Umbright.vbproj|C:\\Desarrollo\\Version 9\\UMBRIGHT 2026\\Umbright\\frm_pedidos_facturar.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{9F980226-8074-49B8-B241-E9A6EEA8AF31}|Umbright.vbproj|solutionrelative:frm_pedidos_facturar.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F980226-8074-49B8-B241-E9A6EEA8AF31}|Umbright.vbproj|C:\\Desarrollo\\Version 9\\UMBRIGHT 2026\\Umbright\\frm_menuprincipal.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{9F980226-8074-49B8-B241-E9A6EEA8AF31}|Umbright.vbproj|solutionrelative:frm_menuprincipal.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F980226-8074-49B8-B241-E9A6EEA8AF31}|Umbright.vbproj|C:\\Desarrollo\\Version 9\\UMBRIGHT 2026\\Umbright\\scm\\frm_scm_pedido.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{9F980226-8074-49B8-B241-E9A6EEA8AF31}|Umbright.vbproj|solutionrelative:scm\\frm_scm_pedido.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F980226-8074-49B8-B241-E9A6EEA8AF31}|Umbright.vbproj|C:\\Desarrollo\\Version 9\\UMBRIGHT 2026\\Umbright\\scm\\frm_scm_pedido.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{9F980226-8074-49B8-B241-E9A6EEA8AF31}|Umbright.vbproj|solutionrelative:scm\\frm_scm_pedido.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F980226-8074-49B8-B241-E9A6EEA8AF31}|Umbright.vbproj|C:\\Desarrollo\\Version 9\\UMBRIGHT 2026\\Umbright\\scm\\frmrequisiciones.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{9F980226-8074-49B8-B241-E9A6EEA8AF31}|Umbright.vbproj|solutionrelative:scm\\frmrequisiciones.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F980226-8074-49B8-B241-E9A6EEA8AF31}|Umbright.vbproj|C:\\Desarrollo\\Version 9\\UMBRIGHT 2026\\Umbright\\scm\\frmrequisiciones.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{9F980226-8074-49B8-B241-E9A6EEA8AF31}|Umbright.vbproj|solutionrelative:scm\\frmrequisiciones.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F980226-8074-49B8-B241-E9A6EEA8AF31}|Umbright.vbproj|C:\\Desarrollo\\Version 9\\UMBRIGHT 2026\\Umbright\\frm_pedidos_pendientes.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{9F980226-8074-49B8-B241-E9A6EEA8AF31}|Umbright.vbproj|solutionrelative:frm_pedidos_pendientes.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F980226-8074-49B8-B241-E9A6EEA8AF31}|Umbright.vbproj|C:\\Desarrollo\\Version 9\\UMBRIGHT 2026\\Umbright\\frm_menuprincipal.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{9F980226-8074-49B8-B241-E9A6EEA8AF31}|Umbright.vbproj|solutionrelative:frm_menuprincipal.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F980226-8074-49B8-B241-E9A6EEA8AF31}|Umbright.vbproj|C:\\Desarrollo\\Version 9\\UMBRIGHT 2026\\Umbright\\finanzas\\frm_documentos_fel.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{9F980226-8074-49B8-B241-E9A6EEA8AF31}|Umbright.vbproj|solutionrelative:finanzas\\frm_documentos_fel.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F980226-8074-49B8-B241-E9A6EEA8AF31}|Umbright.vbproj|C:\\Desarrollo\\Version 9\\UMBRIGHT 2026\\Umbright\\comercial\\frm_facturacion_autoconsumo.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{9F980226-8074-49B8-B241-E9A6EEA8AF31}|Umbright.vbproj|solutionrelative:comercial\\frm_facturacion_autoconsumo.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F980226-8074-49B8-B241-E9A6EEA8AF31}|Umbright.vbproj|C:\\Desarrollo\\Version 9\\UMBRIGHT 2026\\Umbright\\da\\frm_da_solicitudreserva.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{9F980226-8074-49B8-B241-E9A6EEA8AF31}|Umbright.vbproj|solutionrelative:da\\frm_da_solicitudreserva.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Aplicaciones\\UMPOS V23.5.0.3\\UMPOS.exe.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Aplicaciones\\UMBRIGHT\\Umbright.exe.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F980226-8074-49B8-B241-E9A6EEA8AF31}|Umbright.vbproj|C:\\Desarrollo\\Version 9\\UMBRIGHT 2026\\Umbright\\da\\frm_da_solicitudreserva.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{9F980226-8074-49B8-B241-E9A6EEA8AF31}|Umbright.vbproj|solutionrelative:da\\frm_da_solicitudreserva.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F980226-8074-49B8-B241-E9A6EEA8AF31}|Umbright.vbproj|C:\\Desarrollo\\Version 9\\UMBRIGHT 2026\\Umbright\\internaciones\\frm_informeinternaciones.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{9F980226-8074-49B8-B241-E9A6EEA8AF31}|Umbright.vbproj|solutionrelative:internaciones\\frm_informeinternaciones.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F980226-8074-49B8-B241-E9A6EEA8AF31}|Umbright.vbproj|C:\\Desarrollo\\Version 9\\UMBRIGHT 2026\\Umbright\\internaciones\\frm_informeinternaciones.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{9F980226-8074-49B8-B241-E9A6EEA8AF31}|Umbright.vbproj|solutionrelative:internaciones\\frm_informeinternaciones.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Desarrollo\\Version 8\\Clases4.0\\Compras\\Compras.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "umbral_flex.vb",
+              "DocumentMoniker": "C:\\Desarrollo\\Version 8\\Clases4.0\\Umbral_Flex\\umbral_flex.vb",
+              "RelativeDocumentMoniker": "..\\..\\..\\Version 8\\Clases4.0\\Umbral_Flex\\umbral_flex.vb",
+              "ToolTip": "C:\\Desarrollo\\Version 8\\Clases4.0\\Umbral_Flex\\umbral_flex.vb",
+              "RelativeToolTip": "..\\..\\..\\Version 8\\Clases4.0\\Umbral_Flex\\umbral_flex.vb",
+              "ViewState": "AgIAAEwFAAAAAAAAAAAYwFkFAABBAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2026-03-10T23:59:22.256Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "frm_solicitud_productos.vb [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Desarrollo\\Version 9\\UMBRIGHT 2026\\Umbright\\frm_solicitud_productos.vb",
+              "RelativeDocumentMoniker": "frm_solicitud_productos.vb",
+              "ToolTip": "C:\\Desarrollo\\Version 9\\UMBRIGHT 2026\\Umbright\\frm_solicitud_productos.vb [Dise\u00F1o]",
+              "RelativeToolTip": "frm_solicitud_productos.vb [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2026-06-05T14:40:17.636Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "frm_solicitud_productos.vb",
+              "DocumentMoniker": "C:\\Desarrollo\\Version 9\\UMBRIGHT 2026\\Umbright\\frm_solicitud_productos.vb",
+              "RelativeDocumentMoniker": "frm_solicitud_productos.vb",
+              "ToolTip": "C:\\Desarrollo\\Version 9\\UMBRIGHT 2026\\Umbright\\frm_solicitud_productos.vb",
+              "RelativeToolTip": "frm_solicitud_productos.vb",
+              "ViewState": "AgIAAIkRAAAAAAAAAAAowJ4RAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2026-05-20T20:21:37.283Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "frm_actualizacionProductos.Designer.vb",
+              "DocumentMoniker": "C:\\Desarrollo\\Version 9\\UMBRIGHT 2026\\Umbright\\Mercadeo\\frm_actualizacionProductos.Designer.vb",
+              "RelativeDocumentMoniker": "Mercadeo\\frm_actualizacionProductos.Designer.vb",
+              "ToolTip": "C:\\Desarrollo\\Version 9\\UMBRIGHT 2026\\Umbright\\Mercadeo\\frm_actualizacionProductos.Designer.vb",
+              "RelativeToolTip": "Mercadeo\\frm_actualizacionProductos.Designer.vb",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2026-05-19T23:04:20.262Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "frm_actualizacionProductosMasivaIE.vb",
+              "DocumentMoniker": "C:\\Desarrollo\\Version 9\\UMBRIGHT 2026\\Umbright\\Mercadeo\\frm_actualizacionProductosMasivaIE.vb",
+              "RelativeDocumentMoniker": "Mercadeo\\frm_actualizacionProductosMasivaIE.vb",
+              "ToolTip": "C:\\Desarrollo\\Version 9\\UMBRIGHT 2026\\Umbright\\Mercadeo\\frm_actualizacionProductosMasivaIE.vb",
+              "RelativeToolTip": "Mercadeo\\frm_actualizacionProductosMasivaIE.vb",
+              "ViewState": "AgIAALgBAAAAAAAAAAAUwMQBAAA6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2026-05-18T23:58:15.21Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "frm_actualizacionProductosMasivaIE.vb [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Desarrollo\\Version 9\\UMBRIGHT 2026\\Umbright\\Mercadeo\\frm_actualizacionProductosMasivaIE.vb",
+              "RelativeDocumentMoniker": "Mercadeo\\frm_actualizacionProductosMasivaIE.vb",
+              "ToolTip": "C:\\Desarrollo\\Version 9\\Umbright\\Mercadeo\\frm_actualizacionProductosMasivaIE.vb [Dise\u00F1o]",
+              "RelativeToolTip": "..\\..\\Umbright\\Mercadeo\\frm_actualizacionProductosMasivaIE.vb [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2026-05-18T23:58:05.063Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "frm_actualizacionProductosIE.Designer.vb",
+              "DocumentMoniker": "C:\\Desarrollo\\Version 9\\UMBRIGHT 2026\\Umbright\\Mercadeo\\frm_actualizacionProductosIE.Designer.vb",
+              "RelativeDocumentMoniker": "Mercadeo\\frm_actualizacionProductosIE.Designer.vb",
+              "ToolTip": "C:\\Desarrollo\\Version 9\\UMBRIGHT 2026\\Umbright\\Mercadeo\\frm_actualizacionProductosIE.Designer.vb",
+              "RelativeToolTip": "Mercadeo\\frm_actualizacionProductosIE.Designer.vb",
+              "ViewState": "AgIAAAsBAAAAAAAAAIAwwCsBAABGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2026-05-18T22:31:53.631Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "frm_actualizacionProductosIE.resx",
+              "DocumentMoniker": "C:\\Desarrollo\\Version 9\\UMBRIGHT 2026\\Umbright\\Mercadeo\\frm_actualizacionProductosIE.resx",
+              "RelativeDocumentMoniker": "Mercadeo\\frm_actualizacionProductosIE.resx",
+              "ToolTip": "C:\\Desarrollo\\Version 9\\UMBRIGHT 2026\\Umbright\\Mercadeo\\frm_actualizacionProductosIE.resx",
+              "RelativeToolTip": "Mercadeo\\frm_actualizacionProductosIE.resx",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
+              "WhenOpened": "2026-05-18T22:31:56.071Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "frm_pedidos_facturar.vb",
+              "DocumentMoniker": "C:\\Desarrollo\\Version 9\\UMBRIGHT 2026\\Umbright\\frm_pedidos_facturar.vb",
+              "RelativeDocumentMoniker": "frm_pedidos_facturar.vb",
+              "ToolTip": "C:\\Desarrollo\\Version 9\\UMBRIGHT 2026\\Umbright\\frm_pedidos_facturar.vb",
+              "RelativeToolTip": "frm_pedidos_facturar.vb",
+              "ViewState": "AgIAAFYZAAAAAAAAAAAwwH0ZAAA+AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2026-03-10T23:59:09.525Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "frmRequisiciones.vb [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Desarrollo\\Version 9\\UMBRIGHT 2026\\Umbright\\SCM\\frmRequisiciones.vb",
+              "RelativeDocumentMoniker": "SCM\\frmRequisiciones.vb",
+              "ToolTip": "C:\\Desarrollo\\Version 9\\UMBRIGHT 2026\\Umbright\\SCM\\frmRequisiciones.vb [Dise\u00F1o]",
+              "RelativeToolTip": "SCM\\frmRequisiciones.vb [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2026-04-07T00:52:42.21Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "frm_pedidos_pendientes.vb [Design]",
+              "DocumentMoniker": "C:\\Desarrollo\\Version 9\\UMBRIGHT 2026\\Umbright\\frm_pedidos_pendientes.vb",
+              "RelativeDocumentMoniker": "frm_pedidos_pendientes.vb",
+              "ToolTip": "C:\\Desarrollo\\Version 8\\Umbright\\frm_pedidos_pendientes.vb [Design]*",
+              "RelativeToolTip": "..\\..\\..\\Version 8\\Umbright\\frm_pedidos_pendientes.vb [Design]*",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2026-03-10T23:53:05.123Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "frm_menuprincipal.vb",
+              "DocumentMoniker": "C:\\Desarrollo\\Version 9\\UMBRIGHT 2026\\Umbright\\frm_menuprincipal.vb",
+              "RelativeDocumentMoniker": "frm_menuprincipal.vb",
+              "ToolTip": "C:\\Desarrollo\\Version 9\\UMBRIGHT 2026\\Umbright\\frm_menuprincipal.vb",
+              "RelativeToolTip": "frm_menuprincipal.vb",
+              "ViewState": "AgIAAJgAAAAAAAAAAIAwwJ4AAAA9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2026-03-10T23:52:20.718Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "frmRequisiciones.vb",
+              "DocumentMoniker": "C:\\Desarrollo\\Version 9\\UMBRIGHT 2026\\Umbright\\SCM\\frmRequisiciones.vb",
+              "RelativeDocumentMoniker": "SCM\\frmRequisiciones.vb",
+              "ToolTip": "C:\\Desarrollo\\Version 9\\UMBRIGHT 2026\\Umbright\\SCM\\frmRequisiciones.vb",
+              "RelativeToolTip": "SCM\\frmRequisiciones.vb",
+              "ViewState": "AgIAANoBAAAAxMzMzMz0v+cBAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2026-04-07T00:52:53.11Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "Compras.cs",
+              "DocumentMoniker": "C:\\Desarrollo\\Version 8\\Clases4.0\\Compras\\Compras.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\Version 8\\Clases4.0\\Compras\\Compras.cs",
+              "ToolTip": "C:\\Desarrollo\\Version 8\\Clases4.0\\Compras\\Compras.cs",
+              "RelativeToolTip": "..\\..\\..\\Version 8\\Clases4.0\\Compras\\Compras.cs",
+              "ViewState": "AgIAAPoKAACAKTMzM7MWwAcLAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-18T22:58:11.911Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "frm_scm_pedido.vb",
+              "DocumentMoniker": "C:\\Desarrollo\\Version 9\\UMBRIGHT 2026\\Umbright\\SCM\\frm_scm_pedido.vb",
+              "RelativeDocumentMoniker": "SCM\\frm_scm_pedido.vb",
+              "ToolTip": "C:\\Desarrollo\\Version 9\\UMBRIGHT 2026\\Umbright\\SCM\\frm_scm_pedido.vb",
+              "RelativeToolTip": "SCM\\frm_scm_pedido.vb",
+              "ViewState": "AgIAAGIEAAAAAAAAAAAwwIkEAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2026-04-18T23:06:38.463Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "frm_scm_pedido.vb [Design]",
+              "DocumentMoniker": "C:\\Desarrollo\\Version 9\\UMBRIGHT 2026\\Umbright\\SCM\\frm_scm_pedido.vb",
+              "RelativeDocumentMoniker": "SCM\\frm_scm_pedido.vb",
+              "ToolTip": "C:\\Desarrollo\\Version 8\\Umbright\\SCM\\frm_scm_pedido.vb [Design]*",
+              "RelativeToolTip": "..\\..\\..\\Version 8\\Umbright\\SCM\\frm_scm_pedido.vb [Design]*",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2026-04-18T23:27:04.721Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "frm_menuprincipal.vb [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Desarrollo\\Version 9\\UMBRIGHT 2026\\Umbright\\frm_menuprincipal.vb",
+              "RelativeDocumentMoniker": "frm_menuprincipal.vb",
+              "ToolTip": "C:\\Desarrollo\\Version 9\\Umbright\\frm_menuprincipal.vb [Dise\u00F1o]",
+              "RelativeToolTip": "..\\..\\Umbright\\frm_menuprincipal.vb [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2026-03-10T23:52:18.638Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "frm_documentos_fel.vb [Design]",
+              "DocumentMoniker": "C:\\Desarrollo\\Version 9\\UMBRIGHT 2026\\Umbright\\Finanzas\\frm_documentos_fel.vb",
+              "RelativeDocumentMoniker": "Finanzas\\frm_documentos_fel.vb",
+              "ToolTip": "C:\\Desarrollo\\Version 8\\Umbright\\Finanzas\\frm_documentos_fel.vb [Design]",
+              "RelativeToolTip": "..\\..\\..\\Version 8\\Umbright\\Finanzas\\frm_documentos_fel.vb [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2026-03-10T23:52:05.974Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "frm_facturacion_autoconsumo.vb [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Desarrollo\\Version 9\\UMBRIGHT 2026\\Umbright\\Comercial\\frm_facturacion_autoconsumo.vb",
+              "RelativeDocumentMoniker": "Comercial\\frm_facturacion_autoconsumo.vb",
+              "ToolTip": "C:\\Desarrollo\\Version 9\\UMBRIGHT 2026\\Umbright\\Comercial\\frm_facturacion_autoconsumo.vb [Dise\u00F1o]",
+              "RelativeToolTip": "Comercial\\frm_facturacion_autoconsumo.vb [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2026-03-10T23:51:37.288Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Umbright.exe.config",
+              "DocumentMoniker": "C:\\Aplicaciones\\Umbright\\Umbright.exe.config",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\Aplicaciones\\Umbright\\Umbright.exe.config",
+              "ToolTip": "C:\\Aplicaciones\\Umbright\\Umbright.exe.config",
+              "RelativeToolTip": "..\\..\\..\\..\\Aplicaciones\\Umbright\\Umbright.exe.config",
+              "ViewState": "AgIAABsAAAAAAAAAAAAAAA0AAABCAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2026-03-04T17:41:04.896Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "UMPOS.exe.config",
+              "DocumentMoniker": "C:\\Aplicaciones\\UMPOS V23.5.0.3\\UMPOS.exe.config",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\Aplicaciones\\UMPOS V23.5.0.3\\UMPOS.exe.config",
+              "ToolTip": "C:\\Aplicaciones\\UMPOS V23.5.0.3\\UMPOS.exe.config",
+              "RelativeToolTip": "..\\..\\..\\..\\Aplicaciones\\UMPOS V23.5.0.3\\UMPOS.exe.config",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2026-03-04T17:19:58.583Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "frm_da_SolicitudReserva.vb",
+              "DocumentMoniker": "C:\\Desarrollo\\Version 9\\UMBRIGHT 2026\\Umbright\\DA\\frm_da_SolicitudReserva.vb",
+              "RelativeDocumentMoniker": "DA\\frm_da_SolicitudReserva.vb",
+              "ToolTip": "C:\\Desarrollo\\Version 9\\UMBRIGHT 2026\\Umbright\\DA\\frm_da_SolicitudReserva.vb",
+              "RelativeToolTip": "DA\\frm_da_SolicitudReserva.vb",
+              "ViewState": "AgIAAMkAAAAAAAAAAAAcwNkBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2026-02-25T21:21:20.22Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "frm_da_SolicitudReserva.vb [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Desarrollo\\Version 9\\UMBRIGHT 2026\\Umbright\\DA\\frm_da_SolicitudReserva.vb",
+              "RelativeDocumentMoniker": "DA\\frm_da_SolicitudReserva.vb",
+              "ToolTip": "C:\\Desarrollo\\Version 9\\UMBRIGHT 2026\\Umbright\\DA\\frm_da_SolicitudReserva.vb [Dise\u00F1o]",
+              "RelativeToolTip": "DA\\frm_da_SolicitudReserva.vb [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2026-02-25T21:20:51.188Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "frm_InformeInternaciones.vb [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Desarrollo\\Version 9\\UMBRIGHT 2026\\Umbright\\Internaciones\\frm_InformeInternaciones.vb",
+              "RelativeDocumentMoniker": "Internaciones\\frm_InformeInternaciones.vb",
+              "ToolTip": "C:\\Desarrollo\\Version 9\\UMBRIGHT 2026\\Umbright\\Internaciones\\frm_InformeInternaciones.vb [Dise\u00F1o]",
+              "RelativeToolTip": "Internaciones\\frm_InformeInternaciones.vb [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2026-01-20T22:17:45.474Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "frm_InformeInternaciones.vb",
+              "DocumentMoniker": "C:\\Desarrollo\\Version 9\\UMBRIGHT 2026\\Umbright\\Internaciones\\frm_InformeInternaciones.vb",
+              "RelativeDocumentMoniker": "Internaciones\\frm_InformeInternaciones.vb",
+              "ToolTip": "C:\\Desarrollo\\Version 9\\UMBRIGHT 2026\\Umbright\\Internaciones\\frm_InformeInternaciones.vb",
+              "RelativeToolTip": "Internaciones\\frm_InformeInternaciones.vb",
+              "ViewState": "AgIAAE8DAAAAAAAAAAAwwLcDAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2026-01-20T22:12:37.002Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
