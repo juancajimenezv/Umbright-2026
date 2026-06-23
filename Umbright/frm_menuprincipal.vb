@@ -2443,8 +2443,8 @@ Public Class frm_menu_principal
         '
         'pb_logo
         '
-        Me.pb_logo.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.pb_logo.Location = New System.Drawing.Point(254, 63)
+        Me.pb_logo.Anchor = System.Windows.Forms.AnchorStyles.Bottom
+        Me.pb_logo.Location = New System.Drawing.Point(279, 85)
         Me.pb_logo.Name = "pb_logo"
         Me.pb_logo.Size = New System.Drawing.Size(400, 300)
         Me.pb_logo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -2523,7 +2523,7 @@ Public Class frm_menu_principal
         'frm_menu_principal
         '
         Me.AutoScaleBaseSize = New System.Drawing.Size(5, 13)
-        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(233, Byte), Integer), CType(CType(234, Byte), Integer), CType(CType(204, Byte), Integer))
+        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(242, Byte), Integer), CType(CType(240, Byte), Integer), CType(CType(234, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(962, 575)
         Me.Controls.Add(Me.gbOpcines)
         Me.Controls.Add(Me.StatusBar1)
@@ -2532,9 +2532,11 @@ Public Class frm_menu_principal
         Me.Controls.Add(Me.Label1)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Menu = Me.menu_principal
+        Me.MinimumSize = New System.Drawing.Size(962, 600)
         Me.Name = "frm_menu_principal"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Menu Principal"
+        Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
         CType(Me.pb_it, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.pb_logo, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.StatusBarPanel1, System.ComponentModel.ISupportInitialize).EndInit()
@@ -2640,9 +2642,82 @@ Public Class frm_menu_principal
 
 
         Crear_menu()
-        Me.StatusBarPanel1.Text = System.Configuration.ConfigurationManager.AppSettings("ubicacion").ToString & " " & lsVersionAPP & " En Equipo.: (" & gs_nombre_equipo & ")"
-        Me.StatusBarPanel2.Text = "Usuario .: (" & gs_usuario & ") " & gs_nombre_usuario
-        Me.StatusBarPanel3.Text = "Fecha Actual .: " & Now.ToLongDateString
+        ' -- Header panel -------------------------------------------------------
+        Dim pnlHeader As New Panel()
+        pnlHeader.Name = "pnlHeader"
+        pnlHeader.Dock = DockStyle.Top
+        pnlHeader.Height = 54
+        pnlHeader.BackColor = Color.FromArgb(45, 50, 22)
+
+        Dim pnlLeft As New Panel()
+        pnlLeft.Dock = DockStyle.Left
+        pnlLeft.Width = 500
+        pnlLeft.BackColor = Color.Transparent
+
+        Dim lblSistema As New Label()
+        lblSistema.Text = "UMBRIGHT ERP"
+        lblSistema.ForeColor = Color.FromArgb(196, 81, 35)
+        lblSistema.Font = New Font("Segoe UI", 7.5F, FontStyle.Bold)
+        lblSistema.AutoSize = True
+        lblSistema.Location = New Point(14, 8)
+
+        Dim lblEmpresaHeader As New Label()
+        lblEmpresaHeader.Name = "lblEmpresaHeader"
+        lblEmpresaHeader.Text = If(String.IsNullOrEmpty(mdfo_gs_empresa), gs_empresa, mdfo_gs_empresa & "  (" & gs_empresa & ")")
+        lblEmpresaHeader.ForeColor = Color.White
+        lblEmpresaHeader.Font = New Font("Segoe UI", 13F, FontStyle.Bold)
+        lblEmpresaHeader.AutoSize = True
+        lblEmpresaHeader.Location = New Point(14, 25)
+
+        pnlLeft.Controls.Add(lblSistema)
+        pnlLeft.Controls.Add(lblEmpresaHeader)
+
+        Dim pnlRight As New Panel()
+        pnlRight.Dock = DockStyle.Right
+        pnlRight.Width = 340
+        pnlRight.BackColor = Color.Transparent
+
+        Dim lblUserTitulo As New Label()
+        lblUserTitulo.Text = "USUARIO"
+        lblUserTitulo.ForeColor = Color.FromArgb(106, 116, 56)
+        lblUserTitulo.Font = New Font("Segoe UI", 7F, FontStyle.Bold)
+        lblUserTitulo.AutoSize = True
+        lblUserTitulo.Location = New Point(10, 8)
+
+        Dim lblUserValor As New Label()
+        lblUserValor.Text = gs_nombre_usuario & "  (" & gs_usuario & ")"
+        lblUserValor.ForeColor = Color.White
+        lblUserValor.Font = New Font("Segoe UI", 9.5F, FontStyle.Bold)
+        lblUserValor.AutoSize = True
+        lblUserValor.Location = New Point(10, 25)
+
+        Dim lblFechaTitulo As New Label()
+        lblFechaTitulo.Text = "FECHA"
+        lblFechaTitulo.ForeColor = Color.FromArgb(106, 116, 56)
+        lblFechaTitulo.Font = New Font("Segoe UI", 7F, FontStyle.Bold)
+        lblFechaTitulo.AutoSize = True
+        lblFechaTitulo.Location = New Point(200, 8)
+
+        Dim lblFechaValor As New Label()
+        lblFechaValor.Text = Now.ToString("dd/MMM/yyyy")
+        lblFechaValor.ForeColor = Color.White
+        lblFechaValor.Font = New Font("Segoe UI", 9.5F, FontStyle.Bold)
+        lblFechaValor.AutoSize = True
+        lblFechaValor.Location = New Point(200, 25)
+
+        pnlRight.Controls.Add(lblUserTitulo)
+        pnlRight.Controls.Add(lblUserValor)
+        pnlRight.Controls.Add(lblFechaTitulo)
+        pnlRight.Controls.Add(lblFechaValor)
+
+        pnlHeader.Controls.Add(pnlLeft)
+        pnlHeader.Controls.Add(pnlRight)
+        Me.Controls.Add(pnlHeader)
+        pnlHeader.BringToFront()
+        ' -- Fin Header panel ---------------------------------------------------
+        Me.StatusBarPanel1.Text = System.Configuration.ConfigurationManager.AppSettings("ubicacion").ToString & "  v" & lsVersionAPP & "  |  PC: " & gs_nombre_equipo
+        Me.StatusBarPanel2.Text = gs_nombre_usuario & " (" & gs_usuario & ")"
+        Me.StatusBarPanel3.Text = Now.ToString("dd/MMM/yyyy  HH:mm")
 
         'If tiene_permisos("mlo_pedidos_posfechados") _
         '    And gi_tipo_usuario <> 1 Then
@@ -5056,6 +5131,10 @@ Public Class frm_menu_principal
         oform.ShowDialog(Me)
         oform = Nothing
         Me.Text = "Menu Principal :::. " & gs_empresa & " - " & mdfo_gs_empresa & " .::: "
+        Dim lblHArr() As Control = Me.Controls.Find("lblEmpresaHeader", True)
+        If lblHArr.Length > 0 Then
+            DirectCast(lblHArr(0), Label).Text = If(String.IsNullOrEmpty(mdfo_gs_empresa), gs_empresa, mdfo_gs_empresa & "  (" & gs_empresa & ")")
+        End If
         Crear_menu()
         'Activar_Logo()
     End Sub

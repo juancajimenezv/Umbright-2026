@@ -71,3 +71,17 @@ C:\Desarrollo\Version 9\UMBRIGHT 2026\Interfaz_CRM.Mail\obj\_buildcheck\EntityFr
 C:\Desarrollo\Version 9\UMBRIGHT 2026\Interfaz_CRM.Mail\obj\_buildcheck\EntityFramework.SqlServer.dll
 C:\Desarrollo\Version 9\UMBRIGHT 2026\Interfaz_CRM.Mail\obj\_buildcheck\EntityFramework.xml
 C:\Desarrollo\Version 9\UMBRIGHT 2026\Interfaz_CRM.Mail\obj\_buildcheck\EntityFramework.SqlServer.xml
+C:\Desarrollo\Version 9\Umbright-2026\Interfaz_CRM.Mail\bin\Debug\Interfaz_CRM.Mail.dll.config
+C:\Desarrollo\Version 9\Umbright-2026\Interfaz_CRM.Mail\bin\Debug\Interfaz_CRM.Mail.dll
+C:\Desarrollo\Version 9\Umbright-2026\Interfaz_CRM.Mail\bin\Debug\Interfaz_CRM.Mail.pdb
+C:\Desarrollo\Version 9\Umbright-2026\Interfaz_CRM.Mail\bin\Debug\EntityFramework.dll
+C:\Desarrollo\Version 9\Umbright-2026\Interfaz_CRM.Mail\bin\Debug\EntityFramework.SqlServer.dll
+C:\Desarrollo\Version 9\Umbright-2026\Interfaz_CRM.Mail\bin\Debug\EntityFramework.xml
+C:\Desarrollo\Version 9\Umbright-2026\Interfaz_CRM.Mail\bin\Debug\EntityFramework.SqlServer.xml
+C:\Desarrollo\Version 9\Umbright-2026\Interfaz_CRM.Mail\obj\Debug\Interfaz_CRM.Mail.csproj.AssemblyReference.cache
+C:\Desarrollo\Version 9\Umbright-2026\Interfaz_CRM.Mail\obj\Debug\Interfaz_CRM.Mail.Properties.Resources.resources
+C:\Desarrollo\Version 9\Umbright-2026\Interfaz_CRM.Mail\obj\Debug\Interfaz_CRM.Mail.csproj.GenerateResource.cache
+C:\Desarrollo\Version 9\Umbright-2026\Interfaz_CRM.Mail\obj\Debug\Interfaz_CRM.Mail.csproj.CoreCompileInputs.cache
+C:\Desarrollo\Version 9\Umbright-2026\Interfaz_CRM.Mail\obj\Debug\Interfaz_CRM.Mail.csproj.CopyComplete
+C:\Desarrollo\Version 9\Umbright-2026\Interfaz_CRM.Mail\obj\Debug\Interfaz_CRM.Mail.dll
+C:\Desarrollo\Version 9\Umbright-2026\Interfaz_CRM.Mail\obj\Debug\Interfaz_CRM.Mail.pdb
