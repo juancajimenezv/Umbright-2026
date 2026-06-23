@@ -461,8 +461,8 @@ Public Class frm_login
         pnlHeader.BackColor = Color.FromArgb(45, 50, 22)
 
         Dim lblSistema As New Label()
-        lblSistema.Text = "UMBRIGHT ERP"
-        lblSistema.ForeColor = Color.FromArgb(196, 81, 35)
+        lblSistema.Text = ""
+        lblSistema.Visible = False
         lblSistema.Font = New Font("Segoe UI", 8F, FontStyle.Bold)
         lblSistema.AutoSize = True
         lblSistema.Location = New Point(16, 10)
@@ -472,14 +472,14 @@ Public Class frm_login
         lblSubtitulo.ForeColor = Color.FromArgb(180, 185, 150)
         lblSubtitulo.Font = New Font("Segoe UI", 8F, FontStyle.Regular)
         lblSubtitulo.AutoSize = True
-        lblSubtitulo.Location = New Point(16, 26)
+        lblSubtitulo.Location = New Point(16, 10)
 
         Dim lblBienvenida As New Label()
         lblBienvenida.Text = "Bienvenido, ingrese sus credenciales"
         lblBienvenida.ForeColor = Color.White
         lblBienvenida.Font = New Font("Segoe UI", 11F, FontStyle.Bold)
         lblBienvenida.AutoSize = True
-        lblBienvenida.Location = New Point(16, 42)
+        lblBienvenida.Location = New Point(16, 28)
 
         pnlHeader.Controls.Add(lblSistema)
         pnlHeader.Controls.Add(lblSubtitulo)

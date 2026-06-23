@@ -8,10 +8,15 @@ Imports ClasesGenerales.General
 Imports Microsoft.Office.Interop
 Imports System.Threading
 Imports System.IO
+Imports System.Collections.Generic
 
 Public Class frm_menu_principal
     Inherits System.Windows.Forms.Form
     Dim cod_tipo_usuario As Integer = 0
+    Private recientes As New List(Of Tuple(Of String, MenuItem))()
+    Private favoritos As New List(Of String)()
+    Private favoritosItems As New Dictionary(Of String, MenuItem)()
+    Private ReadOnly favoritosPath As String = System.IO.Path.Combine(Application.StartupPath, "um_favs.dat")
     Friend WithEvents mci_trackingInternaciones As System.Windows.Forms.MenuItem
     Friend WithEvents mlo_liquidacionPiloto As System.Windows.Forms.MenuItem
     Friend WithEvents mfi_co_cface As System.Windows.Forms.MenuItem
@@ -2716,6 +2721,8 @@ Public Class frm_menu_principal
         pnlHeader.BringToFront()
         ' -- Fin Header panel ---------------------------------------------------
         Crear_tiles()
+        CargarFavoritos()
+        Crear_acceso_rapido()
         Me.StatusBarPanel1.Text = System.Configuration.ConfigurationManager.AppSettings("ubicacion").ToString & "  v" & lsVersionAPP & "  |  PC: " & gs_nombre_equipo
         Me.StatusBarPanel2.Text = gs_nombre_usuario & " (" & gs_usuario & ")"
         Me.StatusBarPanel3.Text = Now.ToString("dd/MMM/yyyy  HH:mm")
@@ -8824,7 +8831,7 @@ Public Class frm_menu_principal
             cms.Renderer = New UmbralMenuRenderer()
             cms.ShowImageMargin = False
             cms.Padding = New Padding(0, 4, 0, 4)
-            BuildContextMenu(cms.Items, mi.MenuItems)
+            BuildContextMenu(cms.Items, mi.MenuItems, label)
 
             ' Hover
             Dim capturedBorder As Panel = border
@@ -8841,11 +8848,12 @@ Public Class frm_menu_principal
             AddHandler lblNombre.MouseEnter, Sub(s, e) capturedTile.BackColor = Color.FromArgb(250, 248, 244)
             AddHandler lblNombre.MouseLeave, Sub(s, e) capturedTile.BackColor = Color.White
 
-            ' Click -> mostrar menu contextual
+            ' Click izq -> menu, Click der -> favorito
             Dim capturedCms As ContextMenuStrip = cms
             AddHandler tile.Click, Sub(s, e) capturedCms.Show(capturedBorder, 0, capturedBorder.Height)
             AddHandler lblIcon.Click, Sub(s, e) capturedCms.Show(capturedBorder, 0, capturedBorder.Height)
             AddHandler lblNombre.Click, Sub(s, e) capturedCms.Show(capturedBorder, 0, capturedBorder.Height)
+
 
             pnlTiles.Controls.Add(border)
         Next
@@ -8858,7 +8866,7 @@ Public Class frm_menu_principal
         If hdr.Length > 0 Then hdr(0).BringToFront()
     End Sub
 
-    Private Sub BuildContextMenu(items As ToolStripItemCollection, menuItems As Menu.MenuItemCollection)
+    Private Sub BuildContextMenu(items As ToolStripItemCollection, menuItems As Menu.MenuItemCollection, Optional rutaBase As String = "")
         For Each mi As MenuItem In menuItems
             Dim label As String = mi.Text.Replace("&", "").Trim()
             If label = "-" Then
@@ -8866,18 +8874,136 @@ Public Class frm_menu_principal
             ElseIf mi.MenuItems.Count > 0 Then
                 Dim tsi As New ToolStripMenuItem(label)
                 tsi.Font = New Font("Segoe UI", 9)
-                BuildContextMenu(tsi.DropDownItems, mi.MenuItems)
+                BuildContextMenu(tsi.DropDownItems, mi.MenuItems, rutaBase & " / " & label)
                 items.Add(tsi)
             Else
                 If label = "" Then Continue For
                 Dim tsi As New ToolStripMenuItem(label)
                 tsi.Font = New Font("Segoe UI", 9)
                 Dim capturedMi As MenuItem = mi
-                AddHandler tsi.Click, Sub(s, e) capturedMi.PerformClick()
+                Dim capturedLbl As String = label
+                AddHandler tsi.Click, Sub(s, e)
+                    capturedMi.PerformClick()
+                    AgregarReciente(rutaBase & " / " & capturedLbl, capturedMi)
+                End Sub
                 items.Add(tsi)
             End If
         Next
     End Sub
+
+    ' === FAVORITOS Y RECIENTES ===
+    Private Sub AgregarReciente(label As String, mi As MenuItem)
+        recientes.RemoveAll(Function(t) t.Item1 = label)
+        recientes.Insert(0, Tuple.Create(label, mi))
+        If recientes.Count > 3 Then recientes.RemoveAt(3)
+        Crear_acceso_rapido()
+    End Sub
+
+    Private Sub ToggleFavorito(label As String, mi As MenuItem)
+        If favoritos.Contains(label) Then
+            favoritos.Remove(label) : favoritosItems.Remove(label)
+        Else
+            If favoritos.Count >= 5 Then MsgBox("Maximo 5 favoritos. Quita uno primero.", MsgBoxStyle.Information, "Favoritos") : Return
+            favoritos.Add(label) : favoritosItems(label) = mi
+        End If
+        GuardarFavoritos() : Crear_acceso_rapido()
+    End Sub
+
+    Private Sub CargarFavoritos()
+        favoritos.Clear() : favoritosItems.Clear()
+        If Not System.IO.File.Exists(favoritosPath) Then Return
+        For Each line As String In System.IO.File.ReadAllLines(favoritosPath)
+            If line.Trim() <> "" Then favoritos.Add(line.Trim())
+        Next
+        For Each mi As MenuItem In menu_principal.MenuItems
+            Dim lbl As String = mi.Text.Replace("&", "").Trim()
+            If favoritos.Contains(lbl) Then favoritosItems(lbl) = mi
+        Next
+    End Sub
+
+    Private Sub GuardarFavoritos()
+        System.IO.File.WriteAllLines(favoritosPath, favoritos.ToArray())
+    End Sub
+
+    Private Sub Crear_acceso_rapido()
+        Dim viejos() As Control = Me.Controls.Find("pnlQuickAccess", False)
+        For Each v As Control In viejos : Me.Controls.Remove(v) : v.Dispose() : Next
+
+        Dim pnlQA As New Panel()
+        pnlQA.Name = "pnlQuickAccess"
+        pnlQA.Dock = DockStyle.Top
+        pnlQA.Height = 82
+        pnlQA.BackColor = Color.FromArgb(230, 227, 218)
+
+        Dim lblR As New Label()
+        lblR.Text = ChrW(9202) & " RECIENTES"
+        lblR.Font = New Font("Segoe UI", 7.0F, FontStyle.Bold)
+        lblR.ForeColor = Color.FromArgb(106, 116, 56)
+        lblR.AutoSize = True
+        lblR.Location = New Point(36, 6)
+        pnlQA.Controls.Add(lblR)
+
+        If recientes.Count = 0 Then
+            Dim lhr As New Label()
+            lhr.Text = "Las opciones que uses apareceran aqui"
+            lhr.Font = New Font("Segoe UI", 7.5F, FontStyle.Italic)
+            lhr.ForeColor = Color.FromArgb(160, 155, 145)
+            lhr.AutoSize = True
+            lhr.Location = New Point(36, 24)
+            pnlQA.Controls.Add(lhr)
+        Else
+            Dim rx As Integer = 36
+            For Each t As Tuple(Of String, MenuItem) In recientes
+                Dim qt As Panel = CrearQuickTile(t.Item1, t.Item2, Color.FromArgb(106, 116, 56))
+                qt.Location = New Point(rx, 18)
+                pnlQA.Controls.Add(qt)
+                rx += qt.Width + 10
+            Next
+        End If
+
+        Me.Controls.Add(pnlQA)
+        pnlQA.SendToBack()
+        Dim hdr() As Control = Me.Controls.Find("pnlHeader", False)
+        If hdr.Length > 0 Then hdr(0).SendToBack()
+    End Sub
+
+    Private Function CrearQuickTile(ruta As String, mi As MenuItem, acento As Color) As Panel
+        Dim sepArr() As String = {" / "}
+        Dim partes() As String = ruta.Split(sepArr, StringSplitOptions.None)
+        Dim modulo As String = If(partes.Length > 0, partes(0), ruta)
+        Dim subRuta As String = If(partes.Length > 1, String.Join(" / ", partes, 1, partes.Length - 1), "")
+        Dim tile As New Panel()
+        tile.Size = New Size(160, 60) : tile.BackColor = Color.White : tile.Cursor = Cursors.Hand
+        Dim pTop As New Panel()
+        pTop.Dock = DockStyle.Top : pTop.Height = 3 : pTop.BackColor = acento
+        Dim lblMod As New Label()
+        lblMod.Text = modulo : lblMod.Font = New Font("Segoe UI", 7.5F, FontStyle.Bold)
+        lblMod.ForeColor = acento : lblMod.Location = New Point(8, 6) : lblMod.AutoSize = True
+        lblMod.Cursor = Cursors.Hand
+        Dim lblSub As New Label()
+        lblSub.Text = subRuta : lblSub.Font = New Font("Segoe UI", 7.5F, FontStyle.Regular)
+        lblSub.ForeColor = Color.FromArgb(55, 62, 28) : lblSub.Location = New Point(8, 24)
+        lblSub.Size = New Size(146, 30) : lblSub.Cursor = Cursors.Hand
+        tile.Controls.Add(lblSub) : tile.Controls.Add(lblMod) : tile.Controls.Add(pTop)
+        Dim ct As Panel = tile
+        AddHandler tile.MouseEnter, Sub(s, e) ct.BackColor = Color.FromArgb(248, 245, 239)
+        AddHandler tile.MouseLeave, Sub(s, e) ct.BackColor = Color.White
+        AddHandler lblMod.MouseEnter, Sub(s, e) ct.BackColor = Color.FromArgb(248, 245, 239)
+        AddHandler lblMod.MouseLeave, Sub(s, e) ct.BackColor = Color.White
+        AddHandler lblSub.MouseEnter, Sub(s, e) ct.BackColor = Color.FromArgb(248, 245, 239)
+        AddHandler lblSub.MouseLeave, Sub(s, e) ct.BackColor = Color.White
+        Dim cmi As MenuItem = mi : Dim cruta As String = ruta
+        AddHandler tile.Click, Sub(s, e)
+            cmi.PerformClick() : AgregarReciente(cruta, cmi)
+        End Sub
+        AddHandler lblMod.Click, Sub(s, e)
+            cmi.PerformClick() : AgregarReciente(cruta, cmi)
+        End Sub
+        AddHandler lblSub.Click, Sub(s, e)
+            cmi.PerformClick() : AgregarReciente(cruta, cmi)
+        End Sub
+        Return tile
+    End Function
 End Class
 
 
