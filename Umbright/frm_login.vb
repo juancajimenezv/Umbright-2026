@@ -73,20 +73,20 @@ Public Class frm_login
         '
         Me.txt_usuario.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.txt_usuario.Font = New System.Drawing.Font("Segoe UI", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txt_usuario.Location = New System.Drawing.Point(50, 244)
+        Me.txt_usuario.Location = New System.Drawing.Point(50, 279)
         Me.txt_usuario.MaxLength = 25
         Me.txt_usuario.Name = "txt_usuario"
-        Me.txt_usuario.Size = New System.Drawing.Size(320, 28)
+        Me.txt_usuario.Size = New System.Drawing.Size(320, 25)
         Me.txt_usuario.TabIndex = 0
         '
         'txt_password
         '
         Me.txt_password.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.txt_password.Font = New System.Drawing.Font("Segoe UI", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txt_password.Location = New System.Drawing.Point(50, 302)
+        Me.txt_password.Location = New System.Drawing.Point(50, 345)
         Me.txt_password.Name = "txt_password"
         Me.txt_password.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
-        Me.txt_password.Size = New System.Drawing.Size(320, 28)
+        Me.txt_password.Size = New System.Drawing.Size(320, 25)
         Me.txt_password.TabIndex = 1
         '
         'cmb_empresa
@@ -96,52 +96,52 @@ Public Class frm_login
         Me.cmb_empresa.BackColor = System.Drawing.Color.White
         Me.cmb_empresa.DropDownWidth = 320
         Me.cmb_empresa.Font = New System.Drawing.Font("Segoe UI", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.cmb_empresa.ForeColor = System.Drawing.Color.FromArgb(55, 62, 28)
-        Me.cmb_empresa.Location = New System.Drawing.Point(50, 360)
+        Me.cmb_empresa.ForeColor = System.Drawing.Color.FromArgb(CType(CType(55, Byte), Integer), CType(CType(62, Byte), Integer), CType(CType(28, Byte), Integer))
+        Me.cmb_empresa.Location = New System.Drawing.Point(50, 411)
         Me.cmb_empresa.Name = "cmb_empresa"
-        Me.cmb_empresa.Size = New System.Drawing.Size(320, 28)
+        Me.cmb_empresa.Size = New System.Drawing.Size(320, 25)
         Me.cmb_empresa.TabIndex = 2
         '
         'Label1
         '
         Me.Label1.Font = New System.Drawing.Font("Segoe UI", 8.5!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.ForeColor = System.Drawing.Color.FromArgb(55, 62, 28)
-        Me.Label1.Location = New System.Drawing.Point(50, 224)
+        Me.Label1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(55, Byte), Integer), CType(CType(62, Byte), Integer), CType(CType(28, Byte), Integer))
+        Me.Label1.Location = New System.Drawing.Point(50, 256)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(320, 18)
+        Me.Label1.Size = New System.Drawing.Size(320, 21)
         Me.Label1.TabIndex = 3
         Me.Label1.Text = "Usuario"
         '
         'Label2
         '
         Me.Label2.Font = New System.Drawing.Font("Segoe UI", 8.5!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.ForeColor = System.Drawing.Color.FromArgb(55, 62, 28)
-        Me.Label2.Location = New System.Drawing.Point(50, 282)
+        Me.Label2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(55, Byte), Integer), CType(CType(62, Byte), Integer), CType(CType(28, Byte), Integer))
+        Me.Label2.Location = New System.Drawing.Point(50, 322)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(320, 18)
+        Me.Label2.Size = New System.Drawing.Size(320, 21)
         Me.Label2.TabIndex = 4
         Me.Label2.Text = "Contraseña"
         '
         'Label3
         '
         Me.Label3.Font = New System.Drawing.Font("Segoe UI", 8.5!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.ForeColor = System.Drawing.Color.FromArgb(55, 62, 28)
-        Me.Label3.Location = New System.Drawing.Point(50, 340)
+        Me.Label3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(55, Byte), Integer), CType(CType(62, Byte), Integer), CType(CType(28, Byte), Integer))
+        Me.Label3.Location = New System.Drawing.Point(50, 389)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(320, 18)
+        Me.Label3.Size = New System.Drawing.Size(320, 20)
         Me.Label3.TabIndex = 5
         Me.Label3.Text = "Empresa"
         '
         'btn_aceptar
         '
-        Me.btn_aceptar.BackColor = System.Drawing.Color.FromArgb(196, 81, 35)
-        Me.btn_aceptar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btn_aceptar.BackColor = System.Drawing.Color.FromArgb(CType(CType(196, Byte), Integer), CType(CType(81, Byte), Integer), CType(CType(35, Byte), Integer))
         Me.btn_aceptar.FlatAppearance.BorderSize = 0
+        Me.btn_aceptar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btn_aceptar.Font = New System.Drawing.Font("Segoe UI", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btn_aceptar.ForeColor = System.Drawing.Color.White
-        Me.btn_aceptar.Location = New System.Drawing.Point(50, 410)
+        Me.btn_aceptar.Location = New System.Drawing.Point(50, 469)
         Me.btn_aceptar.Name = "btn_aceptar"
-        Me.btn_aceptar.Size = New System.Drawing.Size(155, 40)
+        Me.btn_aceptar.Size = New System.Drawing.Size(155, 45)
         Me.btn_aceptar.TabIndex = 6
         Me.btn_aceptar.Text = "Ingresar"
         Me.btn_aceptar.UseVisualStyleBackColor = False
@@ -155,23 +155,23 @@ Public Class frm_login
         '
         'btn_cancelar
         '
-        Me.btn_cancelar.BackColor = System.Drawing.Color.FromArgb(120, 120, 112)
-        Me.btn_cancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btn_cancelar.BackColor = System.Drawing.Color.FromArgb(CType(CType(120, Byte), Integer), CType(CType(120, Byte), Integer), CType(CType(112, Byte), Integer))
         Me.btn_cancelar.FlatAppearance.BorderSize = 0
+        Me.btn_cancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btn_cancelar.Font = New System.Drawing.Font("Segoe UI", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btn_cancelar.ForeColor = System.Drawing.Color.White
-        Me.btn_cancelar.Location = New System.Drawing.Point(215, 410)
+        Me.btn_cancelar.Location = New System.Drawing.Point(215, 469)
         Me.btn_cancelar.Name = "btn_cancelar"
-        Me.btn_cancelar.Size = New System.Drawing.Size(155, 40)
+        Me.btn_cancelar.Size = New System.Drawing.Size(155, 45)
         Me.btn_cancelar.TabIndex = 7
         Me.btn_cancelar.Text = "Cancelar"
         Me.btn_cancelar.UseVisualStyleBackColor = False
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(86, 67)
+        Me.Button1.Location = New System.Drawing.Point(86, 77)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(87, 16)
+        Me.Button1.Size = New System.Drawing.Size(87, 18)
         Me.Button1.TabIndex = 8
         Me.Button1.Text = "Button1"
         Me.Button1.Visible = False
@@ -179,9 +179,9 @@ Public Class frm_login
         'PictureBox1
         '
         Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
-        Me.PictureBox1.Location = New System.Drawing.Point(130, 78)
+        Me.PictureBox1.Location = New System.Drawing.Point(53, 77)
         Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(160, 124)
+        Me.PictureBox1.Size = New System.Drawing.Size(322, 142)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox1.TabIndex = 9
         Me.PictureBox1.TabStop = False
@@ -190,23 +190,23 @@ Public Class frm_login
         '
         Me.lblVersion.AutoSize = True
         Me.lblVersion.Font = New System.Drawing.Font("Segoe UI", 8.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblVersion.ForeColor = System.Drawing.Color.FromArgb(120, 120, 112)
-        Me.lblVersion.Location = New System.Drawing.Point(50, 488)
+        Me.lblVersion.ForeColor = System.Drawing.Color.FromArgb(CType(CType(120, Byte), Integer), CType(CType(120, Byte), Integer), CType(CType(112, Byte), Integer))
+        Me.lblVersion.Location = New System.Drawing.Point(50, 558)
         Me.lblVersion.Name = "lblVersion"
-        Me.lblVersion.Size = New System.Drawing.Size(29, 14)
+        Me.lblVersion.Size = New System.Drawing.Size(25, 13)
         Me.lblVersion.TabIndex = 10
         Me.lblVersion.Text = "0.0."
         '
         'btn_passwordless
         '
-        Me.btn_passwordless.BackColor = System.Drawing.Color.FromArgb(106, 116, 56)
-        Me.btn_passwordless.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btn_passwordless.BackColor = System.Drawing.Color.FromArgb(CType(CType(106, Byte), Integer), CType(CType(116, Byte), Integer), CType(CType(56, Byte), Integer))
         Me.btn_passwordless.FlatAppearance.BorderSize = 0
+        Me.btn_passwordless.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btn_passwordless.Font = New System.Drawing.Font("Segoe UI", 9.5!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btn_passwordless.ForeColor = System.Drawing.Color.White
-        Me.btn_passwordless.Location = New System.Drawing.Point(50, 462)
+        Me.btn_passwordless.Location = New System.Drawing.Point(50, 528)
         Me.btn_passwordless.Name = "btn_passwordless"
-        Me.btn_passwordless.Size = New System.Drawing.Size(320, 36)
+        Me.btn_passwordless.Size = New System.Drawing.Size(320, 41)
         Me.btn_passwordless.TabIndex = 11
         Me.btn_passwordless.Text = "Ingreso &Sin Clave"
         Me.ToolTip1.SetToolTip(Me.btn_passwordless, "Se envirá un TOKEN al Número de Celular Asociado con el usuario, " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "si desea cambi" &
@@ -216,9 +216,8 @@ Public Class frm_login
         '
         'frm_login
         '
-        Me.AutoScaleBaseSize = New System.Drawing.Size(6, 14)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None
-        Me.BackColor = System.Drawing.Color.FromArgb(242, 240, 234)
+        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(242, Byte), Integer), CType(CType(240, Byte), Integer), CType(CType(234, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(420, 510)
         Me.Controls.Add(Me.btn_passwordless)
         Me.Controls.Add(Me.lblVersion)

@@ -2439,9 +2439,10 @@ Public Class frm_menu_principal
         'pb_it
         '
         Me.pb_it.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.pb_it.Location = New System.Drawing.Point(826, 464)
+        Me.pb_it.Image = CType(resources.GetObject("pb_it.Image"), System.Drawing.Image)
+        Me.pb_it.Location = New System.Drawing.Point(876, 469)
         Me.pb_it.Name = "pb_it"
-        Me.pb_it.Size = New System.Drawing.Size(135, 84)
+        Me.pb_it.Size = New System.Drawing.Size(86, 94)
         Me.pb_it.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.pb_it.TabIndex = 2
         Me.pb_it.TabStop = False
@@ -2458,11 +2459,11 @@ Public Class frm_menu_principal
         '
         'StatusBar1
         '
-        Me.StatusBar1.Location = New System.Drawing.Point(0, 561)
+        Me.StatusBar1.Location = New System.Drawing.Point(0, 569)
         Me.StatusBar1.Name = "StatusBar1"
         Me.StatusBar1.Panels.AddRange(New System.Windows.Forms.StatusBarPanel() {Me.StatusBarPanel1, Me.StatusBarPanel2, Me.StatusBarPanel3})
         Me.StatusBar1.ShowPanels = True
-        Me.StatusBar1.Size = New System.Drawing.Size(962, 14)
+        Me.StatusBar1.Size = New System.Drawing.Size(962, 6)
         Me.StatusBar1.TabIndex = 4
         Me.StatusBar1.Text = "StatusBar1"
         '
@@ -2670,7 +2671,7 @@ Public Class frm_menu_principal
         lblEmpresaHeader.Name = "lblEmpresaHeader"
         lblEmpresaHeader.Text = If(String.IsNullOrEmpty(mdfo_gs_empresa), gs_empresa, mdfo_gs_empresa & "  (" & gs_empresa & ")")
         lblEmpresaHeader.ForeColor = Color.White
-        lblEmpresaHeader.Font = New Font("Segoe UI", 13F, FontStyle.Bold)
+        lblEmpresaHeader.Font = New Font("Segoe UI", 13.0F, FontStyle.Bold)
         lblEmpresaHeader.AutoSize = True
         lblEmpresaHeader.Location = New Point(14, 25)
 
@@ -2685,7 +2686,7 @@ Public Class frm_menu_principal
         Dim lblUserTitulo As New Label()
         lblUserTitulo.Text = "USUARIO"
         lblUserTitulo.ForeColor = Color.FromArgb(106, 116, 56)
-        lblUserTitulo.Font = New Font("Segoe UI", 7F, FontStyle.Bold)
+        lblUserTitulo.Font = New Font("Segoe UI", 7.0F, FontStyle.Bold)
         lblUserTitulo.AutoSize = True
         lblUserTitulo.Location = New Point(10, 8)
 
@@ -2699,7 +2700,7 @@ Public Class frm_menu_principal
         Dim lblFechaTitulo As New Label()
         lblFechaTitulo.Text = "FECHA"
         lblFechaTitulo.ForeColor = Color.FromArgb(106, 116, 56)
-        lblFechaTitulo.Font = New Font("Segoe UI", 7F, FontStyle.Bold)
+        lblFechaTitulo.Font = New Font("Segoe UI", 7.0F, FontStyle.Bold)
         lblFechaTitulo.AutoSize = True
         lblFechaTitulo.Location = New Point(200, 8)
 
@@ -5145,6 +5146,7 @@ Public Class frm_menu_principal
         End If
         Crear_menu()
         Crear_tiles()
+        Crear_acceso_rapido()
         'Activar_Logo()
     End Sub
 
@@ -5212,7 +5214,7 @@ Public Class frm_menu_principal
                 ls_path = odt.Rows(0).Item("path_logos").ToString
             End If
 
-            pb_it.Image = Image.FromFile(ls_path & "logoUmbright.png")
+            'pb_it.Image = Image.FromFile(ls_path & "logoUmbright.png")
             'Me.pb_logo.Image = Image.FromFile(ls_path & gs_empresa.Trim & ".png")
 
         Catch ex As Exception
@@ -8883,9 +8885,9 @@ Public Class frm_menu_principal
                 Dim capturedMi As MenuItem = mi
                 Dim capturedLbl As String = label
                 AddHandler tsi.Click, Sub(s, e)
-                    capturedMi.PerformClick()
-                    AgregarReciente(rutaBase & " / " & capturedLbl, capturedMi)
-                End Sub
+                                          capturedMi.PerformClick()
+                                          AgregarReciente(rutaBase & " / " & capturedLbl, capturedMi)
+                                      End Sub
                 items.Add(tsi)
             End If
         Next
@@ -8994,16 +8996,20 @@ Public Class frm_menu_principal
         AddHandler lblSub.MouseLeave, Sub(s, e) ct.BackColor = Color.White
         Dim cmi As MenuItem = mi : Dim cruta As String = ruta
         AddHandler tile.Click, Sub(s, e)
-            cmi.PerformClick() : AgregarReciente(cruta, cmi)
-        End Sub
+                                   cmi.PerformClick() : AgregarReciente(cruta, cmi)
+                               End Sub
         AddHandler lblMod.Click, Sub(s, e)
-            cmi.PerformClick() : AgregarReciente(cruta, cmi)
-        End Sub
+                                     cmi.PerformClick() : AgregarReciente(cruta, cmi)
+                                 End Sub
         AddHandler lblSub.Click, Sub(s, e)
-            cmi.PerformClick() : AgregarReciente(cruta, cmi)
-        End Sub
+                                     cmi.PerformClick() : AgregarReciente(cruta, cmi)
+                                 End Sub
         Return tile
     End Function
+
+    Private Sub pb_it_Click(sender As Object, e As EventArgs) Handles pb_it.Click
+
+    End Sub
 End Class
 
 
