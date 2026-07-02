@@ -4,6 +4,12 @@ Public Class frmRequisicionRecurrente
     Public idRecurrente As Integer = 0
     Public oDS As DataSet   ' expuesto para que frmRequisiciones lea notificaciones
 
+    ' Valores precargados desde frmRequisiciones (se aplican en Load tras llenar combos)
+    Private _preProveedor As String = ""
+    Private _preNombreProveedor As String = ""
+    Private _preMoneda As String = ""
+    Private _preObservaciones As String = ""
+
     ' =========================================================================
     ' INICIALIZACIÓN
     ' =========================================================================
@@ -50,6 +56,8 @@ Public Class frmRequisicionRecurrente
         Me.chkVencLicencia.Checked = False
         Me.dtpFechaVencLicencia.Enabled = False
 
+        If Not modoEdicion Then aplicarPrecarga()
+
         If modoEdicion Then
             Me.Text = "Editar Plantilla Recurrente"
             Me.txtCodigo.ReadOnly = True  ' el código no se cambia en edición
@@ -59,13 +67,23 @@ Public Class frmRequisicionRecurrente
         End If
     End Sub
 
-    ' Llamado desde frmRequisiciones para precargar proveedor/moneda/observaciones
+    ' Llamado desde frmRequisiciones ANTES de ShowDialog — solo almacena, aplica en Load
     Public Sub precargarDatos(ByVal sProveedor As String, ByVal sNombreProveedor As String,
                                ByVal sMoneda As String, ByVal sObservaciones As String)
-        Try : Me.txtProveedor.Text = sProveedor : Catch ex As Exception : End Try
-        Try : Me.txtNombreProveedor.Text = sNombreProveedor : Catch ex As Exception : End Try
-        Try : Me.cmbMoneda.SelectedItem = sMoneda : Catch ex As Exception : End Try
-        Try : Me.txtObservaciones.Text = sObservaciones : Catch ex As Exception : End Try
+        _preProveedor = sProveedor
+        _preNombreProveedor = sNombreProveedor
+        _preMoneda = sMoneda
+        _preObservaciones = sObservaciones
+    End Sub
+
+    Private Sub aplicarPrecarga()
+        Me.txtProveedor.Text = _preProveedor
+        Me.txtNombreProveedor.Text = _preNombreProveedor
+        Me.txtObservaciones.Text = _preObservaciones
+        If _preMoneda.Length > 0 Then
+            Dim idx As Integer = Me.cmbMoneda.Items.IndexOf(_preMoneda)
+            If idx >= 0 Then Me.cmbMoneda.SelectedIndex = idx
+        End If
     End Sub
 
     ' =========================================================================

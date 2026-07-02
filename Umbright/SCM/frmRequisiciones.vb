@@ -3151,6 +3151,224 @@ Public Class frmRequisiciones
     ' REQUISICIONES RECURRENTES
     ' =========================================================================
 
+    ' DataSet independiente para edición de detalle de plantilla recurrente
+    Private oDSRec As DataSet
+
+    Private Sub crearEstructuraRec()
+        oDSRec = New DataSet
+
+        Dim dtDet As New DataTable("detalle_rec")
+        dtDet.Columns.Add(New DataColumn("linea", GetType(Integer)))
+        dtDet.Columns.Add(New DataColumn("codigo", GetType(String)))
+        dtDet.Columns.Add(New DataColumn("descripcion", GetType(String)))
+        dtDet.Columns.Add(New DataColumn("observaciones", GetType(String)))
+        dtDet.Columns.Add(New DataColumn("cantidad", GetType(Double)))
+        dtDet.Columns.Add(New DataColumn("precio", GetType(Double)))
+        oDSRec.Tables.Add(dtDet)
+
+        Dim dtCC As New DataTable("ccosto_rec")
+        dtCC.Columns.Add(New DataColumn("linea", GetType(Integer)))
+        dtCC.Columns.Add(New DataColumn("codigo", GetType(String)))
+        dtCC.Columns.Add(New DataColumn("descripcion", GetType(String)))
+        dtCC.Columns.Add(New DataColumn("Porcentaje", GetType(Double)))
+        oDSRec.Tables.Add(dtCC)
+
+        Dim dtMarca As New DataTable("marca_rec")
+        dtMarca.Columns.Add(New DataColumn("linea", GetType(Integer)))
+        dtMarca.Columns.Add(New DataColumn("codigo", GetType(String)))
+        dtMarca.Columns.Add(New DataColumn("descripcion", GetType(String)))
+        dtMarca.Columns.Add(New DataColumn("Porcentaje", GetType(Double)))
+        dtMarca.Columns.Add(New DataColumn("Porcentaje_Empresa", GetType(Double)))
+        dtMarca.Columns.Add(New DataColumn("Porcentaje_Socio", GetType(Double)))
+        oDSRec.Tables.Add(dtMarca)
+
+        Dim dtGasto As New DataTable("gasto_rec")
+        dtGasto.Columns.Add(New DataColumn("linea", GetType(Integer)))
+        dtGasto.Columns.Add(New DataColumn("codigo", GetType(String)))
+        dtGasto.Columns.Add(New DataColumn("descripcion", GetType(String)))
+        dtGasto.Columns.Add(New DataColumn("Porcentaje", GetType(Double)))
+        dtGasto.Columns.Add(New DataColumn("tipo", GetType(String)))
+        oDSRec.Tables.Add(dtGasto)
+
+        Dim dtCanal As New DataTable("canal_rec")
+        dtCanal.Columns.Add(New DataColumn("linea", GetType(Integer)))
+        dtCanal.Columns.Add(New DataColumn("codigo", GetType(String)))
+        dtCanal.Columns.Add(New DataColumn("descripcion", GetType(String)))
+        dtCanal.Columns.Add(New DataColumn("Porcentaje", GetType(Double)))
+        oDSRec.Tables.Add(dtCanal)
+
+        Me.dgvDetalleRec.DataSource = oDSRec.Tables("detalle_rec")
+        Me.dgvCCostoRec.DataSource  = oDSRec.Tables("ccosto_rec")
+        Me.dgvMarcaRec.DataSource   = oDSRec.Tables("marca_rec")
+        Me.dgvGastoRec.DataSource   = oDSRec.Tables("gasto_rec")
+        Me.dgvCanalRec.DataSource   = oDSRec.Tables("canal_rec")
+    End Sub
+
+    Private Sub cargarDetallePlantillaEnTab(ByVal pid As Integer, ByVal sDesc As String)
+        crearEstructuraRec()
+        Me.lblPlantillaEditando.Text = "Editando plantilla: " & sDesc
+
+        Dim Otrans As New Transaccional.Conexion("SCM")
+        Try
+            Otrans.open()
+
+            Dim dtDet As DataTable = Otrans.Obtiene("pa_sel_um_requisicion_recurrente_det " & pid)
+            If dtDet IsNot Nothing Then
+                For Each dr As DataRow In dtDet.Rows
+                    Dim drAux As DataRow = oDSRec.Tables("detalle_rec").NewRow
+                    drAux("linea")        = dr("linea")
+                    drAux("codigo")       = dr("producto").ToString
+                    drAux("descripcion")  = dr("descripcion").ToString
+                    drAux("observaciones")= dr("comentario").ToString
+                    drAux("cantidad")     = dr("cantidad")
+                    drAux("precio")       = dr("precio")
+                    oDSRec.Tables("detalle_rec").Rows.Add(drAux)
+                Next
+            End If
+
+            Dim dtDist As DataTable = Otrans.Obtiene("pa_sel_um_requisicion_recurrente_dist " & pid)
+            If dtDist IsNot Nothing Then
+                For Each dr As DataRow In dtDist.Rows
+                    Dim sTipo As String = dr("tipo").ToString
+                    If sTipo = "CON_CCOSTO" Then
+                        Dim drAux As DataRow = oDSRec.Tables("ccosto_rec").NewRow
+                        drAux("linea")       = dr("linea")
+                        drAux("codigo")      = dr("codigo").ToString
+                        drAux("descripcion") = dr("descripcion").ToString
+                        drAux("Porcentaje")  = dr("porcentaje")
+                        oDSRec.Tables("ccosto_rec").Rows.Add(drAux)
+                    ElseIf sTipo = "CON_MARCA" Then
+                        Dim drAux As DataRow = oDSRec.Tables("marca_rec").NewRow
+                        drAux("linea")              = dr("linea")
+                        drAux("codigo")             = dr("codigo").ToString
+                        drAux("descripcion")        = dr("descripcion").ToString
+                        drAux("Porcentaje")         = dr("porcentaje")
+                        drAux("Porcentaje_Empresa") = dr("porcentaje_empresa")
+                        drAux("Porcentaje_Socio")   = dr("porcentaje_socio")
+                        oDSRec.Tables("marca_rec").Rows.Add(drAux)
+                    ElseIf sTipo = "CON_ITEM" Then
+                        Dim drAux As DataRow = oDSRec.Tables("gasto_rec").NewRow
+                        drAux("linea")       = dr("linea")
+                        drAux("codigo")      = dr("codigo").ToString
+                        drAux("descripcion") = dr("descripcion").ToString
+                        drAux("Porcentaje")  = dr("porcentaje")
+                        drAux("tipo")        = dr("tipo_gasto").ToString
+                        oDSRec.Tables("gasto_rec").Rows.Add(drAux)
+                    End If
+                Next
+            End If
+
+            Dim dtCanal As DataTable = Otrans.Obtiene("pa_sel_um_requisicion_recurrente_canal " & pid)
+            If dtCanal IsNot Nothing Then
+                For Each dr As DataRow In dtCanal.Rows
+                    Dim drAux As DataRow = oDSRec.Tables("canal_rec").NewRow
+                    drAux("linea")       = 0
+                    drAux("codigo")      = dr("canal").ToString
+                    drAux("descripcion") = dr("canal").ToString
+                    drAux("Porcentaje")  = dr("porcentaje")
+                    oDSRec.Tables("canal_rec").Rows.Add(drAux)
+                Next
+            End If
+
+        Catch ex As Exception
+            MessageBox.Show("Error al cargar detalle: " & ex.Message, "Recurrentes", MessageBoxButtons.OK, MessageBoxIcon.Error)
+        Finally
+            Otrans.close()
+            Otrans = Nothing
+        End Try
+    End Sub
+
+    Private Sub btnGuardarRecurrente_Click(sender As Object, e As EventArgs) Handles btnGuardarRecurrente.Click
+        If idPlantillaEditando <= 0 Then Exit Sub
+
+        If oDSRec.Tables("detalle_rec").Select("", "", DataViewRowState.CurrentRows).Length = 0 Then
+            MessageBox.Show("Debe tener al menos una línea de detalle.", "Recurrente", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+            Exit Sub
+        End If
+        If oDSRec.Tables("ccosto_rec").Select("", "", DataViewRowState.CurrentRows).Length = 0 Then
+            MessageBox.Show("Debe tener al menos un centro de costo.", "Recurrente", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+            Exit Sub
+        End If
+        If oDSRec.Tables("gasto_rec").Select("", "", DataViewRowState.CurrentRows).Length = 0 Then
+            MessageBox.Show("Debe tener al menos un ítem/gasto.", "Recurrente", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+            Exit Sub
+        End If
+
+        Dim Otrans As New Transaccional.Conexion("SCM")
+        Try
+            Otrans.open()
+            Otrans.Ingresa("pa_del_um_requisicion_recurrente_det " & idPlantillaEditando)
+            If Otrans.Codigo_error > 0 Then
+                MessageBox.Show("Error al limpiar detalle: " & Otrans.descripcion_error, "Recurrente", MessageBoxButtons.OK, MessageBoxIcon.Error)
+                Exit Try
+            End If
+
+            For Each dr As DataRow In oDSRec.Tables("detalle_rec").Select("", "", DataViewRowState.CurrentRows)
+                If dr("linea").ToString = "0" Then Continue For
+                Otrans.Ingresa("pa_ins_um_requisicion_recurrente_det " &
+                    idPlantillaEditando & "," & dr("linea").ToString & "," &
+                    "'" & dr("codigo").ToString.Replace("'", "''") & "'," &
+                    "'" & dr("descripcion").ToString.Replace("'", "''") & "'," &
+                    "'" & dr("observaciones").ToString.Replace("'", "''") & "'," &
+                    dr("cantidad").ToString & "," &
+                    dr("precio").ToString)
+            Next
+
+            For Each dr As DataRow In oDSRec.Tables("ccosto_rec").Select("", "", DataViewRowState.CurrentRows)
+                Otrans.Ingresa("pa_ins_um_requisicion_recurrente_dist " &
+                    idPlantillaEditando & "," & dr("linea").ToString & "," &
+                    "'" & dr("codigo").ToString & "'," &
+                    "'CON_CCOSTO'," &
+                    "'" & dr("codigo").ToString & "'," &
+                    dr("Porcentaje").ToString & ",0,0,null")
+            Next
+
+            For Each dr As DataRow In oDSRec.Tables("marca_rec").Select("", "", DataViewRowState.CurrentRows)
+                Otrans.Ingresa("pa_ins_um_requisicion_recurrente_dist " &
+                    idPlantillaEditando & "," & dr("linea").ToString & "," &
+                    "'" & dr("codigo").ToString & "'," &
+                    "'CON_MARCA'," &
+                    "'" & dr("codigo").ToString & "'," &
+                    dr("Porcentaje").ToString & "," &
+                    dr("Porcentaje_Empresa").ToString & "," &
+                    dr("Porcentaje_Socio").ToString & ",null")
+            Next
+
+            For Each dr As DataRow In oDSRec.Tables("gasto_rec").Select("", "", DataViewRowState.CurrentRows)
+                Otrans.Ingresa("pa_ins_um_requisicion_recurrente_dist " &
+                    idPlantillaEditando & "," & dr("linea").ToString & "," &
+                    "'" & dr("codigo").ToString & "'," &
+                    "'CON_ITEM'," &
+                    "'" & dr("codigo").ToString & "'," &
+                    dr("Porcentaje").ToString & ",0,0," &
+                    "'" & dr("tipo").ToString & "'")
+            Next
+
+            For Each dr As DataRow In oDSRec.Tables("canal_rec").Select("", "", DataViewRowState.CurrentRows)
+                Otrans.Ingresa("pa_ins_um_requisicion_recurrente_canal " &
+                    idPlantillaEditando & "," &
+                    "'" & dr("codigo").ToString & "'," &
+                    dr("Porcentaje").ToString)
+            Next
+
+            MessageBox.Show("Plantilla actualizada correctamente.", "Recurrente", MessageBoxButtons.OK, MessageBoxIcon.Information)
+            idPlantillaEditando = 0
+            Me.TabControl1.SelectedTab = Me.TabPageRecurrentes
+            llenarRecurrentes()
+
+        Catch ex As Exception
+            MessageBox.Show("Error al guardar: " & ex.Message, "Recurrente", MessageBoxButtons.OK, MessageBoxIcon.Error)
+        Finally
+            Otrans.close()
+            Otrans = Nothing
+        End Try
+    End Sub
+
+    Private Sub btnCancelarEdicionRec_Click(sender As Object, e As EventArgs) Handles btnCancelarEdicionRec.Click
+        idPlantillaEditando = 0
+        Me.TabControl1.SelectedTab = Me.TabPageRecurrentes
+    End Sub
+
     Private Sub llenarRecurrentes()
         Dim Otrans As New Transaccional.Conexion("SCM")
         Dim dt As DataTable
@@ -3310,6 +3528,9 @@ Public Class frmRequisiciones
     End Sub
 
     ' -- Botón Recurrente en TabPage1: convierte el detalle actual en plantilla
+    ' id de la plantilla que está siendo editada en TabPageEditarRecurrente
+    Private idPlantillaEditando As Integer = 0
+
     Private Sub btnRecurrente_Click(sender As Object, e As EventArgs) Handles btnRecurrente.Click
         guardarComoPlantilla()
     End Sub
@@ -3335,7 +3556,7 @@ Public Class frmRequisiciones
         frm.precargarDatos(
             Me.txtProveedorRequi.Text.Trim,
             Me.txtNombreProveedorRequi.Text.Trim,
-            Me.cmb_Moneda.SelectedItem.ToString,
+            If(Me.cmb_Moneda.SelectedValue IsNot Nothing, Me.cmb_Moneda.SelectedValue.ToString, ""),
             Me.txtObservacionesGenerales.Text.Trim
         )
 
@@ -3356,24 +3577,33 @@ Public Class frmRequisiciones
                     sNotificar &= dr.Item("usuario").ToString
                 Next
 
+                Dim sCodigo As String = frm.txtCodigo.Text.Trim
+
                 Dim lsSQL As String = "pa_ins_um_requisicion_recurrente " &
                     "'" & gs_empresa & "'," &
-                    "'" & frm.txtCodigo.Text.Trim & "'," &
+                    "'" & sCodigo & "'," &
                     "'" & frm.txtDescripcion.Text.Trim & "'," &
                     "'" & frm.txtProveedor.Text.Trim & "'," &
-                    "'" & frm.cmbMoneda.SelectedItem.ToString & "'," &
+                    "'" & If(frm.cmbMoneda.SelectedItem IsNot Nothing, frm.cmbMoneda.SelectedItem.ToString, "") & "'," &
                     "'" & frm.txtObservaciones.Text.Trim & "'," &
                     "'" & frm.dtpFechaInicio.Value.ToString("yyyyMMdd") & "'," &
                     sFechaVencLic & "," &
                     "'" & frm.dtpFechaVencRecurrencia.Value.ToString("yyyyMMdd") & "'," &
                     frm.nudDiaFactura.Value.ToString & "," &
-                    "'" & frm.cmbFrecuencia.SelectedItem.ToString & "'," &
+                    "'" & If(frm.cmbFrecuencia.SelectedItem IsNot Nothing, frm.cmbFrecuencia.SelectedItem.ToString, "") & "'," &
                     frm.nudDiasAnticipacion.Value.ToString & "," &
                     "'" & frm.txtUsuarioResponsable.Text.Trim & "'," &
                     "'" & sNotificar & "'," &
                     "'" & gs_usuario & "'"
 
-                Dim dtResult As DataTable = Otrans.Obtiene(lsSQL)
+                Otrans.Ingresa(lsSQL)
+                If Otrans.Codigo_error > 0 Then
+                    MessageBox.Show("Error al insertar plantilla: " & Otrans.descripcion_error, "Recurrente", MessageBoxButtons.OK, MessageBoxIcon.Error)
+                    Exit Try
+                End If
+
+                ' Leer el ID recién creado
+                Dim dtResult As DataTable = Otrans.Obtiene("pa_sel_um_requisicion_recurrenteId_byCodigo '" & gs_empresa & "','" & sCodigo & "'")
                 Dim nuevoId As Integer = 0
                 If dtResult IsNot Nothing AndAlso dtResult.Rows.Count > 0 Then
                     nuevoId = CInt(dtResult.Rows(0).Item("id_recurrente"))
@@ -3381,18 +3611,19 @@ Public Class frmRequisiciones
 
                 If nuevoId > 0 Then
                     ' Guardar detalle desde oDS actual
-                    For Each dr As DataRow In oDS.Tables("detalle").Rows
+                    For Each dr As DataRow In oDS.Tables("detalle").Select("", "", DataViewRowState.CurrentRows)
+                        If dr.Item("linea").ToString = "0" Then Continue For
                         Otrans.Ingresa("pa_ins_um_requisicion_recurrente_det " &
                             nuevoId & "," & dr.Item("linea").ToString & "," &
-                            "'" & dr.Item("codigo").ToString & "'," &
-                            "'" & dr.Item("descripcion").ToString & "'," &
-                            "'" & dr.Item("observaciones").ToString & "'," &
+                            "'" & dr.Item("codigo").ToString.Replace("'", "''") & "'," &
+                            "'" & dr.Item("descripcion").ToString.Replace("'", "''") & "'," &
+                            "'" & dr.Item("observaciones").ToString.Replace("'", "''") & "'," &
                             dr.Item("cantidad").ToString & "," &
                             dr.Item("precio").ToString)
                     Next
 
                     ' Centro de costo
-                    For Each dr As DataRow In oDS.Tables("centro_costo").Rows
+                    For Each dr As DataRow In oDS.Tables("centro_costo").Select("", "", DataViewRowState.CurrentRows)
                         Otrans.Ingresa("pa_ins_um_requisicion_recurrente_dist " &
                             nuevoId & "," & dr.Item("linea").ToString & "," &
                             "'" & dr.Item("codigo").ToString & "'," &
@@ -3402,7 +3633,7 @@ Public Class frmRequisiciones
                     Next
 
                     ' Marca
-                    For Each dr As DataRow In oDS.Tables("marca").Rows
+                    For Each dr As DataRow In oDS.Tables("marca").Select("", "", DataViewRowState.CurrentRows)
                         Otrans.Ingresa("pa_ins_um_requisicion_recurrente_dist " &
                             nuevoId & "," & dr.Item("linea").ToString & "," &
                             "'" & dr.Item("codigo").ToString & "'," &
@@ -3414,7 +3645,7 @@ Public Class frmRequisiciones
                     Next
 
                     ' Gasto/Ítem
-                    For Each dr As DataRow In oDS.Tables("gasto").Rows
+                    For Each dr As DataRow In oDS.Tables("gasto").Select("", "", DataViewRowState.CurrentRows)
                         Otrans.Ingresa("pa_ins_um_requisicion_recurrente_dist " &
                             nuevoId & "," & dr.Item("linea").ToString & "," &
                             "'" & dr.Item("codigo").ToString & "'," &
@@ -3425,7 +3656,7 @@ Public Class frmRequisiciones
                     Next
 
                     ' Canal
-                    For Each dr As DataRow In oDS.Tables("canal").Rows
+                    For Each dr As DataRow In oDS.Tables("canal").Select("", "", DataViewRowState.CurrentRows)
                         Otrans.Ingresa("pa_ins_um_requisicion_recurrente_canal " &
                             nuevoId & "," &
                             "'" & dr.Item("codigo").ToString & "'," &
@@ -3447,6 +3678,23 @@ Public Class frmRequisiciones
     End Sub
 
     ' -- Botón Editar Plantilla
+    Private Sub btnActualizarRecurrentes_Click(sender As Object, e As EventArgs) Handles btnActualizarRecurrentes.Click
+        llenarRecurrentes()
+    End Sub
+
+    Private Sub btnEditarDetallePlantilla_Click(sender As Object, e As EventArgs) Handles btnEditarDetallePlantilla.Click
+        Try
+            If Me.dgvRecurrentes.CurrentRow Is Nothing Then Exit Sub
+            Dim id As Integer = CInt(Me.dgvRecurrentes.Item("id_recurrente", Me.dgvRecurrentes.CurrentRow.Index).Value)
+            Dim sDesc As String = Me.dgvRecurrentes.Item("descripcion", Me.dgvRecurrentes.CurrentRow.Index).Value.ToString
+            idPlantillaEditando = id
+            cargarDetallePlantillaEnTab(id, sDesc)
+            Me.TabControl1.SelectedTab = Me.TabPageEditarRecurrente
+        Catch ex As Exception
+            MessageBox.Show("Error: " & ex.Message, "Recurrentes", MessageBoxButtons.OK, MessageBoxIcon.Error)
+        End Try
+    End Sub
+
     Private Sub btnEditarPlantilla_Click(sender As Object, e As EventArgs) Handles btnEditarPlantilla.Click
         Try
             If Me.dgvRecurrentes.CurrentRow Is Nothing Then Exit Sub
@@ -3458,6 +3706,7 @@ Public Class frmRequisiciones
             frm = Nothing
             llenarRecurrentes()
         Catch ex As Exception
+            MessageBox.Show("Error al abrir editor: " & ex.Message, "Recurrentes", MessageBoxButtons.OK, MessageBoxIcon.Error)
         End Try
     End Sub
 
@@ -3520,23 +3769,28 @@ Public Class frmRequisiciones
 
             Try
                 Otrans.open()
-                Dim lsSQL As String = "pa_gen_um_requisicion_desde_recurrente " & idRecurrente & ",'" & gs_empresa & "','" & gs_usuario & "'"
-                dt = Otrans.Obtiene(lsSQL)
+
+                ' 1. Generar la requisición
+                Otrans.Ingresa("pa_gen_um_requisicion_desde_recurrente " & idRecurrente & ",'" & gs_empresa & "','" & gs_usuario & "'")
+                If Otrans.Codigo_error > 0 Then
+                    MessageBox.Show("Error al generar: " & Otrans.descripcion_error, "Recurrentes", MessageBoxButtons.OK, MessageBoxIcon.Error)
+                    Exit Try
+                End If
+
+                ' 2. Leer el número generado
+                dt = Otrans.Obtiene("pa_sel_um_requisicion_last_numero '" & gs_empresa & "'," & idRecurrente)
+                Dim sNumero As String = ""
+                If dt IsNot Nothing AndAlso dt.Rows.Count > 0 Then
+                    sNumero = dt.Rows(0).Item("numero").ToString.Trim
+                End If
+
+                MessageBox.Show("Requisición " & sNumero & " generada correctamente.", "Recurrentes", MessageBoxButtons.OK, MessageBoxIcon.Information)
+                llenarListado()
+                llenarRecurrentes()
             Finally
                 Otrans.close()
                 Otrans = Nothing
             End Try
-
-            If dt IsNot Nothing AndAlso dt.Rows.Count > 0 Then
-                Dim sNumero As String = dt.Rows(0).Item(0).ToString
-                If sNumero.Length > 0 Then
-                    MessageBox.Show("Requisición " & sNumero & " generada correctamente.", "Recurrentes", MessageBoxButtons.OK, MessageBoxIcon.Information)
-                    llenarListado()
-                    llenarRecurrentes()
-                Else
-                    MessageBox.Show("No se pudo generar la requisición.", "Recurrentes", MessageBoxButtons.OK, MessageBoxIcon.Warning)
-                End If
-            End If
 
         Catch ex As Exception
             MessageBox.Show("Error al generar requisición: " & ex.Message, "Recurrentes", MessageBoxButtons.OK, MessageBoxIcon.Error)

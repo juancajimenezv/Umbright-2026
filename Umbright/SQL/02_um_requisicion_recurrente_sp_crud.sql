@@ -70,17 +70,28 @@ BEGIN
             @PUsuarioCrea, GETDATE()
         )
 
-        DECLARE @NuevoId INT = SCOPE_IDENTITY()
-        SELECT @NuevoId AS id_recurrente
-
         COMMIT TRANSACTION
     END TRY
     BEGIN CATCH
         ROLLBACK TRANSACTION
-        SELECT -1 AS id_recurrente
         DECLARE @MsgError VARCHAR(500) = ERROR_MESSAGE()
         RAISERROR('pa_ins_um_requisicion_recurrente: %s', 16, 1, @MsgError)
     END CATCH
+END
+GO
+
+-- ----------------------------------------------------------------------------
+-- SP auxiliar: obtener id_recurrente por empresa+codigo (usado tras el INSERT)
+-- ----------------------------------------------------------------------------
+CREATE PROCEDURE [flexline].[pa_sel_um_requisicion_recurrenteId_byCodigo]
+    @PEmpresa   VARCHAR(25),
+    @PCodigo    VARCHAR(20)
+AS
+BEGIN
+    SET NOCOUNT ON
+    SELECT id_recurrente
+    FROM [flexline].[um_requisicion_recurrente]
+    WHERE empresa = @PEmpresa AND codigo = @PCodigo
 END
 GO
 
