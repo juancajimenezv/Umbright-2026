@@ -1129,6 +1129,12 @@
     <Compile Include="SCM\frmRequisiconesDetalle.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="SCM\frmRequisicionRecurrente.Designer.vb">
+      <DependentUpon>frmRequisicionRecurrente.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SCM\frmRequisicionRecurrente.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="SCM\frm_complemento_divinos.Designer.vb">
       <DependentUpon>frm_complemento_divinos.vb</DependentUpon>
     </Compile>

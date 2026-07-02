@@ -59,6 +59,29 @@ Partial Class frmRequisiciones
         Dim DataGridViewCellStyle33 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.TabControl1 = New System.Windows.Forms.TabControl()
         Me.TabPage1 = New System.Windows.Forms.TabPage()
+        Me.btnRecurrente = New System.Windows.Forms.Button()
+        Me.TabPageRecurrentes = New System.Windows.Forms.TabPage()
+        Me.TabPageEditarRecurrente = New System.Windows.Forms.TabPage()
+        Me.TabCtrlRec = New System.Windows.Forms.TabControl()
+        Me.TabRecDetalle = New System.Windows.Forms.TabPage()
+        Me.TabRecDist = New System.Windows.Forms.TabPage()
+        Me.TabRecCanal = New System.Windows.Forms.TabPage()
+        Me.dgvDetalleRec = New System.Windows.Forms.DataGridView()
+        Me.dgvCCostoRec = New System.Windows.Forms.DataGridView()
+        Me.dgvMarcaRec = New System.Windows.Forms.DataGridView()
+        Me.dgvGastoRec = New System.Windows.Forms.DataGridView()
+        Me.dgvCanalRec = New System.Windows.Forms.DataGridView()
+        Me.lblPlantillaEditando = New System.Windows.Forms.Label()
+        Me.btnGuardarRecurrente = New System.Windows.Forms.Button()
+        Me.btnCancelarEdicionRec = New System.Windows.Forms.Button()
+        Me.dgvRecurrentes = New System.Windows.Forms.DataGridView()
+        Me.btnNuevaPlantilla = New System.Windows.Forms.Button()
+        Me.btnEditarPlantilla = New System.Windows.Forms.Button()
+        Me.btnPausarPlantilla = New System.Windows.Forms.Button()
+        Me.btnEliminarPlantilla = New System.Windows.Forms.Button()
+        Me.btnGenerarRequisicion = New System.Windows.Forms.Button()
+        Me.btnActualizarRecurrentes = New System.Windows.Forms.Button()
+        Me.btnEditarDetallePlantilla = New System.Windows.Forms.Button()
         Me.TabControl2 = New System.Windows.Forms.TabControl()
         Me.TabPage3 = New System.Windows.Forms.TabPage()
         Me.dgvCanal = New System.Windows.Forms.DataGridView()
@@ -194,6 +217,18 @@ Partial Class frmRequisiciones
         Me.GroupBox1.SuspendLayout()
         Me.MenuStrip1.SuspendLayout()
         Me.TabPage2.SuspendLayout()
+        Me.TabPageRecurrentes.SuspendLayout()
+        CType(Me.dgvDetalleRec, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.dgvCCostoRec, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.dgvMarcaRec, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.dgvGastoRec, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.dgvCanalRec, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.TabPageEditarRecurrente.SuspendLayout()
+        Me.TabCtrlRec.SuspendLayout()
+        Me.TabRecDetalle.SuspendLayout()
+        Me.TabRecDist.SuspendLayout()
+        Me.TabRecCanal.SuspendLayout()
+        CType(Me.dgvRecurrentes, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.dgvListado, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -204,6 +239,8 @@ Partial Class frmRequisiciones
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.TabControl1.Controls.Add(Me.TabPage1)
         Me.TabControl1.Controls.Add(Me.TabPage2)
+        Me.TabControl1.Controls.Add(Me.TabPageRecurrentes)
+        Me.TabControl1.Controls.Add(Me.TabPageEditarRecurrente)
         Me.TabControl1.Location = New System.Drawing.Point(0, 0)
         Me.TabControl1.Name = "TabControl1"
         Me.TabControl1.SelectedIndex = 0
@@ -227,6 +264,7 @@ Partial Class frmRequisiciones
         Me.TabPage1.Controls.Add(Me.lblEstadoActual)
         Me.TabPage1.Controls.Add(Me.Label12)
         Me.TabPage1.Controls.Add(Me.Label9)
+        Me.TabPage1.Controls.Add(Me.btnRecurrente)
         Me.TabPage1.Controls.Add(Me.btnPlantilla)
         Me.TabPage1.Controls.Add(Me.btnNuevo)
         Me.TabPage1.Controls.Add(Me.btnCalendarizar)
@@ -892,6 +930,21 @@ Partial Class frmRequisiciones
         Me.Label9.Size = New System.Drawing.Size(44, 14)
         Me.Label9.TabIndex = 9
         Me.Label9.Text = "Estado"
+        '
+        'btnRecurrente
+        '
+        Me.btnRecurrente.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.btnRecurrente.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(120, Byte), Integer), CType(CType(215, Byte), Integer))
+        Me.btnRecurrente.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnRecurrente.Font = New System.Drawing.Font("Arial", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnRecurrente.ForeColor = System.Drawing.Color.White
+        Me.btnRecurrente.Location = New System.Drawing.Point(588, 35)
+        Me.btnRecurrente.Name = "btnRecurrente"
+        Me.btnRecurrente.Size = New System.Drawing.Size(68, 64)
+        Me.btnRecurrente.TabIndex = 99
+        Me.btnRecurrente.Text = "Recurrente"
+        Me.btnRecurrente.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.btnRecurrente.UseVisualStyleBackColor = False
         '
         'btnPlantilla
         '
@@ -1572,6 +1625,256 @@ Partial Class frmRequisiciones
         Me.TabPage2.TabIndex = 1
         Me.TabPage2.Text = "Listado"
         '
+        'TabPageRecurrentes
+        '
+        Me.TabPageRecurrentes.BackColor = System.Drawing.Color.FromArgb(CType(CType(233, Byte), Integer), CType(CType(234, Byte), Integer), CType(CType(204, Byte), Integer))
+        Me.TabPageRecurrentes.Controls.Add(Me.dgvRecurrentes)
+        Me.TabPageRecurrentes.Controls.Add(Me.btnEditarPlantilla)
+        Me.TabPageRecurrentes.Controls.Add(Me.btnPausarPlantilla)
+        Me.TabPageRecurrentes.Controls.Add(Me.btnEliminarPlantilla)
+        Me.TabPageRecurrentes.Controls.Add(Me.btnGenerarRequisicion)
+        Me.TabPageRecurrentes.Controls.Add(Me.btnEditarDetallePlantilla)
+        Me.TabPageRecurrentes.Controls.Add(Me.btnActualizarRecurrentes)
+        Me.TabPageRecurrentes.Location = New System.Drawing.Point(4, 22)
+        Me.TabPageRecurrentes.Name = "TabPageRecurrentes"
+        Me.TabPageRecurrentes.Padding = New System.Windows.Forms.Padding(3)
+        Me.TabPageRecurrentes.Size = New System.Drawing.Size(1040, 674)
+        Me.TabPageRecurrentes.TabIndex = 2
+        Me.TabPageRecurrentes.Text = "Recurrentes"
+        '
+        'dgvRecurrentes
+        '
+        Me.dgvRecurrentes.AllowUserToAddRows = False
+        Me.dgvRecurrentes.AllowUserToDeleteRows = False
+        Me.dgvRecurrentes.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.dgvRecurrentes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.dgvRecurrentes.Location = New System.Drawing.Point(6, 40)
+        Me.dgvRecurrentes.Name = "dgvRecurrentes"
+        Me.dgvRecurrentes.ReadOnly = True
+        Me.dgvRecurrentes.RowHeadersWidth = 25
+        Me.dgvRecurrentes.SelectionMode = DataGridViewSelectionMode.FullRowSelect
+        Me.dgvRecurrentes.Size = New System.Drawing.Size(1028, 628)
+        Me.dgvRecurrentes.TabIndex = 0
+        '
+        'btnNuevaPlantilla
+        '
+        Me.btnNuevaPlantilla.Location = New System.Drawing.Point(6, 6)
+        Me.btnNuevaPlantilla.Name = "btnNuevaPlantilla"
+        Me.btnNuevaPlantilla.Size = New System.Drawing.Size(130, 28)
+        Me.btnNuevaPlantilla.TabIndex = 1
+        Me.btnNuevaPlantilla.Text = "Nueva Plantilla"
+        Me.btnNuevaPlantilla.UseVisualStyleBackColor = True
+        '
+        'btnEditarPlantilla
+        '
+        Me.btnEditarPlantilla.Location = New System.Drawing.Point(6, 6)
+        Me.btnEditarPlantilla.Name = "btnEditarPlantilla"
+        Me.btnEditarPlantilla.Size = New System.Drawing.Size(100, 28)
+        Me.btnEditarPlantilla.TabIndex = 2
+        Me.btnEditarPlantilla.Text = "Editar"
+        Me.btnEditarPlantilla.UseVisualStyleBackColor = True
+        '
+        'btnPausarPlantilla
+        '
+        Me.btnPausarPlantilla.Location = New System.Drawing.Point(112, 6)
+        Me.btnPausarPlantilla.Name = "btnPausarPlantilla"
+        Me.btnPausarPlantilla.Size = New System.Drawing.Size(120, 28)
+        Me.btnPausarPlantilla.TabIndex = 3
+        Me.btnPausarPlantilla.Text = "Pausar / Activar"
+        Me.btnPausarPlantilla.UseVisualStyleBackColor = True
+        '
+        'btnEliminarPlantilla
+        '
+        Me.btnEliminarPlantilla.Location = New System.Drawing.Point(238, 6)
+        Me.btnEliminarPlantilla.Name = "btnEliminarPlantilla"
+        Me.btnEliminarPlantilla.Size = New System.Drawing.Size(100, 28)
+        Me.btnEliminarPlantilla.TabIndex = 4
+        Me.btnEliminarPlantilla.Text = "Eliminar"
+        Me.btnEliminarPlantilla.UseVisualStyleBackColor = True
+        '
+        'btnGenerarRequisicion
+        '
+        Me.btnGenerarRequisicion.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(120, Byte), Integer), CType(CType(215, Byte), Integer))
+        Me.btnGenerarRequisicion.ForeColor = System.Drawing.Color.White
+        Me.btnGenerarRequisicion.Location = New System.Drawing.Point(364, 6)
+        Me.btnGenerarRequisicion.Name = "btnGenerarRequisicion"
+        Me.btnGenerarRequisicion.Size = New System.Drawing.Size(170, 28)
+        Me.btnGenerarRequisicion.TabIndex = 5
+        Me.btnGenerarRequisicion.Text = "Generar Requisición"
+        Me.btnGenerarRequisicion.UseVisualStyleBackColor = False
+        '
+        'btnEditarDetallePlantilla
+        '
+        Me.btnEditarDetallePlantilla.BackColor = System.Drawing.Color.FromArgb(255, 140, 0)
+        Me.btnEditarDetallePlantilla.ForeColor = System.Drawing.Color.White
+        Me.btnEditarDetallePlantilla.Location = New System.Drawing.Point(540, 6)
+        Me.btnEditarDetallePlantilla.Name = "btnEditarDetallePlantilla"
+        Me.btnEditarDetallePlantilla.Size = New System.Drawing.Size(130, 28)
+        Me.btnEditarDetallePlantilla.TabIndex = 7
+        Me.btnEditarDetallePlantilla.Text = "Editar Detalle"
+        Me.btnEditarDetallePlantilla.UseVisualStyleBackColor = False
+        '
+        'btnActualizarRecurrentes
+        '
+        Me.btnActualizarRecurrentes.Location = New System.Drawing.Point(676, 6)
+        Me.btnActualizarRecurrentes.Name = "btnActualizarRecurrentes"
+        Me.btnActualizarRecurrentes.Size = New System.Drawing.Size(90, 28)
+        Me.btnActualizarRecurrentes.TabIndex = 6
+        Me.btnActualizarRecurrentes.Text = "Actualizar"
+        Me.btnActualizarRecurrentes.UseVisualStyleBackColor = True
+        '
+        'TabPageEditarRecurrente
+        '
+        Me.TabPageEditarRecurrente.Controls.Add(Me.lblPlantillaEditando)
+        Me.TabPageEditarRecurrente.Controls.Add(Me.TabCtrlRec)
+        Me.TabPageEditarRecurrente.Controls.Add(Me.btnGuardarRecurrente)
+        Me.TabPageEditarRecurrente.Controls.Add(Me.btnCancelarEdicionRec)
+        Me.TabPageEditarRecurrente.Location = New System.Drawing.Point(4, 22)
+        Me.TabPageEditarRecurrente.Name = "TabPageEditarRecurrente"
+        Me.TabPageEditarRecurrente.Size = New System.Drawing.Size(1051, 643)
+        Me.TabPageEditarRecurrente.TabIndex = 3
+        Me.TabPageEditarRecurrente.Text = "Editar Plantilla"
+        '
+        'lblPlantillaEditando
+        '
+        Me.lblPlantillaEditando.AutoSize = False
+        Me.lblPlantillaEditando.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold)
+        Me.lblPlantillaEditando.ForeColor = System.Drawing.Color.FromArgb(255, 140, 0)
+        Me.lblPlantillaEditando.Location = New System.Drawing.Point(6, 8)
+        Me.lblPlantillaEditando.Name = "lblPlantillaEditando"
+        Me.lblPlantillaEditando.Size = New System.Drawing.Size(800, 20)
+        Me.lblPlantillaEditando.Text = "Editando plantilla: "
+        '
+        'TabCtrlRec
+        '
+        Me.TabCtrlRec.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) Or System.Windows.Forms.AnchorStyles.Left) Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.TabCtrlRec.Controls.Add(Me.TabRecDetalle)
+        Me.TabCtrlRec.Controls.Add(Me.TabRecDist)
+        Me.TabCtrlRec.Controls.Add(Me.TabRecCanal)
+        Me.TabCtrlRec.Location = New System.Drawing.Point(3, 32)
+        Me.TabCtrlRec.Name = "TabCtrlRec"
+        Me.TabCtrlRec.SelectedIndex = 0
+        Me.TabCtrlRec.Size = New System.Drawing.Size(1045, 565)
+        Me.TabCtrlRec.TabIndex = 0
+        '
+        'TabRecDetalle
+        '
+        Me.TabRecDetalle.Controls.Add(Me.dgvDetalleRec)
+        Me.TabRecDetalle.Location = New System.Drawing.Point(4, 22)
+        Me.TabRecDetalle.Name = "TabRecDetalle"
+        Me.TabRecDetalle.Size = New System.Drawing.Size(1037, 539)
+        Me.TabRecDetalle.TabIndex = 0
+        Me.TabRecDetalle.Text = "Detalle"
+        '
+        'dgvDetalleRec
+        '
+        Me.dgvDetalleRec.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) Or System.Windows.Forms.AnchorStyles.Left) Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.dgvDetalleRec.AllowUserToAddRows = True
+        Me.dgvDetalleRec.AllowUserToDeleteRows = True
+        Me.dgvDetalleRec.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.dgvDetalleRec.Location = New System.Drawing.Point(0, 0)
+        Me.dgvDetalleRec.Name = "dgvDetalleRec"
+        Me.dgvDetalleRec.RowHeadersWidth = 25
+        Me.dgvDetalleRec.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
+        Me.dgvDetalleRec.Size = New System.Drawing.Size(1037, 539)
+        Me.dgvDetalleRec.TabIndex = 0
+        '
+        'TabRecDist
+        '
+        Me.TabRecDist.Controls.Add(Me.dgvCCostoRec)
+        Me.TabRecDist.Controls.Add(Me.dgvMarcaRec)
+        Me.TabRecDist.Controls.Add(Me.dgvGastoRec)
+        Me.TabRecDist.Location = New System.Drawing.Point(4, 22)
+        Me.TabRecDist.Name = "TabRecDist"
+        Me.TabRecDist.Size = New System.Drawing.Size(1037, 539)
+        Me.TabRecDist.TabIndex = 1
+        Me.TabRecDist.Text = "Centro Costo / Marca / Gasto"
+        '
+        'dgvCCostoRec
+        '
+        Me.dgvCCostoRec.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.dgvCCostoRec.AllowUserToAddRows = True
+        Me.dgvCCostoRec.AllowUserToDeleteRows = True
+        Me.dgvCCostoRec.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.dgvCCostoRec.Location = New System.Drawing.Point(0, 0)
+        Me.dgvCCostoRec.Name = "dgvCCostoRec"
+        Me.dgvCCostoRec.RowHeadersWidth = 25
+        Me.dgvCCostoRec.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
+        Me.dgvCCostoRec.Size = New System.Drawing.Size(1037, 170)
+        Me.dgvCCostoRec.TabIndex = 0
+        '
+        'dgvMarcaRec
+        '
+        Me.dgvMarcaRec.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.dgvMarcaRec.AllowUserToAddRows = True
+        Me.dgvMarcaRec.AllowUserToDeleteRows = True
+        Me.dgvMarcaRec.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.dgvMarcaRec.Location = New System.Drawing.Point(0, 175)
+        Me.dgvMarcaRec.Name = "dgvMarcaRec"
+        Me.dgvMarcaRec.RowHeadersWidth = 25
+        Me.dgvMarcaRec.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
+        Me.dgvMarcaRec.Size = New System.Drawing.Size(1037, 170)
+        Me.dgvMarcaRec.TabIndex = 1
+        '
+        'dgvGastoRec
+        '
+        Me.dgvGastoRec.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.dgvGastoRec.AllowUserToAddRows = True
+        Me.dgvGastoRec.AllowUserToDeleteRows = True
+        Me.dgvGastoRec.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.dgvGastoRec.Location = New System.Drawing.Point(0, 350)
+        Me.dgvGastoRec.Name = "dgvGastoRec"
+        Me.dgvGastoRec.RowHeadersWidth = 25
+        Me.dgvGastoRec.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
+        Me.dgvGastoRec.Size = New System.Drawing.Size(1037, 170)
+        Me.dgvGastoRec.TabIndex = 2
+        '
+        'TabRecCanal
+        '
+        Me.TabRecCanal.Controls.Add(Me.dgvCanalRec)
+        Me.TabRecCanal.Location = New System.Drawing.Point(4, 22)
+        Me.TabRecCanal.Name = "TabRecCanal"
+        Me.TabRecCanal.Size = New System.Drawing.Size(1037, 539)
+        Me.TabRecCanal.TabIndex = 2
+        Me.TabRecCanal.Text = "Canal"
+        '
+        'dgvCanalRec
+        '
+        Me.dgvCanalRec.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) Or System.Windows.Forms.AnchorStyles.Left) Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.dgvCanalRec.AllowUserToAddRows = True
+        Me.dgvCanalRec.AllowUserToDeleteRows = True
+        Me.dgvCanalRec.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.dgvCanalRec.Location = New System.Drawing.Point(0, 0)
+        Me.dgvCanalRec.Name = "dgvCanalRec"
+        Me.dgvCanalRec.RowHeadersWidth = 25
+        Me.dgvCanalRec.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
+        Me.dgvCanalRec.Size = New System.Drawing.Size(1037, 539)
+        Me.dgvCanalRec.TabIndex = 0
+        '
+        'btnGuardarRecurrente
+        '
+        Me.btnGuardarRecurrente.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.btnGuardarRecurrente.BackColor = System.Drawing.Color.FromArgb(0, 120, 215)
+        Me.btnGuardarRecurrente.ForeColor = System.Drawing.Color.White
+        Me.btnGuardarRecurrente.Location = New System.Drawing.Point(858, 606)
+        Me.btnGuardarRecurrente.Name = "btnGuardarRecurrente"
+        Me.btnGuardarRecurrente.Size = New System.Drawing.Size(90, 30)
+        Me.btnGuardarRecurrente.TabIndex = 1
+        Me.btnGuardarRecurrente.Text = "Guardar"
+        Me.btnGuardarRecurrente.UseVisualStyleBackColor = False
+        '
+        'btnCancelarEdicionRec
+        '
+        Me.btnCancelarEdicionRec.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.btnCancelarEdicionRec.Location = New System.Drawing.Point(955, 606)
+        Me.btnCancelarEdicionRec.Name = "btnCancelarEdicionRec"
+        Me.btnCancelarEdicionRec.Size = New System.Drawing.Size(90, 30)
+        Me.btnCancelarEdicionRec.TabIndex = 2
+        Me.btnCancelarEdicionRec.Text = "Cancelar"
+        Me.btnCancelarEdicionRec.UseVisualStyleBackColor = True
+        '
         'chkMostrarTodo
         '
         Me.chkMostrarTodo.AutoSize = True
@@ -1734,7 +2037,19 @@ Partial Class frmRequisiciones
         Me.MenuStrip1.PerformLayout()
         Me.TabPage2.ResumeLayout(False)
         Me.TabPage2.PerformLayout()
+        Me.TabPageRecurrentes.ResumeLayout(False)
+        CType(Me.dgvRecurrentes, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.dgvListado, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.dgvDetalleRec, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.dgvCCostoRec, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.dgvMarcaRec, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.dgvGastoRec, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.dgvCanalRec, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.TabRecDetalle.ResumeLayout(False)
+        Me.TabRecDist.ResumeLayout(False)
+        Me.TabRecCanal.ResumeLayout(False)
+        Me.TabCtrlRec.ResumeLayout(False)
+        Me.TabPageEditarRecurrente.ResumeLayout(False)
         Me.ResumeLayout(False)
 
     End Sub
@@ -1852,4 +2167,27 @@ Partial Class frmRequisiciones
     Friend WithEvents DGVItemC As DataGridView
     Friend WithEvents cmbAfectaInventario As ComboBox
     Friend WithEvents Label22 As Label
+    Friend WithEvents btnRecurrente As Button
+    Friend WithEvents TabPageRecurrentes As TabPage
+    Friend WithEvents dgvRecurrentes As DataGridView
+    Friend WithEvents btnNuevaPlantilla As Button
+    Friend WithEvents btnEditarPlantilla As Button
+    Friend WithEvents btnPausarPlantilla As Button
+    Friend WithEvents btnEliminarPlantilla As Button
+    Friend WithEvents btnGenerarRequisicion As Button
+    Friend WithEvents btnActualizarRecurrentes As Button
+    Friend WithEvents btnEditarDetallePlantilla As Button
+    Friend WithEvents TabPageEditarRecurrente As TabPage
+    Friend WithEvents TabCtrlRec As TabControl
+    Friend WithEvents TabRecDetalle As TabPage
+    Friend WithEvents TabRecDist As TabPage
+    Friend WithEvents TabRecCanal As TabPage
+    Friend WithEvents dgvDetalleRec As DataGridView
+    Friend WithEvents dgvCCostoRec As DataGridView
+    Friend WithEvents dgvMarcaRec As DataGridView
+    Friend WithEvents dgvGastoRec As DataGridView
+    Friend WithEvents dgvCanalRec As DataGridView
+    Friend WithEvents lblPlantillaEditando As Label
+    Friend WithEvents btnGuardarRecurrente As Button
+    Friend WithEvents btnCancelarEdicionRec As Button
 End Class
