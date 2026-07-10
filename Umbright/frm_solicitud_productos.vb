@@ -289,14 +289,18 @@ Public Class frm_solicitud_productos
         Me.txt_busqueda = New System.Windows.Forms.TextBox()
         Me.dg_listado_solicitudes = New System.Windows.Forms.DataGrid()
         Me.TabPage3 = New System.Windows.Forms.TabPage()
+        Me.dgv_productos = New System.Windows.Forms.DataGridView()
+        Me.txt_filtro = New System.Windows.Forms.TextBox()
+        Me.cb_condicion = New System.Windows.Forms.ComboBox()
+        Me.cb_campos = New System.Windows.Forms.ComboBox()
         Me.TabPage4 = New System.Windows.Forms.TabPage()
         Me.dgvAprobacionCambios = New System.Windows.Forms.DataGridView()
+        Me.chkVerTodosCambios = New System.Windows.Forms.CheckBox()
+        Me.btnRefrescarCambios = New System.Windows.Forms.Button()
+        Me.btnVerDetalleCambio = New System.Windows.Forms.Button()
         Me.btnAprobarCambio = New System.Windows.Forms.Button()
         Me.btnRechazarCambio = New System.Windows.Forms.Button()
-        Me.btnRefrescarCambios = New System.Windows.Forms.Button()
-        Me.chkVerTodosCambios = New System.Windows.Forms.CheckBox()
         Me.lblEstadoCambios = New System.Windows.Forms.Label()
-        Me.btnVerDetalleCambio = New System.Windows.Forms.Button()
         Me.pnlDetCambio = New System.Windows.Forms.GroupBox()
         Me.lblDetTitulo = New System.Windows.Forms.Label()
         Me.lblDetNumero = New System.Windows.Forms.Label()
@@ -310,10 +314,6 @@ Public Class frm_solicitud_productos
         Me.lblDetMotivo = New System.Windows.Forms.Label()
         Me.lblDetSolicitante = New System.Windows.Forms.Label()
         Me.lblDetEstado = New System.Windows.Forms.Label()
-        Me.txtDetObs = New System.Windows.Forms.TextBox()
-        Me.btnDetAprobar = New System.Windows.Forms.Button()
-        Me.btnDetRechazar = New System.Windows.Forms.Button()
-        Me.btnDetCerrar = New System.Windows.Forms.Button()
         Me.lblTitEmpresa = New System.Windows.Forms.Label()
         Me.lblTitProducto = New System.Windows.Forms.Label()
         Me.lblTitGlosa = New System.Windows.Forms.Label()
@@ -326,12 +326,12 @@ Public Class frm_solicitud_productos
         Me.lblTitFecha = New System.Windows.Forms.Label()
         Me.lblDetFecha = New System.Windows.Forms.Label()
         Me.lblTitEstado = New System.Windows.Forms.Label()
+        Me.txtDetObs = New System.Windows.Forms.TextBox()
+        Me.btnDetAprobar = New System.Windows.Forms.Button()
+        Me.btnDetRechazar = New System.Windows.Forms.Button()
+        Me.btnDetCerrar = New System.Windows.Forms.Button()
         Me.lblTitAprobadoPor = New System.Windows.Forms.Label()
         Me.lblDetAprobadoPor = New System.Windows.Forms.Label()
-        Me.dgv_productos = New System.Windows.Forms.DataGridView()
-        Me.txt_filtro = New System.Windows.Forms.TextBox()
-        Me.cb_condicion = New System.Windows.Forms.ComboBox()
-        Me.cb_campos = New System.Windows.Forms.ComboBox()
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
         Me.ToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuAyuda = New System.Windows.Forms.ToolStripMenuItem()
@@ -354,10 +354,10 @@ Public Class frm_solicitud_productos
         Me.TabPage2.SuspendLayout()
         CType(Me.dg_listado_solicitudes, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TabPage3.SuspendLayout()
-        Me.TabPage4.SuspendLayout()
-        Me.pnlDetCambio.SuspendLayout()
-        CType(Me.dgvAprobacionCambios, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.dgv_productos, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.TabPage4.SuspendLayout()
+        CType(Me.dgvAprobacionCambios, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.pnlDetCambio.SuspendLayout()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -410,7 +410,7 @@ Public Class frm_solicitud_productos
         Me.GroupBox4.Controls.Add(Me.btn_guardar)
         Me.GroupBox4.Controls.Add(Me.btn_nuevo)
         Me.GroupBox4.Controls.Add(Me.btn_imprimir)
-        Me.GroupBox4.Location = New System.Drawing.Point(779, -19)
+        Me.GroupBox4.Location = New System.Drawing.Point(779, -20)
         Me.GroupBox4.Name = "GroupBox4"
         Me.GroupBox4.Size = New System.Drawing.Size(100, 215)
         Me.GroupBox4.TabIndex = 5
@@ -524,7 +524,7 @@ Public Class frm_solicitud_productos
         Me.group_encabezado.Controls.Add(Me.Label2)
         Me.group_encabezado.Controls.Add(Me.Label3)
         Me.group_encabezado.Controls.Add(Me.Label4)
-        Me.group_encabezado.Location = New System.Drawing.Point(367, 52)
+        Me.group_encabezado.Location = New System.Drawing.Point(367, 51)
         Me.group_encabezado.Name = "group_encabezado"
         Me.group_encabezado.Size = New System.Drawing.Size(400, 144)
         Me.group_encabezado.TabIndex = 2
@@ -667,7 +667,7 @@ Public Class frm_solicitud_productos
         Me.gp_administracion.Controls.Add(Me.btn_aprobar)
         Me.gp_administracion.Controls.Add(Me.btn_rechazar)
         Me.gp_administracion.Controls.Add(Me.btn_procesar)
-        Me.gp_administracion.Location = New System.Drawing.Point(391, -18)
+        Me.gp_administracion.Location = New System.Drawing.Point(391, -19)
         Me.gp_administracion.Name = "gp_administracion"
         Me.gp_administracion.Size = New System.Drawing.Size(380, 74)
         Me.gp_administracion.TabIndex = 6
@@ -737,9 +737,9 @@ Public Class frm_solicitud_productos
         Me.group_informacion.Controls.Add(Me.Label7)
         Me.group_informacion.Controls.Add(Me.Label8)
         Me.group_informacion.Controls.Add(Me.Label9)
-        Me.group_informacion.Location = New System.Drawing.Point(7, -17)
+        Me.group_informacion.Location = New System.Drawing.Point(7, -9)
         Me.group_informacion.Name = "group_informacion"
-        Me.group_informacion.Size = New System.Drawing.Size(352, 144)
+        Me.group_informacion.Size = New System.Drawing.Size(352, 141)
         Me.group_informacion.TabIndex = 1
         Me.group_informacion.TabStop = False
         '
@@ -747,7 +747,7 @@ Public Class frm_solicitud_productos
         '
         Me.GroupBox2.Controls.Add(Me.Label10)
         Me.GroupBox2.Controls.Add(Me.lbl_numero)
-        Me.GroupBox2.Location = New System.Drawing.Point(216, 8)
+        Me.GroupBox2.Location = New System.Drawing.Point(216, 14)
         Me.GroupBox2.Name = "GroupBox2"
         Me.GroupBox2.Size = New System.Drawing.Size(128, 34)
         Me.GroupBox2.TabIndex = 8
@@ -758,7 +758,7 @@ Public Class frm_solicitud_productos
         Me.Label10.AutoEllipsis = True
         Me.Label10.AutoSize = True
         Me.Label10.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label10.Location = New System.Drawing.Point(7, 12)
+        Me.Label10.Location = New System.Drawing.Point(7, 18)
         Me.Label10.Name = "Label10"
         Me.Label10.Size = New System.Drawing.Size(50, 13)
         Me.Label10.TabIndex = 0
@@ -769,7 +769,7 @@ Public Class frm_solicitud_productos
         Me.lbl_numero.AutoSize = True
         Me.lbl_numero.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lbl_numero.ForeColor = System.Drawing.Color.Red
-        Me.lbl_numero.Location = New System.Drawing.Point(63, 12)
+        Me.lbl_numero.Location = New System.Drawing.Point(63, 18)
         Me.lbl_numero.Name = "lbl_numero"
         Me.lbl_numero.Size = New System.Drawing.Size(50, 13)
         Me.lbl_numero.TabIndex = 1
@@ -779,7 +779,7 @@ Public Class frm_solicitud_productos
         'dtp_fecha_solicitud
         '
         Me.dtp_fecha_solicitud.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
-        Me.dtp_fecha_solicitud.Location = New System.Drawing.Point(72, 18)
+        Me.dtp_fecha_solicitud.Location = New System.Drawing.Point(72, 24)
         Me.dtp_fecha_solicitud.Name = "dtp_fecha_solicitud"
         Me.dtp_fecha_solicitud.Size = New System.Drawing.Size(80, 20)
         Me.dtp_fecha_solicitud.TabIndex = 1
@@ -813,7 +813,7 @@ Public Class frm_solicitud_productos
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(8, 22)
+        Me.Label6.Location = New System.Drawing.Point(8, 28)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(37, 14)
         Me.Label6.TabIndex = 0
@@ -851,7 +851,7 @@ Public Class frm_solicitud_productos
         Me.GroupBox1.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.GroupBox1.Controls.Add(Me.cmbBU)
         Me.GroupBox1.Controls.Add(Me.Label24)
-        Me.GroupBox1.Location = New System.Drawing.Point(7, 124)
+        Me.GroupBox1.Location = New System.Drawing.Point(7, 123)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Size = New System.Drawing.Size(247, 74)
         Me.GroupBox1.TabIndex = 0
@@ -1016,7 +1016,7 @@ Public Class frm_solicitud_productos
         Me.utiliza_añada.Items.AddRange(New Object() {"SI", "NO"})
         Me.utiliza_añada.Location = New System.Drawing.Point(820, 73)
         Me.utiliza_añada.Name = "utiliza_añada"
-        Me.utiliza_añada.Size = New System.Drawing.Size(45, 21)
+        Me.utiliza_añada.Size = New System.Drawing.Size(45, 22)
         Me.utiliza_añada.TabIndex = 42
         '
         'lbl_utiliza_añada
@@ -1024,6 +1024,8 @@ Public Class frm_solicitud_productos
         Me.lbl_utiliza_añada.AutoSize = True
         Me.lbl_utiliza_añada.Location = New System.Drawing.Point(685, 77)
         Me.lbl_utiliza_añada.Name = "lbl_utiliza_añada"
+        Me.lbl_utiliza_añada.Size = New System.Drawing.Size(121, 14)
+        Me.lbl_utiliza_añada.TabIndex = 47
         Me.lbl_utiliza_añada.Text = "Producto Utiliza AÑADA"
         '
         'utiliza_lote
@@ -1033,7 +1035,7 @@ Public Class frm_solicitud_productos
         Me.utiliza_lote.Items.AddRange(New Object() {"SI", "NO"})
         Me.utiliza_lote.Location = New System.Drawing.Point(820, 49)
         Me.utiliza_lote.Name = "utiliza_lote"
-        Me.utiliza_lote.Size = New System.Drawing.Size(45, 21)
+        Me.utiliza_lote.Size = New System.Drawing.Size(45, 22)
         Me.utiliza_lote.TabIndex = 41
         '
         'lbl_utiliza_lote
@@ -1041,6 +1043,8 @@ Public Class frm_solicitud_productos
         Me.lbl_utiliza_lote.AutoSize = True
         Me.lbl_utiliza_lote.Location = New System.Drawing.Point(685, 53)
         Me.lbl_utiliza_lote.Name = "lbl_utiliza_lote"
+        Me.lbl_utiliza_lote.Size = New System.Drawing.Size(109, 14)
+        Me.lbl_utiliza_lote.TabIndex = 48
         Me.lbl_utiliza_lote.Text = "Producto utiliza LOTE"
         '
         'cmb_tipo_proveedor
@@ -1050,7 +1054,7 @@ Public Class frm_solicitud_productos
         Me.cmb_tipo_proveedor.Items.AddRange(New Object() {"LOCAL", "INTERNACIONAL"})
         Me.cmb_tipo_proveedor.Location = New System.Drawing.Point(750, 97)
         Me.cmb_tipo_proveedor.Name = "cmb_tipo_proveedor"
-        Me.cmb_tipo_proveedor.Size = New System.Drawing.Size(130, 21)
+        Me.cmb_tipo_proveedor.Size = New System.Drawing.Size(130, 22)
         Me.cmb_tipo_proveedor.TabIndex = 43
         '
         'lbl_tipo_proveedor
@@ -1058,6 +1062,8 @@ Public Class frm_solicitud_productos
         Me.lbl_tipo_proveedor.AutoSize = True
         Me.lbl_tipo_proveedor.Location = New System.Drawing.Point(635, 101)
         Me.lbl_tipo_proveedor.Name = "lbl_tipo_proveedor"
+        Me.lbl_tipo_proveedor.Size = New System.Drawing.Size(95, 14)
+        Me.lbl_tipo_proveedor.TabIndex = 49
         Me.lbl_tipo_proveedor.Text = "Tipo de Proveedor"
         '
         'afecta_iva
@@ -1492,158 +1498,6 @@ Public Class frm_solicitud_productos
         Me.TabPage3.TabIndex = 2
         Me.TabPage3.Text = "Productos Existentes"
         '
-        'TabPage4
-        '
-        Me.TabPage4.BackColor = System.Drawing.Color.FromArgb(CType(CType(233, Byte), Integer), CType(CType(234, Byte), Integer), CType(CType(204, Byte), Integer))
-        Me.TabPage4.Controls.Add(Me.dgvAprobacionCambios)
-        Me.TabPage4.Controls.Add(Me.chkVerTodosCambios)
-        Me.TabPage4.Controls.Add(Me.btnRefrescarCambios)
-        Me.TabPage4.Controls.Add(Me.btnVerDetalleCambio)
-        Me.TabPage4.Controls.Add(Me.btnAprobarCambio)
-        Me.TabPage4.Controls.Add(Me.btnRechazarCambio)
-        Me.TabPage4.Controls.Add(Me.lblEstadoCambios)
-        Me.TabPage4.Controls.Add(Me.pnlDetCambio)
-        Me.TabPage4.Location = New System.Drawing.Point(4, 22)
-        Me.TabPage4.Name = "TabPage4"
-        Me.TabPage4.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage4.Size = New System.Drawing.Size(886, 688)
-        Me.TabPage4.TabIndex = 3
-        Me.TabPage4.Text = "Listado de Solicitudes por Modificación"
-        '
-        Me.chkVerTodosCambios.AutoSize = True : Me.chkVerTodosCambios.Location = New System.Drawing.Point(15, 15)
-        Me.chkVerTodosCambios.Text = "Ver todos (incluir aprobados y rechazados)"
-        '
-        Me.btnRefrescarCambios.Location = New System.Drawing.Point(380, 10) : Me.btnRefrescarCambios.Size = New System.Drawing.Size(100, 25)
-        Me.btnRefrescarCambios.Text = "Refrescar"
-        '
-        Me.btnVerDetalleCambio.Location = New System.Drawing.Point(490, 10) : Me.btnVerDetalleCambio.Size = New System.Drawing.Size(130, 25)
-        Me.btnVerDetalleCambio.Text = "Ver / Aprobar Detalle"
-        Me.btnVerDetalleCambio.BackColor = System.Drawing.Color.FromArgb(CType(33, Byte), CType(150, Byte), CType(243, Byte))
-        Me.btnVerDetalleCambio.ForeColor = System.Drawing.Color.White : Me.btnVerDetalleCambio.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnVerDetalleCambio.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold)
-        '
-        Me.btnAprobarCambio.Visible = False
-        Me.btnRechazarCambio.Visible = False
-        '
-        Me.dgvAprobacionCambios.Location = New System.Drawing.Point(10, 45) : Me.dgvAprobacionCambios.Size = New System.Drawing.Size(866, 280)
-        Me.dgvAprobacionCambios.AllowUserToAddRows = False : Me.dgvAprobacionCambios.AllowUserToDeleteRows = False
-        Me.dgvAprobacionCambios.RowHeadersVisible = False
-        Me.dgvAprobacionCambios.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.dgvAprobacionCambios.MultiSelect = False
-        '
-        Me.lblEstadoCambios.AutoSize = True : Me.lblEstadoCambios.Location = New System.Drawing.Point(15, 668)
-        Me.lblEstadoCambios.ForeColor = System.Drawing.Color.DarkBlue : Me.lblEstadoCambios.Text = ""
-        '
-        'pnlDetCambio
-        '
-        Me.pnlDetCambio.Location = New System.Drawing.Point(10, 335)
-        Me.pnlDetCambio.Size = New System.Drawing.Size(866, 320)
-        Me.pnlDetCambio.Text = "Detalle de Solicitud"
-        Me.pnlDetCambio.Visible = False
-        Me.pnlDetCambio.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold)
-        Me.pnlDetCambio.Controls.Add(Me.lblDetTitulo)
-        Me.pnlDetCambio.Controls.Add(Me.lblDetNumero)
-        Me.pnlDetCambio.Controls.Add(Me.lblDetEmpresa)
-        Me.pnlDetCambio.Controls.Add(Me.lblDetProducto)
-        Me.pnlDetCambio.Controls.Add(Me.lblDetGlosa)
-        Me.pnlDetCambio.Controls.Add(Me.lblDetTipoActual)
-        Me.pnlDetCambio.Controls.Add(Me.lblDetTipoNuevo)
-        Me.pnlDetCambio.Controls.Add(Me.lblDetPrecio)
-        Me.pnlDetCambio.Controls.Add(Me.lblDetVolumen)
-        Me.pnlDetCambio.Controls.Add(Me.lblDetMotivo)
-        Me.pnlDetCambio.Controls.Add(Me.lblDetSolicitante)
-        Me.pnlDetCambio.Controls.Add(Me.lblDetEstado)
-        Me.pnlDetCambio.Controls.Add(Me.lblTitEmpresa)
-        Me.pnlDetCambio.Controls.Add(Me.lblTitProducto)
-        Me.pnlDetCambio.Controls.Add(Me.lblTitGlosa)
-        Me.pnlDetCambio.Controls.Add(Me.lblTitTipoActual)
-        Me.pnlDetCambio.Controls.Add(Me.lblTitTipoNuevo)
-        Me.pnlDetCambio.Controls.Add(Me.lblTitPrecio)
-        Me.pnlDetCambio.Controls.Add(Me.lblTitVolumen)
-        Me.pnlDetCambio.Controls.Add(Me.lblTitMotivo)
-        Me.pnlDetCambio.Controls.Add(Me.lblTitSolicitante)
-        Me.pnlDetCambio.Controls.Add(Me.lblTitFecha)
-        Me.pnlDetCambio.Controls.Add(Me.lblDetFecha)
-        Me.pnlDetCambio.Controls.Add(Me.lblTitEstado)
-        Me.pnlDetCambio.Controls.Add(Me.txtDetObs)
-        Me.pnlDetCambio.Controls.Add(Me.btnDetAprobar)
-        Me.pnlDetCambio.Controls.Add(Me.btnDetRechazar)
-        Me.pnlDetCambio.Controls.Add(Me.btnDetCerrar)
-        '
-        Me.lblDetTitulo.AutoSize = True : Me.lblDetTitulo.Location = New System.Drawing.Point(15, 25)
-        Me.lblDetTitulo.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold)
-        Me.lblDetTitulo.ForeColor = System.Drawing.Color.DarkBlue
-        Me.lblDetTitulo.Text = "Modificación de Tipo de Producto"
-        '
-        Me.lblDetNumero.AutoSize = True : Me.lblDetNumero.Location = New System.Drawing.Point(300, 28)
-        Me.lblDetNumero.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold)
-        Me.lblDetNumero.Text = "Solicitud #"
-        '
-        Me.lblDetEmpresa.AutoSize = True : Me.lblDetEmpresa.Location = New System.Drawing.Point(120, 60) : Me.lblDetEmpresa.Text = ""
-        Me.lblDetEmpresa.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular)
-        '
-        Me.lblDetProducto.AutoSize = True : Me.lblDetProducto.Location = New System.Drawing.Point(560, 60) : Me.lblDetProducto.Text = ""
-        Me.lblDetProducto.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular)
-        '
-        Me.lblDetGlosa.AutoSize = True : Me.lblDetGlosa.Location = New System.Drawing.Point(120, 85) : Me.lblDetGlosa.Text = ""
-        Me.lblDetGlosa.MaximumSize = New System.Drawing.Size(830, 0)
-        Me.lblDetGlosa.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular)
-        '
-        Me.lblDetTipoActual.AutoSize = True : Me.lblDetTipoActual.Location = New System.Drawing.Point(120, 115) : Me.lblDetTipoActual.Text = ""
-        Me.lblDetTipoActual.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular)
-        '
-        Me.lblDetTipoNuevo.AutoSize = True : Me.lblDetTipoNuevo.Location = New System.Drawing.Point(560, 115) : Me.lblDetTipoNuevo.Text = ""
-        Me.lblDetTipoNuevo.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular)
-        '
-        Me.lblDetPrecio.AutoSize = True : Me.lblDetPrecio.Location = New System.Drawing.Point(120, 145) : Me.lblDetPrecio.Text = ""
-        Me.lblDetPrecio.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular)
-        '
-        Me.lblDetVolumen.AutoSize = True : Me.lblDetVolumen.Location = New System.Drawing.Point(560, 145) : Me.lblDetVolumen.Text = ""
-        Me.lblDetVolumen.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular)
-        '
-        Me.lblDetMotivo.AutoSize = True : Me.lblDetMotivo.Location = New System.Drawing.Point(120, 175) : Me.lblDetMotivo.Text = ""
-        Me.lblDetMotivo.MaximumSize = New System.Drawing.Size(830, 0)
-        Me.lblDetMotivo.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular)
-        '
-        Me.lblDetSolicitante.AutoSize = True : Me.lblDetSolicitante.Location = New System.Drawing.Point(120, 205) : Me.lblDetSolicitante.Text = ""
-        Me.lblDetSolicitante.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular)
-        '
-        Me.lblDetEstado.AutoSize = True : Me.lblDetEstado.Location = New System.Drawing.Point(120, 230) : Me.lblDetEstado.Text = ""
-        Me.lblDetEstado.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold)
-        '
-        Me.txtDetObs.Location = New System.Drawing.Point(15, 255) : Me.txtDetObs.Size = New System.Drawing.Size(835, 20)
-        Me.txtDetObs.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!)
-        '
-        Me.btnDetAprobar.Location = New System.Drawing.Point(560, 285) : Me.btnDetAprobar.Size = New System.Drawing.Size(95, 28)
-        Me.btnDetAprobar.Text = "Aprobar"
-        Me.btnDetAprobar.BackColor = System.Drawing.Color.FromArgb(CType(76, Byte), CType(175, Byte), CType(80, Byte))
-        Me.btnDetAprobar.ForeColor = System.Drawing.Color.White : Me.btnDetAprobar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnDetAprobar.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold)
-        '
-        Me.btnDetRechazar.Location = New System.Drawing.Point(660, 285) : Me.btnDetRechazar.Size = New System.Drawing.Size(95, 28)
-        Me.btnDetRechazar.Text = "Rechazar"
-        Me.btnDetRechazar.BackColor = System.Drawing.Color.FromArgb(CType(244, Byte), CType(67, Byte), CType(54, Byte))
-        Me.btnDetRechazar.ForeColor = System.Drawing.Color.White : Me.btnDetRechazar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnDetRechazar.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold)
-        '
-        Me.btnDetCerrar.Location = New System.Drawing.Point(760, 285) : Me.btnDetCerrar.Size = New System.Drawing.Size(90, 28)
-        Me.btnDetCerrar.Text = "Cerrar Detalle" : Me.btnDetCerrar.UseVisualStyleBackColor = True
-        '
-        ' Titulos en negrita (col 1 x=15, col 2 x=440)
-        Me.lblTitEmpresa.AutoSize = True : Me.lblTitEmpresa.Location = New System.Drawing.Point(15, 60) : Me.lblTitEmpresa.Text = "Empresa:"
-        Me.lblTitProducto.AutoSize = True : Me.lblTitProducto.Location = New System.Drawing.Point(440, 60) : Me.lblTitProducto.Text = "Producto:"
-        Me.lblTitGlosa.AutoSize = True : Me.lblTitGlosa.Location = New System.Drawing.Point(15, 85) : Me.lblTitGlosa.Text = "Descripción:"
-        Me.lblTitTipoActual.AutoSize = True : Me.lblTitTipoActual.Location = New System.Drawing.Point(15, 115) : Me.lblTitTipoActual.Text = "Tipo actual:"
-        Me.lblTitTipoNuevo.AutoSize = True : Me.lblTitTipoNuevo.Location = New System.Drawing.Point(440, 115) : Me.lblTitTipoNuevo.Text = "Tipo solicitado:"
-        Me.lblTitPrecio.AutoSize = True : Me.lblTitPrecio.Location = New System.Drawing.Point(15, 145) : Me.lblTitPrecio.Text = "Precio venta:"
-        Me.lblTitVolumen.AutoSize = True : Me.lblTitVolumen.Location = New System.Drawing.Point(440, 145) : Me.lblTitVolumen.Text = "Volumen:"
-        Me.lblTitMotivo.AutoSize = True : Me.lblTitMotivo.Location = New System.Drawing.Point(15, 175) : Me.lblTitMotivo.Text = "Motivo:"
-        Me.lblTitSolicitante.AutoSize = True : Me.lblTitSolicitante.Location = New System.Drawing.Point(15, 205) : Me.lblTitSolicitante.Text = "Solicitado por:"
-        Me.lblTitFecha.AutoSize = True : Me.lblTitFecha.Location = New System.Drawing.Point(280, 205) : Me.lblTitFecha.Text = "Fecha:"
-        Me.lblDetFecha.AutoSize = True : Me.lblDetFecha.Location = New System.Drawing.Point(325, 205) : Me.lblDetFecha.Text = ""
-        Me.lblDetFecha.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular)
-        Me.lblTitEstado.AutoSize = True : Me.lblTitEstado.Location = New System.Drawing.Point(15, 230) : Me.lblTitEstado.Text = "Estado:"
-        '
         'dgv_productos
         '
         Me.dgv_productos.AllowUserToAddRows = False
@@ -1687,12 +1541,414 @@ Public Class frm_solicitud_productos
         Me.cb_campos.Size = New System.Drawing.Size(121, 22)
         Me.cb_campos.TabIndex = 2
         '
+        'TabPage4
+        '
+        Me.TabPage4.BackColor = System.Drawing.Color.FromArgb(CType(CType(233, Byte), Integer), CType(CType(234, Byte), Integer), CType(CType(204, Byte), Integer))
+        Me.TabPage4.Controls.Add(Me.dgvAprobacionCambios)
+        Me.TabPage4.Controls.Add(Me.chkVerTodosCambios)
+        Me.TabPage4.Controls.Add(Me.btnRefrescarCambios)
+        Me.TabPage4.Controls.Add(Me.btnVerDetalleCambio)
+        Me.TabPage4.Controls.Add(Me.btnAprobarCambio)
+        Me.TabPage4.Controls.Add(Me.btnRechazarCambio)
+        Me.TabPage4.Controls.Add(Me.lblEstadoCambios)
+        Me.TabPage4.Controls.Add(Me.pnlDetCambio)
+        Me.TabPage4.Location = New System.Drawing.Point(4, 22)
+        Me.TabPage4.Name = "TabPage4"
+        Me.TabPage4.Padding = New System.Windows.Forms.Padding(3)
+        Me.TabPage4.Size = New System.Drawing.Size(886, 688)
+        Me.TabPage4.TabIndex = 3
+        Me.TabPage4.Text = "Listado de Solicitudes por Modificación"
+        '
+        'dgvAprobacionCambios
+        '
+        Me.dgvAprobacionCambios.AllowUserToAddRows = False
+        Me.dgvAprobacionCambios.AllowUserToDeleteRows = False
+        Me.dgvAprobacionCambios.Location = New System.Drawing.Point(10, 45)
+        Me.dgvAprobacionCambios.MultiSelect = False
+        Me.dgvAprobacionCambios.Name = "dgvAprobacionCambios"
+        Me.dgvAprobacionCambios.RowHeadersVisible = False
+        Me.dgvAprobacionCambios.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
+        Me.dgvAprobacionCambios.Size = New System.Drawing.Size(866, 280)
+        Me.dgvAprobacionCambios.TabIndex = 0
+        '
+        'chkVerTodosCambios
+        '
+        Me.chkVerTodosCambios.AutoSize = True
+        Me.chkVerTodosCambios.Location = New System.Drawing.Point(15, 15)
+        Me.chkVerTodosCambios.Name = "chkVerTodosCambios"
+        Me.chkVerTodosCambios.Size = New System.Drawing.Size(237, 18)
+        Me.chkVerTodosCambios.TabIndex = 1
+        Me.chkVerTodosCambios.Text = "Ver todos (incluir aprobados y rechazados)"
+        '
+        'btnRefrescarCambios
+        '
+        Me.btnRefrescarCambios.Location = New System.Drawing.Point(380, 10)
+        Me.btnRefrescarCambios.Name = "btnRefrescarCambios"
+        Me.btnRefrescarCambios.Size = New System.Drawing.Size(100, 25)
+        Me.btnRefrescarCambios.TabIndex = 2
+        Me.btnRefrescarCambios.Text = "Refrescar"
+        '
+        'btnVerDetalleCambio
+        '
+        Me.btnVerDetalleCambio.BackColor = System.Drawing.Color.FromArgb(CType(CType(33, Byte), Integer), CType(CType(150, Byte), Integer), CType(CType(243, Byte), Integer))
+        Me.btnVerDetalleCambio.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnVerDetalleCambio.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold)
+        Me.btnVerDetalleCambio.ForeColor = System.Drawing.Color.White
+        Me.btnVerDetalleCambio.Location = New System.Drawing.Point(490, 10)
+        Me.btnVerDetalleCambio.Name = "btnVerDetalleCambio"
+        Me.btnVerDetalleCambio.Size = New System.Drawing.Size(130, 25)
+        Me.btnVerDetalleCambio.TabIndex = 3
+        Me.btnVerDetalleCambio.Text = "Ver / Aprobar Detalle"
+        Me.btnVerDetalleCambio.UseVisualStyleBackColor = False
+        '
+        'btnAprobarCambio
+        '
+        Me.btnAprobarCambio.Location = New System.Drawing.Point(0, 0)
+        Me.btnAprobarCambio.Name = "btnAprobarCambio"
+        Me.btnAprobarCambio.Size = New System.Drawing.Size(75, 23)
+        Me.btnAprobarCambio.TabIndex = 4
+        Me.btnAprobarCambio.Visible = False
+        '
+        'btnRechazarCambio
+        '
+        Me.btnRechazarCambio.Location = New System.Drawing.Point(0, 0)
+        Me.btnRechazarCambio.Name = "btnRechazarCambio"
+        Me.btnRechazarCambio.Size = New System.Drawing.Size(75, 23)
+        Me.btnRechazarCambio.TabIndex = 5
+        Me.btnRechazarCambio.Visible = False
+        '
+        'lblEstadoCambios
+        '
+        Me.lblEstadoCambios.AutoSize = True
+        Me.lblEstadoCambios.ForeColor = System.Drawing.Color.DarkBlue
+        Me.lblEstadoCambios.Location = New System.Drawing.Point(15, 668)
+        Me.lblEstadoCambios.Name = "lblEstadoCambios"
+        Me.lblEstadoCambios.Size = New System.Drawing.Size(0, 14)
+        Me.lblEstadoCambios.TabIndex = 6
+        '
+        'pnlDetCambio
+        '
+        Me.pnlDetCambio.Controls.Add(Me.lblDetTitulo)
+        Me.pnlDetCambio.Controls.Add(Me.lblDetNumero)
+        Me.pnlDetCambio.Controls.Add(Me.lblDetEmpresa)
+        Me.pnlDetCambio.Controls.Add(Me.lblDetProducto)
+        Me.pnlDetCambio.Controls.Add(Me.lblDetGlosa)
+        Me.pnlDetCambio.Controls.Add(Me.lblDetTipoActual)
+        Me.pnlDetCambio.Controls.Add(Me.lblDetTipoNuevo)
+        Me.pnlDetCambio.Controls.Add(Me.lblDetPrecio)
+        Me.pnlDetCambio.Controls.Add(Me.lblDetVolumen)
+        Me.pnlDetCambio.Controls.Add(Me.lblDetMotivo)
+        Me.pnlDetCambio.Controls.Add(Me.lblDetSolicitante)
+        Me.pnlDetCambio.Controls.Add(Me.lblDetEstado)
+        Me.pnlDetCambio.Controls.Add(Me.lblTitEmpresa)
+        Me.pnlDetCambio.Controls.Add(Me.lblTitProducto)
+        Me.pnlDetCambio.Controls.Add(Me.lblTitGlosa)
+        Me.pnlDetCambio.Controls.Add(Me.lblTitTipoActual)
+        Me.pnlDetCambio.Controls.Add(Me.lblTitTipoNuevo)
+        Me.pnlDetCambio.Controls.Add(Me.lblTitPrecio)
+        Me.pnlDetCambio.Controls.Add(Me.lblTitVolumen)
+        Me.pnlDetCambio.Controls.Add(Me.lblTitMotivo)
+        Me.pnlDetCambio.Controls.Add(Me.lblTitSolicitante)
+        Me.pnlDetCambio.Controls.Add(Me.lblTitFecha)
+        Me.pnlDetCambio.Controls.Add(Me.lblDetFecha)
+        Me.pnlDetCambio.Controls.Add(Me.lblTitEstado)
+        Me.pnlDetCambio.Controls.Add(Me.txtDetObs)
+        Me.pnlDetCambio.Controls.Add(Me.btnDetAprobar)
+        Me.pnlDetCambio.Controls.Add(Me.btnDetRechazar)
+        Me.pnlDetCambio.Controls.Add(Me.btnDetCerrar)
+        Me.pnlDetCambio.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold)
+        Me.pnlDetCambio.Location = New System.Drawing.Point(10, 335)
+        Me.pnlDetCambio.Name = "pnlDetCambio"
+        Me.pnlDetCambio.Size = New System.Drawing.Size(866, 320)
+        Me.pnlDetCambio.TabIndex = 7
+        Me.pnlDetCambio.TabStop = False
+        Me.pnlDetCambio.Text = "Detalle de Solicitud"
+        Me.pnlDetCambio.Visible = False
+        '
+        'lblDetTitulo
+        '
+        Me.lblDetTitulo.AutoSize = True
+        Me.lblDetTitulo.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold)
+        Me.lblDetTitulo.ForeColor = System.Drawing.Color.DarkBlue
+        Me.lblDetTitulo.Location = New System.Drawing.Point(15, 25)
+        Me.lblDetTitulo.Name = "lblDetTitulo"
+        Me.lblDetTitulo.Size = New System.Drawing.Size(251, 17)
+        Me.lblDetTitulo.TabIndex = 0
+        Me.lblDetTitulo.Text = "Modificación de Tipo de Producto"
+        '
+        'lblDetNumero
+        '
+        Me.lblDetNumero.AutoSize = True
+        Me.lblDetNumero.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold)
+        Me.lblDetNumero.Location = New System.Drawing.Point(300, 28)
+        Me.lblDetNumero.Name = "lblDetNumero"
+        Me.lblDetNumero.Size = New System.Drawing.Size(75, 15)
+        Me.lblDetNumero.TabIndex = 1
+        Me.lblDetNumero.Text = "Solicitud #"
+        '
+        'lblDetEmpresa
+        '
+        Me.lblDetEmpresa.AutoSize = True
+        Me.lblDetEmpresa.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!)
+        Me.lblDetEmpresa.Location = New System.Drawing.Point(120, 60)
+        Me.lblDetEmpresa.Name = "lblDetEmpresa"
+        Me.lblDetEmpresa.Size = New System.Drawing.Size(0, 13)
+        Me.lblDetEmpresa.TabIndex = 2
+        '
+        'lblDetProducto
+        '
+        Me.lblDetProducto.AutoSize = True
+        Me.lblDetProducto.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!)
+        Me.lblDetProducto.Location = New System.Drawing.Point(560, 60)
+        Me.lblDetProducto.Name = "lblDetProducto"
+        Me.lblDetProducto.Size = New System.Drawing.Size(0, 13)
+        Me.lblDetProducto.TabIndex = 3
+        '
+        'lblDetGlosa
+        '
+        Me.lblDetGlosa.AutoSize = True
+        Me.lblDetGlosa.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!)
+        Me.lblDetGlosa.Location = New System.Drawing.Point(120, 85)
+        Me.lblDetGlosa.MaximumSize = New System.Drawing.Size(830, 0)
+        Me.lblDetGlosa.Name = "lblDetGlosa"
+        Me.lblDetGlosa.Size = New System.Drawing.Size(0, 13)
+        Me.lblDetGlosa.TabIndex = 4
+        '
+        'lblDetTipoActual
+        '
+        Me.lblDetTipoActual.AutoSize = True
+        Me.lblDetTipoActual.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!)
+        Me.lblDetTipoActual.Location = New System.Drawing.Point(120, 115)
+        Me.lblDetTipoActual.Name = "lblDetTipoActual"
+        Me.lblDetTipoActual.Size = New System.Drawing.Size(0, 13)
+        Me.lblDetTipoActual.TabIndex = 5
+        '
+        'lblDetTipoNuevo
+        '
+        Me.lblDetTipoNuevo.AutoSize = True
+        Me.lblDetTipoNuevo.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!)
+        Me.lblDetTipoNuevo.Location = New System.Drawing.Point(560, 115)
+        Me.lblDetTipoNuevo.Name = "lblDetTipoNuevo"
+        Me.lblDetTipoNuevo.Size = New System.Drawing.Size(0, 13)
+        Me.lblDetTipoNuevo.TabIndex = 6
+        '
+        'lblDetPrecio
+        '
+        Me.lblDetPrecio.AutoSize = True
+        Me.lblDetPrecio.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!)
+        Me.lblDetPrecio.Location = New System.Drawing.Point(120, 145)
+        Me.lblDetPrecio.Name = "lblDetPrecio"
+        Me.lblDetPrecio.Size = New System.Drawing.Size(0, 13)
+        Me.lblDetPrecio.TabIndex = 7
+        '
+        'lblDetVolumen
+        '
+        Me.lblDetVolumen.AutoSize = True
+        Me.lblDetVolumen.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!)
+        Me.lblDetVolumen.Location = New System.Drawing.Point(560, 145)
+        Me.lblDetVolumen.Name = "lblDetVolumen"
+        Me.lblDetVolumen.Size = New System.Drawing.Size(0, 13)
+        Me.lblDetVolumen.TabIndex = 8
+        '
+        'lblDetMotivo
+        '
+        Me.lblDetMotivo.AutoSize = True
+        Me.lblDetMotivo.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!)
+        Me.lblDetMotivo.Location = New System.Drawing.Point(120, 175)
+        Me.lblDetMotivo.MaximumSize = New System.Drawing.Size(830, 0)
+        Me.lblDetMotivo.Name = "lblDetMotivo"
+        Me.lblDetMotivo.Size = New System.Drawing.Size(0, 13)
+        Me.lblDetMotivo.TabIndex = 9
+        '
+        'lblDetSolicitante
+        '
+        Me.lblDetSolicitante.AutoSize = True
+        Me.lblDetSolicitante.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!)
+        Me.lblDetSolicitante.Location = New System.Drawing.Point(120, 205)
+        Me.lblDetSolicitante.Name = "lblDetSolicitante"
+        Me.lblDetSolicitante.Size = New System.Drawing.Size(0, 13)
+        Me.lblDetSolicitante.TabIndex = 10
+        '
+        'lblDetEstado
+        '
+        Me.lblDetEstado.AutoSize = True
+        Me.lblDetEstado.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold)
+        Me.lblDetEstado.Location = New System.Drawing.Point(120, 230)
+        Me.lblDetEstado.Name = "lblDetEstado"
+        Me.lblDetEstado.Size = New System.Drawing.Size(0, 15)
+        Me.lblDetEstado.TabIndex = 11
+        '
+        'lblTitEmpresa
+        '
+        Me.lblTitEmpresa.AutoSize = True
+        Me.lblTitEmpresa.Location = New System.Drawing.Point(15, 60)
+        Me.lblTitEmpresa.Name = "lblTitEmpresa"
+        Me.lblTitEmpresa.Size = New System.Drawing.Size(59, 13)
+        Me.lblTitEmpresa.TabIndex = 12
+        Me.lblTitEmpresa.Text = "Empresa:"
+        '
+        'lblTitProducto
+        '
+        Me.lblTitProducto.AutoSize = True
+        Me.lblTitProducto.Location = New System.Drawing.Point(440, 60)
+        Me.lblTitProducto.Name = "lblTitProducto"
+        Me.lblTitProducto.Size = New System.Drawing.Size(62, 13)
+        Me.lblTitProducto.TabIndex = 13
+        Me.lblTitProducto.Text = "Producto:"
+        '
+        'lblTitGlosa
+        '
+        Me.lblTitGlosa.AutoSize = True
+        Me.lblTitGlosa.Location = New System.Drawing.Point(15, 85)
+        Me.lblTitGlosa.Name = "lblTitGlosa"
+        Me.lblTitGlosa.Size = New System.Drawing.Size(78, 13)
+        Me.lblTitGlosa.TabIndex = 14
+        Me.lblTitGlosa.Text = "Descripción:"
+        '
+        'lblTitTipoActual
+        '
+        Me.lblTitTipoActual.AutoSize = True
+        Me.lblTitTipoActual.Location = New System.Drawing.Point(15, 115)
+        Me.lblTitTipoActual.Name = "lblTitTipoActual"
+        Me.lblTitTipoActual.Size = New System.Drawing.Size(75, 13)
+        Me.lblTitTipoActual.TabIndex = 15
+        Me.lblTitTipoActual.Text = "Tipo actual:"
+        '
+        'lblTitTipoNuevo
+        '
+        Me.lblTitTipoNuevo.AutoSize = True
+        Me.lblTitTipoNuevo.Location = New System.Drawing.Point(440, 115)
+        Me.lblTitTipoNuevo.Name = "lblTitTipoNuevo"
+        Me.lblTitTipoNuevo.Size = New System.Drawing.Size(94, 13)
+        Me.lblTitTipoNuevo.TabIndex = 16
+        Me.lblTitTipoNuevo.Text = "Tipo solicitado:"
+        '
+        'lblTitPrecio
+        '
+        Me.lblTitPrecio.AutoSize = True
+        Me.lblTitPrecio.Location = New System.Drawing.Point(15, 145)
+        Me.lblTitPrecio.Name = "lblTitPrecio"
+        Me.lblTitPrecio.Size = New System.Drawing.Size(83, 13)
+        Me.lblTitPrecio.TabIndex = 17
+        Me.lblTitPrecio.Text = "Precio venta:"
+        '
+        'lblTitVolumen
+        '
+        Me.lblTitVolumen.AutoSize = True
+        Me.lblTitVolumen.Location = New System.Drawing.Point(440, 145)
+        Me.lblTitVolumen.Name = "lblTitVolumen"
+        Me.lblTitVolumen.Size = New System.Drawing.Size(59, 13)
+        Me.lblTitVolumen.TabIndex = 18
+        Me.lblTitVolumen.Text = "Volumen:"
+        '
+        'lblTitMotivo
+        '
+        Me.lblTitMotivo.AutoSize = True
+        Me.lblTitMotivo.Location = New System.Drawing.Point(15, 175)
+        Me.lblTitMotivo.Name = "lblTitMotivo"
+        Me.lblTitMotivo.Size = New System.Drawing.Size(49, 13)
+        Me.lblTitMotivo.TabIndex = 19
+        Me.lblTitMotivo.Text = "Motivo:"
+        '
+        'lblTitSolicitante
+        '
+        Me.lblTitSolicitante.AutoSize = True
+        Me.lblTitSolicitante.Location = New System.Drawing.Point(15, 205)
+        Me.lblTitSolicitante.Name = "lblTitSolicitante"
+        Me.lblTitSolicitante.Size = New System.Drawing.Size(89, 13)
+        Me.lblTitSolicitante.TabIndex = 20
+        Me.lblTitSolicitante.Text = "Solicitado por:"
+        '
+        'lblTitFecha
+        '
+        Me.lblTitFecha.AutoSize = True
+        Me.lblTitFecha.Location = New System.Drawing.Point(280, 205)
+        Me.lblTitFecha.Name = "lblTitFecha"
+        Me.lblTitFecha.Size = New System.Drawing.Size(46, 13)
+        Me.lblTitFecha.TabIndex = 21
+        Me.lblTitFecha.Text = "Fecha:"
+        '
+        'lblDetFecha
+        '
+        Me.lblDetFecha.AutoSize = True
+        Me.lblDetFecha.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!)
+        Me.lblDetFecha.Location = New System.Drawing.Point(325, 205)
+        Me.lblDetFecha.Name = "lblDetFecha"
+        Me.lblDetFecha.Size = New System.Drawing.Size(0, 13)
+        Me.lblDetFecha.TabIndex = 22
+        '
+        'lblTitEstado
+        '
+        Me.lblTitEstado.AutoSize = True
+        Me.lblTitEstado.Location = New System.Drawing.Point(15, 230)
+        Me.lblTitEstado.Name = "lblTitEstado"
+        Me.lblTitEstado.Size = New System.Drawing.Size(50, 13)
+        Me.lblTitEstado.TabIndex = 23
+        Me.lblTitEstado.Text = "Estado:"
+        '
+        'txtDetObs
+        '
+        Me.txtDetObs.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!)
+        Me.txtDetObs.Location = New System.Drawing.Point(15, 255)
+        Me.txtDetObs.Name = "txtDetObs"
+        Me.txtDetObs.Size = New System.Drawing.Size(835, 20)
+        Me.txtDetObs.TabIndex = 24
+        '
+        'btnDetAprobar
+        '
+        Me.btnDetAprobar.BackColor = System.Drawing.Color.FromArgb(CType(CType(76, Byte), Integer), CType(CType(175, Byte), Integer), CType(CType(80, Byte), Integer))
+        Me.btnDetAprobar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnDetAprobar.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold)
+        Me.btnDetAprobar.ForeColor = System.Drawing.Color.White
+        Me.btnDetAprobar.Location = New System.Drawing.Point(560, 285)
+        Me.btnDetAprobar.Name = "btnDetAprobar"
+        Me.btnDetAprobar.Size = New System.Drawing.Size(95, 28)
+        Me.btnDetAprobar.TabIndex = 25
+        Me.btnDetAprobar.Text = "Aprobar"
+        Me.btnDetAprobar.UseVisualStyleBackColor = False
+        '
+        'btnDetRechazar
+        '
+        Me.btnDetRechazar.BackColor = System.Drawing.Color.FromArgb(CType(CType(244, Byte), Integer), CType(CType(67, Byte), Integer), CType(CType(54, Byte), Integer))
+        Me.btnDetRechazar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnDetRechazar.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold)
+        Me.btnDetRechazar.ForeColor = System.Drawing.Color.White
+        Me.btnDetRechazar.Location = New System.Drawing.Point(660, 285)
+        Me.btnDetRechazar.Name = "btnDetRechazar"
+        Me.btnDetRechazar.Size = New System.Drawing.Size(95, 28)
+        Me.btnDetRechazar.TabIndex = 26
+        Me.btnDetRechazar.Text = "Rechazar"
+        Me.btnDetRechazar.UseVisualStyleBackColor = False
+        '
+        'btnDetCerrar
+        '
+        Me.btnDetCerrar.Location = New System.Drawing.Point(760, 285)
+        Me.btnDetCerrar.Name = "btnDetCerrar"
+        Me.btnDetCerrar.Size = New System.Drawing.Size(90, 28)
+        Me.btnDetCerrar.TabIndex = 27
+        Me.btnDetCerrar.Text = "Cerrar Detalle"
+        Me.btnDetCerrar.UseVisualStyleBackColor = True
+        '
+        'lblTitAprobadoPor
+        '
+        Me.lblTitAprobadoPor.Location = New System.Drawing.Point(0, 0)
+        Me.lblTitAprobadoPor.Name = "lblTitAprobadoPor"
+        Me.lblTitAprobadoPor.Size = New System.Drawing.Size(100, 23)
+        Me.lblTitAprobadoPor.TabIndex = 0
+        '
+        'lblDetAprobadoPor
+        '
+        Me.lblDetAprobadoPor.Location = New System.Drawing.Point(0, 0)
+        Me.lblDetAprobadoPor.Name = "lblDetAprobadoPor"
+        Me.lblDetAprobadoPor.Size = New System.Drawing.Size(100, 23)
+        Me.lblDetAprobadoPor.TabIndex = 0
+        '
         'MenuStrip1
         '
         Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripMenuItem1, Me.CatalogosToolStripMenuItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
-        Me.MenuStrip1.Size = New System.Drawing.Size(892, 24)
+        Me.MenuStrip1.Size = New System.Drawing.Size(960, 24)
         Me.MenuStrip1.TabIndex = 1
         Me.MenuStrip1.Text = "Archivo"
         '
@@ -1761,11 +2017,11 @@ Public Class frm_solicitud_productos
         Me.TabPage3.ResumeLayout(False)
         Me.TabPage3.PerformLayout()
         CType(Me.dgv_productos, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.pnlDetCambio.ResumeLayout(False)
-        Me.pnlDetCambio.PerformLayout()
         Me.TabPage4.ResumeLayout(False)
         Me.TabPage4.PerformLayout()
         CType(Me.dgvAprobacionCambios, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.pnlDetCambio.ResumeLayout(False)
+        Me.pnlDetCambio.PerformLayout()
         Me.MenuStrip1.ResumeLayout(False)
         Me.MenuStrip1.PerformLayout()
         Me.ResumeLayout(False)
@@ -1949,6 +2205,15 @@ Public Class frm_solicitud_productos
 
         Dim tableStyle As New DataGridTableStyle
         tableStyle.MappingName = "ListaPrecio"
+        tableStyle.BackColor            = Drawing.Color.FromArgb(252, 251, 248)
+        tableStyle.AlternatingBackColor = Drawing.Color.FromArgb(240, 238, 230)
+        tableStyle.ForeColor            = Drawing.Color.FromArgb(55, 62, 28)
+        tableStyle.HeaderBackColor      = Drawing.Color.FromArgb(61, 68, 32)
+        tableStyle.HeaderForeColor      = Drawing.Color.FromArgb(200, 205, 170)
+        tableStyle.HeaderFont           = New Drawing.Font("Segoe UI", 8!, Drawing.FontStyle.Bold)
+        tableStyle.SelectionBackColor   = Drawing.Color.FromArgb(196, 81, 35)
+        tableStyle.SelectionForeColor   = Drawing.Color.White
+        tableStyle.GridLineColor        = Drawing.Color.FromArgb(215, 212, 202)
 
         Dim dt As DataTable = Ods.Tables("ListaPrecio")
 
@@ -3348,6 +3613,7 @@ Public Class frm_solicitud_productos
 
         Ingreso_Nuevo()
 
+        AplicarEstiloUmbral()
         proceso_inicial = False
     End Sub
 
@@ -5088,4 +5354,283 @@ Public Class frm_solicitud_productos
         Return v.ToString().Trim()
     End Function
 
+
+    Private Sub AplicarEstiloUmbral()
+        Dim cFondo As Drawing.Color = Drawing.Color.FromArgb(242, 240, 234)
+        Dim cHeader As Drawing.Color = Drawing.Color.FromArgb(45, 50, 22)
+        Dim cOliva As Drawing.Color = Drawing.Color.FromArgb(106, 116, 56)
+        Dim cNaranja As Drawing.Color = Drawing.Color.FromArgb(196, 81, 35)
+        Dim cGris As Drawing.Color = Drawing.Color.FromArgb(120, 120, 112)
+        Dim cGridHdr As Drawing.Color = Drawing.Color.FromArgb(61, 68, 32)
+
+        Me.BackColor = cFondo
+        Me.Text = "Solicitud de Productos"
+        Me.MinimumSize = New Drawing.Size(978, 750)
+        Me.MaximumSize = New Drawing.Size(978, 750)
+        Me.Font = New Drawing.Font("Segoe UI", 8.5!, Drawing.FontStyle.Regular)
+
+        TabControl1.DrawMode = TabDrawMode.OwnerDrawFixed
+        TabControl1.ItemSize = New Drawing.Size(0, 26)
+        AddHandler TabControl1.DrawItem, AddressOf DrawTabItem
+        For Each tp As TabPage In TabControl1.TabPages
+            tp.BackColor = cFondo
+        Next
+
+        MenuStrip1.BackColor = cHeader
+        MenuStrip1.ForeColor = Drawing.Color.FromArgb(210, 208, 198)
+        For Each tsi As ToolStripItem In MenuStrip1.Items
+            tsi.ForeColor = Drawing.Color.FromArgb(210, 208, 198)
+            tsi.BackColor = cHeader
+        Next
+
+        Dim fntSec As New Drawing.Font("Segoe UI", 7.5!, Drawing.FontStyle.Bold)
+        Dim gbList() As GroupBox = {group_encabezado, group_informacion, GroupBox2,
+                                    group_listas, group_detalle, GroupBox1,
+                                    gp_administracion, GroupBox3, GroupBox4}
+        For Each gb As GroupBox In gbList
+            If gb Is Nothing Then Continue For
+            gb.ForeColor = cOliva
+            gb.Font = fntSec
+            gb.BackColor = cFondo
+        Next
+
+        EstilarBoton(btn_guardar, cNaranja, Drawing.Color.White)
+        EstilarBoton(btn_aprobar, cOliva, Drawing.Color.White)
+        EstilarBoton(btn_procesar, cGris, Drawing.Color.White)
+        EstilarBotonOutline(btn_nuevo, cOliva)
+        EstilarBotonOutline(btn_imprimir, cGris)
+        EstilarBotonOutline(btn_rechazar, cNaranja)
+        EstilarBotonOutline(btn_anular, cGris)
+
+        Dim dgBg As Drawing.Color = Drawing.Color.FromArgb(249, 248, 245)
+        Dim dgFg As Drawing.Color = Drawing.Color.FromArgb(200, 205, 170)
+        EstilarDataGridLegacy(dg_listaprecios)
+        EstilarDataGridLegacy(dg_packs)
+        dg_listado_solicitudes.CaptionBackColor = cGridHdr
+        dg_listado_solicitudes.CaptionForeColor = dgFg
+        dg_listado_solicitudes.BackgroundColor = dgBg
+        EstilarDGV(dgvProductoSimilares, cGridHdr)
+        EstilarDGV(dgv_productos, cGridHdr)
+        EstilarDGV(dgvAprobacionCambios, cGridHdr)
+        EstilarTabListado()
+    End Sub
+
+    Private Sub EstilarBoton(btn As Button, bgColor As Drawing.Color, fgColor As Drawing.Color)
+        btn.FlatStyle = FlatStyle.Flat
+        btn.BackColor = bgColor
+        btn.ForeColor = fgColor
+        btn.FlatAppearance.BorderColor = Drawing.Color.FromArgb(0, bgColor.R, bgColor.G, bgColor.B)
+        btn.FlatAppearance.BorderSize = 0
+        btn.Font = New Drawing.Font("Segoe UI", 8.5!, Drawing.FontStyle.Bold)
+        btn.Image = Nothing
+        btn.ImageList = Nothing
+        btn.TextAlign = Drawing.ContentAlignment.MiddleCenter
+    End Sub
+
+    Private Sub EstilarBotonOutline(btn As Button, accentColor As Drawing.Color)
+        btn.FlatStyle = FlatStyle.Flat
+        btn.BackColor = Drawing.Color.White
+        btn.ForeColor = accentColor
+        btn.FlatAppearance.BorderColor = accentColor
+        btn.FlatAppearance.BorderSize = 1
+        btn.Font = New Drawing.Font("Segoe UI", 8.5!, Drawing.FontStyle.Bold)
+        btn.Image = Nothing
+        btn.ImageList = Nothing
+        btn.TextAlign = Drawing.ContentAlignment.MiddleCenter
+    End Sub
+
+    Private Sub EstilarDGV(dgv As DataGridView, headerBg As Drawing.Color)
+        Dim cHdrFg  As Drawing.Color = Drawing.Color.FromArgb(200, 205, 170)
+        Dim cAlt    As Drawing.Color = Drawing.Color.FromArgb(245, 243, 236)
+        Dim cFg     As Drawing.Color = Drawing.Color.FromArgb(55, 62, 28)
+        Dim cSelBg  As Drawing.Color = Drawing.Color.FromArgb(196, 81, 35)
+        Dim cSelFg  As Drawing.Color = Drawing.Color.White
+        Dim cGrid   As Drawing.Color = Drawing.Color.FromArgb(220, 217, 208)
+        Dim cBg     As Drawing.Color = Drawing.Color.FromArgb(249, 248, 245)
+
+        AplicarEstiloDGV(dgv, headerBg, cHdrFg, cAlt, cFg, cSelBg, cSelFg, cGrid, cBg)
+
+        ' Re-aplicar estilos despues de cada recarga de datos
+        AddHandler dgv.DataBindingComplete,
+            Sub(s As Object, ev As DataGridViewBindingCompleteEventArgs)
+                AplicarEstiloDGV(DirectCast(s, DataGridView), headerBg, cHdrFg, cAlt, cFg, cSelBg, cSelFg, cGrid, cBg)
+            End Sub
+    End Sub
+
+    Private Sub AplicarEstiloDGV(dgv As DataGridView, headerBg As Drawing.Color,
+                                  headerFg As Drawing.Color, altRow As Drawing.Color,
+                                  fg As Drawing.Color, selBg As Drawing.Color,
+                                  selFg As Drawing.Color, gridColor As Drawing.Color,
+                                  bgColor As Drawing.Color)
+        dgv.BackgroundColor = bgColor
+        dgv.GridColor = gridColor
+        dgv.BorderStyle = BorderStyle.None
+        dgv.EnableHeadersVisualStyles = False
+        dgv.ColumnHeadersDefaultCellStyle.BackColor = headerBg
+        dgv.ColumnHeadersDefaultCellStyle.ForeColor = headerFg
+        dgv.ColumnHeadersDefaultCellStyle.Font = New Drawing.Font("Segoe UI", 8!, Drawing.FontStyle.Bold)
+        dgv.ColumnHeadersDefaultCellStyle.SelectionBackColor = headerBg
+        dgv.AlternatingRowsDefaultCellStyle.BackColor = altRow
+        dgv.DefaultCellStyle.ForeColor = fg
+        dgv.DefaultCellStyle.SelectionBackColor = selBg
+        dgv.DefaultCellStyle.SelectionForeColor = selFg
+        dgv.RowHeadersVisible = False
+    End Sub
+
+    Private Sub DrawTabItem(sender As Object, e As DrawItemEventArgs)
+        Dim cHeader As Drawing.Color = Drawing.Color.FromArgb(45, 50, 22)
+        Dim cTabBg As Drawing.Color = Drawing.Color.FromArgb(61, 68, 32)
+        Dim cActive As Drawing.Color = Drawing.Color.FromArgb(196, 81, 35)
+        Dim tc As TabControl = DirectCast(sender, TabControl)
+        Dim tabRect As Drawing.Rectangle = e.Bounds
+        Dim isSelected As Boolean = (e.State And DrawItemState.Selected) > 0
+
+        Dim bgBrush As New Drawing.SolidBrush(If(isSelected, cHeader, cTabBg))
+        e.Graphics.FillRectangle(bgBrush, tabRect)
+        bgBrush.Dispose()
+
+        If isSelected Then
+            Dim accentPen As New Drawing.Pen(cActive, 2)
+            e.Graphics.DrawLine(accentPen, tabRect.Left, tabRect.Bottom - 1, tabRect.Right, tabRect.Bottom - 1)
+            accentPen.Dispose()
+        End If
+
+        Dim tabText As String = tc.TabPages(e.Index).Text
+        Dim fgColor As Drawing.Color = If(isSelected, Drawing.Color.FromArgb(242, 240, 234), Drawing.Color.FromArgb(160, 168, 120))
+        Dim txtBrush As New Drawing.SolidBrush(fgColor)
+        Dim tabFont As New Drawing.Font("Segoe UI", 8.5!, If(isSelected, Drawing.FontStyle.Bold, Drawing.FontStyle.Regular))
+        Dim sf As New Drawing.StringFormat()
+        sf.Alignment = Drawing.StringAlignment.Center
+        sf.LineAlignment = Drawing.StringAlignment.Center
+        e.Graphics.DrawString(tabText, tabFont, txtBrush, tabRect, sf)
+        txtBrush.Dispose()
+        tabFont.Dispose()
+        sf.Dispose()
+    End Sub
+
+    Private Sub EstilarTabListado()
+        Dim cFondo  As Drawing.Color = Drawing.Color.FromArgb(242, 240, 234)
+        Dim cOliva  As Drawing.Color = Drawing.Color.FromArgb(106, 116, 56)
+        Dim cNaranja As Drawing.Color = Drawing.Color.FromArgb(196, 81, 35)
+        Dim cHdr    As Drawing.Color = Drawing.Color.FromArgb(61, 68, 32)
+        Dim cWhite  As Drawing.Color = Drawing.Color.White
+        Dim cBorder As Drawing.Color = Drawing.Color.FromArgb(200, 198, 190)
+
+        ' --- Panel de filtros ---
+        Dim pnlFiltros As New Panel()
+        pnlFiltros.Name = "pnlFiltros"
+        pnlFiltros.Size = New Drawing.Size(TabPage2.Width, 44)
+        pnlFiltros.Location = New Drawing.Point(0, 0)
+        pnlFiltros.BackColor = cWhite
+        pnlFiltros.Anchor = AnchorStyles.Top Or AnchorStyles.Left Or AnchorStyles.Right
+
+        ' Borde inferior del panel de filtros
+        Dim pnlLine As New Panel()
+        pnlLine.Dock = DockStyle.Bottom
+        pnlLine.Height = 2
+        pnlLine.BackColor = cOliva
+        pnlFiltros.Controls.Add(pnlLine)
+
+        ' Label Campo
+        Dim lblCampo As New Label()
+        lblCampo.Text = "Buscar por:"
+        lblCampo.Font = New Drawing.Font("Segoe UI", 8!, Drawing.FontStyle.Regular)
+        lblCampo.ForeColor = Drawing.Color.FromArgb(120, 120, 112)
+        lblCampo.AutoSize = True
+        lblCampo.Location = New Drawing.Point(8, 14)
+        pnlFiltros.Controls.Add(lblCampo)
+
+        ' Reubicar controles existentes dentro del panel
+        TabPage2.Controls.Remove(cmb_campos_busqueda)
+        cmb_campos_busqueda.Location = New Drawing.Point(72, 11)
+        cmb_campos_busqueda.Size = New Drawing.Size(100, 22)
+        cmb_campos_busqueda.FlatStyle = FlatStyle.Flat
+        cmb_campos_busqueda.BackColor = cFondo
+        pnlFiltros.Controls.Add(cmb_campos_busqueda)
+
+        TabPage2.Controls.Remove(cmb_operadores)
+        cmb_operadores.Location = New Drawing.Point(178, 11)
+        cmb_operadores.Size = New Drawing.Size(46, 22)
+        cmb_operadores.BackColor = cFondo
+        pnlFiltros.Controls.Add(cmb_operadores)
+
+        TabPage2.Controls.Remove(txt_busqueda)
+        txt_busqueda.Location = New Drawing.Point(230, 11)
+        txt_busqueda.Size = New Drawing.Size(360, 22)
+        txt_busqueda.BorderStyle = BorderStyle.FixedSingle
+        txt_busqueda.BackColor = cFondo
+        pnlFiltros.Controls.Add(txt_busqueda)
+
+        TabPage2.Controls.Remove(btn_buscar)
+        btn_buscar.Location = New Drawing.Point(598, 10)
+        btn_buscar.Size = New Drawing.Size(80, 24)
+        btn_buscar.Image = Nothing
+        btn_buscar.ImageList = Nothing
+        EstilarBoton(btn_buscar, cNaranja, cWhite)
+        pnlFiltros.Controls.Add(btn_buscar)
+
+        TabPage2.Controls.Remove(chk_ver_todos)
+        chk_ver_todos.Location = New Drawing.Point(690, 13)
+        chk_ver_todos.ForeColor = Drawing.Color.FromArgb(55, 62, 28)
+        chk_ver_todos.FlatStyle = FlatStyle.Flat
+        chk_ver_todos.Font = New Drawing.Font("Segoe UI", 8!, Drawing.FontStyle.Regular)
+        pnlFiltros.Controls.Add(chk_ver_todos)
+
+        TabPage2.Controls.Add(pnlFiltros)
+
+        ' --- Barra de titulo del grid ---
+        Dim pnlGridHdr As New Panel()
+        pnlGridHdr.Name = "pnlGridHdr"
+        pnlGridHdr.Size = New Drawing.Size(TabPage2.Width, 28)
+        pnlGridHdr.Location = New Drawing.Point(0, 44)
+        pnlGridHdr.BackColor = cHdr
+        pnlGridHdr.Anchor = AnchorStyles.Top Or AnchorStyles.Left Or AnchorStyles.Right
+
+        Dim lblGridTit As New Label()
+        lblGridTit.Text = "  Listado de Solicitudes"
+        lblGridTit.Font = New Drawing.Font("Segoe UI", 8.5!, Drawing.FontStyle.Bold)
+        lblGridTit.ForeColor = Drawing.Color.FromArgb(200, 205, 170)
+        lblGridTit.Dock = DockStyle.Fill
+        lblGridTit.TextAlign = Drawing.ContentAlignment.MiddleLeft
+        pnlGridHdr.Controls.Add(lblGridTit)
+        TabPage2.Controls.Add(pnlGridHdr)
+
+        ' --- Reubicar y estilizar el DataGrid ---
+        dg_listado_solicitudes.Location = New Drawing.Point(0, 72)
+        dg_listado_solicitudes.Size = New Drawing.Size(TabPage2.Width, TabPage2.Height - 72)
+        dg_listado_solicitudes.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left Or AnchorStyles.Right
+        EstilarDataGridLegacy(dg_listado_solicitudes)
+
+        ' Traer al frente en orden correcto
+        pnlFiltros.BringToFront()
+        pnlGridHdr.BringToFront()
+    End Sub
+
+    Private Sub EstilarDataGridLegacy(dg As DataGrid)
+        Dim cHdr   As Drawing.Color = Drawing.Color.FromArgb(61, 68, 32)
+        Dim cHdrFg As Drawing.Color = Drawing.Color.FromArgb(200, 205, 170)
+        Dim cCell  As Drawing.Color = Drawing.Color.FromArgb(252, 251, 248)
+        Dim cAlt   As Drawing.Color = Drawing.Color.FromArgb(240, 238, 230)
+        Dim cBg    As Drawing.Color = Drawing.Color.FromArgb(242, 240, 234)
+        Dim cFg    As Drawing.Color = Drawing.Color.FromArgb(55, 62, 28)
+        Dim cSel   As Drawing.Color = Drawing.Color.FromArgb(196, 81, 35)
+        Dim cLine  As Drawing.Color = Drawing.Color.FromArgb(215, 212, 202)
+        dg.BackgroundColor      = cBg
+        dg.BackColor            = cCell
+        dg.AlternatingBackColor = cAlt
+        dg.ForeColor            = cFg
+        dg.HeaderBackColor      = cHdr
+        dg.HeaderForeColor      = cHdrFg
+        dg.HeaderFont           = New Drawing.Font("Segoe UI", 8!, Drawing.FontStyle.Bold)
+        dg.SelectionBackColor   = cSel
+        dg.SelectionForeColor   = Drawing.Color.White
+        dg.GridLineColor        = cLine
+        dg.GridLineStyle        = DataGridLineStyle.Solid
+        dg.Font                 = New Drawing.Font("Segoe UI", 8.25!, Drawing.FontStyle.Regular)
+        dg.CaptionBackColor     = cHdr
+        dg.CaptionForeColor     = cHdrFg
+        dg.CaptionFont          = New Drawing.Font("Segoe UI", 8!, Drawing.FontStyle.Bold)
+        dg.BorderStyle          = BorderStyle.None
+        dg.FlatMode             = True
+    End Sub
 End Class

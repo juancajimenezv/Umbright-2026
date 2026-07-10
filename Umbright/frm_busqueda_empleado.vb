@@ -31,7 +31,7 @@ Public Class frm_busqueda_empleado
 
         Try
             oTrans.open()
-            ls_sql = "pa_sel_per_datos_empleados NULL,"
+            ls_sql = "pa_sel_per_datos_empleados NULL, "
             If txt_buscar.Text.Length > 0 Then
                 If cmb_campo.Text = "Nombre" Then ls_sql = ls_sql & "'" & txt_buscar.Text & "'"
                 If cmb_campo.Text = "Apellido" Then ls_sql = ls_sql & "NULL,'" & txt_buscar.Text & "'"

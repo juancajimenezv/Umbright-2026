@@ -72,21 +72,21 @@ Public Class frm_login
         'txt_usuario
         '
         Me.txt_usuario.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.txt_usuario.Font = New System.Drawing.Font("Arial", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txt_usuario.Location = New System.Drawing.Point(171, 15)
+        Me.txt_usuario.Font = New System.Drawing.Font("Segoe UI", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txt_usuario.Location = New System.Drawing.Point(50, 279)
         Me.txt_usuario.MaxLength = 25
         Me.txt_usuario.Name = "txt_usuario"
-        Me.txt_usuario.Size = New System.Drawing.Size(137, 20)
+        Me.txt_usuario.Size = New System.Drawing.Size(320, 25)
         Me.txt_usuario.TabIndex = 0
         '
         'txt_password
         '
         Me.txt_password.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.txt_password.Font = New System.Drawing.Font("Arial", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txt_password.Location = New System.Drawing.Point(171, 53)
+        Me.txt_password.Font = New System.Drawing.Font("Segoe UI", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txt_password.Location = New System.Drawing.Point(50, 345)
         Me.txt_password.Name = "txt_password"
         Me.txt_password.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
-        Me.txt_password.Size = New System.Drawing.Size(137, 20)
+        Me.txt_password.Size = New System.Drawing.Size(320, 25)
         Me.txt_password.TabIndex = 1
         '
         'cmb_empresa
@@ -94,53 +94,56 @@ Public Class frm_login
         Me.cmb_empresa.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend
         Me.cmb_empresa.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems
         Me.cmb_empresa.BackColor = System.Drawing.Color.White
-        Me.cmb_empresa.DropDownWidth = 150
-        Me.cmb_empresa.Font = New System.Drawing.Font("Arial", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.cmb_empresa.ForeColor = System.Drawing.Color.DarkRed
-        Me.cmb_empresa.Location = New System.Drawing.Point(171, 90)
+        Me.cmb_empresa.DropDownWidth = 320
+        Me.cmb_empresa.Font = New System.Drawing.Font("Segoe UI", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cmb_empresa.ForeColor = System.Drawing.Color.FromArgb(CType(CType(55, Byte), Integer), CType(CType(62, Byte), Integer), CType(CType(28, Byte), Integer))
+        Me.cmb_empresa.Location = New System.Drawing.Point(50, 411)
         Me.cmb_empresa.Name = "cmb_empresa"
-        Me.cmb_empresa.Size = New System.Drawing.Size(137, 22)
+        Me.cmb_empresa.Size = New System.Drawing.Size(320, 25)
         Me.cmb_empresa.TabIndex = 2
         '
         'Label1
         '
-        Me.Label1.Font = New System.Drawing.Font("Tahoma", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(169, 3)
+        Me.Label1.Font = New System.Drawing.Font("Segoe UI", 8.5!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(55, Byte), Integer), CType(CType(62, Byte), Integer), CType(CType(28, Byte), Integer))
+        Me.Label1.Location = New System.Drawing.Point(50, 256)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(119, 23)
+        Me.Label1.Size = New System.Drawing.Size(320, 21)
         Me.Label1.TabIndex = 3
         Me.Label1.Text = "Usuario"
         '
         'Label2
         '
-        Me.Label2.Font = New System.Drawing.Font("Tahoma", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(169, 40)
+        Me.Label2.Font = New System.Drawing.Font("Segoe UI", 8.5!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(55, Byte), Integer), CType(CType(62, Byte), Integer), CType(CType(28, Byte), Integer))
+        Me.Label2.Location = New System.Drawing.Point(50, 322)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(139, 23)
+        Me.Label2.Size = New System.Drawing.Size(320, 21)
         Me.Label2.TabIndex = 4
         Me.Label2.Text = "Contraseña"
         '
         'Label3
         '
-        Me.Label3.Font = New System.Drawing.Font("Tahoma", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(169, 77)
+        Me.Label3.Font = New System.Drawing.Font("Segoe UI", 8.5!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(55, Byte), Integer), CType(CType(62, Byte), Integer), CType(CType(28, Byte), Integer))
+        Me.Label3.Location = New System.Drawing.Point(50, 389)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(86, 23)
+        Me.Label3.Size = New System.Drawing.Size(320, 20)
         Me.Label3.TabIndex = 5
         Me.Label3.Text = "Empresa"
         '
         'btn_aceptar
         '
-        Me.btn_aceptar.BackColor = System.Drawing.Color.FromArgb(CType(CType(83, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(34, Byte), Integer))
-        Me.btn_aceptar.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.btn_aceptar.Font = New System.Drawing.Font("Arial", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btn_aceptar.BackColor = System.Drawing.Color.FromArgb(CType(CType(196, Byte), Integer), CType(CType(81, Byte), Integer), CType(CType(35, Byte), Integer))
+        Me.btn_aceptar.FlatAppearance.BorderSize = 0
+        Me.btn_aceptar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btn_aceptar.Font = New System.Drawing.Font("Segoe UI", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btn_aceptar.ForeColor = System.Drawing.Color.White
-        Me.btn_aceptar.ImageList = Me.ImageList1
-        Me.btn_aceptar.Location = New System.Drawing.Point(171, 117)
+        Me.btn_aceptar.Location = New System.Drawing.Point(50, 469)
         Me.btn_aceptar.Name = "btn_aceptar"
-        Me.btn_aceptar.Size = New System.Drawing.Size(68, 33)
+        Me.btn_aceptar.Size = New System.Drawing.Size(155, 45)
         Me.btn_aceptar.TabIndex = 6
-        Me.btn_aceptar.Text = "&Aceptar"
+        Me.btn_aceptar.Text = "Ingresar"
         Me.btn_aceptar.UseVisualStyleBackColor = False
         '
         'ImageList1
@@ -152,24 +155,23 @@ Public Class frm_login
         '
         'btn_cancelar
         '
-        Me.btn_cancelar.BackColor = System.Drawing.Color.FromArgb(CType(CType(83, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(34, Byte), Integer))
-        Me.btn_cancelar.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.btn_cancelar.Font = New System.Drawing.Font("Arial", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btn_cancelar.BackColor = System.Drawing.Color.FromArgb(CType(CType(120, Byte), Integer), CType(CType(120, Byte), Integer), CType(CType(112, Byte), Integer))
+        Me.btn_cancelar.FlatAppearance.BorderSize = 0
+        Me.btn_cancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btn_cancelar.Font = New System.Drawing.Font("Segoe UI", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btn_cancelar.ForeColor = System.Drawing.Color.White
-        Me.btn_cancelar.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.btn_cancelar.ImageList = Me.ImageList1
-        Me.btn_cancelar.Location = New System.Drawing.Point(245, 118)
+        Me.btn_cancelar.Location = New System.Drawing.Point(215, 469)
         Me.btn_cancelar.Name = "btn_cancelar"
-        Me.btn_cancelar.Size = New System.Drawing.Size(63, 33)
+        Me.btn_cancelar.Size = New System.Drawing.Size(155, 45)
         Me.btn_cancelar.TabIndex = 7
-        Me.btn_cancelar.Text = "&Cancelar"
+        Me.btn_cancelar.Text = "Cancelar"
         Me.btn_cancelar.UseVisualStyleBackColor = False
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(86, 67)
+        Me.Button1.Location = New System.Drawing.Point(86, 77)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(87, 16)
+        Me.Button1.Size = New System.Drawing.Size(87, 18)
         Me.Button1.TabIndex = 8
         Me.Button1.Text = "Button1"
         Me.Button1.Visible = False
@@ -177,9 +179,9 @@ Public Class frm_login
         'PictureBox1
         '
         Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
-        Me.PictureBox1.Location = New System.Drawing.Point(12, 12)
+        Me.PictureBox1.Location = New System.Drawing.Point(53, 77)
         Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(133, 118)
+        Me.PictureBox1.Size = New System.Drawing.Size(322, 142)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox1.TabIndex = 9
         Me.PictureBox1.TabStop = False
@@ -187,23 +189,24 @@ Public Class frm_login
         'lblVersion
         '
         Me.lblVersion.AutoSize = True
-        Me.lblVersion.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblVersion.Location = New System.Drawing.Point(47, 140)
+        Me.lblVersion.Font = New System.Drawing.Font("Segoe UI", 8.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblVersion.ForeColor = System.Drawing.Color.FromArgb(CType(CType(120, Byte), Integer), CType(CType(120, Byte), Integer), CType(CType(112, Byte), Integer))
+        Me.lblVersion.Location = New System.Drawing.Point(50, 558)
         Me.lblVersion.Name = "lblVersion"
-        Me.lblVersion.Size = New System.Drawing.Size(29, 14)
+        Me.lblVersion.Size = New System.Drawing.Size(25, 13)
         Me.lblVersion.TabIndex = 10
         Me.lblVersion.Text = "0.0."
         '
         'btn_passwordless
         '
-        Me.btn_passwordless.BackColor = System.Drawing.Color.FromArgb(CType(CType(83, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(34, Byte), Integer))
-        Me.btn_passwordless.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.btn_passwordless.Font = New System.Drawing.Font("Arial", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btn_passwordless.BackColor = System.Drawing.Color.FromArgb(CType(CType(106, Byte), Integer), CType(CType(116, Byte), Integer), CType(CType(56, Byte), Integer))
+        Me.btn_passwordless.FlatAppearance.BorderSize = 0
+        Me.btn_passwordless.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btn_passwordless.Font = New System.Drawing.Font("Segoe UI", 9.5!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btn_passwordless.ForeColor = System.Drawing.Color.White
-        Me.btn_passwordless.ImageList = Me.ImageList1
-        Me.btn_passwordless.Location = New System.Drawing.Point(5, 155)
+        Me.btn_passwordless.Location = New System.Drawing.Point(50, 528)
         Me.btn_passwordless.Name = "btn_passwordless"
-        Me.btn_passwordless.Size = New System.Drawing.Size(303, 25)
+        Me.btn_passwordless.Size = New System.Drawing.Size(320, 41)
         Me.btn_passwordless.TabIndex = 11
         Me.btn_passwordless.Text = "Ingreso &Sin Clave"
         Me.ToolTip1.SetToolTip(Me.btn_passwordless, "Se envirá un TOKEN al Número de Celular Asociado con el usuario, " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "si desea cambi" &
@@ -213,9 +216,9 @@ Public Class frm_login
         '
         'frm_login
         '
-        Me.AutoScaleBaseSize = New System.Drawing.Size(6, 14)
-        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(233, Byte), Integer), CType(CType(234, Byte), Integer), CType(CType(204, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(320, 154)
+        Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None
+        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(242, Byte), Integer), CType(CType(240, Byte), Integer), CType(CType(234, Byte), Integer))
+        Me.ClientSize = New System.Drawing.Size(420, 510)
         Me.Controls.Add(Me.btn_passwordless)
         Me.Controls.Add(Me.lblVersion)
         Me.Controls.Add(Me.PictureBox1)
@@ -228,14 +231,14 @@ Public Class frm_login
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label1)
-        Me.Font = New System.Drawing.Font("Arial", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "frm_login"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "Inicio de Sesion"
+        Me.Text = "Umbright - Inicio de Sesion"
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
@@ -398,7 +401,7 @@ Public Class frm_login
         otransaccion = Nothing
 
         Me.btn_passwordless.Visible = False
-        Me.ClientSize = New System.Drawing.Size(320, 154)
+        Me.ClientSize = New System.Drawing.Size(420, 510)
 
         Me.cmb_empresa.DisplayMember = "empresa"
         Me.cmb_empresa.ValueMember = "empresa"
@@ -417,7 +420,7 @@ Public Class frm_login
             If gs_passwordless.ToUpper.Equals("SI") Then
                 Me.btn_passwordless.Visible = True
 
-                Me.ClientSize = New System.Drawing.Size(320, 182)
+                Me.ClientSize = New System.Drawing.Size(420, 516)
                 'Me.Size.Height = 224
 
             End If
@@ -449,6 +452,57 @@ Public Class frm_login
     End Sub
 
     Private Sub frm_login_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+
+        ' -- Header --
+        Dim pnlHeader As New Panel()
+        pnlHeader.Dock = DockStyle.Top
+        pnlHeader.Height = 68
+        pnlHeader.BackColor = Color.FromArgb(45, 50, 22)
+
+        Dim lblSistema As New Label()
+        lblSistema.Text = ""
+        lblSistema.Visible = False
+        lblSistema.Font = New Font("Segoe UI", 8F, FontStyle.Bold)
+        lblSistema.AutoSize = True
+        lblSistema.Location = New Point(16, 10)
+
+        Dim lblSubtitulo As New Label()
+        lblSubtitulo.Text = "Sistema de Gestion Empresarial"
+        lblSubtitulo.ForeColor = Color.FromArgb(180, 185, 150)
+        lblSubtitulo.Font = New Font("Segoe UI", 8F, FontStyle.Regular)
+        lblSubtitulo.AutoSize = True
+        lblSubtitulo.Location = New Point(16, 10)
+
+        Dim lblBienvenida As New Label()
+        lblBienvenida.Text = "Bienvenido, ingrese sus credenciales"
+        lblBienvenida.ForeColor = Color.White
+        lblBienvenida.Font = New Font("Segoe UI", 11F, FontStyle.Bold)
+        lblBienvenida.AutoSize = True
+        lblBienvenida.Location = New Point(16, 28)
+
+        pnlHeader.Controls.Add(lblSistema)
+        pnlHeader.Controls.Add(lblSubtitulo)
+        pnlHeader.Controls.Add(lblBienvenida)
+        Me.Controls.Add(pnlHeader)
+        pnlHeader.BringToFront()
+
+        ' -- Card blanca de campos --
+        Dim pnlCard As New Panel()
+        pnlCard.Location = New Point(30, 212)
+        pnlCard.Size = New Size(360, 210)
+        pnlCard.BackColor = Color.White
+        Me.Controls.Add(pnlCard)
+        pnlCard.SendToBack()
+
+        ' Acento naranja izquierdo en la card
+        Dim pnlCardAccent As New Panel()
+        pnlCardAccent.Dock = DockStyle.Left
+        pnlCardAccent.Width = 4
+        pnlCardAccent.BackColor = Color.FromArgb(196, 81, 35)
+        pnlCard.Controls.Add(pnlCardAccent)
+        ' Inputs redondeados y botones
+        WrapRounded(txt_usuario)
+        WrapRounded(txt_password)
         'lblVersion.Text = System.Configuration.ConfigurationManager.AppSettings("ubicacion").ToString & " " & Application.ProductVersion
         lblVersion.Text = System.Configuration.ConfigurationManager.AppSettings("ubicacion").ToString & " " & "8.26.1.2"
 
@@ -822,6 +876,49 @@ Public Class frm_login
 
         End Try
 
+    End Sub
+
+    Private Sub WrapRounded(tb As TextBox)
+        tb.BorderStyle = BorderStyle.None
+        Dim wrapper As New Panel()
+        wrapper.Size = New Size(tb.Width + 8, tb.Height + 10)
+        wrapper.Location = New Point(tb.Left - 4, tb.Top - 5)
+        wrapper.BackColor = Color.White
+        wrapper.Cursor = Cursors.IBeam
+        Dim capturedTb As TextBox = tb
+        AddHandler wrapper.Paint, Sub(s, e)
+            Dim g = e.Graphics
+            g.SmoothingMode = Drawing2D.SmoothingMode.AntiAlias
+            Dim path As New Drawing2D.GraphicsPath()
+            Dim r = New Rectangle(1, 1, wrapper.Width - 3, wrapper.Height - 3)
+            Dim rad = 10
+            path.AddArc(r.X, r.Y, rad, rad, 180, 90)
+            path.AddArc(r.Right - rad, r.Y, rad, rad, 270, 90)
+            path.AddArc(r.Right - rad, r.Bottom - rad, rad, rad, 0, 90)
+            path.AddArc(r.X, r.Bottom - rad, rad, rad, 90, 90)
+            path.CloseFigure()
+            g.FillPath(New SolidBrush(Color.White), path)
+            g.DrawPath(New Pen(Color.FromArgb(106, 116, 56), 1.5!), path)
+        End Sub
+        AddHandler wrapper.Click, Sub(s, e) capturedTb.Focus()
+        Me.Controls.Remove(tb)
+        wrapper.Controls.Add(tb)
+        tb.Location = New Point(4, 5)
+        tb.Width = wrapper.Width - 8
+        Me.Controls.Add(wrapper)
+        wrapper.BringToFront()
+    End Sub
+
+    Private Sub RoundBtn(btn As Control, radius As Integer)
+        Dim path As New Drawing2D.GraphicsPath()
+        Dim r = New Rectangle(0, 0, btn.Width, btn.Height)
+        Dim rad = radius * 2
+        path.AddArc(r.X, r.Y, rad, rad, 180, 90)
+        path.AddArc(r.Right - rad, r.Y, rad, rad, 270, 90)
+        path.AddArc(r.Right - rad, r.Bottom - rad, rad, rad, 0, 90)
+        path.AddArc(r.X, r.Bottom - rad, rad, rad, 90, 90)
+        path.CloseFigure()
+        btn.Region = New Region(path)
     End Sub
 
 End Class

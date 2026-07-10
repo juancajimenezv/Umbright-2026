@@ -8,10 +8,15 @@ Imports ClasesGenerales.General
 Imports Microsoft.Office.Interop
 Imports System.Threading
 Imports System.IO
+Imports System.Collections.Generic
 
 Public Class frm_menu_principal
     Inherits System.Windows.Forms.Form
     Dim cod_tipo_usuario As Integer = 0
+    Private recientes As New List(Of Tuple(Of String, MenuItem))()
+    Private favoritos As New List(Of String)()
+    Private favoritosItems As New Dictionary(Of String, MenuItem)()
+    Private ReadOnly favoritosPath As String = System.IO.Path.Combine(Application.StartupPath, "um_favs.dat")
     Friend WithEvents mci_trackingInternaciones As System.Windows.Forms.MenuItem
     Friend WithEvents mlo_liquidacionPiloto As System.Windows.Forms.MenuItem
     Friend WithEvents mfi_co_cface As System.Windows.Forms.MenuItem
@@ -1427,7 +1432,7 @@ Public Class frm_menu_principal
         'mrh_cancela_prestamo
         '
         Me.mrh_cancela_prestamo.Index = 4
-        Me.mrh_cancela_prestamo.Text = "Cancelación de Préstamos"
+        Me.mrh_cancela_prestamo.Text = "Cancelaciñn de Prñstamos"
         '
         'MenuItem1
         '
@@ -2420,7 +2425,7 @@ Public Class frm_menu_principal
         'mer_actualizacionProductosIE
         '
         Me.mer_actualizacionProductosIE.Index = 13
-        Me.mer_actualizacionProductosIE.Text = "Actualización de Productos"
+        Me.mer_actualizacionProductosIE.Text = "Actualizaciñn de Productos"
         '
         'Label1
         '
@@ -2434,30 +2439,31 @@ Public Class frm_menu_principal
         'pb_it
         '
         Me.pb_it.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.pb_it.Location = New System.Drawing.Point(826, 464)
+        Me.pb_it.Image = CType(resources.GetObject("pb_it.Image"), System.Drawing.Image)
+        Me.pb_it.Location = New System.Drawing.Point(876, 469)
         Me.pb_it.Name = "pb_it"
-        Me.pb_it.Size = New System.Drawing.Size(135, 84)
+        Me.pb_it.Size = New System.Drawing.Size(86, 94)
         Me.pb_it.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.pb_it.TabIndex = 2
         Me.pb_it.TabStop = False
         '
         'pb_logo
         '
-        Me.pb_logo.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.pb_logo.Location = New System.Drawing.Point(254, 63)
+        Me.pb_logo.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
+        Me.pb_logo.Location = New System.Drawing.Point(12, 438)
         Me.pb_logo.Name = "pb_logo"
-        Me.pb_logo.Size = New System.Drawing.Size(400, 300)
+        Me.pb_logo.Size = New System.Drawing.Size(162, 117)
         Me.pb_logo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.pb_logo.TabIndex = 3
         Me.pb_logo.TabStop = False
         '
         'StatusBar1
         '
-        Me.StatusBar1.Location = New System.Drawing.Point(0, 561)
+        Me.StatusBar1.Location = New System.Drawing.Point(0, 569)
         Me.StatusBar1.Name = "StatusBar1"
         Me.StatusBar1.Panels.AddRange(New System.Windows.Forms.StatusBarPanel() {Me.StatusBarPanel1, Me.StatusBarPanel2, Me.StatusBarPanel3})
         Me.StatusBar1.ShowPanels = True
-        Me.StatusBar1.Size = New System.Drawing.Size(962, 14)
+        Me.StatusBar1.Size = New System.Drawing.Size(962, 6)
         Me.StatusBar1.TabIndex = 4
         Me.StatusBar1.Text = "StatusBar1"
         '
@@ -2523,7 +2529,7 @@ Public Class frm_menu_principal
         'frm_menu_principal
         '
         Me.AutoScaleBaseSize = New System.Drawing.Size(5, 13)
-        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(233, Byte), Integer), CType(CType(234, Byte), Integer), CType(CType(204, Byte), Integer))
+        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(242, Byte), Integer), CType(CType(240, Byte), Integer), CType(CType(234, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(962, 575)
         Me.Controls.Add(Me.gbOpcines)
         Me.Controls.Add(Me.StatusBar1)
@@ -2532,9 +2538,11 @@ Public Class frm_menu_principal
         Me.Controls.Add(Me.Label1)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Menu = Me.menu_principal
+        Me.MinimumSize = New System.Drawing.Size(962, 600)
         Me.Name = "frm_menu_principal"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Menu Principal"
+        Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
         CType(Me.pb_it, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.pb_logo, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.StatusBarPanel1, System.ComponentModel.ISupportInitialize).EndInit()
@@ -2548,9 +2556,9 @@ Public Class frm_menu_principal
 #End Region
 
     Private Sub asignarMenus2()
-        ' Utilizamos los menús que tenemos asignados y los cambiamos por RichMenuItem
-        ' Como vamos a asignar imágenes, hay que saber que acción efectúa cada menú,
-        ' por tanto este método no es del todo automático...
+        ' Utilizamos los menñs que tenemos asignados y los cambiamos por RichMenuItem
+        ' Como vamos a asignar imñgenes, hay que saber que acciñn efectña cada menñ,
+        ' por tanto este mñtodo no es del todo automñtico...
         ' Pero se puede preparar para que "casi" lo sea si se siguen unas normas
         ' de nomenclatura.
         Dim mMenuP() As RichMenuItem
@@ -2563,9 +2571,9 @@ Public Class frm_menu_principal
             Dim i As Integer = 0
             For Each mnu As MenuItem In mnuP.MenuItems
                 Dim texto As String = mnu.Text
-                ' Por defecto convertimos el menú en RichMenuItem
+                ' Por defecto convertimos el menñ en RichMenuItem
                 Dim rmnu As RichMenuItem = New RichMenuItem(texto)
-                ' Si está en algunos de estos casos, se usará en vez del asignado antes
+                ' Si estñ en algunos de estos casos, se usarñ en vez del asignado antes
                 If texto.IndexOf("Nuevo") > -1 Then
                     'rmnu = New RichMenuItem(mimg.Bitmaps(eImagenes.eNew), texto, AddressOf mnuFicNuevo_Click, Shortcut.CtrlS, "Salir")
                     'ElseIf texto.IndexOf("Abrir") > -1 Then
@@ -2573,7 +2581,7 @@ Public Class frm_menu_principal
                     'ElseIf texto.IndexOf("Guardar") > -1 Then
                     '    rmnu = New RichMenuItem(mimg.Bitmaps(eImagenes.eSave), texto, AddressOf mnuFicGuardar_Click, Shortcut.CtrlG, "Guarda el contenido del fichero")
                     'ElseIf texto.IndexOf("Acerca") > -1 Then
-                    '    rmnu = New RichMenuItem(mimg.Bitmaps(eImagenes.egMsgBInfo), texto, AddressOf mnuFicAcercaDe_Click, "Muestra la información Shortcut.Del la aplicación")
+                    '    rmnu = New RichMenuItem(mimg.Bitmaps(eImagenes.egMsgBInfo), texto, AddressOf mnuFicAcercaDe_Click, "Muestra la informaciñn Shortcut.Del la aplicaciñn")
                     'ElseIf texto.IndexOf("Salir") > -1 Then
                     '    rmnu = New RichMenuItem(texto, AddressOf mnuFicSalir_Click, "Termina el programa")
                     'ElseIf texto.IndexOf("Cor&tar") > -1 Then
@@ -2583,22 +2591,22 @@ Public Class frm_menu_principal
                     'ElseIf texto.IndexOf("Pegar") > -1 Then
                     '    rmnu = New RichMenuItem(mimg.Bitmaps(eImagenes.ePaste), texto, AddressOf mnuEdiPegar_Click, Shortcut.CtrlV, "Pega del portapapeles")
                     'ElseIf texto.IndexOf("Deshacer") > -1 Then
-                    ''    rmnu = New RichMenuItem(mimg.Bitmaps(eImagenes.eUndo), texto, AddressOf mnuEdiDeshacer_Click, Shortcut.CtrlZ, "Deshacer la última edición")
+                    ''    rmnu = New RichMenuItem(mimg.Bitmaps(eImagenes.eUndo), texto, AddressOf mnuEdiDeshacer_Click, Shortcut.CtrlZ, "Deshacer la ñltima ediciñn")
                 End If
-                ' Para mostrar la descripción del menú
+                ' Para mostrar la descripciñn del menñ
                 '     AddHandler rmnu.Select, AddressOf mnu_Select
-                ' Asignamos el menú
+                ' Asignamos el menñ
                 menus(i) = rmnu
                 i += 1
             Next
-            ' Añadimos los submenús al menú
+            ' Añadimos los submenñs al menñ
             mMenuP(n) = New RichMenuItem(mnuP.Text)
             mMenuP(n).MenuItems.AddRange(menus)
             n += 1
         Next
         ' Eliminamos los que hubiera antes
         menu_principal.MenuItems.Clear()
-        ' Añadimos los nuevos menús creados
+        ' Añadimos los nuevos menñs creados
         menu_principal.MenuItems.AddRange(mMenuP)
 
 
@@ -2640,9 +2648,85 @@ Public Class frm_menu_principal
 
 
         Crear_menu()
-        Me.StatusBarPanel1.Text = System.Configuration.ConfigurationManager.AppSettings("ubicacion").ToString & " " & lsVersionAPP & " En Equipo.: (" & gs_nombre_equipo & ")"
-        Me.StatusBarPanel2.Text = "Usuario .: (" & gs_usuario & ") " & gs_nombre_usuario
-        Me.StatusBarPanel3.Text = "Fecha Actual .: " & Now.ToLongDateString
+        ' -- Header panel -------------------------------------------------------
+        Dim pnlHeader As New Panel()
+        pnlHeader.Name = "pnlHeader"
+        pnlHeader.Dock = DockStyle.Top
+        pnlHeader.Height = 54
+        pnlHeader.BackColor = Color.FromArgb(45, 50, 22)
+
+        Dim pnlLeft As New Panel()
+        pnlLeft.Dock = DockStyle.Left
+        pnlLeft.Width = 500
+        pnlLeft.BackColor = Color.Transparent
+
+        Dim lblSistema As New Label()
+        lblSistema.Text = "UMBRIGHT ERP"
+        lblSistema.ForeColor = Color.FromArgb(196, 81, 35)
+        lblSistema.Font = New Font("Segoe UI", 7.5F, FontStyle.Bold)
+        lblSistema.AutoSize = True
+        lblSistema.Location = New Point(14, 8)
+
+        Dim lblEmpresaHeader As New Label()
+        lblEmpresaHeader.Name = "lblEmpresaHeader"
+        lblEmpresaHeader.Text = If(String.IsNullOrEmpty(mdfo_gs_empresa), gs_empresa, mdfo_gs_empresa & "  (" & gs_empresa & ")")
+        lblEmpresaHeader.ForeColor = Color.White
+        lblEmpresaHeader.Font = New Font("Segoe UI", 13.0F, FontStyle.Bold)
+        lblEmpresaHeader.AutoSize = True
+        lblEmpresaHeader.Location = New Point(14, 25)
+
+        pnlLeft.Controls.Add(lblSistema)
+        pnlLeft.Controls.Add(lblEmpresaHeader)
+
+        Dim pnlRight As New Panel()
+        pnlRight.Dock = DockStyle.Right
+        pnlRight.Width = 340
+        pnlRight.BackColor = Color.Transparent
+
+        Dim lblUserTitulo As New Label()
+        lblUserTitulo.Text = "USUARIO"
+        lblUserTitulo.ForeColor = Color.FromArgb(106, 116, 56)
+        lblUserTitulo.Font = New Font("Segoe UI", 7.0F, FontStyle.Bold)
+        lblUserTitulo.AutoSize = True
+        lblUserTitulo.Location = New Point(10, 8)
+
+        Dim lblUserValor As New Label()
+        lblUserValor.Text = gs_nombre_usuario & "  (" & gs_usuario & ")"
+        lblUserValor.ForeColor = Color.White
+        lblUserValor.Font = New Font("Segoe UI", 9.5F, FontStyle.Bold)
+        lblUserValor.AutoSize = True
+        lblUserValor.Location = New Point(10, 25)
+
+        Dim lblFechaTitulo As New Label()
+        lblFechaTitulo.Text = "FECHA"
+        lblFechaTitulo.ForeColor = Color.FromArgb(106, 116, 56)
+        lblFechaTitulo.Font = New Font("Segoe UI", 7.0F, FontStyle.Bold)
+        lblFechaTitulo.AutoSize = True
+        lblFechaTitulo.Location = New Point(200, 8)
+
+        Dim lblFechaValor As New Label()
+        lblFechaValor.Text = Now.ToString("dd/MMM/yyyy")
+        lblFechaValor.ForeColor = Color.White
+        lblFechaValor.Font = New Font("Segoe UI", 9.5F, FontStyle.Bold)
+        lblFechaValor.AutoSize = True
+        lblFechaValor.Location = New Point(200, 25)
+
+        pnlRight.Controls.Add(lblUserTitulo)
+        pnlRight.Controls.Add(lblUserValor)
+        pnlRight.Controls.Add(lblFechaTitulo)
+        pnlRight.Controls.Add(lblFechaValor)
+
+        pnlHeader.Controls.Add(pnlLeft)
+        pnlHeader.Controls.Add(pnlRight)
+        Me.Controls.Add(pnlHeader)
+        pnlHeader.BringToFront()
+        ' -- Fin Header panel ---------------------------------------------------
+        Crear_tiles()
+        CargarFavoritos()
+        Crear_acceso_rapido()
+        Me.StatusBarPanel1.Text = System.Configuration.ConfigurationManager.AppSettings("ubicacion").ToString & "  v" & lsVersionAPP & "  |  PC: " & gs_nombre_equipo
+        Me.StatusBarPanel2.Text = gs_nombre_usuario & " (" & gs_usuario & ")"
+        Me.StatusBarPanel3.Text = Now.ToString("dd/MMM/yyyy  HH:mm")
 
         'If tiene_permisos("mlo_pedidos_posfechados") _
         '    And gi_tipo_usuario <> 1 Then
@@ -3016,14 +3100,14 @@ Public Class frm_menu_principal
             mMenuP(9).MenuItems.Add(New RichMenuItem(mimg.Bitmaps(eImagenes.eRefresh), "Actualizacion de Productos", AddressOf Me.mer_actualizacionProductos_Click, Shortcut.CtrlShiftD, "Establecer Pedidos"))
         End If
 
-        ''Actualización de Productos (con sub-menú de prueba visual)
+        ''Actualizaciñn de Productos (con sub-menñ de prueba visual)
         otabla.DefaultView.RowFilter = "opcion LIKE 'mer_actProd_%'"
         If otabla.DefaultView.Count > 0 Or cod_tipo_usuario >= 1 Then
-            mMenuP(9).MenuItems.Add(New RichMenuItem(mimg.Bitmaps(eImagenes.eRefresh), "Actualización de Productos", AddressOf Me.mer_actualizacionProductosIE_Click, Shortcut.CtrlShiftT, "Actualización de Productos"))
+            mMenuP(9).MenuItems.Add(New RichMenuItem(mimg.Bitmaps(eImagenes.eRefresh), "Actualizaciñn de Productos", AddressOf Me.mer_actualizacionProductosIE_Click, Shortcut.CtrlShiftT, "Actualizaciñn de Productos"))
             ' Sub-menu: Individual y Masiva
             Dim padre As System.Windows.Forms.MenuItem = mMenuP(9).MenuItems(mMenuP(9).MenuItems.Count - 1)
-            padre.MenuItems.Add(New RichMenuItem(mimg.Bitmaps(eImagenes.eRefresh), "Actualización Individual", AddressOf Me.actualizacionProductos_Individual_Click, Shortcut.None, "Actualización Individual de Productos"))
-            padre.MenuItems.Add(New RichMenuItem(mimg.Bitmaps(eImagenes.eRefresh), "Actualización Masiva", AddressOf Me.actualizacionProductos_Masiva_Click, Shortcut.None, "Actualización Masiva por Excel"))
+            padre.MenuItems.Add(New RichMenuItem(mimg.Bitmaps(eImagenes.eRefresh), "Actualizaciñn Individual", AddressOf Me.actualizacionProductos_Individual_Click, Shortcut.None, "Actualizaciñn Individual de Productos"))
+            padre.MenuItems.Add(New RichMenuItem(mimg.Bitmaps(eImagenes.eRefresh), "Actualizaciñn Masiva", AddressOf Me.actualizacionProductos_Masiva_Click, Shortcut.None, "Actualizaciñn Masiva por Excel"))
         End If
 
 
@@ -4054,7 +4138,7 @@ Public Class frm_menu_principal
         ''Finanzas Creditos
         dt.DefaultView.RowFilter = "opcion = 'mfi_cr_pedidos_pendientes'"
         If dt.DefaultView.Count > 0 Or cod_tipo_usuario >= 1 Then
-            mMenup(4).MenuItems(1).MenuItems.Add(New RichMenuItem(mimg.Bitmaps(eImagenes.egConfigOk), "&Pedidos Pendientes de Aprobación", AddressOf mfi_cr_pedidos_pendientes_Click, Shortcut.CtrlP, "mfi_cr_pedidos_pendientes_Click"))
+            mMenup(4).MenuItems(1).MenuItems.Add(New RichMenuItem(mimg.Bitmaps(eImagenes.egConfigOk), "&Pedidos Pendientes de Aprobaciñn", AddressOf mfi_cr_pedidos_pendientes_Click, Shortcut.CtrlP, "mfi_cr_pedidos_pendientes_Click"))
         End If
 
         ''Recepcion Control Transporte
@@ -4434,7 +4518,7 @@ Public Class frm_menu_principal
 
         dt.DefaultView.RowFilter = "opcion = 'mlo_recepcionfacturas'"
         If dt.DefaultView.Count > 0 Or cod_tipo_usuario >= 1 Then
-            mMenuP(6).MenuItems.Add(New RichMenuItem(mimg.Bitmaps(eImagenes.eHistory), "Recepcion de Facturas", AddressOf mlo_recepcionFacturas_Click, Shortcut.CtrlF, "Recepción Facturas"))
+            mMenuP(6).MenuItems.Add(New RichMenuItem(mimg.Bitmaps(eImagenes.eHistory), "Recepcion de Facturas", AddressOf mlo_recepcionFacturas_Click, Shortcut.CtrlF, "Recepciñn Facturas"))
         End If
 
         'dt.DefaultView.RowFilter = "opcion = 'mlo_finalizacion_picking'"
@@ -4486,7 +4570,7 @@ Public Class frm_menu_principal
         If dt.DefaultView.Count > 0 Or cod_tipo_usuario >= 1 Then mMenuP(6).MenuItems(2).MenuItems.Add(New RichMenuItem(mimg.Bitmaps(eImagenes.eFavorites), "Control de &Transporte", AddressOf mlo_control_transporte_Click, Shortcut.CtrlT, "mlo_control_transporte_Click"))
 
 
-        ''Programar una recolección de Mercaderia 20241115 AS
+        ''Programar una recolecciñn de Mercaderia 20241115 AS
         dt.DefaultView.RowFilter = "opcion = 'mlo_control_recolecciones'"
         If dt.DefaultView.Count > 0 Or cod_tipo_usuario >= 1 Then mMenuP(6).MenuItems(2).MenuItems.Add(New RichMenuItem(mimg.Bitmaps(eImagenes.egRueda), "Recoleccion de Mercaderia", AddressOf mlo_tr_recolecciones_Click, Shortcut.CtrlG, "mlo_tr_recolecciones_Click"))
 
@@ -4688,7 +4772,7 @@ Public Class frm_menu_principal
         '' Sub Menu Aduanas
         dt.DefaultView.RowFilter = "cod_sub_menu = 30"
         If dt.DefaultView.Count > 0 Or cod_tipo_usuario = 1 Then
-            mMenuP(7).MenuItems.Add(New RichMenuItem("Administración del Almacén Aduanero"))
+            mMenuP(7).MenuItems.Add(New RichMenuItem("Administraciñn del Almacñn Aduanero"))
         Else
             mMenuP(7).MenuItems.Add(New RichMenuItem(""))
         End If
@@ -4982,7 +5066,7 @@ Public Class frm_menu_principal
     '        Case IconMenuStyle.VSNet.ToString
     '            RichMenuItem.DefaultMenuStyle = IconMenuStyle.VSNet
     '    End Select
-    '    ' Asignar el nuevo estilo a los menús
+    '    ' Asignar el nuevo estilo a los menñs
     '    Dim estilo As IconMenuStyle = RichMenuItem.DefaultMenuStyle
     '    For Each mnu As RichMenuItem In Me.Menu.MenuItems
     '        mnu.MenuStyle = estilo
@@ -5056,7 +5140,13 @@ Public Class frm_menu_principal
         oform.ShowDialog(Me)
         oform = Nothing
         Me.Text = "Menu Principal :::. " & gs_empresa & " - " & mdfo_gs_empresa & " .::: "
+        Dim lblHArr() As Control = Me.Controls.Find("lblEmpresaHeader", True)
+        If lblHArr.Length > 0 Then
+            DirectCast(lblHArr(0), Label).Text = If(String.IsNullOrEmpty(mdfo_gs_empresa), gs_empresa, mdfo_gs_empresa & "  (" & gs_empresa & ")")
+        End If
         Crear_menu()
+        Crear_tiles()
+        Crear_acceso_rapido()
         'Activar_Logo()
     End Sub
 
@@ -5124,7 +5214,7 @@ Public Class frm_menu_principal
                 ls_path = odt.Rows(0).Item("path_logos").ToString
             End If
 
-            pb_it.Image = Image.FromFile(ls_path & "logoUmbright.png")
+            'pb_it.Image = Image.FromFile(ls_path & "logoUmbright.png")
             'Me.pb_logo.Image = Image.FromFile(ls_path & gs_empresa.Trim & ".png")
 
         Catch ex As Exception
@@ -7939,7 +8029,7 @@ Public Class frm_menu_principal
 
     Private Sub mer_actualizacionProductosIE_Click(sender As Object, e As EventArgs) Handles mer_actualizacionProductosIE.Click
         Try
-            guardarLogB("Acceso Actualización de Productos", gs_usuario, "Mercadeo", "Actualización de Productos")
+            guardarLogB("Acceso Actualizaciñn de Productos", gs_usuario, "Mercadeo", "Actualizaciñn de Productos")
         Catch ex As Exception
         End Try
 
@@ -7951,7 +8041,7 @@ Public Class frm_menu_principal
 
     Private Sub actualizacionProductos_Individual_Click(sender As Object, e As EventArgs)
         Try
-            guardarLogB("Acceso Actualización Individual", gs_usuario, "Mercadeo", "Actualización Individual")
+            guardarLogB("Acceso Actualizaciñn Individual", gs_usuario, "Mercadeo", "Actualizaciñn Individual")
         Catch ex As Exception
         End Try
         Dim oform As New frm_actualizacionProductosIE
@@ -7962,7 +8052,7 @@ Public Class frm_menu_principal
 
     Private Sub actualizacionProductos_Masiva_Click(sender As Object, e As EventArgs)
         Try
-            guardarLogB("Acceso Actualización Masiva", gs_usuario, "Mercadeo", "Actualización Masiva")
+            guardarLogB("Acceso Actualizaciñn Masiva", gs_usuario, "Mercadeo", "Actualizaciñn Masiva")
         Catch ex As Exception
         End Try
         Dim oform As New frm_actualizacionProductosMasivaIE
@@ -8642,6 +8732,319 @@ Public Class frm_menu_principal
         oform.Dispose()
         oform = Nothing
 
+    End Sub
+
+
+    Private Sub Crear_tiles()
+        ' Eliminar panel de tiles anterior si existe
+        Dim viejos() As Control = Me.Controls.Find("pnlTiles", False)
+        For Each v As Control In viejos
+            Me.Controls.Remove(v)
+            v.Dispose()
+        Next
+
+        Dim pnlTiles As New FlowLayoutPanel()
+        pnlTiles.Name = "pnlTiles"
+        pnlTiles.Dock = DockStyle.Fill
+        pnlTiles.FlowDirection = FlowDirection.LeftToRight
+        pnlTiles.WrapContents = True
+        pnlTiles.Padding = New Padding(36, 36, 0, 0)
+        pnlTiles.BackColor = Color.FromArgb(242, 240, 234)
+        pnlTiles.AutoScroll = True
+
+        Dim acentos() As Color = {
+            Color.FromArgb(196, 81, 35),
+            Color.FromArgb(106, 116, 56),
+            Color.FromArgb(196, 81, 35),
+            Color.FromArgb(106, 116, 56),
+            Color.FromArgb(196, 81, 35),
+            Color.FromArgb(106, 116, 56),
+            Color.FromArgb(196, 81, 35),
+            Color.FromArgb(106, 116, 56),
+            Color.FromArgb(196, 81, 35)
+        }
+
+        Dim idx As Integer = 0
+        For Each mi As MenuItem In menu_principal.MenuItems
+            Dim label As String = mi.Text.Replace("&", "").Trim()
+            If label = "" Or label = "Archivo" Then Continue For
+            If mi.MenuItems.Count = 0 Then Continue For
+
+            Dim acento As Color = acentos(idx Mod acentos.Length)
+            idx += 1
+
+            ' Borde externo del tile (simula borde coloreado)
+            Dim border As New Panel()
+            border.Size = New Size(152, 118)
+            border.Margin = New Padding(0, 0, 20, 20)
+            border.BackColor = acento
+            border.Cursor = Cursors.Hand
+
+            ' Panel interno blanco
+            Dim tile As New Panel()
+            tile.Location = New Point(2, 2)
+            tile.Size = New Size(148, 114)
+            tile.BackColor = Color.White
+            tile.Cursor = Cursors.Hand
+            tile.Tag = border
+
+            ' Barra de acento superior
+            Dim pnlAccent As New Panel()
+            pnlAccent.Dock = DockStyle.Top
+            pnlAccent.Height = 6
+            pnlAccent.BackColor = acento
+
+            ' Iniciales como icono
+            Dim initials As String
+            Dim words() As String = label.Split(" "c)
+            If words.Length >= 2 Then
+                initials = (words(0).Substring(0, 1) & words(1).Substring(0, 1)).ToUpper()
+            Else
+                initials = label.Substring(0, Math.Min(3, label.Length)).ToUpper()
+            End If
+
+            Dim lblIcon As New Label()
+            lblIcon.Text = initials
+            lblIcon.Font = New Font("Segoe UI", 24, FontStyle.Bold)
+            lblIcon.ForeColor = Color.FromArgb(220, 215, 205)
+            lblIcon.TextAlign = ContentAlignment.MiddleCenter
+            lblIcon.Dock = DockStyle.Fill
+            lblIcon.Cursor = Cursors.Hand
+
+            ' Nombre del modulo
+            Dim lblNombre As New Label()
+            lblNombre.Text = label
+            lblNombre.Font = New Font("Segoe UI", 9.5F, FontStyle.Bold)
+            lblNombre.ForeColor = Color.FromArgb(55, 62, 28)
+            lblNombre.TextAlign = ContentAlignment.MiddleCenter
+            lblNombre.Dock = DockStyle.Bottom
+            lblNombre.Height = 30
+            lblNombre.Cursor = Cursors.Hand
+            lblNombre.BackColor = Color.White
+
+            tile.Controls.Add(lblIcon)
+            tile.Controls.Add(lblNombre)
+            tile.Controls.Add(pnlAccent)
+            border.Controls.Add(tile)
+
+            ' Construir ContextMenuStrip desde el MenuItem existente
+            Dim cms As New ContextMenuStrip()
+            cms.Font = New Font("Segoe UI", 9)
+            cms.Renderer = New UmbralMenuRenderer()
+            cms.ShowImageMargin = False
+            cms.Padding = New Padding(0, 4, 0, 4)
+            BuildContextMenu(cms.Items, mi.MenuItems, label)
+
+            ' Hover
+            Dim capturedBorder As Panel = border
+            Dim capturedTile As Panel = tile
+            Dim capturedAccent As Color = acento
+            AddHandler tile.MouseEnter, Sub(s, e)
+                                            capturedTile.BackColor = Color.FromArgb(250, 248, 244)
+                                        End Sub
+            AddHandler tile.MouseLeave, Sub(s, e)
+                                            capturedTile.BackColor = Color.White
+                                        End Sub
+            AddHandler lblIcon.MouseEnter, Sub(s, e) capturedTile.BackColor = Color.FromArgb(250, 248, 244)
+            AddHandler lblIcon.MouseLeave, Sub(s, e) capturedTile.BackColor = Color.White
+            AddHandler lblNombre.MouseEnter, Sub(s, e) capturedTile.BackColor = Color.FromArgb(250, 248, 244)
+            AddHandler lblNombre.MouseLeave, Sub(s, e) capturedTile.BackColor = Color.White
+
+            ' Click izq -> menu, Click der -> favorito
+            Dim capturedCms As ContextMenuStrip = cms
+            AddHandler tile.Click, Sub(s, e) capturedCms.Show(capturedBorder, 0, capturedBorder.Height)
+            AddHandler lblIcon.Click, Sub(s, e) capturedCms.Show(capturedBorder, 0, capturedBorder.Height)
+            AddHandler lblNombre.Click, Sub(s, e) capturedCms.Show(capturedBorder, 0, capturedBorder.Height)
+
+
+            pnlTiles.Controls.Add(border)
+        Next
+
+        Me.Controls.Add(pnlTiles)
+        pnlTiles.SendToBack()
+
+        ' El header siempre al frente
+        Dim hdr() As Control = Me.Controls.Find("pnlHeader", False)
+        If hdr.Length > 0 Then hdr(0).BringToFront()
+    End Sub
+
+    Private Sub BuildContextMenu(items As ToolStripItemCollection, menuItems As Menu.MenuItemCollection, Optional rutaBase As String = "")
+        For Each mi As MenuItem In menuItems
+            Dim label As String = mi.Text.Replace("&", "").Trim()
+            If label = "-" Then
+                items.Add(New ToolStripSeparator())
+            ElseIf mi.MenuItems.Count > 0 Then
+                Dim tsi As New ToolStripMenuItem(label)
+                tsi.Font = New Font("Segoe UI", 9)
+                BuildContextMenu(tsi.DropDownItems, mi.MenuItems, rutaBase & " / " & label)
+                items.Add(tsi)
+            Else
+                If label = "" Then Continue For
+                Dim tsi As New ToolStripMenuItem(label)
+                tsi.Font = New Font("Segoe UI", 9)
+                Dim capturedMi As MenuItem = mi
+                Dim capturedLbl As String = label
+                AddHandler tsi.Click, Sub(s, e)
+                                          capturedMi.PerformClick()
+                                          AgregarReciente(rutaBase & " / " & capturedLbl, capturedMi)
+                                      End Sub
+                items.Add(tsi)
+            End If
+        Next
+    End Sub
+
+    ' === FAVORITOS Y RECIENTES ===
+    Private Sub AgregarReciente(label As String, mi As MenuItem)
+        recientes.RemoveAll(Function(t) t.Item1 = label)
+        recientes.Insert(0, Tuple.Create(label, mi))
+        If recientes.Count > 3 Then recientes.RemoveAt(3)
+        Crear_acceso_rapido()
+    End Sub
+
+    Private Sub ToggleFavorito(label As String, mi As MenuItem)
+        If favoritos.Contains(label) Then
+            favoritos.Remove(label) : favoritosItems.Remove(label)
+        Else
+            If favoritos.Count >= 5 Then MsgBox("Maximo 5 favoritos. Quita uno primero.", MsgBoxStyle.Information, "Favoritos") : Return
+            favoritos.Add(label) : favoritosItems(label) = mi
+        End If
+        GuardarFavoritos() : Crear_acceso_rapido()
+    End Sub
+
+    Private Sub CargarFavoritos()
+        favoritos.Clear() : favoritosItems.Clear()
+        If Not System.IO.File.Exists(favoritosPath) Then Return
+        For Each line As String In System.IO.File.ReadAllLines(favoritosPath)
+            If line.Trim() <> "" Then favoritos.Add(line.Trim())
+        Next
+        For Each mi As MenuItem In menu_principal.MenuItems
+            Dim lbl As String = mi.Text.Replace("&", "").Trim()
+            If favoritos.Contains(lbl) Then favoritosItems(lbl) = mi
+        Next
+    End Sub
+
+    Private Sub GuardarFavoritos()
+        System.IO.File.WriteAllLines(favoritosPath, favoritos.ToArray())
+    End Sub
+
+    Private Sub Crear_acceso_rapido()
+        Dim viejos() As Control = Me.Controls.Find("pnlQuickAccess", False)
+        For Each v As Control In viejos : Me.Controls.Remove(v) : v.Dispose() : Next
+
+        Dim pnlQA As New Panel()
+        pnlQA.Name = "pnlQuickAccess"
+        pnlQA.Dock = DockStyle.Top
+        pnlQA.Height = 82
+        pnlQA.BackColor = Color.FromArgb(230, 227, 218)
+
+        Dim lblR As New Label()
+        lblR.Text = ChrW(9202) & " RECIENTES"
+        lblR.Font = New Font("Segoe UI", 7.0F, FontStyle.Bold)
+        lblR.ForeColor = Color.FromArgb(106, 116, 56)
+        lblR.AutoSize = True
+        lblR.Location = New Point(36, 6)
+        pnlQA.Controls.Add(lblR)
+
+        If recientes.Count = 0 Then
+            Dim lhr As New Label()
+            lhr.Text = "Las opciones que uses apareceran aqui"
+            lhr.Font = New Font("Segoe UI", 7.5F, FontStyle.Italic)
+            lhr.ForeColor = Color.FromArgb(160, 155, 145)
+            lhr.AutoSize = True
+            lhr.Location = New Point(36, 24)
+            pnlQA.Controls.Add(lhr)
+        Else
+            Dim rx As Integer = 36
+            For Each t As Tuple(Of String, MenuItem) In recientes
+                Dim qt As Panel = CrearQuickTile(t.Item1, t.Item2, Color.FromArgb(106, 116, 56))
+                qt.Location = New Point(rx, 18)
+                pnlQA.Controls.Add(qt)
+                rx += qt.Width + 10
+            Next
+        End If
+
+        Me.Controls.Add(pnlQA)
+        pnlQA.SendToBack()
+        Dim hdr() As Control = Me.Controls.Find("pnlHeader", False)
+        If hdr.Length > 0 Then hdr(0).SendToBack()
+    End Sub
+
+    Private Function CrearQuickTile(ruta As String, mi As MenuItem, acento As Color) As Panel
+        Dim sepArr() As String = {" / "}
+        Dim partes() As String = ruta.Split(sepArr, StringSplitOptions.None)
+        Dim modulo As String = If(partes.Length > 0, partes(0), ruta)
+        Dim subRuta As String = If(partes.Length > 1, String.Join(" / ", partes, 1, partes.Length - 1), "")
+        Dim tile As New Panel()
+        tile.Size = New Size(160, 60) : tile.BackColor = Color.White : tile.Cursor = Cursors.Hand
+        Dim pTop As New Panel()
+        pTop.Dock = DockStyle.Top : pTop.Height = 3 : pTop.BackColor = acento
+        Dim lblMod As New Label()
+        lblMod.Text = modulo : lblMod.Font = New Font("Segoe UI", 7.5F, FontStyle.Bold)
+        lblMod.ForeColor = acento : lblMod.Location = New Point(8, 6) : lblMod.AutoSize = True
+        lblMod.Cursor = Cursors.Hand
+        Dim lblSub As New Label()
+        lblSub.Text = subRuta : lblSub.Font = New Font("Segoe UI", 7.5F, FontStyle.Regular)
+        lblSub.ForeColor = Color.FromArgb(55, 62, 28) : lblSub.Location = New Point(8, 24)
+        lblSub.Size = New Size(146, 30) : lblSub.Cursor = Cursors.Hand
+        tile.Controls.Add(lblSub) : tile.Controls.Add(lblMod) : tile.Controls.Add(pTop)
+        Dim ct As Panel = tile
+        AddHandler tile.MouseEnter, Sub(s, e) ct.BackColor = Color.FromArgb(248, 245, 239)
+        AddHandler tile.MouseLeave, Sub(s, e) ct.BackColor = Color.White
+        AddHandler lblMod.MouseEnter, Sub(s, e) ct.BackColor = Color.FromArgb(248, 245, 239)
+        AddHandler lblMod.MouseLeave, Sub(s, e) ct.BackColor = Color.White
+        AddHandler lblSub.MouseEnter, Sub(s, e) ct.BackColor = Color.FromArgb(248, 245, 239)
+        AddHandler lblSub.MouseLeave, Sub(s, e) ct.BackColor = Color.White
+        Dim cmi As MenuItem = mi : Dim cruta As String = ruta
+        AddHandler tile.Click, Sub(s, e)
+                                   cmi.PerformClick() : AgregarReciente(cruta, cmi)
+                               End Sub
+        AddHandler lblMod.Click, Sub(s, e)
+                                     cmi.PerformClick() : AgregarReciente(cruta, cmi)
+                                 End Sub
+        AddHandler lblSub.Click, Sub(s, e)
+                                     cmi.PerformClick() : AgregarReciente(cruta, cmi)
+                                 End Sub
+        Return tile
+    End Function
+
+    Private Sub pb_it_Click(sender As Object, e As EventArgs) Handles pb_it.Click
+
+    End Sub
+End Class
+
+
+Public Class UmbralMenuRenderer
+    Inherits ToolStripProfessionalRenderer
+
+    Protected Overrides Sub OnRenderToolStripBackground(e As ToolStripRenderEventArgs)
+        e.Graphics.FillRectangle(New SolidBrush(Color.White), e.AffectedBounds)
+    End Sub
+
+    Protected Overrides Sub OnRenderToolStripBorder(e As ToolStripRenderEventArgs)
+        e.Graphics.DrawRectangle(New Pen(Color.FromArgb(106, 116, 56)), 0, 0, e.ToolStrip.Width - 1, e.ToolStrip.Height - 1)
+    End Sub
+
+    Protected Overrides Sub OnRenderMenuItemBackground(e As ToolStripItemRenderEventArgs)
+        If e.Item.Selected AndAlso e.Item.Enabled Then
+            e.Graphics.FillRectangle(New SolidBrush(Color.FromArgb(240, 235, 225)), New Rectangle(4, 0, e.Item.Width - 8, e.Item.Height))
+        Else
+            e.Graphics.FillRectangle(New SolidBrush(Color.White), e.Item.ContentRectangle)
+        End If
+    End Sub
+
+    Protected Overrides Sub OnRenderItemText(e As ToolStripItemTextRenderEventArgs)
+        e.TextColor = If(e.Item.Selected AndAlso e.Item.Enabled, Color.FromArgb(196, 81, 35), Color.FromArgb(55, 62, 28))
+        MyBase.OnRenderItemText(e)
+    End Sub
+
+    Protected Overrides Sub OnRenderSeparator(e As ToolStripSeparatorRenderEventArgs)
+        Dim y = e.Item.Height \ 2
+        e.Graphics.DrawLine(New Pen(Color.FromArgb(220, 215, 200)), 10, y, e.ToolStrip.Width - 10, y)
+    End Sub
+
+    Protected Overrides Sub OnRenderArrow(e As ToolStripArrowRenderEventArgs)
+        e.ArrowColor = If(e.Item.Selected, Color.FromArgb(196, 81, 35), Color.FromArgb(106, 116, 56))
+        MyBase.OnRenderArrow(e)
     End Sub
 
 End Class
