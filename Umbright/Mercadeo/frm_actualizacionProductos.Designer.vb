@@ -38,7 +38,7 @@ Partial Class frm_actualizacionProductos
 
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(770, 782)
+        Me.ClientSize = New System.Drawing.Size(880, 782)
         Me.Controls.Add(Me.tabPanel)
         Me.MaximizeBox = False : Me.MinimizeBox = False
         Me.Name = "frm_actualizacionProductos"
