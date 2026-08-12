@@ -185,6 +185,30 @@ Public Class frm_actualizacionProductosMasivaIE
         End Try
     End Function
 
+    ' Inserta una solicitud de cambio de tipoproducto en scm.dbo.solicitud_cambio_tipoproducto
+    ' Retorna True si la inserción fue exitosa
+    Private Function CrearSolicitudCambioTipoProducto(emp As String, cod As String, valActual As String, valNuevo As String, glosa As String, motivo As String, oScm As Transaccional.Conexion) As Boolean
+        Try
+            Dim sql As String =
+                "INSERT INTO scm.dbo.solicitud_cambio_tipoproducto " &
+                "(empresa, producto, glosa, valor_anterior, valor_nuevo, estado, motivo, usuario_crea, equipo_crea) " &
+                "VALUES (" &
+                "'" & emp.Replace("'", "''") & "', " &
+                "'" & cod.Replace("'", "''") & "', " &
+                "N'" & glosa.Replace("'", "''") & "', " &
+                "N'" & valActual.Replace("'", "''") & "', " &
+                "N'" & valNuevo.Replace("'", "''") & "', " &
+                "'PENDIENTE', " &
+                If(motivo.Length = 0, "NULL", "N'" & motivo.Replace("'", "''") & "'") & ", " &
+                "'" & gs_usuario.Replace("'", "''") & "', " &
+                "'" & gs_nombre_equipo.Replace("'", "''") & "')"
+            oScm.Ingresa(sql)
+            Return (oScm.Codigo_error = 0)
+        Catch
+            Return False
+        End Try
+    End Function
+
     ' True si el producto tiene movimientos en flexline.documentod con factorInventario <> 0
     ' Devuelve lista de bodegas con saldo != 0 para el producto
     Private Function ObtenerBodegasConStock(emp As String, cod As String, oFlex As Transaccional.Conexion) As List(Of String)
@@ -462,7 +486,7 @@ Public Class frm_actualizacionProductosMasivaIE
 
         Dim oFlex As New Transaccional.Conexion("FlexLine")
         Dim oScm As Transaccional.Conexion = Nothing
-        Dim okCount As Integer = 0, errCount As Integer = 0
+        Dim okCount As Integer = 0, errCount As Integer = 0, solicitudCount As Integer = 0
         Dim errMsg As String = ""
 
         Try
@@ -497,12 +521,33 @@ Public Class frm_actualizacionProductosMasivaIE
                     Continue For
                 End If
 
-                ' Validación especial tipoproducto: NO debe tener impuesto de distribución
+                ' Validación especial tipoproducto: si tiene IMP_DISTRIB -> ofrecer crear solicitud de aprobación
                 If col = "tipoproducto" AndAlso TieneImpuestoDistribucion(emp, valNuevo, oFlex) Then
-                    errCount += 1
-                    errMsg &= "[" & cod & "] '" & valNuevo & "' tiene impuesto de distribución (IMP_DISTRIB). No se asigna." & vbCrLf
-                    row.Cells(COL_ESTADO).Value = "Con IMP_DISTRIB"
-                    row.DefaultCellStyle.BackColor = System.Drawing.Color.MistyRose
+                    Dim rDist As DialogResult = MessageBox.Show(
+                        "El cambio de tipo de producto a '" & valNuevo & "' es CRÍTICO porque tiene impuesto de distribución (IMP_DISTRIB)." & vbCrLf & vbCrLf &
+                        "Producto: " & cod & "    Empresa: " & emp & vbCrLf &
+                        "Tipo actual: " & valActual & "    Tipo solicitado: " & valNuevo & vbCrLf & vbCrLf &
+                        "¿Desea crear una solicitud de modificación para que Contabilidad la apruebe?" & vbCrLf &
+                        "(El cambio se aplicará automáticamente al ser aprobada)",
+                        "Cambio crítico", MessageBoxButtons.YesNo, MessageBoxIcon.Warning)
+                    If rDist = DialogResult.Yes Then
+                        Dim glosaProd As String = SafeStr(row.Cells(COL_GLOSA).Value)
+                        If CrearSolicitudCambioTipoProducto(emp, cod, valActual, valNuevo, glosaProd, obs, oScm) Then
+                            solicitudCount += 1
+                            row.Cells(COL_ESTADO).Value = "Solicitud creada"
+                            row.DefaultCellStyle.BackColor = System.Drawing.Color.LightYellow
+                        Else
+                            errCount += 1
+                            errMsg &= "[" & cod & "] Error creando solicitud: " & oScm.descripcion_error & vbCrLf
+                            row.Cells(COL_ESTADO).Value = "Error solicitud"
+                            row.DefaultCellStyle.BackColor = System.Drawing.Color.MistyRose
+                        End If
+                    Else
+                        errCount += 1
+                        errMsg &= "[" & cod & "] '" & valNuevo & "' tiene IMP_DISTRIB. Cambio cancelado por el usuario." & vbCrLf
+                        row.Cells(COL_ESTADO).Value = "Con IMP_DISTRIB"
+                        row.DefaultCellStyle.BackColor = System.Drawing.Color.MistyRose
+                    End If
                     Continue For
                 End If
 
@@ -598,7 +643,7 @@ Public Class frm_actualizacionProductosMasivaIE
                 okCount += 1
             Next
 
-            Dim res As String = "Aplicados: " & okCount & " | Errores: " & errCount
+            Dim res As String = "Aplicados: " & okCount & " | Solicitudes: " & solicitudCount & " | Errores: " & errCount
             If errCount > 0 Then res &= vbCrLf & vbCrLf & errMsg
             Estado(res, errCount > 0)
             MessageBox.Show(res, "Resultado", MessageBoxButtons.OK,
