@@ -364,6 +364,7 @@ Public Class frm_menu_principal
     Friend WithEvents mrh_ControlAccesos As System.Windows.Forms.MenuItem
     Friend WithEvents mci_soc_documentacion_oc As System.Windows.Forms.MenuItem
     Friend WithEvents mci_tracking_orden_compra As System.Windows.Forms.MenuItem
+    Friend WithEvents mci_actualizacion_oc As System.Windows.Forms.MenuItem
     Friend WithEvents MenuItem2 As System.Windows.Forms.MenuItem
     Friend WithEvents mar_ol_venta_perdida As System.Windows.Forms.MenuItem
     Friend WithEvents mlo_liquidacionGastos As System.Windows.Forms.MenuItem
@@ -688,6 +689,7 @@ Public Class frm_menu_principal
         Me.mci_scm_proceso_compras = New System.Windows.Forms.MenuItem()
         Me.mci_soc_documentacion_oc = New System.Windows.Forms.MenuItem()
         Me.mci_tracking_orden_compra = New System.Windows.Forms.MenuItem()
+        Me.mci_actualizacion_oc = New System.Windows.Forms.MenuItem()
         Me.aduEnvioPDA = New System.Windows.Forms.MenuItem()
         Me.aduRecepcionDA = New System.Windows.Forms.MenuItem()
         Me.mci_int_reportes = New System.Windows.Forms.MenuItem()
@@ -2117,7 +2119,7 @@ Public Class frm_menu_principal
         'm_compras
         '
         Me.m_compras.Index = 7
-        Me.m_compras.MenuItems.AddRange(New System.Windows.Forms.MenuItem() {Me.mci_reportes, Me.mci_odc_edifact, Me.mci_reportes_adicionales, Me.mci_liberar_documentos, Me.mci_scm_mantenimiento_proveedores, Me.mci_scm_parametros, Me.mci_scm_mantenimiento_productos, Me.mci_scm_establecer_pedido, Me.mci_int_parametros, Me.mci_int_traslado, Me.mci_int_listado, Me.mci_scm_ver_pedidos, Me.adu_di, Me.MenuItem5, Me.adu_reserva, Me.adu_solicitud_reserva, Me.adu_reportes, Me.adu_dua, Me.mci_scm_establecer_coberturas, Me.mci_soc_fechas_oc, Me.mci_scm_proceso_compras, Me.mci_soc_documentacion_oc, Me.mci_tracking_orden_compra, Me.aduEnvioPDA, Me.aduRecepcionDA, Me.mci_int_reportes, Me.mci_int_productosBloqueados, Me.mci_trackingInternaciones, Me.adu_DR, Me.adu_trasladoDUA, Me.mco_solicitudRequisiciones, Me.mco_mantenedorITEM, Me.mco_mantenedorPrecios, Me.mco_EnvioOrdenesCompra, Me.mco_RecepcionOrdenesCompra, Me.mco_EnvioOrdenesCompraConta, Me.adu_InventarioFisicoDA, Me.mlo_ci_etiquetado, Me.mci_tracking_oc_tesoreria, Me.mci_soc_complemento_divinos, Me.mco_RecepcionFacturas_Requisicion, Me.mco_Envio_Facturas_Recepcion, Me.mci_soc_ocdivinos, Me.mco_requisicionesProyecto})
+        Me.m_compras.MenuItems.AddRange(New System.Windows.Forms.MenuItem() {Me.mci_reportes, Me.mci_odc_edifact, Me.mci_reportes_adicionales, Me.mci_liberar_documentos, Me.mci_scm_mantenimiento_proveedores, Me.mci_scm_parametros, Me.mci_scm_mantenimiento_productos, Me.mci_scm_establecer_pedido, Me.mci_int_parametros, Me.mci_int_traslado, Me.mci_int_listado, Me.mci_scm_ver_pedidos, Me.adu_di, Me.MenuItem5, Me.adu_reserva, Me.adu_solicitud_reserva, Me.adu_reportes, Me.adu_dua, Me.mci_scm_establecer_coberturas, Me.mci_soc_fechas_oc, Me.mci_scm_proceso_compras, Me.mci_soc_documentacion_oc, Me.mci_tracking_orden_compra, Me.aduEnvioPDA, Me.aduRecepcionDA, Me.mci_int_reportes, Me.mci_int_productosBloqueados, Me.mci_trackingInternaciones, Me.adu_DR, Me.adu_trasladoDUA, Me.mco_solicitudRequisiciones, Me.mco_mantenedorITEM, Me.mco_mantenedorPrecios, Me.mco_EnvioOrdenesCompra, Me.mco_RecepcionOrdenesCompra, Me.mco_EnvioOrdenesCompraConta, Me.adu_InventarioFisicoDA, Me.mlo_ci_etiquetado, Me.mci_tracking_oc_tesoreria, Me.mci_soc_complemento_divinos, Me.mco_RecepcionFacturas_Requisicion, Me.mco_Envio_Facturas_Recepcion, Me.mci_soc_ocdivinos, Me.mco_requisicionesProyecto, Me.mci_actualizacion_oc})
         Me.m_compras.Text = "Compras"
         '
         'mci_reportes
@@ -2234,6 +2236,10 @@ Public Class frm_menu_principal
         '
         Me.mci_tracking_orden_compra.Index = 22
         Me.mci_tracking_orden_compra.Text = "Tracking OC"
+        '
+        'mci_actualizacion_oc
+        '
+        Me.mci_actualizacion_oc.Text = "Actualizacion OC"
         '
         'aduEnvioPDA
         '
@@ -4820,6 +4826,12 @@ Public Class frm_menu_principal
             mMenuP(7).MenuItems.Add(New RichMenuItem(mimg.Bitmaps(eImagenes.eHistory), "&Tracking Orden de Compra", AddressOf mci_tracking_orden_compra_Click, Shortcut.CtrlShiftT, "mci_tracking_orden_compra_Click"))
         End If
 
+        ''Actualización OC
+        dt.DefaultView.RowFilter = "opcion = 'mci_actualización_oc'"
+        If dt.DefaultView.Count > 0 Or cod_tipo_usuario >= 1 Then
+            mMenuP(7).MenuItems.Add(New RichMenuItem(mimg.Bitmaps(eImagenes.eNew), "&Actualización OC", AddressOf mci_actualizacion_oc_Click, "mci_actualizacion_oc_Click"))
+        End If
+
 
         ''SCM Tracking OC Tesoreria
         ''(c) 20160505
@@ -6974,6 +6986,18 @@ Public Class frm_menu_principal
     '    oform.Dispose()
     '    oform = Nothing
     'End Sub
+
+    Private Sub mci_actualizacion_oc_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles mci_actualizacion_oc.Click
+        Try
+            guardarLogB("Acceso " & DirectCast(sender, ClasesGenerales.General.RichMenuItem).Description, gs_usuario, Replace(DirectCast(DirectCast(sender, System.Windows.Forms.MenuItem).Parent, System.Windows.Forms.MenuItem).[Text], "&", ""), Replace(DirectCast(sender, System.Windows.Forms.MenuItem).[Text], "&", ""))
+        Catch ex As Exception
+        End Try
+
+        Dim oform As New frm_actualizacion_oc
+        oform.ShowDialog()
+        oform.Dispose()
+        oform = Nothing
+    End Sub
 
     Private Sub mci_tracking_orden_compra_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles mci_tracking_orden_compra.Click
         Try
