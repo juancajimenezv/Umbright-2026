@@ -2440,7 +2440,7 @@ Public Class frm_menu_principal
         '
         Me.pb_it.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.pb_it.Image = CType(resources.GetObject("pb_it.Image"), System.Drawing.Image)
-        Me.pb_it.Location = New System.Drawing.Point(876, 469)
+        Me.pb_it.Location = New System.Drawing.Point(876, 438)
         Me.pb_it.Name = "pb_it"
         Me.pb_it.Size = New System.Drawing.Size(86, 94)
         Me.pb_it.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -2450,7 +2450,7 @@ Public Class frm_menu_principal
         'pb_logo
         '
         Me.pb_logo.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
-        Me.pb_logo.Location = New System.Drawing.Point(12, 438)
+        Me.pb_logo.Location = New System.Drawing.Point(12, 407)
         Me.pb_logo.Name = "pb_logo"
         Me.pb_logo.Size = New System.Drawing.Size(162, 117)
         Me.pb_logo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -2459,7 +2459,7 @@ Public Class frm_menu_principal
         '
         'StatusBar1
         '
-        Me.StatusBar1.Location = New System.Drawing.Point(0, 569)
+        Me.StatusBar1.Location = New System.Drawing.Point(0, 538)
         Me.StatusBar1.Name = "StatusBar1"
         Me.StatusBar1.Panels.AddRange(New System.Windows.Forms.StatusBarPanel() {Me.StatusBarPanel1, Me.StatusBarPanel2, Me.StatusBarPanel3})
         Me.StatusBar1.ShowPanels = True
@@ -2471,20 +2471,20 @@ Public Class frm_menu_principal
         '
         Me.StatusBarPanel1.AutoSize = System.Windows.Forms.StatusBarPanelAutoSize.Spring
         Me.StatusBarPanel1.Name = "StatusBarPanel1"
-        Me.StatusBarPanel1.Width = 315
+        Me.StatusBarPanel1.Width = 312
         '
         'StatusBarPanel2
         '
         Me.StatusBarPanel2.AutoSize = System.Windows.Forms.StatusBarPanelAutoSize.Spring
         Me.StatusBarPanel2.Name = "StatusBarPanel2"
-        Me.StatusBarPanel2.Width = 315
+        Me.StatusBarPanel2.Width = 312
         '
         'StatusBarPanel3
         '
         Me.StatusBarPanel3.Alignment = System.Windows.Forms.HorizontalAlignment.Right
         Me.StatusBarPanel3.AutoSize = System.Windows.Forms.StatusBarPanelAutoSize.Spring
         Me.StatusBarPanel3.Name = "StatusBarPanel3"
-        Me.StatusBarPanel3.Width = 315
+        Me.StatusBarPanel3.Width = 312
         '
         'btnOpcion1
         '
@@ -2530,7 +2530,7 @@ Public Class frm_menu_principal
         '
         Me.AutoScaleBaseSize = New System.Drawing.Size(5, 13)
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(242, Byte), Integer), CType(CType(240, Byte), Integer), CType(CType(234, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(962, 575)
+        Me.ClientSize = New System.Drawing.Size(962, 544)
         Me.Controls.Add(Me.gbOpcines)
         Me.Controls.Add(Me.StatusBar1)
         Me.Controls.Add(Me.pb_logo)
@@ -4998,6 +4998,11 @@ Public Class frm_menu_principal
             mMenuP(7).MenuItems(4).MenuItems.Add(New RichMenuItem(mimg.Bitmaps(eImagenes.ePreview), "Solicitud de Requisiciones", AddressOf mco_solicitudRequisiciones_Click, Shortcut.CtrlShiftR, "mco_solicitudRequisiciones_Click"))
         End If
 
+        dt.DefaultView.RowFilter = "opcion = 'mci_requisicionesMasivaIA'"
+        If dt.DefaultView.Count > 0 Or cod_tipo_usuario >= 1 Then
+            mMenuP(7).MenuItems(4).MenuItems.Add(New RichMenuItem(mimg.Bitmaps(eImagenes.eNew), "Requisiciones Masivas (IA)", AddressOf mco_requisicionesMasivaIA_Click, Shortcut.None, "mco_requisicionesMasivaIA_Click"))
+        End If
+
 
         dt.DefaultView.RowFilter = "opcion = 'mci_envioRequisiciones'"
         If dt.DefaultView.Count > 0 Or cod_tipo_usuario >= 1 Then
@@ -7424,6 +7429,19 @@ Public Class frm_menu_principal
         End Try
 
         Dim oform As New frmRequisiciones
+        oform.ShowDialog()
+        oform.Dispose()
+        oform = Nothing
+
+    End Sub
+
+    Private Sub mco_requisicionesMasivaIA_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
+        Try
+            guardarLogB("Acceso " & DirectCast(sender, ClasesGenerales.General.RichMenuItem).Description, gs_usuario, Replace(DirectCast(DirectCast(sender, System.Windows.Forms.MenuItem).Parent, System.Windows.Forms.MenuItem).[Text], "&", ""), Replace(DirectCast(sender, System.Windows.Forms.MenuItem).[Text], "&", ""))
+        Catch ex As Exception
+        End Try
+
+        Dim oform As New frmRequisicionesMasivasIA
         oform.ShowDialog()
         oform.Dispose()
         oform = Nothing

@@ -3204,6 +3204,109 @@ Public Class frmRequisiciones
         Me.dgvCanalRec.DataSource   = oDSRec.Tables("canal_rec")
     End Sub
 
+    Private Sub alinearGridRec()
+        Try : Me.dgvDetalleRec.Columns("linea").ReadOnly = True : Catch ex As Exception : End Try
+        Try : Me.dgvCCostoRec.Columns("linea").ReadOnly = True : Catch ex As Exception : End Try
+        Try : Me.dgvCCostoRec.Columns("descripcion").ReadOnly = True : Catch ex As Exception : End Try
+        Try : Me.dgvMarcaRec.Columns("linea").ReadOnly = True : Catch ex As Exception : End Try
+        Try : Me.dgvMarcaRec.Columns("descripcion").ReadOnly = True : Catch ex As Exception : End Try
+        Try : Me.dgvGastoRec.Columns("linea").ReadOnly = True : Catch ex As Exception : End Try
+        Try : Me.dgvGastoRec.Columns("descripcion").ReadOnly = True : Catch ex As Exception : End Try
+        Try : Me.dgvCanalRec.Columns("linea").ReadOnly = True : Catch ex As Exception : End Try
+        Try : Me.dgvCanalRec.Columns("descripcion").ReadOnly = True : Catch ex As Exception : End Try
+    End Sub
+
+    Private Function buscarGlosaContaRec(ByVal sCodigo As String, ByVal sTipo As String) As String
+        Dim Otrans As New Transaccional.Conexion("FlexLine")
+        Dim dt As DataTable
+        Dim sDesc As String = String.Empty
+        Try
+            Otrans.open()
+            dt = Otrans.Obtiene("pa_sel_um_gen_tabcod '" & sCodigo.Replace("'", "''") & "','" & sTipo & "','" & gs_empresa & "'")
+            If dt IsNot Nothing AndAlso dt.Rows.Count >= 1 Then
+                sDesc = dt.Rows(0).Item("descripcion").ToString
+            End If
+        Catch ex As Exception
+        Finally
+            Otrans.close()
+            Otrans = Nothing
+        End Try
+        Return sDesc
+    End Function
+
+    Private Function buscarGlosaContaCanalRec(ByVal sCodigo As String) As String
+        Dim Otrans As New Transaccional.Conexion("FlexLine")
+        Dim dt As DataTable
+        Dim sDesc As String = String.Empty
+        Try
+            Otrans.open()
+            dt = Otrans.Obtiene("pa_var_um_canales '" & sCodigo.Replace("'", "''") & "'")
+            If dt IsNot Nothing AndAlso dt.Rows.Count >= 1 Then
+                sDesc = dt.Rows(0).Item("texto4").ToString
+            End If
+        Catch ex As Exception
+        Finally
+            Otrans.close()
+            Otrans = Nothing
+        End Try
+        Return sDesc
+    End Function
+
+    Private Sub dgvCCostoRec_CellValueChanged(sender As Object, e As DataGridViewCellEventArgs) Handles dgvCCostoRec.CellValueChanged
+        Try
+            If e.ColumnIndex < 0 OrElse e.RowIndex < 0 Then Exit Sub
+            If Me.dgvCCostoRec.Columns(e.ColumnIndex).Name.ToLower = "codigo" Then
+                Dim sCod As String = If(Me.dgvCCostoRec.Item("codigo", e.RowIndex).Value IsNot Nothing, Me.dgvCCostoRec.Item("codigo", e.RowIndex).Value.ToString, "")
+                If sCod.Length > 0 Then
+                    Me.dgvCCostoRec.Item("descripcion", e.RowIndex).Value = buscarGlosaContaRec(sCod, "CON_CCOSTO")
+                End If
+            End If
+        Catch ex As Exception
+        End Try
+    End Sub
+
+    Private Sub dgvMarcaRec_CellValueChanged(sender As Object, e As DataGridViewCellEventArgs) Handles dgvMarcaRec.CellValueChanged
+        Try
+            If e.ColumnIndex < 0 OrElse e.RowIndex < 0 Then Exit Sub
+            If Me.dgvMarcaRec.Columns(e.ColumnIndex).Name.ToLower = "codigo" Then
+                Dim sCod As String = If(Me.dgvMarcaRec.Item("codigo", e.RowIndex).Value IsNot Nothing, Me.dgvMarcaRec.Item("codigo", e.RowIndex).Value.ToString, "")
+                If sCod.Length > 0 Then
+                    Me.dgvMarcaRec.Item("descripcion", e.RowIndex).Value = buscarGlosaContaRec(sCod, "CON_MARCA")
+                End If
+            End If
+        Catch ex As Exception
+        End Try
+    End Sub
+
+    Private Sub dgvGastoRec_CellValueChanged(sender As Object, e As DataGridViewCellEventArgs) Handles dgvGastoRec.CellValueChanged
+        Try
+            If e.ColumnIndex < 0 OrElse e.RowIndex < 0 Then Exit Sub
+            If Me.dgvGastoRec.Columns(e.ColumnIndex).Name.ToLower = "codigo" Then
+                Dim sCod As String = If(Me.dgvGastoRec.Item("codigo", e.RowIndex).Value IsNot Nothing, Me.dgvGastoRec.Item("codigo", e.RowIndex).Value.ToString, "")
+                Dim sTipo As String = ""
+                Try : sTipo = If(Me.dgvGastoRec.Item("tipo", e.RowIndex).Value IsNot Nothing, Me.dgvGastoRec.Item("tipo", e.RowIndex).Value.ToString, "") : Catch ex As Exception : End Try
+                If sTipo.Trim.Length = 0 Then sTipo = "CON_ITEM"
+                If sCod.Length > 0 Then
+                    Me.dgvGastoRec.Item("descripcion", e.RowIndex).Value = buscarGlosaContaRec(sCod, sTipo)
+                End If
+            End If
+        Catch ex As Exception
+        End Try
+    End Sub
+
+    Private Sub dgvCanalRec_CellValueChanged(sender As Object, e As DataGridViewCellEventArgs) Handles dgvCanalRec.CellValueChanged
+        Try
+            If e.ColumnIndex < 0 OrElse e.RowIndex < 0 Then Exit Sub
+            If Me.dgvCanalRec.Columns(e.ColumnIndex).Name.ToLower = "codigo" Then
+                Dim sCod As String = If(Me.dgvCanalRec.Item("codigo", e.RowIndex).Value IsNot Nothing, Me.dgvCanalRec.Item("codigo", e.RowIndex).Value.ToString, "")
+                If sCod.Length > 0 Then
+                    Me.dgvCanalRec.Item("descripcion", e.RowIndex).Value = buscarGlosaContaCanalRec(sCod)
+                End If
+            End If
+        Catch ex As Exception
+        End Try
+    End Sub
+
     Private Sub cargarDetallePlantillaEnTab(ByVal pid As Integer, ByVal sDesc As String)
         crearEstructuraRec()
         Me.lblPlantillaEditando.Text = "Editando plantilla: " & sDesc
@@ -3216,12 +3319,12 @@ Public Class frmRequisiciones
             If dtDet IsNot Nothing Then
                 For Each dr As DataRow In dtDet.Rows
                     Dim drAux As DataRow = oDSRec.Tables("detalle_rec").NewRow
-                    drAux("linea")        = dr("linea")
-                    drAux("codigo")       = dr("producto").ToString
-                    drAux("descripcion")  = dr("descripcion").ToString
-                    drAux("observaciones")= dr("comentario").ToString
-                    drAux("cantidad")     = dr("cantidad")
-                    drAux("precio")       = dr("precio")
+                    drAux("linea") = dr("linea")
+                    drAux("codigo") = dr("producto").ToString
+                    drAux("descripcion") = dr("descripcion").ToString
+                    drAux("observaciones") = dr("comentario").ToString
+                    drAux("cantidad") = dr("cantidad")
+                    drAux("precio") = dr("precio")
                     oDSRec.Tables("detalle_rec").Rows.Add(drAux)
                 Next
             End If
@@ -3232,27 +3335,29 @@ Public Class frmRequisiciones
                     Dim sTipo As String = dr("tipo").ToString
                     If sTipo = "CON_CCOSTO" Then
                         Dim drAux As DataRow = oDSRec.Tables("ccosto_rec").NewRow
-                        drAux("linea")       = dr("linea")
-                        drAux("codigo")      = dr("codigo").ToString
-                        drAux("descripcion") = dr("descripcion").ToString
-                        drAux("Porcentaje")  = dr("porcentaje")
+                        drAux("linea") = dr("linea")
+                        drAux("codigo") = dr("codigo").ToString
+                        drAux("descripcion") = buscarGlosaContaRec(dr("codigo").ToString, "CON_CCOSTO")
+                        drAux("Porcentaje") = dr("porcentaje")
                         oDSRec.Tables("ccosto_rec").Rows.Add(drAux)
                     ElseIf sTipo = "CON_MARCA" Then
                         Dim drAux As DataRow = oDSRec.Tables("marca_rec").NewRow
-                        drAux("linea")              = dr("linea")
-                        drAux("codigo")             = dr("codigo").ToString
-                        drAux("descripcion")        = dr("descripcion").ToString
-                        drAux("Porcentaje")         = dr("porcentaje")
+                        drAux("linea") = dr("linea")
+                        drAux("codigo") = dr("codigo").ToString
+                        drAux("descripcion") = buscarGlosaContaRec(dr("codigo").ToString, "CON_MARCA")
+                        drAux("Porcentaje") = dr("porcentaje")
                         drAux("Porcentaje_Empresa") = dr("porcentaje_empresa")
-                        drAux("Porcentaje_Socio")   = dr("porcentaje_socio")
+                        drAux("Porcentaje_Socio") = dr("porcentaje_socio")
                         oDSRec.Tables("marca_rec").Rows.Add(drAux)
                     ElseIf sTipo = "CON_ITEM" Then
                         Dim drAux As DataRow = oDSRec.Tables("gasto_rec").NewRow
-                        drAux("linea")       = dr("linea")
-                        drAux("codigo")      = dr("codigo").ToString
-                        drAux("descripcion") = dr("descripcion").ToString
-                        drAux("Porcentaje")  = dr("porcentaje")
-                        drAux("tipo")        = dr("tipo_gasto").ToString
+                        Dim sTipoGasto As String = dr("tipo_gasto").ToString
+                        If sTipoGasto.Trim.Length = 0 Then sTipoGasto = "CON_ITEM"
+                        drAux("linea") = dr("linea")
+                        drAux("codigo") = dr("codigo").ToString
+                        drAux("descripcion") = buscarGlosaContaRec(dr("codigo").ToString, sTipoGasto)
+                        drAux("Porcentaje") = dr("porcentaje")
+                        drAux("tipo") = dr("tipo_gasto").ToString
                         oDSRec.Tables("gasto_rec").Rows.Add(drAux)
                     End If
                 Next
@@ -3262,13 +3367,15 @@ Public Class frmRequisiciones
             If dtCanal IsNot Nothing Then
                 For Each dr As DataRow In dtCanal.Rows
                     Dim drAux As DataRow = oDSRec.Tables("canal_rec").NewRow
-                    drAux("linea")       = 0
-                    drAux("codigo")      = dr("canal").ToString
-                    drAux("descripcion") = dr("canal").ToString
-                    drAux("Porcentaje")  = dr("porcentaje")
+                    drAux("linea") = 0
+                    drAux("codigo") = dr("canal").ToString
+                    drAux("descripcion") = buscarGlosaContaCanalRec(dr("canal").ToString)
+                    drAux("Porcentaje") = dr("porcentaje")
                     oDSRec.Tables("canal_rec").Rows.Add(drAux)
                 Next
             End If
+
+            alinearGridRec()
 
         Catch ex As Exception
             MessageBox.Show("Error al cargar detalle: " & ex.Message, "Recurrentes", MessageBoxButtons.OK, MessageBoxIcon.Error)
@@ -3285,14 +3392,109 @@ Public Class frmRequisiciones
             MessageBox.Show("Debe tener al menos una línea de detalle.", "Recurrente", MessageBoxButtons.OK, MessageBoxIcon.Warning)
             Exit Sub
         End If
-        If oDSRec.Tables("ccosto_rec").Select("", "", DataViewRowState.CurrentRows).Length = 0 Then
-            MessageBox.Show("Debe tener al menos un centro de costo.", "Recurrente", MessageBoxButtons.OK, MessageBoxIcon.Warning)
-            Exit Sub
+
+        Dim ntotal As Double
+        Dim lbContinuar As Boolean = True
+
+        ' Validar Centro de Costo
+        Try
+            If oDSRec.Tables("ccosto_rec").Select("", "", DataViewRowState.CurrentRows).Length > 0 Then
+                ntotal = CDbl(oDSRec.Tables("ccosto_rec").Compute("sum(Porcentaje)", "Porcentaje > 0"))
+                If ntotal <> 100 Then
+                    MessageBox.Show("El Total de Centro de Costo No Suma 100%", "Verificacion", MessageBoxButtons.OK, MessageBoxIcon.Stop)
+                    lbContinuar = False
+                End If
+                If lbContinuar Then
+                    oDSRec.Tables("ccosto_rec").DefaultView.RowFilter = "descripcion = '' OR descripcion IS NULL"
+                    If oDSRec.Tables("ccosto_rec").DefaultView.Count > 0 Then
+                        MessageBox.Show("Tiene Centro de Costos Invalidos, Por Favor Verificar", "Verificacion", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+                        lbContinuar = False
+                    End If
+                    oDSRec.Tables("ccosto_rec").DefaultView.RowFilter = ""
+                End If
+            Else
+                MessageBox.Show("La Solicitud Debe Llevar Centro de Costo", "Verificacion", MessageBoxButtons.OK, MessageBoxIcon.Stop)
+                lbContinuar = False
+            End If
+        Catch ex As Exception
+        End Try
+
+        ' Validar Marca (si tiene filas)
+        If lbContinuar Then
+            Try
+                If oDSRec.Tables("marca_rec").Select("", "", DataViewRowState.CurrentRows).Length > 0 Then
+                    ntotal = CDbl(oDSRec.Tables("marca_rec").Compute("sum(Porcentaje)", "Porcentaje > 0"))
+                    If ntotal <> 100 Then
+                        MessageBox.Show("El Total Por Marca No Suma 100%", "Verificacion", MessageBoxButtons.OK, MessageBoxIcon.Stop)
+                        lbContinuar = False
+                    End If
+                    If lbContinuar Then
+                        oDSRec.Tables("marca_rec").DefaultView.RowFilter = "descripcion = '' OR descripcion IS NULL"
+                        If oDSRec.Tables("marca_rec").DefaultView.Count > 0 Then
+                            MessageBox.Show("Tiene Marcas Invalidas, Por Favor Verificar", "Verificacion", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+                            lbContinuar = False
+                        End If
+                        oDSRec.Tables("marca_rec").DefaultView.RowFilter = ""
+                    End If
+                    If lbContinuar Then
+                        For Each drM As DataRow In oDSRec.Tables("marca_rec").Select("", "", DataViewRowState.CurrentRows)
+                            If CDbl(drM.Item("Porcentaje_Empresa")) + CDbl(drM.Item("Porcentaje_Socio")) <> 100 Then
+                                MessageBox.Show("La Marca " & drM.Item("descripcion").ToString & " Debe Sumar 100% en Empresa + Socio", "Verificacion", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+                                lbContinuar = False
+                                Exit For
+                            End If
+                        Next
+                    End If
+                End If
+            Catch ex As Exception
+            End Try
         End If
-        If oDSRec.Tables("gasto_rec").Select("", "", DataViewRowState.CurrentRows).Length = 0 Then
-            MessageBox.Show("Debe tener al menos un ítem/gasto.", "Recurrente", MessageBoxButtons.OK, MessageBoxIcon.Warning)
-            Exit Sub
+
+        ' Validar Gasto (si tiene filas)
+        If lbContinuar Then
+            Try
+                If oDSRec.Tables("gasto_rec").Select("", "", DataViewRowState.CurrentRows).Length > 0 Then
+                    ntotal = CDbl(oDSRec.Tables("gasto_rec").Compute("sum(Porcentaje)", "Porcentaje > 0"))
+                    If ntotal <> 100 Then
+                        MessageBox.Show("El Total Por Gasto No Suma 100%", "Verificacion", MessageBoxButtons.OK, MessageBoxIcon.Stop)
+                        lbContinuar = False
+                    End If
+                    If lbContinuar Then
+                        oDSRec.Tables("gasto_rec").DefaultView.RowFilter = "descripcion = '' OR descripcion IS NULL"
+                        If oDSRec.Tables("gasto_rec").DefaultView.Count > 0 Then
+                            MessageBox.Show("Tiene Gastos Invalidos, Por Favor Verificar", "Verificacion", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+                            lbContinuar = False
+                        End If
+                        oDSRec.Tables("gasto_rec").DefaultView.RowFilter = ""
+                    End If
+                End If
+            Catch ex As Exception
+            End Try
         End If
+
+        ' Validar Canal (si tiene filas)
+        If lbContinuar Then
+            Try
+                If oDSRec.Tables("canal_rec").Select("", "", DataViewRowState.CurrentRows).Length > 0 Then
+                    ntotal = CDbl(oDSRec.Tables("canal_rec").Compute("sum(Porcentaje)", "Porcentaje > 0"))
+                    If ntotal <> 100 Then
+                        MessageBox.Show("El Total Por Canal No Suma 100%", "Verificacion", MessageBoxButtons.OK, MessageBoxIcon.Stop)
+                        lbContinuar = False
+                    End If
+                    If lbContinuar Then
+                        oDSRec.Tables("canal_rec").DefaultView.RowFilter = "descripcion = '' OR descripcion IS NULL"
+                        If oDSRec.Tables("canal_rec").DefaultView.Count > 0 Then
+                            MessageBox.Show("Tiene Canales Invalidos, Por Favor Verificar", "Verificacion", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+                            lbContinuar = False
+                        End If
+                        oDSRec.Tables("canal_rec").DefaultView.RowFilter = ""
+                    End If
+                End If
+            Catch ex As Exception
+            End Try
+        End If
+
+        If Not lbContinuar Then Exit Sub
 
         Dim Otrans As New Transaccional.Conexion("SCM")
         Try
@@ -3684,7 +3886,10 @@ Public Class frmRequisiciones
 
     Private Sub btnEditarDetallePlantilla_Click(sender As Object, e As EventArgs) Handles btnEditarDetallePlantilla.Click
         Try
-            If Me.dgvRecurrentes.CurrentRow Is Nothing Then Exit Sub
+            If Me.dgvRecurrentes.CurrentRow Is Nothing Then
+                MessageBox.Show("Seleccione una plantilla del listado.", "Recurrentes", MessageBoxButtons.OK, MessageBoxIcon.Information)
+                Exit Sub
+            End If
             Dim id As Integer = CInt(Me.dgvRecurrentes.Item("id_recurrente", Me.dgvRecurrentes.CurrentRow.Index).Value)
             Dim sDesc As String = Me.dgvRecurrentes.Item("descripcion", Me.dgvRecurrentes.CurrentRow.Index).Value.ToString
             idPlantillaEditando = id
@@ -3770,18 +3975,19 @@ Public Class frmRequisiciones
             Try
                 Otrans.open()
 
-                ' 1. Generar la requisición
-                Otrans.Ingresa("pa_gen_um_requisicion_desde_recurrente " & idRecurrente & ",'" & gs_empresa & "','" & gs_usuario & "'")
+                ' 1. Obtener y formatear el número (misma lógica que requisición normal)
+                dt = Otrans.Obtiene("pa_var_um_numero_requisicion '" & gs_empresa & "'")
+                If dt Is Nothing OrElse dt.Rows.Count = 0 Then
+                    MessageBox.Show("No se pudo obtener el número de requisición.", "Recurrentes", MessageBoxButtons.OK, MessageBoxIcon.Error)
+                    Exit Try
+                End If
+                Dim sNumero As String = dt.Rows(0).Item("numero").ToString.PadLeft(10, "0")
+
+                ' 2. Generar la requisición pasando el número ya formateado
+                Otrans.Ingresa("pa_gen_um_requisicion_desde_recurrente " & idRecurrente & ",'" & gs_empresa & "','" & gs_usuario & "','" & sNumero & "'")
                 If Otrans.Codigo_error > 0 Then
                     MessageBox.Show("Error al generar: " & Otrans.descripcion_error, "Recurrentes", MessageBoxButtons.OK, MessageBoxIcon.Error)
                     Exit Try
-                End If
-
-                ' 2. Leer el número generado
-                dt = Otrans.Obtiene("pa_sel_um_requisicion_last_numero '" & gs_empresa & "'," & idRecurrente)
-                Dim sNumero As String = ""
-                If dt IsNot Nothing AndAlso dt.Rows.Count > 0 Then
-                    sNumero = dt.Rows(0).Item("numero").ToString.Trim
                 End If
 
                 MessageBox.Show("Requisición " & sNumero & " generada correctamente.", "Recurrentes", MessageBoxButtons.OK, MessageBoxIcon.Information)

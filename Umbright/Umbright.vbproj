@@ -14,6 +14,8 @@
     <ApplicationIcon>Umbright.ico</ApplicationIcon>
     <IsWebBootstrapper>false</IsWebBootstrapper>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>false</AutoGenerateBindingRedirects>
+    <GenerateBindingRedirectsOutputType>false</GenerateBindingRedirectsOutputType>
     <FileUpgradeFlags>
     </FileUpgradeFlags>
     <UpgradeBackupLocation>
@@ -1117,6 +1119,43 @@
     <Compile Include="SCM\frmRequisiciones.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="SCM\RequisicionIA_Modelos.vb" />
+    <Compile Include="SCM\RequisicionIA_Estilos.vb" />
+    <Compile Include="SCM\RequisicionValidator.vb" />
+    <Compile Include="SCM\RequisicionCatalogContext.vb" />
+    <Compile Include="SCM\RequisicionPersistenceService.vb" />
+    <Compile Include="SCM\AnthropicClient.vb" />
+    <Compile Include="SCM\RequisicionChatOrchestrator.vb" />
+    <Compile Include="SCM\frmRequisicionesMasivasIA.Designer.vb">
+      <DependentUpon>frmRequisicionesMasivasIA.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SCM\frmRequisicionesMasivasIA.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SCM\frmConfigurarApiKeyIA.Designer.vb">
+      <DependentUpon>frmConfigurarApiKeyIA.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SCM\frmConfigurarApiKeyIA.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SCM\frmRequisicionMasivaIA_Linea.Designer.vb">
+      <DependentUpon>frmRequisicionMasivaIA_Linea.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SCM\frmRequisicionMasivaIA_Linea.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SCM\frmRequisicionMasivaIA_Cabecera.Designer.vb">
+      <DependentUpon>frmRequisicionMasivaIA_Cabecera.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SCM\frmRequisicionMasivaIA_Cabecera.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SCM\frmRequisicionMasivaIA_Distribucion.Designer.vb">
+      <DependentUpon>frmRequisicionMasivaIA_Distribucion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SCM\frmRequisicionMasivaIA_Distribucion.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="SCM\frmRequisicionUsuarioSolicito.Designer.vb">
       <DependentUpon>frmRequisicionUsuarioSolicito.vb</DependentUpon>
     </Compile>
@@ -2060,6 +2099,9 @@
     <EmbeddedResource Include="SCM\frmRequisicionesCalendario.resx">
       <DependentUpon>frmRequisicionesCalendario.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="SCM\frmRequisicionesMasivasIA.resx">
+      <DependentUpon>frmRequisicionesMasivasIA.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="SCM\frmRequisicionesProyectos.resx">
       <DependentUpon>frmRequisicionesProyectos.vb</DependentUpon>
     </EmbeddedResource>
@@ -2704,6 +2746,9 @@
     </Reference>
     <Reference Include="GemBox.Spreadsheet, Version=45.0.0.1187, Culture=neutral, PublicKeyToken=b1b72c69714d4847, processorArchitecture=MSIL">
       <HintPath>packages\GemBox.Spreadsheet.45.0.1187\lib\net35\GemBox.Spreadsheet.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>packages\Newtonsoft.Json.12.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="Interop.prtcom">
       <HintPath>..\Clases4.0\Terceros\Interop.prtcom.dll</HintPath>
