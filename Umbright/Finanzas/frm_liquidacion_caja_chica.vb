@@ -414,9 +414,13 @@ Public Class frm_liquidacion_caja_chica
             Oaut = Nothing
             ClsGen = Nothing
 
+            Carga_imagenes_recibos()
+
         End Try
 
     End Sub
+
+
 
     Private Sub ReporteFel(psEmpresaResponsable As String)
         Dim ls_ubicaciones As String = ""
@@ -454,8 +458,58 @@ Public Class frm_liquidacion_caja_chica
 
         End Try
 
+
     End Sub
 
+    Private Sub Carga_imagenes_recibos()
+        Dim clsGen As New ClasesGenerales.General
+        Dim dt As DataTable
+        Dim lsNumero As String = ""
+        Dim lsEmpresa As String = ""
+        Dim lsTipoDocto As String = ""
+        Dim lbEncontrado As Boolean = False
+        Dim path_imagenes As String = ""
+
+        Try
+
+            ' Buscar en el DataGridView la fila donde TipoDocto = "Recibo"
+            For Each row As DataGridViewRow In dgv_Detalle.Rows
+
+                If row.Cells("tipodocto").Value.ToString = "FACTURAS EXENTAS" Then
+
+                    lsNumero = row.Cells("numero").Value.ToString
+                    lsEmpresa = row.Cells("empresa").Value.ToString
+                    lsTipoDocto = "Recibo"
+                    lbEncontrado = True
+
+
+                    Dim lsSQL As String
+                    lsSQL = " select PDF_link from dbo.liquidaciones_gastos where tipoDocto = 'Recibo' " &
+                     " and No_factura = '" & lsNumero & "' and Empresa = '" & lsEmpresa & "'"
+
+                    dt = clsGen.selectQuery("RegionalDBintOut", lsSQL)
+
+                    path_imagenes = dt.Rows(0).Item("PDF_link").ToString
+
+                    Try
+                        ' Abrir el archivo con el navegador predeterminado
+                        Process.Start(New ProcessStartInfo With {
+                     .FileName = path_imagenes,
+                     .UseShellExecute = True
+                         })
+                    Catch ex As Exception
+                        MsgBox(ex.Message)
+                    End Try
+
+
+                End If
+
+            Next
+
+        Catch ex As Exception
+            MsgBox("Error: " & ex.Message)
+        End Try
+    End Sub
 
 
     Private Sub EnviarAviso()
