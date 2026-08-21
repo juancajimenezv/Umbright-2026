@@ -2431,7 +2431,7 @@ Public Class frm_menu_principal
         'mer_actualizacionProductosIE
         '
         Me.mer_actualizacionProductosIE.Index = 13
-        Me.mer_actualizacionProductosIE.Text = "Actualizaciñn de Productos"
+        Me.mer_actualizacionProductosIE.Text = "Actualizacion de Productos"
         '
         'Label1
         '
@@ -3106,14 +3106,14 @@ Public Class frm_menu_principal
             mMenuP(9).MenuItems.Add(New RichMenuItem(mimg.Bitmaps(eImagenes.eRefresh), "Actualizacion de Productos", AddressOf Me.mer_actualizacionProductos_Click, Shortcut.CtrlShiftD, "Establecer Pedidos"))
         End If
 
-        ''Actualizaciñn de Productos (con sub-menñ de prueba visual)
+        ''Actualizacion de Productos (con sub-menñ de prueba visual)
         otabla.DefaultView.RowFilter = "opcion LIKE 'mer_actProd_%'"
         If otabla.DefaultView.Count > 0 Or cod_tipo_usuario >= 1 Then
-            mMenuP(9).MenuItems.Add(New RichMenuItem(mimg.Bitmaps(eImagenes.eRefresh), "Actualizaciñn de Productos", AddressOf Me.mer_actualizacionProductosIE_Click, Shortcut.CtrlShiftT, "Actualizaciñn de Productos"))
+            mMenuP(9).MenuItems.Add(New RichMenuItem(mimg.Bitmaps(eImagenes.eRefresh), "Actualizacion de Productos", AddressOf Me.mer_actualizacionProductosIE_Click, Shortcut.CtrlShiftT, "Actualizacion de Productos"))
             ' Sub-menu: Individual y Masiva
             Dim padre As System.Windows.Forms.MenuItem = mMenuP(9).MenuItems(mMenuP(9).MenuItems.Count - 1)
-            padre.MenuItems.Add(New RichMenuItem(mimg.Bitmaps(eImagenes.eRefresh), "Actualizaciñn Individual", AddressOf Me.actualizacionProductos_Individual_Click, Shortcut.None, "Actualizaciñn Individual de Productos"))
-            padre.MenuItems.Add(New RichMenuItem(mimg.Bitmaps(eImagenes.eRefresh), "Actualizaciñn Masiva", AddressOf Me.actualizacionProductos_Masiva_Click, Shortcut.None, "Actualizaciñn Masiva por Excel"))
+            padre.MenuItems.Add(New RichMenuItem(mimg.Bitmaps(eImagenes.eRefresh), "Actualizacion Individual", AddressOf Me.actualizacionProductos_Individual_Click, Shortcut.None, "Actualizacion Individual de Productos"))
+            padre.MenuItems.Add(New RichMenuItem(mimg.Bitmaps(eImagenes.eRefresh), "Actualizacion Masiva", AddressOf Me.actualizacionProductos_Masiva_Click, Shortcut.None, "Actualizacion Masiva por Excel"))
         End If
 
 
@@ -8053,7 +8053,7 @@ Public Class frm_menu_principal
 
     Private Sub mer_actualizacionProductosIE_Click(sender As Object, e As EventArgs) Handles mer_actualizacionProductosIE.Click
         Try
-            guardarLogB("Acceso Actualizaciñn de Productos", gs_usuario, "Mercadeo", "Actualizaciñn de Productos")
+            guardarLogB("Acceso Actualizacion de Productos", gs_usuario, "Mercadeo", "Actualizacion de Productos")
         Catch ex As Exception
         End Try
 
@@ -8065,7 +8065,7 @@ Public Class frm_menu_principal
 
     Private Sub actualizacionProductos_Individual_Click(sender As Object, e As EventArgs)
         Try
-            guardarLogB("Acceso Actualizaciñn Individual", gs_usuario, "Mercadeo", "Actualizaciñn Individual")
+            guardarLogB("Acceso Actualizacion Individual", gs_usuario, "Mercadeo", "Actualizacion Individual")
         Catch ex As Exception
         End Try
         Dim oform As New frm_actualizacionProductosIE
@@ -8076,7 +8076,7 @@ Public Class frm_menu_principal
 
     Private Sub actualizacionProductos_Masiva_Click(sender As Object, e As EventArgs)
         Try
-            guardarLogB("Acceso Actualizaciñn Masiva", gs_usuario, "Mercadeo", "Actualizaciñn Masiva")
+            guardarLogB("Acceso Actualizacion Masiva", gs_usuario, "Mercadeo", "Actualizacion Masiva")
         Catch ex As Exception
         End Try
         Dim oform As New frm_actualizacionProductosMasivaIE

@@ -2,7 +2,8 @@ Imports System.Data
 Imports System.IO
 Imports System.Windows.Forms
 Imports System.Collections.Generic
-Imports GemBox.Spreadsheet
+Imports System.IO.Compression
+Imports System.Xml
 
 ' =============================================================================
 ' Actualización Masiva IE
@@ -20,6 +21,9 @@ Public Class frm_actualizacionProductosMasivaIE
     Private Const COL_VALOR_ACTUAL As String = "valor_actual"
     Private Const COL_ESTADO As String = "estado"
 
+    ' Maximo de productos por archivo. Arriba de esto la pantalla se vuelve inusable.
+    Private Const LIMITE_FILAS As Integer = 2000
+
     Private datosCargados As Boolean = False
     Private validado As Boolean = False
 
@@ -36,11 +40,6 @@ Public Class frm_actualizacionProductosMasivaIE
 
     Private Sub frm_actualizacionProductosMasivaIE_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Try
-            Try
-                SpreadsheetInfo.SetLicense("FREE-LIMITED-KEY")
-            Catch
-            End Try
-
             PermisosActProductos.Cargar()
             CargarEmpresas()
             ActualizarColumnasDisponibles()  ' depende de cmbEmpresa
@@ -294,9 +293,11 @@ Public Class frm_actualizacionProductosMasivaIE
         Return c
     End Function
 
+    ' Lee el archivo con Microsoft.ACE.OLEDB (sin limite de filas de licencia).
+    ' Tope de la pantalla: LIMITE_FILAS productos por archivo.
     Private Sub btnCargarExcel_Click(sender As Object, e As EventArgs) Handles btnCargarExcel.Click
         Using ofd As New OpenFileDialog()
-            ofd.Filter = "Excel|*.xlsx;*.xls;*.csv"
+            ofd.Filter = "Excel|*.xlsx;*.xlsm;*.csv"
             ofd.Title = "Selecciona el archivo Excel"
             If ofd.ShowDialog() <> DialogResult.OK Then Return
 
@@ -305,21 +306,51 @@ Public Class frm_actualizacionProductosMasivaIE
                 LimpiarGrid()
                 btnAplicar.Enabled = False
                 validado = False
+                datosCargados = False
 
-                Dim wb As ExcelFile = ExcelFile.Load(ofd.FileName)
-                Dim ws As ExcelWorksheet = wb.Worksheets(0)
+                Dim dtExcel As DataTable = LeerArchivo(ofd.FileName)
+                If dtExcel Is Nothing Then Return
 
-                ' Detectar si fila 0 es encabezado (contiene 'producto'/'codigo'/'código')
-                Dim primA As String = SafeCell(ws, 0, 0).ToLower()
-                Dim tieneEncabezado As Boolean = (primA.Contains("producto") OrElse primA.Contains("codigo") OrElse primA.Contains("código"))
-                Dim row As Integer = If(tieneEncabezado, 1, 0)
+                ' Detectar si la primera fila es encabezado ('producto' / 'codigo' / con tilde)
+                Dim iniFila As Integer = 0
+                If dtExcel.Rows.Count > 0 Then
+                    Dim primA As String = SafeCol(dtExcel.Rows(0), 0).ToLower()
+                    If primA.Contains("producto") OrElse primA.Contains("codigo") OrElse primA.Contains("digo") Then
+                        iniFila = 1
+                    End If
+                End If
+
+                ' Contar productos reales antes de cargar nada al grid
+                Dim totalReales As Integer = 0
+                For i As Integer = iniFila To dtExcel.Rows.Count - 1
+                    If SafeCol(dtExcel.Rows(i), 0) <> "" OrElse SafeCol(dtExcel.Rows(i), 1) <> "" Then
+                        totalReales += 1
+                    End If
+                Next
+
+                If totalReales > LIMITE_FILAS Then
+                    MessageBox.Show(
+                        "El archivo tiene " & totalReales.ToString("N0") & " productos y el maximo por carga es " &
+                        LIMITE_FILAS.ToString("N0") & "." & vbCrLf & vbCrLf &
+                        "Divide el Excel en varios archivos de maximo " & LIMITE_FILAS.ToString("N0") &
+                        " productos y cargalos uno por uno." & vbCrLf & vbCrLf &
+                        "Recomendado: bloques de 500 productos, que es donde la pantalla responde mas rapido.",
+                        "Archivo demasiado grande", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+                    lblArchivo.Text = "(ningun archivo cargado)"
+                    lblArchivo.ForeColor = System.Drawing.Color.Gray
+                    Estado("Archivo NO cargado: tiene " & totalReales.ToString("N0") & " productos y el maximo es " &
+                           LIMITE_FILAS.ToString("N0") & ".", True)
+                    Return
+                End If
+
                 Dim cargados As Integer = 0
-                Do
-                    Dim cellProd As String = SafeCell(ws, row, 0)
-                    Dim cellVal As String = SafeCell(ws, row, 1)
-                    If cellProd = "" AndAlso cellVal = "" Then Exit Do
+                dgvDatos.SuspendLayout()
+                For i As Integer = iniFila To dtExcel.Rows.Count - 1
+                    Dim cellProd As String = SafeCol(dtExcel.Rows(i), 0)
+                    Dim cellVal As String = SafeCol(dtExcel.Rows(i), 1)
+                    If cellProd = "" AndAlso cellVal = "" Then Continue For
 
-                    ' Padding: si es numérico y tiene menos de 10 dígitos, completar con ceros a la izquierda
+                    ' Padding: si es numerico y tiene menos de 10 digitos, completar con ceros a la izquierda
                     If cellProd <> "" AndAlso IsNumeric(cellProd) AndAlso cellProd.Length < 10 Then
                         cellProd = cellProd.PadLeft(10, "0"c)
                     End If
@@ -329,14 +360,13 @@ Public Class frm_actualizacionProductosMasivaIE
                     dgvDatos.Rows(r).Cells(COL_VALOR_NUEVO).Value = cellVal.ToUpper()
                     dgvDatos.Rows(r).Cells(COL_ESTADO).Value = "(pendiente)"
                     cargados += 1
-                    row += 1
-                    If row > 50000 Then Exit Do
-                Loop
+                Next
+                dgvDatos.ResumeLayout()
 
                 lblArchivo.Text = Path.GetFileName(ofd.FileName) & "  (" & cargados & " filas)"
                 lblArchivo.ForeColor = System.Drawing.Color.Black
                 datosCargados = (cargados > 0)
-                Estado("Excel cargado. Selecciona Empresa y Columna, luego presiona Validar.", False)
+                Estado("Excel cargado: " & cargados & " producto(s). Selecciona Empresa y Columna, luego presiona Validar.", False)
             Catch ex As Exception
                 Estado("Error al leer Excel: " & ex.Message, True)
             Finally
@@ -345,10 +375,175 @@ Public Class frm_actualizacionProductosMasivaIE
         End Using
     End Sub
 
-    Private Function SafeCell(ws As ExcelWorksheet, r As Integer, c As Integer) As String
+    ' xlsx/xlsm leidos directamente (son un ZIP con XML adentro), csv como texto plano.
+    ' No usa ACE.OLEDB ni GemBox: no requiere instalar nada y funciona en 32 bits.
+    Private Function LeerArchivo(ruta As String) As DataTable
+        Dim ext As String = Path.GetExtension(ruta).ToLower()
+        Select Case ext
+            Case ".csv"
+                Return LeerCsv(ruta)
+            Case ".xlsx", ".xlsm"
+                Return LeerXlsx(ruta)
+            Case Else
+                MessageBox.Show(
+                    "El formato " & ext & " no es compatible." & vbCrLf & vbCrLf &
+                    "Abre el archivo en Excel y guardalo como .xlsx (Libro de Excel) o como .csv.",
+                    "Formato no soportado", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+                Estado("Formato no soportado: " & ext & ". Guarda el archivo como .xlsx.", True)
+                Return Nothing
+        End Select
+    End Function
+
+    ' Lee las columnas A y B de la primera hoja de un .xlsx
+    Private Function LeerXlsx(ruta As String) As DataTable
+        Dim dt As New DataTable()
+        dt.Columns.Add("F1")
+        dt.Columns.Add("F2")
+
+        Using fs As New FileStream(ruta, FileMode.Open, FileAccess.Read)
+            Using zip As New ZipArchive(fs, ZipArchiveMode.Read)
+
+                Dim compartidas As List(Of String) = LeerSharedStrings(zip)
+
+                Dim hoja As ZipArchiveEntry = zip.GetEntry("xl/worksheets/sheet1.xml")
+                If hoja Is Nothing Then
+                    For Each en As ZipArchiveEntry In zip.Entries
+                        If en.FullName.StartsWith("xl/worksheets/") AndAlso en.FullName.EndsWith(".xml") Then
+                            hoja = en
+                            Exit For
+                        End If
+                    Next
+                End If
+                If hoja Is Nothing Then
+                    Estado("El archivo no tiene ninguna hoja legible.", True)
+                    Return Nothing
+                End If
+
+                Using st As Stream = hoja.Open()
+                    Using rd As XmlReader = XmlReader.Create(st)
+                        Dim colA As String = ""
+                        Dim colB As String = ""
+                        Dim refCelda As String = ""
+                        Dim tipoCelda As String = ""
+
+                        While rd.Read()
+                            If rd.NodeType = XmlNodeType.Element Then
+                                Select Case rd.LocalName
+                                    Case "row"
+                                        colA = ""
+                                        colB = ""
+                                        If rd.IsEmptyElement Then dt.Rows.Add("", "")
+                                    Case "c"
+                                        refCelda = If(rd.GetAttribute("r"), "")
+                                        tipoCelda = If(rd.GetAttribute("t"), "")
+                                    Case "v"
+                                        AsignarCelda(refCelda, tipoCelda, rd.ReadElementContentAsString(),
+                                                     compartidas, colA, colB)
+                                    Case "t"
+                                        If tipoCelda = "inlineStr" Then
+                                            AsignarCelda(refCelda, "", rd.ReadElementContentAsString(),
+                                                         compartidas, colA, colB)
+                                        End If
+                                End Select
+                            ElseIf rd.NodeType = XmlNodeType.EndElement AndAlso rd.LocalName = "row" Then
+                                dt.Rows.Add(colA, colB)
+                            End If
+                        End While
+                    End Using
+                End Using
+            End Using
+        End Using
+
+        Return dt
+    End Function
+
+    ' Guarda el valor de la celda si cae en la columna A (0) o B (1)
+    Private Sub AsignarCelda(refCelda As String, tipo As String, valor As String,
+                             compartidas As List(Of String),
+                             ByRef colA As String, ByRef colB As String)
+        If refCelda = "" Then Return
+        Dim col As Integer = ColumnaDesdeRef(refCelda)
+        If col < 0 OrElse col > 1 Then Return
+
+        Dim txt As String = valor
+        If tipo = "s" Then
+            Dim idx As Integer = -1
+            If Integer.TryParse(valor, idx) AndAlso idx >= 0 AndAlso idx < compartidas.Count Then
+                txt = compartidas(idx)
+            End If
+        End If
+        txt = txt.Trim()
+
+        If col = 0 Then
+            colA = txt
+        Else
+            colB = txt
+        End If
+    End Sub
+
+    ' "B12" -> 1 ; "A5" -> 0 ; "AB3" -> 27
+    Private Function ColumnaDesdeRef(refCelda As String) As Integer
+        Dim n As Integer = 0
+        For Each ch As Char In refCelda
+            If Not Char.IsLetter(ch) Then Exit For
+            n = n * 26 + (Asc(Char.ToUpper(ch)) - Asc("A"c) + 1)
+        Next
+        Return n - 1
+    End Function
+
+    ' Tabla de cadenas compartidas del xlsx (xl/sharedStrings.xml).
+    ' Se usa ReadSubtree por cada <si>: leer el <t> directo dejaria el lector
+    ' sobre </si> y el Read() del bucle se lo saltaria, perdiendo todas las cadenas.
+    Private Function LeerSharedStrings(zip As ZipArchive) As List(Of String)
+        Dim lst As New List(Of String)
+        Dim e As ZipArchiveEntry = zip.GetEntry("xl/sharedStrings.xml")
+        If e Is Nothing Then Return lst
+
+        Using st As Stream = e.Open()
+            Using rd As XmlReader = XmlReader.Create(st)
+                While rd.Read()
+                    If rd.NodeType <> XmlNodeType.Element OrElse rd.LocalName <> "si" Then Continue While
+
+                    If rd.IsEmptyElement Then
+                        lst.Add("")
+                        Continue While
+                    End If
+
+                    Dim sb As New System.Text.StringBuilder()
+                    Using sub_si As XmlReader = rd.ReadSubtree()
+                        While sub_si.Read()
+                            If sub_si.NodeType = XmlNodeType.Element AndAlso sub_si.LocalName = "t" Then
+                                sb.Append(sub_si.ReadElementContentAsString())
+                            End If
+                        End While
+                    End Using
+                    lst.Add(sb.ToString())
+                End While
+            End Using
+        End Using
+
+        Return lst
+    End Function
+
+    Private Function LeerCsv(ruta As String) As DataTable
+        Dim dt As New DataTable()
+        dt.Columns.Add("F1")
+        dt.Columns.Add("F2")
+        For Each linea As String In File.ReadAllLines(ruta)
+            If linea.Trim() = "" Then Continue For
+            Dim sep As Char = If(linea.Contains(";"), ";"c, ","c)
+            Dim partes As String() = linea.Split(sep)
+            dt.Rows.Add(partes(0).Trim(""""c, " "c),
+                        If(partes.Length > 1, partes(1).Trim(""""c, " "c), ""))
+        Next
+        Return dt
+    End Function
+
+    Private Function SafeCol(r As DataRow, c As Integer) As String
         Try
-            Dim v As Object = ws.Cells(r, c).Value
-            If v Is Nothing Then Return ""
+            If c >= r.Table.Columns.Count Then Return ""
+            Dim v As Object = r(c)
+            If v Is Nothing OrElse v Is DBNull.Value Then Return ""
             Return v.ToString().Trim()
         Catch
             Return ""
@@ -378,6 +573,8 @@ Public Class frm_actualizacionProductosMasivaIE
 
         Try
             Cursor = Cursors.WaitCursor
+            Estado("Validando " & dgvDatos.Rows.Count & " producto(s)... puede tardar varios minutos. No cierres la ventana.", False)
+            Application.DoEvents()
             Dim clsGen As New ClasesGenerales.General
             Dim okCount As Integer = 0, notFoundCount As Integer = 0, sameCount As Integer = 0
 
@@ -450,6 +647,14 @@ Public Class frm_actualizacionProductosMasivaIE
             If SafeStr(row.Cells(COL_ESTADO).Value) = "Listo" Then listos += 1
         Next
 
+        ' Estimado: ~400 productos por minuto (1 SELECT + 1 UPDATE + 1 INSERT de log por producto)
+        Dim minutosEst As Integer = CInt(Math.Ceiling(listos / 400.0))
+        If minutosEst < 1 Then minutosEst = 1
+        Dim avisoTiempo As String =
+            "Esto puede tardar unos " & minutosEst & " minuto(s), segun la cantidad de productos." & vbCrLf &
+            "Mientras trabaja, la ventana se vera congelada y Windows puede decir ""No responde""." & vbCrLf &
+            "Es normal: NO la cierres hasta que aparezca el mensaje de resultado."
+
         ' Advertencias por valores altos (precioventa >= 10000, volumen >= 10)
         If col = "precioventa" OrElse col = "volumen" Then
             Dim umbral As Double = If(col = "precioventa", 10000.0, 10.0)
@@ -480,7 +685,7 @@ Public Class frm_actualizacionProductosMasivaIE
         If MessageBox.Show("¿Está seguro que desea guardar estos cambios?" & vbCrLf & vbCrLf &
                            "Se actualizará la columna '" & col & "' en " & listos & " producto(s)" & vbCrLf &
                            "de la empresa '" & emp & "'." & vbCrLf & vbCrLf &
-                           "Esta acción se aplicará en BD y quedará registrada en el log.",
+                           "Esta acción se aplicará en BD y quedará registrada en el log." & vbCrLf & vbCrLf & avisoTiempo,
                            "Confirmar guardado",
                            MessageBoxButtons.YesNo, MessageBoxIcon.Question) <> DialogResult.Yes Then Return
 

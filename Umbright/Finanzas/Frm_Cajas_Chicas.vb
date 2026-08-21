@@ -908,7 +908,7 @@ Public Class Frm_Cajas_Chicas
             pm_valores(1) = tb_Lote.Text
 
 
-            Oaut._reporte_generico(path_reporte, pm_parametros, pm_valores, pm_conexion(0), pm_conexion(1), pm_conexion(2), pm_conexion(3), _
+            Oaut._reporte_generico(path_reporte, pm_parametros, pm_valores, pm_conexion(0), pm_conexion(1), pm_conexion(2), pm_conexion(3),
                                     False, False, "PDF", True)
 
 
@@ -927,6 +927,9 @@ Public Class Frm_Cajas_Chicas
         End Try
 
     End Sub
+
+
+
 
     Private Sub Imprime_DTE()
         Dim ls_ubicaciones As String = ""
