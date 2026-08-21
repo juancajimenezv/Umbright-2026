@@ -1789,3 +1789,4 @@ C:\Desarrollo\Version 9\Umbright-2026\Umbright\obj\Debug\Umbright.vbproj.CoreCom
 C:\Desarrollo\Version 9\Umbright-2026\Umbright\obj\Debug\Umbright.vbproj.CopyComplete
 C:\Desarrollo\Version 9\Umbright-2026\Umbright\obj\Debug\Umbright.exe
 C:\Desarrollo\Version 9\Umbright-2026\Umbright\obj\Debug\Umbright.pdb
+C:\Desarrollo\Version 9\Umbright-2026\Umbright\obj\Debug\Umbright.frm_actualizacion_oc.resources
