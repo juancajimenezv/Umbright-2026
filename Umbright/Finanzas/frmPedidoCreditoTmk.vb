@@ -83,12 +83,8 @@ Public Class frmPedidoCreditoTmk
 
         Dim dr_aux As DataRow = odsFACE.Tables("pedidos").NewRow
 
-        Try
-            dr_aux.Item("Enviar") = 0
-            If dr.Item("fechaenvio") = "01/01/1900" Then dr_aux.Item("Enviar") = 1
-        Catch ex As Exception
-
-        End Try
+        'Los documentos se cargan desmarcados; el usuario elige cuales certificar
+        dr_aux.Item("Enviar") = False
 
         dr_aux.Item("serie") = dr.Item("serie")
         dr_aux.Item("SerieFel") = dr.Item("SerieFel")
@@ -409,8 +405,9 @@ Public Class frmPedidoCreditoTmk
 
     Private Sub btnGenerarTXTNC_Click(sender As Object, e As EventArgs) Handles btnGenerarTXTNC.Click
 
-        If (MessageBox.Show("Esta seguro de procesar estos documentos??", "FEL", MessageBoxButtons.YesNo, MessageBoxIcon.Question) = DialogResult.No) Then
+        If lDsFel Is Nothing OrElse Not lDsFel.Tables.Contains("detalle_pedidos") OrElse gvPedidos.DataSource Is Nothing Then
 
+            MessageBox.Show("Primero debe obtener los documentos.", "FEL")
             Exit Sub
 
         End If
@@ -425,17 +422,35 @@ Public Class frmPedidoCreditoTmk
 
         lDvFelSel = gvPedidos.DataSource
 
+        'Confirmar el ultimo checkbox editado antes de leer la seleccion
+        gvPedidos.EndEdit()
+
+        'Solo documentos marcados y que aun no tienen Serie FEL
         For Each dr As DataGridViewRow In gvPedidos.Rows
 
-            lTblPedidos.ImportRow(lDvFelSel(dr.Index).Row)
+            Dim lEnviar As Object = dr.Cells("Enviar").Value
 
-            If dr.Cells(0).Value = True And dr.Cells(1).Value = "" Then
+            If TypeOf lEnviar Is Boolean AndAlso CBool(lEnviar) AndAlso
+               Convert.ToString(dr.Cells("SerieFel").Value).Trim() = "" Then
 
-
+                lTblPedidos.ImportRow(lDvFelSel(dr.Index).Row)
 
             End If
 
         Next
+
+        If lTblPedidos.Rows.Count = 0 Then
+
+            MessageBox.Show("No hay documentos seleccionados pendientes de certificar.", "FEL")
+            Exit Sub
+
+        End If
+
+        If (MessageBox.Show("Esta seguro de certificar " & lTblPedidos.Rows.Count & " documento(s)?", "FEL", MessageBoxButtons.YesNo, MessageBoxIcon.Question) = DialogResult.No) Then
+
+            Exit Sub
+
+        End If
 
         lDsFelSel.Tables.Add(lTblPedidos)
         lDsFelSel.Tables.Add(lTblDetPedidos)
