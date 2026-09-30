@@ -478,14 +478,15 @@ Public Class frm_OChistorial
 
             Try
                 dt = oTransaccion.Obtiene(ls_Script)
+                AgregarEstadoAnulacion(dt, oTransaccion)
                 Me.dgv_listado.DataSource = dt
 
                 If Me.cmb_valor1.Text = "Glosa" Then
-                    clGeneral.Alinear_GridView(dt, Me.dgv_listado, ",Numero,Tipodocto,Producto,Glosa,Fecha,Fecha_Vencimiento,Proveedor,fecha_Ingreso,aprobacion,fecha_aprueba,usuario_aprueba,numero_ingreso,", "", "", "", ",fecha_ingreso=fecha Real Ingreso,", ",Numero=70,Tipodocto=130,Producto=70,Glosa=230,Fecha=90,Fecha_Vencimiento=90,Proveedor=150,aprobacion=40,", "", True, True, 250, 10)
+                    clGeneral.Alinear_GridView(dt, Me.dgv_listado, ",Numero,Tipodocto,Producto,Glosa,Fecha,Fecha_Vencimiento,Proveedor,fecha_Ingreso,aprobacion,fecha_aprueba,usuario_aprueba,numero_ingreso,Comentario1,", ",Vigencia,", "", "", ",fecha_ingreso=fecha Real Ingreso,", ",Numero=70,Tipodocto=130,Producto=70,Glosa=230,Fecha=90,Fecha_Vencimiento=90,Proveedor=150,aprobacion=40,Comentario1=220,", "", True, True, 250, 10)
 
                 Else
                     'If Me.cmb_valor1.Text = "Proveedor" Then
-                    clGeneral.Alinear_GridView(dt, Me.dgv_listado, ",Numero,Tipodocto,Proveedor,fecha,Analisis,TipoCta,FechaModif,Fecha_Vencimiento,fecha_ingreso,aprobacion,fecha_aprueba,usuario_aprueba,numero_ingreso,", ",Analisis,TipoCta,FechaModif,", "", "", ",fecha_ingreso=Fecha Real Ingreso,", ",Numero=70,Tipodocto=130,Proveedor=200,Fecha=90,Fecha_Vencimiento=90,aprobacion=40,", ",tipodocto,numero,", True, True, 250, 10)
+                    clGeneral.Alinear_GridView(dt, Me.dgv_listado, ",Numero,Tipodocto,Proveedor,fecha,Analisis,TipoCta,FechaModif,Fecha_Vencimiento,fecha_ingreso,aprobacion,fecha_aprueba,usuario_aprueba,numero_ingreso,Comentario1,", ",Analisis,TipoCta,FechaModif,Vigencia,", "", "", ",fecha_ingreso=Fecha Real Ingreso,", ",Numero=70,Tipodocto=130,Proveedor=200,Fecha=90,Fecha_Vencimiento=90,aprobacion=40,Comentario1=220,", ",tipodocto,numero,", True, True, 250, 10)
 
                     'ElseIf Me.cmb_valor1.Text = "Orden_Compra" Then
                     'clGeneral.Alinear_GridView(dt, Me.dgv_listado, ",Numero,Tipodocto,Fecha,Analisis,TipoCta,Fecha_Vencimiento,Proveedor,fecha_ingreso,", ",Analisis,TipoCta,", "", "", ",fecha_ingreso=Fecha Real Ingreso,", ",Numero=80,Tipodocto=130,Fecha=90,Fecha_Vencimiento=90,Proveedor=190,", "", True, True, 250, 10)
@@ -503,6 +504,74 @@ Public Class frm_OChistorial
         End If
 
 
+    End Sub
+
+    ' Trae Vigencia y Comentario1 de flexline.documento (acotado a los Numero ya
+    ' listados en odt) para poder pintar de color las OC ANULADAS/ONHOLD y mostrar
+    ' el motivo en la columna Comentario1. No depende de pa_var_um_oc_documento_historial
+    ' / pa_var_um_oc_documento_producto_historial (SPs externos que no se pudieron
+    ' inspeccionar): consulta flexline.documento directamente, igual que otras
+    ' pantallas de este modulo (ver frm_actualizacion_oc.vb).
+    Private Sub AgregarEstadoAnulacion(ByVal odt As DataTable, ByVal otrans As Transaccional.Conexion)
+        Try
+            If odt Is Nothing OrElse odt.Rows.Count = 0 Then Exit Sub
+            If Not odt.Columns.Contains("Numero") Then Exit Sub
+
+            If Not odt.Columns.Contains("Vigencia") Then odt.Columns.Add("Vigencia", GetType(String))
+            If Not odt.Columns.Contains("Comentario1") Then odt.Columns.Add("Comentario1", GetType(String))
+
+            Dim numeros As New System.Collections.Generic.List(Of String)
+            For Each dr As DataRow In odt.Rows
+                Dim snum As String = ("" & dr.Item("Numero")).Trim
+                If snum.Length > 0 AndAlso Not numeros.Contains(snum) Then numeros.Add(snum)
+            Next
+            If numeros.Count = 0 Then Exit Sub
+
+            Dim slista As String = "'" & String.Join("','", numeros.ToArray()) & "'"
+            Dim ls_sql As String = "select Numero, Vigencia, Comentario1 from flexline.documento " & _
+                "where Empresa = '" & gs_empresa.Replace("'", "''") & "' and TipoDocto = 'Orden de Compra' and Numero in (" & slista & ")"
+
+            Dim dtEstado As DataTable = otrans.Obtiene(ls_sql)
+            If dtEstado Is Nothing Then Exit Sub
+
+            Dim dic As New System.Collections.Generic.Dictionary(Of String, DataRow)
+            For Each drE As DataRow In dtEstado.Rows
+                Dim snum As String = ("" & drE.Item("Numero")).Trim
+                If Not dic.ContainsKey(snum) Then dic.Add(snum, drE)
+            Next
+
+            For Each dr As DataRow In odt.Rows
+                Dim snum As String = ("" & dr.Item("Numero")).Trim
+                If dic.ContainsKey(snum) Then
+                    dr.Item("Vigencia") = ("" & dic(snum).Item("Vigencia")).Trim
+                    dr.Item("Comentario1") = ("" & dic(snum).Item("Comentario1")).Trim
+                End If
+            Next
+        Catch ex As Exception
+        End Try
+    End Sub
+
+    ' Pinta de color las filas de OC ANULADAS (Vigencia='A') u ONHOLD
+    ' (Vigencia='A' con Comentario1 'ONHOLD:...'), igual semantica que frm_anulacion_oc.vb.
+    Private Sub dgv_listado_CellPainting(ByVal sender As Object, ByVal e As System.Windows.Forms.DataGridViewCellPaintingEventArgs) Handles dgv_listado.CellPainting
+        Try
+            If e.ColumnIndex > -1 And e.RowIndex > -1 Then
+                Dim therow As DataGridViewRow = Me.dgv_listado.Rows(e.RowIndex)
+                Dim svigencia As String = ""
+                Dim scomentario As String = ""
+                If Me.dgv_listado.Columns.Contains("Vigencia") Then svigencia = ("" & Me.dgv_listado.Item("Vigencia", e.RowIndex).Value).Trim.ToUpper
+                If Me.dgv_listado.Columns.Contains("Comentario1") Then scomentario = ("" & Me.dgv_listado.Item("Comentario1", e.RowIndex).Value).Trim.ToUpper
+
+                If svigencia = "A" AndAlso scomentario.StartsWith("ONHOLD:") Then
+                    therow.DefaultCellStyle.BackColor = Color.Gold        ' ONHOLD
+                ElseIf svigencia = "A" Then
+                    therow.DefaultCellStyle.BackColor = Color.Tomato      ' ANULADO
+                Else
+                    therow.DefaultCellStyle.BackColor = Color.White
+                End If
+            End If
+        Catch ex As Exception
+        End Try
     End Sub
 
     Private Sub llenar_informacion()

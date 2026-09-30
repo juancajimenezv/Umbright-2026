@@ -293,3 +293,6 @@ C:\Desarrollo\Version 9\Umbright-2026\Clases4.0\FlexLine_CRUD\obj\Debug\FlexLine
 C:\Desarrollo\Version 9\Umbright-2026\Clases4.0\FlexLine_CRUD\obj\Debug\FlexLine_CRUD.dll
 C:\Desarrollo\Version 9\Umbright-2026\Clases4.0\FlexLine_CRUD\obj\Debug\FlexLine_CRUD.xml
 C:\Desarrollo\Version 9\Umbright-2026\Clases4.0\FlexLine_CRUD\obj\Debug\FlexLine_CRUD.pdb
+C:\Users\jsegura\AppData\Local\Temp\claude\umbuild\FlexLine_CRUD.dll
+C:\Users\jsegura\AppData\Local\Temp\claude\umbuild\FlexLine_CRUD.pdb
+C:\Users\jsegura\AppData\Local\Temp\claude\umbuild\FlexLine_CRUD.xml

@@ -79,6 +79,7 @@ Public Class frm_scm_preparacion_informacion
         Me.cmb_origen = New System.Windows.Forms.ComboBox()
         Me.cmb_proveedor = New System.Windows.Forms.ComboBox()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.chk_reservas = New System.Windows.Forms.CheckBox()
         Me.chk_existencias_cd = New System.Windows.Forms.CheckBox()
         Me.chk_obtener_productos = New System.Windows.Forms.CheckBox()
         Me.chk_minimos = New System.Windows.Forms.CheckBox()
@@ -107,7 +108,6 @@ Public Class frm_scm_preparacion_informacion
         Me.chk_generar_global = New System.Windows.Forms.CheckBox()
         Me.chk_minimo_standard = New System.Windows.Forms.CheckBox()
         Me.chkPresupuestoAlterno = New System.Windows.Forms.CheckBox()
-        Me.chk_reservas = New System.Windows.Forms.CheckBox()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
         CType(Me.NuPSemanasReorden, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -125,9 +125,9 @@ Public Class frm_scm_preparacion_informacion
         Me.btn_generar.ImageAlign = System.Drawing.ContentAlignment.TopCenter
         Me.btn_generar.ImageIndex = 2
         Me.btn_generar.ImageList = Me.ImageList1
-        Me.btn_generar.Location = New System.Drawing.Point(488, 8)
+        Me.btn_generar.Location = New System.Drawing.Point(781, 12)
         Me.btn_generar.Name = "btn_generar"
-        Me.btn_generar.Size = New System.Drawing.Size(88, 64)
+        Me.btn_generar.Size = New System.Drawing.Size(141, 93)
         Me.btn_generar.TabIndex = 17
         Me.btn_generar.Text = "Generar"
         Me.btn_generar.TextAlign = System.Drawing.ContentAlignment.BottomCenter
@@ -143,17 +143,17 @@ Public Class frm_scm_preparacion_informacion
         '
         'Label2
         '
-        Me.Label2.Location = New System.Drawing.Point(8, 48)
+        Me.Label2.Location = New System.Drawing.Point(13, 70)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(56, 16)
+        Me.Label2.Size = New System.Drawing.Size(89, 24)
         Me.Label2.TabIndex = 16
         Me.Label2.Text = "Origen"
         '
         'Label1
         '
-        Me.Label1.Location = New System.Drawing.Point(8, 24)
+        Me.Label1.Location = New System.Drawing.Point(13, 35)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(56, 23)
+        Me.Label1.Size = New System.Drawing.Size(89, 34)
         Me.Label1.TabIndex = 15
         Me.Label1.Text = "Proveedor"
         '
@@ -162,9 +162,9 @@ Public Class frm_scm_preparacion_informacion
         Me.cmb_origen.BackColor = System.Drawing.SystemColors.ControlLight
         Me.cmb_origen.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cmb_origen.ForeColor = System.Drawing.Color.DarkRed
-        Me.cmb_origen.Location = New System.Drawing.Point(73, 48)
+        Me.cmb_origen.Location = New System.Drawing.Point(117, 70)
         Me.cmb_origen.Name = "cmb_origen"
-        Me.cmb_origen.Size = New System.Drawing.Size(152, 21)
+        Me.cmb_origen.Size = New System.Drawing.Size(243, 28)
         Me.cmb_origen.TabIndex = 14
         '
         'cmb_proveedor
@@ -172,9 +172,9 @@ Public Class frm_scm_preparacion_informacion
         Me.cmb_proveedor.BackColor = System.Drawing.SystemColors.ControlLight
         Me.cmb_proveedor.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cmb_proveedor.ForeColor = System.Drawing.Color.DarkRed
-        Me.cmb_proveedor.Location = New System.Drawing.Point(73, 24)
+        Me.cmb_proveedor.Location = New System.Drawing.Point(117, 35)
         Me.cmb_proveedor.Name = "cmb_proveedor"
-        Me.cmb_proveedor.Size = New System.Drawing.Size(183, 21)
+        Me.cmb_proveedor.Size = New System.Drawing.Size(293, 28)
         Me.cmb_proveedor.TabIndex = 13
         '
         'GroupBox1
@@ -189,20 +189,30 @@ Public Class frm_scm_preparacion_informacion
         Me.GroupBox1.Controls.Add(Me.chk_precios)
         Me.GroupBox1.Controls.Add(Me.chk_resumen)
         Me.GroupBox1.Enabled = False
-        Me.GroupBox1.Location = New System.Drawing.Point(280, 11)
+        Me.GroupBox1.Location = New System.Drawing.Point(448, 16)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(200, 240)
+        Me.GroupBox1.Size = New System.Drawing.Size(320, 351)
         Me.GroupBox1.TabIndex = 18
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Generando ...."
+        '
+        'chk_reservas
+        '
+        Me.chk_reservas.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.chk_reservas.Font = New System.Drawing.Font("Arial", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.chk_reservas.Location = New System.Drawing.Point(43, 248)
+        Me.chk_reservas.Name = "chk_reservas"
+        Me.chk_reservas.Size = New System.Drawing.Size(256, 36)
+        Me.chk_reservas.TabIndex = 2
+        Me.chk_reservas.Text = "Generando Reservas"
         '
         'chk_existencias_cd
         '
         Me.chk_existencias_cd.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.chk_existencias_cd.Font = New System.Drawing.Font("Arial", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.chk_existencias_cd.Location = New System.Drawing.Point(27, 44)
+        Me.chk_existencias_cd.Location = New System.Drawing.Point(43, 64)
         Me.chk_existencias_cd.Name = "chk_existencias_cd"
-        Me.chk_existencias_cd.Size = New System.Drawing.Size(160, 24)
+        Me.chk_existencias_cd.Size = New System.Drawing.Size(256, 35)
         Me.chk_existencias_cd.TabIndex = 1
         Me.chk_existencias_cd.Text = "Obteniendo Existencias"
         '
@@ -210,9 +220,9 @@ Public Class frm_scm_preparacion_informacion
         '
         Me.chk_obtener_productos.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.chk_obtener_productos.Font = New System.Drawing.Font("Arial", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.chk_obtener_productos.Location = New System.Drawing.Point(27, 21)
+        Me.chk_obtener_productos.Location = New System.Drawing.Point(43, 31)
         Me.chk_obtener_productos.Name = "chk_obtener_productos"
-        Me.chk_obtener_productos.Size = New System.Drawing.Size(128, 24)
+        Me.chk_obtener_productos.Size = New System.Drawing.Size(205, 35)
         Me.chk_obtener_productos.TabIndex = 0
         Me.chk_obtener_productos.Text = "Obtener Productos"
         '
@@ -220,9 +230,9 @@ Public Class frm_scm_preparacion_informacion
         '
         Me.chk_minimos.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.chk_minimos.Font = New System.Drawing.Font("Arial", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.chk_minimos.Location = New System.Drawing.Point(27, 128)
+        Me.chk_minimos.Location = New System.Drawing.Point(43, 187)
         Me.chk_minimos.Name = "chk_minimos"
-        Me.chk_minimos.Size = New System.Drawing.Size(160, 24)
+        Me.chk_minimos.Size = New System.Drawing.Size(256, 35)
         Me.chk_minimos.TabIndex = 1
         Me.chk_minimos.Text = "Generando Minimos"
         '
@@ -230,9 +240,9 @@ Public Class frm_scm_preparacion_informacion
         '
         Me.chk_transitos.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.chk_transitos.Font = New System.Drawing.Font("Arial", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.chk_transitos.Location = New System.Drawing.Point(27, 63)
+        Me.chk_transitos.Location = New System.Drawing.Point(43, 92)
         Me.chk_transitos.Name = "chk_transitos"
-        Me.chk_transitos.Size = New System.Drawing.Size(160, 24)
+        Me.chk_transitos.Size = New System.Drawing.Size(256, 35)
         Me.chk_transitos.TabIndex = 1
         Me.chk_transitos.Text = "Generando Transitos"
         '
@@ -240,9 +250,9 @@ Public Class frm_scm_preparacion_informacion
         '
         Me.chk_presupuestos.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.chk_presupuestos.Font = New System.Drawing.Font("Arial", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.chk_presupuestos.Location = New System.Drawing.Point(27, 85)
+        Me.chk_presupuestos.Location = New System.Drawing.Point(43, 124)
         Me.chk_presupuestos.Name = "chk_presupuestos"
-        Me.chk_presupuestos.Size = New System.Drawing.Size(160, 24)
+        Me.chk_presupuestos.Size = New System.Drawing.Size(256, 35)
         Me.chk_presupuestos.TabIndex = 1
         Me.chk_presupuestos.Text = "Generando Presupuestos"
         '
@@ -250,9 +260,9 @@ Public Class frm_scm_preparacion_informacion
         '
         Me.chk_saldos.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.chk_saldos.Font = New System.Drawing.Font("Arial", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.chk_saldos.Location = New System.Drawing.Point(27, 106)
+        Me.chk_saldos.Location = New System.Drawing.Point(43, 155)
         Me.chk_saldos.Name = "chk_saldos"
-        Me.chk_saldos.Size = New System.Drawing.Size(160, 24)
+        Me.chk_saldos.Size = New System.Drawing.Size(256, 35)
         Me.chk_saldos.TabIndex = 1
         Me.chk_saldos.Text = "Generando Saldos"
         '
@@ -260,9 +270,9 @@ Public Class frm_scm_preparacion_informacion
         '
         Me.chk_precios.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.chk_precios.Font = New System.Drawing.Font("Arial", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.chk_precios.Location = New System.Drawing.Point(27, 150)
+        Me.chk_precios.Location = New System.Drawing.Point(43, 219)
         Me.chk_precios.Name = "chk_precios"
-        Me.chk_precios.Size = New System.Drawing.Size(160, 24)
+        Me.chk_precios.Size = New System.Drawing.Size(256, 35)
         Me.chk_precios.TabIndex = 1
         Me.chk_precios.Text = "Generando Precios"
         '
@@ -270,9 +280,9 @@ Public Class frm_scm_preparacion_informacion
         '
         Me.chk_resumen.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.chk_resumen.Font = New System.Drawing.Font("Arial", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.chk_resumen.Location = New System.Drawing.Point(27, 193)
+        Me.chk_resumen.Location = New System.Drawing.Point(43, 282)
         Me.chk_resumen.Name = "chk_resumen"
-        Me.chk_resumen.Size = New System.Drawing.Size(160, 24)
+        Me.chk_resumen.Size = New System.Drawing.Size(256, 35)
         Me.chk_resumen.TabIndex = 1
         Me.chk_resumen.Text = "Generando Resumen"
         '
@@ -280,17 +290,17 @@ Public Class frm_scm_preparacion_informacion
         '
         Me.chk_generar_individual.CheckAlign = System.Drawing.ContentAlignment.MiddleRight
         Me.chk_generar_individual.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.chk_generar_individual.Location = New System.Drawing.Point(139, 71)
+        Me.chk_generar_individual.Location = New System.Drawing.Point(222, 104)
         Me.chk_generar_individual.Name = "chk_generar_individual"
-        Me.chk_generar_individual.Size = New System.Drawing.Size(106, 23)
+        Me.chk_generar_individual.Size = New System.Drawing.Size(170, 33)
         Me.chk_generar_individual.TabIndex = 19
         Me.chk_generar_individual.Text = "Generar Origen"
         '
         'Label4
         '
-        Me.Label4.Location = New System.Drawing.Point(3, 16)
+        Me.Label4.Location = New System.Drawing.Point(5, 23)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(128, 16)
+        Me.Label4.Size = New System.Drawing.Size(205, 24)
         Me.Label4.TabIndex = 24
         Me.Label4.Text = "Semanas Reorden"
         '
@@ -300,19 +310,19 @@ Public Class frm_scm_preparacion_informacion
         Me.GroupBox2.Controls.Add(Me.Label4)
         Me.GroupBox2.Controls.Add(Me.chkTiendas)
         Me.GroupBox2.Controls.Add(Me.chkProyeccion)
-        Me.GroupBox2.Location = New System.Drawing.Point(10, 258)
+        Me.GroupBox2.Location = New System.Drawing.Point(16, 377)
         Me.GroupBox2.Name = "GroupBox2"
-        Me.GroupBox2.Size = New System.Drawing.Size(264, 70)
+        Me.GroupBox2.Size = New System.Drawing.Size(422, 102)
         Me.GroupBox2.TabIndex = 25
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "Informacion General ..."
         '
         'NuPSemanasReorden
         '
-        Me.NuPSemanasReorden.Location = New System.Drawing.Point(137, 14)
+        Me.NuPSemanasReorden.Location = New System.Drawing.Point(219, 20)
         Me.NuPSemanasReorden.Maximum = New Decimal(New Integer() {12, 0, 0, 0})
         Me.NuPSemanasReorden.Name = "NuPSemanasReorden"
-        Me.NuPSemanasReorden.Size = New System.Drawing.Size(52, 20)
+        Me.NuPSemanasReorden.Size = New System.Drawing.Size(83, 26)
         Me.NuPSemanasReorden.TabIndex = 25
         Me.NuPSemanasReorden.Value = New Decimal(New Integer() {4, 0, 0, 0})
         '
@@ -320,9 +330,9 @@ Public Class frm_scm_preparacion_informacion
         '
         Me.chkTiendas.CheckAlign = System.Drawing.ContentAlignment.MiddleRight
         Me.chkTiendas.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.chkTiendas.Location = New System.Drawing.Point(0, 51)
+        Me.chkTiendas.Location = New System.Drawing.Point(0, 75)
         Me.chkTiendas.Name = "chkTiendas"
-        Me.chkTiendas.Size = New System.Drawing.Size(147, 23)
+        Me.chkTiendas.Size = New System.Drawing.Size(235, 33)
         Me.chkTiendas.TabIndex = 19
         Me.chkTiendas.Text = "Generar Tiendas"
         '
@@ -330,9 +340,9 @@ Public Class frm_scm_preparacion_informacion
         '
         Me.chkProyeccion.CheckAlign = System.Drawing.ContentAlignment.MiddleRight
         Me.chkProyeccion.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.chkProyeccion.Location = New System.Drawing.Point(1, 33)
+        Me.chkProyeccion.Location = New System.Drawing.Point(2, 48)
         Me.chkProyeccion.Name = "chkProyeccion"
-        Me.chkProyeccion.Size = New System.Drawing.Size(147, 23)
+        Me.chkProyeccion.Size = New System.Drawing.Size(235, 34)
         Me.chkProyeccion.TabIndex = 19
         Me.chkProyeccion.Text = "Generar Proyeccion"
         '
@@ -341,9 +351,9 @@ Public Class frm_scm_preparacion_informacion
         Me.GroupBox3.Controls.Add(Me.cmb_region)
         Me.GroupBox3.Controls.Add(Me.chk_generar_region)
         Me.GroupBox3.Controls.Add(Me.Label5)
-        Me.GroupBox3.Location = New System.Drawing.Point(10, 23)
+        Me.GroupBox3.Location = New System.Drawing.Point(16, 34)
         Me.GroupBox3.Name = "GroupBox3"
-        Me.GroupBox3.Size = New System.Drawing.Size(264, 60)
+        Me.GroupBox3.Size = New System.Drawing.Size(422, 87)
         Me.GroupBox3.TabIndex = 26
         Me.GroupBox3.TabStop = False
         Me.GroupBox3.Text = "Region ....."
@@ -354,26 +364,26 @@ Public Class frm_scm_preparacion_informacion
         Me.cmb_region.BackColor = System.Drawing.SystemColors.ControlLight
         Me.cmb_region.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cmb_region.ForeColor = System.Drawing.Color.DarkRed
-        Me.cmb_region.Location = New System.Drawing.Point(64, 13)
+        Me.cmb_region.Location = New System.Drawing.Point(102, 19)
         Me.cmb_region.Name = "cmb_region"
-        Me.cmb_region.Size = New System.Drawing.Size(183, 21)
+        Me.cmb_region.Size = New System.Drawing.Size(293, 28)
         Me.cmb_region.TabIndex = 13
         '
         'chk_generar_region
         '
         Me.chk_generar_region.CheckAlign = System.Drawing.ContentAlignment.MiddleRight
         Me.chk_generar_region.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.chk_generar_region.Location = New System.Drawing.Point(8, 35)
+        Me.chk_generar_region.Location = New System.Drawing.Point(13, 51)
         Me.chk_generar_region.Name = "chk_generar_region"
-        Me.chk_generar_region.Size = New System.Drawing.Size(106, 23)
+        Me.chk_generar_region.Size = New System.Drawing.Size(169, 34)
         Me.chk_generar_region.TabIndex = 19
         Me.chk_generar_region.Text = "Generar Region"
         '
         'Label5
         '
-        Me.Label5.Location = New System.Drawing.Point(9, 18)
+        Me.Label5.Location = New System.Drawing.Point(14, 26)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(56, 16)
+        Me.Label5.Size = New System.Drawing.Size(90, 24)
         Me.Label5.TabIndex = 16
         Me.Label5.Text = "Region"
         '
@@ -385,9 +395,9 @@ Public Class frm_scm_preparacion_informacion
         Me.GroupBox4.Controls.Add(Me.Label2)
         Me.GroupBox4.Controls.Add(Me.Chk_Generar_Proveedor)
         Me.GroupBox4.Controls.Add(Me.chk_generar_individual)
-        Me.GroupBox4.Location = New System.Drawing.Point(8, 156)
+        Me.GroupBox4.Location = New System.Drawing.Point(13, 228)
         Me.GroupBox4.Name = "GroupBox4"
-        Me.GroupBox4.Size = New System.Drawing.Size(264, 96)
+        Me.GroupBox4.Size = New System.Drawing.Size(422, 140)
         Me.GroupBox4.TabIndex = 27
         Me.GroupBox4.TabStop = False
         Me.GroupBox4.Text = "Proveedor ..."
@@ -398,9 +408,9 @@ Public Class frm_scm_preparacion_informacion
         Me.Chk_Generar_Proveedor.Checked = True
         Me.Chk_Generar_Proveedor.CheckState = System.Windows.Forms.CheckState.Checked
         Me.Chk_Generar_Proveedor.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.Chk_Generar_Proveedor.Location = New System.Drawing.Point(9, 71)
+        Me.Chk_Generar_Proveedor.Location = New System.Drawing.Point(14, 104)
         Me.Chk_Generar_Proveedor.Name = "Chk_Generar_Proveedor"
-        Me.Chk_Generar_Proveedor.Size = New System.Drawing.Size(121, 23)
+        Me.Chk_Generar_Proveedor.Size = New System.Drawing.Size(194, 33)
         Me.Chk_Generar_Proveedor.TabIndex = 19
         Me.Chk_Generar_Proveedor.Text = "Generar Proveedor"
         '
@@ -409,9 +419,9 @@ Public Class frm_scm_preparacion_informacion
         Me.GroupBox5.Controls.Add(Me.cmb_puerto)
         Me.GroupBox5.Controls.Add(Me.chk_generar_puerto)
         Me.GroupBox5.Controls.Add(Me.Label3)
-        Me.GroupBox5.Location = New System.Drawing.Point(9, 87)
+        Me.GroupBox5.Location = New System.Drawing.Point(14, 127)
         Me.GroupBox5.Name = "GroupBox5"
-        Me.GroupBox5.Size = New System.Drawing.Size(264, 64)
+        Me.GroupBox5.Size = New System.Drawing.Size(423, 94)
         Me.GroupBox5.TabIndex = 27
         Me.GroupBox5.TabStop = False
         Me.GroupBox5.Text = "Puerto ....."
@@ -422,26 +432,26 @@ Public Class frm_scm_preparacion_informacion
         Me.cmb_puerto.BackColor = System.Drawing.SystemColors.ControlLight
         Me.cmb_puerto.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cmb_puerto.ForeColor = System.Drawing.Color.DarkRed
-        Me.cmb_puerto.Location = New System.Drawing.Point(64, 13)
+        Me.cmb_puerto.Location = New System.Drawing.Point(102, 19)
         Me.cmb_puerto.Name = "cmb_puerto"
-        Me.cmb_puerto.Size = New System.Drawing.Size(183, 21)
+        Me.cmb_puerto.Size = New System.Drawing.Size(293, 28)
         Me.cmb_puerto.TabIndex = 13
         '
         'chk_generar_puerto
         '
         Me.chk_generar_puerto.CheckAlign = System.Drawing.ContentAlignment.MiddleRight
         Me.chk_generar_puerto.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.chk_generar_puerto.Location = New System.Drawing.Point(8, 35)
+        Me.chk_generar_puerto.Location = New System.Drawing.Point(13, 51)
         Me.chk_generar_puerto.Name = "chk_generar_puerto"
-        Me.chk_generar_puerto.Size = New System.Drawing.Size(106, 23)
+        Me.chk_generar_puerto.Size = New System.Drawing.Size(169, 34)
         Me.chk_generar_puerto.TabIndex = 19
         Me.chk_generar_puerto.Text = "Generar Puerto"
         '
         'Label3
         '
-        Me.Label3.Location = New System.Drawing.Point(9, 18)
+        Me.Label3.Location = New System.Drawing.Point(14, 26)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(56, 16)
+        Me.Label3.Size = New System.Drawing.Size(90, 24)
         Me.Label3.TabIndex = 16
         Me.Label3.Text = "Puerto"
         '
@@ -449,9 +459,9 @@ Public Class frm_scm_preparacion_informacion
         '
         Me.chk_generar_global.CheckAlign = System.Drawing.ContentAlignment.MiddleRight
         Me.chk_generar_global.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.chk_generar_global.Location = New System.Drawing.Point(22, 2)
+        Me.chk_generar_global.Location = New System.Drawing.Point(35, 3)
         Me.chk_generar_global.Name = "chk_generar_global"
-        Me.chk_generar_global.Size = New System.Drawing.Size(157, 23)
+        Me.chk_generar_global.Size = New System.Drawing.Size(251, 34)
         Me.chk_generar_global.TabIndex = 19
         Me.chk_generar_global.Text = "Todas las Empresas"
         '
@@ -459,9 +469,9 @@ Public Class frm_scm_preparacion_informacion
         '
         Me.chk_minimo_standard.CheckAlign = System.Drawing.ContentAlignment.MiddleRight
         Me.chk_minimo_standard.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.chk_minimo_standard.Location = New System.Drawing.Point(307, 272)
+        Me.chk_minimo_standard.Location = New System.Drawing.Point(491, 398)
         Me.chk_minimo_standard.Name = "chk_minimo_standard"
-        Me.chk_minimo_standard.Size = New System.Drawing.Size(147, 23)
+        Me.chk_minimo_standard.Size = New System.Drawing.Size(235, 33)
         Me.chk_minimo_standard.TabIndex = 26
         Me.chk_minimo_standard.Text = "Minimo Standard"
         '
@@ -469,27 +479,17 @@ Public Class frm_scm_preparacion_informacion
         '
         Me.chkPresupuestoAlterno.CheckAlign = System.Drawing.ContentAlignment.MiddleRight
         Me.chkPresupuestoAlterno.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.chkPresupuestoAlterno.Location = New System.Drawing.Point(307, 301)
+        Me.chkPresupuestoAlterno.Location = New System.Drawing.Point(491, 440)
         Me.chkPresupuestoAlterno.Name = "chkPresupuestoAlterno"
-        Me.chkPresupuestoAlterno.Size = New System.Drawing.Size(147, 23)
+        Me.chkPresupuestoAlterno.Size = New System.Drawing.Size(235, 34)
         Me.chkPresupuestoAlterno.TabIndex = 28
         Me.chkPresupuestoAlterno.Text = "Presupuesto Alterno"
         '
-        'chk_reservas
-        '
-        Me.chk_reservas.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.chk_reservas.Font = New System.Drawing.Font("Arial", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.chk_reservas.Location = New System.Drawing.Point(27, 170)
-        Me.chk_reservas.Name = "chk_reservas"
-        Me.chk_reservas.Size = New System.Drawing.Size(160, 24)
-        Me.chk_reservas.TabIndex = 2
-        Me.chk_reservas.Text = "Generando Reservas"
-        '
         'frm_scm_preparacion_informacion
         '
-        Me.AutoScaleBaseSize = New System.Drawing.Size(5, 13)
+        Me.AutoScaleBaseSize = New System.Drawing.Size(8, 19)
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(233, Byte), Integer), CType(CType(234, Byte), Integer), CType(CType(204, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(584, 346)
+        Me.ClientSize = New System.Drawing.Size(960, 414)
         Me.Controls.Add(Me.chkPresupuestoAlterno)
         Me.Controls.Add(Me.chk_minimo_standard)
         Me.Controls.Add(Me.GroupBox5)

@@ -56,23 +56,23 @@ Public Class frm_scm_ver_pedidos
     Friend WithEvents ImageList1 As System.Windows.Forms.ImageList
     Friend WithEvents btn_exportar As System.Windows.Forms.Button
     <System.Diagnostics.DebuggerStepThrough()> Private Sub InitializeComponent()
-        Me.components = New System.ComponentModel.Container
+        Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frm_scm_ver_pedidos))
-        Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle
-        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle
-        Me.cmb_pantalla = New System.Windows.Forms.ComboBox
-        Me.Label1 = New System.Windows.Forms.Label
-        Me.Button1 = New System.Windows.Forms.Button
+        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Me.cmb_pantalla = New System.Windows.Forms.ComboBox()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.Button1 = New System.Windows.Forms.Button()
         Me.ImageList1 = New System.Windows.Forms.ImageList(Me.components)
-        Me.btn_abrir = New System.Windows.Forms.Button
-        Me.btn_exportar = New System.Windows.Forms.Button
-        Me.Button4 = New System.Windows.Forms.Button
-        Me.dgv_detalle = New System.Windows.Forms.DataGridView
+        Me.btn_abrir = New System.Windows.Forms.Button()
+        Me.btn_exportar = New System.Windows.Forms.Button()
+        Me.Button4 = New System.Windows.Forms.Button()
+        Me.dgv_detalle = New System.Windows.Forms.DataGridView()
         Me.ContextMenuStrip1 = New System.Windows.Forms.ContextMenuStrip(Me.components)
         Me.ToolTip1 = New System.Windows.Forms.ToolTip(Me.components)
-        Me.dgv_resumen = New System.Windows.Forms.DataGridView
-        Me.rtxtComentarios = New System.Windows.Forms.RichTextBox
-        Me.chk_filtro = New System.Windows.Forms.CheckBox
+        Me.dgv_resumen = New System.Windows.Forms.DataGridView()
+        Me.rtxtComentarios = New System.Windows.Forms.RichTextBox()
+        Me.chk_filtro = New System.Windows.Forms.CheckBox()
         CType(Me.dgv_detalle, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.dgv_resumen, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -81,16 +81,16 @@ Public Class frm_scm_ver_pedidos
         '
         Me.cmb_pantalla.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.cmb_pantalla.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.cmb_pantalla.Location = New System.Drawing.Point(817, 32)
+        Me.cmb_pantalla.Location = New System.Drawing.Point(712, 47)
         Me.cmb_pantalla.Name = "cmb_pantalla"
-        Me.cmb_pantalla.Size = New System.Drawing.Size(174, 21)
+        Me.cmb_pantalla.Size = New System.Drawing.Size(279, 28)
         Me.cmb_pantalla.TabIndex = 0
         '
         'Label1
         '
-        Me.Label1.Location = New System.Drawing.Point(813, 13)
+        Me.Label1.Location = New System.Drawing.Point(1301, 19)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(72, 16)
+        Me.Label1.Size = New System.Drawing.Size(115, 23)
         Me.Label1.TabIndex = 1
         Me.Label1.Text = "Pantalla"
         '
@@ -104,9 +104,9 @@ Public Class frm_scm_ver_pedidos
         Me.Button1.ImageAlign = System.Drawing.ContentAlignment.TopCenter
         Me.Button1.ImageIndex = 2
         Me.Button1.ImageList = Me.ImageList1
-        Me.Button1.Location = New System.Drawing.Point(706, 2)
+        Me.Button1.Location = New System.Drawing.Point(535, 3)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(83, 62)
+        Me.Button1.Size = New System.Drawing.Size(132, 91)
         Me.Button1.TabIndex = 2
         Me.Button1.Text = "Definir Pantalla"
         Me.Button1.TextAlign = System.Drawing.ContentAlignment.BottomCenter
@@ -130,9 +130,9 @@ Public Class frm_scm_ver_pedidos
         Me.btn_abrir.ImageAlign = System.Drawing.ContentAlignment.TopCenter
         Me.btn_abrir.ImageIndex = 0
         Me.btn_abrir.ImageList = Me.ImageList1
-        Me.btn_abrir.Location = New System.Drawing.Point(558, 2)
+        Me.btn_abrir.Location = New System.Drawing.Point(298, 3)
         Me.btn_abrir.Name = "btn_abrir"
-        Me.btn_abrir.Size = New System.Drawing.Size(75, 62)
+        Me.btn_abrir.Size = New System.Drawing.Size(120, 91)
         Me.btn_abrir.TabIndex = 5
         Me.btn_abrir.Text = "Abrir"
         Me.btn_abrir.TextAlign = System.Drawing.ContentAlignment.BottomCenter
@@ -148,9 +148,9 @@ Public Class frm_scm_ver_pedidos
         Me.btn_exportar.ImageAlign = System.Drawing.ContentAlignment.TopCenter
         Me.btn_exportar.ImageIndex = 1
         Me.btn_exportar.ImageList = Me.ImageList1
-        Me.btn_exportar.Location = New System.Drawing.Point(632, 2)
+        Me.btn_exportar.Location = New System.Drawing.Point(416, 3)
         Me.btn_exportar.Name = "btn_exportar"
-        Me.btn_exportar.Size = New System.Drawing.Size(75, 62)
+        Me.btn_exportar.Size = New System.Drawing.Size(120, 91)
         Me.btn_exportar.TabIndex = 5
         Me.btn_exportar.Text = "Exportar"
         Me.btn_exportar.TextAlign = System.Drawing.ContentAlignment.BottomCenter
@@ -160,9 +160,9 @@ Public Class frm_scm_ver_pedidos
         '
         Me.Button4.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Button4.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.Button4.Location = New System.Drawing.Point(795, 36)
+        Me.Button4.Location = New System.Drawing.Point(677, 53)
         Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(75, 62)
+        Me.Button4.Size = New System.Drawing.Size(120, 90)
         Me.Button4.TabIndex = 5
         Me.Button4.Text = "Button2"
         Me.Button4.Visible = False
@@ -173,26 +173,27 @@ Public Class frm_scm_ver_pedidos
         Me.dgv_detalle.AllowUserToDeleteRows = False
         Me.dgv_detalle.AllowUserToOrderColumns = True
         Me.dgv_detalle.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-                    Or System.Windows.Forms.AnchorStyles.Left) _
-                    Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.dgv_detalle.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.dgv_detalle.ContextMenuStrip = Me.ContextMenuStrip1
-        DataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Window
-        DataGridViewCellStyle4.Font = New System.Drawing.Font("Arial", 6.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.ControlText
-        DataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.dgv_detalle.DefaultCellStyle = DataGridViewCellStyle4
-        Me.dgv_detalle.Location = New System.Drawing.Point(0, 104)
+        DataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Window
+        DataGridViewCellStyle1.Font = New System.Drawing.Font("Arial", 6.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.ControlText
+        DataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.dgv_detalle.DefaultCellStyle = DataGridViewCellStyle1
+        Me.dgv_detalle.Location = New System.Drawing.Point(0, 152)
         Me.dgv_detalle.Name = "dgv_detalle"
         Me.dgv_detalle.RowHeadersWidth = 20
-        Me.dgv_detalle.Size = New System.Drawing.Size(991, 434)
+        Me.dgv_detalle.Size = New System.Drawing.Size(991, 336)
         Me.dgv_detalle.TabIndex = 9
         '
         'ContextMenuStrip1
         '
+        Me.ContextMenuStrip1.ImageScalingSize = New System.Drawing.Size(24, 24)
         Me.ContextMenuStrip1.Name = "ContextMenuStrip1"
         Me.ContextMenuStrip1.Size = New System.Drawing.Size(61, 4)
         '
@@ -201,47 +202,47 @@ Public Class frm_scm_ver_pedidos
         Me.dgv_resumen.AllowUserToAddRows = False
         Me.dgv_resumen.AllowUserToDeleteRows = False
         Me.dgv_resumen.Anchor = CType(((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left) _
-                    Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.dgv_resumen.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Window
-        DataGridViewCellStyle3.Font = New System.Drawing.Font("Arial", 6.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.ControlText
-        DataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.dgv_resumen.DefaultCellStyle = DataGridViewCellStyle3
-        Me.dgv_resumen.Location = New System.Drawing.Point(0, 544)
+        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window
+        DataGridViewCellStyle2.Font = New System.Drawing.Font("Arial", 6.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText
+        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.dgv_resumen.DefaultCellStyle = DataGridViewCellStyle2
+        Me.dgv_resumen.Location = New System.Drawing.Point(0, 497)
         Me.dgv_resumen.Name = "dgv_resumen"
         Me.dgv_resumen.ReadOnly = True
         Me.dgv_resumen.RowHeadersWidth = 25
-        Me.dgv_resumen.Size = New System.Drawing.Size(991, 98)
+        Me.dgv_resumen.Size = New System.Drawing.Size(991, 143)
         Me.dgv_resumen.TabIndex = 11
         '
         'rtxtComentarios
         '
         Me.rtxtComentarios.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.rtxtComentarios.Font = New System.Drawing.Font("Arial", 6.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.rtxtComentarios.Location = New System.Drawing.Point(0, 2)
+        Me.rtxtComentarios.Location = New System.Drawing.Point(0, 3)
         Me.rtxtComentarios.Name = "rtxtComentarios"
         Me.rtxtComentarios.ReadOnly = True
-        Me.rtxtComentarios.Size = New System.Drawing.Size(474, 96)
+        Me.rtxtComentarios.Size = New System.Drawing.Size(758, 140)
         Me.rtxtComentarios.TabIndex = 13
         Me.rtxtComentarios.Text = ""
         '
         'chk_filtro
         '
         Me.chk_filtro.CheckAlign = System.Drawing.ContentAlignment.MiddleRight
-        Me.chk_filtro.Location = New System.Drawing.Point(480, 81)
+        Me.chk_filtro.Location = New System.Drawing.Point(768, 118)
         Me.chk_filtro.Name = "chk_filtro"
-        Me.chk_filtro.Size = New System.Drawing.Size(161, 17)
+        Me.chk_filtro.Size = New System.Drawing.Size(258, 25)
         Me.chk_filtro.TabIndex = 14
         Me.chk_filtro.Text = "Ver Todos Los Productos"
         Me.chk_filtro.UseVisualStyleBackColor = True
         '
         'frm_scm_ver_pedidos
         '
-        Me.AutoScaleBaseSize = New System.Drawing.Size(5, 13)
+        Me.AutoScaleBaseSize = New System.Drawing.Size(8, 19)
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(233, Byte), Integer), CType(CType(234, Byte), Integer), CType(CType(204, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(992, 645)
         Me.Controls.Add(Me.chk_filtro)

@@ -336,3 +336,7 @@ C:\Desarrollo\Version 9\Umbright-2026\Clases4.0\Sincronizacion\obj\Debug\Sincron
 C:\Desarrollo\Version 9\Umbright-2026\Clases4.0\Sincronizacion\obj\Debug\Sincronizacion.dll
 C:\Desarrollo\Version 9\Umbright-2026\Clases4.0\Sincronizacion\obj\Debug\Sincronizacion.xml
 C:\Desarrollo\Version 9\Umbright-2026\Clases4.0\Sincronizacion\obj\Debug\Sincronizacion.pdb
+C:\Users\jsegura\AppData\Local\Temp\claude\umbuild\Sincronizacion.dll.config
+C:\Users\jsegura\AppData\Local\Temp\claude\umbuild\Sincronizacion.dll
+C:\Users\jsegura\AppData\Local\Temp\claude\umbuild\Sincronizacion.pdb
+C:\Users\jsegura\AppData\Local\Temp\claude\umbuild\Sincronizacion.xml

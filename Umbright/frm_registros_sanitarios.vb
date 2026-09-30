@@ -559,11 +559,11 @@ Public Class frm_registros_sanitarios
         Dim ls_sql As String
 
         Dim dt As DataTable
-        Dim Otrans As New Transaccional.Conexion_mysql("onBase")
+        Dim Otrans As New Transaccional.Conexion("Corporativo")
 
         Try
             Otrans.open()
-            ls_sql = "call pa_sel_um_pg_empresa ()"
+            ls_sql = "pa_sel_um_pg_empresa"
             dt = Otrans.Obtiene(ls_sql)
             dt.TableName = "pg_empresas"
 

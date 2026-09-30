@@ -1,0 +1,104 @@
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Clases4.0\Compras\obj\Release\ResolveAssemblyReference.cache
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Clases4.0\Compras\bin\Release\Compras.dll
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Clases4.0\Compras\bin\Release\Compras.pdb
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Clases4.0\Compras\bin\Release\ClasesGenerales.dll
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Clases4.0\Compras\bin\Release\Transaccional.dll
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Clases4.0\Compras\bin\Release\Sincronizacion.dll
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Clases4.0\Compras\bin\Release\Interop.prtcom.dll
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Clases4.0\Compras\bin\Release\Umbral_Flex.dll
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Clases4.0\Compras\bin\Release\Interop.Shell32.dll
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Clases4.0\Compras\bin\Release\FTP.dll
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Clases4.0\Compras\bin\Release\Transaccional.pdb
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Clases4.0\Compras\bin\Release\Transaccional.xml
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Clases4.0\Compras\bin\Release\Sincronizacion.pdb
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Clases4.0\Compras\bin\Release\Sincronizacion.xml
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Clases4.0\Compras\bin\Release\Umbral_Flex.pdb
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Clases4.0\Compras\bin\Release\Umbral_Flex.xml
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Clases4.0\Compras\bin\Release\ClasesGenerales.pdb
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Clases4.0\Compras\bin\Release\ClasesGenerales.xml
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Clases4.0\Compras\bin\Release\FTP.pdb
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Clases4.0\Compras\obj\Release\Compras.dll
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Clases4.0\Compras\obj\Release\Compras.pdb
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Clases4.0\Compras\bin\Release\ZedGraph.dll
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Clases4.0\Compras\bin\Release\ZedGraph.xml
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Clases4.0\Compras\bin\Release\es\ZedGraph.resources.dll
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Clases4.0\Compras\bin\Release\pt\ZedGraph.resources.dll
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Clases4.0\Compras\bin\Release\zh-tw\ZedGraph.resources.dll
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Clases4.0\Compras\bin\Debug\Compras.dll
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Clases4.0\Compras\bin\Debug\Compras.pdb
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Clases4.0\Compras\bin\Debug\ClasesGenerales.dll
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Clases4.0\Compras\bin\Debug\Transaccional.dll
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Clases4.0\Compras\bin\Debug\ZedGraph.dll
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Clases4.0\Compras\bin\Debug\Sincronizacion.dll
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Clases4.0\Compras\bin\Debug\Interop.prtcom.dll
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Clases4.0\Compras\bin\Debug\Umbral_Flex.dll
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Clases4.0\Compras\bin\Debug\Interop.Shell32.dll
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Clases4.0\Compras\bin\Debug\FTP.dll
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Clases4.0\Compras\bin\Debug\Transaccional.pdb
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Clases4.0\Compras\bin\Debug\Transaccional.xml
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Clases4.0\Compras\bin\Debug\Sincronizacion.pdb
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Clases4.0\Compras\bin\Debug\Sincronizacion.xml
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Clases4.0\Compras\bin\Debug\ZedGraph.xml
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Clases4.0\Compras\bin\Debug\Umbral_Flex.pdb
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Clases4.0\Compras\bin\Debug\Umbral_Flex.xml
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Clases4.0\Compras\bin\Debug\ClasesGenerales.pdb
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Clases4.0\Compras\bin\Debug\ClasesGenerales.xml
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Clases4.0\Compras\bin\Debug\FTP.pdb
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Clases4.0\Compras\bin\Debug\es\ZedGraph.resources.dll
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Clases4.0\Compras\bin\Debug\pt\ZedGraph.resources.dll
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Clases4.0\Compras\bin\Debug\zh-tw\ZedGraph.resources.dll
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Clases4.0\Compras\obj\Debug\ResolveAssemblyReference.cache
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Clases4.0\Compras\obj\Debug\Compras.dll
+D:\Desarrollo\Aplicaciones Umbral\Version 4\Clases4.0\Compras\obj\Debug\Compras.pdb
+C:\Desarrollo\Version 4\Clases4.0\Compras\bin\Debug\Compras.dll
+C:\Desarrollo\Version 4\Clases4.0\Compras\bin\Debug\Compras.pdb
+C:\Desarrollo\Version 4\Clases4.0\Compras\bin\Debug\ClasesGenerales.dll
+C:\Desarrollo\Version 4\Clases4.0\Compras\bin\Debug\Transaccional.dll
+C:\Desarrollo\Version 4\Clases4.0\Compras\bin\Debug\ZedGraph.dll
+C:\Desarrollo\Version 4\Clases4.0\Compras\bin\Debug\Sincronizacion.dll
+C:\Desarrollo\Version 4\Clases4.0\Compras\bin\Debug\Interop.prtcom.dll
+C:\Desarrollo\Version 4\Clases4.0\Compras\bin\Debug\Umbral_Flex.dll
+C:\Desarrollo\Version 4\Clases4.0\Compras\bin\Debug\Interop.Shell32.dll
+C:\Desarrollo\Version 4\Clases4.0\Compras\bin\Debug\FTP.dll
+C:\Desarrollo\Version 4\Clases4.0\Compras\bin\Debug\Transaccional.pdb
+C:\Desarrollo\Version 4\Clases4.0\Compras\bin\Debug\Transaccional.xml
+C:\Desarrollo\Version 4\Clases4.0\Compras\bin\Debug\Sincronizacion.pdb
+C:\Desarrollo\Version 4\Clases4.0\Compras\bin\Debug\Sincronizacion.xml
+C:\Desarrollo\Version 4\Clases4.0\Compras\bin\Debug\ZedGraph.xml
+C:\Desarrollo\Version 4\Clases4.0\Compras\bin\Debug\Umbral_Flex.pdb
+C:\Desarrollo\Version 4\Clases4.0\Compras\bin\Debug\Umbral_Flex.xml
+C:\Desarrollo\Version 4\Clases4.0\Compras\bin\Debug\ClasesGenerales.pdb
+C:\Desarrollo\Version 4\Clases4.0\Compras\bin\Debug\ClasesGenerales.xml
+C:\Desarrollo\Version 4\Clases4.0\Compras\bin\Debug\FTP.pdb
+C:\Desarrollo\Version 4\Clases4.0\Compras\bin\Debug\es\ZedGraph.resources.dll
+C:\Desarrollo\Version 4\Clases4.0\Compras\bin\Debug\pt\ZedGraph.resources.dll
+C:\Desarrollo\Version 4\Clases4.0\Compras\bin\Debug\zh-tw\ZedGraph.resources.dll
+C:\Desarrollo\Version 4\Clases4.0\Compras\obj\Debug\ResolveAssemblyReference.cache
+C:\Desarrollo\Version 4\Clases4.0\Compras\obj\Debug\Compras.dll
+C:\Desarrollo\Version 4\Clases4.0\Compras\obj\Debug\Compras.pdb
+C:\Desarrollo\Version 4\Clases4.0\Compras\bin\Release\Compras.dll
+C:\Desarrollo\Version 4\Clases4.0\Compras\bin\Release\Compras.pdb
+C:\Desarrollo\Version 4\Clases4.0\Compras\bin\Release\ClasesGenerales.dll
+C:\Desarrollo\Version 4\Clases4.0\Compras\bin\Release\Transaccional.dll
+C:\Desarrollo\Version 4\Clases4.0\Compras\bin\Release\ZedGraph.dll
+C:\Desarrollo\Version 4\Clases4.0\Compras\bin\Release\Sincronizacion.dll
+C:\Desarrollo\Version 4\Clases4.0\Compras\bin\Release\Interop.prtcom.dll
+C:\Desarrollo\Version 4\Clases4.0\Compras\bin\Release\Umbral_Flex.dll
+C:\Desarrollo\Version 4\Clases4.0\Compras\bin\Release\Interop.Shell32.dll
+C:\Desarrollo\Version 4\Clases4.0\Compras\bin\Release\FTP.dll
+C:\Desarrollo\Version 4\Clases4.0\Compras\bin\Release\Transaccional.pdb
+C:\Desarrollo\Version 4\Clases4.0\Compras\bin\Release\Transaccional.xml
+C:\Desarrollo\Version 4\Clases4.0\Compras\bin\Release\Sincronizacion.pdb
+C:\Desarrollo\Version 4\Clases4.0\Compras\bin\Release\Sincronizacion.xml
+C:\Desarrollo\Version 4\Clases4.0\Compras\bin\Release\ZedGraph.xml
+C:\Desarrollo\Version 4\Clases4.0\Compras\bin\Release\Umbral_Flex.pdb
+C:\Desarrollo\Version 4\Clases4.0\Compras\bin\Release\Umbral_Flex.xml
+C:\Desarrollo\Version 4\Clases4.0\Compras\bin\Release\ClasesGenerales.pdb
+C:\Desarrollo\Version 4\Clases4.0\Compras\bin\Release\ClasesGenerales.xml
+C:\Desarrollo\Version 4\Clases4.0\Compras\bin\Release\FTP.pdb
+C:\Desarrollo\Version 4\Clases4.0\Compras\bin\Release\es\ZedGraph.resources.dll
+C:\Desarrollo\Version 4\Clases4.0\Compras\bin\Release\pt\ZedGraph.resources.dll
+C:\Desarrollo\Version 4\Clases4.0\Compras\bin\Release\zh-tw\ZedGraph.resources.dll
+C:\Desarrollo\Version 4\Clases4.0\Compras\obj\Release\ResolveAssemblyReference.cache
+C:\Desarrollo\Version 4\Clases4.0\Compras\obj\Release\Compras.dll
+C:\Desarrollo\Version 4\Clases4.0\Compras\obj\Release\Compras.pdb

@@ -14,6 +14,10 @@ Public Class frm_scm_pedido
     Dim pfechaCalculo As DateTime
     Dim nfrozen As Integer = 0
     Dim nCodigoPedido As Integer = 0
+    ' Comentarios agregados (click derecho > Agregar Comentario) mientras el
+    ' pedido es nuevo y todavia no tiene nCodigoPedido real (> 0). Se graban en
+    ' la BD con el codigo correcto tan pronto se guarda el pedido.
+    Dim mComentariosPendientes As New System.Collections.Generic.List(Of String)
     Dim pbBodegasExtras As Boolean = False
     Private columnasOcultas As String = String.Empty
     Private psNombreCalculo As String = String.Empty
@@ -165,7 +169,7 @@ Public Class frm_scm_pedido
         Me.btn_buscar.ImageList = Me.ImageList1
         Me.btn_buscar.Location = New System.Drawing.Point(1014, 24)
         Me.btn_buscar.Name = "btn_buscar"
-        Me.btn_buscar.Size = New System.Drawing.Size(62, 64)
+        Me.btn_buscar.Size = New System.Drawing.Size(63, 64)
         Me.btn_buscar.TabIndex = 2
         Me.btn_buscar.Text = "Generar"
         Me.btn_buscar.TextAlign = System.Drawing.ContentAlignment.BottomCenter
@@ -193,7 +197,7 @@ Public Class frm_scm_pedido
         Me.Btn_Exportar.ImageAlign = System.Drawing.ContentAlignment.TopCenter
         Me.Btn_Exportar.ImageIndex = 2
         Me.Btn_Exportar.ImageList = Me.ImageList1
-        Me.Btn_Exportar.Location = New System.Drawing.Point(1132, 24)
+        Me.Btn_Exportar.Location = New System.Drawing.Point(1133, 24)
         Me.Btn_Exportar.Name = "Btn_Exportar"
         Me.Btn_Exportar.Size = New System.Drawing.Size(75, 64)
         Me.Btn_Exportar.TabIndex = 2
@@ -215,7 +219,7 @@ Public Class frm_scm_pedido
         Me.Btn_Guardar.ImageAlign = System.Drawing.ContentAlignment.TopCenter
         Me.Btn_Guardar.ImageIndex = 1
         Me.Btn_Guardar.ImageList = Me.ImageList1
-        Me.Btn_Guardar.Location = New System.Drawing.Point(1207, 24)
+        Me.Btn_Guardar.Location = New System.Drawing.Point(1208, 24)
         Me.Btn_Guardar.Name = "Btn_Guardar"
         Me.Btn_Guardar.Size = New System.Drawing.Size(75, 64)
         Me.Btn_Guardar.TabIndex = 2
@@ -234,9 +238,9 @@ Public Class frm_scm_pedido
         Me.Btn_Aplicar_sugerido.ImageAlign = System.Drawing.ContentAlignment.TopCenter
         Me.Btn_Aplicar_sugerido.ImageIndex = 3
         Me.Btn_Aplicar_sugerido.ImageList = Me.ImageList1
-        Me.Btn_Aplicar_sugerido.Location = New System.Drawing.Point(939, 25)
+        Me.Btn_Aplicar_sugerido.Location = New System.Drawing.Point(940, 25)
         Me.Btn_Aplicar_sugerido.Name = "Btn_Aplicar_sugerido"
-        Me.Btn_Aplicar_sugerido.Size = New System.Drawing.Size(75, 64)
+        Me.Btn_Aplicar_sugerido.Size = New System.Drawing.Size(74, 64)
         Me.Btn_Aplicar_sugerido.TabIndex = 2
         Me.Btn_Aplicar_sugerido.Text = "Valorizado"
         Me.Btn_Aplicar_sugerido.TextAlign = System.Drawing.ContentAlignment.BottomCenter
@@ -253,7 +257,7 @@ Public Class frm_scm_pedido
         Me.btn_Abrir.ImageAlign = System.Drawing.ContentAlignment.TopCenter
         Me.btn_Abrir.ImageIndex = 4
         Me.btn_Abrir.ImageList = Me.ImageList1
-        Me.btn_Abrir.Location = New System.Drawing.Point(1075, 24)
+        Me.btn_Abrir.Location = New System.Drawing.Point(1076, 24)
         Me.btn_Abrir.Name = "btn_Abrir"
         Me.btn_Abrir.Size = New System.Drawing.Size(57, 64)
         Me.btn_Abrir.TabIndex = 2
@@ -291,7 +295,7 @@ Public Class frm_scm_pedido
         Me.dgv_detalle.Location = New System.Drawing.Point(1, 88)
         Me.dgv_detalle.Name = "dgv_detalle"
         Me.dgv_detalle.RowHeadersWidth = 20
-        Me.dgv_detalle.Size = New System.Drawing.Size(1280, 585)
+        Me.dgv_detalle.Size = New System.Drawing.Size(1281, 586)
         Me.dgv_detalle.TabIndex = 6
         '
         'ContextMenuStrip1
@@ -390,7 +394,7 @@ Public Class frm_scm_pedido
         Me.dgv_resumen.Name = "dgv_resumen"
         Me.dgv_resumen.ReadOnly = True
         Me.dgv_resumen.RowHeadersWidth = 25
-        Me.dgv_resumen.Size = New System.Drawing.Size(1280, 99)
+        Me.dgv_resumen.Size = New System.Drawing.Size(1281, 100)
         Me.dgv_resumen.TabIndex = 9
         '
         'txtComentarios
@@ -1141,6 +1145,10 @@ Public Class frm_scm_pedido
                 ls_sql = "pa_ins_um_inv_pedido_encabezado '" & gs_empresa & "','" & snombreCalculo & "','" & gs_usuario & "','" & String.Empty & "','" & columnasOcultas & "'," & piSemanas & "," & porcentajeAumentoPresupuesto
                 otrans.Ingresa(ls_sql)
 
+                ' Recupera el codigo real recien generado (pa_ins_um_inv_pedido_encabezado
+                ' no lo devuelve) para poder asociar los comentarios agregados antes de
+                ' guardar (mientras nCodigoPedido todavia era 0, ver agregarComentario).
+                RecuperarCodigoPedidoRecienGuardado(otrans)
 
                 If berror Then
                     MessageBox.Show("El Proceso Genero Errores", "Informacion", MessageBoxButtons.OK, MessageBoxIcon.Error)
@@ -1161,6 +1169,31 @@ Public Class frm_scm_pedido
             otrans = Nothing
         End Try
 
+    End Sub
+
+    ' Busca el cod_calculo recien insertado (por empresa+nombre_calculo+usuario,
+    ' el mas reciente) y lo asigna a nCodigoPedido; si habia comentarios agregados
+    ' antes de guardar (pedido nuevo, nCodigoPedido=0), los graba con ese codigo.
+    Private Sub RecuperarCodigoPedidoRecienGuardado(ByVal otrans As Transaccional.Conexion)
+        Try
+            Dim dtCod As DataTable = otrans.Obtiene("pa_var_um_inv_pedido_encabezado")
+            If dtCod Is Nothing Then Exit Sub
+
+            dtCod.DefaultView.RowFilter = "empresa = '" & gs_empresa.Replace("'", "''") & "' and nombre_calculo = '" & snombreCalculo.Replace("'", "''") & "' and usuario_grabo = '" & gs_usuario.Replace("'", "''") & "'"
+            dtCod.DefaultView.Sort = "cod_calculo desc"
+            If dtCod.DefaultView.Count = 0 Then Exit Sub
+
+            nCodigoPedido = CInt(dtCod.DefaultView(0).Item("cod_calculo"))
+
+            If mComentariosPendientes.Count > 0 Then
+                For Each pendiente As String In mComentariosPendientes
+                    GrabarComentario(nCodigoPedido, pendiente)
+                Next
+                mComentariosPendientes.Clear()
+                llenarComentarios()
+            End If
+        Catch ex As Exception
+        End Try
     End Sub
 
 
@@ -1799,7 +1832,7 @@ Public Class frm_scm_pedido
             dt.DefaultView.RowFilter = "producto = '" & dgv_detalle.Item("producto", therow.Index).Value & "'"
 
             Dim oform As New frm_resultado
-            oform.Text = ":: Inventario Por Añada ::"
+            oform.Text = ":: Inventario Por Aï¿½ada ::"
             Dim clsGen As New ClasesGenerales.General
 
             Dim lcolumnasmostrar As String = ",producto,bodega,serie,cajas,"
@@ -2257,6 +2290,7 @@ Public Class frm_scm_pedido
         Me.txtComentarios.Text = String.Empty
         psNombreCalculo = String.Empty
         nCodigoPedido = 0
+        mComentariosPendientes.Clear()
         generarForecasting = False 'Cuando se genera debe reiniciar forecasting
         Me.lblPresupuestoAlterno.Visible = False
 
@@ -2968,37 +3002,52 @@ Public Class frm_scm_pedido
 
     Private Sub agregarComentario(Optional ByVal psComentario As String = "Ingrese Comentario de Pedido")
 
-
         Dim scomentario As String = String.Empty
-        Dim Otrans As New Transaccional.Conexion("SCM")
-        Dim lsSQL As String
         Try
-            Otrans.open()
             scomentario = InputBox(psComentario, "Comentarios")
             If scomentario.Length > 250 Or scomentario.Length = 0 Then
                 MessageBox.Show("Problemas con el Comentario " & IIf(scomentario.Length = 0, " ", " Sobrepaso los 75 Caracteres"), "Verificacion", MessageBoxButtons.OK, MessageBoxIcon.Information)
                 Exit Try
             End If
 
-            lsSQL = "pa_ins_um_inv_pedido_comentarios " & nCodigoPedido & ",'" & gs_usuario & "','" & scomentario & "'"
-            Otrans.Ingresa(lsSQL)
-
-            If Otrans.Codigo_error > 0 Then
-                MessageBox.Show("Problemas al Ingresar el Comentario", "Precaucion", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+            If nCodigoPedido = 0 Then
+                ' Pedido nuevo, todavia sin guardar (sin codigo real): se conserva
+                ' en memoria y se muestra de inmediato; se graba en la BD con el
+                ' codigo correcto en cuanto se guarde el pedido (ver Guardar_Calculo).
+                mComentariosPendientes.Add(scomentario)
+                Me.txtComentarios.AppendText(Now.ToString & " " & gs_usuario & " " & scomentario & " (pendiente de guardar)" & vbCrLf)
+                MessageBox.Show("Comentario Ingresado Con Exito. Se grabara al guardar el pedido.", "Informacion", MessageBoxButtons.OK, MessageBoxIcon.Information)
             Else
-                MessageBox.Show("Comentario Ingresado Con Exito", "Informacion", MessageBoxButtons.OK, MessageBoxIcon.Information)
+                If GrabarComentario(nCodigoPedido, scomentario) Then
+                    MessageBox.Show("Comentario Ingresado Con Exito", "Informacion", MessageBoxButtons.OK, MessageBoxIcon.Information)
+                Else
+                    MessageBox.Show("Problemas al Ingresar el Comentario", "Precaucion", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+                End If
+                llenarComentarios()
             End If
 
         Catch ex As Exception
+        End Try
+
+    End Sub
+
+    ' Inserta un comentario ya asociado a un pedido guardado (codigo > 0).
+    ' Devuelve True si se grabo sin errores.
+    Private Function GrabarComentario(pnCodigoPedido As Integer, pscomentario As String) As Boolean
+        Dim Otrans As New Transaccional.Conexion("SCM")
+        Dim lsSQL As String
+        Try
+            Otrans.open()
+            lsSQL = "pa_ins_um_inv_pedido_comentarios " & pnCodigoPedido & ",'" & gs_usuario & "','" & pscomentario & "'"
+            Otrans.Ingresa(lsSQL)
+            Return Otrans.Codigo_error = 0
+        Catch ex As Exception
+            Return False
         Finally
             Otrans.close()
             Otrans = Nothing
-            llenarComentarios()
         End Try
-
-
-
-    End Sub
+    End Function
 
 
     Private Sub Btn_Guardar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Btn_Guardar.Click
@@ -3397,6 +3446,7 @@ Public Class frm_scm_pedido
         pfechaCalculo = oform.pFechaCalculo
         psNombreCalculo = oform.psNombreCalculo
         nCodigoPedido = oform.pnumeroPedido
+        mComentariosPendientes.Clear()
 
 
         oform.Dispose()
@@ -3539,7 +3589,10 @@ Public Class frm_scm_pedido
             End If
             Me.ContextMenuStrip1.Items.Add("Ocultar Columna '" & Me.dgv_detalle.Columns(Me.dgv_detalle.CurrentCell.ColumnIndex).HeaderText & "'", Nothing, AddressOf ToolStripMenuItem_Click)
 
-            If psNombreCalculo.Length > 0 Then
+            ' psNombreCalculo solo se llena al reabrir un pedido ya guardado; en un
+            ' pedido nuevo (aun sin guardar) se usa snombreCalculo, que ya tiene
+            ' valor desde que el usuario le puso nombre al calculo.
+            If psNombreCalculo.Length > 0 OrElse snombreCalculo.Length > 0 Then
                 Me.ContextMenuStrip1.Items.Add("Agregar Comentario ", Nothing, AddressOf ToolStripMenuItem_Click)
             End If
 
@@ -3558,7 +3611,7 @@ Public Class frm_scm_pedido
 
             Me.ContextMenuStrip1.Items.Add("Presupuesto Original", Nothing, AddressOf ToolStripMenuItem_Click)
             Me.ContextMenuStrip1.Items.Add("Ver Inventario Por Lote", Nothing, AddressOf ToolStripMenuItem_Click)
-            Me.ContextMenuStrip1.Items.Add("Ver Inventario Por Añada", Nothing, AddressOf ToolStripMenuItem_Click)
+            Me.ContextMenuStrip1.Items.Add("Ver Inventario Por Aï¿½ada", Nothing, AddressOf ToolStripMenuItem_Click)
         Catch ex As Exception
 
         End Try
@@ -3641,7 +3694,7 @@ Public Class frm_scm_pedido
                     mostrarPresupuestoOriginal()
                 ElseIf menuItem.Text.ToLower.StartsWith("ver inventario por lote") Then
                     mostrarInventarioPorLote() '(c) 20240829
-                ElseIf menuItem.Text.ToLower.StartsWith("ver inventario por añada") Then
+                ElseIf menuItem.Text.ToLower.StartsWith("ver inventario por aï¿½ada") Then
                     mostrarInventarioPorSerie() '(c) 20240829
                 Else
 

@@ -264,3 +264,6 @@ C:\Desarrollo\Version 9\Umbright-2026\Clases4.0\Seguridad\obj\Debug\Seguridad.vb
 C:\Desarrollo\Version 9\Umbright-2026\Clases4.0\Seguridad\obj\Debug\Seguridad.dll
 C:\Desarrollo\Version 9\Umbright-2026\Clases4.0\Seguridad\obj\Debug\Seguridad.xml
 C:\Desarrollo\Version 9\Umbright-2026\Clases4.0\Seguridad\obj\Debug\Seguridad.pdb
+C:\Users\jsegura\AppData\Local\Temp\claude\umbuild\Seguridad.dll
+C:\Users\jsegura\AppData\Local\Temp\claude\umbuild\Seguridad.pdb
+C:\Users\jsegura\AppData\Local\Temp\claude\umbuild\Seguridad.xml

@@ -340,3 +340,5 @@ C:\Desarrollo\Version 9\Umbright-2026\Clases4.0\Umbral.FelInfile_Creditos\obj\De
 C:\Desarrollo\Version 9\Umbright-2026\Clases4.0\Umbral.FelInfile_Creditos\obj\Debug\Umbral.FelInFile.csproj.CopyComplete
 C:\Desarrollo\Version 9\Umbright-2026\Clases4.0\Umbral.FelInfile_Creditos\obj\Debug\Umbral.FelInFileCreditos.dll
 C:\Desarrollo\Version 9\Umbright-2026\Clases4.0\Umbral.FelInfile_Creditos\obj\Debug\Umbral.FelInFileCreditos.pdb
+C:\Users\jsegura\AppData\Local\Temp\claude\umbuild\Umbral.FelInFileCreditos.dll
+C:\Users\jsegura\AppData\Local\Temp\claude\umbuild\Umbral.FelInFileCreditos.pdb

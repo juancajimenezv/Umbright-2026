@@ -85,3 +85,6 @@ C:\Desarrollo\Version 9\Umbright-2026\Interfaz_CRM.Mail\obj\Debug\Interfaz_CRM.M
 C:\Desarrollo\Version 9\Umbright-2026\Interfaz_CRM.Mail\obj\Debug\Interfaz_CRM.Mail.csproj.CopyComplete
 C:\Desarrollo\Version 9\Umbright-2026\Interfaz_CRM.Mail\obj\Debug\Interfaz_CRM.Mail.dll
 C:\Desarrollo\Version 9\Umbright-2026\Interfaz_CRM.Mail\obj\Debug\Interfaz_CRM.Mail.pdb
+C:\Users\jsegura\AppData\Local\Temp\claude\umbuild\Interfaz_CRM.Mail.dll.config
+C:\Users\jsegura\AppData\Local\Temp\claude\umbuild\Interfaz_CRM.Mail.dll
+C:\Users\jsegura\AppData\Local\Temp\claude\umbuild\Interfaz_CRM.Mail.pdb

@@ -1466,7 +1466,6 @@ C:\Desarrollo\Version 9\Umbright-2026\Umbright\bin\Debug\conectorNETv2.dll
 C:\Desarrollo\Version 9\Umbright-2026\Umbright\bin\Debug\Newtonsoft.Json.dll
 C:\Desarrollo\Version 9\Umbright-2026\Umbright\bin\Debug\Interop.Shell32.dll
 C:\Desarrollo\Version 9\Umbright-2026\Umbright\bin\Debug\MySql.Data.dll
-C:\Desarrollo\Version 9\Umbright-2026\Umbright\bin\Debug\System.Data.SqlServerCe.dll
 C:\Desarrollo\Version 9\Umbright-2026\Umbright\bin\Debug\EntityFramework.dll
 C:\Desarrollo\Version 9\Umbright-2026\Umbright\bin\Debug\stdole.dll
 C:\Desarrollo\Version 9\Umbright-2026\Umbright\bin\Debug\Compras.pdb
@@ -1495,7 +1494,6 @@ C:\Desarrollo\Version 9\Umbright-2026\Umbright\bin\Debug\Umbral_Servicios.xml
 C:\Desarrollo\Version 9\Umbright-2026\Umbright\bin\Debug\Interfaz_CRM.Mail.pdb
 C:\Desarrollo\Version 9\Umbright-2026\Umbright\bin\Debug\Interfaz_CRM.Mail.dll.config
 C:\Desarrollo\Version 9\Umbright-2026\Umbright\bin\Debug\Newtonsoft.Json.xml
-C:\Desarrollo\Version 9\Umbright-2026\Umbright\bin\Debug\System.Data.SqlServerCe.xml
 C:\Desarrollo\Version 9\Umbright-2026\Umbright\bin\Debug\EntityFramework.xml
 C:\Desarrollo\Version 9\Umbright-2026\Umbright\obj\Debug\Umbright.vbproj.AssemblyReference.cache
 C:\Desarrollo\Version 9\Umbright-2026\Umbright\obj\Debug\Umbright.frmPedidosUnisuper.resources
@@ -1790,3 +1788,4 @@ C:\Desarrollo\Version 9\Umbright-2026\Umbright\obj\Debug\Umbright.vbproj.CopyCom
 C:\Desarrollo\Version 9\Umbright-2026\Umbright\obj\Debug\Umbright.exe
 C:\Desarrollo\Version 9\Umbright-2026\Umbright\obj\Debug\Umbright.pdb
 C:\Desarrollo\Version 9\Umbright-2026\Umbright\obj\Debug\Umbright.frm_actualizacion_oc.resources
+C:\Desarrollo\Version 9\Umbright-2026\Umbright\obj\Debug\Umbright.frm_anulacion_oc.resources

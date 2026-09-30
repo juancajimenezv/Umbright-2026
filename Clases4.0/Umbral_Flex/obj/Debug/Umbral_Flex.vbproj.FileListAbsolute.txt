@@ -324,3 +324,7 @@ C:\Desarrollo\Version 9\Umbright-2026\Clases4.0\Umbral_Flex\obj\Debug\Umbral_Fle
 C:\Desarrollo\Version 9\Umbright-2026\Clases4.0\Umbral_Flex\obj\Debug\Umbral_Flex.dll
 C:\Desarrollo\Version 9\Umbright-2026\Clases4.0\Umbral_Flex\obj\Debug\Umbral_Flex.xml
 C:\Desarrollo\Version 9\Umbright-2026\Clases4.0\Umbral_Flex\obj\Debug\Umbral_Flex.pdb
+C:\Users\jsegura\AppData\Local\Temp\claude\umbuild\Umbral_Flex.dll.config
+C:\Users\jsegura\AppData\Local\Temp\claude\umbuild\Umbral_Flex.dll
+C:\Users\jsegura\AppData\Local\Temp\claude\umbuild\Umbral_Flex.pdb
+C:\Users\jsegura\AppData\Local\Temp\claude\umbuild\Umbral_Flex.xml

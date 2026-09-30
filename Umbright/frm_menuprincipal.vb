@@ -365,6 +365,7 @@ Public Class frm_menu_principal
     Friend WithEvents mci_soc_documentacion_oc As System.Windows.Forms.MenuItem
     Friend WithEvents mci_tracking_orden_compra As System.Windows.Forms.MenuItem
     Friend WithEvents mci_actualizacion_oc As System.Windows.Forms.MenuItem
+    Friend WithEvents mci_anular_oc As System.Windows.Forms.MenuItem
     Friend WithEvents MenuItem2 As System.Windows.Forms.MenuItem
     Friend WithEvents mar_ol_venta_perdida As System.Windows.Forms.MenuItem
     Friend WithEvents mlo_liquidacionGastos As System.Windows.Forms.MenuItem
@@ -690,6 +691,7 @@ Public Class frm_menu_principal
         Me.mci_soc_documentacion_oc = New System.Windows.Forms.MenuItem()
         Me.mci_tracking_orden_compra = New System.Windows.Forms.MenuItem()
         Me.mci_actualizacion_oc = New System.Windows.Forms.MenuItem()
+        Me.mci_anular_oc = New System.Windows.Forms.MenuItem()
         Me.aduEnvioPDA = New System.Windows.Forms.MenuItem()
         Me.aduRecepcionDA = New System.Windows.Forms.MenuItem()
         Me.mci_int_reportes = New System.Windows.Forms.MenuItem()
@@ -2240,6 +2242,10 @@ Public Class frm_menu_principal
         'mci_actualizacion_oc
         '
         Me.mci_actualizacion_oc.Text = "Actualizacion OC"
+        '
+        'mci_anular_oc
+        '
+        Me.mci_anular_oc.Text = "Anular OC"
         '
         'aduEnvioPDA
         '
@@ -4832,6 +4838,12 @@ Public Class frm_menu_principal
             mMenuP(7).MenuItems.Add(New RichMenuItem(mimg.Bitmaps(eImagenes.eNew), "&Actualización OC", AddressOf mci_actualizacion_oc_Click, "mci_actualizacion_oc_Click"))
         End If
 
+        ''Anular OC (Anular / OnHold)
+        dt.DefaultView.RowFilter = "opcion = 'mci_anular_oc'"
+        If dt.DefaultView.Count > 0 Or cod_tipo_usuario >= 1 Then
+            mMenuP(7).MenuItems.Add(New RichMenuItem(mimg.Bitmaps(eImagenes.eRedo), "Anular OC", AddressOf mci_anular_oc_Click, "mci_anular_oc_Click"))
+        End If
+
 
         ''SCM Tracking OC Tesoreria
         ''(c) 20160505
@@ -6994,6 +7006,18 @@ Public Class frm_menu_principal
         End Try
 
         Dim oform As New frm_actualizacion_oc
+        oform.ShowDialog()
+        oform.Dispose()
+        oform = Nothing
+    End Sub
+
+    Private Sub mci_anular_oc_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles mci_anular_oc.Click
+        Try
+            guardarLogB("Acceso " & DirectCast(sender, ClasesGenerales.General.RichMenuItem).Description, gs_usuario, Replace(DirectCast(DirectCast(sender, System.Windows.Forms.MenuItem).Parent, System.Windows.Forms.MenuItem).[Text], "&", ""), Replace(DirectCast(sender, System.Windows.Forms.MenuItem).[Text], "&", ""))
+        Catch ex As Exception
+        End Try
+
+        Dim oform As New frm_anulacion_oc
         oform.ShowDialog()
         oform.Dispose()
         oform = Nothing

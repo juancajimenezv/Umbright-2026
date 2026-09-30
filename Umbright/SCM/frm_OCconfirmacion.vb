@@ -244,9 +244,9 @@ Public Class frm_OCconfirmacion
         '
         'lbl_vigencia
         '
-        Me.lbl_vigencia.Location = New System.Drawing.Point(486, 88)
+        Me.lbl_vigencia.Location = New System.Drawing.Point(778, 129)
         Me.lbl_vigencia.Name = "lbl_vigencia"
-        Me.lbl_vigencia.Size = New System.Drawing.Size(100, 23)
+        Me.lbl_vigencia.Size = New System.Drawing.Size(160, 33)
         Me.lbl_vigencia.TabIndex = 17
         '
         'TextBox1
@@ -255,7 +255,7 @@ Public Class frm_OCconfirmacion
         Me.TextBox1.Enabled = False
         Me.TextBox1.Location = New System.Drawing.Point(680, 24)
         Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(74, 20)
+        Me.TextBox1.Size = New System.Drawing.Size(74, 26)
         Me.TextBox1.TabIndex = 11
         Me.TextBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
@@ -265,7 +265,7 @@ Public Class frm_OCconfirmacion
         Me.TextBox2.Enabled = False
         Me.TextBox2.Location = New System.Drawing.Point(680, 72)
         Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(74, 20)
+        Me.TextBox2.Size = New System.Drawing.Size(74, 26)
         Me.TextBox2.TabIndex = 11
         Me.TextBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
@@ -275,7 +275,7 @@ Public Class frm_OCconfirmacion
         Me.TextBox3.Enabled = False
         Me.TextBox3.Location = New System.Drawing.Point(680, 48)
         Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(74, 20)
+        Me.TextBox3.Size = New System.Drawing.Size(74, 26)
         Me.TextBox3.TabIndex = 11
         Me.TextBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
@@ -284,7 +284,7 @@ Public Class frm_OCconfirmacion
         Me.TextBox4.Enabled = False
         Me.TextBox4.Location = New System.Drawing.Point(517, 48)
         Me.TextBox4.Name = "TextBox4"
-        Me.TextBox4.Size = New System.Drawing.Size(64, 20)
+        Me.TextBox4.Size = New System.Drawing.Size(64, 26)
         Me.TextBox4.TabIndex = 10
         '
         'TextBox5
@@ -292,7 +292,7 @@ Public Class frm_OCconfirmacion
         Me.TextBox5.Enabled = False
         Me.TextBox5.Location = New System.Drawing.Point(517, 72)
         Me.TextBox5.Name = "TextBox5"
-        Me.TextBox5.Size = New System.Drawing.Size(64, 20)
+        Me.TextBox5.Size = New System.Drawing.Size(64, 26)
         Me.TextBox5.TabIndex = 9
         '
         'Label19
@@ -345,14 +345,14 @@ Public Class frm_OCconfirmacion
         Me.TextBox6.Enabled = False
         Me.TextBox6.Location = New System.Drawing.Point(111, 68)
         Me.TextBox6.Name = "TextBox6"
-        Me.TextBox6.Size = New System.Drawing.Size(345, 20)
+        Me.TextBox6.Size = New System.Drawing.Size(345, 26)
         Me.TextBox6.TabIndex = 6
         '
         'TextBox7
         '
         Me.TextBox7.Location = New System.Drawing.Point(111, 42)
         Me.TextBox7.Name = "TextBox7"
-        Me.TextBox7.Size = New System.Drawing.Size(345, 20)
+        Me.TextBox7.Size = New System.Drawing.Size(345, 26)
         Me.TextBox7.TabIndex = 6
         '
         'Button1
@@ -392,7 +392,7 @@ Public Class frm_OCconfirmacion
         Me.DateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
         Me.DateTimePicker1.Location = New System.Drawing.Point(363, 19)
         Me.DateTimePicker1.Name = "DateTimePicker1"
-        Me.DateTimePicker1.Size = New System.Drawing.Size(87, 20)
+        Me.DateTimePicker1.Size = New System.Drawing.Size(87, 26)
         Me.DateTimePicker1.TabIndex = 4
         '
         'DateTimePicker2
@@ -400,7 +400,7 @@ Public Class frm_OCconfirmacion
         Me.DateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
         Me.DateTimePicker2.Location = New System.Drawing.Point(111, 19)
         Me.DateTimePicker2.Name = "DateTimePicker2"
-        Me.DateTimePicker2.Size = New System.Drawing.Size(87, 20)
+        Me.DateTimePicker2.Size = New System.Drawing.Size(87, 26)
         Me.DateTimePicker2.TabIndex = 4
         '
         'Label26
@@ -429,10 +429,10 @@ Public Class frm_OCconfirmacion
         Me.TabPage1.Controls.Add(Me.btn_moc_nuevo)
         Me.TabPage1.Controls.Add(Me.txt_moc_numeroOC)
         Me.TabPage1.Controls.Add(Me.Label37)
-        Me.TabPage1.Location = New System.Drawing.Point(4, 23)
+        Me.TabPage1.Location = New System.Drawing.Point(4, 28)
         Me.TabPage1.Name = "TabPage1"
         Me.TabPage1.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage1.Size = New System.Drawing.Size(889, 513)
+        Me.TabPage1.Size = New System.Drawing.Size(1427, 757)
         Me.TabPage1.TabIndex = 3
         Me.TabPage1.Text = "Modificacion OC"
         Me.TabPage1.UseVisualStyleBackColor = True
@@ -458,9 +458,9 @@ Public Class frm_OCconfirmacion
         Me.GroupBox5.Controls.Add(Me.dtp_moc_fechavencimiento)
         Me.GroupBox5.Controls.Add(Me.Label35)
         Me.GroupBox5.Controls.Add(Me.Label36)
-        Me.GroupBox5.Location = New System.Drawing.Point(11, 32)
+        Me.GroupBox5.Location = New System.Drawing.Point(18, 47)
         Me.GroupBox5.Name = "GroupBox5"
-        Me.GroupBox5.Size = New System.Drawing.Size(872, 105)
+        Me.GroupBox5.Size = New System.Drawing.Size(1395, 153)
         Me.GroupBox5.TabIndex = 26
         Me.GroupBox5.TabStop = False
         Me.GroupBox5.Text = "Confirmacion de Proveedor"
@@ -469,9 +469,9 @@ Public Class frm_OCconfirmacion
         '
         Me.txt_moc_valores.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.txt_moc_valores.Enabled = False
-        Me.txt_moc_valores.Location = New System.Drawing.Point(680, 24)
+        Me.txt_moc_valores.Location = New System.Drawing.Point(1088, 35)
         Me.txt_moc_valores.Name = "txt_moc_valores"
-        Me.txt_moc_valores.Size = New System.Drawing.Size(74, 20)
+        Me.txt_moc_valores.Size = New System.Drawing.Size(118, 26)
         Me.txt_moc_valores.TabIndex = 11
         Me.txt_moc_valores.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
@@ -479,9 +479,9 @@ Public Class frm_OCconfirmacion
         '
         Me.txt_moc_lineas.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.txt_moc_lineas.Enabled = False
-        Me.txt_moc_lineas.Location = New System.Drawing.Point(680, 72)
+        Me.txt_moc_lineas.Location = New System.Drawing.Point(1088, 105)
         Me.txt_moc_lineas.Name = "txt_moc_lineas"
-        Me.txt_moc_lineas.Size = New System.Drawing.Size(74, 20)
+        Me.txt_moc_lineas.Size = New System.Drawing.Size(118, 26)
         Me.txt_moc_lineas.TabIndex = 11
         Me.txt_moc_lineas.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
@@ -489,9 +489,9 @@ Public Class frm_OCconfirmacion
         '
         Me.txt_moc_unidades.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.txt_moc_unidades.Enabled = False
-        Me.txt_moc_unidades.Location = New System.Drawing.Point(680, 48)
+        Me.txt_moc_unidades.Location = New System.Drawing.Point(1088, 70)
         Me.txt_moc_unidades.Name = "txt_moc_unidades"
-        Me.txt_moc_unidades.Size = New System.Drawing.Size(74, 20)
+        Me.txt_moc_unidades.Size = New System.Drawing.Size(118, 26)
         Me.txt_moc_unidades.TabIndex = 11
         Me.txt_moc_unidades.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
@@ -499,62 +499,62 @@ Public Class frm_OCconfirmacion
         '
         Me.txt_moc_moneda.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.txt_moc_moneda.Enabled = False
-        Me.txt_moc_moneda.Location = New System.Drawing.Point(517, 48)
+        Me.txt_moc_moneda.Location = New System.Drawing.Point(827, 70)
         Me.txt_moc_moneda.Name = "txt_moc_moneda"
-        Me.txt_moc_moneda.Size = New System.Drawing.Size(64, 20)
+        Me.txt_moc_moneda.Size = New System.Drawing.Size(103, 26)
         Me.txt_moc_moneda.TabIndex = 10
         '
         'txt_moc_paridad
         '
         Me.txt_moc_paridad.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.txt_moc_paridad.Enabled = False
-        Me.txt_moc_paridad.Location = New System.Drawing.Point(517, 72)
+        Me.txt_moc_paridad.Location = New System.Drawing.Point(827, 105)
         Me.txt_moc_paridad.Name = "txt_moc_paridad"
-        Me.txt_moc_paridad.Size = New System.Drawing.Size(64, 20)
+        Me.txt_moc_paridad.Size = New System.Drawing.Size(103, 26)
         Me.txt_moc_paridad.TabIndex = 9
         '
         'Label28
         '
         Me.Label28.AutoSize = True
-        Me.Label28.Location = New System.Drawing.Point(612, 71)
+        Me.Label28.Location = New System.Drawing.Point(979, 104)
         Me.Label28.Name = "Label28"
-        Me.Label28.Size = New System.Drawing.Size(39, 14)
+        Me.Label28.Size = New System.Drawing.Size(57, 19)
         Me.Label28.TabIndex = 8
         Me.Label28.Text = "Lineas"
         '
         'Label29
         '
         Me.Label29.AutoSize = True
-        Me.Label29.Location = New System.Drawing.Point(612, 51)
+        Me.Label29.Location = New System.Drawing.Point(979, 75)
         Me.Label29.Name = "Label29"
-        Me.Label29.Size = New System.Drawing.Size(60, 14)
+        Me.Label29.Size = New System.Drawing.Size(89, 19)
         Me.Label29.TabIndex = 8
         Me.Label29.Text = "T.Unidades"
         '
         'Label30
         '
         Me.Label30.AutoSize = True
-        Me.Label30.Location = New System.Drawing.Point(466, 75)
+        Me.Label30.Location = New System.Drawing.Point(746, 110)
         Me.Label30.Name = "Label30"
-        Me.Label30.Size = New System.Drawing.Size(43, 14)
+        Me.Label30.Size = New System.Drawing.Size(66, 19)
         Me.Label30.TabIndex = 8
         Me.Label30.Text = "Paridad"
         '
         'Label31
         '
         Me.Label31.AutoSize = True
-        Me.Label31.Location = New System.Drawing.Point(612, 27)
+        Me.Label31.Location = New System.Drawing.Point(979, 39)
         Me.Label31.Name = "Label31"
-        Me.Label31.Size = New System.Drawing.Size(55, 14)
+        Me.Label31.Size = New System.Drawing.Size(80, 19)
         Me.Label31.TabIndex = 7
         Me.Label31.Text = "T. Valores"
         '
         'Label32
         '
         Me.Label32.AutoSize = True
-        Me.Label32.Location = New System.Drawing.Point(466, 48)
+        Me.Label32.Location = New System.Drawing.Point(746, 70)
         Me.Label32.Name = "Label32"
-        Me.Label32.Size = New System.Drawing.Size(45, 14)
+        Me.Label32.Size = New System.Drawing.Size(67, 19)
         Me.Label32.TabIndex = 7
         Me.Label32.Text = "Moneda"
         '
@@ -562,17 +562,17 @@ Public Class frm_OCconfirmacion
         '
         Me.txt_moc_proveedor.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.txt_moc_proveedor.Enabled = False
-        Me.txt_moc_proveedor.Location = New System.Drawing.Point(111, 68)
+        Me.txt_moc_proveedor.Location = New System.Drawing.Point(178, 99)
         Me.txt_moc_proveedor.Name = "txt_moc_proveedor"
-        Me.txt_moc_proveedor.Size = New System.Drawing.Size(345, 20)
+        Me.txt_moc_proveedor.Size = New System.Drawing.Size(552, 26)
         Me.txt_moc_proveedor.TabIndex = 6
         '
         'txt_moc_comentario
         '
         Me.txt_moc_comentario.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.txt_moc_comentario.Location = New System.Drawing.Point(111, 42)
+        Me.txt_moc_comentario.Location = New System.Drawing.Point(178, 61)
         Me.txt_moc_comentario.Name = "txt_moc_comentario"
-        Me.txt_moc_comentario.Size = New System.Drawing.Size(345, 20)
+        Me.txt_moc_comentario.Size = New System.Drawing.Size(552, 26)
         Me.txt_moc_comentario.TabIndex = 6
         '
         'btn_aplicar_moc
@@ -581,9 +581,9 @@ Public Class frm_OCconfirmacion
         Me.btn_aplicar_moc.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btn_aplicar_moc.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btn_aplicar_moc.ForeColor = System.Drawing.Color.White
-        Me.btn_aplicar_moc.Location = New System.Drawing.Point(496, 10)
+        Me.btn_aplicar_moc.Location = New System.Drawing.Point(794, 15)
         Me.btn_aplicar_moc.Name = "btn_aplicar_moc"
-        Me.btn_aplicar_moc.Size = New System.Drawing.Size(75, 31)
+        Me.btn_aplicar_moc.Size = New System.Drawing.Size(120, 45)
         Me.btn_aplicar_moc.TabIndex = 3
         Me.btn_aplicar_moc.Text = "Aplicar"
         Me.btn_aplicar_moc.UseVisualStyleBackColor = False
@@ -591,52 +591,52 @@ Public Class frm_OCconfirmacion
         'Label33
         '
         Me.Label33.AutoSize = True
-        Me.Label33.Location = New System.Drawing.Point(6, 71)
+        Me.Label33.Location = New System.Drawing.Point(10, 104)
         Me.Label33.Name = "Label33"
-        Me.Label33.Size = New System.Drawing.Size(57, 14)
+        Me.Label33.Size = New System.Drawing.Size(84, 19)
         Me.Label33.TabIndex = 5
         Me.Label33.Text = "Proveedor"
         '
         'Label34
         '
         Me.Label34.AutoSize = True
-        Me.Label34.Location = New System.Drawing.Point(6, 45)
+        Me.Label34.Location = New System.Drawing.Point(10, 66)
         Me.Label34.Name = "Label34"
-        Me.Label34.Size = New System.Drawing.Size(61, 14)
+        Me.Label34.Size = New System.Drawing.Size(93, 19)
         Me.Label34.TabIndex = 5
         Me.Label34.Text = "Comentario"
         '
         'dtp_mov_fecha_despacho
         '
         Me.dtp_mov_fecha_despacho.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
-        Me.dtp_mov_fecha_despacho.Location = New System.Drawing.Point(363, 19)
+        Me.dtp_mov_fecha_despacho.Location = New System.Drawing.Point(581, 28)
         Me.dtp_mov_fecha_despacho.Name = "dtp_mov_fecha_despacho"
-        Me.dtp_mov_fecha_despacho.Size = New System.Drawing.Size(87, 20)
+        Me.dtp_mov_fecha_despacho.Size = New System.Drawing.Size(139, 26)
         Me.dtp_mov_fecha_despacho.TabIndex = 4
         '
         'dtp_moc_fechavencimiento
         '
         Me.dtp_moc_fechavencimiento.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
-        Me.dtp_moc_fechavencimiento.Location = New System.Drawing.Point(111, 19)
+        Me.dtp_moc_fechavencimiento.Location = New System.Drawing.Point(178, 28)
         Me.dtp_moc_fechavencimiento.Name = "dtp_moc_fechavencimiento"
-        Me.dtp_moc_fechavencimiento.Size = New System.Drawing.Size(87, 20)
+        Me.dtp_moc_fechavencimiento.Size = New System.Drawing.Size(139, 26)
         Me.dtp_moc_fechavencimiento.TabIndex = 4
         '
         'Label35
         '
         Me.Label35.AutoSize = True
-        Me.Label35.Location = New System.Drawing.Point(238, 22)
+        Me.Label35.Location = New System.Drawing.Point(381, 32)
         Me.Label35.Name = "Label35"
-        Me.Label35.Size = New System.Drawing.Size(89, 14)
+        Me.Label35.Size = New System.Drawing.Size(134, 19)
         Me.Label35.TabIndex = 5
         Me.Label35.Text = "Fecha Despacho"
         '
         'Label36
         '
         Me.Label36.AutoSize = True
-        Me.Label36.Location = New System.Drawing.Point(6, 22)
+        Me.Label36.Location = New System.Drawing.Point(10, 32)
         Me.Label36.Name = "Label36"
-        Me.Label36.Size = New System.Drawing.Size(98, 14)
+        Me.Label36.Size = New System.Drawing.Size(149, 19)
         Me.Label36.TabIndex = 5
         Me.Label36.Text = "Fecha Vencimiento"
         '
@@ -646,10 +646,10 @@ Public Class frm_OCconfirmacion
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.dg_moc_productos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.dg_moc_productos.Location = New System.Drawing.Point(4, 143)
+        Me.dg_moc_productos.Location = New System.Drawing.Point(6, 209)
         Me.dg_moc_productos.Name = "dg_moc_productos"
         Me.dg_moc_productos.RowHeadersWidth = 25
-        Me.dg_moc_productos.Size = New System.Drawing.Size(876, 349)
+        Me.dg_moc_productos.Size = New System.Drawing.Size(1402, 510)
         Me.dg_moc_productos.TabIndex = 1
         '
         'btn_moc_nuevo
@@ -658,9 +658,9 @@ Public Class frm_OCconfirmacion
         Me.btn_moc_nuevo.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btn_moc_nuevo.Font = New System.Drawing.Font("Arial", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btn_moc_nuevo.ForeColor = System.Drawing.Color.White
-        Me.btn_moc_nuevo.Location = New System.Drawing.Point(469, 3)
+        Me.btn_moc_nuevo.Location = New System.Drawing.Point(750, 4)
         Me.btn_moc_nuevo.Name = "btn_moc_nuevo"
-        Me.btn_moc_nuevo.Size = New System.Drawing.Size(110, 23)
+        Me.btn_moc_nuevo.Size = New System.Drawing.Size(176, 34)
         Me.btn_moc_nuevo.TabIndex = 25
         Me.btn_moc_nuevo.Text = "Nuevo"
         Me.btn_moc_nuevo.UseVisualStyleBackColor = False
@@ -668,17 +668,17 @@ Public Class frm_OCconfirmacion
         'txt_moc_numeroOC
         '
         Me.txt_moc_numeroOC.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.txt_moc_numeroOC.Location = New System.Drawing.Point(363, 6)
+        Me.txt_moc_numeroOC.Location = New System.Drawing.Point(581, 9)
         Me.txt_moc_numeroOC.Name = "txt_moc_numeroOC"
-        Me.txt_moc_numeroOC.Size = New System.Drawing.Size(100, 20)
+        Me.txt_moc_numeroOC.Size = New System.Drawing.Size(160, 26)
         Me.txt_moc_numeroOC.TabIndex = 23
         '
         'Label37
         '
         Me.Label37.AutoSize = True
-        Me.Label37.Location = New System.Drawing.Point(238, 8)
+        Me.Label37.Location = New System.Drawing.Point(381, 12)
         Me.Label37.Name = "Label37"
-        Me.Label37.Size = New System.Drawing.Size(92, 14)
+        Me.Label37.Size = New System.Drawing.Size(140, 19)
         Me.Label37.TabIndex = 24
         Me.Label37.Text = "Orden de Compra"
         '
@@ -689,10 +689,10 @@ Public Class frm_OCconfirmacion
         Me.TabPage3.Controls.Add(Me.GroupBox4)
         Me.TabPage3.Controls.Add(Me.GroupBox3)
         Me.TabPage3.Controls.Add(Me.GroupBox2)
-        Me.TabPage3.Location = New System.Drawing.Point(4, 22)
+        Me.TabPage3.Location = New System.Drawing.Point(4, 28)
         Me.TabPage3.Name = "TabPage3"
         Me.TabPage3.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage3.Size = New System.Drawing.Size(889, 514)
+        Me.TabPage3.Size = New System.Drawing.Size(1427, 757)
         Me.TabPage3.TabIndex = 2
         Me.TabPage3.Text = "Propiedades OC"
         Me.TabPage3.UseVisualStyleBackColor = True
@@ -706,34 +706,34 @@ Public Class frm_OCconfirmacion
         Me.GroupBox4.Controls.Add(Me.Label12)
         Me.GroupBox4.Controls.Add(Me.Label18)
         Me.GroupBox4.Controls.Add(Me.txtNumeroOCDespacho)
-        Me.GroupBox4.Location = New System.Drawing.Point(8, 290)
+        Me.GroupBox4.Location = New System.Drawing.Point(13, 424)
         Me.GroupBox4.Name = "GroupBox4"
-        Me.GroupBox4.Size = New System.Drawing.Size(871, 113)
+        Me.GroupBox4.Size = New System.Drawing.Size(1393, 165)
         Me.GroupBox4.TabIndex = 1
         Me.GroupBox4.TabStop = False
         Me.GroupBox4.Text = "Despacho"
         '
         'txtMotivoFechaDespacho
         '
-        Me.txtMotivoFechaDespacho.Location = New System.Drawing.Point(101, 82)
+        Me.txtMotivoFechaDespacho.Location = New System.Drawing.Point(162, 120)
         Me.txtMotivoFechaDespacho.Name = "txtMotivoFechaDespacho"
-        Me.txtMotivoFechaDespacho.Size = New System.Drawing.Size(590, 20)
+        Me.txtMotivoFechaDespacho.Size = New System.Drawing.Size(944, 26)
         Me.txtMotivoFechaDespacho.TabIndex = 2
         '
         'dtpFechaDespachoActualizacion
         '
         Me.dtpFechaDespachoActualizacion.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
-        Me.dtpFechaDespachoActualizacion.Location = New System.Drawing.Point(101, 56)
+        Me.dtpFechaDespachoActualizacion.Location = New System.Drawing.Point(162, 82)
         Me.dtpFechaDespachoActualizacion.Name = "dtpFechaDespachoActualizacion"
-        Me.dtpFechaDespachoActualizacion.Size = New System.Drawing.Size(85, 20)
+        Me.dtpFechaDespachoActualizacion.Size = New System.Drawing.Size(136, 26)
         Me.dtpFechaDespachoActualizacion.TabIndex = 8
         '
         'Label17
         '
         Me.Label17.AutoSize = True
-        Me.Label17.Location = New System.Drawing.Point(5, 59)
+        Me.Label17.Location = New System.Drawing.Point(8, 86)
         Me.Label17.Name = "Label17"
-        Me.Label17.Size = New System.Drawing.Size(89, 14)
+        Me.Label17.Size = New System.Drawing.Size(134, 19)
         Me.Label17.TabIndex = 7
         Me.Label17.Text = "Fecha Despacho"
         '
@@ -742,9 +742,9 @@ Public Class frm_OCconfirmacion
         Me.btnAplicarFechaDespacho.BackColor = System.Drawing.Color.FromArgb(CType(CType(83, Byte), Integer), CType(CType(80, Byte), Integer), CType(CType(34, Byte), Integer))
         Me.btnAplicarFechaDespacho.Font = New System.Drawing.Font("Arial", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnAplicarFechaDespacho.ForeColor = System.Drawing.Color.White
-        Me.btnAplicarFechaDespacho.Location = New System.Drawing.Point(528, 12)
+        Me.btnAplicarFechaDespacho.Location = New System.Drawing.Point(845, 18)
         Me.btnAplicarFechaDespacho.Name = "btnAplicarFechaDespacho"
-        Me.btnAplicarFechaDespacho.Size = New System.Drawing.Size(75, 23)
+        Me.btnAplicarFechaDespacho.Size = New System.Drawing.Size(120, 33)
         Me.btnAplicarFechaDespacho.TabIndex = 3
         Me.btnAplicarFechaDespacho.Text = "Aplicar"
         Me.btnAplicarFechaDespacho.UseVisualStyleBackColor = False
@@ -752,27 +752,27 @@ Public Class frm_OCconfirmacion
         'Label12
         '
         Me.Label12.AutoSize = True
-        Me.Label12.Location = New System.Drawing.Point(6, 85)
+        Me.Label12.Location = New System.Drawing.Point(10, 124)
         Me.Label12.Name = "Label12"
-        Me.Label12.Size = New System.Drawing.Size(38, 14)
+        Me.Label12.Size = New System.Drawing.Size(55, 19)
         Me.Label12.TabIndex = 1
         Me.Label12.Text = "Motivo"
         '
         'Label18
         '
         Me.Label18.AutoSize = True
-        Me.Label18.Location = New System.Drawing.Point(241, 16)
+        Me.Label18.Location = New System.Drawing.Point(386, 23)
         Me.Label18.Name = "Label18"
-        Me.Label18.Size = New System.Drawing.Size(92, 14)
+        Me.Label18.Size = New System.Drawing.Size(140, 19)
         Me.Label18.TabIndex = 6
         Me.Label18.Text = "Orden de Compra"
         '
         'txtNumeroOCDespacho
         '
         Me.txtNumeroOCDespacho.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.txtNumeroOCDespacho.Location = New System.Drawing.Point(366, 14)
+        Me.txtNumeroOCDespacho.Location = New System.Drawing.Point(586, 20)
         Me.txtNumeroOCDespacho.Name = "txtNumeroOCDespacho"
-        Me.txtNumeroOCDespacho.Size = New System.Drawing.Size(100, 20)
+        Me.txtNumeroOCDespacho.Size = New System.Drawing.Size(160, 26)
         Me.txtNumeroOCDespacho.TabIndex = 5
         '
         'GroupBox3
@@ -784,34 +784,34 @@ Public Class frm_OCconfirmacion
         Me.GroupBox3.Controls.Add(Me.Label3)
         Me.GroupBox3.Controls.Add(Me.Label14)
         Me.GroupBox3.Controls.Add(Me.txtNumeroOCProduccion)
-        Me.GroupBox3.Location = New System.Drawing.Point(8, 173)
+        Me.GroupBox3.Location = New System.Drawing.Point(13, 253)
         Me.GroupBox3.Name = "GroupBox3"
-        Me.GroupBox3.Size = New System.Drawing.Size(871, 111)
+        Me.GroupBox3.Size = New System.Drawing.Size(1393, 162)
         Me.GroupBox3.TabIndex = 1
         Me.GroupBox3.TabStop = False
         Me.GroupBox3.Text = "Produccion"
         '
         'txtComentarioProduccion
         '
-        Me.txtComentarioProduccion.Location = New System.Drawing.Point(101, 82)
+        Me.txtComentarioProduccion.Location = New System.Drawing.Point(162, 120)
         Me.txtComentarioProduccion.Name = "txtComentarioProduccion"
-        Me.txtComentarioProduccion.Size = New System.Drawing.Size(590, 20)
+        Me.txtComentarioProduccion.Size = New System.Drawing.Size(944, 26)
         Me.txtComentarioProduccion.TabIndex = 2
         '
         'dtpFechaProduccionActualizacion
         '
         Me.dtpFechaProduccionActualizacion.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
-        Me.dtpFechaProduccionActualizacion.Location = New System.Drawing.Point(101, 56)
+        Me.dtpFechaProduccionActualizacion.Location = New System.Drawing.Point(162, 82)
         Me.dtpFechaProduccionActualizacion.Name = "dtpFechaProduccionActualizacion"
-        Me.dtpFechaProduccionActualizacion.Size = New System.Drawing.Size(85, 20)
+        Me.dtpFechaProduccionActualizacion.Size = New System.Drawing.Size(136, 26)
         Me.dtpFechaProduccionActualizacion.TabIndex = 8
         '
         'Label15
         '
         Me.Label15.AutoSize = True
-        Me.Label15.Location = New System.Drawing.Point(5, 59)
+        Me.Label15.Location = New System.Drawing.Point(8, 86)
         Me.Label15.Name = "Label15"
-        Me.Label15.Size = New System.Drawing.Size(94, 14)
+        Me.Label15.Size = New System.Drawing.Size(144, 19)
         Me.Label15.TabIndex = 7
         Me.Label15.Text = "Fecha Produccion"
         '
@@ -820,9 +820,9 @@ Public Class frm_OCconfirmacion
         Me.btnAplicarFechaProduccion.BackColor = System.Drawing.Color.FromArgb(CType(CType(83, Byte), Integer), CType(CType(80, Byte), Integer), CType(CType(34, Byte), Integer))
         Me.btnAplicarFechaProduccion.Font = New System.Drawing.Font("Arial", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnAplicarFechaProduccion.ForeColor = System.Drawing.Color.White
-        Me.btnAplicarFechaProduccion.Location = New System.Drawing.Point(528, 12)
+        Me.btnAplicarFechaProduccion.Location = New System.Drawing.Point(845, 18)
         Me.btnAplicarFechaProduccion.Name = "btnAplicarFechaProduccion"
-        Me.btnAplicarFechaProduccion.Size = New System.Drawing.Size(75, 23)
+        Me.btnAplicarFechaProduccion.Size = New System.Drawing.Size(120, 33)
         Me.btnAplicarFechaProduccion.TabIndex = 3
         Me.btnAplicarFechaProduccion.Text = "Aplicar"
         Me.btnAplicarFechaProduccion.UseVisualStyleBackColor = False
@@ -830,27 +830,27 @@ Public Class frm_OCconfirmacion
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(7, 85)
+        Me.Label3.Location = New System.Drawing.Point(11, 124)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(38, 14)
+        Me.Label3.Size = New System.Drawing.Size(55, 19)
         Me.Label3.TabIndex = 1
         Me.Label3.Text = "Motivo"
         '
         'Label14
         '
         Me.Label14.AutoSize = True
-        Me.Label14.Location = New System.Drawing.Point(241, 16)
+        Me.Label14.Location = New System.Drawing.Point(386, 23)
         Me.Label14.Name = "Label14"
-        Me.Label14.Size = New System.Drawing.Size(92, 14)
+        Me.Label14.Size = New System.Drawing.Size(140, 19)
         Me.Label14.TabIndex = 6
         Me.Label14.Text = "Orden de Compra"
         '
         'txtNumeroOCProduccion
         '
         Me.txtNumeroOCProduccion.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.txtNumeroOCProduccion.Location = New System.Drawing.Point(366, 14)
+        Me.txtNumeroOCProduccion.Location = New System.Drawing.Point(586, 20)
         Me.txtNumeroOCProduccion.Name = "txtNumeroOCProduccion"
-        Me.txtNumeroOCProduccion.Size = New System.Drawing.Size(100, 20)
+        Me.txtNumeroOCProduccion.Size = New System.Drawing.Size(160, 26)
         Me.txtNumeroOCProduccion.TabIndex = 5
         '
         'GroupBox2
@@ -863,9 +863,9 @@ Public Class frm_OCconfirmacion
         Me.GroupBox2.Controls.Add(Me.txtComentarioOCCreditos)
         Me.GroupBox2.Controls.Add(Me.Label11)
         Me.GroupBox2.Controls.Add(Me.cmbEstadoOCCreditos)
-        Me.GroupBox2.Location = New System.Drawing.Point(8, 19)
+        Me.GroupBox2.Location = New System.Drawing.Point(13, 28)
         Me.GroupBox2.Name = "GroupBox2"
-        Me.GroupBox2.Size = New System.Drawing.Size(871, 130)
+        Me.GroupBox2.Size = New System.Drawing.Size(1393, 190)
         Me.GroupBox2.TabIndex = 0
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "Situacion Crediticia"
@@ -873,18 +873,18 @@ Public Class frm_OCconfirmacion
         'Label13
         '
         Me.Label13.AutoSize = True
-        Me.Label13.Location = New System.Drawing.Point(241, 16)
+        Me.Label13.Location = New System.Drawing.Point(386, 23)
         Me.Label13.Name = "Label13"
-        Me.Label13.Size = New System.Drawing.Size(92, 14)
+        Me.Label13.Size = New System.Drawing.Size(140, 19)
         Me.Label13.TabIndex = 4
         Me.Label13.Text = "Orden de Compra"
         '
         'txtnumeroOCCreditos
         '
         Me.txtnumeroOCCreditos.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.txtnumeroOCCreditos.Location = New System.Drawing.Point(366, 14)
+        Me.txtnumeroOCCreditos.Location = New System.Drawing.Point(586, 20)
         Me.txtnumeroOCCreditos.Name = "txtnumeroOCCreditos"
-        Me.txtnumeroOCCreditos.Size = New System.Drawing.Size(100, 20)
+        Me.txtnumeroOCCreditos.Size = New System.Drawing.Size(160, 26)
         Me.txtnumeroOCCreditos.TabIndex = 3
         '
         'btnEliminar
@@ -892,9 +892,9 @@ Public Class frm_OCconfirmacion
         Me.btnEliminar.BackColor = System.Drawing.Color.FromArgb(CType(CType(83, Byte), Integer), CType(CType(80, Byte), Integer), CType(CType(34, Byte), Integer))
         Me.btnEliminar.Font = New System.Drawing.Font("Arial", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnEliminar.ForeColor = System.Drawing.Color.White
-        Me.btnEliminar.Location = New System.Drawing.Point(616, 40)
+        Me.btnEliminar.Location = New System.Drawing.Point(986, 58)
         Me.btnEliminar.Name = "btnEliminar"
-        Me.btnEliminar.Size = New System.Drawing.Size(75, 23)
+        Me.btnEliminar.Size = New System.Drawing.Size(120, 34)
         Me.btnEliminar.TabIndex = 3
         Me.btnEliminar.Text = "Eliminar"
         Me.btnEliminar.UseVisualStyleBackColor = False
@@ -904,9 +904,9 @@ Public Class frm_OCconfirmacion
         Me.btnImprimir.BackColor = System.Drawing.Color.FromArgb(CType(CType(83, Byte), Integer), CType(CType(80, Byte), Integer), CType(CType(34, Byte), Integer))
         Me.btnImprimir.Font = New System.Drawing.Font("Arial", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnImprimir.ForeColor = System.Drawing.Color.White
-        Me.btnImprimir.Location = New System.Drawing.Point(340, 47)
+        Me.btnImprimir.Location = New System.Drawing.Point(544, 69)
         Me.btnImprimir.Name = "btnImprimir"
-        Me.btnImprimir.Size = New System.Drawing.Size(75, 23)
+        Me.btnImprimir.Size = New System.Drawing.Size(120, 33)
         Me.btnImprimir.TabIndex = 3
         Me.btnImprimir.Text = "Imprimir"
         Me.btnImprimir.UseVisualStyleBackColor = False
@@ -916,37 +916,37 @@ Public Class frm_OCconfirmacion
         Me.btnAplicarOCCreditos.BackColor = System.Drawing.Color.FromArgb(CType(CType(83, Byte), Integer), CType(CType(80, Byte), Integer), CType(CType(34, Byte), Integer))
         Me.btnAplicarOCCreditos.Font = New System.Drawing.Font("Arial", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnAplicarOCCreditos.ForeColor = System.Drawing.Color.White
-        Me.btnAplicarOCCreditos.Location = New System.Drawing.Point(244, 46)
+        Me.btnAplicarOCCreditos.Location = New System.Drawing.Point(390, 67)
         Me.btnAplicarOCCreditos.Name = "btnAplicarOCCreditos"
-        Me.btnAplicarOCCreditos.Size = New System.Drawing.Size(75, 23)
+        Me.btnAplicarOCCreditos.Size = New System.Drawing.Size(120, 34)
         Me.btnAplicarOCCreditos.TabIndex = 3
         Me.btnAplicarOCCreditos.Text = "Aplicar"
         Me.btnAplicarOCCreditos.UseVisualStyleBackColor = False
         '
         'txtComentarioOCCreditos
         '
-        Me.txtComentarioOCCreditos.Location = New System.Drawing.Point(101, 74)
+        Me.txtComentarioOCCreditos.Location = New System.Drawing.Point(162, 108)
         Me.txtComentarioOCCreditos.Multiline = True
         Me.txtComentarioOCCreditos.Name = "txtComentarioOCCreditos"
         Me.txtComentarioOCCreditos.ScrollBars = System.Windows.Forms.ScrollBars.Vertical
-        Me.txtComentarioOCCreditos.Size = New System.Drawing.Size(590, 48)
+        Me.txtComentarioOCCreditos.Size = New System.Drawing.Size(944, 70)
         Me.txtComentarioOCCreditos.TabIndex = 2
         '
         'Label11
         '
         Me.Label11.AutoSize = True
-        Me.Label11.Location = New System.Drawing.Point(5, 50)
+        Me.Label11.Location = New System.Drawing.Point(8, 73)
         Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(40, 14)
+        Me.Label11.Size = New System.Drawing.Size(59, 19)
         Me.Label11.TabIndex = 1
         Me.Label11.Text = "Estado"
         '
         'cmbEstadoOCCreditos
         '
         Me.cmbEstadoOCCreditos.FormattingEnabled = True
-        Me.cmbEstadoOCCreditos.Location = New System.Drawing.Point(101, 47)
+        Me.cmbEstadoOCCreditos.Location = New System.Drawing.Point(162, 69)
         Me.cmbEstadoOCCreditos.Name = "cmbEstadoOCCreditos"
-        Me.cmbEstadoOCCreditos.Size = New System.Drawing.Size(121, 22)
+        Me.cmbEstadoOCCreditos.Size = New System.Drawing.Size(193, 27)
         Me.cmbEstadoOCCreditos.TabIndex = 0
         '
         'TabPage2
@@ -957,10 +957,10 @@ Public Class frm_OCconfirmacion
         Me.TabPage2.Controls.Add(Me.Label8)
         Me.TabPage2.Controls.Add(Me.txtNumeroOC)
         Me.TabPage2.Controls.Add(Me.dgvProductosOC)
-        Me.TabPage2.Location = New System.Drawing.Point(4, 23)
+        Me.TabPage2.Location = New System.Drawing.Point(4, 28)
         Me.TabPage2.Name = "TabPage2"
         Me.TabPage2.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage2.Size = New System.Drawing.Size(889, 513)
+        Me.TabPage2.Size = New System.Drawing.Size(1169, 508)
         Me.TabPage2.TabIndex = 1
         Me.TabPage2.Text = "Confirmacion Proveedor"
         Me.TabPage2.UseVisualStyleBackColor = True
@@ -986,9 +986,9 @@ Public Class frm_OCconfirmacion
         Me.GroupBox1.Controls.Add(Me.dtpFechaVencimientoConfirmacion)
         Me.GroupBox1.Controls.Add(Me.Label16)
         Me.GroupBox1.Controls.Add(Me.Label9)
-        Me.GroupBox1.Location = New System.Drawing.Point(11, 32)
+        Me.GroupBox1.Location = New System.Drawing.Point(18, 47)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(878, 105)
+        Me.GroupBox1.Size = New System.Drawing.Size(1404, 153)
         Me.GroupBox1.TabIndex = 7
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Confirmacion de Proveedor"
@@ -997,9 +997,9 @@ Public Class frm_OCconfirmacion
         '
         Me.txtValores.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.txtValores.Enabled = False
-        Me.txtValores.Location = New System.Drawing.Point(680, 24)
+        Me.txtValores.Location = New System.Drawing.Point(1088, 35)
         Me.txtValores.Name = "txtValores"
-        Me.txtValores.Size = New System.Drawing.Size(74, 20)
+        Me.txtValores.Size = New System.Drawing.Size(118, 26)
         Me.txtValores.TabIndex = 11
         Me.txtValores.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
@@ -1007,9 +1007,9 @@ Public Class frm_OCconfirmacion
         '
         Me.txtLineas.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.txtLineas.Enabled = False
-        Me.txtLineas.Location = New System.Drawing.Point(680, 72)
+        Me.txtLineas.Location = New System.Drawing.Point(1088, 105)
         Me.txtLineas.Name = "txtLineas"
-        Me.txtLineas.Size = New System.Drawing.Size(74, 20)
+        Me.txtLineas.Size = New System.Drawing.Size(118, 26)
         Me.txtLineas.TabIndex = 11
         Me.txtLineas.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
@@ -1017,86 +1017,86 @@ Public Class frm_OCconfirmacion
         '
         Me.txtUnidades.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.txtUnidades.Enabled = False
-        Me.txtUnidades.Location = New System.Drawing.Point(680, 48)
+        Me.txtUnidades.Location = New System.Drawing.Point(1088, 70)
         Me.txtUnidades.Name = "txtUnidades"
-        Me.txtUnidades.Size = New System.Drawing.Size(74, 20)
+        Me.txtUnidades.Size = New System.Drawing.Size(118, 26)
         Me.txtUnidades.TabIndex = 11
         Me.txtUnidades.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
         'txtMoneda
         '
         Me.txtMoneda.Enabled = False
-        Me.txtMoneda.Location = New System.Drawing.Point(517, 48)
+        Me.txtMoneda.Location = New System.Drawing.Point(827, 70)
         Me.txtMoneda.Name = "txtMoneda"
-        Me.txtMoneda.Size = New System.Drawing.Size(64, 20)
+        Me.txtMoneda.Size = New System.Drawing.Size(103, 26)
         Me.txtMoneda.TabIndex = 10
         '
         'txtParidad
         '
         Me.txtParidad.Enabled = False
-        Me.txtParidad.Location = New System.Drawing.Point(517, 72)
+        Me.txtParidad.Location = New System.Drawing.Point(827, 105)
         Me.txtParidad.Name = "txtParidad"
-        Me.txtParidad.Size = New System.Drawing.Size(64, 20)
+        Me.txtParidad.Size = New System.Drawing.Size(103, 26)
         Me.txtParidad.TabIndex = 9
         '
         'Label7
         '
         Me.Label7.AutoSize = True
-        Me.Label7.Location = New System.Drawing.Point(612, 71)
+        Me.Label7.Location = New System.Drawing.Point(979, 104)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(39, 14)
+        Me.Label7.Size = New System.Drawing.Size(57, 19)
         Me.Label7.TabIndex = 8
         Me.Label7.Text = "Lineas"
         '
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(612, 51)
+        Me.Label6.Location = New System.Drawing.Point(979, 75)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(60, 14)
+        Me.Label6.Size = New System.Drawing.Size(89, 19)
         Me.Label6.TabIndex = 8
         Me.Label6.Text = "T.Unidades"
         '
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(466, 75)
+        Me.Label2.Location = New System.Drawing.Point(746, 110)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(43, 14)
+        Me.Label2.Size = New System.Drawing.Size(66, 19)
         Me.Label2.TabIndex = 8
         Me.Label2.Text = "Paridad"
         '
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(612, 27)
+        Me.Label5.Location = New System.Drawing.Point(979, 39)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(55, 14)
+        Me.Label5.Size = New System.Drawing.Size(80, 19)
         Me.Label5.TabIndex = 7
         Me.Label5.Text = "T. Valores"
         '
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(466, 48)
+        Me.Label1.Location = New System.Drawing.Point(746, 70)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(45, 14)
+        Me.Label1.Size = New System.Drawing.Size(67, 19)
         Me.Label1.TabIndex = 7
         Me.Label1.Text = "Moneda"
         '
         'txtProveedor
         '
         Me.txtProveedor.Enabled = False
-        Me.txtProveedor.Location = New System.Drawing.Point(111, 68)
+        Me.txtProveedor.Location = New System.Drawing.Point(178, 99)
         Me.txtProveedor.Name = "txtProveedor"
-        Me.txtProveedor.Size = New System.Drawing.Size(345, 20)
+        Me.txtProveedor.Size = New System.Drawing.Size(552, 26)
         Me.txtProveedor.TabIndex = 6
         '
         'txtComentarioConfirmacion
         '
-        Me.txtComentarioConfirmacion.Location = New System.Drawing.Point(111, 42)
+        Me.txtComentarioConfirmacion.Location = New System.Drawing.Point(178, 61)
         Me.txtComentarioConfirmacion.Name = "txtComentarioConfirmacion"
-        Me.txtComentarioConfirmacion.Size = New System.Drawing.Size(345, 20)
+        Me.txtComentarioConfirmacion.Size = New System.Drawing.Size(552, 26)
         Me.txtComentarioConfirmacion.TabIndex = 6
         '
         'btnAplicar
@@ -1105,9 +1105,9 @@ Public Class frm_OCconfirmacion
         Me.btnAplicar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnAplicar.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnAplicar.ForeColor = System.Drawing.Color.White
-        Me.btnAplicar.Location = New System.Drawing.Point(496, 10)
+        Me.btnAplicar.Location = New System.Drawing.Point(794, 15)
         Me.btnAplicar.Name = "btnAplicar"
-        Me.btnAplicar.Size = New System.Drawing.Size(75, 31)
+        Me.btnAplicar.Size = New System.Drawing.Size(120, 45)
         Me.btnAplicar.TabIndex = 3
         Me.btnAplicar.Text = "Aplicar"
         Me.btnAplicar.UseVisualStyleBackColor = False
@@ -1115,18 +1115,18 @@ Public Class frm_OCconfirmacion
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(6, 71)
+        Me.Label4.Location = New System.Drawing.Point(10, 104)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(57, 14)
+        Me.Label4.Size = New System.Drawing.Size(84, 19)
         Me.Label4.TabIndex = 5
         Me.Label4.Text = "Proveedor"
         '
         'Label10
         '
         Me.Label10.AutoSize = True
-        Me.Label10.Location = New System.Drawing.Point(6, 45)
+        Me.Label10.Location = New System.Drawing.Point(10, 66)
         Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(61, 14)
+        Me.Label10.Size = New System.Drawing.Size(93, 19)
         Me.Label10.TabIndex = 5
         Me.Label10.Text = "Comentario"
         '
@@ -1134,34 +1134,34 @@ Public Class frm_OCconfirmacion
         '
         Me.dtpFechaDespacho.Enabled = False
         Me.dtpFechaDespacho.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
-        Me.dtpFechaDespacho.Location = New System.Drawing.Point(363, 19)
+        Me.dtpFechaDespacho.Location = New System.Drawing.Point(581, 28)
         Me.dtpFechaDespacho.Name = "dtpFechaDespacho"
-        Me.dtpFechaDespacho.Size = New System.Drawing.Size(87, 20)
+        Me.dtpFechaDespacho.Size = New System.Drawing.Size(139, 26)
         Me.dtpFechaDespacho.TabIndex = 4
         '
         'dtpFechaVencimientoConfirmacion
         '
         Me.dtpFechaVencimientoConfirmacion.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
-        Me.dtpFechaVencimientoConfirmacion.Location = New System.Drawing.Point(111, 19)
+        Me.dtpFechaVencimientoConfirmacion.Location = New System.Drawing.Point(178, 28)
         Me.dtpFechaVencimientoConfirmacion.Name = "dtpFechaVencimientoConfirmacion"
-        Me.dtpFechaVencimientoConfirmacion.Size = New System.Drawing.Size(87, 20)
+        Me.dtpFechaVencimientoConfirmacion.Size = New System.Drawing.Size(139, 26)
         Me.dtpFechaVencimientoConfirmacion.TabIndex = 4
         '
         'Label16
         '
         Me.Label16.AutoSize = True
-        Me.Label16.Location = New System.Drawing.Point(238, 22)
+        Me.Label16.Location = New System.Drawing.Point(381, 32)
         Me.Label16.Name = "Label16"
-        Me.Label16.Size = New System.Drawing.Size(89, 14)
+        Me.Label16.Size = New System.Drawing.Size(134, 19)
         Me.Label16.TabIndex = 5
         Me.Label16.Text = "Fecha Despacho"
         '
         'Label9
         '
         Me.Label9.AutoSize = True
-        Me.Label9.Location = New System.Drawing.Point(6, 22)
+        Me.Label9.Location = New System.Drawing.Point(10, 32)
         Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(98, 14)
+        Me.Label9.Size = New System.Drawing.Size(149, 19)
         Me.Label9.TabIndex = 5
         Me.Label9.Text = "Fecha Vencimiento"
         '
@@ -1171,9 +1171,9 @@ Public Class frm_OCconfirmacion
         Me.btnOCPendientes.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnOCPendientes.Font = New System.Drawing.Font("Arial", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnOCPendientes.ForeColor = System.Drawing.Color.White
-        Me.btnOCPendientes.Location = New System.Drawing.Point(480, 3)
+        Me.btnOCPendientes.Location = New System.Drawing.Point(768, 4)
         Me.btnOCPendientes.Name = "btnOCPendientes"
-        Me.btnOCPendientes.Size = New System.Drawing.Size(110, 23)
+        Me.btnOCPendientes.Size = New System.Drawing.Size(176, 34)
         Me.btnOCPendientes.TabIndex = 3
         Me.btnOCPendientes.Text = "OC Pendientes"
         Me.btnOCPendientes.UseVisualStyleBackColor = False
@@ -1181,18 +1181,18 @@ Public Class frm_OCconfirmacion
         'Label8
         '
         Me.Label8.AutoSize = True
-        Me.Label8.Location = New System.Drawing.Point(249, 8)
+        Me.Label8.Location = New System.Drawing.Point(398, 12)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(92, 14)
+        Me.Label8.Size = New System.Drawing.Size(140, 19)
         Me.Label8.TabIndex = 2
         Me.Label8.Text = "Orden de Compra"
         '
         'txtNumeroOC
         '
         Me.txtNumeroOC.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.txtNumeroOC.Location = New System.Drawing.Point(374, 6)
+        Me.txtNumeroOC.Location = New System.Drawing.Point(598, 9)
         Me.txtNumeroOC.Name = "txtNumeroOC"
-        Me.txtNumeroOC.Size = New System.Drawing.Size(100, 20)
+        Me.txtNumeroOC.Size = New System.Drawing.Size(160, 26)
         Me.txtNumeroOC.TabIndex = 1
         '
         'dgvProductosOC
@@ -1200,10 +1200,10 @@ Public Class frm_OCconfirmacion
         Me.dgvProductosOC.Anchor = CType(((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.dgvProductosOC.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.dgvProductosOC.Location = New System.Drawing.Point(11, 142)
+        Me.dgvProductosOC.Location = New System.Drawing.Point(18, -40)
         Me.dgvProductosOC.Name = "dgvProductosOC"
         Me.dgvProductosOC.RowHeadersWidth = 25
-        Me.dgvProductosOC.Size = New System.Drawing.Size(872, 358)
+        Me.dgvProductosOC.Size = New System.Drawing.Size(1137, 523)
         Me.dgvProductosOC.TabIndex = 0
         '
         'TabControl1
@@ -1215,14 +1215,14 @@ Public Class frm_OCconfirmacion
         Me.TabControl1.Location = New System.Drawing.Point(0, 0)
         Me.TabControl1.Name = "TabControl1"
         Me.TabControl1.SelectedIndex = 0
-        Me.TabControl1.Size = New System.Drawing.Size(897, 540)
+        Me.TabControl1.Size = New System.Drawing.Size(1177, 540)
         Me.TabControl1.TabIndex = 22
         '
         'frm_OCconfirmacion
         '
-        Me.AutoScaleBaseSize = New System.Drawing.Size(5, 13)
+        Me.AutoScaleBaseSize = New System.Drawing.Size(8, 19)
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(233, Byte), Integer), CType(CType(234, Byte), Integer), CType(CType(204, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(897, 540)
+        Me.ClientSize = New System.Drawing.Size(1177, 540)
         Me.Controls.Add(Me.TabControl1)
         Me.Controls.Add(Me.lbl_vigencia)
         Me.Font = New System.Drawing.Font("Arial", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
