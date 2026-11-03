@@ -4621,7 +4621,7 @@ namespace Umbral.FelInFile
                         i++;
                         string lMsg = (e["mensaje_error"] ?? e).ToString();
                         lMensajes.Add(lMsg);
-                        oFlex.Escribir_Log($"  error {i} de {lTotal}: {lMsg}");
+                        oFlex.Escribir_Log($"{lMsg}   (error {i} de {lTotal})");
 
                     }
 
