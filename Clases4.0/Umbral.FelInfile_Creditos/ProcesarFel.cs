@@ -674,10 +674,9 @@ namespace Umbral.FelInFile
                                     if (oFlex.Codigo_error > 0)
                                         oFlex.Escribir_Log("No se pudo ingresar el log.");
 
-                                    var jo = JObject.Parse(jsonString);
-
-                                    string MensajeInfile = jo["descripcion_errores"][0]["mensaje_error"].ToString();
-                                    oFlex.Escribir_Log(MensajeInfile);
+                                    string MensajeInfile = RegistrarErroresInfile(
+                                        jsonString, response,
+                                        dr["empresa"].ToString(), dr["tipodocto"].ToString(), dr["numero"].ToString());
 
                                     lsSQL =
                                          $"pa_upd_um_gen_log_documento_face_proceso_comentario" +
@@ -1086,10 +1085,9 @@ namespace Umbral.FelInFile
                                 if (oFlex.Codigo_error > 0)
                                     oFlex.Escribir_Log("No se pudo ingresar el log.");
 
-                                var jo = JObject.Parse(jsonString);
-
-                                string MensajeInfile = jo["descripcion_errores"][0]["mensaje_error"].ToString();
-                                oFlex.Escribir_Log(MensajeInfile);
+                                string MensajeInfile = RegistrarErroresInfile(
+                                    jsonString, response,
+                                    dr["empresa"].ToString(), dr["tipodocto"].ToString(), dr["numero"].ToString());
 
                                 lsSQL =
                                      $"pa_upd_um_gen_log_documento_face_proceso_comentario" +
@@ -1652,10 +1650,9 @@ namespace Umbral.FelInFile
                                 if (oFlex.Codigo_error > 0)
                                     oFlex.Escribir_Log("No se pudo ingresar el log.");
 
-                                var jo = JObject.Parse(jsonString);
-
-                                string MensajeInfile = jo["descripcion_errores"][0]["mensaje_error"].ToString();
-                                oFlex.Escribir_Log(MensajeInfile);
+                                string MensajeInfile = RegistrarErroresInfile(
+                                    jsonString, response,
+                                    dr["empresa"].ToString(), dr["tipodocto"].ToString(), dr["numero"].ToString());
 
                                 lsSQL =
                                      $"pa_upd_um_gen_log_documento_face_proceso_comentario" +
@@ -3203,10 +3200,9 @@ namespace Umbral.FelInFile
                                     if (oFlex.Codigo_error > 0)
                                         oFlex.Escribir_Log("No se pudo ingresar el log.");
 
-                                    var jo = JObject.Parse(jsonString);
-
-                                    string MensajeInfile = jo["descripcion_errores"][0]["mensaje_error"].ToString();
-                                    oFlex.Escribir_Log(MensajeInfile);
+                                    string MensajeInfile = RegistrarErroresInfile(
+                                        jsonString, response,
+                                        dr["empresa"].ToString(), dr["tipodocto"].ToString(), dr["numero"].ToString());
 
                                     lsSQL =
                                          $"pa_upd_um_gen_log_documento_face_proceso_comentario" +
@@ -3667,10 +3663,9 @@ namespace Umbral.FelInFile
                                 if (oFlex.Codigo_error > 0)
                                     oFlex.Escribir_Log("No se pudo ingresar el log.");
 
-                                var jo = JObject.Parse(jsonString);
-
-                                string MensajeInfile = jo["descripcion_errores"][0]["mensaje_error"].ToString();
-                                oFlex.Escribir_Log(MensajeInfile);
+                                string MensajeInfile = RegistrarErroresInfile(
+                                    jsonString, response,
+                                    dr["empresa"].ToString(), dr["tipodocto"].ToString(), dr["numero"].ToString());
 
                                 lsSQL =
                                      $"pa_upd_um_gen_log_documento_face_proceso_comentario" +
@@ -4230,10 +4225,9 @@ namespace Umbral.FelInFile
                                 if (oFlex.Codigo_error > 0)
                                     oFlex.Escribir_Log("No se pudo ingresar el log.");
 
-                                var jo = JObject.Parse(jsonString);
-
-                                string MensajeInfile = jo["descripcion_errores"][0]["mensaje_error"].ToString();
-                                oFlex.Escribir_Log(MensajeInfile);
+                                string MensajeInfile = RegistrarErroresInfile(
+                                    jsonString, response,
+                                    dr["empresa"].ToString(), dr["tipodocto"].ToString(), dr["numero"].ToString());
 
                                 lsSQL =
                                      $"pa_upd_um_gen_log_documento_face_proceso_comentario" +
@@ -4589,6 +4583,67 @@ namespace Umbral.FelInFile
             }
 
             return lRespuesta;
+
+        }
+
+        /// <summary>
+        /// Vuelca al log TODOS los errores que devuelve INFILE, no solo el primero,
+        /// mas la respuesta cruda. Devuelve los mensajes unidos para la columna
+        /// "Comentarios FEL" de la pantalla, recortados al limite del SP (150).
+        /// </summary>
+        private string RegistrarErroresInfile(
+            string pJsonString,
+            string pRespuestaCruda,
+            string pEmpresa,
+            string pTipoDocto,
+            string pNumero)
+        {
+
+            List<string> lMensajes = new List<string>();
+
+            oFlex.Escribir_Log($"FEL RECHAZADO: {pEmpresa} {pTipoDocto} {pNumero}");
+
+            try
+            {
+
+                JObject jo = JObject.Parse(pJsonString);
+                JToken errores = jo["descripcion_errores"];
+
+                if (errores != null)
+                {
+
+                    int lTotal = errores.Count();
+                    int i = 0;
+
+                    foreach (JToken e in errores)
+                    {
+
+                        i++;
+                        string lMsg = (e["mensaje_error"] ?? e).ToString();
+                        lMensajes.Add(lMsg);
+                        oFlex.Escribir_Log($"{lMsg}   (error {i} de {lTotal})");
+
+                    }
+
+                }
+
+            }
+            catch (Exception ex)
+            {
+
+                oFlex.Escribir_Log($"  no se pudo interpretar la respuesta: {ex.Message}");
+
+            }
+
+            oFlex.Escribir_Log($"  respuesta cruda: {pRespuestaCruda}");
+
+            if (lMensajes.Count == 0)
+                return "Rechazado por INFILE, ver el log para el detalle.";
+
+            // la comilla simple rompe el SQL que se arma por concatenacion
+            string lComentario = string.Join(" || ", lMensajes).Replace("'", "");
+
+            return lComentario.Length > 145 ? lComentario.Substring(0, 145) : lComentario;
 
         }
 
