@@ -22,6 +22,9 @@ Public Class frm_PedidosEdiFact
     Friend WithEvents Label9 As System.Windows.Forms.Label
     Dim ods As New DataSet
 
+    'Carpeta donde se guardan los PDF de las ordenes EdiFact
+    Private Const CARPETA_PDF_EDI As String = "C:\temp\Edifactpdf"
+
 
 #Region " Windows Form Designer generated code "
 
@@ -710,7 +713,7 @@ Public Class frm_PedidosEdiFact
 
 
         Dim ls_sqltxt As String
-        oDataSet = New DataSet
+        QuitarTablas("detalle_pedidos")
         Dim dtCliente As DataTable
 
         ods.Tables("pedidos").Rows.Clear()
@@ -1188,7 +1191,7 @@ Public Class frm_PedidosEdiFact
         Dim ls_sqltxt As String
         Dim total_q As Double
         Dim unidades As Integer
-        oDataSet = New DataSet
+        QuitarTablas("detalle_pedidos_reimpresion")
 
         ods.Tables("pedidos_reimpresion").Rows.Clear()
         'Me.dtp_re_fecha_inicio.CustomFormat = "yyyy-MM-dd"
@@ -1290,6 +1293,13 @@ Public Class frm_PedidosEdiFact
         End Try
     End Sub
 
+    'Las pestanas comparten oDataSet: cada carga quita solo sus tablas para no borrar el detalle de las demas
+    Private Sub QuitarTablas(ByVal ParamArray tablas() As String)
+        For Each nombre As String In tablas
+            If oDataSet.Tables.Contains(nombre) Then oDataSet.Tables.Remove(nombre)
+        Next
+    End Sub
+
     Private Sub detalle_pedido(ByVal pi_RowNumber As Integer)
 
         'Dim ls_resultado As String
@@ -1303,13 +1313,13 @@ Public Class frm_PedidosEdiFact
 
         If Me.dgv_pedidos.Item("centralizado", pi_RowNumber).Value.ToString.Equals("1") Then
             clgen.Alinear_GridView(oDataSet.Tables("detalle_pedidos"), dgv_detalle,
-                ",no_pedido,sku,cantidad,uxc,precio,codigoflex,descripcionflex,precioflex,cantidad_facturar,ip,", "", ",no_pedido,sku,cantidad,uxc,precio,codigoflex,descripcionflex,precioflex,", "", ",precio=precio_WM,ip=Inner Pack,",
-                ",descripcionflex=180,", ",no_pedido,sku,codigoflex,descripcionflex,precio,precioflex,ip,uxc,cantidad,cantidad_facturar,", True, True, 200, 0)
+                ",no_pedido,sku,cantidad,uxc,precio,codigoflex,descripcionflex,precioflex,cantidad_facturar,ip,existencia,", "", ",no_pedido,sku,cantidad,uxc,precio,codigoflex,descripcionflex,precioflex,existencia,", ",existencia,", ",precio=precio_WM,ip=Inner Pack,existencia=Existencia,",
+                ",descripcionflex=180,", ",no_pedido,sku,codigoflex,descripcionflex,precio,precioflex,ip,uxc,cantidad,cantidad_facturar,existencia,", True, True, 200, 0)
         Else
 
             clgen.Alinear_GridView(oDataSet.Tables("detalle_pedidos"), dgv_detalle,
-                ",no_pedido,sku,cantidad,uxc,precio,codigoflex,descripcionflex,precioflex,cantidad_facturar,", "", ",no_pedido,sku,cantidad,uxc,precio,codigoflex,descripcionflex,precioflex,", "", ",precio=precio_WM,",
-                ",descripcionflex=180,", ",no_pedido,sku,codigoflex,descripcionflex,precio,precioflex,uxc,cantidad,cantidad_facturar,", True, True, 200, 0)
+                ",no_pedido,sku,cantidad,uxc,precio,codigoflex,descripcionflex,precioflex,cantidad_facturar,existencia,", "", ",no_pedido,sku,cantidad,uxc,precio,codigoflex,descripcionflex,precioflex,existencia,", ",existencia,", ",precio=precio_WM,existencia=Existencia,",
+                ",descripcionflex=180,", ",no_pedido,sku,codigoflex,descripcionflex,precio,precioflex,uxc,cantidad,cantidad_facturar,existencia,", True, True, 200, 0)
         End If
         clgen = Nothing
         Me.dgv_pedidos.Refresh()
@@ -1854,54 +1864,52 @@ Public Class frm_PedidosEdiFact
         End Try
     End Sub
 
-    Public Sub Imprimir_Ordenes_pdf(ByVal idtransaccion As String, ByVal cliente As String)
+    Public Function Imprimir_Ordenes_pdf(ByVal idtransaccion As String, ByVal cliente As String) As Boolean
         Dim path_reporte As String
+        Dim ls_archivo As String = ""
         Dim pm_valores(2) As String
         Dim pm_parametros(2) As String
         Dim pm_conexion(3) As String
         Dim ClsGen As New ClasesGenerales.General
-
+        Dim lb_generado As Boolean = False
 
         Try
+            'edifact.rpt lee pa_rtp_orden_edi de BDCORPORATIVO; se usa la misma conexion que el Generador de Reportes
+            pm_conexion = ClsGen.Parametros_Conexion("BDCORPORATIVO")
+            path_reporte = ClsGen.Path_Reporte()
+            path_reporte += "Direccion Comercial\edifact.rpt"
 
-                pm_conexion = ClsGen.Parametros_Conexion("")
-                path_reporte = ClsGen.Path_Reporte()
-                'path_reporte = "\\dataserver\FlexlineServidor\FlexlineERP\Reportes Alianza\Logistica\Trafico\Guía del Liquidador Global 2005 onBase.rpt"
-                path_reporte += "Direccion Comercial\edifact.rpt"
+            If Not Directory.Exists(CARPETA_PDF_EDI) Then Directory.CreateDirectory(CARPETA_PDF_EDI)
+            ls_archivo = Path.Combine(CARPETA_PDF_EDI, "EDI_" & gs_empresa & "_" & cliente & "_" & idtransaccion & ".pdf")
+            If File.Exists(ls_archivo) Then File.Delete(ls_archivo)
+
             pm_parametros(0) = "@empresa"
             pm_parametros(1) = "@cod_pedido"
             pm_parametros(2) = "@cliente"
 
             pm_valores(0) = gs_empresa
-                pm_valores(1) = idtransaccion
-                pm_valores(2) = cliente
-
-
-                pm_valores(0) = gs_empresa
             pm_valores(1) = idtransaccion
             pm_valores(2) = cliente
 
-            'pm_parametros(1) = "Numero de Documento"
-            'pm_valores(0) = gs_empresa
-            'pm_valores(1) = Me.lbl_numero.Text
-
-
-            '_reporte_generico_clase(path_reporte, pm_parametros, pm_valores, _
-            '                pm_conexion(0), pm_conexion(1), pm_conexion(2), pm_conexion(3), _
-            '                False, True, "PDF", False, "", True)
-
             _reporte_generico_clase(path_reporte, pm_parametros, pm_valores,
                            pm_conexion(0), pm_conexion(1), pm_conexion(2), pm_conexion(3),
-                           True, False, "PDF", False, "", True)
+                           True, False, "PDF", False, ls_archivo, True)
+
+            'La exportacion de Crystal no reporta errores, se valida que el archivo exista
+            lb_generado = File.Exists(ls_archivo)
+            If Not lb_generado Then
+                MessageBox.Show("No se genero el PDF de la orden " & idtransaccion & " (cliente " & cliente & ")." & vbCrLf & ls_archivo,
+                                "PDF EdiFact", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+            End If
         Catch ex As Exception
+            MessageBox.Show("Error al generar el PDF de la orden " & idtransaccion & " (cliente " & cliente & ")." & vbCrLf & ex.Message,
+                            "PDF EdiFact", MessageBoxButtons.OK, MessageBoxIcon.Error)
         Finally
             ClsGen = Nothing
-
-
         End Try
 
-
-    End Sub
+        Return lb_generado
+    End Function
 
     Public Sub Imprimir_Ordenes(ByVal idtransaccion As String, ByVal cliente As String)
         Dim path_reporte As String
@@ -2081,16 +2089,21 @@ Public Class frm_PedidosEdiFact
         Next
 
         If MessageBox.Show("Esta seguro de Imprimir " & conteo & " Ordenes a PDF", "Informacion", MessageBoxButtons.YesNo, MessageBoxIcon.Question) = DialogResult.Yes Then
+            Dim generados As Integer = 0
             For jj As Integer = 0 To dgv_pedidos.Rows.Count - 1
 
                 If dgv_pedidos.Item("Imprimir", jj).Value = True Then
-                    Imprimir_Ordenes_pdf(dgv_pedidos.Item("No pedido", jj).Value, dgv_pedidos.Item("idempresalocal", jj).Value)
-                    actualizar_estado(dgv_pedidos.Item("No pedido", jj).Value, dgv_pedidos.Item("idempresalocal", jj).Value)
+                    If Imprimir_Ordenes_pdf(dgv_pedidos.Item("No pedido", jj).Value, dgv_pedidos.Item("idempresalocal", jj).Value) Then
+                        generados += 1
+                        actualizar_estado(dgv_pedidos.Item("No pedido", jj).Value, dgv_pedidos.Item("idempresalocal", jj).Value)
+                    End If
                 End If
 
 
             Next
-            MessageBox.Show("Proceso Finalizado Con Exito", "Informacion", MessageBoxButtons.OK, MessageBoxIcon.Information)
+            MessageBox.Show("Se generaron " & generados & " de " & conteo & " PDF en " & CARPETA_PDF_EDI, "Informacion", MessageBoxButtons.OK,
+                            IIf(generados = conteo, MessageBoxIcon.Information, MessageBoxIcon.Warning))
+            If Directory.Exists(CARPETA_PDF_EDI) Then Process.Start("explorer.exe", CARPETA_PDF_EDI)
         End If
     End Sub
 
@@ -2105,16 +2118,19 @@ Public Class frm_PedidosEdiFact
         Next
 
         If MessageBox.Show("Esta seguro de Imprimir " & conteo & " Ordenes a PDF", "Informacion", MessageBoxButtons.YesNo, MessageBoxIcon.Question) = DialogResult.Yes Then
+            Dim generados As Integer = 0
             For jj As Integer = 0 To dgv_pedidos_reimpresion.Rows.Count - 1
 
                 If dgv_pedidos_reimpresion.Item("Imprimir", jj).Value = True Then
-                    Imprimir_Ordenes_pdf(dgv_pedidos_reimpresion.Item("No pedido", jj).Value, dgv_pedidos_reimpresion.Item("idempresalocal", jj).Value)
+                    If Imprimir_Ordenes_pdf(dgv_pedidos_reimpresion.Item("No pedido", jj).Value, dgv_pedidos_reimpresion.Item("idempresalocal", jj).Value) Then generados += 1
                     'actualizar_estado(dgv_pedidos_reimpresion.Item("No pedido", jj).Value)
                 End If
 
 
             Next
-            MessageBox.Show("Proceso Finalizado Con Exito", "Informacion", MessageBoxButtons.OK, MessageBoxIcon.Information)
+            MessageBox.Show("Se generaron " & generados & " de " & conteo & " PDF en " & CARPETA_PDF_EDI, "Informacion", MessageBoxButtons.OK,
+                            IIf(generados = conteo, MessageBoxIcon.Information, MessageBoxIcon.Warning))
+            If Directory.Exists(CARPETA_PDF_EDI) Then Process.Start("explorer.exe", CARPETA_PDF_EDI)
         End If
     End Sub
 
@@ -2196,8 +2212,8 @@ Public Class frm_PedidosEdiFact
     Private Sub btnProcesar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnProcesar.Click
 
         Try
-            If MessageBox.Show("Esta Seguro de Continuar con el Pedido " & _
-                       Me.dgv_pedidos.Item("No Pedido", Me.dgv_pedidos.CurrentRow.Index).Value, _
+            If MessageBox.Show("Esta Seguro de Continuar con el Pedido " &
+                       Me.dgv_pedidos.Item("No Pedido", Me.dgv_pedidos.CurrentRow.Index).Value,
                        "Confirmacion", MessageBoxButtons.YesNo, MessageBoxIcon.Question) = Windows.Forms.DialogResult.Yes Then
                 ProcesarPedido(Me.dgv_pedidos.Item("No Pedido", Me.dgv_pedidos.CurrentRow.Index).Value, Me.dgv_pedidos.Item("idempresalocal", Me.dgv_pedidos.CurrentRow.Index).Value)
             End If
@@ -2230,7 +2246,7 @@ Public Class frm_PedidosEdiFact
         Dim ls_filtro As String
         Dim icount As Integer
         Dim ClsGen As New ClasesGenerales.General
-        oDataSet = New DataSet
+        QuitarTablas("pedidos", "detalle_pedidos")
         'Limpiar_Bindings()
 
 

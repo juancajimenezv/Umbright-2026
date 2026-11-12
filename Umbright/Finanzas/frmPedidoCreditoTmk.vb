@@ -295,6 +295,10 @@ Public Class frmPedidoCreditoTmk
 
             Next
 
+            'El SP devuelve tambien los pedidos que ya tienen su documento FEL en Flexline
+            'y no siempre trae SerieFel; se marcan aqui para que no se vuelvan a certificar
+            MarcarPedidosConDocumentoFel(oTrans, psEmpresa, odsFACE)
+
             ls_sqltxt = "pa_var_um_detalle_FelPURA '" & ldfechaInicial & "','" & psFecha & "','" & psEmpresa & "'"
 
             If odsFACE.Tables.Contains("detalle_pedidos") Then
@@ -324,6 +328,95 @@ Public Class frmPedidoCreditoTmk
         End Try
 
     End Sub
+
+    Private Function SerieFelDePedido(psTipoDocto As String) As String
+
+        Select Case psTipoDocto.Trim().ToUpper()
+            Case "PEDIDO FEL TMK"
+                Return "FEL TMK"
+            Case "PEDIDO FEL AUTOCONSUMO TMK"
+                Return "FEL AUTOCONSUMO TMK"
+            Case Else
+                Return ""
+        End Select
+
+    End Function
+
+    Private Sub MarcarPedidosConDocumentoFel(oTrans As Transaccional.Conexion, psEmpresa As String, odsFACE As DataSet)
+
+        Dim lNumeros As New System.Collections.Generic.List(Of String)
+
+        For Each dr As DataRow In odsFACE.Tables("pedidos").Rows
+
+            If Convert.ToString(dr("SerieFel")).Trim() = "" AndAlso
+               SerieFelDePedido(Convert.ToString(dr("tipodocto"))) <> "" Then
+
+                lNumeros.Add("'" & Convert.ToString(dr("numero")).Replace("'", "''") & "'")
+
+            End If
+
+        Next
+
+        If lNumeros.Count = 0 Then Exit Sub
+
+        Dim lsSQL As String =
+            "SELECT tipodocto, numero FROM flexline.documento " &
+            "WHERE empresa = '" & psEmpresa.Replace("'", "''") & "' " &
+            "AND tipodocto IN ('FEL TMK', 'FEL AUTOCONSUMO TMK') " &
+            "AND numero IN (" & String.Join(",", lNumeros) & ")"
+
+        Dim dtFel As DataTable = oTrans.Obtiene(lsSQL)
+
+        If dtFel Is Nothing OrElse dtFel.Rows.Count = 0 Then Exit Sub
+
+        For Each dr As DataRow In odsFACE.Tables("pedidos").Rows
+
+            Dim lSerie As String = SerieFelDePedido(Convert.ToString(dr("tipodocto")))
+            Dim lNumero As String = Convert.ToString(dr("numero")).Replace("'", "''")
+
+            If lSerie = "" OrElse Convert.ToString(dr("SerieFel")).Trim() <> "" Then Continue For
+
+            If dtFel.Select("tipodocto = '" & lSerie & "' AND numero = '" & lNumero & "'").Length > 0 Then
+
+                dr("SerieFel") = lSerie
+
+                If Convert.ToString(dr("NumeroFel")).Trim() = "" Then
+                    dr("NumeroFel") = dr("numero")
+                End If
+
+            End If
+
+        Next
+
+    End Sub
+
+    Private Function LlavePedido(dr As DataRow) As String
+
+        Return Convert.ToString(dr("tipodocto")).Trim().ToUpper() & "|" & Convert.ToString(dr("numero")).Trim()
+
+    End Function
+
+    Private Function TotalesIguales(psTotal1 As String, psTotal2 As String) As Boolean
+
+        Dim d1, d2 As Decimal
+
+        If Decimal.TryParse(psTotal1, d1) AndAlso Decimal.TryParse(psTotal2, d2) Then
+            Return Math.Abs(d1 - d2) <= 0.01D
+        End If
+
+        Return psTotal1.Trim() = psTotal2.Trim()
+
+    End Function
+
+    Private Function FormatoTotal(psTotal As String) As String
+
+        Dim d As Decimal
+
+        If Decimal.TryParse(psTotal, d) Then Return d.ToString("N2")
+
+        Return psTotal
+
+    End Function
 
     Private Sub Busqueda_Documentos()
 
@@ -413,19 +506,16 @@ Public Class frmPedidoCreditoTmk
         End If
 
         Dim lDsFelSel As New DataSet
-        Dim lTblPedidos As DataTable = lDsFel.Tables("pedidos").Copy()
-        Dim lTblDetPedidos As DataTable = lDsFel.Tables("detalle_pedidos").Copy()
-        Dim lDvFelSel As DataView
+        Dim lTblPedidos As DataTable
+        Dim lTblDetPedidos As DataTable
         Dim oEnvioFel As New Umbral.FelInFile.ProcesarFel
-
-        lTblPedidos.Rows.Clear()
-
-        lDvFelSel = gvPedidos.DataSource
 
         'Confirmar el ultimo checkbox editado antes de leer la seleccion
         gvPedidos.EndEdit()
 
-        'Solo documentos marcados y que aun no tienen Serie FEL
+        'Guardar la seleccion del usuario (solo marcados y sin Serie FEL) con el total que vio en pantalla
+        Dim lSeleccion As New System.Collections.Generic.Dictionary(Of String, String)
+
         For Each dr As DataGridViewRow In gvPedidos.Rows
 
             Dim lEnviar As Object = dr.Cells("Enviar").Value
@@ -433,20 +523,110 @@ Public Class frmPedidoCreditoTmk
             If TypeOf lEnviar Is Boolean AndAlso CBool(lEnviar) AndAlso
                Convert.ToString(dr.Cells("SerieFel").Value).Trim() = "" Then
 
-                lTblPedidos.ImportRow(lDvFelSel(dr.Index).Row)
+                Dim lDrv As DataRowView = CType(gvPedidos.DataSource, DataView)(dr.Index)
+                Dim lLlave As String = LlavePedido(lDrv.Row)
+
+                If Not lSeleccion.ContainsKey(lLlave) Then
+                    lSeleccion.Add(lLlave, Convert.ToString(lDrv.Row("Total")))
+                End If
 
             End If
 
         Next
 
-        If lTblPedidos.Rows.Count = 0 Then
+        If lSeleccion.Count = 0 Then
 
             MessageBox.Show("No hay documentos seleccionados pendientes de certificar.", "FEL")
             Exit Sub
 
         End If
 
-        If (MessageBox.Show("Esta seguro de certificar " & lTblPedidos.Rows.Count & " documento(s)?", "FEL", MessageBoxButtons.YesNo, MessageBoxIcon.Question) = DialogResult.No) Then
+        'Volver a generar la informacion desde la base de datos para no enviar
+        'datos desactualizados si el pedido se modifico despues de Obtener
+        Busqueda_Documentos()
+
+        If lDsFel Is Nothing OrElse Not lDsFel.Tables.Contains("detalle_pedidos") Then
+
+            MessageBox.Show("No se pudo actualizar la informacion de los documentos. Intente nuevamente.", "FEL")
+            Exit Sub
+
+        End If
+
+        lTblPedidos = lDsFel.Tables("pedidos").Clone()
+        lTblDetPedidos = lDsFel.Tables("detalle_pedidos").Copy()
+
+        Dim lCambios As New System.Text.StringBuilder
+        Dim lOmitidos As New System.Text.StringBuilder
+
+        For Each lLlave As String In lSeleccion.Keys
+
+            Dim lDrActual As DataRow = Nothing
+
+            For Each dr As DataRow In lDsFel.Tables("pedidos").Rows
+                If LlavePedido(dr) = lLlave Then
+                    lDrActual = dr
+                    Exit For
+                End If
+            Next
+
+            Dim lNumero As String = lLlave.Split("|"c)(1)
+
+            If lDrActual Is Nothing Then
+
+                lOmitidos.AppendLine("  " & lNumero & ": ya no aparece como pendiente")
+                Continue For
+
+            End If
+
+            If Convert.ToString(lDrActual("SerieFel")).Trim() <> "" Then
+
+                lOmitidos.AppendLine("  " & lNumero & ": ya tiene documento " & Convert.ToString(lDrActual("SerieFel")))
+                Continue For
+
+            End If
+
+            Dim lTotalAntes As String = lSeleccion(lLlave)
+            Dim lTotalAhora As String = Convert.ToString(lDrActual("Total"))
+
+            If Not TotalesIguales(lTotalAntes, lTotalAhora) Then
+                lCambios.AppendLine("  " & lNumero & ": " & FormatoTotal(lTotalAntes) & " -> " & FormatoTotal(lTotalAhora))
+            End If
+
+            lTblPedidos.ImportRow(lDrActual)
+
+        Next
+
+        'Mantener marcados en pantalla los que se van a enviar
+        For Each dr As DataGridViewRow In gvPedidos.Rows
+
+            Dim lDrv As DataRowView = CType(gvPedidos.DataSource, DataView)(dr.Index)
+
+            If lSeleccion.ContainsKey(LlavePedido(lDrv.Row)) AndAlso
+               Convert.ToString(lDrv.Row("SerieFel")).Trim() = "" Then
+                dr.Cells("Enviar").Value = True
+            End If
+
+        Next
+
+        If lTblPedidos.Rows.Count = 0 Then
+
+            MessageBox.Show("No hay documentos pendientes de certificar." & vbCrLf & lOmitidos.ToString(), "FEL")
+            Exit Sub
+
+        End If
+
+        Dim lMensaje As String = "Esta seguro de certificar " & lTblPedidos.Rows.Count & " documento(s)?"
+
+        If lCambios.Length > 0 Then
+            lMensaje = "Los siguientes pedidos cambiaron desde que se obtuvieron; se certificaran con el total actual:" &
+                vbCrLf & lCambios.ToString() & vbCrLf & lMensaje
+        End If
+
+        If lOmitidos.Length > 0 Then
+            lMensaje = "No se enviaran:" & vbCrLf & lOmitidos.ToString() & vbCrLf & lMensaje
+        End If
+
+        If (MessageBox.Show(lMensaje, "FEL", MessageBoxButtons.YesNo, MessageBoxIcon.Question) = DialogResult.No) Then
 
             Exit Sub
 
@@ -474,9 +654,10 @@ Public Class frmPedidoCreditoTmk
 
             If chkSelTodos.Checked Then
 
+                'Solo se marcan los pendientes; los que ya tienen Serie FEL no se reenvian
                 For Each rw As DataGridViewRow In gvPedidos.Rows
 
-                    rw.Cells(0).Value = True
+                    rw.Cells(0).Value = (Convert.ToString(rw.Cells("SerieFel").Value).Trim() = "")
 
                 Next
 
