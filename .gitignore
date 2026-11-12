@@ -1,1 +1,12 @@
+# Salidas intermedias de compilacion
+[Oo]bj/
 
+# Archivos locales de Visual Studio
+.vs/
+*.suo
+
+# Configuracion local de Claude Code
+.claude/
+
+# Nota: bin/ se mantiene versionado porque varios proyectos
+# referencian DLLs dentro del bin de otros proyectos (HintPath).
