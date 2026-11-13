@@ -3914,7 +3914,7 @@ Public Class frm_solicitud_productos
     Private Function validacionesGuardar() As Boolean
         Dim lbValido As Boolean = True
         Dim clsGen As New ClasesGenerales.General
-
+        ' MessageBox.Show("Empresa=[" & gs_empresa & "]  Proveedor=[" & Me.txt_proveedor.Text & "]", "Diagnostico")  Diagnostico para saber si el Proveedor Coincide con la empresa / IT / DYLAN
         Try
             If Me.cmbBU.SelectedValue = "" Then
                 MessageBox.Show("Para Continuar debe Seleccionar BU", "Validaciones", MessageBoxButtons.OK, MessageBoxIcon.Warning)
@@ -3942,7 +3942,7 @@ Public Class frm_solicitud_productos
             If Me.txt_proveedor.Text.ToLower = "codicasa" Or
                 Me.txt_proveedor.Text.ToLower = "diuva" Or
                  Me.txt_proveedor.Text.ToLower = "distribuidora marte" Or
-                 (Me.txt_proveedor.Text.ToLower = "vinoteca" And gs_empresa <> "vinoteca") Then
+                 (Me.txt_proveedor.Text.ToLower = "vinoteca" And gs_empresa.ToLower <> "vinoteca") Then
 
 
                 Dim lsSQL As String = "pa_sel_um_producto '" & Me.txt_proveedor.Text.ToLower.Replace("distribuidora marte", "dmarte1") & "','" & Me.txtCodigoDistribuidora.Text & "'"
@@ -4623,7 +4623,7 @@ Public Class frm_solicitud_productos
         If Me.txt_proveedor.Text.ToLower = "codicasa" Or
                 Me.txt_proveedor.Text.ToLower = "diuva" Or
                  Me.txt_proveedor.Text.ToLower = "distribuidora marte" Or
-                 (Me.txt_proveedor.Text.ToLower = "vinoteca" And gs_empresa <> "vinoteca") Then
+                 (Me.txt_proveedor.Text.ToLower = "vinoteca" And gs_empresa.ToLower <> "vinoteca") Then
 
 
             Me.txtCodigoDistribuidora.Visible = True
